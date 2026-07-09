@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chinese-001",
+    "subject": "國文",
+    "question": "下列哪一個成語最適合形容做事前先做好準備？",
+    "A": "臨渴掘井",
+    "B": "未雨綢繆",
+    "C": "畫蛇添足",
+    "D": "杯弓蛇影",
+    "answer": "B",
+    "explanation": "未雨綢繆指趁事情尚未發生前先做好準備。"
+  },
+  {
+    "id": "chinese-002",
+    "subject": "國文",
+    "question": "「書信」結尾常見的敬語是下列何者？",
+    "A": "敬啟",
+    "B": "謹上",
+    "C": "台鑒",
+    "D": "如晤",
+    "answer": "B",
+    "explanation": "謹上常用於書信結尾署名之後，表示恭敬呈上。"
+  },
+  {
+    "id": "chinese-003",
+    "subject": "國文",
+    "question": "下列何者屬於轉折語氣？",
+    "A": "因為",
+    "B": "所以",
+    "C": "然而",
+    "D": "並且",
+    "answer": "C",
+    "explanation": "然而表示前後語意轉折。"
+  },
+  {
+    "id": "chinese-004",
+    "subject": "國文",
+    "question": "「一鼓作氣」主要強調的是什麼？",
+    "A": "趁氣勢旺盛時完成事情",
+    "B": "分段慢慢處理",
+    "C": "完全不需準備",
+    "D": "刻意拖延時間",
+    "answer": "A",
+    "explanation": "一鼓作氣比喻趁著氣勢旺盛時把事情完成。"
+  },
+  {
+    "id": "english-001",
+    "subject": "英文",
+    "question": "Choose the correct sentence.",
+    "A": "He go to school every day.",
+    "B": "He goes to school every day.",
+    "C": "He going to school every day.",
+    "D": "He gone to school every day.",
+    "answer": "B",
+    "explanation": "主詞 He 為第三人稱單數，一般現在式動詞需加 s。"
+  },
+  {
+    "id": "english-002",
+    "subject": "英文",
+    "question": "What is the opposite of 'early'?",
+    "A": "Late",
+    "B": "Fast",
+    "C": "Soon",
+    "D": "First",
+    "answer": "A",
+    "explanation": "early 表示早，反義詞為 late。"
+  },
+  {
+    "id": "english-003",
+    "subject": "英文",
+    "question": "I am interested ___ history.",
+    "A": "on",
+    "B": "at",
+    "C": "in",
+    "D": "for",
+    "answer": "C",
+    "explanation": "be interested in 是固定用法。"
+  },
+  {
+    "id": "english-004",
+    "subject": "英文",
+    "question": "Which word is a noun?",
+    "A": "quickly",
+    "B": "beautiful",
+    "C": "teacher",
+    "D": "run",
+    "answer": "C",
+    "explanation": "teacher 表示老師，是名詞。"
+  },
+  {
+    "id": "law-001",
+    "subject": "公民與英文法大意",
+    "question": "行政機關依法作成行政處分，最重要的原則之一是什麼？",
+    "A": "比例原則",
+    "B": "任意原則",
+    "C": "秘密原則",
+    "D": "偏頗原則",
+    "answer": "A",
+    "explanation": "行政行為應符合比例原則，手段與目的間須具合理關聯。"
+  },
+  {
+    "id": "law-002",
+    "subject": "公民與英文法大意",
+    "question": "人民有依法納稅的義務，主要是基於哪一項概念？",
+    "A": "租稅法定",
+    "B": "契約自由",
+    "C": "私人自治",
+    "D": "無因管理",
+    "answer": "A",
+    "explanation": "租稅之課徵須有法律依據，稱為租稅法定原則。"
+  },
+  {
+    "id": "law-003",
+    "subject": "公民與英文法大意",
+    "question": "下列何者屬於地方自治團體？",
+    "A": "公司",
+    "B": "縣市政府",
+    "C": "私人基金會",
+    "D": "社區管委會",
+    "answer": "B",
+    "explanation": "縣市為地方自治團體，依法辦理自治事項。"
+  },
+  {
+    "id": "law-004",
+    "subject": "公民與英文法大意",
+    "question": "民主政治中，定期選舉的主要功能是什麼？",
+    "A": "形成民意與責任政治",
+    "B": "取消人民權利",
+    "C": "免除政府監督",
+    "D": "固定單一政黨執政",
+    "answer": "A",
+    "explanation": "選舉讓人民表達政治意見，也使政治人物對人民負責。"
+  },
+  {
+    "id": "math-001",
+    "subject": "數學大意",
+    "question": "若 3x = 12，則 x 等於多少？",
+    "A": "3",
+    "B": "4",
+    "C": "9",
+    "D": "15",
+    "answer": "B",
+    "explanation": "3x = 12，兩邊同除以 3，可得 x = 4。"
+  },
+  {
+    "id": "math-002",
+    "subject": "數學大意",
+    "question": "一件商品原價 100 元，打 8 折後為多少元？",
+    "A": "20",
+    "B": "60",
+    "C": "80",
+    "D": "120",
+    "answer": "C",
+    "explanation": "8 折表示原價的 80%，100 x 0.8 = 80。"
+  },
+  {
+    "id": "math-003",
+    "subject": "數學大意",
+    "question": "下列哪一個數是質數？",
+    "A": "1",
+    "B": "4",
+    "C": "6",
+    "D": "7",
+    "answer": "D",
+    "explanation": "7 只有 1 和 7 兩個正因數，因此是質數。"
+  },
+  {
+    "id": "math-004",
+    "subject": "數學大意",
+    "question": "2 的 3 次方等於多少？",
+    "A": "5",
+    "B": "6",
+    "C": "8",
+    "D": "9",
+    "answer": "C",
+    "explanation": "2 的 3 次方為 2 x 2 x 2 = 8。"
+  },
+  {
+    "id": "admin-001",
+    "subject": "地方自治大意",
+    "question": "地方自治的核心精神是什麼？",
+    "A": "中央完全代替地方決定所有事項",
+    "B": "地方在法律範圍內處理自治事項",
+    "C": "人民不得參與地方公共事務",
+    "D": "地方政府不受法律拘束",
+    "answer": "B",
+    "explanation": "地方自治是在法律授權範圍內，由地方處理自治事項。"
+  },
+  {
+    "id": "admin-002",
+    "subject": "地方自治大意",
+    "question": "下列何者通常屬於地方公共事務？",
+    "A": "社區道路維護",
+    "B": "外交承認",
+    "C": "國防作戰",
+    "D": "國家貨幣發行",
+    "answer": "A",
+    "explanation": "社區道路維護通常與地方居民生活密切相關，屬地方公共事務。"
+  },
+  {
+    "id": "admin-003",
+    "subject": "地方自治大意",
+    "question": "地方議會的主要功能之一是什麼？",
+    "A": "審議地方預算",
+    "B": "指揮國軍",
+    "C": "制定憲法",
+    "D": "發行貨幣",
+    "answer": "A",
+    "explanation": "地方議會可審議地方預算並監督地方行政機關。"
+  },
+  {
+    "id": "admin-004",
+    "subject": "地方自治大意",
+    "question": "地方首長通常由何種方式產生？",
+    "A": "人民選舉",
+    "B": "抽籤永久任職",
+    "C": "私人公司指派",
+    "D": "外國政府任命",
+    "answer": "A",
+    "explanation": "地方首長多由地方居民依法選舉產生。"
+  }
+]
