@@ -106,6 +106,11 @@ function populateSubjects() {
   const subjects = [...new Set(state.allQuestions.map((item) => item.subject))].sort();
   els.subjectSelect.innerHTML = "";
 
+  const allOption = document.createElement("option");
+  allOption.value = "__all__";
+  allOption.textContent = "全部科目";
+  els.subjectSelect.append(allOption);
+
   subjects.forEach((subject) => {
     const option = document.createElement("option");
     option.value = subject;
@@ -132,14 +137,21 @@ function startQuiz(questions, mode) {
 
 function startRandomQuiz() {
   const subject = els.subjectSelect.value;
-  const pool = state.allQuestions.filter((item) => item.subject === subject);
+  const pool = subject === "__all__" ? state.allQuestions : state.allQuestions.filter((item) => item.subject === subject);
+
+  if (pool.length < QUESTION_COUNT) {
+    showMessage(`「${els.subjectSelect.selectedOptions[0].textContent}」目前只有 ${pool.length} 題，至少需要 ${QUESTION_COUNT} 題才能開始。`, true);
+    return;
+  }
+
   const selected = shuffle(pool).slice(0, QUESTION_COUNT);
   startQuiz(selected, "random");
 }
 
 function startWrongQuiz() {
   const wrongIds = new Set(getWrongIds());
-  const selected = shuffle(state.allQuestions.filter((item) => wrongIds.has(item.id))).slice(0, QUESTION_COUNT);
+  const pool = state.allQuestions.filter((item) => wrongIds.has(item.id));
+  const selected = shuffle(pool).slice(0, QUESTION_COUNT);
   startQuiz(selected, "wrong");
 }
 
