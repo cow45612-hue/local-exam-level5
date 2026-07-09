@@ -1,12 +1,13 @@
 const QUESTION_COUNT = 20;
 const WRONG_KEY = "local-exam-level5-wrong-question-ids";
+const ALL_SUBJECTS = "__all__";
 
 const state = {
   allQuestions: [],
   currentQuestions: [],
   answers: [],
   currentIndex: 0,
-  mode: "random"
+  mode: "random",
 };
 
 const els = {
@@ -31,7 +32,7 @@ const els = {
   scoreDetail: document.querySelector("#score-detail"),
   retrySame: document.querySelector("#retry-same"),
   resultHome: document.querySelector("#result-home"),
-  reviewList: document.querySelector("#review-list")
+  reviewList: document.querySelector("#review-list"),
 };
 
 function normalizeQuestion(raw, index) {
@@ -43,17 +44,17 @@ function normalizeQuestion(raw, index) {
       A: raw.options?.A ?? raw.A,
       B: raw.options?.B ?? raw.B,
       C: raw.options?.C ?? raw.C,
-      D: raw.options?.D ?? raw.D
+      D: raw.options?.D ?? raw.D,
     },
-    answer: String(raw.answer).toUpperCase(),
-    explanation: raw.explanation
+    answer: String(raw.answer ?? "").toUpperCase(),
+    explanation: raw.explanation,
   };
 }
 
 async function loadQuestions() {
   const response = await fetch("./questions.json", { cache: "no-store" });
   if (!response.ok) {
-    throw new Error("題庫載入失敗");
+    throw new Error("題庫載入失敗，請確認 questions.json 存在。");
   }
 
   const data = await response.json();
@@ -81,16 +82,15 @@ function updateWrongCount() {
   els.startWrong.disabled = ids.length === 0;
 }
 
-function showMessage(message, isError = false) {
-  els.loadMessage.textContent = message;
-  els.loadMessage.className = isError ? "message error" : "message";
-  els.loadMessage.hidden = !message;
+function showMessage(text) {
+  els.loadMessage.textContent = text;
+  els.loadMessage.hidden = !text;
 }
 
-function showView(name) {
-  els.setupView.hidden = name !== "setup";
-  els.quizView.hidden = name !== "quiz";
-  els.resultView.hidden = name !== "result";
+function switchView(view) {
+  els.setupView.hidden = view !== "setup";
+  els.quizView.hidden = view !== "quiz";
+  els.resultView.hidden = view !== "result";
 }
 
 function shuffle(items) {
@@ -102,168 +102,156 @@ function shuffle(items) {
   return copy;
 }
 
+function selectedPool() {
+  const subject = els.subjectSelect.value;
+  if (subject === ALL_SUBJECTS) return state.allQuestions;
+  return state.allQuestions.filter((item) => item.subject === subject);
+}
+
 function populateSubjects() {
   const subjects = [...new Set(state.allQuestions.map((item) => item.subject))].sort();
   els.subjectSelect.innerHTML = "";
 
   const allOption = document.createElement("option");
-  allOption.value = "__all__";
-  allOption.textContent = "全部科目";
-  els.subjectSelect.append(allOption);
+  allOption.value = ALL_SUBJECTS;
+  allOption.textContent = `全部科目（${state.allQuestions.length} 題）`;
+  els.subjectSelect.appendChild(allOption);
 
   subjects.forEach((subject) => {
     const option = document.createElement("option");
+    const count = state.allQuestions.filter((item) => item.subject === subject).length;
     option.value = subject;
-    option.textContent = subject;
-    els.subjectSelect.append(option);
+    option.textContent = `${subject}（${count} 題）`;
+    els.subjectSelect.appendChild(option);
   });
 }
 
 function startQuiz(questions, mode) {
   if (questions.length === 0) {
-    showMessage("目前沒有可練習的題目。", true);
+    showMessage(mode === "wrong" ? "目前沒有錯題可以練習。" : "這個科目目前沒有題目。");
     return;
   }
 
-  state.currentQuestions = questions;
-  state.answers = Array.from({ length: questions.length }, () => "");
+  state.currentQuestions = questions.slice(0, QUESTION_COUNT);
+  state.answers = Array(state.currentQuestions.length).fill("");
   state.currentIndex = 0;
   state.mode = mode;
   els.quizTitle.textContent = mode === "wrong" ? "錯題練習" : "隨機練習";
   showMessage("");
-  showView("quiz");
   renderQuestion();
-}
-
-function startRandomQuiz() {
-  const subject = els.subjectSelect.value;
-  const pool = subject === "__all__" ? state.allQuestions : state.allQuestions.filter((item) => item.subject === subject);
-
-  if (pool.length < QUESTION_COUNT) {
-    showMessage(`「${els.subjectSelect.selectedOptions[0].textContent}」目前只有 ${pool.length} 題，至少需要 ${QUESTION_COUNT} 題才能開始。`, true);
-    return;
-  }
-
-  const selected = shuffle(pool).slice(0, QUESTION_COUNT);
-  startQuiz(selected, "random");
-}
-
-function startWrongQuiz() {
-  const wrongIds = new Set(getWrongIds());
-  const pool = state.allQuestions.filter((item) => wrongIds.has(item.id));
-  const selected = shuffle(pool).slice(0, QUESTION_COUNT);
-  startQuiz(selected, "wrong");
+  switchView("quiz");
 }
 
 function renderQuestion() {
   const question = state.currentQuestions[state.currentIndex];
-  const total = state.currentQuestions.length;
-
-  els.progressText.textContent = `第 ${state.currentIndex + 1} / ${total} 題`;
   els.subjectBadge.textContent = question.subject;
   els.questionText.textContent = question.question;
-  els.options.innerHTML = "";
+  els.progressText.textContent = `第 ${state.currentIndex + 1} / ${state.currentQuestions.length} 題`;
 
-  Object.entries(question.options).forEach(([key, value]) => {
+  els.options.innerHTML = "";
+  Object.entries(question.options).forEach(([key, text]) => {
     const label = document.createElement("label");
     label.className = "option";
-
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = "answer";
-    input.value = key;
-    input.checked = state.answers[state.currentIndex] === key;
-    input.addEventListener("change", () => {
+    label.innerHTML = `
+      <input type="radio" name="answer" value="${key}" ${state.answers[state.currentIndex] === key ? "checked" : ""} />
+      <span class="option-key">${key}</span>
+      <span>${text}</span>
+    `;
+    label.querySelector("input").addEventListener("change", () => {
       state.answers[state.currentIndex] = key;
     });
-
-    const text = document.createElement("span");
-    text.textContent = `${key}. ${value}`;
-
-    label.append(input, text);
-    els.options.append(label);
+    els.options.appendChild(label);
   });
 
   els.prevQuestion.disabled = state.currentIndex === 0;
-  els.nextQuestion.disabled = state.currentIndex === total - 1;
+  els.nextQuestion.disabled = state.currentIndex === state.currentQuestions.length - 1;
 }
 
-function gradeQuiz() {
-  const wrongIds = new Set(getWrongIds());
-  let correctCount = 0;
+function submitQuiz() {
+  let correct = 0;
+  const wrongIds = getWrongIds();
+
+  state.currentQuestions.forEach((question, index) => {
+    const isCorrect = state.answers[index] === question.answer;
+    if (isCorrect) {
+      correct += 1;
+      const found = wrongIds.indexOf(question.id);
+      if (found >= 0) wrongIds.splice(found, 1);
+    } else {
+      wrongIds.push(question.id);
+    }
+  });
+
+  setWrongIds(wrongIds);
+  renderResult(correct);
+  switchView("result");
+}
+
+function renderResult(correct) {
+  const total = state.currentQuestions.length;
+  const rate = total ? Math.round((correct / total) * 100) : 0;
+  els.scoreRate.textContent = `${rate}%`;
+  els.scoreDetail.textContent = `答對 ${correct} / ${total} 題`;
   els.reviewList.innerHTML = "";
 
   state.currentQuestions.forEach((question, index) => {
-    const selected = state.answers[index];
-    const isCorrect = selected === question.answer;
-
-    if (isCorrect) {
-      correctCount += 1;
-      wrongIds.delete(question.id);
-    } else {
-      wrongIds.add(question.id);
-    }
-
-    const item = document.createElement("article");
-    item.className = `review-item ${isCorrect ? "correct" : "wrong"}`;
-
-    const title = document.createElement("h3");
-    title.textContent = `${index + 1}. ${question.question}`;
-
-    const userAnswer = document.createElement("p");
-    userAnswer.className = "answer-line";
-    userAnswer.textContent = `你的答案：${selected ? `${selected}. ${question.options[selected]}` : "未作答"}`;
-
-    const rightAnswer = document.createElement("p");
-    rightAnswer.className = "answer-line";
-    rightAnswer.textContent = `正確答案：${question.answer}. ${question.options[question.answer]}`;
-
-    const explanation = document.createElement("p");
-    explanation.textContent = `解析：${question.explanation}`;
-
-    item.append(title, userAnswer, rightAnswer, explanation);
-    els.reviewList.append(item);
+    const userAnswer = state.answers[index] || "未作答";
+    const isCorrect = userAnswer === question.answer;
+    const card = document.createElement("article");
+    card.className = `review-card ${isCorrect ? "correct" : "wrong"}`;
+    card.innerHTML = `
+      <p class="badge">${question.subject}</p>
+      <h3>${index + 1}. ${question.question}</h3>
+      <p>你的答案：<strong>${userAnswer}</strong></p>
+      <p>正確答案：<strong>${question.answer}</strong></p>
+      <p class="explanation">${question.explanation}</p>
+    `;
+    els.reviewList.appendChild(card);
   });
-
-  setWrongIds([...wrongIds]);
-
-  const rate = Math.round((correctCount / state.currentQuestions.length) * 100);
-  els.scoreRate.textContent = `${rate}%`;
-  els.scoreDetail.textContent = `答對 ${correctCount} / ${state.currentQuestions.length} 題`;
-  showView("result");
 }
 
-function goHome() {
-  showView("setup");
-  updateWrongCount();
-}
+els.startRandom.addEventListener("click", () => {
+  const pool = selectedPool();
+  if (pool.length < QUESTION_COUNT) {
+    showMessage(`這個範圍只有 ${pool.length} 題，請選「全部科目」或題數較多的科目。`);
+    return;
+  }
+  startQuiz(shuffle(pool), "random");
+});
 
-async function init() {
-  try {
-    state.allQuestions = await loadQuestions();
+els.startWrong.addEventListener("click", () => {
+  const ids = new Set(getWrongIds());
+  startQuiz(shuffle(state.allQuestions.filter((item) => ids.has(item.id))), "wrong");
+});
+
+els.prevQuestion.addEventListener("click", () => {
+  if (state.currentIndex > 0) {
+    state.currentIndex -= 1;
+    renderQuestion();
+  }
+});
+
+els.nextQuestion.addEventListener("click", () => {
+  if (state.currentIndex < state.currentQuestions.length - 1) {
+    state.currentIndex += 1;
+    renderQuestion();
+  }
+});
+
+els.submitQuiz.addEventListener("click", submitQuiz);
+els.backHome.addEventListener("click", () => switchView("setup"));
+els.resultHome.addEventListener("click", () => switchView("setup"));
+els.retrySame.addEventListener("click", () => startQuiz(state.currentQuestions, state.mode));
+
+loadQuestions()
+  .then((questions) => {
+    state.allQuestions = questions;
     populateSubjects();
     updateWrongCount();
-    showView("setup");
-  } catch (error) {
-    showMessage(`${error.message}。請用本機伺服器開啟，不要直接雙擊 HTML。`, true);
-  }
-}
-
-els.startRandom.addEventListener("click", startRandomQuiz);
-els.startWrong.addEventListener("click", startWrongQuiz);
-els.backHome.addEventListener("click", goHome);
-els.prevQuestion.addEventListener("click", () => {
-  state.currentIndex -= 1;
-  renderQuestion();
-});
-els.nextQuestion.addEventListener("click", () => {
-  state.currentIndex += 1;
-  renderQuestion();
-});
-els.submitQuiz.addEventListener("click", gradeQuiz);
-els.retrySame.addEventListener("click", () => {
-  startQuiz(state.currentQuestions, state.mode);
-});
-els.resultHome.addEventListener("click", goHome);
-
-init();
+    showMessage(`題庫已載入：${questions.length} 題`);
+  })
+  .catch((error) => {
+    showMessage(error.message);
+    els.startRandom.disabled = true;
+    els.startWrong.disabled = true;
+  });

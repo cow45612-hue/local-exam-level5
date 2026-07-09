@@ -11,7 +11,7 @@
       <header class="app-header">
         <p class="label">免費刷題 App</p>
         <h1>地方特考五等</h1>
-        <p class="subtitle">選科目、隨機 20 題、立即批改與錯題複習</p>
+        <p class="subtitle">選科目、隨機 20 題、送出後自動批改，錯題會自動保存。</p>
       </header>
 
       <section id="setup-view" class="screen">
@@ -21,8 +21,8 @@
         </label>
 
         <div class="button-grid">
-          <button id="start-random" class="primary">開始隨機 20 題</button>
-          <button id="start-wrong">練習錯題</button>
+          <button id="start-random" class="primary">隨機練習 20 題</button>
+          <button id="start-wrong">重練錯題</button>
         </div>
 
         <p id="wrong-count" class="hint">錯題：0 題</p>
@@ -32,7 +32,7 @@
       <section id="quiz-view" class="screen" hidden>
         <div class="quiz-bar">
           <div>
-            <strong id="quiz-title">練習</strong>
+            <strong id="quiz-title">練習中</strong>
             <span id="progress-text">第 1 / 20 題</span>
           </div>
           <button id="back-home" class="ghost">返回</button>
@@ -60,12 +60,12 @@
         </div>
 
         <div class="button-grid">
-          <button id="retry-same" class="primary">再練一次本次題目</button>
+          <button id="retry-same" class="primary">重新練習本次題目</button>
           <button id="result-home">回首頁</button>
         </div>
 
         <section class="review-section">
-          <h2>逐題解析</h2>
+          <h2>每題解析</h2>
           <div id="review-list"></div>
         </section>
       </section>

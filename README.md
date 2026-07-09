@@ -1,17 +1,25 @@
 # 地方特考五等免費刷題 App
 
-純前端網頁版刷題工具，使用 `HTML + CSS + JavaScript`，不需要後端。題庫由 `questions.json` 管理，支援手機瀏覽器使用。
+這是一個純前端刷題網頁，使用 `HTML + CSS + JavaScript`，不需要後端。題庫集中在 `questions.json`，手機瀏覽器也可以使用。
 
 ## 功能
 
 - 選擇科目
 - 隨機出題
-- 每次最多 20 題
+- 每次 20 題
 - 送出後自動批改
 - 顯示答對率
 - 顯示每題解析
 - 錯題自動存到 `localStorage`
 - 可重新練習錯題
+
+## 題庫來源
+
+目前已匯入「地方特考五等－一般行政」民國 109-113 年可取得的 A/B/C/D 選擇題，共 649 題。
+
+資料來源是考選部歷屆試題，並使用 LawPlayer 的結構化資料輔助整理成 `questions.json`。官方題庫主要提供題目與答案，所以目前解析欄位會顯示官方答案與來源註記；尚未加入補習班詳解。
+
+部分年度/科目在來源 API 中資料不完整，因此本題庫不是所有年度、所有類科的完整總集合。要擴充其他類科或年份，可修改 `tools/import-lawplayer-questions.mjs` 後重新執行。
 
 ## 檔案
 
@@ -21,11 +29,11 @@ exam-project/
   style.css
   app.js
   questions.json
+  tools/
+    import-lawplayer-questions.mjs
 ```
 
-## Windows 本機使用方式
-
-建議用本機伺服器開啟，避免瀏覽器直接雙擊 HTML 時擋掉 `questions.json`。
+## Windows 本機使用
 
 1. 開啟 PowerShell。
 2. 進入專案資料夾：
@@ -34,7 +42,7 @@ exam-project/
 cd "C:\Users\ome\Documents\New project\exam-project"
 ```
 
-3. 啟動本機伺服器：
+3. 啟動本機靜態伺服器：
 
 ```powershell
 python -m http.server 8080
@@ -46,28 +54,6 @@ python -m http.server 8080
 http://localhost:8080
 ```
 
-## 手機在外面使用
+## 手機使用
 
-請把本資料夾部署到 GitHub Pages。部署後會得到一個公開網址，手機不需要跟電腦連同一個 Wi-Fi，也能直接開網址刷題。
-
-詳細步驟請看 `DEPLOY_GITHUB_PAGES.md`。
-
-## 題庫格式
-
-在 `questions.json` 新增題目時，使用以下格式：
-
-```json
-{
-  "id": "chinese-001",
-  "subject": "國文",
-  "question": "題目文字",
-  "A": "選項 A",
-  "B": "選項 B",
-  "C": "選項 C",
-  "D": "選項 D",
-  "answer": "B",
-  "explanation": "解析文字"
-}
-```
-
-`id` 請保持唯一，錯題功能會用 `id` 存到瀏覽器的 `localStorage`。
+如果 GitHub Pages 已啟用，手機直接打開 GitHub Pages 網址即可使用。第一次載入後，錯題會存在該手機瀏覽器的 `localStorage` 裡。
