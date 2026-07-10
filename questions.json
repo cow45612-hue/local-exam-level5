@@ -4490,7 +4490,62 @@
     "C": "僱用人賠償損害時，對於為侵權行為之受僱人，有求償權",
     "D": "承攬人因執行承攬事項，不法侵害他人權利時，除非定作人於定作或指示有過失，否則定作人不負損害賠償責任",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "民法",
+      "subTopic": "侵權行為與責任能力",
+      "keyPoint": "無行為能力人或限制行為能力人侵權，不是永遠自己和法定代理人連帶賠；要看識別能力與監督義務。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "題目問何者錯誤，先鎖定每個選項講的是誰負責。",
+        "未成年人或無行為能力人侵權時，法律會看其行為時是否有識別能力。",
+        "法定代理人若能證明監督沒有疏懈，也可能免責。",
+        "A 說不論是否有識別能力都連帶賠，講得太絕對，所以錯。"
+      ],
+      "correctReason": "正解 A。民法處理無行為能力人或限制行為能力人的侵權責任，不是簡單一句『一律跟法定代理人連帶賠』。重點要看行為人有沒有識別能力，以及法定代理人有沒有盡到監督義務。A 把這些條件全部拿掉，所以是錯誤敘述。",
+      "optionAnalysis": {
+        "A": "A 錯在『不論其行為時是否有識別能力，皆應連帶負責』太絕對。民法不是這樣一刀切。",
+        "B": "B 對。法定代理人若能證明監督並未疏懈，可能不負賠償責任。",
+        "C": "C 對。僱用人先賠償後，對真正侵權的受僱人可以求償。",
+        "D": "D 對。承攬人侵權原則上自己負責，定作人除非在定作或指示有過失，否則不負責。"
+      },
+      "memoryTip": "侵權責任不要看到小孩就全丟給父母；先看識別能力，再看監督有沒有疏懈。",
+      "keywords": [
+        "侵權行為",
+        "識別能力",
+        "法定代理人",
+        "監督義務",
+        "求償權"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "民法",
+    "subTopic": "侵權行為與責任能力",
+    "keyPoint": "無行為能力人或限制行為能力人侵權，不是永遠自己和法定代理人連帶賠；要看識別能力與監督義務。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "題目問何者錯誤，先鎖定每個選項講的是誰負責。",
+      "未成年人或無行為能力人侵權時，法律會看其行為時是否有識別能力。",
+      "法定代理人若能證明監督沒有疏懈，也可能免責。",
+      "A 說不論是否有識別能力都連帶賠，講得太絕對，所以錯。"
+    ],
+    "correctReason": "正解 A。民法處理無行為能力人或限制行為能力人的侵權責任，不是簡單一句『一律跟法定代理人連帶賠』。重點要看行為人有沒有識別能力，以及法定代理人有沒有盡到監督義務。A 把這些條件全部拿掉，所以是錯誤敘述。",
+    "optionAnalysis": {
+      "A": "A 錯在『不論其行為時是否有識別能力，皆應連帶負責』太絕對。民法不是這樣一刀切。",
+      "B": "B 對。法定代理人若能證明監督並未疏懈，可能不負賠償責任。",
+      "C": "C 對。僱用人先賠償後，對真正侵權的受僱人可以求償。",
+      "D": "D 對。承攬人侵權原則上自己負責，定作人除非在定作或指示有過失，否則不負責。"
+    },
+    "memoryTip": "侵權責任不要看到小孩就全丟給父母；先看識別能力，再看監督有沒有疏懈。",
+    "keywords": [
+      "侵權行為",
+      "識別能力",
+      "法定代理人",
+      "監督義務",
+      "求償權"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。民法處理無行為能力人或限制行為能力人的侵權責任，不是簡單一句『一律跟法定代理人連帶賠』。重點要看行為人有沒有識別能力，以及法定代理人有沒有盡到監督義務。A 把這些條件全部拿掉，所以是錯誤敘述。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-32",
@@ -4505,7 +4560,62 @@
     "C": "高等行政法院高等行政訴訟庭",
     "D": "高等行政法院地方行政訴訟庭",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "行政救濟",
+      "subTopic": "交通裁罰與行政訴訟管轄",
+      "keyPoint": "交通罰單不服，申訴駁回後走行政訴訟，通常是高等行政法院地方行政訴訟庭。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先判斷罰單性質：紅燈右轉被開罰，是行政裁罰，不是刑事犯罪審判。",
+        "小明已經依規定提出申訴但被駁回，代表前置救濟走過了。",
+        "接下來要請求撤銷罰單，走行政訴訟系統。",
+        "交通裁罰這類案件由高等行政法院地方行政訴訟庭處理，所以選 D。"
+      ],
+      "correctReason": "正解 D。交通違規罰單屬於行政裁罰，不服申訴結果後，若要請求撤銷，應進入行政訴訟程序。現在行政訴訟制度下，這類地方性、簡易性行政案件會到高等行政法院地方行政訴訟庭。",
+      "optionAnalysis": {
+        "A": "A 錯。紅燈右轉罰單不是刑事案件，不會去地方法院刑事庭。",
+        "B": "B 錯。地方法院簡易庭主要處理民事簡易事件，不是交通罰單撤銷行政訴訟的管轄。",
+        "C": "C 錯。高等行政法院高等行政訴訟庭處理較高層級行政訴訟，不是這類交通裁罰案件的通常入口。",
+        "D": "D 正確。申訴駁回後要撤銷交通罰單，應向高等行政法院地方行政訴訟庭起訴。"
+      },
+      "memoryTip": "罰單不服是行政救濟，不是刑事庭；交通裁罰找地方行政訴訟庭。",
+      "keywords": [
+        "交通罰單",
+        "行政裁罰",
+        "申訴駁回",
+        "撤銷訴訟",
+        "地方行政訴訟庭"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "行政救濟",
+    "subTopic": "交通裁罰與行政訴訟管轄",
+    "keyPoint": "交通罰單不服，申訴駁回後走行政訴訟，通常是高等行政法院地方行政訴訟庭。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先判斷罰單性質：紅燈右轉被開罰，是行政裁罰，不是刑事犯罪審判。",
+      "小明已經依規定提出申訴但被駁回，代表前置救濟走過了。",
+      "接下來要請求撤銷罰單，走行政訴訟系統。",
+      "交通裁罰這類案件由高等行政法院地方行政訴訟庭處理，所以選 D。"
+    ],
+    "correctReason": "正解 D。交通違規罰單屬於行政裁罰，不服申訴結果後，若要請求撤銷，應進入行政訴訟程序。現在行政訴訟制度下，這類地方性、簡易性行政案件會到高等行政法院地方行政訴訟庭。",
+    "optionAnalysis": {
+      "A": "A 錯。紅燈右轉罰單不是刑事案件，不會去地方法院刑事庭。",
+      "B": "B 錯。地方法院簡易庭主要處理民事簡易事件，不是交通罰單撤銷行政訴訟的管轄。",
+      "C": "C 錯。高等行政法院高等行政訴訟庭處理較高層級行政訴訟，不是這類交通裁罰案件的通常入口。",
+      "D": "D 正確。申訴駁回後要撤銷交通罰單，應向高等行政法院地方行政訴訟庭起訴。"
+    },
+    "memoryTip": "罰單不服是行政救濟，不是刑事庭；交通裁罰找地方行政訴訟庭。",
+    "keywords": [
+      "交通罰單",
+      "行政裁罰",
+      "申訴駁回",
+      "撤銷訴訟",
+      "地方行政訴訟庭"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。交通違規罰單屬於行政裁罰，不服申訴結果後，若要請求撤銷，應進入行政訴訟程序。現在行政訴訟制度下，這類地方性、簡易性行政案件會到高等行政法院地方行政訴訟庭。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-33",
@@ -4520,7 +4630,62 @@
     "C": "非婚生子女認領",
     "D": "遺囑要件",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "民法",
+      "subTopic": "民法規範範圍",
+      "keyPoint": "民法管人身、親屬、繼承和財產關係；破產程序是破產法或相關程序法，不是民法本身規定事項。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "題目問哪個不是民法規定事項，要先想民法五編：總則、債、物權、親屬、繼承。",
+        "行為能力屬於總則。",
+        "非婚生子女認領屬於親屬，遺囑要件屬於繼承。",
+        "破產程序是另外的破產與清理程序法制，所以選 B。"
+      ],
+      "correctReason": "正解 B。民法主要規範私人間的基本法律關係，例如人的能力、契約、所有權、親屬、繼承。破產程序則是債務人無法清償時的清理程序，屬於特別程序法制，不是民法本身的規定事項。",
+      "optionAnalysis": {
+        "A": "A 行為能力是民法總則的重要內容。",
+        "B": "B 正確作為本題答案。破產程序不是民法規定事項，而是另有破產或債務清理相關法規處理。",
+        "C": "C 非婚生子女認領屬於民法親屬編。",
+        "D": "D 遺囑要件屬於民法繼承編。"
+      },
+      "memoryTip": "民法五大區：總則、債、物權、親屬、繼承；破產是另外的程序。",
+      "keywords": [
+        "民法",
+        "行為能力",
+        "破產程序",
+        "親屬",
+        "繼承"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "民法",
+    "subTopic": "民法規範範圍",
+    "keyPoint": "民法管人身、親屬、繼承和財產關係；破產程序是破產法或相關程序法，不是民法本身規定事項。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "題目問哪個不是民法規定事項，要先想民法五編：總則、債、物權、親屬、繼承。",
+      "行為能力屬於總則。",
+      "非婚生子女認領屬於親屬，遺囑要件屬於繼承。",
+      "破產程序是另外的破產與清理程序法制，所以選 B。"
+    ],
+    "correctReason": "正解 B。民法主要規範私人間的基本法律關係，例如人的能力、契約、所有權、親屬、繼承。破產程序則是債務人無法清償時的清理程序，屬於特別程序法制，不是民法本身的規定事項。",
+    "optionAnalysis": {
+      "A": "A 行為能力是民法總則的重要內容。",
+      "B": "B 正確作為本題答案。破產程序不是民法規定事項，而是另有破產或債務清理相關法規處理。",
+      "C": "C 非婚生子女認領屬於民法親屬編。",
+      "D": "D 遺囑要件屬於民法繼承編。"
+    },
+    "memoryTip": "民法五大區：總則、債、物權、親屬、繼承；破產是另外的程序。",
+    "keywords": [
+      "民法",
+      "行為能力",
+      "破產程序",
+      "親屬",
+      "繼承"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。民法主要規範私人間的基本法律關係，例如人的能力、契約、所有權、親屬、繼承。破產程序則是債務人無法清償時的清理程序，屬於特別程序法制，不是民法本身的規定事項。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-35",
@@ -4535,7 +4700,62 @@
     "C": "司法院院長",
     "D": "數位發展部部長",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "憲政體制",
+      "subTopic": "立法院質詢與五院關係",
+      "keyPoint": "立法院主要質詢行政院及行政部門；司法院院長屬司法權，不接受立委質詢。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "題目問誰沒有接受立委質詢義務，要分清行政部門和司法機關。",
+        "行政院院長、部會首長、行政院所屬獨立機關首長，通常要到立法院備詢。",
+        "司法院是司法權機關，為維持審判獨立，不受立法院質詢。",
+        "所以 C 司法院院長沒有接受立委質詢義務。"
+      ],
+      "correctReason": "正解 C。立法院質詢權主要是監督行政權，所以行政院院長、部長、行政院相關機關首長可被要求備詢。司法院掌司法權，若讓立委質詢司法首長，容易影響司法獨立，因此司法院院長沒有接受質詢的義務。",
+      "optionAnalysis": {
+        "A": "A 行政院院長是行政權最高首長，須接受立法院質詢。",
+        "B": "B 公平交易委員會雖是獨立機關，但仍屬行政體系，主任委員可接受立法院監督與備詢。",
+        "C": "C 正確。司法院院長屬司法權，不接受立法委員質詢。",
+        "D": "D 數位發展部部長是行政部門首長，須接受立法院質詢。"
+      },
+      "memoryTip": "立法院質詢是監督行政，不是拿來問司法審判。",
+      "keywords": [
+        "立法院質詢",
+        "行政院",
+        "司法院",
+        "司法獨立",
+        "備詢"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "憲政體制",
+    "subTopic": "立法院質詢與五院關係",
+    "keyPoint": "立法院主要質詢行政院及行政部門；司法院院長屬司法權，不接受立委質詢。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "題目問誰沒有接受立委質詢義務，要分清行政部門和司法機關。",
+      "行政院院長、部會首長、行政院所屬獨立機關首長，通常要到立法院備詢。",
+      "司法院是司法權機關，為維持審判獨立，不受立法院質詢。",
+      "所以 C 司法院院長沒有接受立委質詢義務。"
+    ],
+    "correctReason": "正解 C。立法院質詢權主要是監督行政權，所以行政院院長、部長、行政院相關機關首長可被要求備詢。司法院掌司法權，若讓立委質詢司法首長，容易影響司法獨立，因此司法院院長沒有接受質詢的義務。",
+    "optionAnalysis": {
+      "A": "A 行政院院長是行政權最高首長，須接受立法院質詢。",
+      "B": "B 公平交易委員會雖是獨立機關，但仍屬行政體系，主任委員可接受立法院監督與備詢。",
+      "C": "C 正確。司法院院長屬司法權，不接受立法委員質詢。",
+      "D": "D 數位發展部部長是行政部門首長，須接受立法院質詢。"
+    },
+    "memoryTip": "立法院質詢是監督行政，不是拿來問司法審判。",
+    "keywords": [
+      "立法院質詢",
+      "行政院",
+      "司法院",
+      "司法獨立",
+      "備詢"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。立法院質詢權主要是監督行政權，所以行政院院長、部長、行政院相關機關首長可被要求備詢。司法院掌司法權，若讓立委質詢司法首長，容易影響司法獨立，因此司法院院長沒有接受質詢的義務。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-36",
@@ -4544,13 +4764,68 @@
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "I don’t lend money to friends since moneyfriendship apart.",
+    "question": "I don’t lend money to friends since money ___ friendship apart.",
     "A": "fears",
     "B": "bears",
     "C": "tears",
     "D": "hears",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "動詞片語 tear apart",
+      "keyPoint": "money tears friendship apart 是說金錢會把友誼撕裂；tear apart 是固定用法。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看句意：我不借錢給朋友，因為錢會讓友誼分裂。",
+        "空格後面有 friendship apart，英文常用 tear something apart 表示撕裂、拆散。",
+        "主詞 money 是第三人稱單數，所以 tear 要加 s，變成 tears。",
+        "所以選 C。"
+      ],
+      "correctReason": "正解 C。句子意思是：我不借錢給朋友，因為金錢會把友誼拆散。英文片語是 tear apart，主詞 money 是單數不可數名詞，所以動詞用 tears。",
+      "optionAnalysis": {
+        "A": "A fears 是害怕，money fears friendship apart 不合文法也不合語意。",
+        "B": "B bears 是承受或生育，不能和 apart 組成把友誼拆散的意思。",
+        "C": "C 正確。tears friendship apart 表示把友誼撕裂、拆散。",
+        "D": "D hears 是聽見，語意完全不通。"
+      },
+      "memoryTip": "tear apart = 撕裂、拆散；money tears friendship apart = 錢傷感情。",
+      "keywords": [
+        "tear apart",
+        "friendship",
+        "money",
+        "第三人稱單數",
+        "tears"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "動詞片語 tear apart",
+    "keyPoint": "money tears friendship apart 是說金錢會把友誼撕裂；tear apart 是固定用法。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看句意：我不借錢給朋友，因為錢會讓友誼分裂。",
+      "空格後面有 friendship apart，英文常用 tear something apart 表示撕裂、拆散。",
+      "主詞 money 是第三人稱單數，所以 tear 要加 s，變成 tears。",
+      "所以選 C。"
+    ],
+    "correctReason": "正解 C。句子意思是：我不借錢給朋友，因為金錢會把友誼拆散。英文片語是 tear apart，主詞 money 是單數不可數名詞，所以動詞用 tears。",
+    "optionAnalysis": {
+      "A": "A fears 是害怕，money fears friendship apart 不合文法也不合語意。",
+      "B": "B bears 是承受或生育，不能和 apart 組成把友誼拆散的意思。",
+      "C": "C 正確。tears friendship apart 表示把友誼撕裂、拆散。",
+      "D": "D hears 是聽見，語意完全不通。"
+    },
+    "memoryTip": "tear apart = 撕裂、拆散；money tears friendship apart = 錢傷感情。",
+    "keywords": [
+      "tear apart",
+      "friendship",
+      "money",
+      "第三人稱單數",
+      "tears"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。句子意思是：我不借錢給朋友，因為金錢會把友誼拆散。英文片語是 tear apart，主詞 money 是單數不可數名詞，所以動詞用 tears。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-37",
@@ -4559,13 +4834,68 @@
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "While this sports cartwice as much as a regular one, it still attracts lots of consumers.",
+    "question": "While this sports car ___ twice as much as a regular one, it still attracts lots of consumers.",
     "A": "buys",
     "B": "takes",
     "C": "spends",
     "D": "costs",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "cost 表示花費",
+      "keyPoint": "物品作主詞時，要說 it costs money；人作主詞才常用 spend money。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看主詞：this sports car，主詞是車，不是人。",
+        "句意是這台跑車的價格是一般車的兩倍。",
+        "英文說某物花多少錢，用 cost；主詞是第三人稱單數，所以 costs。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。句子意思是：雖然這台跑車價格是一般車的兩倍，它仍吸引很多消費者。英文裡物品本身『花費多少』要用 cost，this sports car 是單數，所以用 costs。",
+      "optionAnalysis": {
+        "A": "A buys 是買，車不會自己買兩倍價格，不合語意。",
+        "B": "B takes 可用於花時間，例如 it takes two hours，但不適合直接說車價是兩倍。",
+        "C": "C spends 通常是人 spend money，不是 car spends money。",
+        "D": "D 正確。this sports car costs twice as much as a regular one。"
+      },
+      "memoryTip": "人 spend money；東西 cost money。",
+      "keywords": [
+        "cost",
+        "spend",
+        "sports car",
+        "twice as much",
+        "物品主詞"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "cost 表示花費",
+    "keyPoint": "物品作主詞時，要說 it costs money；人作主詞才常用 spend money。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看主詞：this sports car，主詞是車，不是人。",
+      "句意是這台跑車的價格是一般車的兩倍。",
+      "英文說某物花多少錢，用 cost；主詞是第三人稱單數，所以 costs。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。句子意思是：雖然這台跑車價格是一般車的兩倍，它仍吸引很多消費者。英文裡物品本身『花費多少』要用 cost，this sports car 是單數，所以用 costs。",
+    "optionAnalysis": {
+      "A": "A buys 是買，車不會自己買兩倍價格，不合語意。",
+      "B": "B takes 可用於花時間，例如 it takes two hours，但不適合直接說車價是兩倍。",
+      "C": "C spends 通常是人 spend money，不是 car spends money。",
+      "D": "D 正確。this sports car costs twice as much as a regular one。"
+    },
+    "memoryTip": "人 spend money；東西 cost money。",
+    "keywords": [
+      "cost",
+      "spend",
+      "sports car",
+      "twice as much",
+      "物品主詞"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。句子意思是：雖然這台跑車價格是一般車的兩倍，它仍吸引很多消費者。英文裡物品本身『花費多少』要用 cost，this sports car 是單數，所以用 costs。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-38",
@@ -4574,13 +4904,68 @@
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "Howwas I that I made the same mistake once again?",
+    "question": "How ___ was I that I made the same mistake once again?",
     "A": "careless",
     "B": "diligent",
     "C": "joyful",
     "D": "competent",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "形容詞語意判斷",
+      "keyPoint": "same mistake once again 表示又犯同樣錯，最自然是 How careless was I。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看後半句：I made the same mistake once again，我又犯同樣的錯。",
+        "這種情境是在責怪自己粗心，不是在稱讚自己勤奮、快樂或能幹。",
+        "How + adjective + was I 是感嘆句架構。",
+        "所以選 A careless。"
+      ],
+      "correctReason": "正解 A。句子意思是：我怎麼這麼粗心，竟然又犯同樣的錯？careless 是粗心的，剛好對應 same mistake once again。",
+      "optionAnalysis": {
+        "A": "A careless 粗心的，和又犯同樣錯最吻合。",
+        "B": "B diligent 勤奮的，犯同樣錯不是勤奮的表現。",
+        "C": "C joyful 快樂的，和犯錯情境無關。",
+        "D": "D competent 有能力的，語意方向相反。"
+      },
+      "memoryTip": "看到 made the same mistake again，第一反應是 careless。",
+      "keywords": [
+        "How careless",
+        "same mistake",
+        "once again",
+        "形容詞",
+        "語意"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "形容詞語意判斷",
+    "keyPoint": "same mistake once again 表示又犯同樣錯，最自然是 How careless was I。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看後半句：I made the same mistake once again，我又犯同樣的錯。",
+      "這種情境是在責怪自己粗心，不是在稱讚自己勤奮、快樂或能幹。",
+      "How + adjective + was I 是感嘆句架構。",
+      "所以選 A careless。"
+    ],
+    "correctReason": "正解 A。句子意思是：我怎麼這麼粗心，竟然又犯同樣的錯？careless 是粗心的，剛好對應 same mistake once again。",
+    "optionAnalysis": {
+      "A": "A careless 粗心的，和又犯同樣錯最吻合。",
+      "B": "B diligent 勤奮的，犯同樣錯不是勤奮的表現。",
+      "C": "C joyful 快樂的，和犯錯情境無關。",
+      "D": "D competent 有能力的，語意方向相反。"
+    },
+    "memoryTip": "看到 made the same mistake again，第一反應是 careless。",
+    "keywords": [
+      "How careless",
+      "same mistake",
+      "once again",
+      "形容詞",
+      "語意"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。句子意思是：我怎麼這麼粗心，竟然又犯同樣的錯？careless 是粗心的，剛好對應 same mistake once again。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-39",
@@ -4589,13 +4974,68 @@
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "The morning markets are filled withwho sell vegetables, fruits, and candy every day.",
+    "question": "The morning markets are filled with ___ who sell vegetables, fruits, and candy every day.",
     "A": "consumers",
     "B": "defenders",
     "C": "visitors",
     "D": "vendors",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "名詞字義 vendor",
+      "keyPoint": "在市場賣蔬果糖果的人是 vendors，意思是攤販、小販。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看關係子句：who sell vegetables, fruits, and candy every day。",
+        "會每天賣蔬菜、水果、糖果的人，是市場裡的攤販。",
+        "vendor 就是 seller、攤販、小販。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。句子意思是：早市裡滿是每天賣蔬菜、水果和糖果的攤販。vendors 指販賣東西的人，最符合市場情境。",
+      "optionAnalysis": {
+        "A": "A consumers 是消費者、顧客，他們是買東西的人，不是賣東西的人。",
+        "B": "B defenders 是防衛者，和市場買賣無關。",
+        "C": "C visitors 是訪客，可能到市場逛，但不一定賣東西。",
+        "D": "D vendors 是攤販、小販，正好是 sell vegetables, fruits, and candy 的人。"
+      },
+      "memoryTip": "vendor = seller = 攤販；consumer = buyer = 消費者。",
+      "keywords": [
+        "vendors",
+        "morning markets",
+        "sell",
+        "consumers",
+        "攤販"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "名詞字義 vendor",
+    "keyPoint": "在市場賣蔬果糖果的人是 vendors，意思是攤販、小販。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看關係子句：who sell vegetables, fruits, and candy every day。",
+      "會每天賣蔬菜、水果、糖果的人，是市場裡的攤販。",
+      "vendor 就是 seller、攤販、小販。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。句子意思是：早市裡滿是每天賣蔬菜、水果和糖果的攤販。vendors 指販賣東西的人，最符合市場情境。",
+    "optionAnalysis": {
+      "A": "A consumers 是消費者、顧客，他們是買東西的人，不是賣東西的人。",
+      "B": "B defenders 是防衛者，和市場買賣無關。",
+      "C": "C visitors 是訪客，可能到市場逛，但不一定賣東西。",
+      "D": "D vendors 是攤販、小販，正好是 sell vegetables, fruits, and candy 的人。"
+    },
+    "memoryTip": "vendor = seller = 攤販；consumer = buyer = 消費者。",
+    "keywords": [
+      "vendors",
+      "morning markets",
+      "sell",
+      "consumers",
+      "攤販"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。句子意思是：早市裡滿是每天賣蔬菜、水果和糖果的攤販。vendors 指販賣東西的人，最符合市場情境。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-40",
@@ -4604,13 +5044,71 @@
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "The witnesses were questioned inrooms because the police wanted to find out what had happened.",
+    "question": "The witnesses were questioned in ___ rooms because the police wanted to find out what had happened.",
     "A": "desperate",
     "B": "sincere",
     "C": "separate",
-    "D": "instant請依下文回答第41 題至第45 題A meetup is a gathering or event where people with similar interests come together to socialize, network, orparticipate in activities. It’s like a planned get-together",
+    "D": "instant",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "options": {
+      "D": "instant"
+    },
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "形容詞字義 separate",
+      "keyPoint": "警察想查明真相時，會把證人分開詢問，避免互相串供或影響說法。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看原因：police wanted to find out what had happened，警方想查明發生什麼事。",
+        "證人如果一起被問，可能互相影響答案；所以通常要分開問。",
+        "separate rooms 是不同房間、分開的房間。",
+        "所以選 C。"
+      ],
+      "correctReason": "正解 C。句子意思是：證人在不同房間被詢問，因為警方想查明事情經過。separate rooms 指分開的房間，符合偵訊證人時避免互相影響的情境。",
+      "optionAnalysis": {
+        "A": "A desperate 是絕望的，用來形容人或情況，不適合搭配 rooms 表示偵訊安排。",
+        "B": "B sincere 是真誠的，房間不會真誠，語意不通。",
+        "C": "C separate 正確，表示分開的、各自的。",
+        "D": "D instant 是立即的、即時的，instant rooms 不符合本句意思。"
+      },
+      "memoryTip": "警察問證人要查真相，常見搭配是 separate rooms 分開房間。",
+      "keywords": [
+        "witnesses",
+        "questioned",
+        "separate rooms",
+        "police",
+        "find out"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "形容詞字義 separate",
+    "keyPoint": "警察想查明真相時，會把證人分開詢問，避免互相串供或影響說法。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看原因：police wanted to find out what had happened，警方想查明發生什麼事。",
+      "證人如果一起被問，可能互相影響答案；所以通常要分開問。",
+      "separate rooms 是不同房間、分開的房間。",
+      "所以選 C。"
+    ],
+    "correctReason": "正解 C。句子意思是：證人在不同房間被詢問，因為警方想查明事情經過。separate rooms 指分開的房間，符合偵訊證人時避免互相影響的情境。",
+    "optionAnalysis": {
+      "A": "A desperate 是絕望的，用來形容人或情況，不適合搭配 rooms 表示偵訊安排。",
+      "B": "B sincere 是真誠的，房間不會真誠，語意不通。",
+      "C": "C separate 正確，表示分開的、各自的。",
+      "D": "D instant 是立即的、即時的，instant rooms 不符合本句意思。"
+    },
+    "memoryTip": "警察問證人要查真相，常見搭配是 separate rooms 分開房間。",
+    "keywords": [
+      "witnesses",
+      "questioned",
+      "separate rooms",
+      "police",
+      "find out"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。句子意思是：證人在不同房間被詢問，因為警方想查明事情經過。separate rooms 指分開的房間，符合偵訊證人時避免互相影響的情境。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-45",
