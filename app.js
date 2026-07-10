@@ -614,6 +614,38 @@ function keywordText(question) {
   return keywords;
 }
 
+function stripSubjectYear(subject) {
+  return String(subject || "").replace(/（.*?）/g, "");
+}
+
+function inferTopic(question) {
+  const subject = stripSubjectYear(question.subject);
+  const text = question.question;
+  if (subject.includes("國文")) {
+    if (text.includes("成語")) return "成語語意與語境判斷";
+    if (text.includes("字") || text.includes("意義")) return "字義辨析";
+    if (text.includes("冗贅")) return "語病與贅詞判斷";
+    if (text.includes("根據上文") || text.includes("上文")) return "閱讀理解與文意推論";
+    return "語文理解與用法判斷";
+  }
+  if (subject.includes("英文")) return "英文文意與語法判斷";
+  if (subject.includes("公民")) return "公民概念與制度判斷";
+  if (subject.includes("法學")) return "法律概念與制度判斷";
+  if (subject.includes("行政學")) return "行政學基本概念判斷";
+  return `${subject}核心概念判斷`;
+}
+
+function inferSubTopic(question) {
+  const text = question.question;
+  if (text.includes("何者正確")) return "找出正確敘述";
+  if (text.includes("何者錯誤") || text.includes("何者有誤")) return "找出錯誤敘述";
+  if (text.includes("何者最")) return "找出最符合題意的選項";
+  if (text.includes("意義與其他")) return "比較字詞意義是否相同";
+  if (text.includes("替換") || text.includes("文意不變")) return "同義替換與語境一致";
+  if (text.includes("根據上文")) return "依原文資訊判斷選項";
+  return "題幹關鍵字與選項比對";
+}
+
 function inferQuestionAsk(question) {
   if (question.question.includes("何者正確")) return "哪一個選項的敘述正確";
   if (question.question.includes("何者錯誤") || question.question.includes("何者有誤")) return "哪一個選項的敘述錯誤";
@@ -628,18 +660,62 @@ function inferOptionRole(optionText) {
   return `「${text}」這段敘述`;
 }
 
+function quotedTerms(text) {
+  return [...String(text || "").matchAll(/[「『](.*?)[」』]/g)].map((match) => match[1]).filter(Boolean);
+}
+
+function optionFocus(optionText) {
+  const quoted = quotedTerms(optionText);
+  if (quoted.length) return quoted.join("、");
+  const text = String(optionText || "").replace(/\s+/g, " ").trim();
+  return text.length > 24 ? `${text.slice(0, 24)}...` : text;
+}
+
+function correctReason(question) {
+  const ask = inferQuestionAsk(question);
+  const answer = question.answer;
+  const option = question.options[answer];
+  const subject = stripSubjectYear(question.subject);
+  const focus = optionFocus(option);
+
+  if (subject.includes("國文") && question.question.includes("成語")) {
+    return `題目要你判斷成語放進句子後，語氣和意思合不合。正解 ${answer} 的關鍵是「${focus}」和整句語境接得起來，所以不是只看成語熟不熟，而是看它放在那句話裡順不順、準不準。`;
+  }
+  if (subject.includes("國文") && (question.question.includes("意義") || question.question.includes("字"))) {
+    return `題目要比的是字詞在句子裡的實際意思。正解 ${answer} 的「${focus}」和其他選項的用法不同或最符合題目要求，所以要把字放回原句看，不要只背單一字面意思。`;
+  }
+  if (subject.includes("國文") && (question.question.includes("根據上文") || question.question.includes("上文"))) {
+    return `題目問的是能不能從原文推出選項。正解 ${answer} 的重點是「${focus}」最符合原文資訊；閱讀題不要憑印象補劇情，要回到文章找有沒有直接或合理支持。`;
+  }
+  return `題目問的是「${ask}」。正解 ${answer} 的重點是「${focus}」，它最直接回答題幹要求；解這類題不是看哪個詞最熟，而是看哪個選項真的扣回題目在問的那件事。`;
+}
+
 function fallbackOptionAnalysis(question, key) {
   const ask = inferQuestionAsk(question);
-  const role = inferOptionRole(question.options[key]);
-  return `${role}看起來也和本科有關，所以容易讓人想選。可是本題要判斷的是「${ask}」，這個選項沒有直接扣回題幹的核心要求；考場上要先問自己：它是在回答題目，還是只是出現了熟悉的名詞？`;
+  const option = question.options[key];
+  const role = inferOptionRole(option);
+  const focus = optionFocus(option);
+  const subject = stripSubjectYear(question.subject);
+
+  if (subject.includes("國文") && question.question.includes("成語")) {
+    return `${key} 說的是 ${role}。它容易誤選，是因為句子看起來通順或成語很熟；但成語題要檢查「${focus}」的意思是否真的貼合前後文。這個選項的問題就在於成語語意和句子要表達的重點沒有完全對上。`;
+  }
+  if (subject.includes("國文") && (question.question.includes("意義") || question.question.includes("字"))) {
+    return `${key} 的重點是「${focus}」。字義題不能只看字面，要看它在該句裡扮演的意思；這個選項沒有符合題目要比較的那個用法，所以會被排除。`;
+  }
+  if (subject.includes("國文") && (question.question.includes("根據上文") || question.question.includes("上文"))) {
+    return `${key} 提到的是「${focus}」。閱讀題要問：原文有沒有支持這句話？這個選項容易誤選，是因為它看似和文章主題有關，但沒有精準對到題幹要求或原文資訊。`;
+  }
+
+  return `${key} 說的是 ${role}。它可能和題目領域有關，所以看起來像答案；但本題要判斷的是「${ask}」，這個選項沒有正面回答題幹。下次看到這種選項，要先問：它是在回答題目，還是只是在旁邊講一個相關概念？`;
 }
 
 function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
   const answer = question.answer;
   const answerText = question.options[answer];
   const cleanedExplanation = cleanSourceOnlyExplanation(question.explanation, answer);
-  const topic = question.topic || question.concept || question.subject;
-  const subTopic = question.subTopic || question.keyPoint || "題幹判斷與選項排除";
+  const topic = question.topic || question.concept || inferTopic(question);
+  const subTopic = question.subTopic || question.keyPoint || inferSubTopic(question);
   const frequency = question.frequency || "★★★☆☆";
   const ask = inferQuestionAsk(question);
   const wrongNote = label ? `這題已累計錯 ${wrongCount} 次，先把判斷規則釘住。` : "";
@@ -664,7 +740,7 @@ function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
     question.plainExplanation ||
     (cleanedExplanation
       ? `題目問的是「${ask}」。答案 ${answer} 的「${answerText}」最能對上題幹要求；白話說，就是先抓題目要你判斷的點，再用這個觀念去看選項是否真的回答問題。補充觀念：${cleanedExplanation}`
-      : `題目問的是「${ask}」。答案 ${answer} 的「${answerText}」不是只看起來熟，而是最直接扣住題幹要判斷的方向；其他選項即使有相關名詞，只要沒有正面回答題幹，就要先排除。`);
+      : correctReason(question));
 
   const optionAnalysis = ["A", "B", "C", "D"]
     .filter((key) => key !== answer)
