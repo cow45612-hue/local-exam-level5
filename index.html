@@ -12,9 +12,27 @@
         <p class="label">免費刷題 App</p>
         <h1>地方特考五等</h1>
         <p class="subtitle">像闖關一樣一題一題練習，答錯立刻看正確答案與解析。</p>
+        <div class="hero-stats" aria-label="練習特色">
+          <div>
+            <strong>20</strong>
+            <span>題一回合</span>
+          </div>
+          <div>
+            <strong>649</strong>
+            <span>題庫題數</span>
+          </div>
+          <div>
+            <strong>即時</strong>
+            <span>答案解析</span>
+          </div>
+        </div>
       </header>
 
       <section id="setup-view" class="screen">
+        <div class="section-heading">
+          <h2>開始練習</h2>
+          <p>選科目後直接進入隨機題組。</p>
+        </div>
         <label class="field">
           <span>選擇科目</span>
           <select id="subject-select"></select>
@@ -25,7 +43,7 @@
           <button id="start-wrong">重練錯題</button>
         </div>
 
-        <p id="wrong-count" class="hint">錯題：0 題</p>
+        <p id="wrong-count" class="hint wrong-pill">錯題：0 題</p>
         <p id="load-message" class="message" hidden></p>
       </section>
 
