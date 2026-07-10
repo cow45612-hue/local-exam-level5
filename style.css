@@ -626,6 +626,31 @@ select {
   line-height: 1.65;
 }
 
+.option-analysis-list {
+  display: grid;
+  gap: 9px;
+}
+
+.option-analysis-list p {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: start;
+  margin: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 9px 10px;
+}
+
+.option-analysis-list b {
+  color: var(--danger);
+}
+
+.option-analysis-list span {
+  color: var(--ink);
+  line-height: 1.6;
+}
+
 .analysis-item small {
   display: inline-flex;
   margin-top: 9px;

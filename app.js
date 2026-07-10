@@ -85,6 +85,11 @@ function normalizeQuestion(raw, index) {
     explanation: raw.explanation,
     trap: raw.trap ?? "",
     concept: raw.concept ?? "",
+    keyPoint: raw.keyPoint ?? "",
+    plainExplanation: raw.plainExplanation ?? "",
+    optionAnalysis: raw.optionAnalysis ?? {},
+    memoryTip: raw.memoryTip ?? "",
+    keywords: raw.keywords ?? "",
   };
 }
 
@@ -491,7 +496,7 @@ function renderFeedback(question, answer, isCorrect, wrongCount) {
   const label = weaknessLabel(wrongCount);
   els.feedbackCard.hidden = false;
   els.feedbackCard.classList.add(isCorrect ? "correct" : "wrong");
-  els.feedbackTitle.textContent = isCorrect ? "答對了" : "答錯了";
+  els.feedbackTitle.textContent = `${isCorrect ? "答對了" : "答錯了"}：你選 ${answer}，正解 ${question.answer}`;
   renderAnalysisCard(question, answer, isCorrect, label, wrongCount);
   els.continueQuiz.disabled = false;
   els.continueQuiz.textContent = state.currentIndex === state.currentQuestions.length - 1 ? "看本次成果" : "下一題";
@@ -505,10 +510,25 @@ function appendAnalysisItem(parent, title, body, extra = "") {
   const heading = document.createElement("h3");
   heading.textContent = title;
 
-  const content = document.createElement("p");
-  content.textContent = body;
+  if (Array.isArray(body)) {
+    const list = document.createElement("div");
+    list.className = "option-analysis-list";
+    body.forEach(({ label, text }) => {
+      const row = document.createElement("p");
+      const key = document.createElement("b");
+      const detail = document.createElement("span");
+      key.textContent = label;
+      detail.textContent = text;
+      row.append(key, detail);
+      list.appendChild(row);
+    });
+    item.append(heading, list);
+  } else {
+    const content = document.createElement("p");
+    content.textContent = body;
+    item.append(heading, content);
+  }
 
-  item.append(heading, content);
 
   if (extra) {
     const note = document.createElement("small");
@@ -519,21 +539,77 @@ function appendAnalysisItem(parent, title, body, extra = "") {
   parent.appendChild(item);
 }
 
+function cleanSourceOnlyExplanation(text, answer) {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  const sourceOnly = new RegExp(`^官方答案[:：]?\\s*${answer}[。；;\\s]*(來源[:：].*)?$`);
+  if (sourceOnly.test(value)) return "";
+  return value.replace(/^官方答案[:：]?\s*[A-D][。；;\s]*/, "").replace(/來源[:：].*$/, "").trim();
+}
+
+function getKeywords(question) {
+  if (Array.isArray(question.keywords)) return question.keywords.join("、");
+  if (question.keywords) return String(question.keywords);
+
+  const quoted = question.question.match(/[「『](.*?)[」』]/g);
+  if (quoted?.length) return quoted.map((item) => item.replace(/[「」『』]/g, "")).slice(0, 3).join("、");
+  return "先抓題幹問的是「正確、錯誤、何者」，再回頭比對選項的關鍵名詞。";
+}
+
+function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
+  const answer = question.answer;
+  const answerText = question.options[answer];
+  const cleanedExplanation = cleanSourceOnlyExplanation(question.explanation, answer);
+  const concept = question.concept || question.subject;
+  const wrongNote = label ? `這題已累計錯 ${wrongCount} 次，先把判斷規則釘住。` : "";
+
+  const keyPoint =
+    question.keyPoint ||
+    `這題在考「${concept}」的基本判斷：題幹描述最符合哪一個選項。`;
+
+  const plainExplanation =
+    question.plainExplanation ||
+    (cleanedExplanation
+      ? `答案選 ${answer}。用白話講，就是先看題目問的核心，再用解析裡的觀念去排除干擾選項：${cleanedExplanation}`
+      : `答案選 ${answer}，重點不是背字母，而是看出選項「${answerText}」最符合題幹要求。遇到這類題目，先把題幹問法圈出來，再看哪個選項最直接回答它。`);
+
+  const optionAnalysis = ["A", "B", "C", "D"]
+    .filter((key) => key !== answer)
+    .map((key) => ({
+      label: `${key}：`,
+      text:
+        question.optionAnalysis?.[key] ||
+        `不選 ${key}，因為「${question.options[key]}」不是本題官方答案。考場上不要看到熟悉字就選，要確認它有沒有精準對到題幹。`,
+    }));
+
+  const memoryTip =
+    question.memoryTip ||
+    `記法：先看題幹要你判斷什麼，再選最能直接回答題幹的那個選項，不要被熟悉字眼帶走。`;
+
+  const keywords = getKeywords(question);
+
+  return {
+    keyPoint,
+    plainExplanation: wrongNote ? `${plainExplanation} ${wrongNote}` : plainExplanation,
+    optionAnalysis,
+    memoryTip,
+    keywords,
+    conceptNote: question.concept ? `核心觀念：${question.concept}` : "",
+    statusNote: isCorrect ? "這題答對了，接著把判斷方式記起來。" : "這題答錯了，先看干擾選項為什麼不能選。",
+  };
+}
+
 function renderAnalysisCard(question, answer, isCorrect, label, wrongCount) {
-  const trapFallback = isCorrect
-    ? "這題先記觀念，不要只背答案。"
-    : "你可能被相似選項或關鍵字誤導，建議把解析看完再下一題。";
-  const trapText = question.trap || trapFallback;
-  const conceptText = question.concept ? `核心觀念：${question.concept}` : "";
-  const whyText = label ? `${label}，累計錯 ${wrongCount} 次。${question.explanation}` : question.explanation;
+  const analysis = buildTeacherAnalysis(question, isCorrect, label, wrongCount);
 
   els.feedbackAnswer.innerHTML = "";
   els.feedbackExplanation.innerHTML = "";
 
-  appendAnalysisItem(els.feedbackAnswer, "你的答案", answer);
-  appendAnalysisItem(els.feedbackAnswer, "正確答案", question.answer);
-  appendAnalysisItem(els.feedbackExplanation, "為什麼這題選這個答案", whyText, conceptText);
-  appendAnalysisItem(els.feedbackExplanation, "這題容易錯在哪裡", trapText);
+  appendAnalysisItem(els.feedbackExplanation, "一句話重點：這題在考什麼？", analysis.keyPoint, analysis.statusNote);
+  appendAnalysisItem(els.feedbackExplanation, `白話解釋：為什麼答案是 ${question.answer}？`, analysis.plainExplanation, analysis.conceptNote);
+  appendAnalysisItem(els.feedbackExplanation, "其他選項為什麼不選", analysis.optionAnalysis);
+  appendAnalysisItem(els.feedbackExplanation, "記憶口訣", analysis.memoryTip);
+  appendAnalysisItem(els.feedbackExplanation, "下次看到這題要抓的關鍵字", analysis.keywords);
 }
 
 function finishQuiz() {
