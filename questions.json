@@ -5052,6 +5052,9 @@
     "answer": "C",
     "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
     "options": {
+      "A": "desperate",
+      "B": "sincere",
+      "C": "separate",
       "D": "instant"
     },
     "teacherExplanation": {
@@ -5111,19 +5114,376 @@
     "plainExplanation": "正解 C。句子意思是：證人在不同房間被詢問，因為警方想查明事情經過。separate rooms 指分開的房間，符合偵訊證人時避免互相影響的情境。"
   },
   {
-    "id": "general-administration-114-初等-公民與英文-45",
-    "source": "考選部歷屆試題 / LawPlayer 結構化整理",
+    "id": "general-administration-114-初等-公民與英文-41",
+    "source": "考選部歷屆試題 / 公職王試題 PDF 校正",
     "year": 114,
     "exam": "公務人員初等考試",
     "category": "一般行政",
     "subject": "公民與英文（114 初等考試）",
-    "question": "every interest imaginable, making it easy forpeople to connect with like-minded peers and enrich their lives through meaningful interactions.41",
+    "question": "請依下文回答第 41 題至第 45 題：\nA meetup is a gathering or event where people with similar interests come together to socialize, network, or participate in activities. It’s like a planned get-together ___ one can meet new people and connect with others who share their hobbies, passions, or goals. Meetups can take many ___, from casual coffee meetups to organized group outings. For example, a book club meetup might bring together book lovers to discuss their ___ reads, share recommendations, and enjoy lively conversations. Similarly, a hiking meetup could ___ a group of outdoor enthusiasts coming together to explore nature trails, enjoy scenic views, and bond over their love for hiking. Meetups provide opportunities for people to make new friends, learn from one another, and build supportive communities based on shared interests and experiences. Whether it’s cooking, photography or fitness, there is a meetup for ___ every interest imaginable, making it easy for people to connect with like-minded peers and enrich their lives through meaningful interactions.\n\n第 41 格應填入下列何者？",
+    "A": "which",
+    "B": "whether",
+    "C": "where",
+    "D": "whose",
+    "options": {
+      "A": "which",
+      "B": "whether",
+      "C": "where",
+      "D": "whose"
+    },
+    "answer": "C",
+    "explanation": "官方答案：C。來源：考選部歷屆試題，公職王 PDF 校正。",
+    "teacherExplanation": {
+      "topic": "英文克漏字",
+      "subTopic": "關係副詞 where",
+      "keyPoint": "planned get-together 後面要接一個地點/場合，說明人們在這個聚會中認識新朋友，所以用 where。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看空格前：It’s like a planned get-together，前面是一個聚會場合。",
+        "再看空格後：one can meet new people，後面是一個完整句子。",
+        "要把『聚會』和『人在其中認識朋友』接起來，英文用 where 表示在這個場合中。",
+        "所以第 41 格選 C where。"
+      ],
+      "correctReason": "正解 C。這句是在說 meetup 像一個事先安排好的聚會，在這個聚會裡，人們可以認識新朋友。where 不只指實體地點，也可以指場合、情境，所以 a get-together where one can meet new people 很自然。",
+      "optionAnalysis": {
+        "A": "A which 通常代替事物本身，若用 which，後面應該缺主詞或受詞；但 one can meet new people 已經完整。",
+        "B": "B whether 表示是否，放進句子會變成『聚會是否一個人可以認識朋友』，語意不通。",
+        "C": "C where 正確，表示在這個聚會場合中可以認識人。",
+        "D": "D whose 表示誰的，後面通常接名詞，例如 whose hobbies，不適合本句。"
+      },
+      "memoryTip": "看到場合 + 完整句，常用 where：a place/event where people do something。",
+      "keywords": [
+        "get-together",
+        "where",
+        "meet new people",
+        "場合",
+        "完整句"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文克漏字",
+    "subTopic": "關係副詞 where",
+    "keyPoint": "planned get-together 後面要接一個地點/場合，說明人們在這個聚會中認識新朋友，所以用 where。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看空格前：It’s like a planned get-together，前面是一個聚會場合。",
+      "再看空格後：one can meet new people，後面是一個完整句子。",
+      "要把『聚會』和『人在其中認識朋友』接起來，英文用 where 表示在這個場合中。",
+      "所以第 41 格選 C where。"
+    ],
+    "correctReason": "正解 C。這句是在說 meetup 像一個事先安排好的聚會，在這個聚會裡，人們可以認識新朋友。where 不只指實體地點，也可以指場合、情境，所以 a get-together where one can meet new people 很自然。",
+    "optionAnalysis": {
+      "A": "A which 通常代替事物本身，若用 which，後面應該缺主詞或受詞；但 one can meet new people 已經完整。",
+      "B": "B whether 表示是否，放進句子會變成『聚會是否一個人可以認識朋友』，語意不通。",
+      "C": "C where 正確，表示在這個聚會場合中可以認識人。",
+      "D": "D whose 表示誰的，後面通常接名詞，例如 whose hobbies，不適合本句。"
+    },
+    "memoryTip": "看到場合 + 完整句，常用 where：a place/event where people do something。",
+    "keywords": [
+      "get-together",
+      "where",
+      "meet new people",
+      "場合",
+      "完整句"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。這句是在說 meetup 像一個事先安排好的聚會，在這個聚會裡，人們可以認識新朋友。where 不只指實體地點，也可以指場合、情境，所以 a get-together where one can meet new people 很自然。"
+  },
+  {
+    "id": "general-administration-114-初等-公民與英文-42",
+    "source": "考選部歷屆試題 / 公職王試題 PDF 校正",
+    "year": 114,
+    "exam": "公務人員初等考試",
+    "category": "一般行政",
+    "subject": "公民與英文（114 初等考試）",
+    "question": "請依下文回答第 41 題至第 45 題：\nA meetup is a gathering or event where people with similar interests come together to socialize, network, or participate in activities. It’s like a planned get-together ___ one can meet new people and connect with others who share their hobbies, passions, or goals. Meetups can take many ___, from casual coffee meetups to organized group outings. For example, a book club meetup might bring together book lovers to discuss their ___ reads, share recommendations, and enjoy lively conversations. Similarly, a hiking meetup could ___ a group of outdoor enthusiasts coming together to explore nature trails, enjoy scenic views, and bond over their love for hiking. Meetups provide opportunities for people to make new friends, learn from one another, and build supportive communities based on shared interests and experiences. Whether it’s cooking, photography or fitness, there is a meetup for ___ every interest imaginable, making it easy for people to connect with like-minded peers and enrich their lives through meaningful interactions.\n\n第 42 格應填入下列何者？",
+    "A": "prices",
+    "B": "places",
+    "C": "forms",
+    "D": "seats",
+    "options": {
+      "A": "prices",
+      "B": "places",
+      "C": "forms",
+      "D": "seats"
+    },
+    "answer": "C",
+    "explanation": "官方答案：C。來源：考選部歷屆試題，公職王 PDF 校正。",
+    "teacherExplanation": {
+      "topic": "英文克漏字",
+      "subTopic": "固定搭配 take many forms",
+      "keyPoint": "meetups can take many forms 是固定說法，意思是聚會可以有很多形式。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看後面例子：casual coffee meetups、organized group outings，都是不同形式的 meetup。",
+        "英文常說 take many forms，意思是呈現很多種形式。",
+        "prices、places、seats 都無法概括後面列出的活動型態。",
+        "所以第 42 格選 C forms。"
+      ],
+      "correctReason": "正解 C。文章說 meetup 從喝咖啡的小聚到有組織的團體出遊都有，這是在說聚會的形式很多。take many forms 是常見搭配，意思是『有許多形式』。",
+      "optionAnalysis": {
+        "A": "A prices 是價格，後面不是在列便宜或昂貴的 meetup。",
+        "B": "B places 是地點，但後面 coffee meetups、group outings 比較像活動形式，不只是地點。",
+        "C": "C forms 正確，take many forms 表示有多種形式。",
+        "D": "D seats 是座位，和文章脈絡無關。"
+      },
+      "memoryTip": "take many forms = 有很多形式，考到就直接記成片語。",
+      "keywords": [
+        "take many forms",
+        "forms",
+        "coffee meetups",
+        "group outings"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文克漏字",
+    "subTopic": "固定搭配 take many forms",
+    "keyPoint": "meetups can take many forms 是固定說法，意思是聚會可以有很多形式。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看後面例子：casual coffee meetups、organized group outings，都是不同形式的 meetup。",
+      "英文常說 take many forms，意思是呈現很多種形式。",
+      "prices、places、seats 都無法概括後面列出的活動型態。",
+      "所以第 42 格選 C forms。"
+    ],
+    "correctReason": "正解 C。文章說 meetup 從喝咖啡的小聚到有組織的團體出遊都有，這是在說聚會的形式很多。take many forms 是常見搭配，意思是『有許多形式』。",
+    "optionAnalysis": {
+      "A": "A prices 是價格，後面不是在列便宜或昂貴的 meetup。",
+      "B": "B places 是地點，但後面 coffee meetups、group outings 比較像活動形式，不只是地點。",
+      "C": "C forms 正確，take many forms 表示有多種形式。",
+      "D": "D seats 是座位，和文章脈絡無關。"
+    },
+    "memoryTip": "take many forms = 有很多形式，考到就直接記成片語。",
+    "keywords": [
+      "take many forms",
+      "forms",
+      "coffee meetups",
+      "group outings"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。文章說 meetup 從喝咖啡的小聚到有組織的團體出遊都有，這是在說聚會的形式很多。take many forms 是常見搭配，意思是『有許多形式』。"
+  },
+  {
+    "id": "general-administration-114-初等-公民與英文-43",
+    "source": "考選部歷屆試題 / 公職王試題 PDF 校正",
+    "year": 114,
+    "exam": "公務人員初等考試",
+    "category": "一般行政",
+    "subject": "公民與英文（114 初等考試）",
+    "question": "請依下文回答第 41 題至第 45 題：\nA meetup is a gathering or event where people with similar interests come together to socialize, network, or participate in activities. It’s like a planned get-together ___ one can meet new people and connect with others who share their hobbies, passions, or goals. Meetups can take many ___, from casual coffee meetups to organized group outings. For example, a book club meetup might bring together book lovers to discuss their ___ reads, share recommendations, and enjoy lively conversations. Similarly, a hiking meetup could ___ a group of outdoor enthusiasts coming together to explore nature trails, enjoy scenic views, and bond over their love for hiking. Meetups provide opportunities for people to make new friends, learn from one another, and build supportive communities based on shared interests and experiences. Whether it’s cooking, photography or fitness, there is a meetup for ___ every interest imaginable, making it easy for people to connect with like-minded peers and enrich their lives through meaningful interactions.\n\n第 43 格應填入下列何者？",
+    "A": "rented",
+    "B": "excited",
+    "C": "favorite",
+    "D": "famous",
+    "options": {
+      "A": "rented",
+      "B": "excited",
+      "C": "favorite",
+      "D": "famous"
+    },
+    "answer": "C",
+    "explanation": "官方答案：C。來源：考選部歷屆試題，公職王 PDF 校正。",
+    "teacherExplanation": {
+      "topic": "英文克漏字",
+      "subTopic": "形容詞 favorite",
+      "keyPoint": "book lovers 在讀書會討論的是自己喜歡的書，所以 favorite reads 最自然。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看主詞：book lovers，愛書的人。",
+        "讀書會中會 discuss their ___ reads、share recommendations，這是在談喜歡的閱讀作品。",
+        "favorite reads 是常見用法，意思是最喜歡的讀物。",
+        "所以第 43 格選 C favorite。"
+      ],
+      "correctReason": "正解 C。book club meetup 的情境是愛書人聚在一起討論自己喜歡的讀物、分享推薦。favorite reads 就是『喜歡的書／愛讀的作品』，最符合讀書會脈絡。",
+      "optionAnalysis": {
+        "A": "A rented 是租來的，讀書會不一定討論租來的書，重點不在取得方式。",
+        "B": "B excited 是興奮的，通常形容人，不自然修飾 reads。",
+        "C": "C favorite 正確，favorite reads 表示喜歡的讀物。",
+        "D": "D famous 是有名的，讀書會可能討論名著，但文章要說的是個人喜好與推薦，不是知名度。"
+      },
+      "memoryTip": "book lovers + share recommendations，通常是在聊 favorite reads。",
+      "keywords": [
+        "book club",
+        "book lovers",
+        "favorite reads",
+        "recommendations"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文克漏字",
+    "subTopic": "形容詞 favorite",
+    "keyPoint": "book lovers 在讀書會討論的是自己喜歡的書，所以 favorite reads 最自然。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看主詞：book lovers，愛書的人。",
+      "讀書會中會 discuss their ___ reads、share recommendations，這是在談喜歡的閱讀作品。",
+      "favorite reads 是常見用法，意思是最喜歡的讀物。",
+      "所以第 43 格選 C favorite。"
+    ],
+    "correctReason": "正解 C。book club meetup 的情境是愛書人聚在一起討論自己喜歡的讀物、分享推薦。favorite reads 就是『喜歡的書／愛讀的作品』，最符合讀書會脈絡。",
+    "optionAnalysis": {
+      "A": "A rented 是租來的，讀書會不一定討論租來的書，重點不在取得方式。",
+      "B": "B excited 是興奮的，通常形容人，不自然修飾 reads。",
+      "C": "C favorite 正確，favorite reads 表示喜歡的讀物。",
+      "D": "D famous 是有名的，讀書會可能討論名著，但文章要說的是個人喜好與推薦，不是知名度。"
+    },
+    "memoryTip": "book lovers + share recommendations，通常是在聊 favorite reads。",
+    "keywords": [
+      "book club",
+      "book lovers",
+      "favorite reads",
+      "recommendations"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。book club meetup 的情境是愛書人聚在一起討論自己喜歡的讀物、分享推薦。favorite reads 就是『喜歡的書／愛讀的作品』，最符合讀書會脈絡。"
+  },
+  {
+    "id": "general-administration-114-初等-公民與英文-44",
+    "source": "考選部歷屆試題 / 公職王試題 PDF 校正",
+    "year": 114,
+    "exam": "公務人員初等考試",
+    "category": "一般行政",
+    "subject": "公民與英文（114 初等考試）",
+    "question": "請依下文回答第 41 題至第 45 題：\nA meetup is a gathering or event where people with similar interests come together to socialize, network, or participate in activities. It’s like a planned get-together ___ one can meet new people and connect with others who share their hobbies, passions, or goals. Meetups can take many ___, from casual coffee meetups to organized group outings. For example, a book club meetup might bring together book lovers to discuss their ___ reads, share recommendations, and enjoy lively conversations. Similarly, a hiking meetup could ___ a group of outdoor enthusiasts coming together to explore nature trails, enjoy scenic views, and bond over their love for hiking. Meetups provide opportunities for people to make new friends, learn from one another, and build supportive communities based on shared interests and experiences. Whether it’s cooking, photography or fitness, there is a meetup for ___ every interest imaginable, making it easy for people to connect with like-minded peers and enrich their lives through meaningful interactions.\n\n第 44 格應填入下列何者？",
+    "A": "deny",
+    "B": "deprive",
+    "C": "insist",
+    "D": "involve",
+    "options": {
+      "A": "deny",
+      "B": "deprive",
+      "C": "insist",
+      "D": "involve"
+    },
+    "answer": "D",
+    "explanation": "官方答案：D。來源：考選部歷屆試題，公職王 PDF 校正。",
+    "teacherExplanation": {
+      "topic": "英文克漏字",
+      "subTopic": "動詞 involve",
+      "keyPoint": "hiking meetup 會包含一群戶外愛好者一起健行，所以用 involve。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看句子：a hiking meetup could ___ a group of outdoor enthusiasts coming together。",
+        "這裡要表達一個健行聚會可能包含哪些人和活動。",
+        "involve 表示包含、涉及，後面可以接人或活動。",
+        "所以第 44 格選 D involve。"
+      ],
+      "correctReason": "正解 D。文章舉 hiking meetup 當例子，意思是這種聚會可能包含一群戶外愛好者一起探索步道、欣賞風景。involve 正好表示『包含、牽涉到』。",
+      "optionAnalysis": {
+        "A": "A deny 是否認，hiking meetup 不會『否認一群戶外愛好者』。",
+        "B": "B deprive 是剝奪，常用 deprive someone of something，和本句不合。",
+        "C": "C insist 是堅持，通常接 on 或 that 子句，不適合這裡。",
+        "D": "D involve 正確，表示包含一群人一起做某活動。"
+      },
+      "memoryTip": "活動包含哪些人事物，用 involve。",
+      "keywords": [
+        "hiking meetup",
+        "involve",
+        "outdoor enthusiasts",
+        "coming together"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文克漏字",
+    "subTopic": "動詞 involve",
+    "keyPoint": "hiking meetup 會包含一群戶外愛好者一起健行，所以用 involve。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看句子：a hiking meetup could ___ a group of outdoor enthusiasts coming together。",
+      "這裡要表達一個健行聚會可能包含哪些人和活動。",
+      "involve 表示包含、涉及，後面可以接人或活動。",
+      "所以第 44 格選 D involve。"
+    ],
+    "correctReason": "正解 D。文章舉 hiking meetup 當例子，意思是這種聚會可能包含一群戶外愛好者一起探索步道、欣賞風景。involve 正好表示『包含、牽涉到』。",
+    "optionAnalysis": {
+      "A": "A deny 是否認，hiking meetup 不會『否認一群戶外愛好者』。",
+      "B": "B deprive 是剝奪，常用 deprive someone of something，和本句不合。",
+      "C": "C insist 是堅持，通常接 on 或 that 子句，不適合這裡。",
+      "D": "D involve 正確，表示包含一群人一起做某活動。"
+    },
+    "memoryTip": "活動包含哪些人事物，用 involve。",
+    "keywords": [
+      "hiking meetup",
+      "involve",
+      "outdoor enthusiasts",
+      "coming together"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。文章舉 hiking meetup 當例子，意思是這種聚會可能包含一群戶外愛好者一起探索步道、欣賞風景。involve 正好表示『包含、牽涉到』。"
+  },
+  {
+    "id": "general-administration-114-初等-公民與英文-45",
+    "source": "考選部歷屆試題 / 公職王試題 PDF 校正",
+    "year": 114,
+    "exam": "公務人員初等考試",
+    "category": "一般行政",
+    "subject": "公民與英文（114 初等考試）",
+    "question": "請依下文回答第 41 題至第 45 題：\nA meetup is a gathering or event where people with similar interests come together to socialize, network, or participate in activities. It’s like a planned get-together ___ one can meet new people and connect with others who share their hobbies, passions, or goals. Meetups can take many ___, from casual coffee meetups to organized group outings. For example, a book club meetup might bring together book lovers to discuss their ___ reads, share recommendations, and enjoy lively conversations. Similarly, a hiking meetup could ___ a group of outdoor enthusiasts coming together to explore nature trails, enjoy scenic views, and bond over their love for hiking. Meetups provide opportunities for people to make new friends, learn from one another, and build supportive communities based on shared interests and experiences. Whether it’s cooking, photography or fitness, there is a meetup for ___ every interest imaginable, making it easy for people to connect with like-minded peers and enrich their lives through meaningful interactions.\n\n第 45 格應填入下列何者？",
     "A": "hardly",
     "B": "quickly",
     "C": "always",
-    "D": "almost請依下文回答第46 題至第50 題Board games are fun games that you play on a flat board with pieces and rules. They come in different types, eachoffering its own unique experience and challenges. One popular type is strategy games, such as Chess or Risk, whereplayers use their wits and planning skills to outsmart their opponents and achieve victory. Another type of board gamesis word games, like Scrabble or Bananagrams. These games test players’ vocabulary and spelling skills as they try tocreate words from the letters available to them. Some board games focus on teamwork, such as Pandemic or ForbiddenIsland, where players must work together to achieve a common goal, whether it’s curing diseases or escaping from asinking island. There are also board games based on luck and chance, such as Monopoly or Sorry. In these games, playersrely on dice rolls or card draws to determine their actions and outcomes. These games are exciting, offering players thethrill of anticipation as they wait to see what fate has in store for them.People enjoy playing board games for different reasons. For one, board games bring friends and family memberstogether to spend time for fun. Board games also help you learn new things. Some games teach you strategies to solveproblems or improve your memory and math skills. Board games are entertaining too, making you happy even if youdon’t win. Besides, board games are a way for people to relax and take a break from phones or computers. In short, boardgames are popular because they are social, educational, and enjoyable. No matter what type of board games people prefer,there’s something for everyone to enjoy.",
+    "D": "almost",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，公職王 PDF 校正。",
+    "options": {
+      "A": "hardly",
+      "B": "quickly",
+      "C": "always",
+      "D": "almost"
+    },
+    "teacherExplanation": {
+      "topic": "英文克漏字",
+      "subTopic": "副詞 almost",
+      "keyPoint": "almost every interest imaginable 是固定自然的說法，意思是幾乎所有想得到的興趣都有 meetup。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看句子：there is a meetup for ___ every interest imaginable。",
+        "文章在強調 meetup 種類很多，幾乎任何興趣都找得到。",
+        "almost every 是常見搭配，表示幾乎每一個。",
+        "所以第 45 格選 D almost。"
+      ],
+      "correctReason": "正解 D。句子意思是：無論烹飪、攝影或健身，幾乎每一種想得到的興趣都有 meetup。almost every interest imaginable 是很自然的英文搭配。",
+      "optionAnalysis": {
+        "A": "A hardly every 不合英文搭配；hardly 是幾乎不，語意也和文章相反。",
+        "B": "B quickly every 不合文法，quickly 是很快地，不能修飾 every interest。",
+        "C": "C always every 不自然；always 通常修飾動作發生頻率，不用來說『每一種興趣』。",
+        "D": "D almost 正確，almost every 表示幾乎每一個。"
+      },
+      "memoryTip": "almost every = 幾乎每一個；看到 every 前面缺程度副詞，優先想 almost。",
+      "keywords": [
+        "almost every",
+        "interest imaginable",
+        "meetup",
+        "副詞"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文克漏字",
+    "subTopic": "副詞 almost",
+    "keyPoint": "almost every interest imaginable 是固定自然的說法，意思是幾乎所有想得到的興趣都有 meetup。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看句子：there is a meetup for ___ every interest imaginable。",
+      "文章在強調 meetup 種類很多，幾乎任何興趣都找得到。",
+      "almost every 是常見搭配，表示幾乎每一個。",
+      "所以第 45 格選 D almost。"
+    ],
+    "correctReason": "正解 D。句子意思是：無論烹飪、攝影或健身，幾乎每一種想得到的興趣都有 meetup。almost every interest imaginable 是很自然的英文搭配。",
+    "optionAnalysis": {
+      "A": "A hardly every 不合英文搭配；hardly 是幾乎不，語意也和文章相反。",
+      "B": "B quickly every 不合文法，quickly 是很快地，不能修飾 every interest。",
+      "C": "C always every 不自然；always 通常修飾動作發生頻率，不用來說『每一種興趣』。",
+      "D": "D almost 正確，almost every 表示幾乎每一個。"
+    },
+    "memoryTip": "almost every = 幾乎每一個；看到 every 前面缺程度副詞，優先想 almost。",
+    "keywords": [
+      "almost every",
+      "interest imaginable",
+      "meetup",
+      "副詞"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。句子意思是：無論烹飪、攝影或健身，幾乎每一種想得到的興趣都有 meetup。almost every interest imaginable 是很自然的英文搭配。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-46",
@@ -5138,7 +5498,62 @@
     "C": "Types and Chances of Board Games.",
     "D": "Actions and Outcomes of Board Games.",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文閱讀",
+      "subTopic": "文章主旨與標題",
+      "keyPoint": "這篇先介紹桌遊有很多類型，再說桌遊受歡迎的原因，所以最佳標題要同時包含多樣性與吸引力。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看第一段：strategy games、word games、teamwork games、luck games，重點是桌遊種類多。",
+        "再看第二段：social、educational、enjoyable，重點是為什麼大家喜歡桌遊。",
+        "標題不能只抓其中一種遊戲，也不能只抓規則或運氣。",
+        "B 的 Diversity and Appeal 同時涵蓋種類多與有吸引力。"
+      ],
+      "correctReason": "正解 B。文章不是只介紹策略，也不是只談規則或運氣；它先說 board games 有各種不同類型，再說它們能社交、學習、娛樂、放鬆，所以最佳標題是『桌遊的多樣性與吸引力』。",
+      "optionAnalysis": {
+        "A": "A 只抓 strategy 和 rules，範圍太窄，文章還有文字遊戲、合作遊戲、運氣遊戲與受歡迎原因。",
+        "B": "B 正確。Diversity 對應多種類型，Appeal 對應受歡迎原因。",
+        "C": "C 雖提到 types 和 chances，但 chance 只是其中一類，不是全文主軸。",
+        "D": "D actions and outcomes 只出現在運氣遊戲段落附近，不能當全文標題。"
+      },
+      "memoryTip": "選英文標題要抓兩段共同主軸，不要被單一例子帶走。",
+      "keywords": [
+        "best title",
+        "diversity",
+        "appeal",
+        "board games",
+        "types"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文閱讀",
+    "subTopic": "文章主旨與標題",
+    "keyPoint": "這篇先介紹桌遊有很多類型，再說桌遊受歡迎的原因，所以最佳標題要同時包含多樣性與吸引力。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看第一段：strategy games、word games、teamwork games、luck games，重點是桌遊種類多。",
+      "再看第二段：social、educational、enjoyable，重點是為什麼大家喜歡桌遊。",
+      "標題不能只抓其中一種遊戲，也不能只抓規則或運氣。",
+      "B 的 Diversity and Appeal 同時涵蓋種類多與有吸引力。"
+    ],
+    "correctReason": "正解 B。文章不是只介紹策略，也不是只談規則或運氣；它先說 board games 有各種不同類型，再說它們能社交、學習、娛樂、放鬆，所以最佳標題是『桌遊的多樣性與吸引力』。",
+    "optionAnalysis": {
+      "A": "A 只抓 strategy 和 rules，範圍太窄，文章還有文字遊戲、合作遊戲、運氣遊戲與受歡迎原因。",
+      "B": "B 正確。Diversity 對應多種類型，Appeal 對應受歡迎原因。",
+      "C": "C 雖提到 types 和 chances，但 chance 只是其中一類，不是全文主軸。",
+      "D": "D actions and outcomes 只出現在運氣遊戲段落附近，不能當全文標題。"
+    },
+    "memoryTip": "選英文標題要抓兩段共同主軸，不要被單一例子帶走。",
+    "keywords": [
+      "best title",
+      "diversity",
+      "appeal",
+      "board games",
+      "types"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。文章不是只介紹策略，也不是只談規則或運氣；它先說 board games 有各種不同類型，再說它們能社交、學習、娛樂、放鬆，所以最佳標題是『桌遊的多樣性與吸引力』。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-47",
@@ -5153,7 +5568,60 @@
     "C": "It focuses on spelling skills and vocabulary creativity.",
     "D": "It relies on chances and luck to decide the winner of the game.",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文閱讀",
+      "subTopic": "細節題 Pandemic",
+      "keyPoint": "文章把 Pandemic 放在 teamwork games，重點是玩家必須合作達成共同目標。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先回原文找 Pandemic：Some board games focus on teamwork, such as Pandemic or Forbidden Island。",
+        "下一句說 players must work together to achieve a common goal。",
+        "所以 Pandemic 的特色是團隊合作，不是拼字，也不是靠運氣。",
+        "答案選 A。"
+      ],
+      "correctReason": "正解 A。原文說 Pandemic 屬於 teamwork 類桌遊，玩家必須一起合作完成共同目標。因此它的特色是 requires cooperation among team members。",
+      "optionAnalysis": {
+        "A": "A 正確。requires cooperation 正好對應 work together。",
+        "B": "B 把 Pandemic 和 Forbidden Island 的例子混在一起。curing diseases 對 Pandemic，escaping from a sinking island 對 Forbidden Island。",
+        "C": "C 是 Scrabble 或 Bananagrams 這類 word games 的特色，不是 Pandemic。",
+        "D": "D 是 Monopoly 或 Sorry 這類 luck and chance games 的特色，不是 Pandemic。"
+      },
+      "memoryTip": "細節題先回原文定位關鍵名詞，Pandemic 附近的關鍵字是 teamwork。",
+      "keywords": [
+        "Pandemic",
+        "teamwork",
+        "work together",
+        "common goal"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文閱讀",
+    "subTopic": "細節題 Pandemic",
+    "keyPoint": "文章把 Pandemic 放在 teamwork games，重點是玩家必須合作達成共同目標。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先回原文找 Pandemic：Some board games focus on teamwork, such as Pandemic or Forbidden Island。",
+      "下一句說 players must work together to achieve a common goal。",
+      "所以 Pandemic 的特色是團隊合作，不是拼字，也不是靠運氣。",
+      "答案選 A。"
+    ],
+    "correctReason": "正解 A。原文說 Pandemic 屬於 teamwork 類桌遊，玩家必須一起合作完成共同目標。因此它的特色是 requires cooperation among team members。",
+    "optionAnalysis": {
+      "A": "A 正確。requires cooperation 正好對應 work together。",
+      "B": "B 把 Pandemic 和 Forbidden Island 的例子混在一起。curing diseases 對 Pandemic，escaping from a sinking island 對 Forbidden Island。",
+      "C": "C 是 Scrabble 或 Bananagrams 這類 word games 的特色，不是 Pandemic。",
+      "D": "D 是 Monopoly 或 Sorry 這類 luck and chance games 的特色，不是 Pandemic。"
+    },
+    "memoryTip": "細節題先回原文定位關鍵名詞，Pandemic 附近的關鍵字是 teamwork。",
+    "keywords": [
+      "Pandemic",
+      "teamwork",
+      "work together",
+      "common goal"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。原文說 Pandemic 屬於 teamwork 類桌遊，玩家必須一起合作完成共同目標。因此它的特色是 requires cooperation among team members。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-48",
@@ -5168,7 +5636,62 @@
     "C": "Board games can give us a good break without looking at screens.",
     "D": "Board games can serve as good exams to test students’ vocabulary.",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文閱讀",
+      "subTopic": "事實判斷題",
+      "keyPoint": "文章明說桌遊能讓人從手機或電腦前放鬆一下，所以 C 正確。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "題目問哪個敘述正確，要逐一對照原文。",
+        "第二段說 board games are a way for people to relax and take a break from phones or computers。",
+        "C 幾乎就是這句的改寫。",
+        "其他選項不是誇大，就是把某類遊戲的特色講成全部桌遊。"
+      ],
+      "correctReason": "正解 C。原文說桌遊是一種讓人放鬆、暫時離開手機或電腦的方法。C 的 give us a good break without looking at screens，就是這句話的同義改寫。",
+      "optionAnalysis": {
+        "A": "A 說靠運氣的桌遊是最刺激、最受歡迎，原文沒有比較誰最受歡迎。",
+        "B": "B 把 Pandemic 當成現實中對抗疾病的策略訓練，原文只是說遊戲裡有合作目標。",
+        "C": "C 正確，對應 take a break from phones or computers。",
+        "D": "D 說桌遊可以當學生字彙考試，原文只說 word games test vocabulary and spelling skills，不是正式考試。"
+      },
+      "memoryTip": "看到 true 題，找原文同義改寫；C 就是 screens = phones or computers。",
+      "keywords": [
+        "true statement",
+        "take a break",
+        "phones",
+        "computers",
+        "screens"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文閱讀",
+    "subTopic": "事實判斷題",
+    "keyPoint": "文章明說桌遊能讓人從手機或電腦前放鬆一下，所以 C 正確。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "題目問哪個敘述正確，要逐一對照原文。",
+      "第二段說 board games are a way for people to relax and take a break from phones or computers。",
+      "C 幾乎就是這句的改寫。",
+      "其他選項不是誇大，就是把某類遊戲的特色講成全部桌遊。"
+    ],
+    "correctReason": "正解 C。原文說桌遊是一種讓人放鬆、暫時離開手機或電腦的方法。C 的 give us a good break without looking at screens，就是這句話的同義改寫。",
+    "optionAnalysis": {
+      "A": "A 說靠運氣的桌遊是最刺激、最受歡迎，原文沒有比較誰最受歡迎。",
+      "B": "B 把 Pandemic 當成現實中對抗疾病的策略訓練，原文只是說遊戲裡有合作目標。",
+      "C": "C 正確，對應 take a break from phones or computers。",
+      "D": "D 說桌遊可以當學生字彙考試，原文只說 word games test vocabulary and spelling skills，不是正式考試。"
+    },
+    "memoryTip": "看到 true 題，找原文同義改寫；C 就是 screens = phones or computers。",
+    "keywords": [
+      "true statement",
+      "take a break",
+      "phones",
+      "computers",
+      "screens"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。原文說桌遊是一種讓人放鬆、暫時離開手機或電腦的方法。C 的 give us a good break without looking at screens，就是這句話的同義改寫。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-49",
@@ -5183,7 +5706,62 @@
     "C": "They offer a good time for friends and family members to be together.",
     "D": "They help to break the ice among strangers in social interaction.",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文閱讀",
+      "subTopic": "NOT mentioned 題",
+      "keyPoint": "文章提到社交、娛樂放鬆、學習能力，但沒有說桌遊能幫陌生人破冰。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "題目問 NOT mentioned，要找文章沒有提到的受歡迎原因。",
+        "文章有說 friends and family together，這對應 C。",
+        "文章有說 entertaining、relax，這對應 B；也有策略、字彙、拼字，接近 A。",
+        "但 break the ice among strangers 沒有出現，所以選 D。"
+      ],
+      "correctReason": "正解 D。文章說桌遊讓朋友和家人一起玩，也能學策略、字彙、記憶、數學，還能娛樂和放鬆；但沒有提到桌遊能幫陌生人破冰。因此 NOT mentioned 是 D。",
+      "optionAnalysis": {
+        "A": "A 有提到。word games test vocabulary and spelling skills，也提到 wits and planning skills。",
+        "B": "B 有提到。文章說 board games are entertaining，也能 relax。",
+        "C": "C 有提到。文章說 board games bring friends and family members together。",
+        "D": "D 正確。break the ice among strangers 不是文章列出的原因。"
+      },
+      "memoryTip": "NOT mentioned 題不要憑常識選，要問：原文到底有沒有講。",
+      "keywords": [
+        "NOT mentioned",
+        "friends and family",
+        "entertainment",
+        "relaxation",
+        "break the ice"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文閱讀",
+    "subTopic": "NOT mentioned 題",
+    "keyPoint": "文章提到社交、娛樂放鬆、學習能力，但沒有說桌遊能幫陌生人破冰。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "題目問 NOT mentioned，要找文章沒有提到的受歡迎原因。",
+      "文章有說 friends and family together，這對應 C。",
+      "文章有說 entertaining、relax，這對應 B；也有策略、字彙、拼字，接近 A。",
+      "但 break the ice among strangers 沒有出現，所以選 D。"
+    ],
+    "correctReason": "正解 D。文章說桌遊讓朋友和家人一起玩，也能學策略、字彙、記憶、數學，還能娛樂和放鬆；但沒有提到桌遊能幫陌生人破冰。因此 NOT mentioned 是 D。",
+    "optionAnalysis": {
+      "A": "A 有提到。word games test vocabulary and spelling skills，也提到 wits and planning skills。",
+      "B": "B 有提到。文章說 board games are entertaining，也能 relax。",
+      "C": "C 有提到。文章說 board games bring friends and family members together。",
+      "D": "D 正確。break the ice among strangers 不是文章列出的原因。"
+    },
+    "memoryTip": "NOT mentioned 題不要憑常識選，要問：原文到底有沒有講。",
+    "keywords": [
+      "NOT mentioned",
+      "friends and family",
+      "entertainment",
+      "relaxation",
+      "break the ice"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。文章說桌遊讓朋友和家人一起玩，也能學策略、字彙、記憶、數學，還能娛樂和放鬆；但沒有提到桌遊能幫陌生人破冰。因此 NOT mentioned 是 D。"
   },
   {
     "id": "general-administration-114-初等-公民與英文-50",
@@ -5198,7 +5776,62 @@
     "C": "Supportive.",
     "D": "Aggressive.",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文閱讀",
+      "subTopic": "作者態度題",
+      "keyPoint": "文章一直說桌遊 fun、social、educational、enjoyable，所以作者態度是支持、正面的。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先看文章形容詞：fun、popular、social、educational、enjoyable。",
+        "這些字都是正面語氣，沒有批評、焦慮或攻擊。",
+        "作者最後還說 there’s something for everyone to enjoy。",
+        "所以態度是 supportive。"
+      ],
+      "correctReason": "正解 C。作者從頭到尾都在介紹桌遊的種類和好處，語氣明顯正面。supportive 表示支持的、肯定的，最符合文章態度。",
+      "optionAnalysis": {
+        "A": "A Bitter 是苦澀、怨恨，文章沒有負面抱怨。",
+        "B": "B Anxious 是焦慮，文章沒有擔心桌遊帶來問題。",
+        "C": "C 正確。supportive 表示作者肯定桌遊。",
+        "D": "D Aggressive 是攻擊性的，文章語氣完全不是攻擊。"
+      },
+      "memoryTip": "態度題看形容詞方向：fun、enjoyable、popular 都是正面，所以選 supportive。",
+      "keywords": [
+        "author attitude",
+        "supportive",
+        "fun",
+        "enjoyable",
+        "positive"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文閱讀",
+    "subTopic": "作者態度題",
+    "keyPoint": "文章一直說桌遊 fun、social、educational、enjoyable，所以作者態度是支持、正面的。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先看文章形容詞：fun、popular、social、educational、enjoyable。",
+      "這些字都是正面語氣，沒有批評、焦慮或攻擊。",
+      "作者最後還說 there’s something for everyone to enjoy。",
+      "所以態度是 supportive。"
+    ],
+    "correctReason": "正解 C。作者從頭到尾都在介紹桌遊的種類和好處，語氣明顯正面。supportive 表示支持的、肯定的，最符合文章態度。",
+    "optionAnalysis": {
+      "A": "A Bitter 是苦澀、怨恨，文章沒有負面抱怨。",
+      "B": "B Anxious 是焦慮，文章沒有擔心桌遊帶來問題。",
+      "C": "C 正確。supportive 表示作者肯定桌遊。",
+      "D": "D Aggressive 是攻擊性的，文章語氣完全不是攻擊。"
+    },
+    "memoryTip": "態度題看形容詞方向：fun、enjoyable、popular 都是正面，所以選 supportive。",
+    "keywords": [
+      "author attitude",
+      "supportive",
+      "fun",
+      "enjoyable",
+      "positive"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。作者從頭到尾都在介紹桌遊的種類和好處，語氣明顯正面。supportive 表示支持的、肯定的，最符合文章態度。"
   },
   {
     "id": "general-administration-114-初等-jurisprudence-basics-1",
