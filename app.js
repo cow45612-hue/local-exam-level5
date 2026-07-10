@@ -18,6 +18,7 @@ const els = {
   subjectSelect: document.querySelector("#subject-select"),
   startRandom: document.querySelector("#start-random"),
   startWrong: document.querySelector("#start-wrong"),
+  questionCountStat: document.querySelector("#question-count-stat"),
   wrongCount: document.querySelector("#wrong-count"),
   loadMessage: document.querySelector("#load-message"),
   quizTitle: document.querySelector("#quiz-title"),
@@ -287,6 +288,7 @@ loadQuestions()
     state.allQuestions = questions;
     populateSubjects();
     updateWrongCount();
+    els.questionCountStat.textContent = questions.length;
     showMessage(`題庫已載入：${questions.length} 題`);
   })
   .catch((error) => {

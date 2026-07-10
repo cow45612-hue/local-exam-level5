@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 
 const API = "https://api.lawplayer.com/api/v1/exam/questions";
 const profession = "general-administration";
-const years = [113, 112, 111, 110, 109];
+const years = [112, 111, 110, 109];
 const subjects = [
   { slug: "\u516c\u6c11\u8207\u82f1\u6587", label: "\u516c\u6c11\u8207\u82f1\u6587" },
   { slug: "jurisprudence-basics", label: "\u6cd5\u5b78\u5927\u610f" },
