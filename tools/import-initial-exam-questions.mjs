@@ -2,12 +2,12 @@ import fs from "node:fs/promises";
 
 const API = "https://api.lawplayer.com/api/v1/exam/questions";
 const profession = "general-administration";
-const years = [112, 111, 110, 109];
+const initialExamYears = [114, 113, 112, 111, 110, 109];
 const subjects = [
+  { slug: "chinese", label: "\u570b\u6587" },
   { slug: "\u516c\u6c11\u8207\u82f1\u6587", label: "\u516c\u6c11\u8207\u82f1\u6587" },
   { slug: "jurisprudence-basics", label: "\u6cd5\u5b78\u5927\u610f" },
   { slug: "\u884c\u653f\u5b78\u5927\u610f", label: "\u884c\u653f\u5b78\u5927\u610f" },
-  { slug: "chinese", label: "\u570b\u6587" },
 ];
 
 function getRows(payload) {
@@ -51,9 +51,9 @@ function toAppQuestion(item) {
     id: item.questionId,
     source: "\u8003\u9078\u90e8\u6b77\u5c46\u8a66\u984c / LawPlayer \u7d50\u69cb\u5316\u6574\u7406",
     year: item.year,
-    exam: "\u5730\u65b9\u7279\u8003\u4e94\u7b49",
+    exam: "\u516c\u52d9\u4eba\u54e1\u521d\u7b49\u8003\u8a66",
     category: item.profession,
-    subject: `${item.subject}\uff08${item.year} \u5730\u65b9\u7279\u8003\u4e94\u7b49\uff09`,
+    subject: `${item.subject}\uff08${item.year} \u521d\u7b49\u8003\u8a66\uff09`,
     question: item.content.replace(/\n\([A-D]\).*/gs, "").trim(),
     A: options.A ?? "",
     B: options.B ?? "",
@@ -65,12 +65,18 @@ function toAppQuestion(item) {
 }
 
 const all = [];
-for (const year of years) {
+for (const year of initialExamYears) {
   for (const subject of subjects) {
     const rows = await fetchQuestions(year, subject);
-    const localExamRows = rows.filter((item) => item.questionId?.includes("-\u4e94\u7b49-"));
-    all.push(...localExamRows.map(toAppQuestion));
-    console.log(`${year} ${subject.label}: ${localExamRows.length}`);
+    const initialRows = rows.filter((item) => item.questionId?.includes("-\u521d\u7b49-"));
+    const singleChoiceRows = initialRows.filter((item) => {
+      const answers = Array.isArray(item.acceptedAnswers) && item.acceptedAnswers.length
+        ? item.acceptedAnswers
+        : [item.correctAnswer].filter(Boolean);
+      return answers.length === 1 && /^[A-D]$/.test(answers[0]);
+    });
+    all.push(...singleChoiceRows.map(toAppQuestion));
+    console.log(`${year} ${subject.label}: ${singleChoiceRows.length}`);
   }
 }
 
@@ -78,8 +84,8 @@ const seen = new Set();
 const clean = all.filter((item) => {
   if (seen.has(item.id)) return false;
   seen.add(item.id);
-  return item.question && item.A && item.B && item.C && item.D && item.answer;
+  return item.question && item.A && item.B && item.C && item.D && /^[A-D]$/.test(item.answer);
 });
 
 await fs.writeFile("questions.json", `${JSON.stringify(clean, null, 2)}\n`, "utf8");
-console.log(`wrote ${clean.length} questions`);
+console.log(`wrote ${clean.length} LawPlayer questions`);

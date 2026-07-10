@@ -1,5 +1,5 @@
 const QUESTION_COUNT = 20;
-const WRONG_KEY = "local-exam-level5-wrong-question-ids";
+const WRONG_KEY = "initial-exam-wrong-question-ids";
 const ALL_SUBJECTS = "__all__";
 
 const state = {
