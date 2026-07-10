@@ -146,6 +146,22 @@ select {
   gap: 2px;
 }
 
+.progress-track {
+  height: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: #22c55e;
+  transition: width 180ms ease;
+}
+
 #progress-text {
   color: #64748b;
   font-size: 14px;
@@ -173,7 +189,7 @@ select {
 
 .option {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   gap: 10px;
   align-items: start;
   border: 1px solid #d9e2ec;
@@ -191,11 +207,54 @@ select {
   background: #eef6ff;
 }
 
-.nav-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.option.correct-answer {
+  border-color: #16a34a;
+  background: #ecfdf3;
+}
+
+.option.wrong-answer {
+  border-color: #dc2626;
+  background: #fff1f2;
+}
+
+.option-key {
+  font-weight: 800;
+}
+
+.feedback-card {
   margin-top: 14px;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.feedback-card.correct {
+  border-color: #16a34a;
+  background: #ecfdf3;
+}
+
+.feedback-card.wrong {
+  border-color: #dc2626;
+  background: #fff1f2;
+}
+
+.feedback-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feedback-card.correct .feedback-title {
+  color: #15803d;
+}
+
+.feedback-card.wrong .feedback-title {
+  color: #b42318;
+}
+
+.explanation {
+  margin: 8px 0 0;
+  line-height: 1.6;
 }
 
 .result-card {

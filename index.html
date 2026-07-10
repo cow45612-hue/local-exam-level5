@@ -11,7 +11,7 @@
       <header class="app-header">
         <p class="label">免費刷題 App</p>
         <h1>地方特考五等</h1>
-        <p class="subtitle">選科目、隨機 20 題、送出後自動批改，錯題會自動保存。</p>
+        <p class="subtitle">像闖關一樣一題一題練習，答錯立刻看正確答案與解析。</p>
       </header>
 
       <section id="setup-view" class="screen">
@@ -37,6 +37,9 @@
           </div>
           <button id="back-home" class="ghost">返回</button>
         </div>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
 
         <article class="question-card">
           <p id="subject-badge" class="badge">科目</p>
@@ -44,12 +47,13 @@
           <div id="options" class="options"></div>
         </article>
 
-        <div class="nav-row">
-          <button id="prev-question">上一題</button>
-          <button id="next-question">下一題</button>
+        <div id="feedback-card" class="feedback-card" hidden>
+          <p id="feedback-title" class="feedback-title"></p>
+          <p id="feedback-answer" class="answer-line"></p>
+          <p id="feedback-explanation" class="explanation"></p>
         </div>
 
-        <button id="submit-quiz" class="primary full">送出並批改</button>
+        <button id="continue-quiz" class="primary full" disabled>先選一個答案</button>
       </section>
 
       <section id="result-view" class="screen" hidden>

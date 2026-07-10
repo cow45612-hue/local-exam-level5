@@ -6,6 +6,7 @@ const state = {
   allQuestions: [],
   currentQuestions: [],
   answers: [],
+  results: [],
   currentIndex: 0,
   mode: "random",
 };
@@ -21,13 +22,16 @@ const els = {
   loadMessage: document.querySelector("#load-message"),
   quizTitle: document.querySelector("#quiz-title"),
   progressText: document.querySelector("#progress-text"),
+  progressFill: document.querySelector("#progress-fill"),
   backHome: document.querySelector("#back-home"),
   subjectBadge: document.querySelector("#subject-badge"),
   questionText: document.querySelector("#question-text"),
   options: document.querySelector("#options"),
-  prevQuestion: document.querySelector("#prev-question"),
-  nextQuestion: document.querySelector("#next-question"),
-  submitQuiz: document.querySelector("#submit-quiz"),
+  feedbackCard: document.querySelector("#feedback-card"),
+  feedbackTitle: document.querySelector("#feedback-title"),
+  feedbackAnswer: document.querySelector("#feedback-answer"),
+  feedbackExplanation: document.querySelector("#feedback-explanation"),
+  continueQuiz: document.querySelector("#continue-quiz"),
   scoreRate: document.querySelector("#score-rate"),
   scoreDetail: document.querySelector("#score-detail"),
   retrySame: document.querySelector("#retry-same"),
@@ -134,6 +138,7 @@ function startQuiz(questions, mode) {
 
   state.currentQuestions = questions.slice(0, QUESTION_COUNT);
   state.answers = Array(state.currentQuestions.length).fill("");
+  state.results = Array(state.currentQuestions.length).fill(null);
   state.currentIndex = 0;
   state.mode = mode;
   els.quizTitle.textContent = mode === "wrong" ? "錯題練習" : "隨機練習";
@@ -147,42 +152,81 @@ function renderQuestion() {
   els.subjectBadge.textContent = question.subject;
   els.questionText.textContent = question.question;
   els.progressText.textContent = `第 ${state.currentIndex + 1} / ${state.currentQuestions.length} 題`;
+  els.progressFill.style.width = `${(state.currentIndex / state.currentQuestions.length) * 100}%`;
+  els.feedbackCard.hidden = true;
+  els.feedbackCard.className = "feedback-card";
+  els.feedbackTitle.textContent = "";
+  els.feedbackAnswer.textContent = "";
+  els.feedbackExplanation.textContent = "";
+  els.continueQuiz.disabled = true;
+  els.continueQuiz.textContent = "先選一個答案";
 
   els.options.innerHTML = "";
   Object.entries(question.options).forEach(([key, text]) => {
     const label = document.createElement("label");
     label.className = "option";
-    label.innerHTML = `
-      <input type="radio" name="answer" value="${key}" ${state.answers[state.currentIndex] === key ? "checked" : ""} />
-      <span class="option-key">${key}</span>
-      <span>${text}</span>
-    `;
-    label.querySelector("input").addEventListener("change", () => {
-      state.answers[state.currentIndex] = key;
-    });
+    label.dataset.option = key;
+
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = "answer";
+    input.value = key;
+
+    const optionKey = document.createElement("span");
+    optionKey.className = "option-key";
+    optionKey.textContent = key;
+
+    const optionText = document.createElement("span");
+    optionText.textContent = text;
+
+    label.append(input, optionKey, optionText);
+    label.addEventListener("click", () => chooseAnswer(key));
     els.options.appendChild(label);
   });
-
-  els.prevQuestion.disabled = state.currentIndex === 0;
-  els.nextQuestion.disabled = state.currentIndex === state.currentQuestions.length - 1;
 }
 
-function submitQuiz() {
-  let correct = 0;
+function chooseAnswer(answer) {
+  if (state.results[state.currentIndex] !== null) return;
+
+  const question = state.currentQuestions[state.currentIndex];
+  const isCorrect = answer === question.answer;
   const wrongIds = getWrongIds();
 
-  state.currentQuestions.forEach((question, index) => {
-    const isCorrect = state.answers[index] === question.answer;
-    if (isCorrect) {
-      correct += 1;
-      const found = wrongIds.indexOf(question.id);
-      if (found >= 0) wrongIds.splice(found, 1);
-    } else {
-      wrongIds.push(question.id);
-    }
-  });
+  state.answers[state.currentIndex] = answer;
+  state.results[state.currentIndex] = isCorrect;
+
+  if (isCorrect) {
+    const found = wrongIds.indexOf(question.id);
+    if (found >= 0) wrongIds.splice(found, 1);
+  } else {
+    wrongIds.push(question.id);
+  }
 
   setWrongIds(wrongIds);
+  renderFeedback(question, answer, isCorrect);
+}
+
+function renderFeedback(question, answer, isCorrect) {
+  els.options.querySelectorAll(".option").forEach((option) => {
+    const key = option.dataset.option;
+    option.classList.toggle("selected", key === answer);
+    option.classList.toggle("correct-answer", key === question.answer);
+    option.classList.toggle("wrong-answer", key === answer && !isCorrect);
+    option.querySelector("input").checked = key === answer;
+  });
+
+  els.feedbackCard.hidden = false;
+  els.feedbackCard.classList.add(isCorrect ? "correct" : "wrong");
+  els.feedbackTitle.textContent = isCorrect ? "答對了" : "答錯了";
+  els.feedbackAnswer.textContent = `正確答案：${question.answer}`;
+  els.feedbackExplanation.textContent = question.explanation;
+  els.continueQuiz.disabled = false;
+  els.continueQuiz.textContent = state.currentIndex === state.currentQuestions.length - 1 ? "看本次成績" : "下一題";
+  els.progressFill.style.width = `${((state.currentIndex + 1) / state.currentQuestions.length) * 100}%`;
+}
+
+function finishQuiz() {
+  const correct = state.results.filter(Boolean).length;
   renderResult(correct);
   switchView("result");
 }
@@ -196,9 +240,9 @@ function renderResult(correct) {
 
   state.currentQuestions.forEach((question, index) => {
     const userAnswer = state.answers[index] || "未作答";
-    const isCorrect = userAnswer === question.answer;
+    const isCorrect = state.results[index] === true;
     const card = document.createElement("article");
-    card.className = `review-card ${isCorrect ? "correct" : "wrong"}`;
+    card.className = `review-item ${isCorrect ? "correct" : "wrong"}`;
     card.innerHTML = `
       <p class="badge">${question.subject}</p>
       <h3>${index + 1}. ${question.question}</h3>
@@ -224,21 +268,16 @@ els.startWrong.addEventListener("click", () => {
   startQuiz(shuffle(state.allQuestions.filter((item) => ids.has(item.id))), "wrong");
 });
 
-els.prevQuestion.addEventListener("click", () => {
-  if (state.currentIndex > 0) {
-    state.currentIndex -= 1;
-    renderQuestion();
-  }
-});
-
-els.nextQuestion.addEventListener("click", () => {
+els.continueQuiz.addEventListener("click", () => {
+  if (state.results[state.currentIndex] === null) return;
   if (state.currentIndex < state.currentQuestions.length - 1) {
     state.currentIndex += 1;
     renderQuestion();
+  } else {
+    finishQuiz();
   }
 });
 
-els.submitQuiz.addEventListener("click", submitQuiz);
 els.backHome.addEventListener("click", () => switchView("setup"));
 els.resultHome.addEventListener("click", () => switchView("setup"));
 els.retrySame.addEventListener("click", () => startQuiz(state.currentQuestions, state.mode));
