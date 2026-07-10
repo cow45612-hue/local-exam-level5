@@ -68,6 +68,8 @@ const els = {
 };
 
 function normalizeQuestion(raw, index) {
+  const teacher = raw.teacherExplanation ?? {};
+  const hasTeacherExplanation = Boolean(raw.teacherExplanation || raw.explanationQuality === "ai_generated" || raw.correctReason);
   return {
     id: String(raw.id ?? index + 1),
     year: raw.year ?? "",
@@ -84,16 +86,18 @@ function normalizeQuestion(raw, index) {
     answer: String(raw.answer ?? "").toUpperCase(),
     explanation: raw.explanation,
     trap: raw.trap ?? "",
-    concept: raw.concept ?? "",
-    keyPoint: raw.keyPoint ?? "",
-    topic: raw.topic ?? "",
-    subTopic: raw.subTopic ?? "",
-    frequency: raw.frequency ?? "",
-    thinkingSteps: raw.thinkingSteps ?? [],
-    plainExplanation: raw.plainExplanation ?? "",
-    optionAnalysis: raw.optionAnalysis ?? {},
-    memoryTip: raw.memoryTip ?? "",
-    keywords: raw.keywords ?? "",
+    concept: raw.concept ?? teacher.concept ?? "",
+    keyPoint: raw.keyPoint ?? teacher.keyPoint ?? "",
+    topic: raw.topic ?? teacher.topic ?? "",
+    subTopic: raw.subTopic ?? teacher.subTopic ?? "",
+    frequency: raw.frequency ?? teacher.frequency ?? "",
+    thinkingSteps: raw.thinkingSteps ?? teacher.thinkingSteps ?? [],
+    plainExplanation: raw.plainExplanation ?? raw.correctReason ?? teacher.correctReason ?? "",
+    correctReason: raw.correctReason ?? teacher.correctReason ?? "",
+    optionAnalysis: raw.optionAnalysis ?? teacher.optionAnalysis ?? {},
+    memoryTip: raw.memoryTip ?? teacher.memoryTip ?? "",
+    keywords: raw.keywords ?? teacher.keywords ?? "",
+    hasTeacherExplanation,
   };
 }
 
@@ -881,10 +885,25 @@ function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
 }
 
 function renderAnalysisCard(question, answer, isCorrect, label, wrongCount) {
-  const analysis = buildTeacherAnalysis(question, isCorrect, label, wrongCount);
-
   els.feedbackAnswer.innerHTML = "";
   els.feedbackExplanation.innerHTML = "";
+
+  if (!question.hasTeacherExplanation) {
+    els.feedbackCard.classList.add("pending-analysis");
+    appendAnalysisItem(
+      els.feedbackExplanation,
+      "這題還沒有正式 AI 老師解析",
+      "目前題庫只有官方答案，舊版那種模板解析我先拿掉，避免你看了更混亂。這題會等批次重生後補上真正白話、逐選項的解析。"
+    );
+    appendAnalysisItem(
+      els.feedbackExplanation,
+      "先看正解",
+      `你選 ${answer}，正解是 ${question.answer}「${question.options[question.answer]}」。`
+    );
+    return;
+  }
+
+  const analysis = buildTeacherAnalysis(question, isCorrect, label, wrongCount);
 
   appendExamPoint(els.feedbackExplanation, analysis.examPoint);
   appendSteps(els.feedbackExplanation, analysis.thinkingSteps);

@@ -11,7 +11,8 @@ The script never modifies questions.json. It writes:
   - review_needed.json
 
 It is resumable: if questions.enriched.json exists, the script loads that file
-and skips questions that already have teacherExplanation.
+and skips questions that already have teacherExplanation. Use --force to discard
+old teacherExplanation values and regenerate them.
 """
 
 from __future__ import annotations
@@ -88,20 +89,36 @@ SCHEMA: dict[str, Any] = {
 }
 
 
-SYSTEM_PROMPT = """你是台灣公職初等考試補習班老師。
-你的任務是替單選題產生「真的教得懂」的解析，不是改答案。
+SYSTEM_PROMPT = """你是台灣公職初等考試補習班老師，但要用「學生聽得懂」的口語講法。
+你的任務是替單選題產生真正能教會人的解析，不是改答案。
 
-規則：
+總原則：
 1. 必須以題目提供的 answer 為標準答案，不得自行更改正解。
-2. 語氣要像補習班老師白話講解，具體、可操作、不要空泛。
-3. 不可以寫「不是官方答案」「官方答案是 X」這種廢話。
-4. thinkingSteps 必須針對本題，包含題幹和選項中的具體詞，不要寫通用流程。
-5. optionAnalysis 的 A/B/C/D 都要填。正確選項說明它為何正確；錯誤選項說明：
-   - 這個選項在說什麼
-   - 為什麼沒有回答到題幹
-   - 容易誤選的原因
-6. 如果你不確定某個專有名詞，請保守說明並在 reviewFlags 加上原因。
-7. 回傳只能是符合 JSON Schema 的 JSON，不要 Markdown。
+2. 講法要像老師坐在旁邊直接講給考生聽，可以白話、可以提醒陷阱，但不要裝學術。
+3. 每一句都要有用。禁止空話，例如：
+   - 先看題幹問什麼
+   - 抓關鍵字
+   - 排除不符合的選項
+   - 不是官方答案
+   - 這個選項沒有回答題幹
+   除非你後面立刻說出「本題的哪個字、哪個選項、哪個概念」。
+4. thinkingSteps 必須是本題專屬，至少兩步要直接引用題目或選項的原字。
+5. correctReason 要用這種口吻：
+   「這題其實在問……。D 這句話的重點是……，剛好對到……，所以選 D。」
+6. optionAnalysis 的 A/B/C/D 都要填。
+   - 正確選項：說它為什麼正確。
+   - 錯誤選項：不要只說錯。要說：
+     這個選項在講什麼、它哪裡和題目不合、為什麼考生容易被騙。
+7. memoryTip 要短、好記、像考前提醒。
+8. keywords 要列出考生下次真的要圈起來看的 2 到 5 個詞。
+9. 如果題目資料不足，請誠實保守說明，並在 reviewFlags 加上原因。
+10. 回傳只能是符合 JSON Schema 的 JSON，不要 Markdown。
+
+好的語氣示範：
+「A 看起來很像，因為它也提到政策過程；但題目問的是行政學對政策的基本描述，不是政策網絡裡誰和誰互動，所以 A 偏題。」
+
+不好的語氣示範：
+「A 不是官方答案。」
 """
 
 
@@ -141,8 +158,9 @@ def compact_question(question: dict[str, Any]) -> dict[str, Any]:
 
 def build_user_prompt(question: dict[str, Any]) -> str:
     return (
-        "請替下面這題產生老師版解析。不要更改 answer。\n"
-        "解析要讓考生看完知道：題目在考什麼、怎麼判斷、每個選項錯在哪、下次怎麼抓關鍵字。\n\n"
+        "請替下面這題重新產生老師版解析。不要更改 answer。\n"
+        "目標：考生看完要真的懂，不要只是知道答案。\n"
+        "請特別注意：thinkingSteps 和 optionAnalysis 不能寫通用模板，必須引用本題選項裡的具體文字。\n\n"
         + json.dumps(compact_question(question), ensure_ascii=False, indent=2)
     )
 
@@ -185,6 +203,16 @@ def call_openai(question: dict[str, Any], model: str, api_key: str, timeout: int
 def validate_enrichment(question: dict[str, Any], enrichment: dict[str, Any]) -> list[str]:
     flags: list[str] = []
     answer = str(question.get("answer") or "").upper()
+    options = question_options(question)
+    option_fragments = [value[:8] for value in options.values() if value]
+    banned_phrases = [
+        "不是官方答案",
+        "官方答案",
+        "先看題幹問什麼",
+        "抓關鍵字",
+        "排除不符合",
+        "沒有回答題幹",
+    ]
 
     for field in REQUIRED_FIELDS:
         if field not in enrichment:
@@ -196,6 +224,8 @@ def validate_enrichment(question: dict[str, Any], enrichment: dict[str, Any]) ->
     steps = enrichment.get("thinkingSteps")
     if not isinstance(steps, list) or len(steps) < 3:
         flags.append("thinkingSteps_too_short")
+    elif sum(1 for step in steps if any(fragment and fragment in step for fragment in option_fragments)) < 2:
+        flags.append("thinkingSteps_not_specific_enough")
 
     keywords = enrichment.get("keywords")
     if not isinstance(keywords, list) or not 2 <= len(keywords) <= 5:
@@ -209,14 +239,16 @@ def validate_enrichment(question: dict[str, Any], enrichment: dict[str, Any]) ->
             text = str(option_analysis.get(key, "")).strip()
             if len(text) < 20:
                 flags.append(f"option_{key}_too_short")
-            if "不是官方答案" in text or "官方答案" in text:
+            if any(phrase in text for phrase in banned_phrases):
                 flags.append(f"option_{key}_official_answer_phrase")
 
     correct_reason = str(enrichment.get("correctReason", ""))
+    if len(correct_reason) < 50:
+        flags.append("correctReason_too_short")
     if answer and answer not in correct_reason:
         flags.append("correctReason_missing_answer_letter")
-    if "官方答案" in correct_reason:
-        flags.append("correctReason_official_answer_phrase")
+    if any(phrase in correct_reason for phrase in banned_phrases):
+        flags.append("correctReason_bad_phrase")
 
     return flags
 
@@ -229,6 +261,7 @@ def merge_enrichment(question: dict[str, Any], enrichment: dict[str, Any]) -> di
     # Also copy to top-level fields because the current web app reads these names directly.
     for field in REQUIRED_FIELDS:
         merged[field] = enrichment[field]
+    merged["plainExplanation"] = enrichment["correctReason"]
 
     return merged
 
@@ -261,6 +294,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit", type=int, default=10, help="Maximum number of questions to enrich this run")
     parser.add_argument("--sleep", type=float, default=0.4, help="Seconds to sleep between API calls")
     parser.add_argument("--timeout", type=int, default=90)
+    parser.add_argument("--force", action="store_true", help="Regenerate even if teacherExplanation already exists")
     return parser.parse_args()
 
 
@@ -278,7 +312,7 @@ def main() -> int:
     for index, question in enumerate(questions):
         if processed >= args.limit:
             break
-        if question.get("teacherExplanation"):
+        if question.get("teacherExplanation") and not args.force:
             continue
 
         qid = question.get("id", f"index-{index}")

@@ -582,6 +582,11 @@ select {
   background: var(--danger-soft);
 }
 
+.feedback-card.pending-analysis {
+  border-color: rgba(245, 158, 11, 0.34);
+  background: #fff7ed;
+}
+
 .feedback-title {
   margin: 0;
   font-size: 22px;
@@ -594,6 +599,10 @@ select {
 
 .feedback-card.wrong .feedback-title {
   color: #b91c1c;
+}
+
+.feedback-card.pending-analysis .feedback-title {
+  color: #9a3412;
 }
 
 .analysis-grid {
