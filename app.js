@@ -83,6 +83,8 @@ function normalizeQuestion(raw, index) {
     },
     answer: String(raw.answer ?? "").toUpperCase(),
     explanation: raw.explanation,
+    trap: raw.trap ?? "",
+    concept: raw.concept ?? "",
   };
 }
 
@@ -424,8 +426,8 @@ function renderQuestion() {
   els.feedbackCard.hidden = true;
   els.feedbackCard.className = "feedback-card";
   els.feedbackTitle.textContent = "";
-  els.feedbackAnswer.textContent = "";
-  els.feedbackExplanation.textContent = "";
+  els.feedbackAnswer.innerHTML = "";
+  els.feedbackExplanation.innerHTML = "";
   els.continueQuiz.disabled = true;
   els.continueQuiz.textContent = "先選一個答案";
 
@@ -490,11 +492,48 @@ function renderFeedback(question, answer, isCorrect, wrongCount) {
   els.feedbackCard.hidden = false;
   els.feedbackCard.classList.add(isCorrect ? "correct" : "wrong");
   els.feedbackTitle.textContent = isCorrect ? "答對了" : "答錯了";
-  els.feedbackAnswer.textContent = `正確答案：${question.answer}`;
-  els.feedbackExplanation.textContent = label ? `${label}，累計錯 ${wrongCount} 次。${question.explanation}` : question.explanation;
+  renderAnalysisCard(question, answer, isCorrect, label, wrongCount);
   els.continueQuiz.disabled = false;
   els.continueQuiz.textContent = state.currentIndex === state.currentQuestions.length - 1 ? "看本次成果" : "下一題";
   els.progressFill.style.width = `${((state.currentIndex + 1) / state.currentQuestions.length) * 100}%`;
+}
+
+function appendAnalysisItem(parent, title, body, extra = "") {
+  const item = document.createElement("section");
+  item.className = "analysis-item";
+
+  const heading = document.createElement("h3");
+  heading.textContent = title;
+
+  const content = document.createElement("p");
+  content.textContent = body;
+
+  item.append(heading, content);
+
+  if (extra) {
+    const note = document.createElement("small");
+    note.textContent = extra;
+    item.appendChild(note);
+  }
+
+  parent.appendChild(item);
+}
+
+function renderAnalysisCard(question, answer, isCorrect, label, wrongCount) {
+  const trapFallback = isCorrect
+    ? "這題先記觀念，不要只背答案。"
+    : "你可能被相似選項或關鍵字誤導，建議把解析看完再下一題。";
+  const trapText = question.trap || trapFallback;
+  const conceptText = question.concept ? `核心觀念：${question.concept}` : "";
+  const whyText = label ? `${label}，累計錯 ${wrongCount} 次。${question.explanation}` : question.explanation;
+
+  els.feedbackAnswer.innerHTML = "";
+  els.feedbackExplanation.innerHTML = "";
+
+  appendAnalysisItem(els.feedbackAnswer, "你的答案", answer);
+  appendAnalysisItem(els.feedbackAnswer, "正確答案", question.answer);
+  appendAnalysisItem(els.feedbackExplanation, "為什麼這題選這個答案", whyText, conceptText);
+  appendAnalysisItem(els.feedbackExplanation, "這題容易錯在哪裡", trapText);
 }
 
 function finishQuiz() {

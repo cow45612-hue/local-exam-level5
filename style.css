@@ -567,6 +567,8 @@ select {
 }
 
 .feedback-card {
+  display: grid;
+  gap: 12px;
   padding: 16px;
 }
 
@@ -581,7 +583,7 @@ select {
 }
 
 .feedback-title {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 22px;
   font-weight: 950;
 }
@@ -594,9 +596,54 @@ select {
   color: #b91c1c;
 }
 
-.answer-line {
+.analysis-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.analysis-grid:first-of-type {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.analysis-item {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 12px;
+}
+
+.analysis-item h3 {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.analysis-item p {
   margin: 0;
+  color: var(--ink);
+  font-weight: 850;
+  line-height: 1.65;
+}
+
+.analysis-item small {
+  display: inline-flex;
+  margin-top: 9px;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: var(--primary-dark);
+  font-size: 12px;
   font-weight: 900;
+  line-height: 1.4;
+  padding: 6px 9px;
+}
+
+.feedback-card.correct .analysis-item {
+  border-color: rgba(22, 163, 74, 0.16);
+}
+
+.feedback-card.wrong .analysis-item {
+  border-color: rgba(239, 68, 68, 0.16);
 }
 
 .explanation {
