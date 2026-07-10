@@ -664,6 +664,49 @@ function quotedTerms(text) {
   return [...String(text || "").matchAll(/[「『](.*?)[」』]/g)].map((match) => match[1]).filter(Boolean);
 }
 
+const TERM_NOTES = {
+  行不由徑: "正面詞，指做人做事正直，不走旁門左道。",
+  拾人牙慧: "負面詞，指撿別人說過的話來講，沒有自己的見解。",
+  群起效尤: "多作負面詞，指大家跟著做不好的事。",
+  事半功倍: "正面詞，指方法對、效率高，花較少力氣得到較大成果。",
+  美輪美奐: "形容建築物高大華美，通常不拿來形容自然風景。",
+  目無全牛: "形容技藝純熟，不是沒有全局觀。",
+  始作俑者: "指壞風氣或壞事的開端者，多用於負面情境。",
+  相敬如賓: "形容夫妻互相尊敬，是正面用法。",
+  真知灼見: "指正確而深刻的見解。",
+  略陳管見: "謙稱自己粗淺的看法，程度比真知灼見低。",
+  小心翼翼: "形容謹慎小心。",
+  謹言慎行: "指說話和行動都謹慎，重點不只在操作小心。",
+  玩日愒歲: "指虛度光陰、苟且度日。",
+  年深月久: "指時間久遠，不等於虛度時間。",
+  刻舟求劍: "比喻拘泥成法，不知變通。",
+  膠柱鼓瑟: "比喻拘泥固執，不知變通。",
+};
+
+function termNote(term) {
+  return TERM_NOTES[term] || "";
+}
+
+function idiomMismatchExplanation(term, optionText) {
+  const text = String(optionText || "");
+  if (term === "行不由徑" && /信用|形象|打折|旁門|歪/.test(text)) {
+    return "句子在講信用和形象變差，是負面情境；但「行不由徑」是正面詞，指人正直不走歪路，方向剛好不合。";
+  }
+  if (term === "拾人牙慧" && /獨特|個人|見解|想法/.test(text)) {
+    return "句子說這個人有獨特想法，但「拾人牙慧」是撿別人的話來講、沒有自己見解，意思剛好相反。";
+  }
+  if (term === "群起效尤" && /正直|端正|上司|下屬/.test(text)) {
+    return "句子是上司正直、下屬跟著學的正面情境；但「群起效尤」多半用在大家跟著做壞事，褒貶色彩不合。";
+  }
+  if (term === "美輪美奐" && /風景|山水|自然/.test(text)) {
+    return "句子在講自然風景，但「美輪美奐」主要形容建築物高大華美，用在風景上不精準。";
+  }
+  if (term === "目無全牛" && /胡亂|想像|全局|未來/.test(text)) {
+    return "句子想說不要胡亂想像或缺乏全局，但「目無全牛」其實是技藝純熟的正面成語，不是沒有全局觀。";
+  }
+  return "";
+}
+
 function optionFocus(optionText) {
   const quoted = quotedTerms(optionText);
   if (quoted.length) return quoted.join("、");
@@ -679,7 +722,10 @@ function correctReason(question) {
   const focus = optionFocus(option);
 
   if (subject.includes("國文") && question.question.includes("成語")) {
-    return `題目要你判斷成語放進句子後，語氣和意思合不合。正解 ${answer} 的關鍵是「${focus}」和整句語境接得起來，所以不是只看成語熟不熟，而是看它放在那句話裡順不順、準不準。`;
+    const note = termNote(focus);
+    return note
+      ? `題目要你判斷成語放進句子後，意思和情境合不合。正解 ${answer} 的「${focus}」意思是：${note} 題目說先計畫周全再執行，剛好對到「方法對、效率高、成果好」這個方向，所以選 ${answer}。`
+      : `題目要你判斷成語放進句子後，語氣和意思合不合。正解 ${answer} 的關鍵是「${focus}」和整句語境接得起來，所以不是只看成語熟不熟，而是看它放在那句話裡順不順、準不準。`;
   }
   if (subject.includes("國文") && (question.question.includes("意義") || question.question.includes("字"))) {
     return `題目要比的是字詞在句子裡的實際意思。正解 ${answer} 的「${focus}」和其他選項的用法不同或最符合題目要求，所以要把字放回原句看，不要只背單一字面意思。`;
@@ -698,7 +744,11 @@ function fallbackOptionAnalysis(question, key) {
   const subject = stripSubjectYear(question.subject);
 
   if (subject.includes("國文") && question.question.includes("成語")) {
-    return `${key} 說的是 ${role}。它容易誤選，是因為句子看起來通順或成語很熟；但成語題要檢查「${focus}」的意思是否真的貼合前後文。這個選項的問題就在於成語語意和句子要表達的重點沒有完全對上。`;
+    const note = termNote(focus);
+    const mismatch = idiomMismatchExplanation(focus, option);
+    return note
+      ? `${key} 的關鍵成語是「${focus}」，白話意思是：${note} ${mismatch || "它容易誤選，是因為這個成語看起來很熟；但放回句子後，句子的情境和成語真正意思沒有對上，所以不能選。"}`
+      : `${key} 說的是 ${role}。它容易誤選，是因為句子看起來通順或成語很熟；但成語題要檢查「${focus}」的意思是否真的貼合前後文。這個選項的問題就在於成語語意和句子要表達的重點沒有完全對上。`;
   }
   if (subject.includes("國文") && (question.question.includes("意義") || question.question.includes("字"))) {
     return `${key} 的重點是「${focus}」。字義題不能只看字面，要看它在該句裡扮演的意思；這個選項沒有符合題目要比較的那個用法，所以會被排除。`;
@@ -708,6 +758,74 @@ function fallbackOptionAnalysis(question, key) {
   }
 
   return `${key} 說的是 ${role}。它可能和題目領域有關，所以看起來像答案；但本題要判斷的是「${ask}」，這個選項沒有正面回答題幹。下次看到這種選項，要先問：它是在回答題目，還是只是在旁邊講一個相關概念？`;
+}
+
+function shortOptionText(question, key) {
+  return `${key}「${optionFocus(question.options[key])}」`;
+}
+
+function distractorSummary(question) {
+  const wrongOptions = ["A", "B", "C", "D"].filter((key) => key !== question.answer);
+  return wrongOptions.map((key) => shortOptionText(question, key)).join("、");
+}
+
+function buildThinkingSteps(question) {
+  const answer = question.answer;
+  const ask = inferQuestionAsk(question);
+  const subject = stripSubjectYear(question.subject);
+  const correct = shortOptionText(question, answer);
+  const distractors = distractorSummary(question);
+
+  if (subject.includes("國文") && question.question.includes("成語")) {
+    const idiomNotes = ["A", "B", "C", "D"]
+      .map((key) => {
+        const term = optionFocus(question.options[key]);
+        const note = termNote(term);
+        return note ? `${key}「${term}」：${note}` : "";
+      })
+      .filter(Boolean)
+      .join(" ");
+    const mismatchNotes = ["A", "B", "C", "D"]
+      .filter((key) => key !== answer)
+      .map((key) => {
+        const term = optionFocus(question.options[key]);
+        const mismatch = idiomMismatchExplanation(term, question.options[key]);
+        return mismatch ? `${key}：${mismatch}` : "";
+      })
+      .filter(Boolean)
+      .join(" ");
+    return [
+      `① 這題不是問哪個成語你看過，而是問「哪個成語放進句子後意思正確」。`,
+      idiomNotes ? `② 先把四個成語翻成白話：${idiomNotes}` : `② 先抓正解 ${correct}：它的語意要能和句子的情境同方向，不能只是字面看起來漂亮。`,
+      mismatchNotes ? `③ 再對句子情境：${mismatchNotes}` : `③ 再對句子情境：${distractors} 的問題通常是褒貶方向或真正意思和句子不合。`,
+      `④ 所以最後選 ${answer}，標準是：成語原意、褒貶色彩、前後文情境三個都要對上。`,
+    ];
+  }
+
+  if (subject.includes("國文") && (question.question.includes("意義") || question.question.includes("字"))) {
+    return [
+      `① 題目要比的是字詞在原句中的意思，不是查字典背第一個解釋。`,
+      `② 先抓正解 ${correct}：把它放回句子，判斷它在那裡到底表示動作、狀態，還是結果。`,
+      `③ 再比 ${distractors}：這些選項容易混，是因為字一樣，但放在不同句子裡意思會變。`,
+      `④ 所以選 ${answer}，因為它的語境用法最符合題目要你找的那一類。`,
+    ];
+  }
+
+  if (subject.includes("國文") && (question.question.includes("根據上文") || question.question.includes("上文"))) {
+    return [
+      `① 閱讀題先問：這個選項能不能被原文支持，不要用自己的常識腦補。`,
+      `② 正解 ${correct} 是最能對回文章資訊的選項，通常可以在原文找到對應句或合理推論。`,
+      `③ ${distractors} 可能看起來和主題有關，但只要原文沒有講到、講太滿、或方向相反，就要刪掉。`,
+      `④ 所以選 ${answer}，判斷標準是「原文有沒有支撐」，不是「我覺得好像合理」。`,
+    ];
+  }
+
+  return [
+    `① 本題問的是「${ask}」，所以先把題幹要你判斷的對象圈出來。`,
+    `② 正解 ${correct} 的重點最直接扣住題幹，這是它能當答案的原因。`,
+    `③ 干擾選項 ${distractors} 常見問題是只講到相關概念，卻沒有正面回答題幹。`,
+    `④ 所以最後選 ${answer}：考場上不要選「看起來熟」的，要選「最直接回答題目」的。`,
+  ];
 }
 
 function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
@@ -729,12 +847,7 @@ function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
 
   const thinkingSteps = Array.isArray(question.thinkingSteps) && question.thinkingSteps.length
     ? question.thinkingSteps
-    : [
-        `① 先看題幹問什麼：本題要找的是「${ask}」。`,
-        `② 抓關鍵字：${keywordText(question)}。`,
-        "③ 排除只出現熟悉名詞、但沒有正面回答題幹的選項。",
-        `④ 最後選出最直接回答題目的答案：${answer}「${answerText}」。`,
-      ];
+    : buildThinkingSteps(question);
 
   const plainExplanation =
     question.plainExplanation ||
