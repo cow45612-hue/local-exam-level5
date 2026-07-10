@@ -64,6 +64,13 @@ function toAppQuestion(item) {
   };
 }
 
+function hasUnsupportedOption(item) {
+  const text = [item.question, item.A, item.B, item.C, item.D, item.explanation]
+    .map((value) => String(value ?? ""))
+    .join(" ");
+  return text.includes("\ue190") || text.includes("複選題");
+}
+
 const all = [];
 for (const year of initialExamYears) {
   for (const subject of subjects) {
@@ -84,7 +91,7 @@ const seen = new Set();
 const clean = all.filter((item) => {
   if (seen.has(item.id)) return false;
   seen.add(item.id);
-  return item.question && item.A && item.B && item.C && item.D && /^[A-D]$/.test(item.answer);
+  return item.question && item.A && item.B && item.C && item.D && /^[A-D]$/.test(item.answer) && !hasUnsupportedOption(item);
 });
 
 await fs.writeFile("questions.json", `${JSON.stringify(clean, null, 2)}\n`, "utf8");
