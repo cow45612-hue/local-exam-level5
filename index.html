@@ -29,6 +29,41 @@
       </header>
 
       <section id="setup-view" class="screen">
+        <section class="dashboard" aria-label="學習統計">
+          <div class="section-heading">
+            <h2>今日任務</h2>
+            <p>每天完成一回 20 題，系統會自動記錄連續天數。</p>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span>題庫總題數</span>
+              <strong id="home-total-count">--</strong>
+            </div>
+            <div class="stat-card">
+              <span>錯題數</span>
+              <strong id="home-wrong-count">0</strong>
+            </div>
+            <div class="stat-card">
+              <span>今日任務</span>
+              <strong id="today-status">未完成</strong>
+            </div>
+            <div class="stat-card">
+              <span>連續天數</span>
+              <strong id="streak-count">0 天</strong>
+            </div>
+          </div>
+
+          <p id="daily-summary" class="daily-summary">總完成天數：0 天</p>
+
+          <div class="subject-stats">
+            <h3>各科答對率</h3>
+            <div id="subject-stats-list" class="subject-stats-list">
+              <p class="empty-state">開始作答後會顯示各科統計。</p>
+            </div>
+          </div>
+        </section>
+
         <div class="section-heading">
           <h2>開始練習</h2>
           <p>選科目後直接進入隨機題組。</p>
