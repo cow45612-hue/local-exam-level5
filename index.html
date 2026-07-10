@@ -3,98 +3,132 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>初等考試免費刷題 App</title>
+    <title>公職初考刷題 App</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="app">
-      <header class="app-header">
-        <p class="label">免費刷題 App</p>
-        <h1>初等考試</h1>
-        <p class="subtitle">像闖關一樣一題一題練習，答錯立刻看正確答案與解析。</p>
-        <div class="hero-stats" aria-label="練習特色">
-          <div>
-            <strong>20</strong>
-            <span>題一回合</span>
-          </div>
-          <div>
-            <strong id="question-count-stat">--</strong>
-            <span>題庫題數</span>
-          </div>
-          <div>
-            <strong>即時</strong>
-            <span>答案解析</span>
-          </div>
+    <main class="app-shell">
+      <header class="top-app-bar">
+        <div>
+          <p class="eyebrow">公職刷題 App</p>
+          <h1>初等考試題庫</h1>
         </div>
+        <span id="top-today-status" class="status-chip">未完成</span>
       </header>
 
-      <section id="setup-view" class="screen">
-        <section class="dashboard" aria-label="學習統計">
-          <div class="section-heading">
-            <h2>今日任務</h2>
-            <p>每天完成一回 20 題，系統會自動記錄連續天數。</p>
+      <section id="home-view" class="app-view">
+        <article class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">今日任務</p>
+            <h2>完成 20 題，維持手感</h2>
+            <p>答錯立即看解析，錯題會自動進錯題本。</p>
           </div>
 
+          <div class="hero-metrics">
+            <div>
+              <span>任務</span>
+              <strong>20 題</strong>
+            </div>
+            <div>
+              <span>Streak</span>
+              <strong id="hero-streak">0 天</strong>
+            </div>
+            <div>
+              <span>題庫</span>
+              <strong id="hero-total-count">--</strong>
+            </div>
+            <div>
+              <span>今日</span>
+              <strong id="hero-today-status">未完成</strong>
+            </div>
+          </div>
+        </article>
+
+        <section class="quick-actions">
+          <button id="home-start-random" class="primary action-button">開始 20 題</button>
+          <button id="home-start-wrong" class="secondary action-button">重練錯題</button>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>學習摘要</h2>
+            <span id="daily-summary">總完成天數：0 天</span>
+          </div>
           <div class="stat-grid">
             <div class="stat-card">
-              <span>題庫總題數</span>
-              <strong id="home-total-count">--</strong>
-            </div>
-            <div class="stat-card">
-              <span>錯題數</span>
+              <span>錯題本</span>
               <strong id="home-wrong-count">0</strong>
-            </div>
-            <div class="stat-card">
-              <span>今日任務</span>
-              <strong id="today-status">未完成</strong>
+              <small>題待複習</small>
             </div>
             <div class="stat-card">
               <span>連續天數</span>
-              <strong id="streak-count">0 天</strong>
-            </div>
-          </div>
-
-          <p id="daily-summary" class="daily-summary">總完成天數：0 天</p>
-
-          <div class="subject-stats">
-            <h3>各科答對率</h3>
-            <div id="subject-stats-list" class="subject-stats-list">
-              <p class="empty-state">開始作答後會顯示各科統計。</p>
+              <strong id="streak-count">0</strong>
+              <small>天</small>
             </div>
           </div>
         </section>
-
-        <div class="section-heading">
-          <h2>開始練習</h2>
-          <p>選科目後直接進入隨機題組。</p>
-        </div>
-        <label class="field">
-          <span>選擇科目</span>
-          <select id="subject-select"></select>
-        </label>
-
-        <div class="button-grid">
-          <button id="start-random" class="primary">隨機練習 20 題</button>
-          <button id="start-wrong">重練錯題</button>
-        </div>
-
-        <p id="wrong-count" class="hint wrong-pill">錯題：0 題</p>
-        <p id="load-message" class="message" hidden></p>
       </section>
 
-      <section id="quiz-view" class="screen" hidden>
-        <div class="quiz-bar">
+      <section id="start-view" class="app-view" hidden>
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>開始刷題</h2>
+            <span>每回隨機 20 題</span>
+          </div>
+
+          <label class="field">
+            <span>選擇科目</span>
+            <select id="subject-select"></select>
+          </label>
+
+          <div class="button-stack">
+            <button id="start-random" class="primary action-button">隨機練習 20 題</button>
+            <button id="start-wrong" class="secondary action-button">重練錯題本</button>
+          </div>
+
+          <p id="wrong-count" class="hint-pill">錯題：0 題</p>
+          <p id="load-message" class="message" hidden></p>
+        </section>
+      </section>
+
+      <section id="wrongbook-view" class="app-view" hidden>
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>錯題本</h2>
+            <button id="wrongbook-start" class="mini-button">開始複習</button>
+          </div>
+          <div id="wrongbook-list" class="compact-list"></div>
+        </section>
+      </section>
+
+      <section id="stats-view" class="app-view" hidden>
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>答題統計</h2>
+            <span id="stats-summary">尚無作答紀錄</span>
+          </div>
+          <div id="subject-stats-list" class="subject-stats-list"></div>
+        </section>
+      </section>
+
+      <section id="quiz-view" class="app-view quiz-view" hidden>
+        <div class="quiz-top">
+          <button id="back-home" class="icon-button" aria-label="返回">‹</button>
           <div>
             <strong id="quiz-title">練習中</strong>
-            <span id="progress-text">第 1 / 20 題</span>
+            <span id="progress-text">1 / 20</span>
           </div>
-          <button id="back-home" class="ghost">返回</button>
         </div>
+
         <div class="progress-track" aria-hidden="true">
           <div id="progress-fill" class="progress-fill"></div>
         </div>
 
         <article class="question-card">
+          <div class="question-meta">
+            <span id="question-number">第 1 題</span>
+            <span id="question-year">年度</span>
+          </div>
           <p id="subject-badge" class="badge">科目</p>
           <h2 id="question-text"></h2>
           <div id="options" class="options"></div>
@@ -106,19 +140,30 @@
           <p id="feedback-explanation" class="explanation"></p>
         </div>
 
-        <button id="continue-quiz" class="primary full" disabled>先選一個答案</button>
+        <button id="continue-quiz" class="primary action-button full" disabled>先選一個答案</button>
       </section>
 
-      <section id="result-view" class="screen" hidden>
-        <div class="result-card">
-          <p class="label">本次成績</p>
+      <section id="result-view" class="app-view" hidden>
+        <article class="result-card">
+          <p class="eyebrow">本次成果</p>
           <strong id="score-rate">0%</strong>
           <p id="score-detail">答對 0 / 0 題</p>
-        </div>
+          <div class="result-metrics">
+            <div>
+              <span>錯題數</span>
+              <b id="result-wrong-count">0</b>
+            </div>
+            <div>
+              <span>答對率</span>
+              <b id="result-rate-small">0%</b>
+            </div>
+          </div>
+          <p id="result-encouragement" class="encouragement">今天也有前進。</p>
+        </article>
 
-        <div class="button-grid">
-          <button id="retry-same" class="primary">重新練習本次題目</button>
-          <button id="result-home">回首頁</button>
+        <div class="button-stack">
+          <button id="retry-same" class="primary action-button">再練一次本回合</button>
+          <button id="result-home" class="secondary action-button">回首頁</button>
         </div>
 
         <section class="review-section">
@@ -127,6 +172,25 @@
         </section>
       </section>
     </main>
+
+    <nav class="bottom-nav" aria-label="主要導覽">
+      <button class="nav-item active" data-view="home">
+        <span>⌂</span>
+        首頁
+      </button>
+      <button class="nav-item" data-view="start">
+        <span>▶</span>
+        開始刷題
+      </button>
+      <button class="nav-item" data-view="wrongbook">
+        <span>!</span>
+        錯題本
+      </button>
+      <button class="nav-item" data-view="stats">
+        <span>%</span>
+        統計
+      </button>
+    </nav>
 
     <script src="./app.js"></script>
   </body>

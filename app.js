@@ -12,28 +12,43 @@ const state = {
   results: [],
   currentIndex: 0,
   mode: "random",
+  previousView: "start",
 };
 
 const els = {
-  setupView: document.querySelector("#setup-view"),
-  quizView: document.querySelector("#quiz-view"),
-  resultView: document.querySelector("#result-view"),
+  views: {
+    home: document.querySelector("#home-view"),
+    start: document.querySelector("#start-view"),
+    wrongbook: document.querySelector("#wrongbook-view"),
+    stats: document.querySelector("#stats-view"),
+    quiz: document.querySelector("#quiz-view"),
+    result: document.querySelector("#result-view"),
+  },
+  navItems: document.querySelectorAll(".nav-item"),
   subjectSelect: document.querySelector("#subject-select"),
   startRandom: document.querySelector("#start-random"),
   startWrong: document.querySelector("#start-wrong"),
-  questionCountStat: document.querySelector("#question-count-stat"),
-  homeTotalCount: document.querySelector("#home-total-count"),
+  homeStartRandom: document.querySelector("#home-start-random"),
+  homeStartWrong: document.querySelector("#home-start-wrong"),
+  wrongbookStart: document.querySelector("#wrongbook-start"),
+  topTodayStatus: document.querySelector("#top-today-status"),
+  heroStreak: document.querySelector("#hero-streak"),
+  heroTotalCount: document.querySelector("#hero-total-count"),
+  heroTodayStatus: document.querySelector("#hero-today-status"),
   homeWrongCount: document.querySelector("#home-wrong-count"),
-  todayStatus: document.querySelector("#today-status"),
   streakCount: document.querySelector("#streak-count"),
   dailySummary: document.querySelector("#daily-summary"),
-  subjectStatsList: document.querySelector("#subject-stats-list"),
   wrongCount: document.querySelector("#wrong-count"),
   loadMessage: document.querySelector("#load-message"),
+  wrongbookList: document.querySelector("#wrongbook-list"),
+  subjectStatsList: document.querySelector("#subject-stats-list"),
+  statsSummary: document.querySelector("#stats-summary"),
   quizTitle: document.querySelector("#quiz-title"),
   progressText: document.querySelector("#progress-text"),
   progressFill: document.querySelector("#progress-fill"),
   backHome: document.querySelector("#back-home"),
+  questionNumber: document.querySelector("#question-number"),
+  questionYear: document.querySelector("#question-year"),
   subjectBadge: document.querySelector("#subject-badge"),
   questionText: document.querySelector("#question-text"),
   options: document.querySelector("#options"),
@@ -44,6 +59,9 @@ const els = {
   continueQuiz: document.querySelector("#continue-quiz"),
   scoreRate: document.querySelector("#score-rate"),
   scoreDetail: document.querySelector("#score-detail"),
+  resultWrongCount: document.querySelector("#result-wrong-count"),
+  resultRateSmall: document.querySelector("#result-rate-small"),
+  resultEncouragement: document.querySelector("#result-encouragement"),
   retrySame: document.querySelector("#retry-same"),
   resultHome: document.querySelector("#result-home"),
   reviewList: document.querySelector("#review-list"),
@@ -52,6 +70,9 @@ const els = {
 function normalizeQuestion(raw, index) {
   return {
     id: String(raw.id ?? index + 1),
+    year: raw.year ?? "",
+    exam: raw.exam ?? "初等考試",
+    category: raw.category ?? "",
     subject: raw.subject,
     question: raw.question,
     options: {
@@ -109,7 +130,7 @@ function getWrongIds() {
 
 function setWrongIds(ids) {
   writeStorage(WRONG_KEY, [...new Set(ids)]);
-  updateWrongCount();
+  updateDashboard();
 }
 
 function getDailyProgress() {
@@ -161,11 +182,58 @@ function activeStreak(progress) {
   return 0;
 }
 
-function updateWrongCount() {
-  const ids = getWrongIds();
-  els.wrongCount.textContent = `錯題：${ids.length} 題`;
-  els.homeWrongCount.textContent = ids.length;
-  els.startWrong.disabled = ids.length === 0;
+function selectedPool() {
+  const subject = els.subjectSelect.value;
+  if (subject === ALL_SUBJECTS) return state.allQuestions;
+  return state.allQuestions.filter((item) => item.subject === subject);
+}
+
+function shuffle(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function showMessage(text) {
+  els.loadMessage.textContent = text;
+  els.loadMessage.hidden = !text;
+}
+
+function setView(view) {
+  Object.entries(els.views).forEach(([name, element]) => {
+    element.hidden = name !== view;
+  });
+
+  els.navItems.forEach((item) => {
+    const active = item.dataset.view === view;
+    item.classList.toggle("active", active);
+  });
+
+  document.body.classList.toggle("in-quiz", view === "quiz" || view === "result");
+  if (view === "home" || view === "start" || view === "wrongbook" || view === "stats") {
+    updateDashboard();
+  }
+}
+
+function populateSubjects() {
+  const subjects = [...new Set(state.allQuestions.map((item) => item.subject))].sort();
+  els.subjectSelect.innerHTML = "";
+
+  const allOption = document.createElement("option");
+  allOption.value = ALL_SUBJECTS;
+  allOption.textContent = `全部科目（${state.allQuestions.length} 題）`;
+  els.subjectSelect.appendChild(allOption);
+
+  subjects.forEach((subject) => {
+    const option = document.createElement("option");
+    const count = state.allQuestions.filter((item) => item.subject === subject).length;
+    option.value = subject;
+    option.textContent = `${subject}（${count} 題）`;
+    els.subjectSelect.appendChild(option);
+  });
 }
 
 function updateSubjectStat(question, isCorrect) {
@@ -207,64 +275,59 @@ function completeDailyMissionIfNeeded(totalAnswered) {
   });
 }
 
-function showMessage(text) {
-  els.loadMessage.textContent = text;
-  els.loadMessage.hidden = !text;
-}
-
-function switchView(view) {
-  els.setupView.hidden = view !== "setup";
-  els.quizView.hidden = view !== "quiz";
-  els.resultView.hidden = view !== "result";
-  if (view === "setup") updateDashboard();
-}
-
-function shuffle(items) {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function selectedPool() {
-  const subject = els.subjectSelect.value;
-  if (subject === ALL_SUBJECTS) return state.allQuestions;
-  return state.allQuestions.filter((item) => item.subject === subject);
-}
-
-function populateSubjects() {
-  const subjects = [...new Set(state.allQuestions.map((item) => item.subject))].sort();
-  els.subjectSelect.innerHTML = "";
-
-  const allOption = document.createElement("option");
-  allOption.value = ALL_SUBJECTS;
-  allOption.textContent = `全部科目（${state.allQuestions.length} 題）`;
-  els.subjectSelect.appendChild(allOption);
-
-  subjects.forEach((subject) => {
-    const option = document.createElement("option");
-    const count = state.allQuestions.filter((item) => item.subject === subject).length;
-    option.value = subject;
-    option.textContent = `${subject}（${count} 題）`;
-    els.subjectSelect.appendChild(option);
-  });
-}
-
 function updateDashboard() {
+  const wrongIds = getWrongIds();
   const progress = getDailyProgress();
   const today = todayKey();
   const completedToday = progress.completedDates.includes(today);
+  const streak = activeStreak(progress);
 
-  els.questionCountStat.textContent = state.allQuestions.length || "--";
-  els.homeTotalCount.textContent = state.allQuestions.length || "--";
-  els.todayStatus.textContent = completedToday ? "已完成" : "未完成";
-  els.todayStatus.classList.toggle("done", completedToday);
-  els.streakCount.textContent = `${activeStreak(progress)} 天`;
+  els.topTodayStatus.textContent = completedToday ? "今日完成" : "今日未完成";
+  els.topTodayStatus.classList.toggle("done", completedToday);
+  els.heroTodayStatus.textContent = completedToday ? "已完成" : "未完成";
+  els.heroTodayStatus.classList.toggle("done", completedToday);
+  els.heroStreak.textContent = `${streak} 天`;
+  els.heroTotalCount.textContent = state.allQuestions.length || "--";
+  els.homeWrongCount.textContent = wrongIds.length;
+  els.streakCount.textContent = streak;
   els.dailySummary.textContent = `總完成天數：${progress.totalCompletedDays} 天`;
-  updateWrongCount();
+  els.wrongCount.textContent = `錯題：${wrongIds.length} 題`;
+  els.startWrong.disabled = wrongIds.length === 0;
+  els.homeStartWrong.disabled = wrongIds.length === 0;
+  els.wrongbookStart.disabled = wrongIds.length === 0;
+
+  renderWrongbook();
   renderSubjectStats();
+}
+
+function renderWrongbook() {
+  const ids = new Set(getWrongIds());
+  const wrongQuestions = state.allQuestions.filter((item) => ids.has(item.id));
+  els.wrongbookList.innerHTML = "";
+
+  if (wrongQuestions.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = "目前沒有錯題。答錯的題目會自動收進這裡。";
+    els.wrongbookList.appendChild(empty);
+    return;
+  }
+
+  wrongQuestions.slice(0, 60).forEach((question) => {
+    const wrongCount = getQuestionStat(question.id).wrongCount || 0;
+    const label = weaknessLabel(wrongCount);
+    const item = document.createElement("article");
+    item.className = "compact-item";
+
+    const title = document.createElement("strong");
+    title.textContent = question.question;
+
+    const meta = document.createElement("span");
+    meta.textContent = `${question.subject}${label ? ` · ${label}` : ""}${wrongCount ? ` · 錯 ${wrongCount} 次` : ""}`;
+
+    item.append(title, meta);
+    els.wrongbookList.appendChild(item);
+  });
 }
 
 function renderSubjectStats() {
@@ -273,12 +336,16 @@ function renderSubjectStats() {
   els.subjectStatsList.innerHTML = "";
 
   if (subjects.length === 0) {
+    els.statsSummary.textContent = "尚無作答紀錄";
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "開始作答後會顯示各科統計。";
+    empty.textContent = "開始作答後會顯示各科答對率。";
     els.subjectStatsList.appendChild(empty);
     return;
   }
+
+  const totalAnswered = subjects.reduce((sum, subject) => sum + (Number(stats[subject].total) || 0), 0);
+  els.statsSummary.textContent = `累計作答 ${totalAnswered} 題`;
 
   subjects.forEach((subject) => {
     const item = stats[subject];
@@ -289,17 +356,22 @@ function renderSubjectStats() {
     const row = document.createElement("div");
     row.className = "subject-stat-row";
 
-    const textGroup = document.createElement("div");
-    const subjectName = document.createElement("strong");
+    const info = document.createElement("div");
+    const name = document.createElement("strong");
     const detail = document.createElement("span");
+    const meter = document.createElement("div");
+    const fill = document.createElement("i");
     const rateText = document.createElement("b");
 
-    subjectName.textContent = subject;
+    name.textContent = subject;
     detail.textContent = `${correct} / ${total} 題`;
+    meter.className = "mini-meter";
+    fill.style.width = `${rate}%`;
     rateText.textContent = `${rate}%`;
 
-    textGroup.append(subjectName, detail);
-    row.append(textGroup, rateText);
+    meter.appendChild(fill);
+    info.append(name, detail, meter);
+    row.append(info, rateText);
     els.subjectStatsList.appendChild(row);
   });
 }
@@ -315,20 +387,39 @@ function startQuiz(questions, mode) {
   state.results = Array(state.currentQuestions.length).fill(null);
   state.currentIndex = 0;
   state.mode = mode;
-  els.quizTitle.textContent = mode === "wrong" ? "錯題練習" : "隨機練習";
+  state.previousView = mode === "wrong" ? "wrongbook" : "start";
+  els.quizTitle.textContent = mode === "wrong" ? "錯題複習" : "隨機練習";
   showMessage("");
   renderQuestion();
-  switchView("quiz");
+  setView("quiz");
+}
+
+function startSelectedRandom() {
+  const pool = selectedPool();
+  if (pool.length < QUESTION_COUNT) {
+    showMessage(`這個範圍只有 ${pool.length} 題，請選「全部科目」或題數較多的科目。`);
+    setView("start");
+    return;
+  }
+  startQuiz(shuffle(pool), "random");
+}
+
+function startWrongQuiz() {
+  const ids = new Set(getWrongIds());
+  startQuiz(shuffle(state.allQuestions.filter((item) => ids.has(item.id))), "wrong");
 }
 
 function renderQuestion() {
   const question = state.currentQuestions[state.currentIndex];
   const wrongCount = getQuestionStat(question.id).wrongCount || 0;
   const label = weaknessLabel(wrongCount);
+  const displaySubject = label ? `${question.subject} · ${label}（錯 ${wrongCount} 次）` : question.subject;
 
-  els.subjectBadge.textContent = question.subject;
+  els.questionNumber.textContent = `第 ${state.currentIndex + 1} 題`;
+  els.questionYear.textContent = question.year ? `${question.year} 年` : "初等考試";
+  els.subjectBadge.textContent = displaySubject;
   els.questionText.textContent = question.question;
-  els.progressText.textContent = `第 ${state.currentIndex + 1} / ${state.currentQuestions.length} 題`;
+  els.progressText.textContent = `${state.currentIndex + 1} / ${state.currentQuestions.length}`;
   els.progressFill.style.width = `${(state.currentIndex / state.currentQuestions.length) * 100}%`;
   els.feedbackCard.hidden = true;
   els.feedbackCard.className = "feedback-card";
@@ -337,10 +428,6 @@ function renderQuestion() {
   els.feedbackExplanation.textContent = "";
   els.continueQuiz.disabled = true;
   els.continueQuiz.textContent = "先選一個答案";
-
-  if (label) {
-    els.subjectBadge.textContent = `${question.subject} · ${label}（錯 ${wrongCount} 次）`;
-  }
 
   els.options.innerHTML = "";
   Object.entries(question.options).forEach(([key, text]) => {
@@ -358,6 +445,7 @@ function renderQuestion() {
     optionKey.textContent = key;
 
     const optionText = document.createElement("span");
+    optionText.className = "option-text";
     optionText.textContent = text;
 
     labelElement.append(input, optionKey, optionText);
@@ -387,7 +475,6 @@ function chooseAnswer(answer) {
 
   setWrongIds(wrongIds);
   renderFeedback(question, answer, isCorrect, questionStat.wrongCount || 0);
-  updateDashboard();
 }
 
 function renderFeedback(question, answer, isCorrect, wrongCount) {
@@ -406,7 +493,7 @@ function renderFeedback(question, answer, isCorrect, wrongCount) {
   els.feedbackAnswer.textContent = `正確答案：${question.answer}`;
   els.feedbackExplanation.textContent = label ? `${label}，累計錯 ${wrongCount} 次。${question.explanation}` : question.explanation;
   els.continueQuiz.disabled = false;
-  els.continueQuiz.textContent = state.currentIndex === state.currentQuestions.length - 1 ? "看本次成績" : "下一題";
+  els.continueQuiz.textContent = state.currentIndex === state.currentQuestions.length - 1 ? "看本次成果" : "下一題";
   els.progressFill.style.width = `${((state.currentIndex + 1) / state.currentQuestions.length) * 100}%`;
 }
 
@@ -415,7 +502,7 @@ function finishQuiz() {
   completeDailyMissionIfNeeded(state.currentQuestions.length);
   updateDashboard();
   renderResult(correct);
-  switchView("result");
+  setView("result");
 }
 
 function appendText(parent, tagName, text, className = "") {
@@ -426,11 +513,22 @@ function appendText(parent, tagName, text, className = "") {
   return element;
 }
 
+function encouragement(rate) {
+  if (rate >= 90) return "很穩，這回合像在收分。";
+  if (rate >= 75) return "節奏不錯，把錯題再補一輪就更漂亮。";
+  if (rate >= 60) return "有底了，今天把解析吃下來很有價值。";
+  return "先把錯題收好，下一輪會更準。";
+}
+
 function renderResult(correct) {
   const total = state.currentQuestions.length;
+  const wrong = total - correct;
   const rate = total ? Math.round((correct / total) * 100) : 0;
-  els.scoreRate.textContent = `${rate}%`;
-  els.scoreDetail.textContent = `答對 ${correct} / ${total} 題`;
+  els.scoreRate.textContent = `${correct} / ${total}`;
+  els.scoreDetail.textContent = `答對率 ${rate}%`;
+  els.resultWrongCount.textContent = wrong;
+  els.resultRateSmall.textContent = `${rate}%`;
+  els.resultEncouragement.textContent = encouragement(rate);
   els.reviewList.innerHTML = "";
 
   state.currentQuestions.forEach((question, index) => {
@@ -450,19 +548,15 @@ function renderResult(correct) {
   });
 }
 
-els.startRandom.addEventListener("click", () => {
-  const pool = selectedPool();
-  if (pool.length < QUESTION_COUNT) {
-    showMessage(`這個範圍只有 ${pool.length} 題，請選「全部科目」或題數較多的科目。`);
-    return;
-  }
-  startQuiz(shuffle(pool), "random");
+els.navItems.forEach((item) => {
+  item.addEventListener("click", () => setView(item.dataset.view));
 });
 
-els.startWrong.addEventListener("click", () => {
-  const ids = new Set(getWrongIds());
-  startQuiz(shuffle(state.allQuestions.filter((item) => ids.has(item.id))), "wrong");
-});
+els.startRandom.addEventListener("click", startSelectedRandom);
+els.homeStartRandom.addEventListener("click", startSelectedRandom);
+els.startWrong.addEventListener("click", startWrongQuiz);
+els.homeStartWrong.addEventListener("click", startWrongQuiz);
+els.wrongbookStart.addEventListener("click", startWrongQuiz);
 
 els.continueQuiz.addEventListener("click", () => {
   if (state.results[state.currentIndex] === null) return;
@@ -474,8 +568,8 @@ els.continueQuiz.addEventListener("click", () => {
   }
 });
 
-els.backHome.addEventListener("click", () => switchView("setup"));
-els.resultHome.addEventListener("click", () => switchView("setup"));
+els.backHome.addEventListener("click", () => setView(state.previousView));
+els.resultHome.addEventListener("click", () => setView("home"));
 els.retrySame.addEventListener("click", () => startQuiz(state.currentQuestions, state.mode));
 
 loadQuestions()
@@ -488,5 +582,8 @@ loadQuestions()
   .catch((error) => {
     showMessage(error.message);
     els.startRandom.disabled = true;
+    els.homeStartRandom.disabled = true;
     els.startWrong.disabled = true;
+    els.homeStartWrong.disabled = true;
+    els.wrongbookStart.disabled = true;
   });
