@@ -86,6 +86,10 @@ function normalizeQuestion(raw, index) {
     trap: raw.trap ?? "",
     concept: raw.concept ?? "",
     keyPoint: raw.keyPoint ?? "",
+    topic: raw.topic ?? "",
+    subTopic: raw.subTopic ?? "",
+    frequency: raw.frequency ?? "",
+    thinkingSteps: raw.thinkingSteps ?? [],
     plainExplanation: raw.plainExplanation ?? "",
     optionAnalysis: raw.optionAnalysis ?? {},
     memoryTip: raw.memoryTip ?? "",
@@ -539,6 +543,54 @@ function appendAnalysisItem(parent, title, body, extra = "") {
   parent.appendChild(item);
 }
 
+function appendExamPoint(parent, point) {
+  const item = document.createElement("section");
+  item.className = "analysis-item exam-point";
+
+  const heading = document.createElement("h3");
+  heading.textContent = "🎯 本題考點";
+
+  const grid = document.createElement("div");
+  grid.className = "exam-point-grid";
+
+  [
+    ["科目", point.subject],
+    ["主題", point.topic],
+    ["子主題", point.subTopic],
+    ["常考程度", point.frequency],
+  ].forEach(([label, value]) => {
+    const cell = document.createElement("p");
+    const key = document.createElement("b");
+    const text = document.createElement("span");
+    key.textContent = label;
+    text.textContent = value;
+    cell.append(key, text);
+    grid.appendChild(cell);
+  });
+
+  item.append(heading, grid);
+  parent.appendChild(item);
+}
+
+function appendSteps(parent, steps) {
+  const item = document.createElement("section");
+  item.className = "analysis-item";
+
+  const heading = document.createElement("h3");
+  heading.textContent = "🧠 老師怎麼判斷？";
+
+  const list = document.createElement("ol");
+  list.className = "thinking-steps";
+  steps.forEach((step) => {
+    const row = document.createElement("li");
+    row.textContent = step;
+    list.appendChild(row);
+  });
+
+  item.append(heading, list);
+  parent.appendChild(item);
+}
+
 function cleanSourceOnlyExplanation(text, answer) {
   const value = String(text || "").trim();
   if (!value) return "";
@@ -553,49 +605,89 @@ function getKeywords(question) {
 
   const quoted = question.question.match(/[「『](.*?)[」』]/g);
   if (quoted?.length) return quoted.map((item) => item.replace(/[「」『』]/g, "")).slice(0, 3).join("、");
-  return "先抓題幹問的是「正確、錯誤、何者」，再回頭比對選項的關鍵名詞。";
+  return ["題幹問法", "關鍵名詞", "最直接回答", "排除干擾"];
+}
+
+function keywordText(question) {
+  const keywords = getKeywords(question);
+  if (Array.isArray(keywords)) return keywords.slice(0, 5).join("、");
+  return keywords;
+}
+
+function inferQuestionAsk(question) {
+  if (question.question.includes("何者正確")) return "哪一個選項的敘述正確";
+  if (question.question.includes("何者錯誤") || question.question.includes("何者有誤")) return "哪一個選項的敘述錯誤";
+  if (question.question.includes("何者最")) return "哪一個選項最符合題幹";
+  if (question.question.includes("下列")) return "在下列選項中找出最符合題幹的敘述";
+  return "題幹真正要求你判斷的核心概念";
+}
+
+function inferOptionRole(optionText) {
+  const text = String(optionText || "");
+  if (text.length <= 14) return `「${text}」這個概念或名詞`;
+  return `「${text}」這段敘述`;
+}
+
+function fallbackOptionAnalysis(question, key) {
+  const ask = inferQuestionAsk(question);
+  const role = inferOptionRole(question.options[key]);
+  return `${role}看起來也和本科有關，所以容易讓人想選。可是本題要判斷的是「${ask}」，這個選項沒有直接扣回題幹的核心要求；考場上要先問自己：它是在回答題目，還是只是出現了熟悉的名詞？`;
 }
 
 function buildTeacherAnalysis(question, isCorrect, label, wrongCount) {
   const answer = question.answer;
   const answerText = question.options[answer];
   const cleanedExplanation = cleanSourceOnlyExplanation(question.explanation, answer);
-  const concept = question.concept || question.subject;
+  const topic = question.topic || question.concept || question.subject;
+  const subTopic = question.subTopic || question.keyPoint || "題幹判斷與選項排除";
+  const frequency = question.frequency || "★★★☆☆";
+  const ask = inferQuestionAsk(question);
   const wrongNote = label ? `這題已累計錯 ${wrongCount} 次，先把判斷規則釘住。` : "";
 
-  const keyPoint =
-    question.keyPoint ||
-    `這題在考「${concept}」的基本判斷：題幹描述最符合哪一個選項。`;
+  const examPoint = {
+    subject: question.subject,
+    topic,
+    subTopic,
+    frequency,
+  };
+
+  const thinkingSteps = Array.isArray(question.thinkingSteps) && question.thinkingSteps.length
+    ? question.thinkingSteps
+    : [
+        `① 先看題幹問什麼：本題要找的是「${ask}」。`,
+        `② 抓關鍵字：${keywordText(question)}。`,
+        "③ 排除只出現熟悉名詞、但沒有正面回答題幹的選項。",
+        `④ 最後選出最直接回答題目的答案：${answer}「${answerText}」。`,
+      ];
 
   const plainExplanation =
     question.plainExplanation ||
     (cleanedExplanation
-      ? `答案選 ${answer}。用白話講，就是先看題目問的核心，再用解析裡的觀念去排除干擾選項：${cleanedExplanation}`
-      : `答案選 ${answer}，重點不是背字母，而是看出選項「${answerText}」最符合題幹要求。遇到這類題目，先把題幹問法圈出來，再看哪個選項最直接回答它。`);
+      ? `題目問的是「${ask}」。答案 ${answer} 的「${answerText}」最能對上題幹要求；白話說，就是先抓題目要你判斷的點，再用這個觀念去看選項是否真的回答問題。補充觀念：${cleanedExplanation}`
+      : `題目問的是「${ask}」。答案 ${answer} 的「${answerText}」不是只看起來熟，而是最直接扣住題幹要判斷的方向；其他選項即使有相關名詞，只要沒有正面回答題幹，就要先排除。`);
 
   const optionAnalysis = ["A", "B", "C", "D"]
     .filter((key) => key !== answer)
     .map((key) => ({
       label: `${key}：`,
-      text:
-        question.optionAnalysis?.[key] ||
-        `不選 ${key}，因為「${question.options[key]}」不是本題官方答案。考場上不要看到熟悉字就選，要確認它有沒有精準對到題幹。`,
+      text: question.optionAnalysis?.[key] || fallbackOptionAnalysis(question, key),
     }));
 
   const memoryTip =
     question.memoryTip ||
-    `記法：先看題幹要你判斷什麼，再選最能直接回答題幹的那個選項，不要被熟悉字眼帶走。`;
+    `口訣：先問題目要什麼，再選最直接回答它的選項；看到熟悉字，不等於它就是答案。`;
 
-  const keywords = getKeywords(question);
+  const keywords = keywordText(question);
 
   return {
-    keyPoint,
+    examPoint,
+    thinkingSteps,
     plainExplanation: wrongNote ? `${plainExplanation} ${wrongNote}` : plainExplanation,
     optionAnalysis,
     memoryTip,
     keywords,
-    conceptNote: question.concept ? `核心觀念：${question.concept}` : "",
-    statusNote: isCorrect ? "這題答對了，接著把判斷方式記起來。" : "這題答錯了，先看干擾選項為什麼不能選。",
+    conceptNote: question.concept ? `核心觀念：${question.concept}` : `主題：${topic}`,
+    statusNote: isCorrect ? "你這題方向抓對了，接著記判斷流程。" : "這題錯在判斷點被干擾，先把排除理由看完。",
   };
 }
 
@@ -605,11 +697,12 @@ function renderAnalysisCard(question, answer, isCorrect, label, wrongCount) {
   els.feedbackAnswer.innerHTML = "";
   els.feedbackExplanation.innerHTML = "";
 
-  appendAnalysisItem(els.feedbackExplanation, "一句話重點：這題在考什麼？", analysis.keyPoint, analysis.statusNote);
-  appendAnalysisItem(els.feedbackExplanation, `白話解釋：為什麼答案是 ${question.answer}？`, analysis.plainExplanation, analysis.conceptNote);
-  appendAnalysisItem(els.feedbackExplanation, "其他選項為什麼不選", analysis.optionAnalysis);
-  appendAnalysisItem(els.feedbackExplanation, "記憶口訣", analysis.memoryTip);
-  appendAnalysisItem(els.feedbackExplanation, "下次看到這題要抓的關鍵字", analysis.keywords);
+  appendExamPoint(els.feedbackExplanation, analysis.examPoint);
+  appendSteps(els.feedbackExplanation, analysis.thinkingSteps);
+  appendAnalysisItem(els.feedbackExplanation, `✅ 為什麼正解是 ${question.answer}？`, analysis.plainExplanation, analysis.conceptNote);
+  appendAnalysisItem(els.feedbackExplanation, "❌ 其他選項為什麼錯？", analysis.optionAnalysis);
+  appendAnalysisItem(els.feedbackExplanation, "📝 記憶口訣", analysis.memoryTip);
+  appendAnalysisItem(els.feedbackExplanation, "🔑 下次看到這題要抓的關鍵字", analysis.keywords);
 }
 
 function finishQuiz() {
