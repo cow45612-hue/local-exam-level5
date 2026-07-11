@@ -17534,7 +17534,60 @@
     "C": "occurs",
     "D": "trains",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "動詞字義與主詞搭配",
+      "keyPoint": "crime 是事件，搭配 occur 表示『發生』；one violent crime occurs every three hours 就是每三小時發生一件暴力犯罪。",
+      "thinkingSteps": [
+        "先看主詞是 one violent crime，這是一件『事件』，不是人。",
+        "英文說某事件發生，最常用 occur 或 happen。",
+        "題幹的 every three hours 是頻率，正好搭配『每三小時發生一次』。",
+        "所以選 C occurs。"
+      ],
+      "correctReason": "正解 C。occur 是『發生』，常用來說事故、犯罪、問題等事件發生。整句是：據報導，某些國家每三小時就發生一件暴力犯罪。",
+      "optionAnalysis": {
+        "A": "A agrees 是同意。crime 不會『同意』某件事，主詞和動詞不搭。",
+        "B": "B cheats 是作弊或欺騙，需要人或有意志的主體；犯罪事件不能 cheat。",
+        "C": "C 正確。occurs = happens，表示一件暴力犯罪發生。",
+        "D": "D trains 是訓練，通常是人訓練人、動物或技能，不能說 crime trains。"
+      },
+      "memoryTip": "事故、犯罪、問題『發生』，英文先想 occur。",
+      "keywords": [
+        "occur",
+        "crime",
+        "every three hours",
+        "發生",
+        "動詞搭配"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "動詞字義與主詞搭配",
+    "keyPoint": "crime 是事件，搭配 occur 表示『發生』；one violent crime occurs every three hours 就是每三小時發生一件暴力犯罪。",
+    "thinkingSteps": [
+      "先看主詞是 one violent crime，這是一件『事件』，不是人。",
+      "英文說某事件發生，最常用 occur 或 happen。",
+      "題幹的 every three hours 是頻率，正好搭配『每三小時發生一次』。",
+      "所以選 C occurs。"
+    ],
+    "correctReason": "正解 C。occur 是『發生』，常用來說事故、犯罪、問題等事件發生。整句是：據報導，某些國家每三小時就發生一件暴力犯罪。",
+    "optionAnalysis": {
+      "A": "A agrees 是同意。crime 不會『同意』某件事，主詞和動詞不搭。",
+      "B": "B cheats 是作弊或欺騙，需要人或有意志的主體；犯罪事件不能 cheat。",
+      "C": "C 正確。occurs = happens，表示一件暴力犯罪發生。",
+      "D": "D trains 是訓練，通常是人訓練人、動物或技能，不能說 crime trains。"
+    },
+    "memoryTip": "事故、犯罪、問題『發生』，英文先想 occur。",
+    "keywords": [
+      "occur",
+      "crime",
+      "every three hours",
+      "發生",
+      "動詞搭配"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。occur 是『發生』，常用來說事故、犯罪、問題等事件發生。整句是：據報導，某些國家每三小時就發生一件暴力犯罪。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-38",
@@ -17549,7 +17602,60 @@
     "C": "offered",
     "D": "wounded",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "被動語態與字義",
+      "keyPoint": "be wounded by gunfire 是固定而自然的搭配，表示『被槍火打傷』。",
+      "thinkingSteps": [
+        "句型是 were ___ by gunfire，by 後面說明造成結果的原因，所以空格要放『受傷』的過去分詞。",
+        "wound 當動詞是使人受傷；were wounded 就是『被打傷』。",
+        "戰爭、槍火與士兵受傷，語意也完全一致。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。wounded 是『受傷的、被打傷的』。A lot of soldiers were wounded by gunfire 意思是許多士兵在兩國戰爭中遭槍火擊傷。",
+      "optionAnalysis": {
+        "A": "A behaved 是表現、行為舉止。士兵不會是『被槍火表現』，語法與語意都不通。",
+        "B": "B counted 是被計數。槍火不是在清點士兵，和戰爭情境不符。",
+        "C": "C offered 是被提供。gunfire 不會提供士兵某物。",
+        "D": "D 正確。were wounded by gunfire 是『遭槍火打傷』。"
+      },
+      "memoryTip": "wound 是傷口或使受傷；be wounded by gunfire = 被槍火打傷。",
+      "keywords": [
+        "wounded",
+        "gunfire",
+        "were",
+        "被動語態",
+        "受傷"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "被動語態與字義",
+    "keyPoint": "be wounded by gunfire 是固定而自然的搭配，表示『被槍火打傷』。",
+    "thinkingSteps": [
+      "句型是 were ___ by gunfire，by 後面說明造成結果的原因，所以空格要放『受傷』的過去分詞。",
+      "wound 當動詞是使人受傷；were wounded 就是『被打傷』。",
+      "戰爭、槍火與士兵受傷，語意也完全一致。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。wounded 是『受傷的、被打傷的』。A lot of soldiers were wounded by gunfire 意思是許多士兵在兩國戰爭中遭槍火擊傷。",
+    "optionAnalysis": {
+      "A": "A behaved 是表現、行為舉止。士兵不會是『被槍火表現』，語法與語意都不通。",
+      "B": "B counted 是被計數。槍火不是在清點士兵，和戰爭情境不符。",
+      "C": "C offered 是被提供。gunfire 不會提供士兵某物。",
+      "D": "D 正確。were wounded by gunfire 是『遭槍火打傷』。"
+    },
+    "memoryTip": "wound 是傷口或使受傷；be wounded by gunfire = 被槍火打傷。",
+    "keywords": [
+      "wounded",
+      "gunfire",
+      "were",
+      "被動語態",
+      "受傷"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。wounded 是『受傷的、被打傷的』。A lot of soldiers were wounded by gunfire 意思是許多士兵在兩國戰爭中遭槍火擊傷。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-39",
@@ -17564,7 +17670,60 @@
     "C": "tape",
     "D": "write",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "動詞字義",
+      "keyPoint": "軟體計算文件裡有幾個字、幾行，最直接的動詞是 count。",
+      "thinkingSteps": [
+        "先看受詞：the total number of words and lines，是『字數與行數的總數』。",
+        "對數量做統計，用 count。",
+        "文書處理軟體的字數統計功能，正是 count words and lines。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。count 是『計算、數出』。軟體可以 count 文件中的總字數和總行數。",
+      "optionAnalysis": {
+        "A": "A press 是按壓，例如 press a button，不能表示統計字數。",
+        "B": "B 正確。count the number of words and lines 就是計算字數與行數。",
+        "C": "C tape 是用膠帶黏，或錄音錄影，和文件統計無關。",
+        "D": "D write 是書寫。軟體可以讓你寫字，但題幹問的是計算已經有多少字。"
+      },
+      "memoryTip": "看到 number of ...，要算數量就用 count。",
+      "keywords": [
+        "count",
+        "total number",
+        "words",
+        "lines",
+        "word processing"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "動詞字義",
+    "keyPoint": "軟體計算文件裡有幾個字、幾行，最直接的動詞是 count。",
+    "thinkingSteps": [
+      "先看受詞：the total number of words and lines，是『字數與行數的總數』。",
+      "對數量做統計，用 count。",
+      "文書處理軟體的字數統計功能，正是 count words and lines。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。count 是『計算、數出』。軟體可以 count 文件中的總字數和總行數。",
+    "optionAnalysis": {
+      "A": "A press 是按壓，例如 press a button，不能表示統計字數。",
+      "B": "B 正確。count the number of words and lines 就是計算字數與行數。",
+      "C": "C tape 是用膠帶黏，或錄音錄影，和文件統計無關。",
+      "D": "D write 是書寫。軟體可以讓你寫字，但題幹問的是計算已經有多少字。"
+    },
+    "memoryTip": "看到 number of ...，要算數量就用 count。",
+    "keywords": [
+      "count",
+      "total number",
+      "words",
+      "lines",
+      "word processing"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。count 是『計算、數出』。軟體可以 count 文件中的總字數和總行數。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-40",
@@ -17579,7 +17738,60 @@
     "C": "lend",
     "D": "take請依下文回答第41 題至第45 題A lucid dream occurs when someone is asleep but becomes actively aware that he or she is dreaming. Historically,lucid dreaming has",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "片語動詞",
+      "keyPoint": "give away 是『送掉、捐出去』；把舊衣服送給需要的人，正好是 give away。",
+      "thinkingSteps": [
+        "先看對象是 people in need，表示要幫助有需要的人。",
+        "old clothes 是自己原本擁有的東西，現在要無償送出去。",
+        "give away 正是『贈送、捐贈』，不是借出或拿走。",
+        "所以選 A。"
+      ],
+      "correctReason": "正解 A。give away 表示免費送人或捐出。I will give away some of my old clothes to people in need 是『我要把一些舊衣服捐給有需要的人』。",
+      "optionAnalysis": {
+        "A": "A 正確。give away = 送掉、捐出，和舊衣服送給有需要的人完全吻合。",
+        "B": "B greet 是打招呼，不能接 old clothes 當作要送出的東西。",
+        "C": "C lend 是借出，重點是以後要還；題幹是把舊衣送給需要的人，不是暫借。",
+        "D": "D take away 是拿走，方向相反，會變成把衣服從有需要的人身邊帶走。"
+      },
+      "memoryTip": "give away 是送出去；take away 是拿走，方向剛好相反。",
+      "keywords": [
+        "give away",
+        "old clothes",
+        "people in need",
+        "捐贈",
+        "片語動詞"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "片語動詞",
+    "keyPoint": "give away 是『送掉、捐出去』；把舊衣服送給需要的人，正好是 give away。",
+    "thinkingSteps": [
+      "先看對象是 people in need，表示要幫助有需要的人。",
+      "old clothes 是自己原本擁有的東西，現在要無償送出去。",
+      "give away 正是『贈送、捐贈』，不是借出或拿走。",
+      "所以選 A。"
+    ],
+    "correctReason": "正解 A。give away 表示免費送人或捐出。I will give away some of my old clothes to people in need 是『我要把一些舊衣服捐給有需要的人』。",
+    "optionAnalysis": {
+      "A": "A 正確。give away = 送掉、捐出，和舊衣服送給有需要的人完全吻合。",
+      "B": "B greet 是打招呼，不能接 old clothes 當作要送出的東西。",
+      "C": "C lend 是借出，重點是以後要還；題幹是把舊衣送給需要的人，不是暫借。",
+      "D": "D take away 是拿走，方向相反，會變成把衣服從有需要的人身邊帶走。"
+    },
+    "memoryTip": "give away 是送出去；take away 是拿走，方向剛好相反。",
+    "keywords": [
+      "give away",
+      "old clothes",
+      "people in need",
+      "捐贈",
+      "片語動詞"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。give away 表示免費送人或捐出。I will give away some of my old clothes to people in need 是『我要把一些舊衣服捐給有需要的人』。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-45",
@@ -17594,7 +17806,60 @@
     "C": "permit",
     "D": "remind請依下文回答第46 題至第50 題Professor Dr. Juliane House, in her research journal, clearly differentiates between “languages for communication” and“languages for identification” and does not see any threat posed by ELF (English as Lingua Franca) to other national andregional languages. Her point is valid when a Sri Lankan talks to a Pakistani or a Bangladeshi talks to an Iranian, becauseall of the speakers use English as a neutral global language solely for communication purposes. However, the socio-cultural prejudice and superiority of the language may arise when an English person is conversing with a non-nativespeaker. Although the contemporary sway of English language over others is beyond any cavil, based upon the fact thatit is also the language of the Americans, the most developed and influential nation on the global map in the fields ofeducation, economics, defense technology and world trade, the fact remains that the seeds of English language’sflourishing crop were sown by the unjustifiable British colonialism and forced occupation over weaker nations.Moreover, if people living in the developing countries have started believing that their educational, economic and socialgrowth and future prospects totally depend upon developing English language proficiency, I am sorry to say, they arepsychological slaves and under threat. This dominance of language is utterly illegitimate. In relation to the issue, we are,definitely, exposed to the risk of a socio-cultural decline because in the audio-visual labs and libraries of our educationalinstitutions as well as language learning centers, the students are shown English movies, cartoons and TV serials andprovided English storybooks, etc., to develop their listening and reading skills and for building their vocabulary. Nonecan deny the fact that a nation’s literature, folk tales and entertainment media are the most vibrant sources of promotingits cultural norms, moral values and social ethics, and the positive and constructive process of learning a global language.",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀克漏字與動詞搭配",
+      "keyPoint": "remind yourself that... 是『提醒自己……』；清醒夢練習要不斷提醒自己眼前景象不是真的。",
+      "thinkingSteps": [
+        "先接上下文：文章在教人如何提高做清醒夢的機率。",
+        "空格後是 yourself that they are not real，最自然的句型是 remind yourself that...。",
+        "意思是提醒自己：那些景象不是真的；這才會增加清醒夢的可能。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。remind yourself that... 是『提醒自己……』。文意是：提醒自己那些景象不是真的，這樣就能增加做清醒夢的機會。",
+      "optionAnalysis": {
+        "A": "A admire 是欣賞。admire yourself that... 不是自然句型，也不符合練習清醒夢的意思。",
+        "B": "B debate 是辯論。debate yourself that... 語法不自然，且不需要和自己辯論景象真假。",
+        "C": "C permit 是允許。permit yourself that... 缺少合理結構，語意也不對。",
+        "D": "D 正確。remind yourself that they are not real = 提醒自己它們不是真的。"
+      },
+      "memoryTip": "提醒某人某事：remind + 人 + that 子句。",
+      "keywords": [
+        "remind yourself",
+        "lucid dream",
+        "not real",
+        "that 子句",
+        "克漏字"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀克漏字與動詞搭配",
+    "keyPoint": "remind yourself that... 是『提醒自己……』；清醒夢練習要不斷提醒自己眼前景象不是真的。",
+    "thinkingSteps": [
+      "先接上下文：文章在教人如何提高做清醒夢的機率。",
+      "空格後是 yourself that they are not real，最自然的句型是 remind yourself that...。",
+      "意思是提醒自己：那些景象不是真的；這才會增加清醒夢的可能。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。remind yourself that... 是『提醒自己……』。文意是：提醒自己那些景象不是真的，這樣就能增加做清醒夢的機會。",
+    "optionAnalysis": {
+      "A": "A admire 是欣賞。admire yourself that... 不是自然句型，也不符合練習清醒夢的意思。",
+      "B": "B debate 是辯論。debate yourself that... 語法不自然，且不需要和自己辯論景象真假。",
+      "C": "C permit 是允許。permit yourself that... 缺少合理結構，語意也不對。",
+      "D": "D 正確。remind yourself that they are not real = 提醒自己它們不是真的。"
+    },
+    "memoryTip": "提醒某人某事：remind + 人 + that 子句。",
+    "keywords": [
+      "remind yourself",
+      "lucid dream",
+      "not real",
+      "that 子句",
+      "克漏字"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。remind yourself that... 是『提醒自己……』。文意是：提醒自己那些景象不是真的，這樣就能增加做清醒夢的機會。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-46",
@@ -17609,7 +17874,60 @@
     "C": "The dominance of English is good for promoting a developing country’s culture.",
     "D": "Many people around the globe are communicating with each other in English.",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀理解：NOT implied",
+      "keyPoint": "NOT implied 要找文章沒有支持、甚至與作者立場相反的選項；作者警告英語優勢可能傷害開發中國家的文化。",
+      "thinkingSteps": [
+        "先看題目問 NOT implied，不是在找文章說過的話，而是在找『文章推不出來』的那一句。",
+        "作者一面承認英語用於教育、商業與國際溝通，一面批評它可能造成文化與心理上的支配。",
+        "C 說英語優勢有利於推廣開發中國家的文化，剛好和作者警告文化衰退的方向相反。",
+        "所以選 C。"
+      ],
+      "correctReason": "正解 C。文章認為英語的強勢地位可能讓開發中國家過度依賴英語、忽略自己的文學與文化，帶來社會文化衰退；沒有說它有利於推廣本國文化。",
+      "optionAnalysis": {
+        "A": "A 可由文章推出。作者提到教育領域與英語能力的重要性，承認英語在學術教育中有廣泛影響。",
+        "B": "B 可由文章推出。文章提到 economics 和 world trade，支持英語廣泛用於商業溝通的意思。",
+        "C": "C 不可推出，因此正確。作者擔心英語優勢壓縮本土文化，不是幫助開發中國家推廣文化。",
+        "D": "D 可由文章推出。文章舉斯里蘭卡、巴基斯坦、孟加拉與伊朗人士用英語溝通的例子。"
+      },
+      "memoryTip": "閱讀題看到 NOT，先找和作者態度相反的選項。",
+      "keywords": [
+        "NOT implied",
+        "English dominance",
+        "developing countries",
+        "cultural decline",
+        "作者態度"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀理解：NOT implied",
+    "keyPoint": "NOT implied 要找文章沒有支持、甚至與作者立場相反的選項；作者警告英語優勢可能傷害開發中國家的文化。",
+    "thinkingSteps": [
+      "先看題目問 NOT implied，不是在找文章說過的話，而是在找『文章推不出來』的那一句。",
+      "作者一面承認英語用於教育、商業與國際溝通，一面批評它可能造成文化與心理上的支配。",
+      "C 說英語優勢有利於推廣開發中國家的文化，剛好和作者警告文化衰退的方向相反。",
+      "所以選 C。"
+    ],
+    "correctReason": "正解 C。文章認為英語的強勢地位可能讓開發中國家過度依賴英語、忽略自己的文學與文化，帶來社會文化衰退；沒有說它有利於推廣本國文化。",
+    "optionAnalysis": {
+      "A": "A 可由文章推出。作者提到教育領域與英語能力的重要性，承認英語在學術教育中有廣泛影響。",
+      "B": "B 可由文章推出。文章提到 economics 和 world trade，支持英語廣泛用於商業溝通的意思。",
+      "C": "C 不可推出，因此正確。作者擔心英語優勢壓縮本土文化，不是幫助開發中國家推廣文化。",
+      "D": "D 可由文章推出。文章舉斯里蘭卡、巴基斯坦、孟加拉與伊朗人士用英語溝通的例子。"
+    },
+    "memoryTip": "閱讀題看到 NOT，先找和作者態度相反的選項。",
+    "keywords": [
+      "NOT implied",
+      "English dominance",
+      "developing countries",
+      "cultural decline",
+      "作者態度"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。文章認為英語的強勢地位可能讓開發中國家過度依賴英語、忽略自己的文學與文化，帶來社會文化衰退；沒有說它有利於推廣本國文化。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-47",
@@ -17624,7 +17942,60 @@
     "C": "English as a Multi-cultural Language",
     "D": "The Risks and Threats of Using English",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀理解：主旨",
+      "keyPoint": "標題要抓整篇最主要的論點；本文不只介紹英語，而是在警告英語強勢可能帶來文化與心理風險。",
+      "thinkingSteps": [
+        "先看作者的篇幅花在哪裡：他先承認英語能溝通，後面大量談殖民、文化優越感與文化衰退。",
+        "主旨不是『學英語很好』，也不是單純介紹語言種類。",
+        "作者反覆強調 risk、threat、psychological slaves、socio-cultural decline。",
+        "所以最貼近全文的標題是 D。"
+      ],
+      "correctReason": "正解 D。本文核心是提醒讀者：英語雖是全球溝通工具，但其強勢地位可能帶來文化優越、心理依賴與本土文化衰退的風險。",
+      "optionAnalysis": {
+        "A": "A 錯。文章不是在稱讚學英語的優點，反而特別提出過度依賴英語的危險。",
+        "B": "B 錯。文中有提到 communication 和 identification，但那只是開頭背景，不是全文的重心。",
+        "C": "C 錯。文章不是說英語如何成為多元文化語言，而是批判它對其他文化可能形成的壓力。",
+        "D": "D 正確。Risks and Threats 概括了作者對英語主導地位的主要憂慮。"
+      },
+      "memoryTip": "找標題別看第一段，先看作者一直重複批評或強調什麼。",
+      "keywords": [
+        "best title",
+        "risks",
+        "threats",
+        "English dominance",
+        "cultural decline"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀理解：主旨",
+    "keyPoint": "標題要抓整篇最主要的論點；本文不只介紹英語，而是在警告英語強勢可能帶來文化與心理風險。",
+    "thinkingSteps": [
+      "先看作者的篇幅花在哪裡：他先承認英語能溝通，後面大量談殖民、文化優越感與文化衰退。",
+      "主旨不是『學英語很好』，也不是單純介紹語言種類。",
+      "作者反覆強調 risk、threat、psychological slaves、socio-cultural decline。",
+      "所以最貼近全文的標題是 D。"
+    ],
+    "correctReason": "正解 D。本文核心是提醒讀者：英語雖是全球溝通工具，但其強勢地位可能帶來文化優越、心理依賴與本土文化衰退的風險。",
+    "optionAnalysis": {
+      "A": "A 錯。文章不是在稱讚學英語的優點，反而特別提出過度依賴英語的危險。",
+      "B": "B 錯。文中有提到 communication 和 identification，但那只是開頭背景，不是全文的重心。",
+      "C": "C 錯。文章不是說英語如何成為多元文化語言，而是批判它對其他文化可能形成的壓力。",
+      "D": "D 正確。Risks and Threats 概括了作者對英語主導地位的主要憂慮。"
+    },
+    "memoryTip": "找標題別看第一段，先看作者一直重複批評或強調什麼。",
+    "keywords": [
+      "best title",
+      "risks",
+      "threats",
+      "English dominance",
+      "cultural decline"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。本文核心是提醒讀者：英語雖是全球溝通工具，但其強勢地位可能帶來文化優越、心理依賴與本土文化衰退的風險。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-48",
@@ -17639,7 +18010,60 @@
     "C": "English is the national language of the U.S.A.",
     "D": "English was promoted by the British during their colonial rule over many countries.",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀理解：細節判斷",
+      "keyPoint": "題目問『沒有提到』的英語強勢原因；文章提到美國、學術教育與英國殖民，沒有提到跨國企業指定英語為唯一官方語言。",
+      "thinkingSteps": [
+        "題目是 NOT contribute，先把文章明講的三個來源圈出來。",
+        "作者提到美國的全球影響力、教育領域，以及英國殖民擴張。",
+        "A 的『國際企業選英語作唯一官方語言』聽起來合理，但文章沒有寫。",
+        "所以選 A。"
+      ],
+      "correctReason": "正解 A。本文沒有提到國際企業把英語定為唯一官方語言；其餘三項都可在文中找到直接或明確的依據。",
+      "optionAnalysis": {
+        "A": "A 正確。這是文章未提及的原因；不要因為現實中可能存在就以為本文有說。",
+        "B": "B 錯。文章提到教育機構、語言學習中心與英語教材，可支持英語在教育中的強勢。",
+        "C": "C 錯。文章明說英語也是美國的語言，並提到美國在教育、經濟、科技、貿易的影響力。",
+        "D": "D 錯。文章明說英語的擴張種子來自英國殖民與強迫占領。"
+      },
+      "memoryTip": "細節題只認文章證據；選項再合理，文中沒寫就是答案。",
+      "keywords": [
+        "NOT mentioned",
+        "predominance",
+        "U.S.A.",
+        "colonial rule",
+        "細節題"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀理解：細節判斷",
+    "keyPoint": "題目問『沒有提到』的英語強勢原因；文章提到美國、學術教育與英國殖民，沒有提到跨國企業指定英語為唯一官方語言。",
+    "thinkingSteps": [
+      "題目是 NOT contribute，先把文章明講的三個來源圈出來。",
+      "作者提到美國的全球影響力、教育領域，以及英國殖民擴張。",
+      "A 的『國際企業選英語作唯一官方語言』聽起來合理，但文章沒有寫。",
+      "所以選 A。"
+    ],
+    "correctReason": "正解 A。本文沒有提到國際企業把英語定為唯一官方語言；其餘三項都可在文中找到直接或明確的依據。",
+    "optionAnalysis": {
+      "A": "A 正確。這是文章未提及的原因；不要因為現實中可能存在就以為本文有說。",
+      "B": "B 錯。文章提到教育機構、語言學習中心與英語教材，可支持英語在教育中的強勢。",
+      "C": "C 錯。文章明說英語也是美國的語言，並提到美國在教育、經濟、科技、貿易的影響力。",
+      "D": "D 錯。文章明說英語的擴張種子來自英國殖民與強迫占領。"
+    },
+    "memoryTip": "細節題只認文章證據；選項再合理，文中沒寫就是答案。",
+    "keywords": [
+      "NOT mentioned",
+      "predominance",
+      "U.S.A.",
+      "colonial rule",
+      "細節題"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。本文沒有提到國際企業把英語定為唯一官方語言；其餘三項都可在文中找到直接或明確的依據。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-49",
@@ -17654,7 +18078,60 @@
     "C": "The overwhelming frustration for those who have no talents for language.",
     "D": "The widespread discrimination against those who cannot master English.",
     "answer": "A",
-    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：A。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀理解：因果關係",
+      "keyPoint": "作者擔心教育過度使用英語，學生只接觸英語影視與讀物，會讓本國文化和社會發展逐漸衰退。",
+      "thinkingSteps": [
+        "題目鎖定 education，回文章找教育機構那一段。",
+        "作者說學生在語言中心接觸英語電影、卡通、影集和故事書。",
+        "接著他說文學、民間故事、娛樂媒體是傳承文化規範、價值與倫理的重要來源。",
+        "如果本土內容被英語內容擠掉，風險就是文化與社會發展衰退，所以選 A。"
+      ],
+      "correctReason": "正解 A。作者認為英語教育若讓學生主要接觸英語文化產品，本國文學、民間故事與媒體的文化傳承功能會被削弱，可能造成社會文化發展的衰退。",
+      "optionAnalysis": {
+        "A": "A 正確。文章直接提到 socio-cultural decline，也解釋本土文學與媒體對文化價值的重要性。",
+        "B": "B 錯。文章沒有談弱勢家庭的孩子被邊緣化，這是額外延伸。",
+        "C": "C 錯。文章沒有把問題說成沒有語言天分的人會挫折。",
+        "D": "D 錯。文章談的是文化與心理依賴的風險，不是『不會英語者普遍遭歧視』。"
+      },
+      "memoryTip": "教育段落若談本土故事與媒體被擠掉，風險先想文化傳承斷掉。",
+      "keywords": [
+        "education",
+        "socio-cultural decline",
+        "literature",
+        "folk tales",
+        "cultural development"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀理解：因果關係",
+    "keyPoint": "作者擔心教育過度使用英語，學生只接觸英語影視與讀物，會讓本國文化和社會發展逐漸衰退。",
+    "thinkingSteps": [
+      "題目鎖定 education，回文章找教育機構那一段。",
+      "作者說學生在語言中心接觸英語電影、卡通、影集和故事書。",
+      "接著他說文學、民間故事、娛樂媒體是傳承文化規範、價值與倫理的重要來源。",
+      "如果本土內容被英語內容擠掉，風險就是文化與社會發展衰退，所以選 A。"
+    ],
+    "correctReason": "正解 A。作者認為英語教育若讓學生主要接觸英語文化產品，本國文學、民間故事與媒體的文化傳承功能會被削弱，可能造成社會文化發展的衰退。",
+    "optionAnalysis": {
+      "A": "A 正確。文章直接提到 socio-cultural decline，也解釋本土文學與媒體對文化價值的重要性。",
+      "B": "B 錯。文章沒有談弱勢家庭的孩子被邊緣化，這是額外延伸。",
+      "C": "C 錯。文章沒有把問題說成沒有語言天分的人會挫折。",
+      "D": "D 錯。文章談的是文化與心理依賴的風險，不是『不會英語者普遍遭歧視』。"
+    },
+    "memoryTip": "教育段落若談本土故事與媒體被擠掉，風險先想文化傳承斷掉。",
+    "keywords": [
+      "education",
+      "socio-cultural decline",
+      "literature",
+      "folk tales",
+      "cultural development"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 A。作者認為英語教育若讓學生主要接觸英語文化產品，本國文學、民間故事與媒體的文化傳承功能會被削弱，可能造成社會文化發展的衰退。"
   },
   {
     "id": "general-administration-113-初等-公民與英文-50",
@@ -17669,7 +18146,60 @@
     "C": "Ethics.",
     "D": "Media.",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "閱讀理解：細節分類",
+      "keyPoint": "文章列的是推進文化的『來源』：文學、民間故事、娛樂媒體；倫理是被這些來源傳遞的內容，不是來源本身。",
+      "thinkingSteps": [
+        "題目問的是 agents，意思是『推動文化的媒介或來源』。",
+        "原文列出 a nation's literature, folk tales and entertainment media。",
+        "moral values and social ethics 是這些媒介所傳遞、推廣的內容。",
+        "所以 ethics 沒被列為 agent，選 C。"
+      ],
+      "correctReason": "正解 C。文章說文學、民間故事和娛樂媒體是推進文化規範、道德價值與社會倫理的重要來源；ethics 是被傳遞的文化內容，不是那個來源。",
+      "optionAnalysis": {
+        "A": "A 錯。literature 被文章直接列為推進文化的重要來源。",
+        "B": "B 錯。folk tales 被文章直接列為重要來源。",
+        "C": "C 正確。ethics 是社會倫理，屬於被傳遞的內容，而非文中列出的推動媒介。",
+        "D": "D 錯。entertainment media 被文章直接列為重要來源。"
+      },
+      "memoryTip": "來源是『誰在傳』；倫理是『傳了什麼』。",
+      "keywords": [
+        "agents",
+        "literature",
+        "folk tales",
+        "media",
+        "ethics"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "閱讀理解：細節分類",
+    "keyPoint": "文章列的是推進文化的『來源』：文學、民間故事、娛樂媒體；倫理是被這些來源傳遞的內容，不是來源本身。",
+    "thinkingSteps": [
+      "題目問的是 agents，意思是『推動文化的媒介或來源』。",
+      "原文列出 a nation's literature, folk tales and entertainment media。",
+      "moral values and social ethics 是這些媒介所傳遞、推廣的內容。",
+      "所以 ethics 沒被列為 agent，選 C。"
+    ],
+    "correctReason": "正解 C。文章說文學、民間故事和娛樂媒體是推進文化規範、道德價值與社會倫理的重要來源；ethics 是被傳遞的文化內容，不是那個來源。",
+    "optionAnalysis": {
+      "A": "A 錯。literature 被文章直接列為推進文化的重要來源。",
+      "B": "B 錯。folk tales 被文章直接列為重要來源。",
+      "C": "C 正確。ethics 是社會倫理，屬於被傳遞的內容，而非文中列出的推動媒介。",
+      "D": "D 錯。entertainment media 被文章直接列為重要來源。"
+    },
+    "memoryTip": "來源是『誰在傳』；倫理是『傳了什麼』。",
+    "keywords": [
+      "agents",
+      "literature",
+      "folk tales",
+      "media",
+      "ethics"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。文章說文學、民間故事和娛樂媒體是推進文化規範、道德價值與社會倫理的重要來源；ethics 是被傳遞的文化內容，不是那個來源。"
   },
   {
     "id": "general-administration-113-初等-jurisprudence-basics-1",
