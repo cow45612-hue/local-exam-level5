@@ -41482,7 +41482,56 @@
     "C": "A flight ticket.",
     "D": "A concert ticket.",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "表格閱讀",
+      "keyPoint": "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「表格閱讀」。",
+        "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+      "optionAnalysis": {
+        "A": "資料沒有公車路線或站牌。",
+        "B": "正確。Train No. 與 Car 9-16A 都是火車資訊。",
+        "C": "沒有航班或機場資訊。",
+        "D": "沒有表演場次與演出資訊。"
+      },
+      "memoryTip": "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+      "keywords": [
+        "英文",
+        "表格閱讀"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "表格閱讀",
+    "keyPoint": "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「表格閱讀」。",
+      "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+    "optionAnalysis": {
+      "A": "資料沒有公車路線或站牌。",
+      "B": "正確。Train No. 與 Car 9-16A 都是火車資訊。",
+      "C": "沒有航班或機場資訊。",
+      "D": "沒有表演場次與演出資訊。"
+    },
+    "memoryTip": "訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。",
+    "keywords": [
+      "英文",
+      "表格閱讀"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。訂位資料列出 Train No. 621、Taipei 到 Taichung、車廂與座位，所以 George 訂的是火車票。"
   },
   {
     "id": "general-administration-111-初等-公民與英文-47",
@@ -41497,7 +41546,56 @@
     "C": "The reservation number.",
     "D": "The date to use the ticket.",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "表格細節",
+      "keyPoint": "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「表格細節」。",
+        "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+      "optionAnalysis": {
+        "A": "Seat 欄列出 Car 9-16A。",
+        "B": "正確。表格沒有 special discount。",
+        "C": "Reservation Number 為06213156。",
+        "D": "Trip Date 為12/30。"
+      },
+      "memoryTip": "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+      "keywords": [
+        "英文",
+        "表格細節"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "表格細節",
+    "keyPoint": "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「表格細節」。",
+      "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+    "optionAnalysis": {
+      "A": "Seat 欄列出 Car 9-16A。",
+      "B": "正確。表格沒有 special discount。",
+      "C": "Reservation Number 為06213156。",
+      "D": "Trip Date 為12/30。"
+    },
+    "memoryTip": "資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。",
+    "keywords": [
+      "英文",
+      "表格細節"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。資料有座位、訂位編號與搭乘日期，但沒有任何折扣訊息。"
   },
   {
     "id": "general-administration-111-初等-公民與英文-48",
@@ -41512,7 +41610,56 @@
     "C": "Identification number.",
     "D": "Driver’s licence number.",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "表格細節",
+      "keyPoint": "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「表格細節」。",
+        "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+      "optionAnalysis": {
+        "A": "Mobile 欄有手機號碼。",
+        "B": "E-mail 欄有電子郵件。",
+        "C": "Identification 欄有身分證號。",
+        "D": "正確。沒有 Driver’s licence number。"
+      },
+      "memoryTip": "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+      "keywords": [
+        "英文",
+        "表格細節"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "表格細節",
+    "keyPoint": "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「表格細節」。",
+      "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+    "optionAnalysis": {
+      "A": "Mobile 欄有手機號碼。",
+      "B": "E-mail 欄有電子郵件。",
+      "C": "Identification 欄有身分證號。",
+      "D": "正確。沒有 Driver’s licence number。"
+    },
+    "memoryTip": "訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。",
+    "keywords": [
+      "英文",
+      "表格細節"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。訂票資料要求手機、電子郵件與身分證號，沒有駕照號碼。"
   },
   {
     "id": "general-administration-111-初等-公民與英文-49",
@@ -41527,7 +41674,56 @@
     "C": "December 29.",
     "D": "December 30.",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "日期判讀",
+      "keyPoint": "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「日期判讀」。",
+        "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+      "optionAnalysis": {
+        "A": "12/17比通知期限早一天。",
+        "B": "正確。by 12/18 表示最遲12月18日完成。",
+        "C": "12/29不是付款期限。",
+        "D": "12/30是搭車日期。"
+      },
+      "memoryTip": "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+      "keywords": [
+        "英文",
+        "日期判讀"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "日期判讀",
+    "keyPoint": "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「日期判讀」。",
+      "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+    "optionAnalysis": {
+      "A": "12/17比通知期限早一天。",
+      "B": "正確。by 12/18 表示最遲12月18日完成。",
+      "C": "12/29不是付款期限。",
+      "D": "12/30是搭車日期。"
+    },
+    "memoryTip": "通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。",
+    "keywords": [
+      "英文",
+      "日期判讀"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。通知明寫 You must complete payment by 12/18，因此付款期限是12月18日。"
   },
   {
     "id": "general-administration-111-初等-公民與英文-50",
@@ -41542,7 +41738,56 @@
     "C": "The reserved seat is a business class seat.",
     "D": "The arrival time in Taichung is scheduled at 10:46.",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "英文",
+      "subTopic": "表格判讀",
+      "keyPoint": "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「表格判讀」。",
+        "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+      "optionAnalysis": {
+        "A": "Passenger 是 Adult 1，沒有兒童。",
+        "B": "09:46到10:46剛好一小時，不超過一小時。",
+        "C": "Class 是 Standard Car，不是商務車廂。",
+        "D": "正確。Arrival 10:46。"
+      },
+      "memoryTip": "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+      "keywords": [
+        "英文",
+        "表格判讀"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "英文",
+    "subTopic": "表格判讀",
+    "keyPoint": "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「表格判讀」。",
+      "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+    "optionAnalysis": {
+      "A": "Passenger 是 Adult 1，沒有兒童。",
+      "B": "09:46到10:46剛好一小時，不超過一小時。",
+      "C": "Class 是 Standard Car，不是商務車廂。",
+      "D": "正確。Arrival 10:46。"
+    },
+    "memoryTip": "表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。",
+    "keywords": [
+      "英文",
+      "表格判讀"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。表格 Arrival 欄明列10:46，因此預定抵達臺中的時間是10:46。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-1",
@@ -41557,7 +41802,56 @@
     "C": "法律與命令，均需經過總統公布後生效",
     "D": "以命令限制人民之權利義務，應有法律授權",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "法學緒論",
+      "subTopic": "法律與命令",
+      "keyPoint": "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「法律與命令」。",
+        "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 C。"
+      ],
+      "correctReason": "正解 C。法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+      "optionAnalysis": {
+        "A": "正確。法律由立法機關制定，命令由行政機關依權限訂定。",
+        "B": "通則通常為法律名稱，施行細則通常為命令。",
+        "C": "錯誤。命令不是一律由總統公布。",
+        "D": "限制人民權利須有法律依據或明確授權。"
+      },
+      "memoryTip": "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+      "keywords": [
+        "法學緒論",
+        "法律與命令"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "法學緒論",
+    "subTopic": "法律與命令",
+    "keyPoint": "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「法律與命令」。",
+      "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 C。"
+    ],
+    "correctReason": "正解 C。法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+    "optionAnalysis": {
+      "A": "正確。法律由立法機關制定，命令由行政機關依權限訂定。",
+      "B": "通則通常為法律名稱，施行細則通常為命令。",
+      "C": "錯誤。命令不是一律由總統公布。",
+      "D": "限制人民權利須有法律依據或明確授權。"
+    },
+    "memoryTip": "法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。",
+    "keywords": [
+      "法學緒論",
+      "法律與命令"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。法律由總統公布；行政命令原則由行政機關發布，不需要每一項都經總統公布。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-2",
@@ -41572,7 +41866,56 @@
     "C": "法律優位原則",
     "D": "法律安定性原則",
     "answer": "C",
-    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：C。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "行政法",
+      "subTopic": "法律優位",
+      "keyPoint": "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「法律優位」。",
+        "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 C。"
+      ],
+      "correctReason": "正解 C。委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+      "optionAnalysis": {
+        "A": "明確性要求規範內容清楚，不是位階衝突。",
+        "B": "法律保留問的是行政行為是否須法律授權。",
+        "C": "正確。行政規範不得違反法律。",
+        "D": "安定性重視法秩序可預見與穩定。"
+      },
+      "memoryTip": "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+      "keywords": [
+        "行政法",
+        "法律優位"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "行政法",
+    "subTopic": "法律優位",
+    "keyPoint": "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「法律優位」。",
+      "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 C。"
+    ],
+    "correctReason": "正解 C。委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+    "optionAnalysis": {
+      "A": "明確性要求規範內容清楚，不是位階衝突。",
+      "B": "法律保留問的是行政行為是否須法律授權。",
+      "C": "正確。行政規範不得違反法律。",
+      "D": "安定性重視法秩序可預見與穩定。"
+    },
+    "memoryTip": "委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。",
+    "keywords": [
+      "行政法",
+      "法律優位"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 C。委辦規則不得牴觸法律，低位階行政規範違反高位階法律即無效，是法律優位原則。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-3",
@@ -41587,7 +41930,56 @@
     "C": "姓名權",
     "D": "婚姻自由",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "憲法",
+      "subTopic": "憲法明文基本權",
+      "keyPoint": "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「憲法明文基本權」。",
+        "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+      "optionAnalysis": {
+        "A": "性自主是由人格權等憲法解釋發展，非本文逐字明列。",
+        "B": "正確。憲法第9條明文保障。",
+        "C": "姓名權由人格權保障，非憲法明文列舉。",
+        "D": "婚姻自由由憲法解釋保障，非本文明列。"
+      },
+      "memoryTip": "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+      "keywords": [
+        "憲法",
+        "憲法明文基本權"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "憲法",
+    "subTopic": "憲法明文基本權",
+    "keyPoint": "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「憲法明文基本權」。",
+      "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+    "optionAnalysis": {
+      "A": "性自主是由人格權等憲法解釋發展，非本文逐字明列。",
+      "B": "正確。憲法第9條明文保障。",
+      "C": "姓名權由人格權保障，非憲法明文列舉。",
+      "D": "婚姻自由由憲法解釋保障，非本文明列。"
+    },
+    "memoryTip": "憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。",
+    "keywords": [
+      "憲法",
+      "憲法明文基本權"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。憲法明文規定非現役軍人不受軍事審判；其他權利多由概括基本權或解釋發展。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-4",
@@ -41602,7 +41994,56 @@
     "C": "法律牴觸憲法時，法律無效",
     "D": "法律牴觸國際法時，法律無效",
     "answer": "D",
-    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：D。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "行政法",
+      "subTopic": "法律優位",
+      "keyPoint": "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「法律優位」。",
+        "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 D。"
+      ],
+      "correctReason": "正解 D。我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+      "optionAnalysis": {
+        "A": "命令牴觸憲法當然無效。",
+        "B": "命令牴觸法律，依位階原則無效。",
+        "C": "法律牴觸憲法時不得適用並可宣告失效。",
+        "D": "錯誤。法律牴觸國際法不當然直接無效，須看國內法效力與適用規則。"
+      },
+      "memoryTip": "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+      "keywords": [
+        "行政法",
+        "法律優位"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "行政法",
+    "subTopic": "法律優位",
+    "keyPoint": "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「法律優位」。",
+      "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 D。"
+    ],
+    "correctReason": "正解 D。我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+    "optionAnalysis": {
+      "A": "命令牴觸憲法當然無效。",
+      "B": "命令牴觸法律，依位階原則無效。",
+      "C": "法律牴觸憲法時不得適用並可宣告失效。",
+      "D": "錯誤。法律牴觸國際法不當然直接無效，須看國內法效力與適用規則。"
+    },
+    "memoryTip": "我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。",
+    "keywords": [
+      "行政法",
+      "法律優位"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 D。我國法秩序中，法律不得牴觸憲法、命令不得牴觸法律；一般國際法與國內法律衝突並非當然使法律無效。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-5",
@@ -41617,7 +42058,56 @@
     "C": "法律保留原則",
     "D": "法律明確性原則",
     "answer": "B",
-    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。"
+    "explanation": "官方答案：B。來源：考選部歷屆試題，LawPlayer 結構化整理。",
+    "teacherExplanation": {
+      "topic": "憲法",
+      "subTopic": "正當法律程序",
+      "keyPoint": "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+      "frequency": "★★★☆☆",
+      "thinkingSteps": [
+        "先定位題目在考「正當法律程序」。",
+        "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+        "逐項比對題目資料或法律位階。",
+        "所以選 B。"
+      ],
+      "correctReason": "正解 B。逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+      "optionAnalysis": {
+        "A": "罪刑法定在問犯罪與刑罰須有法律明文。",
+        "B": "正確。告知、通知、迅速送審是正當程序。",
+        "C": "法律保留只說須有法律依據，未涵蓋這些具體程序。",
+        "D": "明確性要求法律文字清楚。"
+      },
+      "memoryTip": "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+      "keywords": [
+        "憲法",
+        "正當法律程序"
+      ],
+      "explanationQuality": "ai_generated"
+    },
+    "topic": "憲法",
+    "subTopic": "正當法律程序",
+    "keyPoint": "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+    "frequency": "★★★☆☆",
+    "thinkingSteps": [
+      "先定位題目在考「正當法律程序」。",
+      "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+      "逐項比對題目資料或法律位階。",
+      "所以選 B。"
+    ],
+    "correctReason": "正解 B。逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+    "optionAnalysis": {
+      "A": "罪刑法定在問犯罪與刑罰須有法律明文。",
+      "B": "正確。告知、通知、迅速送審是正當程序。",
+      "C": "法律保留只說須有法律依據，未涵蓋這些具體程序。",
+      "D": "明確性要求法律文字清楚。"
+    },
+    "memoryTip": "逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。",
+    "keywords": [
+      "憲法",
+      "正當法律程序"
+    ],
+    "explanationQuality": "ai_generated",
+    "plainExplanation": "正解 B。逮捕須告知理由、通知親友並在24小時內移送法院，都是防止任意拘禁的程序保障。"
   },
   {
     "id": "general-administration-111-初等-jurisprudence-basics-6",
