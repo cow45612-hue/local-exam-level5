@@ -5,7 +5,7 @@ const SUBJECT_STATS_KEY = "initial-exam-subject-stats";
 const QUESTION_STATS_KEY = "initial-exam-question-stats";
 const ALL_SUBJECTS = "__all__";
 
-const TSMC_WORDS = [
+let TSMC_WORDS = [
   { word: "ability", type: "noun", meaning: "能力" },
   { word: "abnormal", type: "adjective", meaning: "異常的" },
   { word: "abort", type: "verb", meaning: "中止" },
@@ -121,6 +121,24 @@ const els = {
 const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
 let tsmcPracticeMode = "words";
 
+async function loadTsmcVocabulary() {
+  try {
+    const response = await fetch("./tsmc-vocabulary.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const vocabulary = await response.json();
+    if (!Array.isArray(vocabulary) || vocabulary.length !== 288) {
+      throw new Error(`Expected 288 words, found ${vocabulary?.length ?? 0}`);
+    }
+
+    TSMC_WORDS = vocabulary;
+    tsmcPracticeIndices.words = 0;
+    if (tsmcPracticeMode === "words") renderTsmcWord();
+  } catch (error) {
+    console.warn("Unable to load the complete TSMC vocabulary; using the built-in fallback.", error);
+  }
+}
+
 function currentTsmcItems() {
   if (tsmcPracticeMode === "math") return TSMC_MATH_QUESTIONS;
   if (tsmcPracticeMode === "interview") return TSMC_INTERVIEW_QUESTIONS;
@@ -164,7 +182,7 @@ els.tsmcNext.addEventListener("click", () => {
 els.tsmcSpeak.addEventListener("click", () => {
   if (!("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(TSMC_WORDS[tsmcPracticeIndices.words].word);
+  const utterance = new SpeechSynthesisUtterance(currentTsmcItems()[tsmcPracticeIndices.words].word);
   utterance.lang = "en-US";
   utterance.rate = 0.85;
   window.speechSynthesis.speak(utterance);
@@ -178,6 +196,7 @@ els.tsmcModeButtons.forEach((button) => {
 });
 
 renderTsmcWord();
+loadTsmcVocabulary();
 
 function normalizeQuestion(raw, index) {
   const teacher = raw.teacherExplanation ?? {};

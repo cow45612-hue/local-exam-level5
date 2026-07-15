@@ -1,0 +1,1730 @@
+[
+  {
+    "id": 1,
+    "word": "ability",
+    "type": "noun",
+    "meaning": "能力"
+  },
+  {
+    "id": 2,
+    "word": "abnormal",
+    "type": "adjective",
+    "meaning": "異常的"
+  },
+  {
+    "id": 3,
+    "word": "abort",
+    "type": "verb",
+    "meaning": "中止"
+  },
+  {
+    "id": 4,
+    "word": "absence",
+    "type": "noun",
+    "meaning": "缺席"
+  },
+  {
+    "id": 5,
+    "word": "acid",
+    "type": "noun",
+    "meaning": "酸"
+  },
+  {
+    "id": 6,
+    "word": "active",
+    "type": "adjective",
+    "meaning": "主動的"
+  },
+  {
+    "id": 7,
+    "word": "actual",
+    "type": "adjective",
+    "meaning": "真實的"
+  },
+  {
+    "id": 8,
+    "word": "add",
+    "type": "verb",
+    "meaning": "增加"
+  },
+  {
+    "id": 9,
+    "word": "adjust",
+    "type": "verb",
+    "meaning": "調整"
+  },
+  {
+    "id": 10,
+    "word": "AI",
+    "type": "noun",
+    "meaning": "人工智慧"
+  },
+  {
+    "id": 11,
+    "word": "air shower",
+    "type": "noun",
+    "meaning": "潔淨通道"
+  },
+  {
+    "id": 12,
+    "word": "alarm",
+    "type": "noun",
+    "meaning": "警報"
+  },
+  {
+    "id": 13,
+    "word": "alert",
+    "type": "noun",
+    "meaning": "警報"
+  },
+  {
+    "id": 14,
+    "word": "align",
+    "type": "verb",
+    "meaning": "對焦"
+  },
+  {
+    "id": 15,
+    "word": "annually",
+    "type": "adjective",
+    "meaning": "每年的"
+  },
+  {
+    "id": 16,
+    "word": "area",
+    "type": "noun",
+    "meaning": "區域"
+  },
+  {
+    "id": 17,
+    "word": "attach",
+    "type": "verb",
+    "meaning": "附上"
+  },
+  {
+    "id": 18,
+    "word": "audit",
+    "type": "verb",
+    "meaning": "稽核、查核"
+  },
+  {
+    "id": 19,
+    "word": "automatic",
+    "type": "adjective",
+    "meaning": "自動的"
+  },
+  {
+    "id": 20,
+    "word": "automotive",
+    "type": "adjective",
+    "meaning": "汽車的"
+  },
+  {
+    "id": 21,
+    "word": "available",
+    "type": "adjective",
+    "meaning": "可使用的"
+  },
+  {
+    "id": 22,
+    "word": "average",
+    "type": "noun",
+    "meaning": "平均"
+  },
+  {
+    "id": 23,
+    "word": "backup",
+    "type": "noun",
+    "meaning": "支援"
+  },
+  {
+    "id": 24,
+    "word": "bank",
+    "type": "noun",
+    "meaning": "銀行(v.) 暫存"
+  },
+  {
+    "id": 25,
+    "word": "basic",
+    "type": "adjective",
+    "meaning": "基礎的"
+  },
+  {
+    "id": 26,
+    "word": "beam",
+    "type": "noun",
+    "meaning": "光束"
+  },
+  {
+    "id": 27,
+    "word": "benchmark",
+    "type": "noun",
+    "meaning": "標竿學習"
+  },
+  {
+    "id": 28,
+    "word": "bottle",
+    "type": "noun",
+    "meaning": "瓶子"
+  },
+  {
+    "id": 29,
+    "word": "bottom",
+    "type": "noun",
+    "meaning": "底部"
+  },
+  {
+    "id": 30,
+    "word": "broken",
+    "type": "adjective",
+    "meaning": "破掉的"
+  },
+  {
+    "id": 31,
+    "word": "cancel",
+    "type": "verb",
+    "meaning": "取消"
+  },
+  {
+    "id": 32,
+    "word": "card",
+    "type": "noun",
+    "meaning": "卡片"
+  },
+  {
+    "id": 33,
+    "word": "cart",
+    "type": "noun",
+    "meaning": "手推車"
+  },
+  {
+    "id": 34,
+    "word": "cassette",
+    "type": "noun",
+    "meaning": "晶片專用盒"
+  },
+  {
+    "id": 35,
+    "word": "center",
+    "type": "noun",
+    "meaning": "中心"
+  },
+  {
+    "id": 36,
+    "word": "certify",
+    "type": "verb",
+    "meaning": "證實、認證"
+  },
+  {
+    "id": 37,
+    "word": "change",
+    "type": "verb",
+    "meaning": "更換"
+  },
+  {
+    "id": 38,
+    "word": "chart",
+    "type": "noun",
+    "meaning": "圖表"
+  },
+  {
+    "id": 39,
+    "word": "check",
+    "type": "verb",
+    "meaning": "檢查"
+  },
+  {
+    "id": 40,
+    "word": "chemical",
+    "type": "noun",
+    "meaning": "化學、化學品"
+  },
+  {
+    "id": 41,
+    "word": "chip",
+    "type": "noun",
+    "meaning": "晶片"
+  },
+  {
+    "id": 42,
+    "word": "choose",
+    "type": "verb",
+    "meaning": "挑選"
+  },
+  {
+    "id": 43,
+    "word": "clean",
+    "type": "verb",
+    "meaning": "清潔"
+  },
+  {
+    "id": 44,
+    "word": "clean chamber",
+    "type": "noun",
+    "meaning": "潔淨室"
+  },
+  {
+    "id": 45,
+    "word": "clear",
+    "type": "verb",
+    "meaning": "清除"
+  },
+  {
+    "id": 46,
+    "word": "collect",
+    "type": "verb",
+    "meaning": "蒐集"
+  },
+  {
+    "id": 47,
+    "word": "color",
+    "type": "noun",
+    "meaning": "顏色"
+  },
+  {
+    "id": 48,
+    "word": "comment",
+    "type": "noun",
+    "meaning": "評論"
+  },
+  {
+    "id": 49,
+    "word": "company",
+    "type": "noun",
+    "meaning": "公司"
+  },
+  {
+    "id": 50,
+    "word": "complete",
+    "type": "verb",
+    "meaning": "完成"
+  },
+  {
+    "id": 51,
+    "word": "computer",
+    "type": "noun",
+    "meaning": "電腦"
+  },
+  {
+    "id": 52,
+    "word": "concern",
+    "type": "verb",
+    "meaning": "擔憂"
+  },
+  {
+    "id": 53,
+    "word": "confidential",
+    "type": "adjective",
+    "meaning": "機密的"
+  },
+  {
+    "id": 54,
+    "word": "confirm",
+    "type": "verb",
+    "meaning": "確認"
+  },
+  {
+    "id": 55,
+    "word": "contamination",
+    "type": "noun",
+    "meaning": "污染"
+  },
+  {
+    "id": 56,
+    "word": "continue",
+    "type": "verb",
+    "meaning": "繼續"
+  },
+  {
+    "id": 57,
+    "word": "control",
+    "type": "noun",
+    "meaning": "控制"
+  },
+  {
+    "id": 58,
+    "word": "copy",
+    "type": "noun",
+    "meaning": "拷貝"
+  },
+  {
+    "id": 59,
+    "word": "count",
+    "type": "verb",
+    "meaning": "計算"
+  },
+  {
+    "id": 60,
+    "word": "customer",
+    "type": "noun",
+    "meaning": "客戶"
+  },
+  {
+    "id": 61,
+    "word": "cycle",
+    "type": "noun",
+    "meaning": "週期"
+  },
+  {
+    "id": 62,
+    "word": "cycle time",
+    "type": "noun",
+    "meaning": "生產週期"
+  },
+  {
+    "id": 63,
+    "word": "daily",
+    "type": "adjective",
+    "meaning": "每日的"
+  },
+  {
+    "id": 64,
+    "word": "data",
+    "type": "noun",
+    "meaning": "資料"
+  },
+  {
+    "id": 65,
+    "word": "date",
+    "type": "noun",
+    "meaning": "日期"
+  },
+  {
+    "id": 66,
+    "word": "decline",
+    "type": "verb",
+    "meaning": "減少"
+  },
+  {
+    "id": 67,
+    "word": "defect",
+    "type": "noun",
+    "meaning": "缺陷"
+  },
+  {
+    "id": 68,
+    "word": "delay",
+    "type": "verb",
+    "meaning": "延遲"
+  },
+  {
+    "id": 69,
+    "word": "delete",
+    "type": "verb",
+    "meaning": "刪除"
+  },
+  {
+    "id": 70,
+    "word": "diffusion",
+    "type": "noun",
+    "meaning": "擴散製程"
+  },
+  {
+    "id": 71,
+    "word": "document",
+    "type": "noun",
+    "meaning": "文件"
+  },
+  {
+    "id": 72,
+    "word": "dry",
+    "type": "adjective",
+    "meaning": "乾的"
+  },
+  {
+    "id": 73,
+    "word": "emergency",
+    "type": "noun",
+    "meaning": "緊急情況"
+  },
+  {
+    "id": 74,
+    "word": "emergency stop",
+    "type": "noun",
+    "meaning": "緊急停止"
+  },
+  {
+    "id": 75,
+    "word": "engineer",
+    "type": "noun",
+    "meaning": "工程師"
+  },
+  {
+    "id": 76,
+    "word": "enhance",
+    "type": "verb",
+    "meaning": "增進"
+  },
+  {
+    "id": 77,
+    "word": "enter",
+    "type": "verb",
+    "meaning": "進入"
+  },
+  {
+    "id": 78,
+    "word": "environment",
+    "type": "noun",
+    "meaning": "環境"
+  },
+  {
+    "id": 79,
+    "word": "equipment",
+    "type": "noun",
+    "meaning": "設備"
+  },
+  {
+    "id": 80,
+    "word": "error",
+    "type": "noun",
+    "meaning": "錯誤"
+  },
+  {
+    "id": 81,
+    "word": "etching",
+    "type": "noun",
+    "meaning": "蝕刻製程"
+  },
+  {
+    "id": 82,
+    "word": "EUV / extreme ultraviolet",
+    "type": "noun",
+    "meaning": "極紫外光"
+  },
+  {
+    "id": 83,
+    "word": "event",
+    "type": "noun",
+    "meaning": "事件"
+  },
+  {
+    "id": 84,
+    "word": "execute",
+    "type": "verb",
+    "meaning": "執行"
+  },
+  {
+    "id": 85,
+    "word": "exit",
+    "type": "noun",
+    "meaning": "退出"
+  },
+  {
+    "id": 86,
+    "word": "fault",
+    "type": "noun",
+    "meaning": "錯誤"
+  },
+  {
+    "id": 87,
+    "word": "find",
+    "type": "verb",
+    "meaning": "發現"
+  },
+  {
+    "id": 88,
+    "word": "floor",
+    "type": "noun",
+    "meaning": "地板"
+  },
+  {
+    "id": 89,
+    "word": "focus",
+    "type": "noun",
+    "meaning": "焦點"
+  },
+  {
+    "id": 90,
+    "word": "follow",
+    "type": "verb",
+    "meaning": "照做、跟隨"
+  },
+  {
+    "id": 91,
+    "word": "freeze",
+    "type": "verb",
+    "meaning": "凍結"
+  },
+  {
+    "id": 92,
+    "word": "full",
+    "type": "adjective",
+    "meaning": "滿的"
+  },
+  {
+    "id": 93,
+    "word": "function",
+    "type": "noun",
+    "meaning": "功能"
+  },
+  {
+    "id": 94,
+    "word": "gas",
+    "type": "noun",
+    "meaning": "氣體"
+  },
+  {
+    "id": 95,
+    "word": "glass",
+    "type": "noun",
+    "meaning": "玻璃、鏡片"
+  },
+  {
+    "id": 96,
+    "word": "gloves",
+    "type": "noun",
+    "meaning": "手套"
+  },
+  {
+    "id": 97,
+    "word": "grade",
+    "type": "noun",
+    "meaning": "等級"
+  },
+  {
+    "id": 98,
+    "word": "green",
+    "type": "noun",
+    "meaning": "綠色"
+  },
+  {
+    "id": 99,
+    "word": "group",
+    "type": "noun",
+    "meaning": "群組"
+  },
+  {
+    "id": 100,
+    "word": "handle",
+    "type": "verb",
+    "meaning": "處理"
+  },
+  {
+    "id": 101,
+    "word": "hard-disk",
+    "type": "noun",
+    "meaning": "硬盤"
+  },
+  {
+    "id": 102,
+    "word": "heavy",
+    "type": "adjective",
+    "meaning": "重的"
+  },
+  {
+    "id": 103,
+    "word": "helmet",
+    "type": "noun",
+    "meaning": "安全帽"
+  },
+  {
+    "id": 104,
+    "word": "help",
+    "type": "verb",
+    "meaning": "幫助"
+  },
+  {
+    "id": 105,
+    "word": "hold",
+    "type": "verb",
+    "meaning": "暫停"
+  },
+  {
+    "id": 106,
+    "word": "hole",
+    "type": "noun",
+    "meaning": "孔、洞"
+  },
+  {
+    "id": 107,
+    "word": "hot",
+    "type": "adjective",
+    "meaning": "熱的"
+  },
+  {
+    "id": 108,
+    "word": "impact",
+    "type": "noun",
+    "meaning": "影馨"
+  },
+  {
+    "id": 109,
+    "word": "improve",
+    "type": "verb",
+    "meaning": "改善"
+  },
+  {
+    "id": 110,
+    "word": "inform",
+    "type": "verb",
+    "meaning": "通知"
+  },
+  {
+    "id": 111,
+    "word": "information",
+    "type": "noun",
+    "meaning": "資訊"
+  },
+  {
+    "id": 112,
+    "word": "inhibition",
+    "type": "noun",
+    "meaning": "禁止禁用"
+  },
+  {
+    "id": 113,
+    "word": "input",
+    "type": "noun",
+    "meaning": "輸入"
+  },
+  {
+    "id": 114,
+    "word": "inspect",
+    "type": "verb",
+    "meaning": "檢查"
+  },
+  {
+    "id": 115,
+    "word": "inspection",
+    "type": "noun",
+    "meaning": "檢驗"
+  },
+  {
+    "id": 116,
+    "word": "instruction",
+    "type": "noun",
+    "meaning": "指令"
+  },
+  {
+    "id": 117,
+    "word": "Internet",
+    "type": "noun",
+    "meaning": "網際網路"
+  },
+  {
+    "id": 118,
+    "word": "interview",
+    "type": "noun",
+    "meaning": "面試"
+  },
+  {
+    "id": 119,
+    "word": "issue",
+    "type": "verb",
+    "meaning": "發行(n.) 議題"
+  },
+  {
+    "id": 120,
+    "word": "job",
+    "type": "noun",
+    "meaning": "工作"
+  },
+  {
+    "id": 121,
+    "word": "keep",
+    "type": "verb",
+    "meaning": "保持"
+  },
+  {
+    "id": 122,
+    "word": "keyboard",
+    "type": "noun",
+    "meaning": "鍵盤"
+  },
+  {
+    "id": 123,
+    "word": "label",
+    "type": "noun",
+    "meaning": "標籤"
+  },
+  {
+    "id": 124,
+    "word": "laboratory",
+    "type": "noun",
+    "meaning": "實驗室"
+  },
+  {
+    "id": 125,
+    "word": "leader",
+    "type": "noun",
+    "meaning": "組長"
+  },
+  {
+    "id": 126,
+    "word": "learn",
+    "type": "verb",
+    "meaning": "學習"
+  },
+  {
+    "id": 127,
+    "word": "level",
+    "type": "noun",
+    "meaning": "程度"
+  },
+  {
+    "id": 128,
+    "word": "lift",
+    "type": "verb",
+    "meaning": "抬起、舉起"
+  },
+  {
+    "id": 129,
+    "word": "light",
+    "type": "noun",
+    "meaning": "光"
+  },
+  {
+    "id": 130,
+    "word": "line",
+    "type": "noun",
+    "meaning": "直線"
+  },
+  {
+    "id": 131,
+    "word": "link",
+    "type": "noun",
+    "meaning": "連結"
+  },
+  {
+    "id": 132,
+    "word": "liquid",
+    "type": "noun",
+    "meaning": "液體"
+  },
+  {
+    "id": 133,
+    "word": "list",
+    "type": "noun",
+    "meaning": "清單"
+  },
+  {
+    "id": 134,
+    "word": "lithography",
+    "type": "noun",
+    "meaning": "黃光／微影製程"
+  },
+  {
+    "id": 135,
+    "word": "load",
+    "type": "verb",
+    "meaning": "上貨、裝載"
+  },
+  {
+    "id": 136,
+    "word": "loading",
+    "type": "noun",
+    "meaning": "負荷"
+  },
+  {
+    "id": 137,
+    "word": "lobby",
+    "type": "noun",
+    "meaning": "大廳"
+  },
+  {
+    "id": 138,
+    "word": "location",
+    "type": "noun",
+    "meaning": "位置"
+  },
+  {
+    "id": 139,
+    "word": "lock",
+    "type": "verb",
+    "meaning": "鎖住"
+  },
+  {
+    "id": 140,
+    "word": "log sheet",
+    "type": "noun",
+    "meaning": "工作紀錄"
+  },
+  {
+    "id": 141,
+    "word": "lose",
+    "type": "verb",
+    "meaning": "遺失"
+  },
+  {
+    "id": 142,
+    "word": "lot",
+    "type": "noun",
+    "meaning": "批貨"
+  },
+  {
+    "id": 143,
+    "word": "machine",
+    "type": "noun",
+    "meaning": "機器"
+  },
+  {
+    "id": 144,
+    "word": "maintain",
+    "type": "verb",
+    "meaning": "維護"
+  },
+  {
+    "id": 145,
+    "word": "manual",
+    "type": "adjective",
+    "meaning": "手動的"
+  },
+  {
+    "id": 146,
+    "word": "manufacture",
+    "type": "verb",
+    "meaning": "製造"
+  },
+  {
+    "id": 147,
+    "word": "mark",
+    "type": "noun",
+    "meaning": "記號"
+  },
+  {
+    "id": 148,
+    "word": "mask",
+    "type": "noun",
+    "meaning": "光罩、口罩"
+  },
+  {
+    "id": 149,
+    "word": "material",
+    "type": "noun",
+    "meaning": "原料"
+  },
+  {
+    "id": 150,
+    "word": "measure",
+    "type": "verb",
+    "meaning": "量測"
+  },
+  {
+    "id": 151,
+    "word": "mechanical",
+    "type": "adjective",
+    "meaning": "機械的"
+  },
+  {
+    "id": 152,
+    "word": "merge",
+    "type": "verb",
+    "meaning": "合併"
+  },
+  {
+    "id": 153,
+    "word": "message",
+    "type": "noun",
+    "meaning": "訊息"
+  },
+  {
+    "id": 154,
+    "word": "metal",
+    "type": "noun",
+    "meaning": "金屬"
+  },
+  {
+    "id": 155,
+    "word": "miss-operation",
+    "type": "noun",
+    "meaning": "錯誤動作"
+  },
+  {
+    "id": 156,
+    "word": "monitor",
+    "type": "noun",
+    "meaning": "監視器、測機"
+  },
+  {
+    "id": 157,
+    "word": "monthly",
+    "type": "adjective",
+    "meaning": "每月的"
+  },
+  {
+    "id": 158,
+    "word": "more",
+    "type": "adjective",
+    "meaning": "更多的"
+  },
+  {
+    "id": 159,
+    "word": "move",
+    "type": "verb",
+    "meaning": "移動(n.) 產出"
+  },
+  {
+    "id": 160,
+    "word": "new",
+    "type": "adjective",
+    "meaning": "新的"
+  },
+  {
+    "id": 161,
+    "word": "normal",
+    "type": "adjective",
+    "meaning": "正常的"
+  },
+  {
+    "id": 162,
+    "word": "note",
+    "type": "noun",
+    "meaning": "註解"
+  },
+  {
+    "id": 163,
+    "word": "notice",
+    "type": "noun",
+    "meaning": "通知"
+  },
+  {
+    "id": 164,
+    "word": "number",
+    "type": "noun",
+    "meaning": "號碼"
+  },
+  {
+    "id": 165,
+    "word": "office",
+    "type": "noun",
+    "meaning": "辦公室"
+  },
+  {
+    "id": 166,
+    "word": "off-line",
+    "type": "adjective",
+    "meaning": "離線的"
+  },
+  {
+    "id": 167,
+    "word": "on time",
+    "type": "phrase",
+    "meaning": "準時"
+  },
+  {
+    "id": 168,
+    "word": "on-line",
+    "type": "adjective",
+    "meaning": "在線的"
+  },
+  {
+    "id": 169,
+    "word": "operation",
+    "type": "noun",
+    "meaning": "操作"
+  },
+  {
+    "id": 170,
+    "word": "output",
+    "type": "noun",
+    "meaning": "輸出"
+  },
+  {
+    "id": 171,
+    "word": "oven",
+    "type": "noun",
+    "meaning": "烤箱"
+  },
+  {
+    "id": 172,
+    "word": "over time",
+    "type": "phrase",
+    "meaning": "加班"
+  },
+  {
+    "id": 173,
+    "word": "page",
+    "type": "noun",
+    "meaning": "頁數"
+  },
+  {
+    "id": 174,
+    "word": "paper",
+    "type": "noun",
+    "meaning": "紙張"
+  },
+  {
+    "id": 175,
+    "word": "parameter",
+    "type": "noun",
+    "meaning": "參數"
+  },
+  {
+    "id": 176,
+    "word": "part",
+    "type": "noun",
+    "meaning": "零件"
+  },
+  {
+    "id": 177,
+    "word": "particle",
+    "type": "noun",
+    "meaning": "微粒"
+  },
+  {
+    "id": 178,
+    "word": "pass",
+    "type": "verb",
+    "meaning": "合格"
+  },
+  {
+    "id": 179,
+    "word": "password",
+    "type": "noun",
+    "meaning": "密碼"
+  },
+  {
+    "id": 180,
+    "word": "perfect",
+    "type": "adjective",
+    "meaning": "完美的"
+  },
+  {
+    "id": 181,
+    "word": "personal",
+    "type": "adjective",
+    "meaning": "個人的"
+  },
+  {
+    "id": 182,
+    "word": "phase",
+    "type": "noun",
+    "meaning": "階段"
+  },
+  {
+    "id": 183,
+    "word": "photo",
+    "type": "noun",
+    "meaning": "相片"
+  },
+  {
+    "id": 184,
+    "word": "plan",
+    "type": "noun",
+    "meaning": "計劃"
+  },
+  {
+    "id": 185,
+    "word": "plus",
+    "type": "preposition",
+    "meaning": "加上"
+  },
+  {
+    "id": 186,
+    "word": "pod",
+    "type": "noun",
+    "meaning": "晶片傳送盒"
+  },
+  {
+    "id": 187,
+    "word": "point",
+    "type": "noun",
+    "meaning": "點"
+  },
+  {
+    "id": 188,
+    "word": "position",
+    "type": "noun",
+    "meaning": "位置"
+  },
+  {
+    "id": 189,
+    "word": "positive",
+    "type": "adjective",
+    "meaning": "正向的"
+  },
+  {
+    "id": 190,
+    "word": "postpone",
+    "type": "verb",
+    "meaning": "延期"
+  },
+  {
+    "id": 191,
+    "word": "power",
+    "type": "noun",
+    "meaning": "力量"
+  },
+  {
+    "id": 192,
+    "word": "practice",
+    "type": "verb",
+    "meaning": "練習"
+  },
+  {
+    "id": 193,
+    "word": "prepare",
+    "type": "verb",
+    "meaning": "準備"
+  },
+  {
+    "id": 194,
+    "word": "press",
+    "type": "verb",
+    "meaning": "按下"
+  },
+  {
+    "id": 195,
+    "word": "pressure",
+    "type": "noun",
+    "meaning": "壓力"
+  },
+  {
+    "id": 196,
+    "word": "preview",
+    "type": "noun",
+    "meaning": "預覽"
+  },
+  {
+    "id": 197,
+    "word": "price",
+    "type": "noun",
+    "meaning": "價格"
+  },
+  {
+    "id": 198,
+    "word": "print",
+    "type": "noun",
+    "meaning": "列印"
+  },
+  {
+    "id": 199,
+    "word": "priority",
+    "type": "noun",
+    "meaning": "優先順序"
+  },
+  {
+    "id": 200,
+    "word": "process",
+    "type": "noun",
+    "meaning": "過程、流程"
+  },
+  {
+    "id": 201,
+    "word": "product",
+    "type": "noun",
+    "meaning": "產品"
+  },
+  {
+    "id": 202,
+    "word": "protect",
+    "type": "verb",
+    "meaning": "保護"
+  },
+  {
+    "id": 203,
+    "word": "purge",
+    "type": "verb",
+    "meaning": "清除"
+  },
+  {
+    "id": 204,
+    "word": "push",
+    "type": "verb",
+    "meaning": "推進"
+  },
+  {
+    "id": 205,
+    "word": "quality",
+    "type": "noun",
+    "meaning": "品質"
+  },
+  {
+    "id": 206,
+    "word": "quantity",
+    "type": "noun",
+    "meaning": "數量"
+  },
+  {
+    "id": 207,
+    "word": "rate",
+    "type": "noun",
+    "meaning": "比率"
+  },
+  {
+    "id": 208,
+    "word": "re-certify",
+    "type": "verb",
+    "meaning": "重新認證"
+  },
+  {
+    "id": 209,
+    "word": "recipe",
+    "type": "noun",
+    "meaning": "食譜、處方程式"
+  },
+  {
+    "id": 210,
+    "word": "record",
+    "type": "noun",
+    "meaning": "記錄"
+  },
+  {
+    "id": 211,
+    "word": "recover",
+    "type": "verb",
+    "meaning": "復機"
+  },
+  {
+    "id": 212,
+    "word": "release",
+    "type": "verb",
+    "meaning": "釋放"
+  },
+  {
+    "id": 213,
+    "word": "remark",
+    "type": "noun",
+    "meaning": "註記"
+  },
+  {
+    "id": 214,
+    "word": "remind",
+    "type": "verb",
+    "meaning": "提醒"
+  },
+  {
+    "id": 215,
+    "word": "remove",
+    "type": "verb",
+    "meaning": "移開"
+  },
+  {
+    "id": 216,
+    "word": "repair",
+    "type": "verb",
+    "meaning": "修理"
+  },
+  {
+    "id": 217,
+    "word": "report",
+    "type": "noun",
+    "meaning": "報告"
+  },
+  {
+    "id": 218,
+    "word": "reset",
+    "type": "verb",
+    "meaning": "重設"
+  },
+  {
+    "id": 219,
+    "word": "rework",
+    "type": "verb",
+    "meaning": "重做"
+  },
+  {
+    "id": 220,
+    "word": "route",
+    "type": "noun",
+    "meaning": "路線"
+  },
+  {
+    "id": 221,
+    "word": "rule",
+    "type": "noun",
+    "meaning": "規則"
+  },
+  {
+    "id": 222,
+    "word": "run",
+    "type": "verb",
+    "meaning": "運轉、跑"
+  },
+  {
+    "id": 223,
+    "word": "run-card",
+    "type": "noun",
+    "meaning": "流程卡"
+  },
+  {
+    "id": 224,
+    "word": "S.O.P / Standard Operating Procedures",
+    "type": "noun",
+    "meaning": "標準作業程序"
+  },
+  {
+    "id": 225,
+    "word": "safe",
+    "type": "adjective",
+    "meaning": "安全的"
+  },
+  {
+    "id": 226,
+    "word": "same",
+    "type": "adjective",
+    "meaning": "相同的"
+  },
+  {
+    "id": 227,
+    "word": "save",
+    "type": "verb",
+    "meaning": "儲存"
+  },
+  {
+    "id": 228,
+    "word": "scrap",
+    "type": "noun",
+    "meaning": "報廢"
+  },
+  {
+    "id": 229,
+    "word": "scratch",
+    "type": "verb",
+    "meaning": "刮傷"
+  },
+  {
+    "id": 230,
+    "word": "screen",
+    "type": "noun",
+    "meaning": "螢幕"
+  },
+  {
+    "id": 231,
+    "word": "select",
+    "type": "verb",
+    "meaning": "選擇"
+  },
+  {
+    "id": 232,
+    "word": "semiconductor",
+    "type": "noun",
+    "meaning": "半導體"
+  },
+  {
+    "id": 233,
+    "word": "service",
+    "type": "noun",
+    "meaning": "服務"
+  },
+  {
+    "id": 234,
+    "word": "sheet",
+    "type": "noun",
+    "meaning": "表單"
+  },
+  {
+    "id": 235,
+    "word": "shift",
+    "type": "noun",
+    "meaning": "班次"
+  },
+  {
+    "id": 236,
+    "word": "show",
+    "type": "verb",
+    "meaning": "顯示"
+  },
+  {
+    "id": 237,
+    "word": "shuttle",
+    "type": "noun",
+    "meaning": "接駁車"
+  },
+  {
+    "id": 238,
+    "word": "skip",
+    "type": "verb",
+    "meaning": "跳過"
+  },
+  {
+    "id": 239,
+    "word": "sorter",
+    "type": "noun",
+    "meaning": "排序機、分類機"
+  },
+  {
+    "id": 240,
+    "word": "source",
+    "type": "noun",
+    "meaning": "來源"
+  },
+  {
+    "id": 241,
+    "word": "Spec. / specification",
+    "type": "noun",
+    "meaning": "規格"
+  },
+  {
+    "id": 242,
+    "word": "speed",
+    "type": "noun",
+    "meaning": "速度"
+  },
+  {
+    "id": 243,
+    "word": "split",
+    "type": "noun",
+    "meaning": "分帳、分批"
+  },
+  {
+    "id": 244,
+    "word": "stage",
+    "type": "noun",
+    "meaning": "站別、階段"
+  },
+  {
+    "id": 245,
+    "word": "standard",
+    "type": "noun",
+    "meaning": "標準"
+  },
+  {
+    "id": 246,
+    "word": "standby",
+    "type": "noun",
+    "meaning": "等待"
+  },
+  {
+    "id": 247,
+    "word": "start",
+    "type": "noun",
+    "meaning": "啟動"
+  },
+  {
+    "id": 248,
+    "word": "station",
+    "type": "noun",
+    "meaning": "站"
+  },
+  {
+    "id": 249,
+    "word": "status",
+    "type": "noun",
+    "meaning": "狀況"
+  },
+  {
+    "id": 250,
+    "word": "step",
+    "type": "noun",
+    "meaning": "步驟"
+  },
+  {
+    "id": 251,
+    "word": "stocker",
+    "type": "noun",
+    "meaning": "儲存櫃"
+  },
+  {
+    "id": 252,
+    "word": "success",
+    "type": "noun",
+    "meaning": "成功"
+  },
+  {
+    "id": 253,
+    "word": "super",
+    "type": "adjective",
+    "meaning": "超級的"
+  },
+  {
+    "id": 254,
+    "word": "super hot run",
+    "type": "noun",
+    "meaning": "超級急件"
+  },
+  {
+    "id": 255,
+    "word": "supervisor",
+    "type": "noun",
+    "meaning": "監督者"
+  },
+  {
+    "id": 256,
+    "word": "support",
+    "type": "noun",
+    "meaning": "支援"
+  },
+  {
+    "id": 257,
+    "word": "switch",
+    "type": "noun",
+    "meaning": "開關"
+  },
+  {
+    "id": 258,
+    "word": "system",
+    "type": "noun",
+    "meaning": "系統"
+  },
+  {
+    "id": 259,
+    "word": "tag",
+    "type": "noun",
+    "meaning": "標籤(v.) 標註"
+  },
+  {
+    "id": 260,
+    "word": "take leave",
+    "type": "phrase",
+    "meaning": "請假"
+  },
+  {
+    "id": 261,
+    "word": "tape",
+    "type": "noun",
+    "meaning": "膠帶"
+  },
+  {
+    "id": 262,
+    "word": "target",
+    "type": "noun",
+    "meaning": "目標"
+  },
+  {
+    "id": 263,
+    "word": "technician",
+    "type": "noun",
+    "meaning": "技術員"
+  },
+  {
+    "id": 264,
+    "word": "telephone",
+    "type": "noun",
+    "meaning": "電話"
+  },
+  {
+    "id": 265,
+    "word": "temperature",
+    "type": "noun",
+    "meaning": "溫度"
+  },
+  {
+    "id": 266,
+    "word": "thickness",
+    "type": "noun",
+    "meaning": "厚度"
+  },
+  {
+    "id": 267,
+    "word": "thin film",
+    "type": "noun",
+    "meaning": "薄膜製程"
+  },
+  {
+    "id": 268,
+    "word": "time",
+    "type": "noun",
+    "meaning": "時間"
+  },
+  {
+    "id": 269,
+    "word": "title",
+    "type": "noun",
+    "meaning": "標題"
+  },
+  {
+    "id": 270,
+    "word": "top",
+    "type": "noun",
+    "meaning": "頂端"
+  },
+  {
+    "id": 271,
+    "word": "track",
+    "type": "verb",
+    "meaning": "追蹤"
+  },
+  {
+    "id": 272,
+    "word": "training",
+    "type": "noun",
+    "meaning": "訓練"
+  },
+  {
+    "id": 273,
+    "word": "trend",
+    "type": "noun",
+    "meaning": "趨勢"
+  },
+  {
+    "id": 274,
+    "word": "tune",
+    "type": "verb",
+    "meaning": "調整"
+  },
+  {
+    "id": 275,
+    "word": "turn rate",
+    "type": "noun",
+    "meaning": "週轉率"
+  },
+  {
+    "id": 276,
+    "word": "unload",
+    "type": "verb",
+    "meaning": "下貨、卸載"
+  },
+  {
+    "id": 277,
+    "word": "use",
+    "type": "verb",
+    "meaning": "使用"
+  },
+  {
+    "id": 278,
+    "word": "username",
+    "type": "noun",
+    "meaning": "使用者名稱"
+  },
+  {
+    "id": 279,
+    "word": "vendor",
+    "type": "noun",
+    "meaning": "廠商"
+  },
+  {
+    "id": 280,
+    "word": "view",
+    "type": "verb",
+    "meaning": "查看"
+  },
+  {
+    "id": 281,
+    "word": "wafer",
+    "type": "noun",
+    "meaning": "晶圓"
+  },
+  {
+    "id": 282,
+    "word": "waiting",
+    "type": "noun",
+    "meaning": "等待"
+  },
+  {
+    "id": 283,
+    "word": "warning",
+    "type": "noun",
+    "meaning": "警告"
+  },
+  {
+    "id": 284,
+    "word": "weekly",
+    "type": "adverb",
+    "meaning": "每週地"
+  },
+  {
+    "id": 285,
+    "word": "wet",
+    "type": "adjective",
+    "meaning": "濕的"
+  },
+  {
+    "id": 286,
+    "word": "window",
+    "type": "noun",
+    "meaning": "視窗"
+  },
+  {
+    "id": 287,
+    "word": "yield",
+    "type": "noun",
+    "meaning": "良率"
+  },
+  {
+    "id": 288,
+    "word": "zero",
+    "type": "noun",
+    "meaning": "零"
+  }
+]
