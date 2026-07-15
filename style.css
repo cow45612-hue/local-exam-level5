@@ -236,6 +236,78 @@ button:disabled {
   gap: 10px;
 }
 
+.tsmc-practice {
+  border-color: #b8e0d0;
+  background: #f7fffb;
+}
+
+.tsmc-practice .panel-heading {
+  align-items: flex-start;
+}
+
+.tsmc-word-card {
+  display: grid;
+  min-height: 168px;
+  place-content: center;
+  place-items: center;
+  gap: 8px;
+  border: 1px solid #cde9dd;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 22px;
+  text-align: center;
+}
+
+.tsmc-word-card strong {
+  color: #075e45;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.tsmc-word-card p {
+  margin: 0;
+  color: #132033;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.tsmc-word-type {
+  border-radius: 999px;
+  background: #dff7ec;
+  color: #087456;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.tsmc-word-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.tsmc-word-actions .mini-button {
+  grid-column: 1 / -1;
+  min-height: 42px;
+}
+
+.tsmc-word-actions .action-button {
+  min-height: 50px;
+  padding: 12px;
+}
+
+.tsmc-pdf-link {
+  display: block;
+  margin-top: 14px;
+  color: #075e45;
+  font-weight: 900;
+  text-align: center;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .action-button {
   min-height: 58px;
   border-radius: 18px;

@@ -5,6 +5,25 @@ const SUBJECT_STATS_KEY = "initial-exam-subject-stats";
 const QUESTION_STATS_KEY = "initial-exam-question-stats";
 const ALL_SUBJECTS = "__all__";
 
+const TSMC_WORDS = [
+  { word: "ability", type: "noun", meaning: "能力" },
+  { word: "abnormal", type: "adjective", meaning: "異常的" },
+  { word: "abort", type: "verb", meaning: "中止" },
+  { word: "absence", type: "noun", meaning: "缺席" },
+  { word: "acid", type: "noun", meaning: "酸" },
+  { word: "active", type: "adjective", meaning: "主動的" },
+  { word: "actual", type: "adjective", meaning: "真實的" },
+  { word: "adjust", type: "verb", meaning: "調整" },
+  { word: "air shower", type: "noun", meaning: "潔淨通道" },
+  { word: "alarm", type: "noun", meaning: "警報" },
+  { word: "align", type: "verb", meaning: "對焦" },
+  { word: "attach", type: "verb", meaning: "附上" },
+  { word: "audit", type: "verb", meaning: "稽核、查核" },
+  { word: "automatic", type: "adjective", meaning: "自動的" },
+  { word: "available", type: "adjective", meaning: "可使用的" },
+  { word: "benchmark", type: "noun", meaning: "標竿學習" },
+];
+
 const state = {
   allQuestions: [],
   currentQuestions: [],
@@ -65,7 +84,48 @@ const els = {
   retrySame: document.querySelector("#retry-same"),
   resultHome: document.querySelector("#result-home"),
   reviewList: document.querySelector("#review-list"),
+  tsmcWord: document.querySelector("#tsmc-word"),
+  tsmcWordType: document.querySelector("#tsmc-word-type"),
+  tsmcWordAnswer: document.querySelector("#tsmc-word-answer"),
+  tsmcWordProgress: document.querySelector("#tsmc-word-progress"),
+  tsmcSpeak: document.querySelector("#tsmc-speak"),
+  tsmcReveal: document.querySelector("#tsmc-reveal"),
+  tsmcNext: document.querySelector("#tsmc-next"),
 };
+
+let tsmcWordIndex = 0;
+
+function renderTsmcWord() {
+  const item = TSMC_WORDS[tsmcWordIndex];
+  els.tsmcWord.textContent = item.word;
+  els.tsmcWordType.textContent = item.type;
+  els.tsmcWordAnswer.textContent = item.meaning;
+  els.tsmcWordAnswer.hidden = true;
+  els.tsmcReveal.textContent = "顯示答案";
+  els.tsmcWordProgress.textContent = `${tsmcWordIndex + 1} / ${TSMC_WORDS.length}`;
+}
+
+els.tsmcReveal.addEventListener("click", () => {
+  const willShow = els.tsmcWordAnswer.hidden;
+  els.tsmcWordAnswer.hidden = !willShow;
+  els.tsmcReveal.textContent = willShow ? "隱藏答案" : "顯示答案";
+});
+
+els.tsmcNext.addEventListener("click", () => {
+  tsmcWordIndex = (tsmcWordIndex + 1) % TSMC_WORDS.length;
+  renderTsmcWord();
+});
+
+els.tsmcSpeak.addEventListener("click", () => {
+  if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(TSMC_WORDS[tsmcWordIndex].word);
+  utterance.lang = "en-US";
+  utterance.rate = 0.85;
+  window.speechSynthesis.speak(utterance);
+});
+
+renderTsmcWord();
 
 function normalizeQuestion(raw, index) {
   const teacher = raw.teacherExplanation ?? {};
