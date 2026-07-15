@@ -24,6 +24,28 @@ const TSMC_WORDS = [
   { word: "benchmark", type: "noun", meaning: "標竿學習" },
 ];
 
+const TSMC_MATH_QUESTIONS = [
+  { prompt: "一批 480 片晶圓，已完成 75%，尚有多少片未完成？", answer: "480 × (1 - 75%) = 120\n答案：120 片" },
+  { prompt: "日班 7:20 開始，工作 12 小時，幾點下班？", answer: "7:20 + 12 小時 = 19:20\n答案：晚上 7:20" },
+  { prompt: "機台每小時處理 36 片，連續運作 7.5 小時，共處理多少片？", answer: "36 × 7.5 = 270\n答案：270 片" },
+  { prompt: "甲地到乙地 180 公里，平均時速 60 公里，需要多久？", answer: "180 ÷ 60 = 3\n答案：3 小時" },
+  { prompt: "原本不良品 25 件，改善後減少 40%，還剩多少件？", answer: "25 × (1 - 40%) = 15\n答案：15 件" },
+  { prompt: "夜班 19:20 上班，工作 12 小時，隔天幾點下班？", answer: "19:20 + 12 小時 = 隔日 7:20\n答案：隔天早上 7:20" },
+  { prompt: "一箱有 24 盒，15 箱共有多少盒？", answer: "24 × 15 = 360\n答案：360 盒" },
+  { prompt: "產量由 800 提升到 920，增加百分之多少？", answer: "(920 - 800) ÷ 800 × 100% = 15%\n答案：增加 15%" },
+];
+
+const TSMC_INTERVIEW_QUESTIONS = [
+  { prompt: "請用一分鐘介紹自己。", answer: "回答重點：目前背景 → 相關經驗 → 穩定、細心、守規範等工作特質 → 為何適合技術員。" },
+  { prompt: "為什麼想應徵台積電技術員？", answer: "回答重點：認同製造與品質文化、希望長期穩定發展，並具體連結自己的輪班適應力、責任感與操作經驗。" },
+  { prompt: "你可以接受四班二輪與夜班嗎？", answer: "回答重點：直接表態能否接受，再說明睡眠、交通、飲食與家庭安排。不要只回答『可以』。" },
+  { prompt: "工作中發現機台或產品異常，你會怎麼做？", answer: "回答重點：立即依規定停下或隔離 → 通報主管 → 記錄現象 → 不擅自處理 → 配合追查與交接。" },
+  { prompt: "請說一個你遇過的挫折，以及如何解決。", answer: "回答重點：用 STAR 結構回答：情境、任務、採取行動、最後結果與學到什麼。" },
+  { prompt: "如果同事為了趕產量，想省略一個步驟，你會怎麼做？", answer: "回答重點：品質與安全優先，先提醒同事依 SOP；若仍未改善，依層級通報，不用人情掩蓋風險。" },
+  { prompt: "重複性高的工作，你如何維持專注？", answer: "回答重點：依檢查表、固定節奏、自我覆核與交接紀錄降低疏失，並舉過去實際例子。" },
+  { prompt: "主管臨時要求加班，你會如何回應？", answer: "回答重點：先確認工作需求與自身狀況；能配合就明確回覆，不能配合則提早誠實說明，不臨時失聯。" },
+];
+
 const state = {
   allQuestions: [],
   currentQuestions: [],
@@ -91,18 +113,40 @@ const els = {
   tsmcSpeak: document.querySelector("#tsmc-speak"),
   tsmcReveal: document.querySelector("#tsmc-reveal"),
   tsmcNext: document.querySelector("#tsmc-next"),
+  tsmcWordCard: document.querySelector("#tsmc-word-card"),
+  tsmcPracticeNote: document.querySelector("#tsmc-practice-note"),
+  tsmcModeButtons: document.querySelectorAll(".tsmc-mode-button"),
 };
 
-let tsmcWordIndex = 0;
+const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
+let tsmcPracticeMode = "words";
+
+function currentTsmcItems() {
+  if (tsmcPracticeMode === "math") return TSMC_MATH_QUESTIONS;
+  if (tsmcPracticeMode === "interview") return TSMC_INTERVIEW_QUESTIONS;
+  return TSMC_WORDS;
+}
 
 function renderTsmcWord() {
-  const item = TSMC_WORDS[tsmcWordIndex];
-  els.tsmcWord.textContent = item.word;
-  els.tsmcWordType.textContent = item.type;
-  els.tsmcWordAnswer.textContent = item.meaning;
+  const items = currentTsmcItems();
+  const index = tsmcPracticeIndices[tsmcPracticeMode];
+  const item = items[index];
+  const isWordMode = tsmcPracticeMode === "words";
+  els.tsmcWord.textContent = isWordMode ? item.word : item.prompt;
+  els.tsmcWordType.textContent = isWordMode ? item.type : tsmcPracticeMode === "math" ? "數學模擬" : "面試題";
+  els.tsmcWordAnswer.textContent = isWordMode ? item.meaning : item.answer;
   els.tsmcWordAnswer.hidden = true;
   els.tsmcReveal.textContent = "顯示答案";
-  els.tsmcWordProgress.textContent = `${tsmcWordIndex + 1} / ${TSMC_WORDS.length}`;
+  els.tsmcWordProgress.textContent = `${index + 1} / ${items.length}`;
+  els.tsmcSpeak.hidden = !isWordMode;
+  els.tsmcWordCard.classList.toggle("compact", !isWordMode);
+  els.tsmcWordCard.dataset.mode = tsmcPracticeMode;
+  els.tsmcPracticeNote.textContent = isWordMode
+    ? "單字取自台積電官方參考資料。"
+    : tsmcPracticeMode === "math"
+      ? "依常見題型自編的模擬題，並非台積電官方或外流考題。"
+      : "回答重點供你練習組織內容，請換成自己的真實經驗。";
+  els.tsmcModeButtons.forEach((button) => button.classList.toggle("active", button.dataset.tsmcMode === tsmcPracticeMode));
 }
 
 els.tsmcReveal.addEventListener("click", () => {
@@ -112,17 +156,25 @@ els.tsmcReveal.addEventListener("click", () => {
 });
 
 els.tsmcNext.addEventListener("click", () => {
-  tsmcWordIndex = (tsmcWordIndex + 1) % TSMC_WORDS.length;
+  const items = currentTsmcItems();
+  tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
   renderTsmcWord();
 });
 
 els.tsmcSpeak.addEventListener("click", () => {
   if (!("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(TSMC_WORDS[tsmcWordIndex].word);
+  const utterance = new SpeechSynthesisUtterance(TSMC_WORDS[tsmcPracticeIndices.words].word);
   utterance.lang = "en-US";
   utterance.rate = 0.85;
   window.speechSynthesis.speak(utterance);
+});
+
+els.tsmcModeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    tsmcPracticeMode = button.dataset.tsmcMode;
+    renderTsmcWord();
+  });
 });
 
 renderTsmcWord();

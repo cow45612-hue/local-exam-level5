@@ -52,13 +52,19 @@
         <section class="panel tsmc-practice" aria-labelledby="tsmc-practice-title">
           <div class="panel-heading">
             <div>
-              <p class="eyebrow">職場英文</p>
-              <h2 id="tsmc-practice-title">台積電英文單字</h2>
+              <p class="eyebrow">台積電技術員</p>
+              <h2 id="tsmc-practice-title">甄選練習</h2>
             </div>
             <span id="tsmc-word-progress">1 / 16</span>
           </div>
 
-          <div class="tsmc-word-card">
+          <div class="tsmc-mode-tabs" aria-label="選擇練習類型">
+            <button class="tsmc-mode-button active" data-tsmc-mode="words" type="button">英文單字</button>
+            <button class="tsmc-mode-button" data-tsmc-mode="math" type="button">數學模擬</button>
+            <button class="tsmc-mode-button" data-tsmc-mode="interview" type="button">面試練習</button>
+          </div>
+
+          <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words">
             <span id="tsmc-word-type" class="tsmc-word-type">verb</span>
             <strong id="tsmc-word">adjust</strong>
             <p id="tsmc-word-answer" hidden>調整</p>
@@ -69,6 +75,8 @@
             <button id="tsmc-reveal" class="secondary action-button" type="button">顯示答案</button>
             <button id="tsmc-next" class="primary action-button" type="button">下一個</button>
           </div>
+
+          <p id="tsmc-practice-note" class="tsmc-practice-note">單字取自台積電官方參考資料。</p>
 
           <a
             class="tsmc-pdf-link"

@@ -245,6 +245,31 @@ button:disabled {
   align-items: flex-start;
 }
 
+.tsmc-mode-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  background: #e8f6ef;
+  padding: 5px;
+}
+
+.tsmc-mode-button {
+  min-height: 42px;
+  border-radius: 10px;
+  background: transparent;
+  color: #39705f;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tsmc-mode-button.active {
+  background: #ffffff;
+  color: #075e45;
+  box-shadow: 0 4px 12px rgba(7, 94, 69, 0.1);
+}
+
 .tsmc-word-card {
   display: grid;
   min-height: 168px;
@@ -264,11 +289,23 @@ button:disabled {
   line-height: 1.2;
 }
 
+.tsmc-word-card.compact strong {
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
 .tsmc-word-card p {
   margin: 0;
   color: #132033;
   font-size: 21px;
   font-weight: 900;
+  white-space: pre-line;
+}
+
+.tsmc-word-card.compact p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .tsmc-word-type {
@@ -306,6 +343,14 @@ button:disabled {
   text-align: center;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+.tsmc-practice-note {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: center;
 }
 
 .action-button {
