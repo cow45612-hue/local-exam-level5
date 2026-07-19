@@ -64,16 +64,30 @@
             <button class="tsmc-mode-button" data-tsmc-mode="interview" type="button">面試練習</button>
           </div>
 
+          <div id="tsmc-study-tools" class="tsmc-study-tools">
+            <div class="tsmc-study-filters" aria-label="選擇單字範圍">
+              <button class="tsmc-filter-button active" data-tsmc-filter="all" type="button">全部 288</button>
+              <button class="tsmc-filter-button" data-tsmc-filter="review" type="button">只背待複習 0</button>
+            </div>
+            <p id="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
+          </div>
+
           <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words">
             <span id="tsmc-word-type" class="tsmc-word-type">noun</span>
             <strong id="tsmc-word">ability</strong>
             <p id="tsmc-word-answer" hidden>能力</p>
+            <small id="tsmc-current-status" class="tsmc-current-status">尚未標記</small>
           </div>
 
           <div class="tsmc-word-actions">
             <button id="tsmc-speak" class="mini-button" type="button">播放發音</button>
             <button id="tsmc-reveal" class="secondary action-button" type="button">顯示答案</button>
             <button id="tsmc-next" class="primary action-button" type="button">下一個</button>
+          </div>
+
+          <div id="tsmc-memory-actions" class="tsmc-memory-actions">
+            <button id="tsmc-mark-review" class="review-button" type="button">還不熟，繼續背</button>
+            <button id="tsmc-mark-known" class="known-button" type="button">這個會了</button>
           </div>
 
           <p id="tsmc-practice-note" class="tsmc-practice-note">單字取自台積電官方參考資料。</p>

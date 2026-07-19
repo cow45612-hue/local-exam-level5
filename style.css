@@ -270,6 +270,40 @@ button:disabled {
   box-shadow: 0 4px 12px rgba(7, 94, 69, 0.1);
 }
 
+.tsmc-study-tools {
+  margin-bottom: 12px;
+}
+
+.tsmc-study-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tsmc-filter-button {
+  min-height: 44px;
+  border: 1px solid #b8e0d0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #39705f;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tsmc-filter-button.active {
+  border-color: #087456;
+  background: #dff7ec;
+  color: #075e45;
+}
+
+#tsmc-study-summary {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
 .tsmc-word-card {
   display: grid;
   min-height: 168px;
@@ -318,6 +352,22 @@ button:disabled {
   text-transform: uppercase;
 }
 
+.tsmc-current-status {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tsmc-word-card[data-study-status="review"] {
+  border-color: #f5b7b1;
+  background: #fff8f7;
+}
+
+.tsmc-word-card[data-study-status="known"] {
+  border-color: #89d5b8;
+  background: #f4fff9;
+}
+
 .tsmc-word-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -333,6 +383,33 @@ button:disabled {
 .tsmc-word-actions .action-button {
   min-height: 50px;
   padding: 12px;
+}
+
+.tsmc-memory-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 9px;
+}
+
+.tsmc-memory-actions button {
+  min-height: 50px;
+  border-radius: 14px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.review-button {
+  border: 1px solid #f2a7a0;
+  background: #fff0ee;
+  color: #b42318;
+}
+
+.known-button {
+  border: 1px solid #78c9aa;
+  background: #dcfce7;
+  color: #087456;
 }
 
 .tsmc-pdf-link {

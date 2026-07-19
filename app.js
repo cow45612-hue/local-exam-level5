@@ -3,6 +3,7 @@ const WRONG_KEY = "initial-exam-wrong-question-ids";
 const DAILY_KEY = "initial-exam-daily-progress";
 const SUBJECT_STATS_KEY = "initial-exam-subject-stats";
 const QUESTION_STATS_KEY = "initial-exam-question-stats";
+const TSMC_PROGRESS_KEY = "tsmc-vocabulary-progress-v1";
 const ALL_SUBJECTS = "__all__";
 
 let TSMC_WORDS = [
@@ -116,10 +117,35 @@ const els = {
   tsmcWordCard: document.querySelector("#tsmc-word-card"),
   tsmcPracticeNote: document.querySelector("#tsmc-practice-note"),
   tsmcModeButtons: document.querySelectorAll(".tsmc-mode-button"),
+  tsmcStudyTools: document.querySelector("#tsmc-study-tools"),
+  tsmcStudySummary: document.querySelector("#tsmc-study-summary"),
+  tsmcFilterButtons: document.querySelectorAll(".tsmc-filter-button"),
+  tsmcCurrentStatus: document.querySelector("#tsmc-current-status"),
+  tsmcMemoryActions: document.querySelector("#tsmc-memory-actions"),
+  tsmcMarkReview: document.querySelector("#tsmc-mark-review"),
+  tsmcMarkKnown: document.querySelector("#tsmc-mark-known"),
 };
 
 const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
 let tsmcPracticeMode = "words";
+let tsmcWordFilter = "all";
+let tsmcWordProgress = loadTsmcWordProgress();
+
+function loadTsmcWordProgress() {
+  try {
+    return JSON.parse(localStorage.getItem(TSMC_PROGRESS_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function tsmcWordKey(item) {
+  return item.word.toLowerCase();
+}
+
+function saveTsmcWordProgress() {
+  localStorage.setItem(TSMC_PROGRESS_KEY, JSON.stringify(tsmcWordProgress));
+}
 
 async function loadTsmcVocabulary() {
   try {
@@ -142,14 +168,50 @@ async function loadTsmcVocabulary() {
 function currentTsmcItems() {
   if (tsmcPracticeMode === "math") return TSMC_MATH_QUESTIONS;
   if (tsmcPracticeMode === "interview") return TSMC_INTERVIEW_QUESTIONS;
+  if (tsmcWordFilter === "review") {
+    return TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review");
+  }
   return TSMC_WORDS;
+}
+
+function renderTsmcStudySummary() {
+  const knownCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "known").length;
+  const reviewCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review").length;
+  els.tsmcStudySummary.textContent = `已記住 ${knownCount} 個 · 待複習 ${reviewCount} 個`;
+  els.tsmcFilterButtons.forEach((button) => {
+    const isReview = button.dataset.tsmcFilter === "review";
+    button.textContent = isReview ? `只背待複習 ${reviewCount}` : `全部 ${TSMC_WORDS.length}`;
+    button.classList.toggle("active", button.dataset.tsmcFilter === tsmcWordFilter);
+  });
 }
 
 function renderTsmcWord() {
   const items = currentTsmcItems();
+  const isWordMode = tsmcPracticeMode === "words";
+  if (isWordMode) renderTsmcStudySummary();
+  els.tsmcStudyTools.hidden = !isWordMode;
+  els.tsmcMemoryActions.hidden = !isWordMode;
+  els.tsmcCurrentStatus.hidden = !isWordMode;
+
+  if (isWordMode && items.length === 0) {
+    els.tsmcWord.textContent = "目前沒有待複習單字";
+    els.tsmcWordType.textContent = "完成";
+    els.tsmcWordAnswer.textContent = "切回「全部」後，可以繼續標記不熟的單字。";
+    els.tsmcWordAnswer.hidden = false;
+    els.tsmcCurrentStatus.textContent = "待複習清單是空的";
+    els.tsmcWordProgress.textContent = "0 / 0";
+    els.tsmcSpeak.disabled = true;
+    els.tsmcReveal.disabled = true;
+    els.tsmcNext.disabled = true;
+    els.tsmcMarkReview.disabled = true;
+    els.tsmcMarkKnown.disabled = true;
+    els.tsmcWordCard.dataset.studyStatus = "empty";
+    return;
+  }
+
+  tsmcPracticeIndices[tsmcPracticeMode] %= items.length;
   const index = tsmcPracticeIndices[tsmcPracticeMode];
   const item = items[index];
-  const isWordMode = tsmcPracticeMode === "words";
   els.tsmcWord.textContent = isWordMode ? item.word : item.prompt;
   els.tsmcWordType.textContent = isWordMode ? item.type : tsmcPracticeMode === "math" ? "數學模擬" : "面試題";
   els.tsmcWordAnswer.textContent = isWordMode ? item.meaning : item.answer;
@@ -157,8 +219,16 @@ function renderTsmcWord() {
   els.tsmcReveal.textContent = "顯示答案";
   els.tsmcWordProgress.textContent = `${index + 1} / ${items.length}`;
   els.tsmcSpeak.hidden = !isWordMode;
+  els.tsmcSpeak.disabled = false;
+  els.tsmcReveal.disabled = false;
+  els.tsmcNext.disabled = false;
+  els.tsmcMarkReview.disabled = false;
+  els.tsmcMarkKnown.disabled = false;
   els.tsmcWordCard.classList.toggle("compact", !isWordMode);
   els.tsmcWordCard.dataset.mode = tsmcPracticeMode;
+  const studyStatus = isWordMode ? tsmcWordProgress[tsmcWordKey(item)] || "unseen" : "";
+  els.tsmcWordCard.dataset.studyStatus = studyStatus;
+  els.tsmcCurrentStatus.textContent = studyStatus === "known" ? "已記住" : studyStatus === "review" ? "要繼續背" : "尚未標記";
   els.tsmcPracticeNote.textContent = isWordMode
     ? "單字取自台積電官方參考資料。"
     : tsmcPracticeMode === "math"
@@ -179,10 +249,37 @@ els.tsmcNext.addEventListener("click", () => {
   renderTsmcWord();
 });
 
+function markCurrentTsmcWord(status) {
+  const items = currentTsmcItems();
+  const item = items[tsmcPracticeIndices.words];
+  if (!item) return;
+
+  tsmcWordProgress[tsmcWordKey(item)] = status;
+  saveTsmcWordProgress();
+  if (tsmcWordFilter === "all") tsmcPracticeIndices.words = (tsmcPracticeIndices.words + 1) % items.length;
+  if (tsmcWordFilter === "review" && status === "review") {
+    tsmcPracticeIndices.words = (tsmcPracticeIndices.words + 1) % items.length;
+  }
+  renderTsmcWord();
+}
+
+els.tsmcMarkReview.addEventListener("click", () => markCurrentTsmcWord("review"));
+els.tsmcMarkKnown.addEventListener("click", () => markCurrentTsmcWord("known"));
+
+els.tsmcFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    tsmcWordFilter = button.dataset.tsmcFilter;
+    tsmcPracticeIndices.words = 0;
+    renderTsmcWord();
+  });
+});
+
 els.tsmcSpeak.addEventListener("click", () => {
   if (!("speechSynthesis" in window)) return;
+  const item = currentTsmcItems()[tsmcPracticeIndices.words];
+  if (!item) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(currentTsmcItems()[tsmcPracticeIndices.words].word);
+  const utterance = new SpeechSynthesisUtterance(item.word);
   utterance.lang = "en-US";
   utterance.rate = 0.85;
   window.speechSynthesis.speak(utterance);
