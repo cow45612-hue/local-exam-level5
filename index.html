@@ -60,6 +60,7 @@
 
           <div class="tsmc-mode-tabs" aria-label="選擇練習類型">
             <button class="tsmc-mode-button active" data-tsmc-mode="words" type="button">英文單字</button>
+            <button class="tsmc-mode-button" data-tsmc-mode="wordQuiz" type="button">單字測驗</button>
             <button class="tsmc-mode-button" data-tsmc-mode="math" type="button">數學模擬</button>
             <button class="tsmc-mode-button" data-tsmc-mode="interview" type="button">面試練習</button>
           </div>
@@ -79,7 +80,22 @@
             <small id="tsmc-current-status" class="tsmc-current-status">尚未標記</small>
           </div>
 
-          <div class="tsmc-word-actions">
+          <section id="tsmc-quiz-card" class="tsmc-quiz-card" aria-live="polite" hidden>
+            <div class="tsmc-quiz-meta">
+              <span id="tsmc-quiz-progress">第 1 / 10 題</span>
+              <strong id="tsmc-quiz-score">答對 0 題</strong>
+            </div>
+            <div class="tsmc-quiz-progress-track" aria-hidden="true">
+              <span id="tsmc-quiz-progress-fill"></span>
+            </div>
+            <p class="tsmc-quiz-instruction">選出正確的中文意思</p>
+            <h3 id="tsmc-quiz-question">ability</h3>
+            <div id="tsmc-quiz-choices" class="tsmc-quiz-choices"></div>
+            <p id="tsmc-quiz-feedback" class="tsmc-quiz-feedback" hidden></p>
+            <button id="tsmc-quiz-next" class="primary action-button" type="button" hidden>下一題</button>
+          </section>
+
+          <div id="tsmc-word-actions" class="tsmc-word-actions">
             <button id="tsmc-speak" class="mini-button" type="button">播放發音</button>
             <button id="tsmc-reveal" class="secondary action-button" type="button">顯示答案</button>
             <button id="tsmc-next" class="primary action-button" type="button">下一個</button>

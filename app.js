@@ -1,4 +1,5 @@
 const QUESTION_COUNT = 20;
+const TSMC_QUIZ_COUNT = 10;
 const WRONG_KEY = "initial-exam-wrong-question-ids";
 const DAILY_KEY = "initial-exam-daily-progress";
 const SUBJECT_STATS_KEY = "initial-exam-subject-stats";
@@ -124,12 +125,22 @@ const els = {
   tsmcMemoryActions: document.querySelector("#tsmc-memory-actions"),
   tsmcMarkReview: document.querySelector("#tsmc-mark-review"),
   tsmcMarkKnown: document.querySelector("#tsmc-mark-known"),
+  tsmcWordActions: document.querySelector("#tsmc-word-actions"),
+  tsmcQuizCard: document.querySelector("#tsmc-quiz-card"),
+  tsmcQuizProgress: document.querySelector("#tsmc-quiz-progress"),
+  tsmcQuizScore: document.querySelector("#tsmc-quiz-score"),
+  tsmcQuizProgressFill: document.querySelector("#tsmc-quiz-progress-fill"),
+  tsmcQuizQuestion: document.querySelector("#tsmc-quiz-question"),
+  tsmcQuizChoices: document.querySelector("#tsmc-quiz-choices"),
+  tsmcQuizFeedback: document.querySelector("#tsmc-quiz-feedback"),
+  tsmcQuizNext: document.querySelector("#tsmc-quiz-next"),
 };
 
 const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
 let tsmcPracticeMode = "words";
 let tsmcWordFilter = "all";
 let tsmcWordProgress = loadTsmcWordProgress();
+let tsmcQuizState = { questions: [], index: 0, score: 0, answered: false, finished: false };
 
 function loadTsmcWordProgress() {
   try {
@@ -159,7 +170,8 @@ async function loadTsmcVocabulary() {
 
     TSMC_WORDS = vocabulary;
     tsmcPracticeIndices.words = 0;
-    if (tsmcPracticeMode === "words") renderTsmcWord();
+    if (tsmcPracticeMode === "wordQuiz") startTsmcQuiz();
+    else if (tsmcPracticeMode === "words") renderTsmcWord();
   } catch (error) {
     console.warn("Unable to load the complete TSMC vocabulary; using the built-in fallback.", error);
   }
@@ -185,6 +197,10 @@ function renderTsmcStudySummary() {
   });
 }
 
+function syncTsmcModeButtons() {
+  els.tsmcModeButtons.forEach((button) => button.classList.toggle("active", button.dataset.tsmcMode === tsmcPracticeMode));
+}
+
 function renderTsmcWord() {
   const items = currentTsmcItems();
   const isWordMode = tsmcPracticeMode === "words";
@@ -192,6 +208,9 @@ function renderTsmcWord() {
   els.tsmcStudyTools.hidden = !isWordMode;
   els.tsmcMemoryActions.hidden = !isWordMode;
   els.tsmcCurrentStatus.hidden = !isWordMode;
+  els.tsmcWordCard.hidden = false;
+  els.tsmcWordActions.hidden = false;
+  els.tsmcQuizCard.hidden = true;
 
   if (isWordMode && items.length === 0) {
     els.tsmcWord.textContent = "目前沒有待複習單字";
@@ -234,8 +253,125 @@ function renderTsmcWord() {
     : tsmcPracticeMode === "math"
       ? "依常見題型自編的模擬題，並非台積電官方或外流考題。"
       : "回答重點供你練習組織內容，請換成自己的真實經驗。";
-  els.tsmcModeButtons.forEach((button) => button.classList.toggle("active", button.dataset.tsmcMode === tsmcPracticeMode));
+  syncTsmcModeButtons();
 }
+
+function buildTsmcQuizQuestion(word) {
+  const choices = [word.meaning];
+  for (const candidate of shuffle(TSMC_WORDS)) {
+    if (candidate.word === word.word || choices.includes(candidate.meaning)) continue;
+    choices.push(candidate.meaning);
+    if (choices.length === 4) break;
+  }
+  return { word, choices: shuffle(choices) };
+}
+
+function startTsmcQuiz() {
+  const selected = shuffle(TSMC_WORDS).slice(0, Math.min(TSMC_QUIZ_COUNT, TSMC_WORDS.length));
+  tsmcQuizState = {
+    questions: selected.map(buildTsmcQuizQuestion),
+    index: 0,
+    score: 0,
+    answered: false,
+    finished: false,
+  };
+  renderTsmcQuiz();
+}
+
+function renderTsmcQuiz() {
+  syncTsmcModeButtons();
+  els.tsmcStudyTools.hidden = true;
+  els.tsmcMemoryActions.hidden = true;
+  els.tsmcCurrentStatus.hidden = true;
+  els.tsmcWordCard.hidden = true;
+  els.tsmcWordActions.hidden = true;
+  els.tsmcQuizCard.hidden = false;
+  els.tsmcPracticeNote.textContent = "每回隨機 10 題；答錯的單字會自動加入待複習。";
+
+  if (tsmcQuizState.finished) {
+    const total = tsmcQuizState.questions.length;
+    const wrongCount = total - tsmcQuizState.score;
+    const rate = total ? Math.round((tsmcQuizState.score / total) * 100) : 0;
+    els.tsmcWordProgress.textContent = "測驗完成";
+    els.tsmcQuizProgress.textContent = "本回成績";
+    els.tsmcQuizScore.textContent = `答對 ${tsmcQuizState.score} 題`;
+    els.tsmcQuizProgressFill.style.width = "100%";
+    els.tsmcQuizQuestion.textContent = `${tsmcQuizState.score} / ${total}`;
+    els.tsmcQuizChoices.replaceChildren();
+    els.tsmcQuizFeedback.textContent = `答對率 ${rate}% · ${wrongCount} 個錯字已加入待複習`;
+    els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${wrongCount ? "wrong" : "correct"}`;
+    els.tsmcQuizFeedback.hidden = false;
+    els.tsmcQuizNext.textContent = "再測 10 題";
+    els.tsmcQuizNext.hidden = false;
+    return;
+  }
+
+  const current = tsmcQuizState.questions[tsmcQuizState.index];
+  const total = tsmcQuizState.questions.length;
+  els.tsmcWordProgress.textContent = `測驗 ${tsmcQuizState.index + 1} / ${total}`;
+  els.tsmcQuizProgress.textContent = `第 ${tsmcQuizState.index + 1} / ${total} 題`;
+  els.tsmcQuizScore.textContent = `答對 ${tsmcQuizState.score} 題`;
+  els.tsmcQuizProgressFill.style.width = `${((tsmcQuizState.index + 1) / total) * 100}%`;
+  els.tsmcQuizQuestion.textContent = current.word.word;
+  els.tsmcQuizFeedback.hidden = true;
+  els.tsmcQuizFeedback.className = "tsmc-quiz-feedback";
+  els.tsmcQuizNext.hidden = true;
+  els.tsmcQuizNext.textContent = tsmcQuizState.index === total - 1 ? "看成績" : "下一題";
+  els.tsmcQuizChoices.replaceChildren();
+
+  current.choices.forEach((choice, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "tsmc-quiz-choice";
+    button.dataset.choice = choice;
+    button.textContent = `${String.fromCharCode(65 + index)}. ${choice}`;
+    button.addEventListener("click", () => answerTsmcQuiz(choice, button));
+    els.tsmcQuizChoices.append(button);
+  });
+}
+
+function answerTsmcQuiz(choice, selectedButton) {
+  if (tsmcQuizState.answered) return;
+  tsmcQuizState.answered = true;
+  const current = tsmcQuizState.questions[tsmcQuizState.index];
+  const isCorrect = choice === current.word.meaning;
+
+  if (isCorrect) {
+    tsmcQuizState.score += 1;
+  } else {
+    tsmcWordProgress[tsmcWordKey(current.word)] = "review";
+    saveTsmcWordProgress();
+  }
+
+  [...els.tsmcQuizChoices.children].forEach((button) => {
+    button.disabled = true;
+    if (button.dataset.choice === current.word.meaning) button.classList.add("correct");
+  });
+  if (!isCorrect) selectedButton.classList.add("wrong");
+
+  els.tsmcQuizScore.textContent = `答對 ${tsmcQuizState.score} 題`;
+  els.tsmcQuizFeedback.textContent = isCorrect
+    ? `答對了！${current.word.word} 是「${current.word.meaning}」`
+    : `答錯了，正確答案是「${current.word.meaning}」`;
+  els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${isCorrect ? "correct" : "wrong"}`;
+  els.tsmcQuizFeedback.hidden = false;
+  els.tsmcQuizNext.hidden = false;
+}
+
+els.tsmcQuizNext.addEventListener("click", () => {
+  if (tsmcQuizState.finished) {
+    startTsmcQuiz();
+    return;
+  }
+  if (!tsmcQuizState.answered) return;
+  if (tsmcQuizState.index === tsmcQuizState.questions.length - 1) {
+    tsmcQuizState.finished = true;
+  } else {
+    tsmcQuizState.index += 1;
+    tsmcQuizState.answered = false;
+  }
+  renderTsmcQuiz();
+});
 
 els.tsmcReveal.addEventListener("click", () => {
   const willShow = els.tsmcWordAnswer.hidden;
@@ -288,7 +424,12 @@ els.tsmcSpeak.addEventListener("click", () => {
 els.tsmcModeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     tsmcPracticeMode = button.dataset.tsmcMode;
-    renderTsmcWord();
+    if (tsmcPracticeMode === "wordQuiz") {
+      if (tsmcQuizState.questions.length && !tsmcQuizState.finished) renderTsmcQuiz();
+      else startTsmcQuiz();
+    } else {
+      renderTsmcWord();
+    }
   });
 });
 
