@@ -288,6 +288,16 @@ button:disabled {
   line-height: 1.55;
 }
 
+.tsmc-daily-mission > .tsmc-daily-review-count {
+  margin-top: -3px;
+  border-radius: 10px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 10px;
+  font-weight: 900;
+  text-align: center;
+}
+
 .tsmc-daily-steps {
   display: grid;
   grid-template-columns: 1fr 1fr;
