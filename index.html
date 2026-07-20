@@ -58,6 +58,23 @@
             <span id="tsmc-word-progress">1 / 288</span>
           </div>
 
+          <section class="tsmc-daily-mission" aria-labelledby="tsmc-daily-title">
+            <div class="tsmc-daily-heading">
+              <div>
+                <span id="tsmc-daily-day">第 1 天</span>
+                <h3 id="tsmc-daily-title">零基礎每日任務</h3>
+              </div>
+              <strong id="tsmc-daily-status">今日未完成</strong>
+            </div>
+            <p>每天只學 5 個：先看單字與中文，再做同一批 5 題小測驗。</p>
+            <div class="tsmc-daily-steps">
+              <span id="tsmc-daily-learn-step">1. 學單字 0 / 5</span>
+              <span id="tsmc-daily-quiz-step">2. 小測驗 0 / 5</span>
+            </div>
+            <button id="tsmc-daily-start" class="primary action-button" type="button">開始今天 5 個單字</button>
+            <small id="tsmc-daily-total">累計完成 0 天</small>
+          </section>
+
           <div class="tsmc-mode-tabs" aria-label="選擇練習類型">
             <button class="tsmc-mode-button active" data-tsmc-mode="words" type="button">英文單字</button>
             <button class="tsmc-mode-button" data-tsmc-mode="wordQuiz" type="button">單字測驗</button>
@@ -72,7 +89,8 @@
           <div id="tsmc-study-tools" class="tsmc-study-tools">
             <div class="tsmc-study-filters" aria-label="選擇單字範圍">
               <button class="tsmc-filter-button active" data-tsmc-filter="all" type="button">全部 288</button>
-              <button class="tsmc-filter-button" data-tsmc-filter="review" type="button">只背待複習 0</button>
+              <button class="tsmc-filter-button" data-tsmc-filter="daily" type="button">今日 5 字</button>
+              <button class="tsmc-filter-button" data-tsmc-filter="review" type="button">待複習 0</button>
             </div>
             <p id="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
           </div>

@@ -245,6 +245,84 @@ button:disabled {
   align-items: flex-start;
 }
 
+.tsmc-daily-mission {
+  margin-bottom: 14px;
+  border: 1px solid #9ec5ff;
+  border-radius: 18px;
+  background: #eef6ff;
+  padding: 16px;
+}
+
+.tsmc-daily-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tsmc-daily-heading span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.tsmc-daily-heading h3 {
+  margin: 3px 0 0;
+  color: #132033;
+  font-size: 20px;
+}
+
+.tsmc-daily-heading strong {
+  border-radius: 999px;
+  background: #ffffff;
+  color: #2563eb;
+  padding: 7px 9px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tsmc-daily-mission > p {
+  margin: 11px 0;
+  color: #40556f;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.tsmc-daily-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tsmc-daily-steps span {
+  border-radius: 10px;
+  background: #ffffff;
+  color: #40556f;
+  padding: 10px 8px;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.tsmc-daily-steps span.done {
+  background: #dcfce7;
+  color: #087456;
+}
+
+.tsmc-daily-mission .action-button {
+  width: 100%;
+  min-height: 52px;
+}
+
+.tsmc-daily-mission > small {
+  display: block;
+  margin-top: 9px;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
+}
+
 .tsmc-mode-tabs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -299,7 +377,7 @@ button:disabled {
 
 .tsmc-study-filters {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
