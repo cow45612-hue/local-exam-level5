@@ -134,6 +134,7 @@ const els = {
   tsmcQuizChoices: document.querySelector("#tsmc-quiz-choices"),
   tsmcQuizFeedback: document.querySelector("#tsmc-quiz-feedback"),
   tsmcQuizNext: document.querySelector("#tsmc-quiz-next"),
+  tsmcReviewShortcut: document.querySelector("#tsmc-review-shortcut"),
 };
 
 const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
@@ -190,12 +191,21 @@ function renderTsmcStudySummary() {
   const knownCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "known").length;
   const reviewCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review").length;
   els.tsmcStudySummary.textContent = `已記住 ${knownCount} 個 · 待複習 ${reviewCount} 個`;
+  els.tsmcReviewShortcut.innerHTML = `待複習單字 <strong>${reviewCount}</strong> 個`;
   els.tsmcFilterButtons.forEach((button) => {
     const isReview = button.dataset.tsmcFilter === "review";
     button.textContent = isReview ? `只背待複習 ${reviewCount}` : `全部 ${TSMC_WORDS.length}`;
     button.classList.toggle("active", button.dataset.tsmcFilter === tsmcWordFilter);
   });
 }
+
+els.tsmcReviewShortcut.addEventListener("click", () => {
+  tsmcPracticeMode = "words";
+  tsmcWordFilter = "review";
+  tsmcPracticeIndices.words = 0;
+  renderTsmcWord();
+  els.tsmcWordCard.scrollIntoView({ behavior: "smooth", block: "center" });
+});
 
 function syncTsmcModeButtons() {
   els.tsmcModeButtons.forEach((button) => button.classList.toggle("active", button.dataset.tsmcMode === tsmcPracticeMode));
@@ -211,6 +221,7 @@ function renderTsmcWord() {
   els.tsmcWordCard.hidden = false;
   els.tsmcWordActions.hidden = false;
   els.tsmcQuizCard.hidden = true;
+  syncTsmcModeButtons();
 
   if (isWordMode && items.length === 0) {
     els.tsmcWord.textContent = "目前沒有待複習單字";
@@ -253,7 +264,6 @@ function renderTsmcWord() {
     : tsmcPracticeMode === "math"
       ? "依常見題型自編的模擬題，並非台積電官方或外流考題。"
       : "回答重點供你練習組織內容，請換成自己的真實經驗。";
-  syncTsmcModeButtons();
 }
 
 function buildTsmcQuizQuestion(word) {
@@ -341,6 +351,7 @@ function answerTsmcQuiz(choice, selectedButton) {
   } else {
     tsmcWordProgress[tsmcWordKey(current.word)] = "review";
     saveTsmcWordProgress();
+    renderTsmcStudySummary();
   }
 
   [...els.tsmcQuizChoices.children].forEach((button) => {

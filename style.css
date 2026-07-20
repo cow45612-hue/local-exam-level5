@@ -270,6 +270,29 @@ button:disabled {
   box-shadow: 0 4px 12px rgba(7, 94, 69, 0.1);
 }
 
+.tsmc-review-shortcut {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 12px;
+  border: 1px solid #f2a7a0;
+  border-radius: 14px;
+  background: #fff0ee;
+  color: #b42318;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.tsmc-review-shortcut strong {
+  display: inline-grid;
+  min-width: 28px;
+  min-height: 28px;
+  margin: 0 4px;
+  place-items: center;
+  border-radius: 999px;
+  background: #b42318;
+  color: #ffffff;
+}
+
 .tsmc-study-tools {
   margin-bottom: 12px;
 }
