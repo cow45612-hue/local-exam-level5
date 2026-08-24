@@ -487,7 +487,6 @@ button:disabled {
 }
 
 .tsmc-word-actions .mini-button {
-  grid-column: 1 / -1;
   min-height: 42px;
 }
 

@@ -9,6 +9,12 @@ const TSMC_PROGRESS_KEY = "tsmc-vocabulary-progress-v1";
 const TSMC_DAILY_KEY = "tsmc-vocabulary-daily-v1";
 const TSMC_SRS_KEY = "tsmc-vocabulary-srs-v1";
 const ALL_SUBJECTS = "__all__";
+const TSMC_SPEECH_OVERRIDES = {
+  AI: "A I",
+  "EUV / extreme ultraviolet": "E U V. Extreme ultraviolet.",
+  "S.O.P / Standard Operating Procedures": "S O P. Standard operating procedures.",
+  "Spec. / specification": "spec. Specification.",
+};
 
 let TSMC_WORDS = [
   { word: "ability", type: "noun", meaning: "能力" },
@@ -116,6 +122,7 @@ const els = {
   tsmcWordAnswer: document.querySelector("#tsmc-word-answer"),
   tsmcWordProgress: document.querySelector("#tsmc-word-progress"),
   tsmcSpeak: document.querySelector("#tsmc-speak"),
+  tsmcSpeakSlow: document.querySelector("#tsmc-speak-slow"),
   tsmcReveal: document.querySelector("#tsmc-reveal"),
   tsmcNext: document.querySelector("#tsmc-next"),
   tsmcWordCard: document.querySelector("#tsmc-word-card"),
@@ -767,16 +774,55 @@ els.tsmcFilterButtons.forEach((button) => {
   });
 });
 
-els.tsmcSpeak.addEventListener("click", () => {
-  if (!("speechSynthesis" in window)) return;
+function scoreEnglishVoice(voice) {
+  const name = voice.name.toLowerCase();
+  const lang = voice.lang.toLowerCase();
+  let score = lang === "en-us" ? 100 : lang.startsWith("en") ? 30 : 0;
+
+  if (/natural|premium|enhanced/.test(name)) score += 40;
+  if (/google us english/.test(name)) score += 35;
+  if (/microsoft.*(aria|jenny|guy|zira|david)/.test(name)) score += 30;
+  if (/samantha|ava|nicky|aaron|alex/.test(name)) score += 25;
+  if (/compact/.test(name)) score -= 15;
+  if (voice.localService) score += 5;
+  return score;
+}
+
+function bestEnglishVoice() {
+  if (!("speechSynthesis" in window)) return null;
+  const voices = window.speechSynthesis
+    .getVoices()
+    .filter((voice) => voice.lang.toLowerCase().startsWith("en"));
+  return voices.sort((a, b) => scoreEnglishVoice(b) - scoreEnglishVoice(a))[0] ?? null;
+}
+
+function speakCurrentTsmcWord(slow = false) {
+  if (!("speechSynthesis" in window)) {
+    els.tsmcSpeak.textContent = "裝置不支援發音";
+    els.tsmcSpeakSlow.disabled = true;
+    return;
+  }
   const item = currentTsmcItems()[tsmcPracticeIndices.words];
   if (!item) return;
+
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(item.word);
-  utterance.lang = "en-US";
-  utterance.rate = 0.85;
+  const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
+  const utterance = new SpeechSynthesisUtterance(speechText);
+  const voice = bestEnglishVoice();
+  if (voice) utterance.voice = voice;
+  utterance.lang = voice?.lang ?? "en-US";
+  utterance.rate = slow ? 0.62 : 0.82;
+  utterance.pitch = 1;
   window.speechSynthesis.speak(utterance);
-});
+}
+
+if ("speechSynthesis" in window) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.addEventListener("voiceschanged", bestEnglishVoice);
+}
+
+els.tsmcSpeak.addEventListener("click", () => speakCurrentTsmcWord(false));
+els.tsmcSpeakSlow.addEventListener("click", () => speakCurrentTsmcWord(true));
 
 els.tsmcModeButtons.forEach((button) => {
   button.addEventListener("click", () => {
