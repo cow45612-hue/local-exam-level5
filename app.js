@@ -502,6 +502,8 @@ function renderTsmcWord() {
   els.tsmcWordActions.hidden = false;
   els.tsmcQuizCard.hidden = true;
   syncTsmcModeButtons();
+  stopCurrentSpeech();
+  setSpeakButtonState(false);
 
   if (isWordMode && items.length === 0) {
     const isDailyEmpty = tsmcWordFilter === "daily";
@@ -514,6 +516,7 @@ function renderTsmcWord() {
     els.tsmcCurrentStatus.textContent = "待複習清單是空的";
     els.tsmcWordProgress.textContent = "0 / 0";
     els.tsmcSpeak.disabled = true;
+    els.tsmcSpeakSlow.disabled = true;
     els.tsmcReveal.disabled = true;
     els.tsmcNext.disabled = true;
     els.tsmcMarkReview.disabled = true;
@@ -533,6 +536,8 @@ function renderTsmcWord() {
   els.tsmcWordProgress.textContent = `${index + 1} / ${items.length}`;
   els.tsmcSpeak.hidden = !isWordMode;
   els.tsmcSpeak.disabled = false;
+  els.tsmcSpeakSlow.hidden = !isWordMode;
+  els.tsmcSpeakSlow.disabled = false;
   els.tsmcReveal.disabled = false;
   els.tsmcNext.disabled = false;
   els.tsmcMarkReview.disabled = false;
@@ -774,6 +779,77 @@ els.tsmcFilterButtons.forEach((button) => {
   });
 });
 
+let currentPlayingAudio = null;
+
+function stopCurrentSpeech() {
+  if (currentPlayingAudio) {
+    try {
+      currentPlayingAudio.pause();
+      currentPlayingAudio.currentTime = 0;
+    } catch (_) {}
+    currentPlayingAudio = null;
+  }
+  if ("speechSynthesis" in window) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch (_) {}
+  }
+}
+
+function setSpeakButtonState(active, slow = false) {
+  const targetBtn = slow ? els.tsmcSpeakSlow : els.tsmcSpeak;
+  const otherBtn = slow ? els.tsmcSpeak : els.tsmcSpeakSlow;
+  if (targetBtn) {
+    targetBtn.classList.toggle("is-speaking", active);
+  }
+  if (otherBtn && active) {
+    otherBtn.classList.remove("is-speaking");
+  }
+}
+
+function playAudioUrl(url, slow) {
+  return new Promise((resolve, reject) => {
+    const audio = new Audio(url);
+    currentPlayingAudio = audio;
+    audio.preload = "auto";
+    audio.playbackRate = slow ? 0.72 : 1.0;
+
+    let finished = false;
+    const cleanup = () => {
+      if (currentPlayingAudio === audio) currentPlayingAudio = null;
+      audio.onended = null;
+      audio.onerror = null;
+    };
+
+    audio.onended = () => {
+      if (!finished) {
+        finished = true;
+        cleanup();
+        resolve();
+      }
+    };
+
+    audio.onerror = (err) => {
+      if (!finished) {
+        finished = true;
+        cleanup();
+        reject(err);
+      }
+    };
+
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch((err) => {
+        if (!finished) {
+          finished = true;
+          cleanup();
+          reject(err);
+        }
+      });
+    }
+  });
+}
+
 function scoreEnglishVoice(voice) {
   const name = voice.name.toLowerCase();
   const lang = voice.lang.toLowerCase();
@@ -796,24 +872,59 @@ function bestEnglishVoice() {
   return voices.sort((a, b) => scoreEnglishVoice(b) - scoreEnglishVoice(a))[0] ?? null;
 }
 
-function speakCurrentTsmcWord(slow = false) {
-  if (!("speechSynthesis" in window)) {
-    els.tsmcSpeak.textContent = "裝置不支援發音";
-    els.tsmcSpeakSlow.disabled = true;
-    return;
-  }
-  const item = currentTsmcItems()[tsmcPracticeIndices.words];
-  if (!item) return;
-
-  window.speechSynthesis.cancel();
-  const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
+function speakWithWebSpeechFallback(speechText, slow) {
+  if (!("speechSynthesis" in window)) return;
   const utterance = new SpeechSynthesisUtterance(speechText);
   const voice = bestEnglishVoice();
   if (voice) utterance.voice = voice;
   utterance.lang = voice?.lang ?? "en-US";
-  utterance.rate = slow ? 0.62 : 0.82;
+  utterance.rate = slow ? 0.65 : 0.85;
   utterance.pitch = 1;
   window.speechSynthesis.speak(utterance);
+}
+
+function getTsmcWordId(item) {
+  if (item && item.id) return item.id;
+  if (!item || !item.word) return null;
+  const match = TSMC_WORDS.find((w) => w.word.toLowerCase() === item.word.toLowerCase());
+  return match?.id ?? null;
+}
+
+async function speakCurrentTsmcWord(slow = false) {
+  const item = currentTsmcItems()[tsmcPracticeIndices.words];
+  if (!item) return;
+
+  stopCurrentSpeech();
+  setSpeakButtonState(true, slow);
+
+  const wordId = getTsmcWordId(item);
+  const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
+
+  // 1. 優先使用微軟 Edge Neural 錄音室級離線音訊（徹底解決手機發音生硬、不標準問題）
+  if (wordId) {
+    const localAudioUrl = `./audio/${wordId}.mp3`;
+    try {
+      await playAudioUrl(localAudioUrl, slow);
+      setSpeakButtonState(false, slow);
+      return;
+    } catch (err) {
+      console.warn(`Local audio for word #${wordId} (${item.word}) failed, falling back to online TTS:`, err);
+    }
+  }
+
+  // 2. 次要嘗試在線雲端 Google TTS 音訊串流
+  try {
+    const onlineUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`;
+    await playAudioUrl(onlineUrl, slow);
+    setSpeakButtonState(false, slow);
+    return;
+  } catch (err) {
+    console.warn("Online TTS failed, falling back to Web Speech API:", err);
+  }
+
+  // 3. 終極保底：原生 Web Speech API
+  speakWithWebSpeechFallback(speechText, slow);
+  setSpeakButtonState(false, slow);
 }
 
 if ("speechSynthesis" in window) {

@@ -490,6 +490,13 @@ button:disabled {
   min-height: 42px;
 }
 
+.tsmc-word-actions .mini-button.is-speaking {
+  background: #e8f4fd;
+  border-color: #2b7de9;
+  color: #1a56a6;
+  box-shadow: 0 0 0 2px rgba(43, 125, 233, 0.25);
+}
+
 .tsmc-word-actions .action-button {
   min-height: 50px;
   padding: 12px;
