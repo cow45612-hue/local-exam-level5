@@ -70,6 +70,7 @@ const state = {
 const els = {
   views: {
     home: document.querySelector("#home-view"),
+    tsmc: document.querySelector("#tsmc-view"),
     start: document.querySelector("#start-view"),
     wrongbook: document.querySelector("#wrongbook-view"),
     stats: document.querySelector("#stats-view"),
@@ -77,6 +78,10 @@ const els = {
     result: document.querySelector("#result-view"),
   },
   navItems: document.querySelectorAll(".nav-item"),
+  topEyebrow: document.querySelector("#top-eyebrow"),
+  topTitle: document.querySelector("#top-title"),
+  tabBtnExam: document.querySelector("#tab-btn-exam"),
+  tabBtnTsmc: document.querySelector("#tab-btn-tsmc"),
   subjectSelect: document.querySelector("#subject-select"),
   startRandom: document.querySelector("#start-random"),
   startWrong: document.querySelector("#start-wrong"),
@@ -1103,7 +1108,7 @@ function showMessage(text) {
 
 function setView(view) {
   Object.entries(els.views).forEach(([name, element]) => {
-    element.hidden = name !== view;
+    if (element) element.hidden = name !== view;
   });
 
   els.navItems.forEach((item) => {
@@ -1111,9 +1116,34 @@ function setView(view) {
     item.classList.toggle("active", active);
   });
 
+  const isTsmc = view === "tsmc";
+  if (els.tabBtnExam && els.tabBtnTsmc) {
+    els.tabBtnExam.classList.toggle("active", !isTsmc);
+    els.tabBtnTsmc.classList.toggle("active", isTsmc);
+  }
+
+  if (els.topEyebrow && els.topTitle) {
+    if (isTsmc) {
+      els.topEyebrow.textContent = "台積電技術員";
+      els.topTitle.textContent = "甄選英文與測驗";
+    } else {
+      els.topEyebrow.textContent = "公職刷題 App";
+      els.topTitle.textContent = "初等考試題庫";
+    }
+  }
+
   document.body.classList.toggle("in-quiz", view === "quiz" || view === "result");
   if (view === "home" || view === "start" || view === "wrongbook" || view === "stats") {
     updateDashboard();
+  }
+  if (view === "tsmc") {
+    renderTsmcDailyMission();
+    if (tsmcPracticeMode === "wordQuiz") {
+      if (tsmcQuizState.questions.length && !tsmcQuizState.finished) renderTsmcQuiz();
+      else startTsmcQuiz();
+    } else {
+      renderTsmcWord();
+    }
   }
 }
 
@@ -1851,6 +1881,13 @@ function renderResult(correct) {
 els.navItems.forEach((item) => {
   item.addEventListener("click", () => setView(item.dataset.view));
 });
+
+if (els.tabBtnExam) {
+  els.tabBtnExam.addEventListener("click", () => setView("home"));
+}
+if (els.tabBtnTsmc) {
+  els.tabBtnTsmc.addEventListener("click", () => setView("tsmc"));
+}
 
 els.startRandom.addEventListener("click", startSelectedRandom);
 els.homeStartRandom.addEventListener("click", startSelectedRandom);

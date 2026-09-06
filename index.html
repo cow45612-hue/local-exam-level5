@@ -10,11 +10,20 @@
     <main class="app-shell">
       <header class="top-app-bar">
         <div>
-          <p class="eyebrow">公職刷題 App</p>
-          <h1>初等考試題庫</h1>
+          <p id="top-eyebrow" class="eyebrow">公職刷題 App</p>
+          <h1 id="top-title">初等考試題庫</h1>
         </div>
         <span id="top-today-status" class="status-chip">未完成</span>
       </header>
+
+      <nav class="main-segment-tabs" aria-label="切換備考類別">
+        <button id="tab-btn-exam" class="main-tab-button active" type="button">
+          <span>🏛️</span> 初等公職考試
+        </button>
+        <button id="tab-btn-tsmc" class="main-tab-button" type="button">
+          <span>⚡</span> 台積電專區
+        </button>
+      </nav>
 
       <section id="home-view" class="app-view">
         <article class="hero-card">
@@ -49,6 +58,27 @@
           <button id="home-start-wrong" class="secondary action-button">重練錯題</button>
         </section>
 
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>學習摘要</h2>
+            <span id="daily-summary">總完成天數：0 天</span>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span>錯題本</span>
+              <strong id="home-wrong-count">0</strong>
+              <small>題待複習</small>
+            </div>
+            <div class="stat-card">
+              <span>連續天數</span>
+              <strong id="streak-count">0</strong>
+              <small>天</small>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="tsmc-view" class="app-view" hidden>
         <section class="panel tsmc-practice" aria-labelledby="tsmc-practice-title">
           <div class="panel-heading">
             <div>
@@ -138,25 +168,6 @@
             target="_blank"
             rel="noopener noreferrer"
           >查看台積電官方英文單字 PDF</a>
-        </section>
-
-        <section class="panel">
-          <div class="panel-heading">
-            <h2>學習摘要</h2>
-            <span id="daily-summary">總完成天數：0 天</span>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span>錯題本</span>
-              <strong id="home-wrong-count">0</strong>
-              <small>題待複習</small>
-            </div>
-            <div class="stat-card">
-              <span>連續天數</span>
-              <strong id="streak-count">0</strong>
-              <small>天</small>
-            </div>
-          </div>
         </section>
       </section>
 
@@ -266,12 +277,16 @@
 
     <nav class="bottom-nav" aria-label="主要導覽">
       <button class="nav-item active" data-view="home">
-        <span>⌂</span>
-        首頁
+        <span>🏛️</span>
+        公職首頁
       </button>
       <button class="nav-item" data-view="start">
         <span>▶</span>
         開始刷題
+      </button>
+      <button class="nav-item" data-view="tsmc">
+        <span>⚡</span>
+        台積電
       </button>
       <button class="nav-item" data-view="wrongbook">
         <span>!</span>
@@ -279,7 +294,7 @@
       </button>
       <button class="nav-item" data-view="stats">
         <span>%</span>
-        統計
+        答題統計
       </button>
     </nav>
 
