@@ -3,1728 +3,3168 @@
     "id": 1,
     "word": "ability",
     "type": "noun",
-    "meaning": "能力"
+    "meaning": "能力",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "operation ability",
+    "exampleSentence": "The technician has the ability to operate this tool.",
+    "exampleMeaning": "該技術員具備操作此機台的能力。"
   },
   {
     "id": 2,
     "word": "abnormal",
     "type": "adjective",
-    "meaning": "異常的"
+    "meaning": "異常的",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "abnormal lot",
+    "exampleSentence": "Stop the tool when an abnormal lot is detected.",
+    "exampleMeaning": "發現異常批次時立即停機。"
   },
   {
     "id": 3,
     "word": "abort",
     "type": "verb",
-    "meaning": "中止"
+    "meaning": "中止",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "abort the run",
+    "exampleSentence": "Press abort if an emergency occurs.",
+    "exampleMeaning": "緊急狀況時請按下中止。"
   },
   {
     "id": 4,
     "word": "absence",
     "type": "noun",
-    "meaning": "缺席"
+    "meaning": "缺席",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "absence report",
+    "exampleSentence": "Inform your supervisor before taking absence.",
+    "exampleMeaning": "請假缺席前請先通知主管。"
   },
   {
     "id": 5,
     "word": "acid",
     "type": "noun",
-    "meaning": "酸"
+    "meaning": "酸",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "acid tank",
+    "exampleSentence": "Wear chemical gloves when handling acid.",
+    "exampleMeaning": "處理酸液時請戴化學手套。"
   },
   {
     "id": 6,
     "word": "active",
     "type": "adjective",
-    "meaning": "主動的"
+    "meaning": "主動的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "active status",
+    "exampleSentence": "Make sure the recipe is in active status.",
+    "exampleMeaning": "確認配方處於啟動狀態。"
   },
   {
     "id": 7,
     "word": "actual",
     "type": "adjective",
-    "meaning": "真實的"
+    "meaning": "真實的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "actual yield",
+    "exampleSentence": "Check the actual yield on the monitor.",
+    "exampleMeaning": "在螢幕上檢查實際良率。"
   },
   {
     "id": 8,
     "word": "add",
     "type": "verb",
-    "meaning": "增加"
+    "meaning": "增加",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "add chemical",
+    "exampleSentence": "Do not add chemical without authorization.",
+    "exampleMeaning": "未經授權切勿添加化學液。"
   },
   {
     "id": 9,
     "word": "adjust",
     "type": "verb",
-    "meaning": "調整"
+    "meaning": "調整",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "adjust parameter",
+    "exampleSentence": "Adjust the parameter according to the S.O.P.",
+    "exampleMeaning": "依照 SOP 調整機台參數。"
   },
   {
     "id": 10,
     "word": "AI",
     "type": "noun",
-    "meaning": "人工智慧"
+    "meaning": "人工智慧",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "AI inspection",
+    "exampleSentence": "AI inspection improves wafer defect detection.",
+    "exampleMeaning": "AI 檢測能提升晶圓缺陷判讀效率。"
   },
   {
     "id": 11,
     "word": "air shower",
     "type": "noun",
-    "meaning": "潔淨通道"
+    "meaning": "潔淨通道",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "pass air shower",
+    "exampleSentence": "Enter the air shower before stepping into the clean room.",
+    "exampleMeaning": "進入無塵室前必須先經過潔淨通道。"
   },
   {
     "id": 12,
     "word": "alarm",
     "type": "noun",
-    "meaning": "警報"
+    "meaning": "警報",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "alarm buzzes",
+    "exampleSentence": "Call the leader immediately when an alarm buzzes.",
+    "exampleMeaning": "警報響起時請立即通報副理或組長。"
   },
   {
     "id": 13,
     "word": "alert",
     "type": "noun",
-    "meaning": "警報"
+    "meaning": "警報",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "system alert",
+    "exampleSentence": "Check the system alert message carefully.",
+    "exampleMeaning": "仔細檢查系統發出的警示訊息。"
   },
   {
     "id": 14,
     "word": "align",
     "type": "verb",
-    "meaning": "對焦"
+    "meaning": "對焦",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "align wafer",
+    "exampleSentence": "The robot arm will align the wafer automatically.",
+    "exampleMeaning": "機械手臂會自動對齊晶圓中心。"
   },
   {
     "id": 15,
     "word": "annually",
     "type": "adjective",
-    "meaning": "每年的"
+    "meaning": "每年的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "certified annually",
+    "exampleSentence": "Technicians are re-certified annually.",
+    "exampleMeaning": "技術員每年均需重新通過認證考核。"
   },
   {
     "id": 16,
     "word": "area",
     "type": "noun",
-    "meaning": "區域"
+    "meaning": "區域",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "fab area",
+    "exampleSentence": "Safety glasses are required in this fab area.",
+    "exampleMeaning": "在此廠區範圍內必須配戴護目鏡。"
   },
   {
     "id": 17,
     "word": "attach",
     "type": "verb",
-    "meaning": "附上"
+    "meaning": "附上",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "attach label",
+    "exampleSentence": "Attach the correct label on the cassette.",
+    "exampleMeaning": "在晶圓盒上貼上正確的標籤。"
   },
   {
     "id": 18,
     "word": "audit",
     "type": "verb",
-    "meaning": "稽核、查核"
+    "meaning": "稽核、查核",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "quality audit",
+    "exampleSentence": "Follow all standard rules during the quality audit.",
+    "exampleMeaning": "品質稽核期間請遵守所有標準規範。"
   },
   {
     "id": 19,
     "word": "automatic",
     "type": "adjective",
-    "meaning": "自動的"
+    "meaning": "自動的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "automatic track",
+    "exampleSentence": "The wafer is transferred by an automatic track.",
+    "exampleMeaning": "晶圓透過天車與自動軌道進行傳送。"
   },
   {
     "id": 20,
     "word": "automotive",
     "type": "adjective",
-    "meaning": "汽車的"
+    "meaning": "汽車的",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "automotive chip",
+    "exampleSentence": "Automotive chips require zero-defect quality.",
+    "exampleMeaning": "車用晶片要求零缺陷的高品質標準。"
   },
   {
     "id": 21,
     "word": "available",
     "type": "adjective",
-    "meaning": "可使用的"
+    "meaning": "可使用的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "machine available",
+    "exampleSentence": "This machine is available for the next run.",
+    "exampleMeaning": "這台機台目前可供下一批次生產使用。"
   },
   {
     "id": 22,
     "word": "average",
     "type": "noun",
-    "meaning": "平均"
+    "meaning": "平均",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "average output",
+    "exampleSentence": "Maintain the average daily output safely.",
+    "exampleMeaning": "在安全的前提下維持平均每日產量。"
   },
   {
     "id": 23,
     "word": "backup",
     "type": "noun",
-    "meaning": "支援"
+    "meaning": "支援",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "backup system",
+    "exampleSentence": "Switch to the backup system if the primary tool fails.",
+    "exampleMeaning": "若主系統異常請切換至備援系統。"
   },
   {
     "id": 24,
     "word": "bank",
     "type": "noun",
-    "meaning": "銀行(v.) 暫存"
+    "meaning": "銀行(v.) 暫存",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "wafer bank",
+    "exampleSentence": "Store finished cassettes in the wafer bank.",
+    "exampleMeaning": "將處理好的晶圓盒暫存至晶圓暫存庫。"
   },
   {
     "id": 25,
     "word": "basic",
     "type": "adjective",
-    "meaning": "基礎的"
+    "meaning": "基礎的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "basic knowledge",
+    "exampleSentence": "Master basic semiconductor knowledge first.",
+    "exampleMeaning": "先掌握半導體與無塵室基礎知識。"
   },
   {
     "id": 26,
     "word": "beam",
     "type": "noun",
-    "meaning": "光束"
+    "meaning": "光束",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "laser beam",
+    "exampleSentence": "Do not look directly into the laser beam.",
+    "exampleMeaning": "嚴禁直視雷射光束。"
   },
   {
     "id": 27,
     "word": "benchmark",
     "type": "noun",
-    "meaning": "標竿學習"
+    "meaning": "標竿學習",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "benchmark line",
+    "exampleSentence": "Use this recipe as the quality benchmark.",
+    "exampleMeaning": "將此配方作為品質標準標竿。"
   },
   {
     "id": 28,
     "word": "bottle",
     "type": "noun",
-    "meaning": "瓶子"
+    "meaning": "瓶子",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "chemical bottle",
+    "exampleSentence": "Dispose of the empty chemical bottle properly.",
+    "exampleMeaning": "請依規妥善回收空化學品瓶罐。"
   },
   {
     "id": 29,
     "word": "bottom",
     "type": "noun",
-    "meaning": "底部"
+    "meaning": "底部",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "bottom layer",
+    "exampleSentence": "Inspect the bottom layer of the wafer.",
+    "exampleMeaning": "檢驗晶圓底層的平整度。"
   },
   {
     "id": 30,
     "word": "broken",
     "type": "adjective",
-    "meaning": "破掉的"
+    "meaning": "破掉的",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "broken wafer",
+    "exampleSentence": "Stop machine immediately if a broken wafer occurs.",
+    "exampleMeaning": "若發生破片請立即停機隔離。"
   },
   {
     "id": 31,
     "word": "cancel",
     "type": "verb",
-    "meaning": "取消"
+    "meaning": "取消",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "cancel command",
+    "exampleSentence": "Cancel the command if recipe name is incorrect.",
+    "exampleMeaning": "若配方名稱錯誤請立即取消指令。"
   },
   {
     "id": 32,
     "word": "card",
     "type": "noun",
-    "meaning": "卡片"
+    "meaning": "卡片",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "ID card",
+    "exampleSentence": "Always wear your company ID card in the fab.",
+    "exampleMeaning": "在廠內請務必隨身配戴識別證。"
   },
   {
     "id": 33,
     "word": "cart",
     "type": "noun",
-    "meaning": "手推車"
+    "meaning": "手推車",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "transport cart",
+    "exampleSentence": "Push the transport cart slowly in the hallway.",
+    "exampleMeaning": "在走廊推運送推車時請減速慢行。"
   },
   {
     "id": 34,
     "word": "cassette",
     "type": "noun",
-    "meaning": "晶片專用盒"
+    "meaning": "晶片專用盒",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "load cassette",
+    "exampleSentence": "Load the cassette into the stocker port.",
+    "exampleMeaning": "將晶圓盒裝載至儲存櫃載入端口。"
   },
   {
     "id": 35,
     "word": "center",
     "type": "noun",
-    "meaning": "中心"
+    "meaning": "中心",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "wafer center",
+    "exampleSentence": "Align the robot blade with the wafer center.",
+    "exampleMeaning": "讓機械手臂承載托盤對準晶圓中心。"
   },
   {
     "id": 36,
     "word": "certify",
     "type": "verb",
-    "meaning": "證實、認證"
+    "meaning": "證實、認證",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "certify operator",
+    "exampleSentence": "The trainer will certify the new operator.",
+    "exampleMeaning": "訓練員將考核並認證新進操作員。"
   },
   {
     "id": 37,
     "word": "change",
     "type": "verb",
-    "meaning": "更換"
+    "meaning": "更換",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "change recipe",
+    "exampleSentence": "Confirm lot ID before you change the recipe.",
+    "exampleMeaning": "更改配方前請務必核對批號。"
   },
   {
     "id": 38,
     "word": "chart",
     "type": "noun",
-    "meaning": "圖表"
+    "meaning": "圖表",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "control chart",
+    "exampleSentence": "Review the SPC control chart every hour.",
+    "exampleMeaning": "每小時檢視一次 SPC 管制圖趨勢。"
   },
   {
     "id": 39,
     "word": "check",
     "type": "verb",
-    "meaning": "檢查"
+    "meaning": "檢查",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "double check",
+    "exampleSentence": "Double check the lot number with the run-card.",
+    "exampleMeaning": "與流程卡仔細雙重覆核批號。"
   },
   {
     "id": 40,
     "word": "chemical",
     "type": "noun",
-    "meaning": "化學、化學品"
+    "meaning": "化學、化學品",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "chemical waste",
+    "exampleSentence": "Separate chemical waste into designated tanks.",
+    "exampleMeaning": "化學廢液必須分流倒入專用儲槽。"
   },
   {
     "id": 41,
     "word": "chip",
     "type": "noun",
-    "meaning": "晶片"
+    "meaning": "晶片",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "silicon chip",
+    "exampleSentence": "Each wafer contains hundreds of silicon chips.",
+    "exampleMeaning": "每一片晶圓包含數百個晶片晶粒。"
   },
   {
     "id": 42,
     "word": "choose",
     "type": "verb",
-    "meaning": "挑選"
+    "meaning": "挑選",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "choose option",
+    "exampleSentence": "Choose the right option on the touch screen.",
+    "exampleMeaning": "在觸控螢幕上選擇正確的操作選項。"
   },
   {
     "id": 43,
     "word": "clean",
     "type": "verb",
-    "meaning": "清潔"
+    "meaning": "清潔",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "clean surface",
+    "exampleSentence": "Keep the load port surface completely clean.",
+    "exampleMeaning": "保持裝載端口表面完全清潔無塵。"
   },
   {
     "id": 44,
     "word": "clean chamber",
     "type": "noun",
-    "meaning": "潔淨室"
+    "meaning": "潔淨室",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "clean chamber cycle",
+    "exampleSentence": "Run a clean chamber cycle after twenty runs.",
+    "exampleMeaning": "每生產二十批後需執行腔體清潔程序。"
   },
   {
     "id": 45,
     "word": "clear",
     "type": "verb",
-    "meaning": "清除"
+    "meaning": "清除",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "clear message",
+    "exampleSentence": "Clear the alarm message after solving the issue.",
+    "exampleMeaning": "排除問題後在系統上清除警報訊息。"
   },
   {
     "id": 46,
     "word": "collect",
     "type": "verb",
-    "meaning": "蒐集"
+    "meaning": "蒐集",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "collect data",
+    "exampleSentence": "Collect process data for the shift report.",
+    "exampleMeaning": "收集製程參數數據以供交接報告使用。"
   },
   {
     "id": 47,
     "word": "color",
     "type": "noun",
-    "meaning": "顏色"
+    "meaning": "顏色",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "color indicator",
+    "exampleSentence": "Green color indicates normal operating status.",
+    "exampleMeaning": "綠色燈號表示機台處於正常運轉狀態。"
   },
   {
     "id": 48,
     "word": "comment",
     "type": "noun",
-    "meaning": "評論"
+    "meaning": "評論",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "shift comment",
+    "exampleSentence": "Leave a detailed comment in the log sheet.",
+    "exampleMeaning": "在工作日誌中留下詳細的交接備註。"
   },
   {
     "id": 49,
     "word": "company",
     "type": "noun",
-    "meaning": "公司"
+    "meaning": "公司",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "company policy",
+    "exampleSentence": "Follow TSMC company safety policies strictly.",
+    "exampleMeaning": "嚴格遵守台積電公司工安與各項規範。"
   },
   {
     "id": 50,
     "word": "complete",
     "type": "verb",
-    "meaning": "完成"
+    "meaning": "完成",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "complete run",
+    "exampleSentence": "Wait until the machine completes the entire run.",
+    "exampleMeaning": "靜候機台完整執行完畢該生產流程。"
   },
   {
     "id": 51,
     "word": "computer",
     "type": "noun",
-    "meaning": "電腦"
+    "meaning": "電腦",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "host computer",
+    "exampleSentence": "Upload the measurement results to the host computer.",
+    "exampleMeaning": "將量測結果上傳至主電腦伺服器。"
   },
   {
     "id": 52,
     "word": "concern",
     "type": "verb",
-    "meaning": "擔憂"
+    "meaning": "擔憂",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "safety concern",
+    "exampleSentence": "Report any safety concern to your leader.",
+    "exampleMeaning": "若有任何工安疑慮請立即向副理回報。"
   },
   {
     "id": 53,
     "word": "confidential",
     "type": "adjective",
-    "meaning": "機密的"
+    "meaning": "機密的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "strictly confidential",
+    "exampleSentence": "All fab manufacturing data is strictly confidential.",
+    "exampleMeaning": "所有晶圓廠製程數據均屬高度機密。"
   },
   {
     "id": 54,
     "word": "confirm",
     "type": "verb",
-    "meaning": "確認"
+    "meaning": "確認",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "confirm lot ID",
+    "exampleSentence": "Confirm the lot ID before pushing the start button.",
+    "exampleMeaning": "按下啟動鈕前務必核對確認批號。"
   },
   {
     "id": 55,
     "word": "contamination",
     "type": "noun",
-    "meaning": "污染"
+    "meaning": "污染",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "prevent contamination",
+    "exampleSentence": "Wear face masks to prevent particle contamination.",
+    "exampleMeaning": "配戴口罩以避免微塵粒子汙染晶圓。"
   },
   {
     "id": 56,
     "word": "continue",
     "type": "verb",
-    "meaning": "繼續"
+    "meaning": "繼續",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "continue process",
+    "exampleSentence": "Check equipment status before you continue.",
+    "exampleMeaning": "繼續運作前請再次確認機台狀態正常。"
   },
   {
     "id": 57,
     "word": "control",
     "type": "noun",
-    "meaning": "控制"
+    "meaning": "控制",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "temperature control",
+    "exampleSentence": "Maintain precise temperature control in the furnace.",
+    "exampleMeaning": "在爐管製程中維持精確的溫度控制。"
   },
   {
     "id": 58,
     "word": "copy",
     "type": "noun",
-    "meaning": "拷貝"
+    "meaning": "拷貝",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "copy file",
+    "exampleSentence": "Do not copy unauthorized files on the terminal.",
+    "exampleMeaning": "機台終端機嚴禁複製未經許可的檔案。"
   },
   {
     "id": 59,
     "word": "count",
     "type": "verb",
-    "meaning": "計算"
+    "meaning": "計算",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "wafer count",
+    "exampleSentence": "Check that the wafer count equals 25.",
+    "exampleMeaning": "確認晶圓盒內的片數是否整卡滿 25 片。"
   },
   {
     "id": 60,
     "word": "customer",
     "type": "noun",
-    "meaning": "客戶"
+    "meaning": "客戶",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "customer wafer",
+    "exampleSentence": "Handle customer wafers with extra care.",
+    "exampleMeaning": "搬運與處理客戶晶圓時務必格外小心。"
   },
   {
     "id": 61,
     "word": "cycle",
     "type": "noun",
-    "meaning": "週期"
+    "meaning": "週期",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "clean cycle",
+    "exampleSentence": "Do not interrupt the automated clean cycle.",
+    "exampleMeaning": "請勿中途中斷自動清洗循環。"
   },
   {
     "id": 62,
     "word": "cycle time",
     "type": "noun",
-    "meaning": "生產週期"
+    "meaning": "生產週期",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "reduce cycle time",
+    "exampleSentence": "Optimize workflow to reduce wafer cycle time.",
+    "exampleMeaning": "最佳化作業流程以縮短晶圓生產週期。"
   },
   {
     "id": 63,
     "word": "daily",
     "type": "adjective",
-    "meaning": "每日的"
+    "meaning": "每日的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "daily meeting",
+    "exampleSentence": "Attend the daily shift meeting on time.",
+    "exampleMeaning": "準時出席每日交接晨會或夕會。"
   },
   {
     "id": 64,
     "word": "data",
     "type": "noun",
-    "meaning": "資料"
+    "meaning": "資料",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "log data",
+    "exampleSentence": "Save the inspection log data immediately.",
+    "exampleMeaning": "立即將量測與檢驗數據存檔備份。"
   },
   {
     "id": 65,
     "word": "date",
     "type": "noun",
-    "meaning": "日期"
+    "meaning": "日期",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "due date",
+    "exampleSentence": "Verify the expiration date of the chemical.",
+    "exampleMeaning": "確認化學藥劑的有效保存期限。"
   },
   {
     "id": 66,
     "word": "decline",
     "type": "verb",
-    "meaning": "減少"
+    "meaning": "減少",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "yield decline",
+    "exampleSentence": "Investigate causes if daily yield shows decline.",
+    "exampleMeaning": "良率出現下滑時需立即追查異常原因。"
   },
   {
     "id": 67,
     "word": "defect",
     "type": "noun",
-    "meaning": "缺陷"
+    "meaning": "缺陷",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "defect inspection",
+    "exampleSentence": "Inspect wafer surface for any visual defect.",
+    "exampleMeaning": "檢查晶圓表面是否有刮傷或任何微外觀缺陷。"
   },
   {
     "id": 68,
     "word": "delay",
     "type": "verb",
-    "meaning": "延遲"
+    "meaning": "延遲",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "production delay",
+    "exampleSentence": "Report equipment issues to avoid production delay.",
+    "exampleMeaning": "即時回報機台障礙以避免生產延遲。"
   },
   {
     "id": 69,
     "word": "delete",
     "type": "verb",
-    "meaning": "刪除"
+    "meaning": "刪除",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "delete recipe",
+    "exampleSentence": "Never delete recipe files from the machine.",
+    "exampleMeaning": "絕不可隨意刪除機台內的配方檔案。"
   },
   {
     "id": 70,
     "word": "diffusion",
     "type": "noun",
-    "meaning": "擴散製程"
+    "meaning": "擴散製程",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "diffusion area",
+    "exampleSentence": "Diffusion furnace operates at very high temperatures.",
+    "exampleMeaning": "擴散製程區的高溫爐管處於極高溫度。"
   },
   {
     "id": 71,
     "word": "document",
     "type": "noun",
-    "meaning": "文件"
+    "meaning": "文件",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "standard document",
+    "exampleSentence": "Follow the operational standard document.",
+    "exampleMeaning": "所有操作步驟均須參照標準作業文件。"
   },
   {
     "id": 72,
     "word": "dry",
     "type": "adjective",
-    "meaning": "乾的"
+    "meaning": "乾的",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "spin dry",
+    "exampleSentence": "The wafer is spun dry after chemical rinse.",
+    "exampleMeaning": "晶圓經化學清洗後會進行旋轉甩乾。"
   },
   {
     "id": 73,
     "word": "emergency",
     "type": "noun",
-    "meaning": "緊急情況"
+    "meaning": "緊急情況",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "emergency exit",
+    "exampleSentence": "Know the location of every emergency exit.",
+    "exampleMeaning": "牢記無塵室內各個緊急逃生出口位置。"
   },
   {
     "id": 74,
     "word": "emergency stop",
     "type": "noun",
-    "meaning": "緊急停止"
+    "meaning": "緊急停止",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "press emergency stop",
+    "exampleSentence": "Press emergency stop in case of mechanical jam.",
+    "exampleMeaning": "機台發生機械卡死時立即拍下急停鈕。"
   },
   {
     "id": 75,
     "word": "engineer",
     "type": "noun",
-    "meaning": "工程師"
+    "meaning": "工程師",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "process engineer",
+    "exampleSentence": "Contact the process engineer to release hold lots.",
+    "exampleMeaning": "聯絡製程工程師協助解批卡住的貨。"
   },
   {
     "id": 76,
     "word": "enhance",
     "type": "verb",
-    "meaning": "增進"
+    "meaning": "增進",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "enhance quality",
+    "exampleSentence": "Continuous checks enhance overall yield and quality.",
+    "exampleMeaning": "持續點檢有助於提升整體良率與品質。"
   },
   {
     "id": 77,
     "word": "enter",
     "type": "verb",
-    "meaning": "進入"
+    "meaning": "進入",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "enter clean room",
+    "exampleSentence": "Put on booties before you enter the gowning room.",
+    "exampleMeaning": "進入更衣室前請先套上鞋套。"
   },
   {
     "id": 78,
     "word": "environment",
     "type": "noun",
-    "meaning": "環境"
+    "meaning": "環境",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "fab environment",
+    "exampleSentence": "Maintain strict humidity in the fab environment.",
+    "exampleMeaning": "廠房環境需保持嚴格的恆溫恆濕控制。"
   },
   {
     "id": 79,
     "word": "equipment",
     "type": "noun",
-    "meaning": "設備"
+    "meaning": "設備",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "equipment status",
+    "exampleSentence": "Verify that the equipment is green before loading.",
+    "exampleMeaning": "上貨前確認機台燈號呈現綠色可生產。"
   },
   {
     "id": 80,
     "word": "error",
     "type": "noun",
-    "meaning": "錯誤"
+    "meaning": "錯誤",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "error code",
+    "exampleSentence": "Write down the error code displayed on screen.",
+    "exampleMeaning": "抄寫記錄螢幕上顯示的異常錯誤代碼。"
   },
   {
     "id": 81,
     "word": "etching",
     "type": "noun",
-    "meaning": "蝕刻製程"
+    "meaning": "蝕刻製程",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "etching process",
+    "exampleSentence": "Dry etching removes material from the wafer surface.",
+    "exampleMeaning": "乾式蝕刻製程能精準剝除晶圓表面膜層。"
   },
   {
     "id": 82,
     "word": "EUV / extreme ultraviolet",
     "type": "noun",
-    "meaning": "極紫外光"
+    "meaning": "極紫外光",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "EUV lithography",
+    "exampleSentence": "EUV lithography produces advanced node chips.",
+    "exampleMeaning": "極紫外光微影技術用於生產最先進製程晶片。"
   },
   {
     "id": 83,
     "word": "event",
     "type": "noun",
-    "meaning": "事件"
+    "meaning": "事件",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "event log",
+    "exampleSentence": "Record every tool down event into the system.",
+    "exampleMeaning": "將機台當機與停機事件詳實登錄系統。"
   },
   {
     "id": 84,
     "word": "execute",
     "type": "verb",
-    "meaning": "執行"
+    "meaning": "執行",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "execute command",
+    "exampleSentence": "Execute the batch command after confirmation.",
+    "exampleMeaning": "覆核無誤後方可執行批次加載指令。"
   },
   {
     "id": 85,
     "word": "exit",
     "type": "noun",
-    "meaning": "退出"
+    "meaning": "退出",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "emergency exit",
+    "exampleSentence": "Keep the emergency exit path clear of carts.",
+    "exampleMeaning": "保持緊急疏散走道順暢，嚴禁堆放推車。"
   },
   {
     "id": 86,
     "word": "fault",
     "type": "noun",
-    "meaning": "錯誤"
+    "meaning": "錯誤",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "machine fault",
+    "exampleSentence": "Technician called maintenance for machine fault.",
+    "exampleMeaning": "機台發生硬體故障，技術員已聯絡設備課。"
   },
   {
     "id": 87,
     "word": "find",
     "type": "verb",
-    "meaning": "發現"
+    "meaning": "發現",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "find root cause",
+    "exampleSentence": "Engineers work to find the root cause of defect.",
+    "exampleMeaning": "工程師與技術員通力合作找出缺陷真因。"
   },
   {
     "id": 88,
     "word": "floor",
     "type": "noun",
-    "meaning": "地板"
+    "meaning": "地板",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "raised floor",
+    "exampleSentence": "Cables and pipes run beneath the fab raised floor.",
+    "exampleMeaning": "無塵室高架地板下方鋪設了管線與電纜。"
   },
   {
     "id": 89,
     "word": "focus",
     "type": "noun",
-    "meaning": "焦點"
+    "meaning": "焦點",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "laser focus",
+    "exampleSentence": "Calibrate the laser focus before exposure.",
+    "exampleMeaning": "曝光前需精準校正雷射對焦焦點。"
   },
   {
     "id": 90,
     "word": "follow",
     "type": "verb",
-    "meaning": "照做、跟隨"
+    "meaning": "照做、跟隨",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "follow SOP",
+    "exampleSentence": "Always follow the SOP without skipping steps.",
+    "exampleMeaning": "嚴格遵守標準作業程序，不可跳過任何步驟。"
   },
   {
     "id": 91,
     "word": "freeze",
     "type": "verb",
-    "meaning": "凍結"
+    "meaning": "凍結",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "screen freeze",
+    "exampleSentence": "Reboot the terminal if the UI screen freezes.",
+    "exampleMeaning": "若控制面板畫面當機凍結請回報處理。"
   },
   {
     "id": 92,
     "word": "full",
     "type": "adjective",
-    "meaning": "滿的"
+    "meaning": "滿的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "cassette full",
+    "exampleSentence": "The cassette is full with 25 silicon wafers.",
+    "exampleMeaning": "該晶圓盒目前已裝滿 25 片完整晶圓。"
   },
   {
     "id": 93,
     "word": "function",
     "type": "noun",
-    "meaning": "功能"
+    "meaning": "功能",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "safety function",
+    "exampleSentence": "Test the interlock safety function regularly.",
+    "exampleMeaning": "定期檢測機台互鎖安全防護機能。"
   },
   {
     "id": 94,
     "word": "gas",
     "type": "noun",
-    "meaning": "氣體"
+    "meaning": "氣體",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "specialty gas",
+    "exampleSentence": "Check the specialty gas pressure gauges daily.",
+    "exampleMeaning": "每日例行抄檢特殊製程氣體之壓力表數值。"
   },
   {
     "id": 95,
     "word": "glass",
     "type": "noun",
-    "meaning": "玻璃、鏡片"
+    "meaning": "玻璃、鏡片",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "safety glasses",
+    "exampleSentence": "Put on safety glasses before pouring liquid.",
+    "exampleMeaning": "傾倒藥水前務必戴好防護面罩或護目鏡。"
   },
   {
     "id": 96,
     "word": "gloves",
     "type": "noun",
-    "meaning": "手套"
+    "meaning": "手套",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "nitrile gloves",
+    "exampleSentence": "Change clean room gloves if tears appear.",
+    "exampleMeaning": "無塵室手套若有磨損或破損請立即更換。"
   },
   {
     "id": 97,
     "word": "grade",
     "type": "noun",
-    "meaning": "等級"
+    "meaning": "等級",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "product grade",
+    "exampleSentence": "Sort the finished chips according to product grade.",
+    "exampleMeaning": "依照產品品質等級將晶片分類儲存。"
   },
   {
     "id": 98,
     "word": "green",
     "type": "noun",
-    "meaning": "綠色"
+    "meaning": "綠色",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "green light",
+    "exampleSentence": "Machine is ready to run when the green light is on.",
+    "exampleMeaning": "綠燈亮起表示機台處於備便可生產狀態。"
   },
   {
     "id": 99,
     "word": "group",
     "type": "noun",
-    "meaning": "群組"
+    "meaning": "群組",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "module group",
+    "exampleSentence": "Coordinate tasks within your module group.",
+    "exampleMeaning": "在所屬課別模組小組內緊密配合工作。"
   },
   {
     "id": 100,
     "word": "handle",
     "type": "verb",
-    "meaning": "處理"
+    "meaning": "處理",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "handle wafer",
+    "exampleSentence": "Handle the wafer only with designated vacuum wands.",
+    "exampleMeaning": "僅可使用專用真空吸筆拿取晶圓邊緣。"
   },
   {
     "id": 101,
     "word": "hard-disk",
     "type": "noun",
-    "meaning": "硬盤"
+    "meaning": "硬盤",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "system hard-disk",
+    "exampleSentence": "System logs are stored on the local hard-disk.",
+    "exampleMeaning": "機台運作日誌存儲於機載硬碟中。"
   },
   {
     "id": 102,
     "word": "heavy",
     "type": "adjective",
-    "meaning": "重的"
+    "meaning": "重的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "heavy equipment",
+    "exampleSentence": "Use ergonomic lifting when moving heavy boxes.",
+    "exampleMeaning": "搬運較重之零件箱體時請善用符合人體工學姿勢。"
   },
   {
     "id": 103,
     "word": "helmet",
     "type": "noun",
-    "meaning": "安全帽"
+    "meaning": "安全帽",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "safety helmet",
+    "exampleSentence": "Wear a safety helmet during tool maintenance.",
+    "exampleMeaning": "機台歲修保養施工期間請務必配戴工程安全帽。"
   },
   {
     "id": 104,
     "word": "help",
     "type": "verb",
-    "meaning": "幫助"
+    "meaning": "幫助",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "ask for help",
+    "exampleSentence": "Ask your shift buddy for help when in doubt.",
+    "exampleMeaning": "若對步驟有疑慮時，立即向組長或同仁求助。"
   },
   {
     "id": 105,
     "word": "hold",
     "type": "verb",
-    "meaning": "暫停"
+    "meaning": "暫停",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "hold lot",
+    "exampleSentence": "Put the lot on hold until inspection finishes.",
+    "exampleMeaning": "暫停該批次貨件運送，等待品檢判定。"
   },
   {
     "id": 106,
     "word": "hole",
     "type": "noun",
-    "meaning": "孔、洞"
+    "meaning": "孔、洞",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "contact hole",
+    "exampleSentence": "Verify that the contact hole has no residue.",
+    "exampleMeaning": "檢測接觸孔洞底層是否有任何殘留物。"
   },
   {
     "id": 107,
     "word": "hot",
     "type": "adjective",
-    "meaning": "熱的"
+    "meaning": "熱的",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "hot surface",
+    "exampleSentence": "Caution: Hot surface warning on furnace tubes.",
+    "exampleMeaning": "注意：高溫爐管外壁具有灼熱高溫警示。"
   },
   {
     "id": 108,
     "word": "impact",
     "type": "noun",
-    "meaning": "影馨"
+    "meaning": "影馨",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "yield impact",
+    "exampleSentence": "Assess whether particle count has a yield impact.",
+    "exampleMeaning": "評估落塵微粒增加是否會對良率造成衝擊。"
   },
   {
     "id": 109,
     "word": "improve",
     "type": "verb",
-    "meaning": "改善"
+    "meaning": "改善",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "improve yield",
+    "exampleSentence": "Adhere to clean procedures to improve yield.",
+    "exampleMeaning": "落實無塵室清潔標準作業以提升良率。"
   },
   {
     "id": 110,
     "word": "inform",
     "type": "verb",
-    "meaning": "通知"
+    "meaning": "通知",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "inform supervisor",
+    "exampleSentence": "Inform your supervisor of any tool abnormality.",
+    "exampleMeaning": "機台發生任何異常請第一時間回報主管。"
   },
   {
     "id": 111,
     "word": "information",
     "type": "noun",
-    "meaning": "資訊"
+    "meaning": "資訊",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "lot information",
+    "exampleSentence": "Check lot information on the MES terminal.",
+    "exampleMeaning": "在製造執行系統 (MES) 終端機上核對貨批資訊。"
   },
   {
     "id": 112,
     "word": "inhibition",
     "type": "noun",
-    "meaning": "禁止禁用"
+    "meaning": "禁止禁用",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tool inhibition",
+    "exampleSentence": "Tool inhibition prevents loading wrong recipes.",
+    "exampleMeaning": "機台互鎖防呆機制可防止載入錯誤配方。"
   },
   {
     "id": 113,
     "word": "input",
     "type": "noun",
-    "meaning": "輸入"
+    "meaning": "輸入",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "input parameter",
+    "exampleSentence": "Input the parameter values specified by S.O.P.",
+    "exampleMeaning": "依照 SOP 規定數值精確輸入製程參數。"
   },
   {
     "id": 114,
     "word": "inspect",
     "type": "verb",
-    "meaning": "檢查"
+    "meaning": "檢查",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "inspect cassette",
+    "exampleSentence": "Inspect cassette edges for physical scratches.",
+    "exampleMeaning": "仔細目視檢查晶圓盒外框是否有磨損刮傷。"
   },
   {
     "id": 115,
     "word": "inspection",
     "type": "noun",
-    "meaning": "檢驗"
+    "meaning": "檢驗",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "wafer inspection",
+    "exampleSentence": "Send samples for microscopic wafer inspection.",
+    "exampleMeaning": "抽樣晶圓送往顯微鏡進行高解析外觀檢驗。"
   },
   {
     "id": 116,
     "word": "instruction",
     "type": "noun",
-    "meaning": "指令"
+    "meaning": "指令",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "follow instruction",
+    "exampleSentence": "Carry out each step following the work instruction.",
+    "exampleMeaning": "遵照作業指引卡上的每一步驟確實操作。"
   },
   {
     "id": 117,
     "word": "Internet",
     "type": "noun",
-    "meaning": "網際網路"
+    "meaning": "網際網路",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "intranet access",
+    "exampleSentence": "Fab workstations connect only to internal network.",
+    "exampleMeaning": "廠區機台工作站僅限連線內部管制網路。"
   },
   {
     "id": 118,
     "word": "interview",
     "type": "noun",
-    "meaning": "面試"
+    "meaning": "面試",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "job interview",
+    "exampleSentence": "Explain your shift adaptability during the interview.",
+    "exampleMeaning": "面試時具體展現您對四班二輪與細心度的適應力。"
   },
   {
     "id": 119,
     "word": "issue",
     "type": "verb",
-    "meaning": "發行(n.) 議題"
+    "meaning": "發行(n.) 議題",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "report issue",
+    "exampleSentence": "Log the mechanical issue in the online system.",
+    "exampleMeaning": "將機台機械異常問題即刻通報登錄系統。"
   },
   {
     "id": 120,
     "word": "job",
     "type": "noun",
-    "meaning": "工作"
+    "meaning": "工作",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "shift job",
+    "exampleSentence": "Technician job demands focus and adherence to rules.",
+    "exampleMeaning": "技術員工作要求高度專注並嚴格遵循規範。"
   },
   {
     "id": 121,
     "word": "keep",
     "type": "verb",
-    "meaning": "保持"
+    "meaning": "保持",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "keep clean",
+    "exampleSentence": "Keep your working station orderly and clean.",
+    "exampleMeaning": "隨時保持機台機台工作站整齊與乾淨。"
   },
   {
     "id": 122,
     "word": "keyboard",
     "type": "noun",
-    "meaning": "鍵盤"
+    "meaning": "鍵盤",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "clean keyboard",
+    "exampleSentence": "Cover the keyboard with clean protective film.",
+    "exampleMeaning": "機台鍵盤外部需包覆專用抗靜電保護膜。"
   },
   {
     "id": 123,
     "word": "label",
     "type": "noun",
-    "meaning": "標籤"
+    "meaning": "標籤",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "barcode label",
+    "exampleSentence": "Scan the barcode label before loading wafers.",
+    "exampleMeaning": "將晶圓盒上架前請先用讀碼槍掃描條碼標籤。"
   },
   {
     "id": 124,
     "word": "laboratory",
     "type": "noun",
-    "meaning": "實驗室"
+    "meaning": "實驗室",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "analytical laboratory",
+    "exampleSentence": "Send chemical samples to the laboratory for analysis.",
+    "exampleMeaning": "將化學品樣品送至分析實驗室檢驗濃度。"
   },
   {
     "id": 125,
     "word": "leader",
     "type": "noun",
-    "meaning": "組長"
+    "meaning": "組長",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "shift leader",
+    "exampleSentence": "Report attendance directly to your shift leader.",
+    "exampleMeaning": "班前請先向值班帶線組長報到。"
   },
   {
     "id": 126,
     "word": "learn",
     "type": "verb",
-    "meaning": "學習"
+    "meaning": "學習",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "learn SOP",
+    "exampleSentence": "Take time to learn every step in the new SOP.",
+    "exampleMeaning": "花時間認真熟讀並學會新修訂的 SOP 流程。"
   },
   {
     "id": 127,
     "word": "level",
     "type": "noun",
-    "meaning": "程度"
+    "meaning": "程度",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "liquid level",
+    "exampleSentence": "Check the liquid level sensor before starting.",
+    "exampleMeaning": "啟動前請先確認化學槽液位感測器正常。"
   },
   {
     "id": 128,
     "word": "lift",
     "type": "verb",
-    "meaning": "抬起、舉起"
+    "meaning": "抬起、舉起",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "elevator lift",
+    "exampleSentence": "The cassette lift moves wafers smoothly up.",
+    "exampleMeaning": "機台內部升降機構能平穩托起晶圓盒。"
   },
   {
     "id": 129,
     "word": "light",
     "type": "noun",
-    "meaning": "光"
+    "meaning": "光",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "warning light",
+    "exampleSentence": "Amber warning light means tool needs operator attention.",
+    "exampleMeaning": "黃色警示燈代表機台需要技術員介入處理。"
   },
   {
     "id": 130,
     "word": "line",
     "type": "noun",
-    "meaning": "直線"
+    "meaning": "直線",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "production line",
+    "exampleSentence": "Clean room production line runs twenty-four hours.",
+    "exampleMeaning": "無塵室晶圓生產線採全年無休二十四小時運轉。"
   },
   {
     "id": 131,
     "word": "link",
     "type": "noun",
-    "meaning": "連結"
+    "meaning": "連結",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "MES link",
+    "exampleSentence": "Ensure the tool is online with active MES link.",
+    "exampleMeaning": "確認機台通訊處於連線中且 MES 連結正常。"
   },
   {
     "id": 132,
     "word": "liquid",
     "type": "noun",
-    "meaning": "液體"
+    "meaning": "液體",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "cleaning liquid",
+    "exampleSentence": "Pump cleaning liquid into the rinse chamber.",
+    "exampleMeaning": "將高純度清洗液泵入清洗腔體內。"
   },
   {
     "id": 133,
     "word": "list",
     "type": "noun",
-    "meaning": "清單"
+    "meaning": "清單",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "checklist",
+    "exampleSentence": "Check off every item on the daily checklist.",
+    "exampleMeaning": "逐一勾選日常機台點檢表上的所有檢驗項目。"
   },
   {
     "id": 134,
     "word": "lithography",
     "type": "noun",
-    "meaning": "黃光／微影製程"
+    "meaning": "黃光／微影製程",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "lithography track",
+    "exampleSentence": "Lithography process transfers patterns onto wafer.",
+    "exampleMeaning": "黃光微影製程負責將電路圖案轉移至晶圓上。"
   },
   {
     "id": 135,
     "word": "load",
     "type": "verb",
-    "meaning": "上貨、裝載"
+    "meaning": "上貨、裝載",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "load wafer",
+    "exampleSentence": "Load the wafer cassette onto port one carefully.",
+    "exampleMeaning": "小心將晶圓盒載入至第一號進料端口。"
   },
   {
     "id": 136,
     "word": "loading",
     "type": "noun",
-    "meaning": "負荷"
+    "meaning": "負荷",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "loading port",
+    "exampleSentence": "Do not block the loading port with spare carts.",
+    "exampleMeaning": "請勿將備用推車停放在機台裝載口前方阻擋。"
   },
   {
     "id": 137,
     "word": "lobby",
     "type": "noun",
-    "meaning": "大廳"
+    "meaning": "大廳",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "fab lobby",
+    "exampleSentence": "Visitors must register at the reception lobby.",
+    "exampleMeaning": "外賓必須在晶圓廠一樓大廳櫃檯完成換證登記。"
   },
   {
     "id": 138,
     "word": "location",
     "type": "noun",
-    "meaning": "位置"
+    "meaning": "位置",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "tool location",
+    "exampleSentence": "Verify the exact location of the target stocker.",
+    "exampleMeaning": "核對目標自動儲存櫃在無塵室中的確切代號位置。"
   },
   {
     "id": 139,
     "word": "lock",
     "type": "verb",
-    "meaning": "鎖住"
+    "meaning": "鎖住",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "door lock",
+    "exampleSentence": "Safety door lock engages while the robot moves.",
+    "exampleMeaning": "當內部機械手臂動作時，機台安全防護門會自動上鎖。"
   },
   {
     "id": 140,
     "word": "log sheet",
     "type": "noun",
-    "meaning": "工作紀錄"
+    "meaning": "工作紀錄",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "sign log sheet",
+    "exampleSentence": "Sign the log sheet after completing shift handover.",
+    "exampleMeaning": "完成交接盤點後，請在班別工作日誌上簽名覆核。"
   },
   {
     "id": 141,
     "word": "lose",
     "type": "verb",
-    "meaning": "遺失"
+    "meaning": "遺失",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "lose track",
+    "exampleSentence": "Scan barcodes carefully so system never loses track.",
+    "exampleMeaning": "確實刷讀條碼，確保系統不會遺漏追蹤任何一批貨。"
   },
   {
     "id": 142,
     "word": "lot",
     "type": "noun",
-    "meaning": "批貨"
+    "meaning": "批貨",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "wafer lot",
+    "exampleSentence": "Each wafer lot typically contains twenty-five wafers.",
+    "exampleMeaning": "一個標準晶圓批通常包含二十五片晶圓。"
   },
   {
     "id": 143,
     "word": "machine",
     "type": "noun",
-    "meaning": "機器"
+    "meaning": "機器",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "machine status",
+    "exampleSentence": "Check machine status before pressing the run key.",
+    "exampleMeaning": "按下啟動鍵前，務必再三檢視機台狀態。"
   },
   {
     "id": 144,
     "word": "maintain",
     "type": "verb",
-    "meaning": "維護"
+    "meaning": "維護",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "maintain tool",
+    "exampleSentence": "Technicians and engineers maintain tool uptime.",
+    "exampleMeaning": "技術員與設備工程師通力維持機台高妥善運轉率。"
   },
   {
     "id": 145,
     "word": "manual",
     "type": "adjective",
-    "meaning": "手動的"
+    "meaning": "手動的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "manual mode",
+    "exampleSentence": "Switch to manual mode only when authorized.",
+    "exampleMeaning": "僅在工程師授權下才可將機台切換至手動模式。"
   },
   {
     "id": 146,
     "word": "manufacture",
     "type": "verb",
-    "meaning": "製造"
+    "meaning": "製造",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "manufacture chips",
+    "exampleSentence": "TSMC manufactures world-leading semiconductor chips.",
+    "exampleMeaning": "台積電致力於製造全球最領先的半導體晶片。"
   },
   {
     "id": 147,
     "word": "mark",
     "type": "noun",
-    "meaning": "記號"
+    "meaning": "記號",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "alignment mark",
+    "exampleSentence": "Robot optical sensor scans the alignment mark.",
+    "exampleMeaning": "機械手臂之光學感測器負責辨讀對齊標記。"
   },
   {
     "id": 148,
     "word": "mask",
     "type": "noun",
-    "meaning": "光罩、口罩"
+    "meaning": "光罩、口罩",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "photomask",
+    "exampleSentence": "Inspect the photomask for particles before exposure.",
+    "exampleMeaning": "曝光前仔細檢查光罩表面是否有落塵微粒。"
   },
   {
     "id": 149,
     "word": "material",
     "type": "noun",
-    "meaning": "原料"
+    "meaning": "原料",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "raw material",
+    "exampleSentence": "Check the raw material lot number before replenishment.",
+    "exampleMeaning": "化學耗材更換前請核對原材料之生產批號。"
   },
   {
     "id": 150,
     "word": "measure",
     "type": "verb",
-    "meaning": "量測"
+    "meaning": "量測",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "measure thickness",
+    "exampleSentence": "Measure oxide thickness at five points on the wafer.",
+    "exampleMeaning": "在晶圓表面量測五點氧化層膜厚均勻度。"
   },
   {
     "id": 151,
     "word": "mechanical",
     "type": "adjective",
-    "meaning": "機械的"
+    "meaning": "機械的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "mechanical arm",
+    "exampleSentence": "Keep hands clear while the mechanical arm operates.",
+    "exampleMeaning": "機械手臂運動過程中嚴禁伸手伸入安全光柵內。"
   },
   {
     "id": 152,
     "word": "merge",
     "type": "verb",
-    "meaning": "合併"
+    "meaning": "合併",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "merge lots",
+    "exampleSentence": "Merge split lots according to engineer instructions.",
+    "exampleMeaning": "依照工程師開立之批單指示進行合批操作。"
   },
   {
     "id": 153,
     "word": "message",
     "type": "noun",
-    "meaning": "訊息"
+    "meaning": "訊息",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "system message",
+    "exampleSentence": "Read the on-screen system message before proceeding.",
+    "exampleMeaning": "進行下一步操作前請詳閱螢幕上的系統提示訊息。"
   },
   {
     "id": 154,
     "word": "metal",
     "type": "noun",
-    "meaning": "金屬"
+    "meaning": "金屬",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "metal deposition",
+    "exampleSentence": "Thin metal layers form interconnects on the wafer.",
+    "exampleMeaning": "晶圓金屬薄膜沈積製程形成微米級電路導線。"
   },
   {
     "id": 155,
     "word": "miss-operation",
     "type": "noun",
-    "meaning": "錯誤動作"
+    "meaning": "錯誤動作",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "zero miss-operation",
+    "exampleSentence": "Follow the double-check procedure to avoid miss-operation.",
+    "exampleMeaning": "嚴格落實覆核防呆程序，追求零誤動作。"
   },
   {
     "id": 156,
     "word": "monitor",
     "type": "noun",
-    "meaning": "監視器、測機"
+    "meaning": "監視器、測機",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "monitor screen",
+    "exampleSentence": "Watch the monitor screen for recipe progress.",
+    "exampleMeaning": "在操作螢幕上即時監視配方加工進度條。"
   },
   {
     "id": 157,
     "word": "monthly",
     "type": "adjective",
-    "meaning": "每月的"
+    "meaning": "每月的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "monthly maintenance",
+    "exampleSentence": "The equipment undergoes monthly preventive maintenance.",
+    "exampleMeaning": "機台每個月均需定期執行停機預防保養 (PM)。"
   },
   {
     "id": 158,
     "word": "more",
     "type": "adjective",
-    "meaning": "更多的"
+    "meaning": "更多的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "more wafers",
+    "exampleSentence": "Load more wafers when the input port is clear.",
+    "exampleMeaning": "當進料端口淨空後即可裝載下一批晶圓。"
   },
   {
     "id": 159,
     "word": "move",
     "type": "verb",
-    "meaning": "移動(n.) 產出"
+    "meaning": "移動(n.) 產出",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "robot move",
+    "exampleSentence": "Wait until the robot completes its move.",
+    "exampleMeaning": "請靜待機械手臂完整歸位並停止動作。"
   },
   {
     "id": 160,
     "word": "new",
     "type": "adjective",
-    "meaning": "新的"
+    "meaning": "新的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "new recipe",
+    "exampleSentence": "Test the new recipe under engineer supervision.",
+    "exampleMeaning": "在工程師陪同指導下測試新版配方。"
   },
   {
     "id": 161,
     "word": "normal",
     "type": "adjective",
-    "meaning": "正常的"
+    "meaning": "正常的",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "normal operation",
+    "exampleSentence": "Confirm that vacuum pressure returns to normal.",
+    "exampleMeaning": "確認腔體內部真空度已恢復至正常規格值。"
   },
   {
     "id": 162,
     "word": "note",
     "type": "noun",
-    "meaning": "註解"
+    "meaning": "註解",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "handover note",
+    "exampleSentence": "Write down tool remarks in the handover note.",
+    "exampleMeaning": "將機台微異狀詳記於交接備忘錄提供下一班參考。"
   },
   {
     "id": 163,
     "word": "notice",
     "type": "noun",
-    "meaning": "通知"
+    "meaning": "通知",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "safety notice",
+    "exampleSentence": "Read the safety notice posted near the acid bench.",
+    "exampleMeaning": "詳讀張貼於化學清洗機台旁的工安注意事項公告。"
   },
   {
     "id": 164,
     "word": "number",
     "type": "noun",
-    "meaning": "號碼"
+    "meaning": "號碼",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "lot number",
+    "exampleSentence": "Type in the exact lot number on the keyboard.",
+    "exampleMeaning": "在鍵盤上精確輸入欲加工之晶圓批號。"
   },
   {
     "id": 165,
     "word": "office",
     "type": "noun",
-    "meaning": "辦公室"
+    "meaning": "辦公室",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "department office",
+    "exampleSentence": "Handover meetings are held in the department office.",
+    "exampleMeaning": "每日交接會均於部課辦公室內準時召開。"
   },
   {
     "id": 166,
     "word": "off-line",
     "type": "adjective",
-    "meaning": "離線的"
+    "meaning": "離線的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tool off-line",
+    "exampleSentence": "Set tool off-line before technicians start maintenance.",
+    "exampleMeaning": "技術員開始執行保養前，請先將機台設為離線。"
   },
   {
     "id": 167,
     "word": "on time",
     "type": "phrase",
-    "meaning": "準時"
+    "meaning": "準時",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "arrive on time",
+    "exampleSentence": "Always arrive on time for shift changeover.",
+    "exampleMeaning": "輪班交接班時請務必提前準時抵達無塵室。"
   },
   {
     "id": 168,
     "word": "on-line",
     "type": "adjective",
-    "meaning": "在線的"
+    "meaning": "在線的",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "bring on-line",
+    "exampleSentence": "Bring tool on-line after engineering approves release.",
+    "exampleMeaning": "工程師簽核放行後，即可將機台重新切回在線生產。"
   },
   {
     "id": 169,
     "word": "operation",
     "type": "noun",
-    "meaning": "操作"
+    "meaning": "操作",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "standard operation",
+    "exampleSentence": "Execute standard operation following every single step.",
+    "exampleMeaning": "遵照規範落實每一步標準作業，絕不圖快省略。"
   },
   {
     "id": 170,
     "word": "output",
     "type": "noun",
-    "meaning": "輸出"
+    "meaning": "輸出",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "daily output",
+    "exampleSentence": "Shift team worked safely to achieve the target daily output.",
+    "exampleMeaning": "輪班團隊在安全前提下齊心達成每日目標產能。"
   },
   {
     "id": 171,
     "word": "oven",
     "type": "noun",
-    "meaning": "烤箱"
+    "meaning": "烤箱",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "bake in oven",
+    "exampleSentence": "Bake the photoresist in the oven at specified temperature.",
+    "exampleMeaning": "在烘烤箱中以設定溫度對光阻進行軟烤硬烤。"
   },
   {
     "id": 172,
     "word": "over time",
     "type": "phrase",
-    "meaning": "加班"
+    "meaning": "加班",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "work over time",
+    "exampleSentence": "Over time hours are arranged according to labor regulations.",
+    "exampleMeaning": "加班出勤均依勞基法規定並預先安排確認。"
   },
   {
     "id": 173,
     "word": "page",
     "type": "noun",
-    "meaning": "頁數"
+    "meaning": "頁數",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "SOP page",
+    "exampleSentence": "Turn to page three of the equipment manual.",
+    "exampleMeaning": "翻閱至機台操作手冊第三頁查看排除步驟。"
   },
   {
     "id": 174,
     "word": "paper",
     "type": "noun",
-    "meaning": "紙張"
+    "meaning": "紙張",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "clean room paper",
+    "exampleSentence": "Use only special clean room paper inside the fab.",
+    "exampleMeaning": "無塵室內僅能使用不起塵的專用無塵紙書寫。"
   },
   {
     "id": 175,
     "word": "parameter",
     "type": "noun",
-    "meaning": "參數"
+    "meaning": "參數",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "recipe parameter",
+    "exampleSentence": "Verify that every recipe parameter matches the spec.",
+    "exampleMeaning": "核對各項配方參數是否與規格書嚴格相符。"
   },
   {
     "id": 176,
     "word": "part",
     "type": "noun",
-    "meaning": "零件"
+    "meaning": "零件",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "spare part",
+    "exampleSentence": "Confirm the serial number of the replacement spare part.",
+    "exampleMeaning": "更換機台零件前核對備品序號。"
   },
   {
     "id": 177,
     "word": "particle",
     "type": "noun",
-    "meaning": "微粒"
+    "meaning": "微粒",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "particle count",
+    "exampleSentence": "High particle count triggers an automatic quality hold.",
+    "exampleMeaning": "微塵粒子超標將自動觸發晶圓品質暫停管制作業。"
   },
   {
     "id": 178,
     "word": "pass",
     "type": "verb",
-    "meaning": "合格"
+    "meaning": "合格",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "pass inspection",
+    "exampleSentence": "Only wafers that pass inspection move to next step.",
+    "exampleMeaning": "唯有通過品質檢驗的晶圓才能放行至下個製程站點。"
   },
   {
     "id": 179,
     "word": "password",
     "type": "noun",
-    "meaning": "密碼"
+    "meaning": "密碼",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "login password",
+    "exampleSentence": "Never share your system login password with others.",
+    "exampleMeaning": "絕不可將個人的機台登入密碼借調給他人使用。"
   },
   {
     "id": 180,
     "word": "perfect",
     "type": "adjective",
-    "meaning": "完美的"
+    "meaning": "完美的",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "perfect yield",
+    "exampleSentence": "Dedicated team achieved perfect yield on sample run.",
+    "exampleMeaning": "技術員細心操作使試產批次達成了完美良率。"
   },
   {
     "id": 181,
     "word": "personal",
     "type": "adjective",
-    "meaning": "個人的"
+    "meaning": "個人的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "personal safety",
+    "exampleSentence": "Personal safety is the top priority in the fab.",
+    "exampleMeaning": "在晶圓廠內，同仁的人身安全永遠是第一優先。"
   },
   {
     "id": 182,
     "word": "phase",
     "type": "noun",
-    "meaning": "階段"
+    "meaning": "階段",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "ramp-up phase",
+    "exampleSentence": "Follow strict guidelines during the new fab ramp-up phase.",
+    "exampleMeaning": "新廠產能爬坡擴產階段須嚴格遵守標準作業。"
   },
   {
     "id": 183,
     "word": "photo",
     "type": "noun",
-    "meaning": "相片"
+    "meaning": "相片",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "photo area",
+    "exampleSentence": "Yellow lighting protects sensitive photoresist in photo area.",
+    "exampleMeaning": "黃光微影區採用黃色光源以保護光阻不被感光。"
   },
   {
     "id": 184,
     "word": "plan",
     "type": "noun",
-    "meaning": "計劃"
+    "meaning": "計劃",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "shift plan",
+    "exampleSentence": "Review the daily shift plan before distributing lots.",
+    "exampleMeaning": "派工前先審視當班生產計畫與排程目標。"
   },
   {
     "id": 185,
     "word": "plus",
     "type": "preposition",
-    "meaning": "加上"
+    "meaning": "加上",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "plus or minus",
+    "exampleSentence": "Thickness tolerance is plus or minus five angstroms.",
+    "exampleMeaning": "膜厚容許公差為正負五個埃 (Angstrom)。"
   },
   {
     "id": 186,
     "word": "pod",
     "type": "noun",
-    "meaning": "晶片傳送盒"
+    "meaning": "晶片傳送盒",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "FOUP pod",
+    "exampleSentence": "Transport FOUP pod with both hands holding bottom.",
+    "exampleMeaning": "雙手搬運晶圓傳送盒 (FOUP) 時請托住底部兩側。"
   },
   {
     "id": 187,
     "word": "point",
     "type": "noun",
-    "meaning": "點"
+    "meaning": "點",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "key point",
+    "exampleSentence": "Remember the key safety point during chemical hookup.",
+    "exampleMeaning": "牢記化學管路接管作業時的各項工安重點。"
   },
   {
     "id": 188,
     "word": "position",
     "type": "noun",
-    "meaning": "位置"
+    "meaning": "位置",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "home position",
+    "exampleSentence": "The robot arm returned safely to its home position.",
+    "exampleMeaning": "機械手臂已安全平穩回歸機械原點位置。"
   },
   {
     "id": 189,
     "word": "positive",
     "type": "adjective",
-    "meaning": "正向的"
+    "meaning": "正向的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "positive attitude",
+    "exampleSentence": "Keep a positive and responsible attitude toward quality.",
+    "exampleMeaning": "對產品品質保持正面積極與高度負責的態度。"
   },
   {
     "id": 190,
     "word": "postpone",
     "type": "verb",
-    "meaning": "延期"
+    "meaning": "延期",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "postpone maintenance",
+    "exampleSentence": "Do not postpone scheduled preventive maintenance.",
+    "exampleMeaning": "定期排定的預防保養作業不可無故拖延推遲。"
   },
   {
     "id": 191,
     "word": "power",
     "type": "noun",
-    "meaning": "力量"
+    "meaning": "力量",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "power switch",
+    "exampleSentence": "Do not toggle main power switch without supervisor signoff.",
+    "exampleMeaning": "未經副理級主管簽核，嚴禁擅自切換主電源總開關。"
   },
   {
     "id": 192,
     "word": "practice",
     "type": "verb",
-    "meaning": "練習"
+    "meaning": "練習",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "good practice",
+    "exampleSentence": "Labeling containers clearly is a good safety practice.",
+    "exampleMeaning": "將容器清楚張貼標籤是落實工安的良好典範實踐。"
   },
   {
     "id": 193,
     "word": "prepare",
     "type": "verb",
-    "meaning": "準備"
+    "meaning": "準備",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "prepare tool",
+    "exampleSentence": "Prepare cleaning swabs before opening the chamber door.",
+    "exampleMeaning": "開啟機台真空腔體門前，先備妥專用無塵擦拭布。"
   },
   {
     "id": 194,
     "word": "press",
     "type": "verb",
-    "meaning": "按下"
+    "meaning": "按下",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "press button",
+    "exampleSentence": "Press the start button only after double-checking.",
+    "exampleMeaning": "完成兩道防呆覆核手續後，才可按下啟動按鈕。"
   },
   {
     "id": 195,
     "word": "pressure",
     "type": "noun",
-    "meaning": "壓力"
+    "meaning": "壓力",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "chamber pressure",
+    "exampleSentence": "Chamber pressure must reach high vacuum before processing.",
+    "exampleMeaning": "進料加工前，腔體內部壓力必須抽至高真空狀態。"
   },
   {
     "id": 196,
     "word": "preview",
     "type": "noun",
-    "meaning": "預覽"
+    "meaning": "預覽",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "preview recipe",
+    "exampleSentence": "Preview the recipe settings on the screen first.",
+    "exampleMeaning": "先在終端螢幕上預覽配方步驟設定是否正確。"
   },
   {
     "id": 197,
     "word": "price",
     "type": "noun",
-    "meaning": "價格"
+    "meaning": "價格",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "equipment price",
+    "exampleSentence": "Advanced semiconductor equipment has high market price.",
+    "exampleMeaning": "先進半導體製程機台價值極其昂貴，操作需萬分小心。"
   },
   {
     "id": 198,
     "word": "print",
     "type": "noun",
-    "meaning": "列印"
+    "meaning": "列印",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "print run-card",
+    "exampleSentence": "Print a new run-card if the barcode becomes blurred.",
+    "exampleMeaning": "條碼若出現髒污磨損，請立即重新列印新流程卡。"
   },
   {
     "id": 199,
     "word": "priority",
     "type": "noun",
-    "meaning": "優先順序"
+    "meaning": "優先順序",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "hot lot priority",
+    "exampleSentence": "Give super hot run lots the highest tool priority.",
+    "exampleMeaning": "優先將機台產能提供給最急件特急貨批生產。"
   },
   {
     "id": 200,
     "word": "process",
     "type": "noun",
-    "meaning": "過程、流程"
+    "meaning": "過程、流程",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "semiconductor process",
+    "exampleSentence": "Each semiconductor process requires precise temperature.",
+    "exampleMeaning": "每道半導體製程都需要精密的溫度與壓力控制。"
   },
   {
     "id": 201,
     "word": "product",
     "type": "noun",
-    "meaning": "產品"
+    "meaning": "產品",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "finished product",
+    "exampleSentence": "Keep finished product cassettes securely locked.",
+    "exampleMeaning": "已產出之成品晶圓盒應穩妥鎖固於儲存櫃中。"
   },
   {
     "id": 202,
     "word": "protect",
     "type": "verb",
-    "meaning": "保護"
+    "meaning": "保護",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "protect wafer",
+    "exampleSentence": "Wear clean room garments to protect wafers from dust.",
+    "exampleMeaning": "確實穿著無塵衣以保護晶圓免受微塵落塵危害。"
   },
   {
     "id": 203,
     "word": "purge",
     "type": "verb",
-    "meaning": "清除"
+    "meaning": "清除",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "nitrogen purge",
+    "exampleSentence": "Purge the loadlock chamber with ultra-pure nitrogen.",
+    "exampleMeaning": "以超高純度氮氣對進出料載入腔體進行氣體吹掃置換。"
   },
   {
     "id": 204,
     "word": "push",
     "type": "verb",
-    "meaning": "推進"
+    "meaning": "推進",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "push cart",
+    "exampleSentence": "Push the FOUP cart with two hands in designated lanes.",
+    "exampleMeaning": "雙手推運晶圓推車並行駛於無塵室專用推車道。"
   },
   {
     "id": 205,
     "word": "quality",
     "type": "noun",
-    "meaning": "品質"
+    "meaning": "品質",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "quality first",
+    "exampleSentence": "In TSMC manufacturing culture, quality always comes first.",
+    "exampleMeaning": "在台積電製造文化中，品質與紀律永遠擺在第一位。"
   },
   {
     "id": 206,
     "word": "quantity",
     "type": "noun",
-    "meaning": "數量"
+    "meaning": "數量",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "wafer quantity",
+    "exampleSentence": "Confirm wafer quantity matches the dispatch sheet.",
+    "exampleMeaning": "確認晶圓實體片數與系統派工單上數量完全相符。"
   },
   {
     "id": 207,
     "word": "rate",
     "type": "noun",
-    "meaning": "比率"
+    "meaning": "比率",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "sampling rate",
+    "exampleSentence": "Increase inspection sampling rate when defect count rises.",
+    "exampleMeaning": "當異常數量增加時，應提高品檢抽樣頻率。"
   },
   {
     "id": 208,
     "word": "re-certify",
     "type": "verb",
-    "meaning": "重新認證"
+    "meaning": "重新認證",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "re-certify skill",
+    "exampleSentence": "Technicians re-certify their operation skills periodically.",
+    "exampleMeaning": "技術員定期需重新參加技能檢定考核以維持合格認證。"
   },
   {
     "id": 209,
     "word": "recipe",
     "type": "noun",
-    "meaning": "食譜、處方程式"
+    "meaning": "食譜、處方程式",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "select recipe",
+    "exampleSentence": "Always double check the recipe name before starting run.",
+    "exampleMeaning": "上機啟動前務必雙重覆核配方代碼名稱是否無誤。"
   },
   {
     "id": 210,
     "word": "record",
     "type": "noun",
-    "meaning": "記錄"
+    "meaning": "記錄",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "record anomaly",
+    "exampleSentence": "Record every tool anomaly immediately in the e-log.",
+    "exampleMeaning": "將機台微幅異常記錄詳實登載於電子交接紀錄簿中。"
   },
   {
     "id": 211,
     "word": "recover",
     "type": "verb",
-    "meaning": "復機"
+    "meaning": "復機",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tool recover",
+    "exampleSentence": "Perform manual homing to recover the jammed robot.",
+    "exampleMeaning": "執行手臂手動復歸程序以使卡滯機械結構恢復正常。"
   },
   {
     "id": 212,
     "word": "release",
     "type": "verb",
-    "meaning": "釋放"
+    "meaning": "釋放",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "release lot",
+    "exampleSentence": "Wait for QC engineer to release the held lot.",
+    "exampleMeaning": "靜待品管工程師於線上系統完成簽核放行動作。"
   },
   {
     "id": 213,
     "word": "remark",
     "type": "noun",
-    "meaning": "註記"
+    "meaning": "註記",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "add remark",
+    "exampleSentence": "Add a detailed remark when transferring WIP to next shift.",
+    "exampleMeaning": "交接在製品 WIP 時請詳細加註機台目前狀況。"
   },
   {
     "id": 214,
     "word": "remind",
     "type": "verb",
-    "meaning": "提醒"
+    "meaning": "提醒",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "remind buddy",
+    "exampleSentence": "Remind your buddy to wear safety goggles near chemicals.",
+    "exampleMeaning": "在化學酸槽旁主動提醒身旁同仁確實戴上防護鏡。"
   },
   {
     "id": 215,
     "word": "remove",
     "type": "verb",
-    "meaning": "移開"
+    "meaning": "移開",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "remove cassette",
+    "exampleSentence": "Remove the cassette only after the green unload lamp lights.",
+    "exampleMeaning": "待卸料指示綠燈亮起後，方可將晶圓盒取下。"
   },
   {
     "id": 216,
     "word": "repair",
     "type": "verb",
-    "meaning": "修理"
+    "meaning": "修理",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "repair tool",
+    "exampleSentence": "Call equipment engineers to repair damaged vacuum seals.",
+    "exampleMeaning": "聯絡設備工程人員更換並維修老化的真空密封橡膠環。"
   },
   {
     "id": 217,
     "word": "report",
     "type": "noun",
-    "meaning": "報告"
+    "meaning": "報告",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "report immediately",
+    "exampleSentence": "Report any chemical leak immediately to the control center.",
+    "exampleMeaning": "若察覺任何微量化學品洩漏，請立即通報應變中心。"
   },
   {
     "id": 218,
     "word": "reset",
     "type": "verb",
-    "meaning": "重設"
+    "meaning": "重設",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "reset alarm",
+    "exampleSentence": "Investigate root cause before you reset the alarm.",
+    "exampleMeaning": "在按下復歸鍵清除警報前，務必先確認異常發生原因。"
   },
   {
     "id": 219,
     "word": "rework",
     "type": "verb",
-    "meaning": "重做"
+    "meaning": "重做",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "rework wafer",
+    "exampleSentence": "Engineer ordered rework on photoresist coating error.",
+    "exampleMeaning": "針對光阻塗布厚度異常之晶圓批開立重工清洗指令。"
   },
   {
     "id": 220,
     "word": "route",
     "type": "noun",
-    "meaning": "路線"
+    "meaning": "路線",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "process route",
+    "exampleSentence": "Wafers move along a predefined process route.",
+    "exampleMeaning": "晶圓依照系統預先定義之工藝路線順序進行各站加工。"
   },
   {
     "id": 221,
     "word": "rule",
     "type": "noun",
-    "meaning": "規則"
+    "meaning": "規則",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "clean room rule",
+    "exampleSentence": "Follow every clean room rule strictly at all times.",
+    "exampleMeaning": "無塵室各項工安與行為守則於任何時刻均須嚴格遵循。"
   },
   {
     "id": 222,
     "word": "run",
     "type": "verb",
-    "meaning": "運轉、跑"
+    "meaning": "運轉、跑",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "start run",
+    "exampleSentence": "Check all interlocks before you start the production run.",
+    "exampleMeaning": "開始批次生產運行前，確認各安全防護開關皆已就位。"
   },
   {
     "id": 223,
     "word": "run-card",
     "type": "noun",
-    "meaning": "流程卡"
+    "meaning": "流程卡",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "check run-card",
+    "exampleSentence": "Run-card specifies the recipe and target thickness.",
+    "exampleMeaning": "流程卡詳細註明了當站規定配方與目標膜厚加工值。"
   },
   {
     "id": 224,
     "word": "S.O.P / Standard Operating Procedures",
     "type": "noun",
-    "meaning": "標準作業程序"
+    "meaning": "標準作業程序",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "strict S.O.P",
+    "exampleSentence": "Strict S.O.P adherence ensures zero-defect manufacturing.",
+    "exampleMeaning": "嚴格遵守標準作業程序 (SOP) 是零缺陷製造的基石。"
   },
   {
     "id": 225,
     "word": "safe",
     "type": "adjective",
-    "meaning": "安全的"
+    "meaning": "安全的",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "stay safe",
+    "exampleSentence": "Follow safety protocols to keep everyone in the fab safe.",
+    "exampleMeaning": "落實各項工安防護步驟，確保廠內全體同仁人身安全。"
   },
   {
     "id": 226,
     "word": "same",
     "type": "adjective",
-    "meaning": "相同的"
+    "meaning": "相同的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "same lot",
+    "exampleSentence": "All wafers in the same lot share identical parameters.",
+    "exampleMeaning": "同一批晶圓內的二十五片晶圓共享完全相同的製程參數。"
   },
   {
     "id": 227,
     "word": "save",
     "type": "verb",
-    "meaning": "儲存"
+    "meaning": "儲存",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "save configuration",
+    "exampleSentence": "Save the parameter configuration before closing window.",
+    "exampleMeaning": "在關閉機台設定視窗前，請務必點擊儲存變更。"
   },
   {
     "id": 228,
     "word": "scrap",
     "type": "noun",
-    "meaning": "報廢"
+    "meaning": "報廢",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "scrap wafer",
+    "exampleSentence": "Severe crack on wafer resulted in unavoidable scrap.",
+    "exampleMeaning": "晶圓發生嚴重碎裂，經工程師判定無可挽回必須報廢。"
   },
   {
     "id": 229,
     "word": "scratch",
     "type": "verb",
-    "meaning": "刮傷"
+    "meaning": "刮傷",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "wafer scratch",
+    "exampleSentence": "Avoid touching wafer surface to prevent micro scratch.",
+    "exampleMeaning": "嚴禁徒手接觸晶圓表面以避免造成肉眼不可見的微刮傷。"
   },
   {
     "id": 230,
     "word": "screen",
     "type": "noun",
-    "meaning": "螢幕"
+    "meaning": "螢幕",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "touch screen",
+    "exampleSentence": "Wipe the touch screen only with approved clean room wipes.",
+    "exampleMeaning": "僅可使用指定抗靜電無塵擦拭布清潔操作螢幕。"
   },
   {
     "id": 231,
     "word": "select",
     "type": "verb",
-    "meaning": "選擇"
+    "meaning": "選擇",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "select menu",
+    "exampleSentence": "Select the correct lot number from the on-screen menu.",
+    "exampleMeaning": "在螢幕操作選單中正確點選當前欲生產之批號。"
   },
   {
     "id": 232,
     "word": "semiconductor",
     "type": "noun",
-    "meaning": "半導體"
+    "meaning": "半導體",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "semiconductor fab",
+    "exampleSentence": "TSMC operates the most advanced semiconductor fabs.",
+    "exampleMeaning": "台積電擁有並營運著全球技術最頂尖的半導體晶圓廠。"
   },
   {
     "id": 233,
     "word": "service",
     "type": "noun",
-    "meaning": "服務"
+    "meaning": "服務",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "vendor service",
+    "exampleSentence": "Vendor service technicians wear distinct guest badges.",
+    "exampleMeaning": "駐廠廠商工程師入廠檢修時均配戴專屬外賓識別證。"
   },
   {
     "id": 234,
     "word": "sheet",
     "type": "noun",
-    "meaning": "表單"
+    "meaning": "表單",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "inspection sheet",
+    "exampleSentence": "Sign your employee number on the paper inspection sheet.",
+    "exampleMeaning": "在紙本巡檢表上工整簽上員工工號以示確認負責。"
   },
   {
     "id": 235,
     "word": "shift",
     "type": "noun",
-    "meaning": "班次"
+    "meaning": "班次",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "day shift",
+    "exampleSentence": "Technicians rotate smoothly between day shift and night shift.",
+    "exampleMeaning": "技術員依排班表順暢輪替於日班與夜班之間。"
   },
   {
     "id": 236,
     "word": "show",
     "type": "verb",
-    "meaning": "顯示"
+    "meaning": "顯示",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "show result",
+    "exampleSentence": "The monitor will show measurement result in green text.",
+    "exampleMeaning": "檢驗機台螢幕將以綠色文字顯示通過之量測結果。"
   },
   {
     "id": 237,
     "word": "shuttle",
     "type": "noun",
-    "meaning": "接駁車"
+    "meaning": "接駁車",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "company shuttle",
+    "exampleSentence": "Take the company shuttle bus between fabs safely.",
+    "exampleMeaning": "往返不同廠區與宿舍之間請搭乘公司免費交通接駁車。"
   },
   {
     "id": 238,
     "word": "skip",
     "type": "verb",
-    "meaning": "跳過"
+    "meaning": "跳過",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "never skip steps",
+    "exampleSentence": "Never skip steps even when rushing for daily quota.",
+    "exampleMeaning": "即使趕進度也絕不可擅自跳過或省略任何一個 SOP 步驟。"
   },
   {
     "id": 239,
     "word": "sorter",
     "type": "noun",
-    "meaning": "排序機、分類機"
+    "meaning": "排序機、分類機",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "wafer sorter",
+    "exampleSentence": "Wafer sorter transfers wafers between two cassettes.",
+    "exampleMeaning": "晶圓挑片機在不同晶圓盒之間自動分揀傳送晶圓。"
   },
   {
     "id": 240,
     "word": "source",
     "type": "noun",
-    "meaning": "來源"
+    "meaning": "來源",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "light source",
+    "exampleSentence": "Check the output power level of the exposure light source.",
+    "exampleMeaning": "檢查黃光曝光光源之輸出能量等級是否在容許範圍內。"
   },
   {
     "id": 241,
     "word": "Spec. / specification",
     "type": "noun",
-    "meaning": "規格"
+    "meaning": "規格",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "out of spec",
+    "exampleSentence": "Any parameter out of spec must be flagged immediately.",
+    "exampleMeaning": "任何量測數值超出規格 (OOS) 時均須立即拉紅線報備。"
   },
   {
     "id": 242,
     "word": "speed",
     "type": "noun",
-    "meaning": "速度"
+    "meaning": "速度",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "rotation speed",
+    "exampleSentence": "Spindle motor rotation speed reached five thousand RPM.",
+    "exampleMeaning": "旋轉主軸馬達轉速穩定達到設定之每分鐘五千轉。"
   },
   {
     "id": 243,
     "word": "split",
     "type": "noun",
-    "meaning": "分帳、分批"
+    "meaning": "分帳、分批",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "split lot",
+    "exampleSentence": "Split five wafers from the main lot for testing.",
+    "exampleMeaning": "依照工程需求從主批中分拆出五片晶圓作為實驗監控批。"
   },
   {
     "id": 244,
     "word": "stage",
     "type": "noun",
-    "meaning": "站別、階段"
+    "meaning": "站別、階段",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "chuck stage",
+    "exampleSentence": "Vacuum chuck stage firmly holds the wafer during spinning.",
+    "exampleMeaning": "真空晶圓吸盤於高速旋轉加工時牢固吸附固定晶圓。"
   },
   {
     "id": 245,
     "word": "standard",
     "type": "noun",
-    "meaning": "標準"
+    "meaning": "標準",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "standard protocol",
+    "exampleSentence": "Execute every task according to company standard protocol.",
+    "exampleMeaning": "嚴格按照公司制定的標準規章手冊執行各項日常業務。"
   },
   {
     "id": 246,
     "word": "standby",
     "type": "noun",
-    "meaning": "等待"
+    "meaning": "等待",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tool on standby",
+    "exampleSentence": "The tool is on standby waiting for the next lot.",
+    "exampleMeaning": "機台目前處於待機狀態，等待派工系統派送下一批貨。"
   },
   {
     "id": 247,
     "word": "start",
     "type": "noun",
-    "meaning": "啟動"
+    "meaning": "啟動",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "press start",
+    "exampleSentence": "Press start after verifying cassette slot mapping.",
+    "exampleMeaning": "再次核對晶圓片號圖譜無誤後，即可按下機台啟動鈕。"
   },
   {
     "id": 248,
     "word": "station",
     "type": "noun",
-    "meaning": "站"
+    "meaning": "站",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "work station",
+    "exampleSentence": "Keep personal belongings outside the clean work station.",
+    "exampleMeaning": "個人私人物品嚴禁攜入無塵室專屬作業站點。"
   },
   {
     "id": 249,
     "word": "status",
     "type": "noun",
-    "meaning": "狀況"
+    "meaning": "狀況",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tool status",
+    "exampleSentence": "Report any red tool status to the area leader.",
+    "exampleMeaning": "機台燈號若變為紅色停機狀態，請立刻向線長通報。"
   },
   {
     "id": 250,
     "word": "step",
     "type": "noun",
-    "meaning": "步驟"
+    "meaning": "步驟",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "next step",
+    "exampleSentence": "Verify parameters before advancing to the next step.",
+    "exampleMeaning": "推進至下一步驟前，請務必先驗證當前加工結果符合規定。"
   },
   {
     "id": 251,
     "word": "stocker",
     "type": "noun",
-    "meaning": "儲存櫃"
+    "meaning": "儲存櫃",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "automated stocker",
+    "exampleSentence": "Automated stocker stores and dispatches wafer cassettes.",
+    "exampleMeaning": "無塵室自動晶圓儲存倉負責自動化保管與派發晶圓盒。"
   },
   {
     "id": 252,
     "word": "success",
     "type": "noun",
-    "meaning": "成功"
+    "meaning": "成功",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "successful test",
+    "exampleSentence": "Engineering team celebrated the successful test run.",
+    "exampleMeaning": "工程與技術員團隊共同慶祝本次試產批次順利成功。"
   },
   {
     "id": 253,
     "word": "super",
     "type": "adjective",
-    "meaning": "超級的"
+    "meaning": "超級的",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "super clean",
+    "exampleSentence": "Advanced fabs maintain a super clean manufacturing floor.",
+    "exampleMeaning": "先進晶圓廠始終維持著超越醫療級別的超純淨無塵環境。"
   },
   {
     "id": 254,
     "word": "super hot run",
     "type": "noun",
-    "meaning": "超級急件"
+    "meaning": "超級急件",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "super hot run lot",
+    "exampleSentence": "Give super hot run lots immediate processing priority.",
+    "exampleMeaning": "特急件急單晶圓 (Super Hot Run) 享有最優先上機排程。"
   },
   {
     "id": 255,
     "word": "supervisor",
     "type": "noun",
-    "meaning": "監督者"
+    "meaning": "監督者",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "shift supervisor",
+    "exampleSentence": "Inform your shift supervisor about equipment downtime.",
+    "exampleMeaning": "機台發生不可排除之停機異常時，請迅速向輪班副理報告。"
   },
   {
     "id": 256,
     "word": "support",
     "type": "noun",
-    "meaning": "支援"
+    "meaning": "支援",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "cross support",
+    "exampleSentence": "Technicians provide mutual cross support during heavy shifts.",
+    "exampleMeaning": "產線繁忙出貨量大時，技術員同仁彼此發揮跨模組互相支援。"
   },
   {
     "id": 257,
     "word": "switch",
     "type": "noun",
-    "meaning": "開關"
+    "meaning": "開關",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "toggle switch",
+    "exampleSentence": "Toggle the manual switch only when prompted by GUI.",
+    "exampleMeaning": "僅在操作介面出現明確導引提示時才撥動特定實體開關。"
   },
   {
     "id": 258,
     "word": "system",
     "type": "noun",
-    "meaning": "系統"
+    "meaning": "系統",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "MES system",
+    "exampleSentence": "Record wafer transfer transactions in the MES system.",
+    "exampleMeaning": "晶圓盒各站移載交接均須確實於 MES 系統完成刷卡過帳。"
   },
   {
     "id": 259,
     "word": "tag",
     "type": "noun",
-    "meaning": "標籤(v.) 標註"
+    "meaning": "標籤(v.) 標註",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "tag out",
+    "exampleSentence": "Apply lock-out and tag-out before opening the tool panel.",
+    "exampleMeaning": "開啟機台維修蓋板前，務必確實落實上鎖掛牌 (LOTO) 規範。"
   },
   {
     "id": 260,
     "word": "take leave",
     "type": "phrase",
-    "meaning": "請假"
+    "meaning": "請假",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "apply to take leave",
+    "exampleSentence": "Apply to take leave at least one week ahead of time.",
+    "exampleMeaning": "若欲請特別休假，請儘早於一週前循系統完成請假申請。"
   },
   {
     "id": 261,
     "word": "tape",
     "type": "noun",
-    "meaning": "膠帶"
+    "meaning": "膠帶",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "wafer dicing tape",
+    "exampleSentence": "Apply protective tape on wafer backside before dicing.",
+    "exampleMeaning": "在晶圓切割道研磨作業前，需於晶圓背面貼合專用保護膠帶。"
   },
   {
     "id": 262,
     "word": "target",
     "type": "noun",
-    "meaning": "目標"
+    "meaning": "目標",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "daily target",
+    "exampleSentence": "Our shift achieved its daily target with high quality.",
+    "exampleMeaning": "本班技術團隊在兼顧高品質要求下圓滿達成今日產能目標。"
   },
   {
     "id": 263,
     "word": "technician",
     "type": "noun",
-    "meaning": "技術員"
+    "meaning": "技術員",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "fab technician",
+    "exampleSentence": "Fab technicians are essential to TSMC's manufacturing excellence.",
+    "exampleMeaning": "技術員是台積電維持全球卓越製造競爭力不可或缺的核心力量。"
   },
   {
     "id": 264,
     "word": "telephone",
     "type": "noun",
-    "meaning": "電話"
+    "meaning": "電話",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "emergency telephone",
+    "exampleSentence": "Pick up the clean room telephone to call extension 119.",
+    "exampleMeaning": "遇緊急狀況請立即拿起無塵室專用電話直撥廠內緊急分機。"
   },
   {
     "id": 265,
     "word": "temperature",
     "type": "noun",
-    "meaning": "溫度"
+    "meaning": "溫度",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "control temperature",
+    "exampleSentence": "The furnace chamber operates at a temperature over 800 degrees.",
+    "exampleMeaning": "擴散爐管內部維持高達八百度以上之超高溫運轉。"
   },
   {
     "id": 266,
     "word": "thickness",
     "type": "noun",
-    "meaning": "厚度"
+    "meaning": "厚度",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "film thickness",
+    "exampleSentence": "Measure oxide film thickness across forty-nine points.",
+    "exampleMeaning": "在整片晶圓均勻抽檢量測四十九點之氧化薄膜厚度。"
   },
   {
     "id": 267,
     "word": "thin film",
     "type": "noun",
-    "meaning": "薄膜製程"
+    "meaning": "薄膜製程",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "thin film deposition",
+    "exampleSentence": "Thin film deposition adds microscopic insulating layers.",
+    "exampleMeaning": "薄膜沈積技術在矽晶圓表面生長微觀絕緣保護與導電膜層。"
   },
   {
     "id": 268,
     "word": "time",
     "type": "noun",
-    "meaning": "時間"
+    "meaning": "時間",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "process time",
+    "exampleSentence": "Total process time for this step is approximately forty minutes.",
+    "exampleMeaning": "本道站點處理流程之總加工時間約為四十分鐘。"
   },
   {
     "id": 269,
     "word": "title",
     "type": "noun",
-    "meaning": "標題"
+    "meaning": "標題",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "job title",
+    "exampleSentence": "His official job title is Senior Manufacturing Technician.",
+    "exampleMeaning": "他的正式職稱為台積電資深製造部技術員。"
   },
   {
     "id": 270,
     "word": "top",
     "type": "noun",
-    "meaning": "頂端"
+    "meaning": "頂端",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "top surface",
+    "exampleSentence": "Never allow metallic tools to touch the wafer top surface.",
+    "exampleMeaning": "嚴禁任何金屬手工具直接觸碰晶圓正面電路區。"
   },
   {
     "id": 271,
     "word": "track",
     "type": "verb",
-    "meaning": "追蹤"
+    "meaning": "追蹤",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "overhead track",
+    "exampleSentence": "Overhead transport track conveys FOUP pods smoothly.",
+    "exampleMeaning": "天車天軌自動化搬運系統於高空軌道平穩快速運送晶圓盒。"
   },
   {
     "id": 272,
     "word": "training",
     "type": "noun",
-    "meaning": "訓練"
+    "meaning": "訓練",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "safety training",
+    "exampleSentence": "Complete mandatory safety training before entering fab.",
+    "exampleMeaning": "進入無塵室工作前，必須全數通過各項必修安全訓練考核。"
   },
   {
     "id": 273,
     "word": "trend",
     "type": "noun",
-    "meaning": "趨勢"
+    "meaning": "趨勢",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "yield trend",
+    "exampleSentence": "Analyze the weekly yield trend to detect minor anomalies.",
+    "exampleMeaning": "深入分析每週良率走勢圖，及早捕捉並撲滅潛在製程微異常。"
   },
   {
     "id": 274,
     "word": "tune",
     "type": "verb",
-    "meaning": "調整"
+    "meaning": "調整",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "tune parameter",
+    "exampleSentence": "Engineers tune RF power parameters to optimize etch rate.",
+    "exampleMeaning": "工程師微調射頻微波功率參數以達到最佳蝕刻速率。"
   },
   {
     "id": 275,
     "word": "turn rate",
     "type": "noun",
-    "meaning": "週轉率"
+    "meaning": "週轉率",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "spindle turn rate",
+    "exampleSentence": "Maintain uniform spindle turn rate to ensure coating thickness.",
+    "exampleMeaning": "維持恆定均勻的旋塗轉速以保證光阻膜厚高度一致。"
   },
   {
     "id": 276,
     "word": "unload",
     "type": "verb",
-    "meaning": "下貨、卸載"
+    "meaning": "下貨、卸載",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "unload cassette",
+    "exampleSentence": "Unload the finished cassette and transfer it to the cart.",
+    "exampleMeaning": "將已完成之晶圓盒自裝載口小心卸下，並平穩放置於專用推車上。"
   },
   {
     "id": 277,
     "word": "use",
     "type": "verb",
-    "meaning": "使用"
+    "meaning": "使用",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "use equipment",
+    "exampleSentence": "Use equipment strictly in accordance with certified training.",
+    "exampleMeaning": "僅可在自身具備合格考核認證的授權機台範圍內進行操作。"
   },
   {
     "id": 278,
     "word": "username",
     "type": "noun",
-    "meaning": "使用者名稱"
+    "meaning": "使用者名稱",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "enter username",
+    "exampleSentence": "Enter your employee username to sign into the workstation.",
+    "exampleMeaning": "在工作站畫面鍵入個人員工帳號以完成身分驗證登入。"
   },
   {
     "id": 279,
     "word": "vendor",
     "type": "noun",
-    "meaning": "廠商"
+    "meaning": "廠商",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "equipment vendor",
+    "exampleSentence": "Escort the equipment vendor inside the clean room.",
+    "exampleMeaning": "設備原廠供應商工程師入廠檢修時須由廠內人員全程陪同。"
   },
   {
     "id": 280,
     "word": "view",
     "type": "verb",
-    "meaning": "查看"
+    "meaning": "查看",
+    "category": "general",
+    "categoryLabel": "基礎通用",
+    "fabPhrase": "view screen",
+    "exampleSentence": "View the summary screen to verify recipe completion.",
+    "exampleMeaning": "檢視機台總結畫面以確認所有配方步驟均已順利完工。"
   },
   {
     "id": 281,
     "word": "wafer",
     "type": "noun",
-    "meaning": "晶圓"
+    "meaning": "晶圓",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "silicon wafer",
+    "exampleSentence": "Handle each twelve-inch silicon wafer with maximum care.",
+    "exampleMeaning": "搬運與處理每一片十二吋矽晶圓時均須抱持最高等級謹慎。"
   },
   {
     "id": 282,
     "word": "waiting",
     "type": "noun",
-    "meaning": "等待"
+    "meaning": "等待",
+    "category": "machine",
+    "categoryLabel": "機台操作",
+    "fabPhrase": "waiting for lot",
+    "exampleSentence": "The green light blinks indicating the tool is waiting for lot.",
+    "exampleMeaning": "綠色燈號規律閃爍表示機台目前正處於備便等料狀態。"
   },
   {
     "id": 283,
     "word": "warning",
     "type": "noun",
-    "meaning": "警告"
+    "meaning": "警告",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "warning buzzer",
+    "exampleSentence": "A loud warning buzzer sounded when the interlock tripped.",
+    "exampleMeaning": "當安全防護互鎖開關跳脫時，現場隨即響起高分貝蜂鳴警報。"
   },
   {
     "id": 284,
     "word": "weekly",
     "type": "adverb",
-    "meaning": "每週地"
+    "meaning": "每週地",
+    "category": "workplace",
+    "categoryLabel": "廠務交接",
+    "fabPhrase": "weekly checklist",
+    "exampleSentence": "Complete the weekly PM checklist before Friday afternoon.",
+    "exampleMeaning": "請務必於每週五下午前確實逐項填妥週保養點檢核對表。"
   },
   {
     "id": 285,
     "word": "wet",
     "type": "adjective",
-    "meaning": "濕的"
+    "meaning": "濕的",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "wet bench",
+    "exampleSentence": "Wear a full acid apron and face shield at the wet bench.",
+    "exampleMeaning": "於濕式化學清洗酸槽站作業時，務必著全套防酸圍裙與面罩。"
   },
   {
     "id": 286,
     "word": "window",
     "type": "noun",
-    "meaning": "視窗"
+    "meaning": "視窗",
+    "category": "process",
+    "categoryLabel": "晶圓製程",
+    "fabPhrase": "viewing window",
+    "exampleSentence": "Look through the chamber viewing window to check plasma glow.",
+    "exampleMeaning": "透過真空腔體石英觀景視窗觀察電漿電弧輝光是否均勻。"
   },
   {
     "id": 287,
     "word": "yield",
     "type": "noun",
-    "meaning": "良率"
+    "meaning": "良率",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "die yield",
+    "exampleSentence": "Excellence in particle control directly boosts overall die yield.",
+    "exampleMeaning": "落實無塵室落塵微粒嚴密控管，能直接顯著提升晶圓良率。"
   },
   {
     "id": 288,
     "word": "zero",
     "type": "noun",
-    "meaning": "零"
+    "meaning": "零",
+    "category": "quality",
+    "categoryLabel": "品質異常",
+    "fabPhrase": "zero defect",
+    "exampleSentence": "Our team strives every single shift for zero defect quality.",
+    "exampleMeaning": "全體輪班同仁在每一班別均齊心協力追求零缺陷之極致品質。"
   }
 ]

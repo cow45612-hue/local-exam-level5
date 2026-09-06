@@ -124,8 +124,16 @@ const els = {
   reviewList: document.querySelector("#review-list"),
   tsmcWord: document.querySelector("#tsmc-word"),
   tsmcWordType: document.querySelector("#tsmc-word-type"),
+  tsmcWordCategory: document.querySelector("#tsmc-word-category"),
   tsmcWordAnswer: document.querySelector("#tsmc-word-answer"),
+  tsmcWordAnswerBox: document.querySelector("#tsmc-word-answer-box"),
+  tsmcWordPhrase: document.querySelector("#tsmc-word-phrase"),
+  tsmcWordSentence: document.querySelector("#tsmc-word-sentence"),
+  tsmcWordSentenceMeaning: document.querySelector("#tsmc-word-sentence-meaning"),
+  tsmcWordCollocation: document.querySelector("#tsmc-word-collocation"),
+  tsmcWordExampleBox: document.querySelector("#tsmc-word-example-box"),
   tsmcWordProgress: document.querySelector("#tsmc-word-progress"),
+  tsmcAutoplay: document.querySelector("#tsmc-autoplay"),
   tsmcSpeak: document.querySelector("#tsmc-speak"),
   tsmcSpeakSlow: document.querySelector("#tsmc-speak-slow"),
   tsmcReveal: document.querySelector("#tsmc-reveal"),
@@ -136,12 +144,16 @@ const els = {
   tsmcStudyTools: document.querySelector("#tsmc-study-tools"),
   tsmcStudySummary: document.querySelector("#tsmc-study-summary"),
   tsmcFilterButtons: document.querySelectorAll(".tsmc-filter-button"),
+  tsmcCatButtons: document.querySelectorAll(".tsmc-cat-btn"),
   tsmcCurrentStatus: document.querySelector("#tsmc-current-status"),
   tsmcMemoryActions: document.querySelector("#tsmc-memory-actions"),
   tsmcMarkReview: document.querySelector("#tsmc-mark-review"),
   tsmcMarkKnown: document.querySelector("#tsmc-mark-known"),
   tsmcWordActions: document.querySelector("#tsmc-word-actions"),
   tsmcQuizCard: document.querySelector("#tsmc-quiz-card"),
+  tsmcQuizTypeButtons: document.querySelectorAll(".tsmc-quiz-type-btn"),
+  tsmcQuizSpeak: document.querySelector("#tsmc-quiz-speak"),
+  tsmcQuizExtraInfo: document.querySelector("#tsmc-quiz-extra-info"),
   tsmcQuizProgress: document.querySelector("#tsmc-quiz-progress"),
   tsmcQuizScore: document.querySelector("#tsmc-quiz-score"),
   tsmcQuizProgressFill: document.querySelector("#tsmc-quiz-progress-fill"),
@@ -163,6 +175,10 @@ const els = {
 const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
 let tsmcPracticeMode = "words";
 let tsmcWordFilter = "all";
+let tsmcCategoryFilter = "all";
+let tsmcQuizType = "mixed";
+let tsmcAutoplayActive = false;
+let tsmcAutoplayTimeout = null;
 let tsmcWordProgress = loadTsmcWordProgress();
 let tsmcWordSrs = loadTsmcWordSrs();
 let tsmcDailyState = loadTsmcDailyState();
@@ -427,11 +443,15 @@ async function loadTsmcVocabulary() {
 function currentTsmcItems() {
   if (tsmcPracticeMode === "math") return TSMC_MATH_QUESTIONS;
   if (tsmcPracticeMode === "interview") return TSMC_INTERVIEW_QUESTIONS;
-  if (tsmcWordFilter === "daily") return currentTsmcDailyWords();
-  if (tsmcWordFilter === "review") {
-    return TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review" || isTsmcWordDue(item));
+  let items = TSMC_WORDS;
+  if (tsmcWordFilter === "daily") items = currentTsmcDailyWords();
+  else if (tsmcWordFilter === "review") {
+    items = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review" || isTsmcWordDue(item));
   }
-  return TSMC_WORDS;
+  if (tsmcCategoryFilter !== "all") {
+    items = items.filter((item) => item.category === tsmcCategoryFilter);
+  }
+  return items;
 }
 
 function renderTsmcStudySummary() {
@@ -451,6 +471,11 @@ function renderTsmcStudySummary() {
     if (filter === "all") button.textContent = `全部 ${TSMC_WORDS.length}`;
     button.classList.toggle("active", button.dataset.tsmcFilter === tsmcWordFilter);
   });
+  if (els.tsmcCatButtons) {
+    els.tsmcCatButtons.forEach((button) => {
+      button.classList.toggle("active", button.dataset.tsmcCat === tsmcCategoryFilter);
+    });
+  }
 }
 
 els.tsmcReviewShortcut.addEventListener("click", () => {
@@ -512,16 +537,19 @@ function renderTsmcWord() {
 
   if (isWordMode && items.length === 0) {
     const isDailyEmpty = tsmcWordFilter === "daily";
-    els.tsmcWord.textContent = isDailyEmpty ? "今天沒有新單字" : "目前沒有待複習單字";
-    els.tsmcWordType.textContent = "完成";
+    els.tsmcWord.textContent = tsmcCategoryFilter !== "all" ? "此分類目前沒有單字" : isDailyEmpty ? "今天沒有新單字" : "目前沒有待複習單字";
+    els.tsmcWordType.textContent = "提示";
+    if (els.tsmcWordCategory) els.tsmcWordCategory.hidden = true;
+    if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = true;
     els.tsmcWordAnswer.textContent = isDailyEmpty
       ? "回到每日任務，完成今天到期的複習即可。"
-      : "切回「全部」後，可以繼續標記不熟的單字。";
+      : "切換其他主題或切回「全部」，繼續標記不熟的單字。";
     els.tsmcWordAnswer.hidden = false;
-    els.tsmcCurrentStatus.textContent = "待複習清單是空的";
+    els.tsmcCurrentStatus.textContent = "清單是空的";
     els.tsmcWordProgress.textContent = "0 / 0";
     els.tsmcSpeak.disabled = true;
     els.tsmcSpeakSlow.disabled = true;
+    if (els.tsmcAutoplay) els.tsmcAutoplay.disabled = true;
     els.tsmcReveal.disabled = true;
     els.tsmcNext.disabled = true;
     els.tsmcMarkReview.disabled = true;
@@ -535,14 +563,50 @@ function renderTsmcWord() {
   const item = items[index];
   els.tsmcWord.textContent = isWordMode ? item.word : item.prompt;
   els.tsmcWordType.textContent = isWordMode ? item.type : tsmcPracticeMode === "math" ? "數學模擬" : "面試題";
+
+  if (els.tsmcWordCategory) {
+    if (isWordMode && item.categoryLabel) {
+      els.tsmcWordCategory.textContent = item.categoryLabel;
+      els.tsmcWordCategory.hidden = false;
+      els.tsmcWordCategory.dataset.cat = item.category || "general";
+    } else {
+      els.tsmcWordCategory.hidden = true;
+    }
+  }
+
   els.tsmcWordAnswer.textContent = isWordMode ? item.meaning : item.answer;
-  els.tsmcWordAnswer.hidden = true;
+
+  if (isWordMode && item.fabPhrase) {
+    if (els.tsmcWordCollocation) els.tsmcWordCollocation.hidden = false;
+    if (els.tsmcWordPhrase) els.tsmcWordPhrase.textContent = item.fabPhrase;
+  } else if (els.tsmcWordCollocation) {
+    els.tsmcWordCollocation.hidden = true;
+  }
+
+  if (isWordMode && item.exampleSentence) {
+    if (els.tsmcWordExampleBox) els.tsmcWordExampleBox.hidden = false;
+    if (els.tsmcWordSentence) els.tsmcWordSentence.textContent = item.exampleSentence;
+    if (els.tsmcWordSentenceMeaning) els.tsmcWordSentenceMeaning.textContent = item.exampleMeaning || "";
+  } else if (els.tsmcWordExampleBox) {
+    els.tsmcWordExampleBox.hidden = true;
+  }
+
+  if (els.tsmcWordAnswerBox) {
+    els.tsmcWordAnswerBox.hidden = true;
+  } else {
+    els.tsmcWordAnswer.hidden = true;
+  }
+
   els.tsmcReveal.textContent = "顯示答案";
   els.tsmcWordProgress.textContent = `${index + 1} / ${items.length}`;
   els.tsmcSpeak.hidden = !isWordMode;
   els.tsmcSpeak.disabled = false;
   els.tsmcSpeakSlow.hidden = !isWordMode;
   els.tsmcSpeakSlow.disabled = false;
+  if (els.tsmcAutoplay) {
+    els.tsmcAutoplay.hidden = !isWordMode;
+    els.tsmcAutoplay.disabled = false;
+  }
   els.tsmcReveal.disabled = false;
   els.tsmcNext.disabled = false;
   els.tsmcMarkReview.disabled = false;
@@ -564,31 +628,59 @@ function renderTsmcWord() {
       : "回答重點供你練習組織內容，請換成自己的真實經驗。";
 }
 
-function buildTsmcQuizQuestion(word, direction = Math.random() < 0.5 ? "en-to-zh" : "zh-to-en") {
-  const correctChoice = direction === "en-to-zh" ? word.meaning : word.word;
+function buildTsmcQuizQuestion(word, type = "en2zh") {
+  let actualType = type;
+  if (actualType === "mixed") {
+    const types = ["en2zh", "zh2en", "listen"];
+    actualType = types[Math.floor(Math.random() * types.length)];
+  }
+
+  const isZhTarget = actualType === "en2zh" || actualType === "listen";
+  const correctChoice = isZhTarget ? word.meaning : word.word;
   const choices = [correctChoice];
+
   for (const candidate of shuffle(TSMC_WORDS)) {
-    const candidateChoice = direction === "en-to-zh" ? candidate.meaning : candidate.word;
-    const sameMeaning = direction === "zh-to-en" && candidate.meaning === word.meaning;
+    const candidateChoice = isZhTarget ? candidate.meaning : candidate.word;
+    const sameMeaning = !isZhTarget && candidate.meaning === word.meaning;
     if (candidate.word === word.word || sameMeaning || choices.includes(candidateChoice)) continue;
     choices.push(candidateChoice);
     if (choices.length === 4) break;
   }
+
+  let prompt = word.word;
+  let instruction = "選出正確的中文意思";
+  if (actualType === "zh2en") {
+    prompt = word.meaning;
+    instruction = "選出正確的英文單字";
+  } else if (actualType === "listen") {
+    prompt = "🎧 請聽發音";
+    instruction = "聽英文發音，選出正確的中文意思";
+  }
+
   return {
     word,
-    direction,
-    prompt: direction === "en-to-zh" ? word.word : word.meaning,
-    instruction: direction === "en-to-zh" ? "選出正確的中文意思" : "選出正確的英文單字",
+    type: actualType,
+    prompt,
+    instruction,
     correctChoice,
     choices: shuffle(choices),
   };
 }
 
 function startTsmcQuiz(wordPool = TSMC_WORDS, dailyMission = false) {
+  stopCurrentSpeech();
+  stopTsmcAutoplay();
   const questionCount = dailyMission ? wordPool.length : TSMC_QUIZ_COUNT;
   const selected = shuffle(wordPool).slice(0, Math.min(questionCount, wordPool.length));
   tsmcQuizState = createEmptyTsmcQuizState();
-  tsmcQuizState.questions = selected.map((word, index) => buildTsmcQuizQuestion(word, index % 2 ? "zh-to-en" : "en-to-zh"));
+  tsmcQuizState.questions = selected.map((word, index) => {
+    let qType = tsmcQuizType;
+    if (qType === "mixed") {
+      const types = ["en2zh", "zh2en", "listen"];
+      qType = types[index % types.length];
+    }
+    return buildTsmcQuizQuestion(word, qType);
+  });
   tsmcQuizState.dailyMission = dailyMission;
   tsmcQuizState.targetCount = selected.length;
   renderTsmcQuiz();
@@ -602,6 +694,9 @@ function renderTsmcQuiz() {
   els.tsmcWordCard.hidden = true;
   els.tsmcWordActions.hidden = true;
   els.tsmcQuizCard.hidden = false;
+  if (els.tsmcQuizTypeButtons) {
+    els.tsmcQuizTypeButtons.forEach((b) => b.classList.toggle("active", b.dataset.quizType === tsmcQuizType));
+  }
   els.tsmcPracticeNote.textContent = tsmcQuizState.dailyMission
     ? `今日小測驗包含到期複習與 ${currentTsmcDailyWords().length} 個新字；答錯會重新出題，連對兩次才通過。`
     : "每回隨機 10 題；答錯的單字會自動加入待複習。";
@@ -615,6 +710,8 @@ function renderTsmcQuiz() {
     els.tsmcQuizProgressFill.style.width = "100%";
     els.tsmcQuizInstruction.textContent = "所有單字都已通過";
     els.tsmcQuizQuestion.textContent = `${tsmcQuizState.masteredKeys.size} / ${tsmcQuizState.targetCount}`;
+    if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.hidden = true;
+    if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
     els.tsmcQuizChoices.replaceChildren();
     els.tsmcQuizFeedback.textContent = `共作答 ${totalAttempts} 題 · 答對率 ${rate}% · 答錯 ${tsmcQuizState.wrongAttempts} 次`;
     els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${tsmcQuizState.wrongAttempts ? "wrong" : "correct"}`;
@@ -633,6 +730,11 @@ function renderTsmcQuiz() {
   els.tsmcQuizProgressFill.style.width = `${(masteredCount / tsmcQuizState.targetCount) * 100}%`;
   els.tsmcQuizInstruction.textContent = current.instruction;
   els.tsmcQuizQuestion.textContent = current.prompt;
+  if (els.tsmcQuizSpeak) {
+    els.tsmcQuizSpeak.hidden = false;
+    els.tsmcQuizSpeak.onclick = () => speakTsmcQuizWord(current.word);
+  }
+  if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
   els.tsmcQuizFeedback.hidden = true;
   els.tsmcQuizFeedback.className = "tsmc-quiz-feedback";
   els.tsmcQuizNext.hidden = true;
@@ -648,6 +750,10 @@ function renderTsmcQuiz() {
     button.addEventListener("click", () => answerTsmcQuiz(choice, button));
     els.tsmcQuizChoices.append(button);
   });
+
+  if (current.type === "listen") {
+    speakTsmcQuizWord(current.word);
+  }
 }
 
 function answerTsmcQuiz(choice, selectedButton) {
@@ -656,6 +762,10 @@ function answerTsmcQuiz(choice, selectedButton) {
   const current = tsmcQuizState.questions[tsmcQuizState.index];
   const isCorrect = choice === current.correctChoice;
   const key = tsmcWordKey(current.word);
+
+  if (current.type === "listen") {
+    els.tsmcQuizQuestion.textContent = `${current.word.word} (${current.word.type || ""})`;
+  }
 
   if (isCorrect) {
     tsmcQuizState.score += 1;
@@ -666,8 +776,8 @@ function answerTsmcQuiz(choice, selectedButton) {
       if (streak >= 2) {
         tsmcQuizState.masteredKeys.add(key);
       } else {
-        const nextDirection = current.direction === "en-to-zh" ? "zh-to-en" : "en-to-zh";
-        tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextDirection));
+        const nextType = current.type === "en2zh" ? "zh2en" : current.type === "zh2en" ? "listen" : "en2zh";
+        tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextType));
       }
     } else {
       tsmcQuizState.masteredKeys.add(key);
@@ -677,8 +787,8 @@ function answerTsmcQuiz(choice, selectedButton) {
     tsmcQuizState.failedKeys.add(key);
     tsmcQuizState.retryStreaks[key] = 0;
     recordTsmcQuizResult(current.word, false);
-    const nextDirection = current.direction === "en-to-zh" ? "zh-to-en" : "en-to-zh";
-    tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextDirection));
+    const nextType = current.type === "en2zh" ? "zh2en" : current.type === "zh2en" ? "listen" : "en2zh";
+    tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextType));
   }
 
   renderTsmcStudySummary();
@@ -706,11 +816,32 @@ function answerTsmcQuiz(choice, selectedButton) {
     : `答錯了，正確是「${current.correctChoice}」。這個字稍後會再出現。`;
   els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${isCorrect ? "correct" : "wrong"}`;
   els.tsmcQuizFeedback.hidden = false;
+
+  if (els.tsmcQuizExtraInfo) {
+    let extraHtml = ``;
+    if (current.word.categoryLabel) {
+      extraHtml += `<div style="margin-bottom: 4px;"><span class="tsmc-tag-category">${current.word.categoryLabel}</span></div>`;
+    }
+    if (current.word.fabPhrase) {
+      extraHtml += `<div>🏭 廠區搭配：<strong>${current.word.fabPhrase}</strong></div>`;
+    }
+    if (current.word.exampleSentence) {
+      extraHtml += `<div style="margin-top: 4px;">💡 例句：${current.word.exampleSentence}<br><span style="opacity:0.85;">${current.word.exampleMeaning || ""}</span></div>`;
+    }
+    if (extraHtml) {
+      els.tsmcQuizExtraInfo.innerHTML = extraHtml;
+      els.tsmcQuizExtraInfo.hidden = false;
+    } else {
+      els.tsmcQuizExtraInfo.hidden = true;
+    }
+  }
+
   els.tsmcQuizNext.textContent = tsmcQuizState.index === tsmcQuizState.questions.length - 1 ? "看成績" : "下一題";
   els.tsmcQuizNext.hidden = false;
 }
 
 els.tsmcQuizNext.addEventListener("click", () => {
+  if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
   if (tsmcQuizState.finished) {
     if (tsmcQuizState.dailyMission) startTsmcQuiz(currentTsmcDailyQuizWords(), true);
     else startTsmcQuiz();
@@ -736,18 +867,22 @@ els.tsmcQuizNext.addEventListener("click", () => {
 });
 
 els.tsmcReveal.addEventListener("click", () => {
-  const willShow = els.tsmcWordAnswer.hidden;
+  const isHidden = els.tsmcWordAnswerBox ? els.tsmcWordAnswerBox.hidden : els.tsmcWordAnswer.hidden;
+  const willShow = isHidden;
+  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = !willShow;
   els.tsmcWordAnswer.hidden = !willShow;
   els.tsmcReveal.textContent = willShow ? "隱藏答案" : "顯示答案";
 });
 
 els.tsmcNext.addEventListener("click", () => {
+  stopTsmcAutoplay();
   const items = currentTsmcItems();
   tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
   renderTsmcWord();
 });
 
 function markCurrentTsmcWord(status) {
+  stopTsmcAutoplay();
   const items = currentTsmcItems();
   const item = items[tsmcPracticeIndices.words];
   if (!item) return;
@@ -778,11 +913,34 @@ els.tsmcMarkKnown.addEventListener("click", () => markCurrentTsmcWord("known"));
 
 els.tsmcFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    stopTsmcAutoplay();
     tsmcWordFilter = button.dataset.tsmcFilter;
     tsmcPracticeIndices.words = 0;
     renderTsmcWord();
   });
 });
+
+if (els.tsmcCatButtons) {
+  els.tsmcCatButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      stopTsmcAutoplay();
+      tsmcCategoryFilter = button.dataset.tsmcCat;
+      tsmcPracticeIndices.words = 0;
+      renderTsmcWord();
+    });
+  });
+}
+
+if (els.tsmcQuizTypeButtons) {
+  els.tsmcQuizTypeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tsmcQuizType = btn.dataset.quizType;
+      els.tsmcQuizTypeButtons.forEach((b) => b.classList.toggle("active", b.dataset.quizType === tsmcQuizType));
+      if (tsmcQuizState.dailyMission) startTsmcQuiz(currentTsmcDailyQuizWords(), true);
+      else startTsmcQuiz();
+    });
+  });
+}
 
 let currentPlayingAudio = null;
 
@@ -932,16 +1090,170 @@ async function speakCurrentTsmcWord(slow = false) {
   setSpeakButtonState(false, slow);
 }
 
+function speakChineseText(text) {
+  return new Promise((resolve) => {
+    if (!("speechSynthesis" in window) || !text) {
+      setTimeout(resolve, 800);
+      return;
+    }
+    try {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "zh-TW";
+      utterance.rate = 0.9;
+      utterance.pitch = 1;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
+      window.speechSynthesis.speak(utterance);
+    } catch (_) {
+      resolve();
+    }
+  });
+}
+
+function sleepAutoplay(ms) {
+  return new Promise((resolve) => {
+    tsmcAutoplayTimeout = setTimeout(resolve, ms);
+  });
+}
+
+function stopTsmcAutoplay() {
+  tsmcAutoplayActive = false;
+  if (tsmcAutoplayTimeout) {
+    clearTimeout(tsmcAutoplayTimeout);
+    tsmcAutoplayTimeout = null;
+  }
+  if (els.tsmcAutoplay) {
+    els.tsmcAutoplay.classList.remove("active");
+    els.tsmcAutoplay.textContent = "🎧 自動連播";
+  }
+}
+
+async function startTsmcAutoplay() {
+  stopCurrentSpeech();
+  tsmcAutoplayActive = true;
+  if (els.tsmcAutoplay) {
+    els.tsmcAutoplay.classList.add("active");
+    els.tsmcAutoplay.textContent = "⏹️ 停止連播";
+  }
+  await runTsmcAutoplayStep();
+}
+
+async function runTsmcAutoplayStep() {
+  if (!tsmcAutoplayActive) return;
+  const items = currentTsmcItems();
+  if (!items.length) {
+    stopTsmcAutoplay();
+    return;
+  }
+
+  const index = tsmcPracticeIndices[tsmcPracticeMode];
+  const item = items[index];
+  if (!item) {
+    stopTsmcAutoplay();
+    return;
+  }
+
+  // 1. 隱藏答案，重置顯示按鈕
+  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = true;
+  els.tsmcWordAnswer.hidden = true;
+  els.tsmcReveal.textContent = "顯示答案";
+
+  // 2. 朗讀英文單字（優先微軟 Edge Neural 高清音訊）
+  try {
+    const wordId = getTsmcWordId(item);
+    const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
+    setSpeakButtonState(true, false);
+    if (wordId) {
+      try {
+        await playAudioUrl(`./audio/${wordId}.mp3`, false);
+      } catch {
+        await playAudioUrl(`https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`, false).catch(() => {
+          speakWithWebSpeechFallback(speechText, false);
+        });
+      }
+    } else {
+      speakWithWebSpeechFallback(speechText, false);
+    }
+  } catch (_) {}
+  setSpeakButtonState(false, false);
+
+  if (!tsmcAutoplayActive) return;
+
+  // 3. 停頓 1 秒讓學習者自行在腦中回憶
+  await sleepAutoplay(1000);
+  if (!tsmcAutoplayActive) return;
+
+  // 4. 自動翻牌顯示中文、搭配詞與例句
+  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = false;
+  els.tsmcWordAnswer.hidden = false;
+  els.tsmcReveal.textContent = "隱藏答案";
+
+  // 5. 語音朗讀中文意思
+  if (item.meaning) {
+    await speakChineseText(item.meaning);
+  }
+
+  if (!tsmcAutoplayActive) return;
+
+  // 6. 停頓 2.2 秒供學習者記憶例句與搭配
+  await sleepAutoplay(2200);
+  if (!tsmcAutoplayActive) return;
+
+  // 7. 自動切換到下一個單字並繼續播放
+  tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
+  renderTsmcWord();
+  runTsmcAutoplayStep();
+}
+
+async function speakTsmcQuizWord(word) {
+  stopCurrentSpeech();
+  const wordId = getTsmcWordId(word);
+  const speechText = TSMC_SPEECH_OVERRIDES[word.word] ?? word.word;
+  if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.add("is-speaking");
+  if (wordId) {
+    try {
+      await playAudioUrl(`./audio/${wordId}.mp3`, false);
+      if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
+      return;
+    } catch (_) {}
+  }
+  try {
+    const onlineUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`;
+    await playAudioUrl(onlineUrl, false);
+    if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
+    return;
+  } catch (_) {}
+  speakWithWebSpeechFallback(speechText, false);
+  if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
+}
+
 if ("speechSynthesis" in window) {
   window.speechSynthesis.getVoices();
   window.speechSynthesis.addEventListener("voiceschanged", bestEnglishVoice);
 }
 
-els.tsmcSpeak.addEventListener("click", () => speakCurrentTsmcWord(false));
-els.tsmcSpeakSlow.addEventListener("click", () => speakCurrentTsmcWord(true));
+if (els.tsmcAutoplay) {
+  els.tsmcAutoplay.addEventListener("click", () => {
+    if (tsmcAutoplayActive) {
+      stopTsmcAutoplay();
+    } else {
+      startTsmcAutoplay();
+    }
+  });
+}
+
+els.tsmcSpeak.addEventListener("click", () => {
+  stopTsmcAutoplay();
+  speakCurrentTsmcWord(false);
+});
+els.tsmcSpeakSlow.addEventListener("click", () => {
+  stopTsmcAutoplay();
+  speakCurrentTsmcWord(true);
+});
 
 els.tsmcModeButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    stopTsmcAutoplay();
     tsmcPracticeMode = button.dataset.tsmcMode;
     if (tsmcPracticeMode === "wordQuiz") {
       if (tsmcQuizState.questions.length && !tsmcQuizState.finished) renderTsmcQuiz();
@@ -1107,6 +1419,8 @@ function showMessage(text) {
 }
 
 function setView(view) {
+  stopCurrentSpeech();
+  stopTsmcAutoplay();
   Object.entries(els.views).forEach(([name, element]) => {
     if (element) element.hidden = name !== view;
   });

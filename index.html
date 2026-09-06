@@ -123,17 +123,44 @@
               <button class="tsmc-filter-button" data-tsmc-filter="daily" type="button">今日 10 字</button>
               <button class="tsmc-filter-button" data-tsmc-filter="review" type="button">待複習 0</button>
             </div>
+            <div class="tsmc-category-pills" aria-label="主題分類篩選">
+              <button class="tsmc-cat-btn active" data-tsmc-cat="all" type="button">全部主題</button>
+              <button class="tsmc-cat-btn" data-tsmc-cat="machine" type="button">🟡 機台操作</button>
+              <button class="tsmc-cat-btn" data-tsmc-cat="quality" type="button">🔴 品質異常</button>
+              <button class="tsmc-cat-btn" data-tsmc-cat="process" type="button">🔵 晶圓製程</button>
+              <button class="tsmc-cat-btn" data-tsmc-cat="workplace" type="button">🟢 廠務交接</button>
+              <button class="tsmc-cat-btn" data-tsmc-cat="general" type="button">⚪ 基礎通用</button>
+            </div>
             <p id="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
           </div>
 
           <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words">
-            <span id="tsmc-word-type" class="tsmc-word-type">noun</span>
+            <div class="tsmc-card-top-tags">
+              <span id="tsmc-word-category" class="tsmc-tag-category">機台操作</span>
+              <span id="tsmc-word-type" class="tsmc-word-type">noun</span>
+            </div>
             <strong id="tsmc-word">ability</strong>
-            <p id="tsmc-word-answer" hidden>能力</p>
+            <div id="tsmc-word-answer-box" class="tsmc-word-answer-box" hidden>
+              <p id="tsmc-word-answer" class="tsmc-word-meaning">能力</p>
+              <div id="tsmc-word-collocation" class="tsmc-word-collocation">
+                <span class="collocation-label">廠區搭配</span>
+                <strong id="tsmc-word-phrase">operation ability</strong>
+              </div>
+              <div id="tsmc-word-example-box" class="tsmc-word-example-box">
+                <p id="tsmc-word-sentence">The technician has the ability to operate this tool.</p>
+                <small id="tsmc-word-sentence-meaning">該技術員具備操作此機台的能力。</small>
+              </div>
+            </div>
             <small id="tsmc-current-status" class="tsmc-current-status">尚未標記</small>
           </div>
 
           <section id="tsmc-quiz-card" class="tsmc-quiz-card" aria-live="polite" hidden>
+            <div class="tsmc-quiz-type-nav" aria-label="測驗題型">
+              <button class="tsmc-quiz-type-btn active" data-quiz-type="mixed" type="button">綜合題型</button>
+              <button class="tsmc-quiz-type-btn" data-quiz-type="en2zh" type="button">英選中</button>
+              <button class="tsmc-quiz-type-btn" data-quiz-type="zh2en" type="button">中選英</button>
+              <button class="tsmc-quiz-type-btn" data-quiz-type="listen" type="button">👂 聽音辨字</button>
+            </div>
             <div class="tsmc-quiz-meta">
               <span id="tsmc-quiz-progress">第 1 / 10 題</span>
               <strong id="tsmc-quiz-score">答對 0 題</strong>
@@ -142,13 +169,18 @@
               <span id="tsmc-quiz-progress-fill"></span>
             </div>
             <p id="tsmc-quiz-instruction" class="tsmc-quiz-instruction">選出正確的中文意思</p>
-            <h3 id="tsmc-quiz-question">ability</h3>
+            <div class="tsmc-quiz-question-wrapper">
+              <h3 id="tsmc-quiz-question">ability</h3>
+              <button id="tsmc-quiz-speak" class="tsmc-quiz-speak-btn" type="button" aria-label="朗讀發音">🔊 聽發音</button>
+            </div>
             <div id="tsmc-quiz-choices" class="tsmc-quiz-choices"></div>
             <p id="tsmc-quiz-feedback" class="tsmc-quiz-feedback" hidden></p>
+            <div id="tsmc-quiz-extra-info" class="tsmc-quiz-extra-info" hidden></div>
             <button id="tsmc-quiz-next" class="primary action-button" type="button" hidden>下一題</button>
           </section>
 
           <div id="tsmc-word-actions" class="tsmc-word-actions">
+            <button id="tsmc-autoplay" class="mini-button tsmc-autoplay-button" type="button">🎧 自動連播</button>
             <button id="tsmc-speak" class="mini-button" type="button">正常發音</button>
             <button id="tsmc-speak-slow" class="mini-button" type="button">慢速發音</button>
             <button id="tsmc-reveal" class="secondary action-button" type="button">顯示答案</button>
