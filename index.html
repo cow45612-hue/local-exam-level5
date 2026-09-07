@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>公職初考刷題 App</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css?v=20260907-3" />
   </head>
   <body>
     <main class="app-shell">
@@ -85,7 +85,10 @@
               <p class="eyebrow">台積電技術員</p>
               <h2 id="tsmc-practice-title">甄選練習</h2>
             </div>
-            <span id="tsmc-word-progress">1 / 288</span>
+            <div class="panel-heading-right">
+              <button id="tsmc-font-size-toggle" class="tsmc-font-size-btn" type="button" aria-label="切換字體大小">🔠 特大字體</button>
+              <span id="tsmc-word-progress">1 / 288</span>
+            </div>
           </div>
 
           <!-- Mode Tabs -->
@@ -118,7 +121,7 @@
             </div>
           </details>
 
-          <button id="tsmc-review-shortcut" class="tsmc-review-shortcut" type="button" hidden>
+          <button id="tsmc-review-shortcut" class="tsmc-review-shortcut" type="button" style="display: none !important;" hidden>
             待複習單字 <strong>0</strong> 個
           </button>
 
@@ -345,6 +348,6 @@
       </button>
     </nav>
 
-    <script src="./app.js"></script>
+    <script src="./app.js?v=20260907-3"></script>
   </body>
 </html>

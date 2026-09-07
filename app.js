@@ -2294,3 +2294,19 @@ loadQuestions()
     els.homeStartWrong.disabled = true;
     els.wrongbookStart.disabled = true;
   });
+
+const tsmcFontToggle = document.querySelector("#tsmc-font-size-toggle");
+if (tsmcFontToggle) {
+  const isLarge = localStorage.getItem("tsmc_large_font") === "true";
+  if (isLarge) {
+    document.body.classList.add("tsmc-large-text");
+    tsmcFontToggle.textContent = "🔍 標準字體";
+    tsmcFontToggle.classList.add("active");
+  }
+  tsmcFontToggle.addEventListener("click", () => {
+    const active = document.body.classList.toggle("tsmc-large-text");
+    localStorage.setItem("tsmc_large_font", active ? "true" : "false");
+    tsmcFontToggle.textContent = active ? "🔍 標準字體" : "🔠 特大字體";
+    tsmcFontToggle.classList.toggle("active", active);
+  });
+}
