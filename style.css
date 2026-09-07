@@ -57,10 +57,10 @@ button:disabled {
 }
 
 .app-shell {
-  width: min(520px, 100%);
+  width: min(540px, 100%);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 18px 16px 104px;
+  padding: max(20px, env(safe-area-inset-top) + 14px) 16px max(112px, env(safe-area-inset-bottom) + 90px);
 }
 
 .top-app-bar {
@@ -68,16 +68,16 @@ button:disabled {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .main-segment-tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  margin-bottom: 16px;
-  background: rgba(220, 233, 248, 0.65);
-  padding: 5px;
+  margin-bottom: 18px;
+  background: rgba(220, 233, 248, 0.75);
+  padding: 6px;
   border-radius: 18px;
   border: 1px solid var(--line);
 }
@@ -87,11 +87,11 @@ button:disabled {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 46px;
+  min-height: 48px;
   border-radius: 14px;
   background: transparent;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
   transition: all 0.2s ease;
 }
@@ -116,15 +116,16 @@ button:disabled {
 }
 
 .top-app-bar h1 {
-  font-size: 24px;
-  line-height: 1.15;
-  letter-spacing: 0;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 900;
 }
 
 .eyebrow {
   margin: 0 0 5px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -135,14 +136,15 @@ button:disabled {
   align-items: center;
   width: fit-content;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
 }
 
 .status-chip {
   background: #fff7ed;
   color: #c2410c;
-  padding: 8px 12px;
+  padding: 8px 14px;
+  border: 1px solid #fed7aa;
 }
 
 .status-chip.done,
@@ -318,18 +320,19 @@ button:disabled {
 }
 
 .tsmc-daily-mission > p {
-  margin: 11px 0;
-  color: #40556f;
-  font-size: 13px;
-  line-height: 1.55;
+  margin: 12px 0 14px;
+  color: #39705f;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .tsmc-daily-mission > .tsmc-daily-review-count {
-  margin-top: -3px;
-  border-radius: 10px;
+  margin-top: -2px;
+  border-radius: 12px;
   background: #dbeafe;
   color: #1d4ed8;
-  padding: 8px 10px;
+  padding: 10px 12px;
+  font-size: 15px;
   font-weight: 900;
   text-align: center;
 }
@@ -338,15 +341,15 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .tsmc-daily-steps span {
-  border-radius: 10px;
+  border-radius: 12px;
   background: #ffffff;
   color: #40556f;
-  padding: 10px 8px;
-  font-size: 12px;
+  padding: 12px 8px;
+  font-size: 14px;
   font-weight: 900;
   text-align: center;
 }
@@ -358,13 +361,15 @@ button:disabled {
 
 .tsmc-daily-mission .action-button {
   width: 100%;
-  min-height: 52px;
+  min-height: 54px;
+  font-size: 17px;
 }
 
 .tsmc-daily-mission > small {
   display: block;
-  margin-top: 9px;
+  margin-top: 10px;
   color: var(--muted);
+  font-size: 14px;
   font-weight: 800;
   text-align: center;
 }
@@ -372,53 +377,54 @@ button:disabled {
 .tsmc-mode-tabs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
-  margin-bottom: 12px;
-  border-radius: 14px;
+  gap: 8px;
+  margin-bottom: 14px;
+  border-radius: 16px;
   background: #e8f6ef;
-  padding: 5px;
+  padding: 6px;
 }
 
 .tsmc-mode-button {
-  min-height: 42px;
-  border-radius: 10px;
+  min-height: 46px;
+  border-radius: 12px;
   background: transparent;
   color: #39705f;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 900;
 }
 
 .tsmc-mode-button.active {
   background: #ffffff;
   color: #075e45;
-  box-shadow: 0 4px 12px rgba(7, 94, 69, 0.1);
+  box-shadow: 0 4px 12px rgba(7, 94, 69, 0.12);
 }
 
 .tsmc-review-shortcut {
   width: 100%;
-  min-height: 50px;
-  margin-bottom: 12px;
+  min-height: 54px;
+  margin-bottom: 14px;
   border: 1px solid #f2a7a0;
-  border-radius: 14px;
+  border-radius: 16px;
   background: #fff0ee;
   color: #b42318;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
 }
 
 .tsmc-review-shortcut strong {
   display: inline-grid;
-  min-width: 28px;
-  min-height: 28px;
-  margin: 0 4px;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0 5px;
   place-items: center;
   border-radius: 999px;
   background: #b42318;
   color: #ffffff;
+  font-size: 14px;
 }
 
 .tsmc-study-tools {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .tsmc-study-filters {
@@ -428,12 +434,12 @@ button:disabled {
 }
 
 .tsmc-filter-button {
-  min-height: 44px;
+  min-height: 48px;
   border: 1px solid #b8e0d0;
-  border-radius: 12px;
+  border-radius: 14px;
   background: #ffffff;
   color: #39705f;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -445,10 +451,10 @@ button:disabled {
 
 .tsmc-category-pills {
   display: flex;
-  gap: 6px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 12px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -458,13 +464,13 @@ button:disabled {
 
 .tsmc-cat-btn {
   white-space: nowrap;
-  min-height: 34px;
+  min-height: 38px;
   border: 1px solid #c8e6d9;
   border-radius: 999px;
   background: #ffffff;
   color: #39705f;
-  padding: 4px 12px;
-  font-size: 12px;
+  padding: 6px 14px;
+  font-size: 14px;
   font-weight: 800;
   transition: all 0.15s ease;
 }
@@ -477,24 +483,25 @@ button:disabled {
 }
 
 #tsmc-study-summary {
-  margin: 9px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
   text-align: center;
 }
 
 .tsmc-word-card {
   display: grid;
-  min-height: 168px;
+  min-height: 180px;
   place-content: center;
   place-items: center;
-  gap: 8px;
+  gap: 10px;
   border: 1px solid #cde9dd;
-  border-radius: 18px;
+  border-radius: 20px;
   background: #ffffff;
-  padding: 20px 16px;
+  padding: 24px 18px;
   text-align: center;
+  box-shadow: 0 6px 20px rgba(7, 94, 69, 0.06);
 }
 
 .tsmc-card-top-tags {
@@ -508,34 +515,35 @@ button:disabled {
   border-radius: 999px;
   background: #fef3c7;
   color: #92400e;
-  padding: 4px 9px;
-  font-size: 11px;
+  padding: 5px 12px;
+  font-size: 13px;
   font-weight: 900;
 }
 
 .tsmc-word-card strong {
   color: #075e45;
-  font-size: 34px;
-  line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 .tsmc-word-card.compact strong {
   max-width: 100%;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.55;
 }
 
 .tsmc-word-answer-box {
   width: 100%;
-  margin: 10px 0;
+  margin: 12px 0 6px;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .tsmc-word-meaning {
   margin: 0;
   color: #075e45;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 900;
 }
 
@@ -543,21 +551,21 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   background: #f0fdf4;
   border: 1px dashed #86efac;
-  border-radius: 10px;
-  padding: 6px 12px;
+  border-radius: 12px;
+  padding: 8px 14px;
 }
 
 .tsmc-word-collocation .collocation-label {
-  font-size: 11px;
+  font-size: 13px;
   color: #166534;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .tsmc-word-collocation strong {
-  font-size: 15px !important;
+  font-size: 18px !important;
   color: #15803d !important;
   font-family: inherit;
 }
@@ -565,24 +573,24 @@ button:disabled {
 .tsmc-word-example-box {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 10px 14px;
+  border-radius: 14px;
+  padding: 12px 16px;
   text-align: left;
 }
 
 .tsmc-word-example-box p {
-  font-size: 14px !important;
-  color: #334155 !important;
-  line-height: 1.45 !important;
+  font-size: 16px !important;
+  color: #1e293b !important;
+  line-height: 1.5 !important;
   font-weight: 700 !important;
-  margin: 0 0 4px 0 !important;
+  margin: 0 0 6px 0 !important;
 }
 
 .tsmc-word-example-box small {
   display: block;
-  font-size: 13px;
-  color: #64748b;
-  line-height: 1.4;
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.45;
   font-weight: 600;
 }
 
@@ -590,16 +598,17 @@ button:disabled {
   border-radius: 999px;
   background: #dff7ec;
   color: #087456;
-  padding: 4px 8px;
-  font-size: 11px;
+  padding: 5px 12px;
+  font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .tsmc-current-status {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
+  margin-top: 4px;
 }
 
 .tsmc-word-card[data-study-status="review"] {
@@ -615,23 +624,23 @@ button:disabled {
 .tsmc-word-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9px;
-  margin-top: 12px;
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .tsmc-autoplay-button {
   grid-column: 1 / -1;
-  min-height: 44px;
+  min-height: 52px;
   background: linear-gradient(135deg, #0ea5e9, #2563eb);
   color: #ffffff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 900;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .tsmc-autoplay-button.active {
@@ -649,7 +658,9 @@ button:disabled {
 }
 
 .tsmc-word-actions .mini-button {
-  min-height: 42px;
+  min-height: 48px;
+  font-size: 15px;
+  border-radius: 14px;
 }
 
 .tsmc-word-actions .mini-button.is-speaking {
@@ -660,22 +671,23 @@ button:disabled {
 }
 
 .tsmc-word-actions .action-button {
-  min-height: 50px;
+  min-height: 54px;
+  font-size: 17px;
   padding: 12px;
 }
 
 .tsmc-memory-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9px;
-  margin-top: 9px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .tsmc-memory-actions button {
-  min-height: 50px;
-  border-radius: 14px;
+  min-height: 54px;
+  border-radius: 16px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -700,10 +712,10 @@ button:disabled {
 
 .tsmc-quiz-type-nav {
   display: flex;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 8px;
+  margin-bottom: 14px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -716,9 +728,9 @@ button:disabled {
   border: 1px solid #d1d5db;
   background: #f9fafb;
   color: #4b5563;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   transition: all 0.15s ease;
 }
@@ -735,7 +747,7 @@ button:disabled {
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -744,7 +756,7 @@ button:disabled {
 }
 
 .tsmc-quiz-progress-track {
-  height: 9px;
+  height: 10px;
   margin-top: 10px;
   overflow: hidden;
   border-radius: 999px;
@@ -761,9 +773,9 @@ button:disabled {
 }
 
 .tsmc-quiz-instruction {
-  margin: 16px 0 4px;
+  margin: 18px 0 6px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
   text-align: center;
 }
@@ -772,14 +784,14 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 18px;
 }
 
 .tsmc-quiz-card h3 {
   margin: 0;
   color: #075e45;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.25;
   text-align: center;
 }
@@ -789,12 +801,12 @@ button:disabled {
   border-radius: 999px;
   background: #ecfdf5;
   color: #047857;
-  padding: 5px 14px;
-  font-size: 12px;
+  padding: 6px 16px;
+  font-size: 14px;
   font-weight: 900;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   margin-top: 4px;
   transition: transform 0.1s ease;
 }
@@ -805,29 +817,29 @@ button:disabled {
 }
 
 .tsmc-quiz-extra-info {
-  margin-top: 12px;
+  margin-top: 14px;
   border-left: 4px solid #10b981;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #f0fdf4;
-  padding: 10px 12px;
-  font-size: 13px;
+  padding: 12px 14px;
+  font-size: 15px;
   color: #166534;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .tsmc-quiz-choices {
   display: grid;
-  gap: 9px;
+  gap: 10px;
 }
 
 .tsmc-quiz-choice {
-  min-height: 54px;
+  min-height: 58px;
   border: 2px solid #dbe5ee;
-  border-radius: 14px;
+  border-radius: 16px;
   background: #ffffff;
   color: #132033;
-  padding: 12px 14px;
-  font-size: 16px;
+  padding: 14px 16px;
+  font-size: 17px;
   font-weight: 900;
   text-align: left;
 }
@@ -845,12 +857,12 @@ button:disabled {
 }
 
 .tsmc-quiz-feedback {
-  margin: 12px 0 0;
-  border-radius: 12px;
-  padding: 12px;
-  font-size: 14px;
+  margin: 14px 0 0;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 16px;
   font-weight: 900;
-  line-height: 1.5;
+  line-height: 1.55;
   text-align: center;
 }
 
@@ -866,14 +878,16 @@ button:disabled {
 
 .tsmc-quiz-card .action-button {
   width: 100%;
-  min-height: 52px;
-  margin-top: 12px;
+  min-height: 54px;
+  font-size: 17px;
+  margin-top: 14px;
 }
 
 .tsmc-pdf-link {
   display: block;
-  margin-top: 14px;
+  margin-top: 16px;
   color: #075e45;
+  font-size: 15px;
   font-weight: 900;
   text-align: center;
   text-decoration-thickness: 2px;
@@ -881,10 +895,10 @@ button:disabled {
 }
 
 .tsmc-practice-note {
-  margin: 11px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -1484,37 +1498,37 @@ select {
   z-index: 20;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: min(520px, calc(100% - 16px));
-  margin: 0 auto 10px;
-  border: 1px solid rgba(219, 230, 243, 0.92);
+  width: min(540px, calc(100% - 16px));
+  margin: 0 auto max(12px, env(safe-area-inset-bottom));
+  border: 1px solid rgba(219, 230, 243, 0.95);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16);
-  padding: 6px 4px;
+  padding: 8px 4px;
   backdrop-filter: blur(14px);
 }
 
 .nav-item {
   display: grid;
-  gap: 2px;
+  gap: 3px;
   place-items: center;
-  min-height: 52px;
+  min-height: 56px;
   border-radius: 16px;
   background: transparent;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
-  padding: 4px 1px;
+  padding: 5px 2px;
   white-space: nowrap;
 }
 
 .nav-item span {
   display: inline-grid;
   place-items: center;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .nav-item.active {

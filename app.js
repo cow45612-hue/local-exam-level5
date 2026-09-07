@@ -942,16 +942,39 @@ if (els.tsmcQuizTypeButtons) {
   });
 }
 
+let tsmcAudioElement = null;
 let currentPlayingAudio = null;
 
+function getTsmcAudio() {
+  if (!tsmcAudioElement) {
+    tsmcAudioElement = new Audio();
+  }
+  return tsmcAudioElement;
+}
+
+function unlockTsmcAudio() {
+  try {
+    const audio = getTsmcAudio();
+    audio.src = "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA";
+    const p = audio.play();
+    if (p !== undefined) p.catch(() => {});
+  } catch (_) {}
+}
+
 function stopCurrentSpeech() {
-  if (currentPlayingAudio) {
+  if (tsmcAudioElement) {
+    try {
+      tsmcAudioElement.pause();
+      tsmcAudioElement.currentTime = 0;
+    } catch (_) {}
+  }
+  if (currentPlayingAudio && currentPlayingAudio !== tsmcAudioElement) {
     try {
       currentPlayingAudio.pause();
       currentPlayingAudio.currentTime = 0;
     } catch (_) {}
-    currentPlayingAudio = null;
   }
+  currentPlayingAudio = null;
   if ("speechSynthesis" in window) {
     try {
       window.speechSynthesis.cancel();
@@ -970,45 +993,49 @@ function setSpeakButtonState(active, slow = false) {
   }
 }
 
-function playAudioUrl(url, slow) {
-  return new Promise((resolve, reject) => {
-    const audio = new Audio(url);
+function playAudioUrl(url, slow = false) {
+  return new Promise((resolve) => {
+    const audio = getTsmcAudio();
     currentPlayingAudio = audio;
     audio.preload = "auto";
     audio.playbackRate = slow ? 0.72 : 1.0;
 
     let finished = false;
+    let safetyTimeout = null;
+
     const cleanup = () => {
-      if (currentPlayingAudio === audio) currentPlayingAudio = null;
+      if (finished) return;
+      finished = true;
+      if (safetyTimeout) {
+        clearTimeout(safetyTimeout);
+        safetyTimeout = null;
+      }
       audio.onended = null;
       audio.onerror = null;
+      resolve();
     };
 
-    audio.onended = () => {
-      if (!finished) {
-        finished = true;
-        cleanup();
-        resolve();
-      }
-    };
+    // 5 秒安全超時：確保在手機網路不穩或 iOS 背景阻擋時永不卡死
+    safetyTimeout = setTimeout(cleanup, 5000);
 
+    audio.onended = cleanup;
     audio.onerror = (err) => {
-      if (!finished) {
-        finished = true;
-        cleanup();
-        reject(err);
-      }
+      console.warn("Audio playback error:", err);
+      cleanup();
     };
 
-    const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise.catch((err) => {
-        if (!finished) {
-          finished = true;
+    try {
+      audio.src = url;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.warn("audio.play() rejected:", err);
           cleanup();
-          reject(err);
-        }
-      });
+        });
+      }
+    } catch (e) {
+      console.warn("Audio exception:", e);
+      cleanup();
     }
   });
 }
@@ -1057,13 +1084,14 @@ async function speakCurrentTsmcWord(slow = false) {
   const item = currentTsmcItems()[tsmcPracticeIndices.words];
   if (!item) return;
 
+  unlockTsmcAudio();
   stopCurrentSpeech();
   setSpeakButtonState(true, slow);
 
   const wordId = getTsmcWordId(item);
   const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
 
-  // 1. 優先使用微軟 Edge Neural 錄音室級離線音訊（徹底解決手機發音生硬、不標準問題）
+  // 1. 優先使用微軟 Edge Neural 錄音室級離線音訊
   if (wordId) {
     const localAudioUrl = `./audio/${wordId}.mp3`;
     try {
@@ -1071,7 +1099,7 @@ async function speakCurrentTsmcWord(slow = false) {
       setSpeakButtonState(false, slow);
       return;
     } catch (err) {
-      console.warn(`Local audio for word #${wordId} (${item.word}) failed, falling back to online TTS:`, err);
+      console.warn(`Local audio for word #${wordId} (${item.word}) failed, falling back:`, err);
     }
   }
 
@@ -1092,20 +1120,43 @@ async function speakCurrentTsmcWord(slow = false) {
 
 function speakChineseText(text) {
   return new Promise((resolve) => {
-    if (!("speechSynthesis" in window) || !text) {
-      setTimeout(resolve, 800);
+    if (!text) {
+      resolve();
       return;
     }
-    try {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "zh-TW";
-      utterance.rate = 0.9;
-      utterance.pitch = 1;
-      utterance.onend = () => resolve();
-      utterance.onerror = () => resolve();
-      window.speechSynthesis.speak(utterance);
-    } catch (_) {
-      resolve();
+
+    let finished = false;
+    let safetyTimer = null;
+
+    const done = () => {
+      if (!finished) {
+        finished = true;
+        if (safetyTimer) {
+          clearTimeout(safetyTimer);
+          safetyTimer = null;
+        }
+        resolve();
+      }
+    };
+
+    // iOS Safari 關鍵修復：iOS 上 onend 常被作業系統吃掉不觸發，設定動態上限時間保證必 resolve
+    const maxWait = Math.min(2800, Math.max(1000, text.length * 280));
+    safetyTimer = setTimeout(done, maxWait);
+
+    if ("speechSynthesis" in window) {
+      try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-TW";
+        utterance.rate = 0.95;
+        utterance.onend = done;
+        utterance.onerror = done;
+        window.speechSynthesis.speak(utterance);
+      } catch (_) {
+        done();
+      }
+    } else {
+      done();
     }
   });
 }
@@ -1129,6 +1180,7 @@ function stopTsmcAutoplay() {
 }
 
 async function startTsmcAutoplay() {
+  unlockTsmcAudio();
   stopCurrentSpeech();
   tsmcAutoplayActive = true;
   if (els.tsmcAutoplay) {
@@ -1158,29 +1210,23 @@ async function runTsmcAutoplayStep() {
   els.tsmcWordAnswer.hidden = true;
   els.tsmcReveal.textContent = "顯示答案";
 
-  // 2. 朗讀英文單字（優先微軟 Edge Neural 高清音訊）
+  // 2. 朗讀英文單字（透過持久化 Audio 物件播放）
   try {
     const wordId = getTsmcWordId(item);
     const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
     setSpeakButtonState(true, false);
     if (wordId) {
-      try {
-        await playAudioUrl(`./audio/${wordId}.mp3`, false);
-      } catch {
-        await playAudioUrl(`https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`, false).catch(() => {
-          speakWithWebSpeechFallback(speechText, false);
-        });
-      }
+      await playAudioUrl(`./audio/${wordId}.mp3`, false);
     } else {
-      speakWithWebSpeechFallback(speechText, false);
+      await playAudioUrl(`https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`, false);
     }
   } catch (_) {}
   setSpeakButtonState(false, false);
 
   if (!tsmcAutoplayActive) return;
 
-  // 3. 停頓 1 秒讓學習者自行在腦中回憶
-  await sleepAutoplay(1000);
+  // 3. 停頓 1.2 秒讓學習者自行在腦中回憶
+  await sleepAutoplay(1200);
   if (!tsmcAutoplayActive) return;
 
   // 4. 自動翻牌顯示中文、搭配詞與例句
@@ -1188,18 +1234,18 @@ async function runTsmcAutoplayStep() {
   els.tsmcWordAnswer.hidden = false;
   els.tsmcReveal.textContent = "隱藏答案";
 
-  // 5. 語音朗讀中文意思
+  // 5. 語音朗讀中文意思（帶安全超時，防止 iOS 卡死）
   if (item.meaning) {
     await speakChineseText(item.meaning);
   }
 
   if (!tsmcAutoplayActive) return;
 
-  // 6. 停頓 2.2 秒供學習者記憶例句與搭配
-  await sleepAutoplay(2200);
+  // 6. 停頓 2 秒供學習者記憶例句與搭配
+  await sleepAutoplay(2000);
   if (!tsmcAutoplayActive) return;
 
-  // 7. 自動切換到下一個單字並繼續播放
+  // 7. 自動切換到下一個單字並延續播放
   tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
   renderTsmcWord();
   runTsmcAutoplayStep();
