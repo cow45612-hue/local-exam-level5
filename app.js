@@ -464,6 +464,7 @@ function renderTsmcStudySummary() {
   const reviewCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review" || isTsmcWordDue(item)).length;
   els.tsmcStudySummary.textContent = `已記住 ${knownCount} 個 · 待複習 ${reviewCount} 個`;
   els.tsmcReviewShortcut.innerHTML = `待複習單字 <strong>${reviewCount}</strong> 個`;
+  els.tsmcReviewShortcut.hidden = reviewCount === 0;
   els.tsmcFilterButtons.forEach((button) => {
     const filter = button.dataset.tsmcFilter;
     if (filter === "review") button.textContent = `待複習 ${reviewCount}`;
@@ -513,6 +514,8 @@ els.tsmcDailyStart.addEventListener("click", () => {
   tsmcPracticeMode = "words";
   tsmcWordFilter = "daily";
   tsmcPracticeIndices.words = 0;
+  const accordion = document.querySelector("#tsmc-daily-accordion");
+  if (accordion) accordion.open = false;
   renderTsmcWord();
   els.tsmcWordCard.scrollIntoView({ behavior: "smooth", block: "center" });
 });
@@ -872,6 +875,13 @@ els.tsmcReveal.addEventListener("click", () => {
   if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = !willShow;
   els.tsmcWordAnswer.hidden = !willShow;
   els.tsmcReveal.textContent = willShow ? "隱藏答案" : "顯示答案";
+});
+
+els.tsmcWordCard.addEventListener("click", (e) => {
+  if (e.target.closest("button, a, select, input")) return;
+  if (!els.tsmcReveal.disabled && !els.tsmcReveal.hidden) {
+    els.tsmcReveal.click();
+  }
 });
 
 els.tsmcNext.addEventListener("click", () => {

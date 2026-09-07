@@ -88,24 +88,7 @@
             <span id="tsmc-word-progress">1 / 288</span>
           </div>
 
-          <section class="tsmc-daily-mission" aria-labelledby="tsmc-daily-title">
-            <div class="tsmc-daily-heading">
-              <div>
-                <span id="tsmc-daily-day">第 1 天</span>
-                <h3 id="tsmc-daily-title">零基礎每日任務</h3>
-              </div>
-              <strong id="tsmc-daily-status">今日未完成</strong>
-            </div>
-            <p>先複習今天到期的字，再學 10 個新字；答錯會重新出題，真的記住才完成。</p>
-            <p id="tsmc-daily-review-count" class="tsmc-daily-review-count">今天到期複習：0 個</p>
-            <div class="tsmc-daily-steps">
-              <span id="tsmc-daily-learn-step">1. 學單字 0 / 10</span>
-              <span id="tsmc-daily-quiz-step">2. 小測驗 0 / 10</span>
-            </div>
-            <button id="tsmc-daily-start" class="primary action-button" type="button">開始今天 10 個單字</button>
-            <small id="tsmc-daily-total">累計完成 0 天</small>
-          </section>
-
+          <!-- Mode Tabs -->
           <div class="tsmc-mode-tabs" aria-label="選擇練習類型">
             <button class="tsmc-mode-button active" data-tsmc-mode="words" type="button">英文單字</button>
             <button class="tsmc-mode-button" data-tsmc-mode="wordQuiz" type="button">單字測驗</button>
@@ -113,10 +96,33 @@
             <button class="tsmc-mode-button" data-tsmc-mode="interview" type="button">面試練習</button>
           </div>
 
-          <button id="tsmc-review-shortcut" class="tsmc-review-shortcut" type="button">
+          <!-- Collapsible Sleek Daily Mission -->
+          <details class="tsmc-daily-accordion" id="tsmc-daily-accordion">
+            <summary class="tsmc-daily-summary">
+              <div class="tsmc-daily-summary-left">
+                <span id="tsmc-daily-day" class="tsmc-daily-badge">第 1 天</span>
+                <span id="tsmc-daily-title" class="tsmc-daily-title-text">每日任務</span>
+                <strong id="tsmc-daily-status" class="tsmc-daily-status-pill">今日未完成</strong>
+              </div>
+              <span class="tsmc-daily-summary-arrow">展開任務 ▾</span>
+            </summary>
+            <div class="tsmc-daily-content">
+              <p>先複習今天到期的字，再學 10 個新字；答錯會重新出題，真的記住才完成。</p>
+              <p id="tsmc-daily-review-count" class="tsmc-daily-review-count">今天到期複習：0 個</p>
+              <div class="tsmc-daily-steps">
+                <span id="tsmc-daily-learn-step">1. 學單字 0 / 10</span>
+                <span id="tsmc-daily-quiz-step">2. 小測驗 0 / 10</span>
+              </div>
+              <button id="tsmc-daily-start" class="primary action-button" type="button">開始今天 10 個單字</button>
+              <small id="tsmc-daily-total">累計完成 0 天</small>
+            </div>
+          </details>
+
+          <button id="tsmc-review-shortcut" class="tsmc-review-shortcut" type="button" hidden>
             待複習單字 <strong>0</strong> 個
           </button>
 
+          <!-- Filters & Categories -->
           <div id="tsmc-study-tools" class="tsmc-study-tools">
             <div class="tsmc-study-filters" aria-label="選擇單字範圍">
               <button class="tsmc-filter-button active" data-tsmc-filter="all" type="button">全部 288</button>
@@ -131,13 +137,14 @@
               <button class="tsmc-cat-btn" data-tsmc-cat="workplace" type="button">🟢 廠務交接</button>
               <button class="tsmc-cat-btn" data-tsmc-cat="general" type="button">⚪ 基礎通用</button>
             </div>
-            <p id="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
           </div>
 
-          <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words">
+          <!-- THE WORD FLASHCARD -->
+          <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words" title="點擊卡片翻面">
             <div class="tsmc-card-top-tags">
               <span id="tsmc-word-category" class="tsmc-tag-category">機台操作</span>
               <span id="tsmc-word-type" class="tsmc-word-type">noun</span>
+              <span class="tsmc-card-flip-tip">👆 點擊翻面</span>
             </div>
             <strong id="tsmc-word">ability</strong>
             <div id="tsmc-word-answer-box" class="tsmc-word-answer-box" hidden>
@@ -180,18 +187,26 @@
           </section>
 
           <div id="tsmc-word-actions" class="tsmc-word-actions">
-            <button id="tsmc-autoplay" class="mini-button tsmc-autoplay-button" type="button">🎧 自動連播</button>
-            <button id="tsmc-speak" class="mini-button" type="button">正常發音</button>
-            <button id="tsmc-speak-slow" class="mini-button" type="button">慢速發音</button>
-            <button id="tsmc-reveal" class="secondary action-button" type="button">顯示答案</button>
-            <button id="tsmc-next" class="primary action-button" type="button">下一個</button>
+            <button id="tsmc-autoplay" class="tsmc-autoplay-button" type="button">
+              <span class="autoplay-icon">🎧</span>
+              <span class="autoplay-text">自動連續朗讀 (免動手)</span>
+            </button>
+            <div class="tsmc-btn-pair">
+              <button id="tsmc-speak" class="mini-button" type="button">🔊 正常發音</button>
+              <button id="tsmc-speak-slow" class="mini-button" type="button">🐢 慢速發音</button>
+            </div>
+            <div class="tsmc-btn-pair">
+              <button id="tsmc-reveal" class="secondary action-button" type="button">👁️ 顯示答案</button>
+              <button id="tsmc-next" class="primary action-button" type="button">➔ 下一個</button>
+            </div>
           </div>
 
           <div id="tsmc-memory-actions" class="tsmc-memory-actions">
-            <button id="tsmc-mark-review" class="review-button" type="button">還不熟，繼續背</button>
-            <button id="tsmc-mark-known" class="known-button" type="button">這個會了</button>
+            <button id="tsmc-mark-review" class="review-button" type="button">❌ 還不熟，繼續背</button>
+            <button id="tsmc-mark-known" class="known-button" type="button">✅ 這個會了</button>
           </div>
 
+          <p id="tsmc-study-summary" class="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
           <p id="tsmc-practice-note" class="tsmc-practice-note">單字取自台積電官方參考資料。</p>
 
           <a
