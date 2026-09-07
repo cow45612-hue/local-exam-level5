@@ -1503,6 +1503,8 @@ function setView(view) {
   }
 
   document.body.classList.toggle("in-quiz", view === "quiz" || view === "result");
+  document.body.classList.toggle("in-tsmc", isTsmc);
+  localStorage.setItem("last_active_view", view);
   if (view === "home" || view === "start" || view === "wrongbook" || view === "stats") {
     updateDashboard();
   }
@@ -2309,4 +2311,9 @@ if (tsmcFontToggle) {
     tsmcFontToggle.textContent = active ? "🔍 標準字體" : "🔠 特大字體";
     tsmcFontToggle.classList.toggle("active", active);
   });
+}
+
+const savedView = localStorage.getItem("last_active_view");
+if (savedView && els.views[savedView]) {
+  setView(savedView);
 }
