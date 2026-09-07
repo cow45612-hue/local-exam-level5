@@ -322,6 +322,7 @@ function showTsmcSubview(subviewId) {
 
 function switchTsmcTab(tabName) {
   tsmcCurrentTab = tabName;
+  document.body.classList.remove("in-tsmc-focus");
   stopTsmcAutoplay();
   stopCurrentSpeech();
 
@@ -440,6 +441,17 @@ function openStageLearn(stageId, startIndex = 0) {
   renderStageLearnWord();
 }
 
+function applyWordLengthClass(el, text) {
+  if (!el) return;
+  el.classList.remove("word-long", "word-ultra-long");
+  if (!text) return;
+  if (text.length > 20) {
+    el.classList.add("word-ultra-long");
+  } else if (text.length > 11) {
+    el.classList.add("word-long");
+  }
+}
+
 function renderStageLearnWord() {
   const item = tsmcLearnWords[tsmcLearnIndex];
   if (!item) return;
@@ -475,7 +487,10 @@ function renderStageLearnWord() {
   const sentenceEl = document.querySelector("#tsmc-learn-sentence");
   const sentenceMeaningEl = document.querySelector("#tsmc-learn-sentence-meaning");
 
-  if (wordEl) wordEl.textContent = item.word;
+  if (wordEl) {
+    wordEl.textContent = item.word;
+    applyWordLengthClass(wordEl, item.word);
+  }
   if (meaningEl) meaningEl.textContent = item.meaning;
   if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || `💡 廠區高頻單字，請務必熟記！`;
   if (phraseEl) phraseEl.textContent = item.fabPhrase ? `${item.fabPhrase}` : `${item.word} (廠區常用)`;
@@ -533,6 +548,7 @@ function startStageQuiz(stageId) {
     answered: false,
   };
 
+  document.body.classList.add("in-tsmc-focus");
   showTsmcSubview("tsmc-subview-quiz");
   renderStageQuizQuestion();
 }
@@ -560,7 +576,10 @@ function renderStageQuizQuestion() {
   if (progEl) progEl.textContent = `第 ${curr} / ${total} 題`;
   if (scoreEl) scoreEl.textContent = `目前得分: ${tsmcStageQuizState.score}`;
   if (barEl) barEl.style.width = `${((curr - 1) / total) * 100}%`;
-  if (wordEl) wordEl.textContent = q.word.word;
+  if (wordEl) {
+    wordEl.textContent = q.word.word;
+    applyWordLengthClass(wordEl, q.word.word);
+  }
 
   if (feedbackEl) {
     feedbackEl.hidden = true;
@@ -651,6 +670,7 @@ function nextStageQuizQuestion() {
 }
 
 function finishStageQuiz() {
+  document.body.classList.remove("in-tsmc-focus");
   const total = tsmcStageQuizState.questions.length;
   const score = tsmcStageQuizState.score;
   const pct = Math.round((score / total) * 100);
@@ -817,7 +837,10 @@ async function runAutoplayStep() {
   const meaningEl = document.querySelector("#tsmc-autoplay-meaning");
   const mnemonicEl = document.querySelector("#tsmc-autoplay-mnemonic");
 
-  if (wordEl) wordEl.textContent = item.word;
+  if (wordEl) {
+    wordEl.textContent = item.word;
+    applyWordLengthClass(wordEl, item.word);
+  }
   if (meaningEl) meaningEl.textContent = item.meaning;
   if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || "";
 
@@ -850,6 +873,7 @@ async function runAutoplayStep() {
 // 15-Question Exam Simulator
 // ------------------------------------------
 function reset15Exam() {
+  document.body.classList.remove("in-tsmc-focus");
   if (tsmcExamState.timer) {
     clearInterval(tsmcExamState.timer);
     tsmcExamState.timer = null;
@@ -867,6 +891,7 @@ function reset15Exam() {
 
 function start15Exam() {
   reset15Exam();
+  document.body.classList.add("in-tsmc-focus");
   unlockTsmcAudio();
 
   // Pick 15 random unique words (mix of core and all)
@@ -942,7 +967,10 @@ function render15ExamQuestion() {
   const nextBtn = document.querySelector("#tsmc-exam-next-btn");
 
   if (counterEl) counterEl.textContent = `第 ${tsmcExamState.currentIndex + 1} / 15 題`;
-  if (questionTextEl) questionTextEl.textContent = q.word.word;
+  if (questionTextEl) {
+    questionTextEl.textContent = q.word.word;
+    applyWordLengthClass(questionTextEl, q.word.word);
+  }
   if (nextBtn) nextBtn.hidden = true;
 
   if (choicesContainer) {
@@ -1131,6 +1159,7 @@ function initTsmcSystem() {
   const quizQuit = document.querySelector("#tsmc-quiz-quit");
   if (quizQuit) {
     quizQuit.addEventListener("click", () => {
+      document.body.classList.remove("in-tsmc-focus");
       openStageLearn(tsmcStageQuizState.stageId);
     });
   }

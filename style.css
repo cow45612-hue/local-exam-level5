@@ -250,16 +250,21 @@ body.in-tsmc .app-shell {
   gap: 10px;
 }
 
+/* TSMC GAMIFIED LEVEL MAP & MNEMONIC LEARNING SYSTEM */
 .tsmc-practice {
   border-color: #b8e0d0;
   background: #f7fffb;
-  padding: 16px 14px;
+  padding: 14px 12px;
+  margin-bottom: 24px;
+  overflow-x: hidden;
 }
 
 .tsmc-practice .panel-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
@@ -267,11 +272,11 @@ body.in-tsmc .app-shell {
   font-size: 13px;
   color: #087456;
   font-weight: 800;
-  margin-bottom: 2px;
+  margin: 0 0 2px 0;
 }
 
 .tsmc-practice .panel-heading h2 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   color: #0f172a;
 }
@@ -279,16 +284,17 @@ body.in-tsmc .app-shell {
 .panel-heading-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .tsmc-font-size-btn {
   border: 1.5px solid #10b981;
   background: #ecfdf5;
   color: #047857;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 900;
-  padding: 6px 12px;
+  padding: 5px 11px;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -302,23 +308,13 @@ body.in-tsmc .app-shell {
   box-shadow: 0 2px 8px rgba(4, 120, 87, 0.3);
 }
 
-#tsmc-word-progress {
-  font-size: 15px;
-  font-weight: 900;
-  color: #075e45;
-  background: #dff7ec;
-  padding: 5px 12px;
-  border-radius: 999px;
-}
-
-/* TSMC GAMIFIED LEVEL MAP & MNEMONIC LEARNING SYSTEM */
 .tsmc-stage-badge {
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: 900;
   color: #b45309;
   background: #fef3c7;
   border: 1px solid #fde68a;
-  padding: 5px 12px;
+  padding: 5px 11px;
   border-radius: 999px;
   white-space: nowrap;
 }
@@ -330,7 +326,9 @@ body.in-tsmc .app-shell {
   margin-bottom: 14px;
   overflow-x: auto;
   padding-bottom: 6px;
+  padding-right: 14px;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
 .tsmc-feature-nav::-webkit-scrollbar {
@@ -339,13 +337,13 @@ body.in-tsmc .app-shell {
 
 .tsmc-tab-btn {
   white-space: nowrap;
-  min-height: 44px;
+  min-height: 40px;
   border: 1.5px solid #c8e6d9;
   border-radius: 999px;
   background: #ffffff;
   color: #39705f;
-  padding: 8px 16px;
-  font-size: 15px;
+  padding: 6px 14px;
+  font-size: 14px;
   font-weight: 900;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -368,37 +366,39 @@ body.in-tsmc .app-shell {
 .tsmc-map-banner {
   background: linear-gradient(135deg, #ecfdf5, #dbeafe);
   border: 1.5px solid #a7f3d0;
-  border-radius: 18px;
-  padding: 14px 16px;
-  margin-bottom: 14px;
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
 }
 
 .tsmc-map-stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 14px;
   font-weight: 900;
   color: #065f46;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .tsmc-map-stats strong {
-  font-size: 18px;
+  font-size: 17px;
   color: #047857;
 }
 
 .tsmc-map-tip {
   margin: 0;
-  font-size: 13px;
+  font-size: 12.5px;
   color: #475569;
-  line-height: 1.5;
+  line-height: 1.45;
   font-weight: 600;
 }
 
 .tsmc-stages-list {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .tsmc-stage-card {
@@ -407,12 +407,13 @@ body.in-tsmc .app-shell {
   justify-content: space-between;
   background: #ffffff;
   border: 2px solid #d1fae5;
-  border-radius: 20px;
-  padding: 16px 18px;
-  box-shadow: 0 4px 14px rgba(7, 94, 69, 0.05);
+  border-radius: 18px;
+  padding: 12px 14px;
+  box-shadow: 0 3px 12px rgba(7, 94, 69, 0.05);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   user-select: none;
+  gap: 10px;
 }
 
 .tsmc-stage-card:active {
@@ -433,18 +434,20 @@ body.in-tsmc .app-shell {
 .tsmc-stage-left {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .tsmc-stage-icon-box {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
   background: #ecfdf5;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 24px;
   flex-shrink: 0;
 }
 
@@ -452,36 +455,46 @@ body.in-tsmc .app-shell {
   background: #d1fae5;
 }
 
+.tsmc-stage-info {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 .tsmc-stage-info h4 {
-  margin: 0 0 4px 0;
-  font-size: 18px;
+  margin: 0 0 2px 0;
+  font-size: 15px;
   color: #0f172a;
   font-weight: 900;
+  line-height: 1.35;
+  word-break: break-word;
 }
 
 .tsmc-stage-info p {
   margin: 0;
-  font-size: 13px;
+  font-size: 12px;
   color: #64748b;
   font-weight: 600;
+  line-height: 1.3;
 }
 
 .tsmc-stage-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 6px;
+  gap: 4px;
+  flex-shrink: 0;
 }
 
 .tsmc-stage-stars {
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .tsmc-stage-action-pill {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 999px;
   background: #047857;
   color: #ffffff;
@@ -501,15 +514,17 @@ body.in-tsmc .app-shell {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 12px;
   gap: 8px;
 }
 
 .tsmc-back-btn {
+  order: 1;
   border: 1px solid #c8e6d9;
   background: #ffffff;
   color: #065f46;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 900;
   padding: 6px 12px;
   border-radius: 999px;
@@ -517,17 +532,9 @@ body.in-tsmc .app-shell {
   white-space: nowrap;
 }
 
-.tsmc-learn-header h3 {
-  margin: 0;
-  font-size: 16px;
-  color: #0f172a;
-  font-weight: 900;
-  text-align: center;
-  flex-grow: 1;
-}
-
 .tsmc-learn-progress-badge {
-  font-size: 14px;
+  order: 1;
+  font-size: 13px;
   font-weight: 900;
   color: #075e45;
   background: #dff7ec;
@@ -536,23 +543,37 @@ body.in-tsmc .app-shell {
   white-space: nowrap;
 }
 
+.tsmc-learn-header h3 {
+  margin: 0;
+  font-size: clamp(15px, 4vw, 18px);
+  color: #0f172a;
+  font-weight: 900;
+  text-align: center;
+  flex: 1 1 100%;
+  order: 2;
+  padding-top: 4px;
+  word-break: break-word;
+}
+
 /* THE GIANT MNEMONIC FLASHCARD */
 .tsmc-mnemonic-card {
   background: #ffffff;
-  border: 2.5px solid #a7dfc7;
-  border-radius: 26px;
-  padding: 24px 18px;
-  box-shadow: 0 10px 30px rgba(7, 94, 69, 0.08);
+  border: 2px solid #a7dfc7;
+  border-radius: 20px;
+  padding: 18px 14px;
+  box-shadow: 0 8px 24px rgba(7, 94, 69, 0.07);
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 12px;
+  margin-bottom: 12px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .tsmc-card-top-tags {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
 }
 
@@ -560,8 +581,8 @@ body.in-tsmc .app-shell {
   border-radius: 999px;
   background: #f1f5f9;
   color: #334155;
-  padding: 4px 12px;
-  font-size: 13px;
+  padding: 3px 10px;
+  font-size: 12px;
   font-weight: 900;
 }
 
@@ -569,8 +590,8 @@ body.in-tsmc .app-shell {
   border-radius: 999px;
   background: #dff7ec;
   color: #087456;
-  padding: 4px 12px;
-  font-size: 13px;
+  padding: 3px 10px;
+  font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -580,8 +601,8 @@ body.in-tsmc .app-shell {
   background: #fef3c7;
   color: #b45309;
   border: 1px solid #fde68a;
-  padding: 4px 10px;
-  font-size: 13px;
+  padding: 3px 9px;
+  font-size: 12px;
   font-weight: 900;
   animation: pulse-subtle 2s infinite alternate;
 }
@@ -593,40 +614,58 @@ body.in-tsmc .app-shell {
 
 .tsmc-word-head {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
 }
 
 .tsmc-word-head h2 {
   margin: 0;
-  font-size: clamp(48px, 13vw, 68px);
+  font-size: clamp(30px, 8.5vw, 48px);
   font-weight: 900;
   color: #046a4e;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+/* Long word scale classes */
+.word-long {
+  font-size: clamp(23px, 6.5vw, 34px) !important;
+  line-height: 1.2 !important;
+}
+
+.word-ultra-long {
+  font-size: clamp(18px, 5vw, 25px) !important;
+  line-height: 1.25 !important;
 }
 
 .tsmc-pronounce-pair {
   display: flex;
-  gap: 6px;
+  gap: 8px;
+  width: 100%;
+  margin-top: 2px;
 }
 
 .tsmc-audio-btn {
+  flex: 1 1 auto;
   min-height: 42px;
   border: 1.5px solid #a7f3d0;
   background: #ecfdf5;
   color: #065f46;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 900;
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 12px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  gap: 6px;
   transition: all 0.15s ease;
 }
 
@@ -637,25 +676,27 @@ body.in-tsmc .app-shell {
 
 .tsmc-learn-meaning {
   margin: 0;
-  font-size: clamp(28px, 7.5vw, 38px);
+  font-size: clamp(22px, 6vw, 32px);
   font-weight: 900;
   color: #0f172a;
-  line-height: 1.25;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* MNEMONIC BOX */
 .tsmc-mnemonic-box {
   background: #fffbeb;
   border: 2px dashed #f59e0b;
-  border-radius: 18px;
-  padding: 14px 16px;
+  border-radius: 16px;
+  padding: 12px 14px;
 }
 
 .tsmc-mnemonic-label {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 900;
   color: #b45309;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -663,85 +704,95 @@ body.in-tsmc .app-shell {
 
 .tsmc-mnemonic-text {
   margin: 0;
-  font-size: clamp(17px, 4.5vw, 22px);
+  font-size: clamp(15.5px, 4.2vw, 19px);
   font-weight: 900;
   color: #78350f;
-  line-height: 1.5;
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .tsmc-fab-phrase-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: #f0fdf4;
   border: 1.5px dashed #86efac;
-  border-radius: 14px;
-  padding: 10px 14px;
+  border-radius: 12px;
+  padding: 9px 12px;
+  flex-wrap: wrap;
 }
 
 .tsmc-fab-tag {
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 900;
   color: #047857;
   background: #d1fae5;
-  padding: 3px 8px;
+  padding: 2px 7px;
   border-radius: 6px;
   white-space: nowrap;
 }
 
 .tsmc-fab-phrase-box strong {
-  font-size: clamp(17px, 4.2vw, 20px);
+  font-size: clamp(15px, 4vw, 18px);
   color: #065f46;
   font-weight: 800;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .tsmc-example-quote {
   background: #f8fafc;
   border: 1.5px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 12px 16px;
+  border-radius: 12px;
+  padding: 10px 14px;
 }
 
 .tsmc-example-quote p {
-  margin: 0 0 6px 0;
-  font-size: clamp(16px, 4vw, 18px);
+  margin: 0 0 4px 0;
+  font-size: clamp(15px, 3.8vw, 17px);
   font-weight: 700;
   color: #1e293b;
-  line-height: 1.5;
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .tsmc-example-quote small {
   display: block;
-  font-size: clamp(14px, 3.5vw, 16px);
+  font-size: clamp(13px, 3.4vw, 15px);
   color: #64748b;
-  line-height: 1.5;
+  line-height: 1.45;
   font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* LEARN NAVIGATION */
 .tsmc-learn-nav-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .tsmc-learn-nav-row button {
-  min-height: 52px;
-  font-size: 17px;
+  min-height: 48px;
+  font-size: 15px;
   font-weight: 900;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 
 .tsmc-start-quiz-btn {
   width: 100%;
-  min-height: 58px;
-  font-size: 19px;
+  min-height: 54px;
+  font-size: 17px;
   font-weight: 900;
-  border-radius: 18px;
+  border-radius: 16px;
   background: linear-gradient(135deg, #059669, #047857);
   box-shadow: 0 4px 16px rgba(5, 150, 105, 0.35);
   animation: pulse-glow 1.8s infinite alternate;
+  margin-bottom: 24px;
 }
 
 /* QUIZ VIEW */
@@ -749,18 +800,20 @@ body.in-tsmc .app-shell {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
   color: #475569;
 }
 
 .tsmc-quiz-progress-track {
-  height: 10px;
+  height: 8px;
   background: #e2e8f0;
   border-radius: 999px;
   overflow: hidden;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .tsmc-quiz-progress-track span {
@@ -775,14 +828,14 @@ body.in-tsmc .app-shell {
 .tsmc-stage-quiz-card {
   background: #ffffff;
   border: 2px solid #cbd5e1;
-  border-radius: 24px;
-  padding: 22px 18px;
+  border-radius: 20px;
+  padding: 18px 14px;
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
 
 .tsmc-quiz-instruction {
-  margin: 0 0 10px 0;
-  font-size: 15px;
+  margin: 0 0 8px 0;
+  font-size: 14px;
   color: #64748b;
   font-weight: 800;
   text-align: center;
@@ -792,35 +845,41 @@ body.in-tsmc .app-shell {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
 .tsmc-quiz-prompt-wrapper h3 {
   margin: 0;
-  font-size: clamp(36px, 9vw, 50px);
+  font-size: clamp(26px, 7.5vw, 42px);
   color: #0f172a;
   font-weight: 900;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 
 .tsmc-stage-quiz-options {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .tsmc-stage-quiz-opt {
-  min-height: 56px;
+  min-height: 52px;
   border: 2px solid #e2e8f0;
-  border-radius: 16px;
+  border-radius: 14px;
   background: #ffffff;
   color: #1e293b;
-  padding: 14px 18px;
-  font-size: 18px;
+  padding: 12px 14px;
+  font-size: 16px;
   font-weight: 900;
   text-align: left;
   cursor: pointer;
   transition: all 0.15s ease;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
 }
 
 .tsmc-stage-quiz-opt:active {
@@ -840,12 +899,14 @@ body.in-tsmc .app-shell {
 }
 
 .tsmc-quiz-feedback {
-  margin-top: 14px;
-  border-radius: 16px;
-  padding: 14px 16px;
-  font-size: 16px;
+  margin-top: 12px;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 15px;
   font-weight: 900;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .tsmc-quiz-feedback.correct {
@@ -863,30 +924,38 @@ body.in-tsmc .app-shell {
   background: #ffffff;
   border: 1.5px dashed #f59e0b;
   border-radius: 12px;
-  padding: 10px 14px;
-  font-size: 15px;
+  padding: 9px 12px;
+  font-size: 14px;
   color: #92400e;
   text-align: left;
   line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+#tsmc-stage-quiz-next-btn {
+  margin-top: 14px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 
 /* AUTOPLAY VIEW */
 .tsmc-autoplay-panel {
   background: #ffffff;
   border: 2px solid #bfdbfe;
-  border-radius: 24px;
-  padding: 22px 18px;
+  border-radius: 20px;
+  padding: 18px 14px;
 }
 
 .tsmc-autoplay-header h3 {
   margin: 0 0 6px 0;
-  font-size: 20px;
+  font-size: 19px;
   color: #1e40af;
 }
 
 .tsmc-autoplay-header p {
-  margin: 0 0 16px 0;
-  font-size: 14px;
+  margin: 0 0 14px 0;
+  font-size: 13.5px;
   color: #475569;
   line-height: 1.5;
 }
@@ -894,97 +963,114 @@ body.in-tsmc .app-shell {
 .tsmc-autoplay-controls {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 .tsmc-autoplay-card {
-  border: 2.5px solid #93c5fd;
-  border-radius: 20px;
+  border: 2px solid #93c5fd;
+  border-radius: 18px;
   background: #eff6ff;
-  padding: 26px 18px;
+  padding: 20px 14px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  overflow: hidden;
 }
 
 .tsmc-autoplay-word-title {
-  font-size: clamp(40px, 10vw, 56px);
+  font-size: clamp(28px, 8vw, 48px);
   font-weight: 900;
   color: #1d4ed8;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 
 .tsmc-autoplay-meaning {
-  font-size: clamp(24px, 6vw, 32px);
+  font-size: clamp(20px, 5.5vw, 28px);
   font-weight: 900;
   color: #1e293b;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .tsmc-autoplay-mnemonic {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 800;
   color: #92400e;
   background: #fef3c7;
-  padding: 10px 14px;
-  border-radius: 12px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* EXAM VIEW */
 .tsmc-exam-panel {
   background: #ffffff;
   border: 2px solid #cbd5e1;
-  border-radius: 24px;
-  padding: 22px 18px;
+  border-radius: 20px;
+  padding: 18px 14px;
 }
 
 .tsmc-exam-intro h3 {
-  margin: 0 0 8px 0;
-  font-size: 20px;
+  margin: 0 0 6px 0;
+  font-size: 19px;
   color: #0f172a;
 }
 
 .tsmc-exam-intro p {
-  margin: 0 0 18px 0;
-  font-size: 15px;
+  margin: 0 0 16px 0;
+  font-size: 14px;
   color: #475569;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 .tsmc-exam-meta-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
-  font-size: 16px;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 15px;
   font-weight: 900;
   color: #047857;
 }
 
 .tsmc-exam-question-card h4 {
-  margin: 0 0 18px 0;
-  font-size: clamp(32px, 8vw, 44px);
+  margin: 0 0 14px 0;
+  font-size: clamp(26px, 7.5vw, 40px);
   color: #0f172a;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 
 .tsmc-exam-choices {
   display: grid;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
 .tsmc-exam-choice {
-  min-height: 56px;
+  min-height: 52px;
   border: 2px solid #e2e8f0;
-  border-radius: 16px;
+  border-radius: 14px;
   background: #ffffff;
   color: #1e293b;
-  padding: 14px 18px;
-  font-size: 18px;
+  padding: 12px 14px;
+  font-size: 16px;
   font-weight: 900;
   text-align: left;
   cursor: pointer;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
 }
 
 .tsmc-exam-choice.selected {
@@ -995,56 +1081,44 @@ body.in-tsmc .app-shell {
 
 .tsmc-exam-score-banner {
   text-align: center;
-  padding: 20px;
+  padding: 16px;
   background: #f0fdf4;
   border: 2px solid #86efac;
-  border-radius: 20px;
-  margin-bottom: 16px;
+  border-radius: 18px;
+  margin-bottom: 14px;
 }
 
 .tsmc-exam-score {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 900;
   color: #047857;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .tsmc-exam-breakdown {
   display: grid;
   gap: 10px;
   margin-bottom: 16px;
-  max-height: 320px;
+  max-height: 360px;
   overflow-y: auto;
-}
-
-.tsmc-exam-item-report {
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 10px 14px;
-  font-size: 14px;
-  background: #f8fafc;
-}
-
-.tsmc-exam-item-report.wrong {
-  border-color: #fca5a5;
-  background: #fef2f2;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* EXTRAS VIEW (Math & Interview) */
 .tsmc-extras-tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-bottom: 14px;
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
 .tsmc-extras-tab-btn {
-  min-height: 48px;
+  min-height: 44px;
   border: 1.5px solid #c8e6d9;
-  border-radius: 14px;
+  border-radius: 12px;
   background: #ffffff;
   color: #39705f;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
   cursor: pointer;
 }
@@ -1074,12 +1148,16 @@ body.in-tsmc .app-shell {
 
 .tsmc-modal-content {
   background: #ffffff;
-  border-radius: 28px;
-  padding: 30px 22px;
-  width: min(420px, 100%);
+  border-radius: 24px;
+  padding: 24px 18px;
+  width: min(400px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   animation: pop-up 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: auto;
 }
 
 @keyframes pop-up {
@@ -1088,51 +1166,69 @@ body.in-tsmc .app-shell {
 }
 
 .tsmc-modal-confetti {
-  font-size: 50px;
-  margin-bottom: 8px;
+  font-size: 44px;
+  margin-bottom: 6px;
 }
 
 .tsmc-modal-content h2 {
-  margin: 0 0 8px 0;
-  font-size: 24px;
+  margin: 0 0 6px 0;
+  font-size: 22px;
   color: #0f172a;
 }
 
 .tsmc-modal-stars {
-  font-size: 36px;
-  letter-spacing: 6px;
-  margin: 10px 0 14px 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 .tsmc-modal-content p {
-  margin: 0 0 22px 0;
-  font-size: 15px;
+  font-size: 14.5px;
   color: #475569;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .tsmc-modal-buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
-/* EXTRA LARGE FONT OVERRIDES */
+.tsmc-modal-buttons button {
+  width: 100%;
+}
+
+/* EXTRA LARGE FONT OVERRIDES (PROPORTIONAL & FIT GUARANTEED) */
 body.tsmc-large-text .tsmc-word-head h2 {
-  font-size: clamp(58px, 16vw, 82px) !important;
+  font-size: clamp(34px, 10vw, 56px) !important;
+}
+
+body.tsmc-large-text .word-long {
+  font-size: clamp(26px, 7.5vw, 38px) !important;
+}
+
+body.tsmc-large-text .word-ultra-long {
+  font-size: clamp(20px, 5.5vw, 28px) !important;
 }
 
 body.tsmc-large-text .tsmc-learn-meaning {
-  font-size: clamp(34px, 9vw, 46px) !important;
+  font-size: clamp(26px, 7vw, 36px) !important;
 }
 
 body.tsmc-large-text .tsmc-mnemonic-text {
-  font-size: clamp(20px, 5.5vw, 26px) !important;
+  font-size: clamp(17px, 4.6vw, 21px) !important;
 }
 
 body.tsmc-large-text .tsmc-stage-quiz-opt,
 body.tsmc-large-text .tsmc-exam-choice {
-  min-height: 64px !important;
-  font-size: 20px !important;
+  min-height: 56px !important;
+  font-size: 17.5px !important;
+}
+
+/* FOCUS MODE: Hide Bottom Nav during active quiz and exam */
+body.in-tsmc-focus .bottom-nav {
+  display: none !important;
 }
 
 .tsmc-pdf-link {
@@ -1810,5 +1906,33 @@ select {
 
   .button-stack .full {
     grid-column: 1 / -1;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: max(128px, env(safe-area-inset-bottom) + 104px);
+  }
+
+  .bottom-nav {
+    width: calc(100% - 12px);
+    padding: 6px 2px;
+    margin-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+
+  .nav-item {
+    font-size: 11px;
+    min-height: 48px;
+    padding: 4px 1px;
+    gap: 2px;
+  }
+
+  .nav-item span {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
   }
 }
