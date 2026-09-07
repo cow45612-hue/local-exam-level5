@@ -8,7 +8,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "operation ability",
     "exampleSentence": "The technician has the ability to operate this tool.",
-    "exampleMeaning": "該技術員具備操作此機台的能力。"
+    "exampleMeaning": "該技術員具備操作此機台的能力。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": true,
+    "mnemonic": "💡 技術員具備優良的操作【能力】！"
   },
   {
     "id": 2,
@@ -19,7 +24,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "abnormal lot",
     "exampleSentence": "Stop the tool when an abnormal lot is detected.",
-    "exampleMeaning": "發現異常批次時立即停機。"
+    "exampleMeaning": "發現異常批次時立即停機。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 【阿伯摸】到機台發燙，狀況【異常的】！"
   },
   {
     "id": 3,
@@ -30,7 +40,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "abort the run",
     "exampleSentence": "Press abort if an emergency occurs.",
-    "exampleMeaning": "緊急狀況時請按下中止。"
+    "exampleMeaning": "緊急狀況時請按下中止。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡【阿伯特】地按按鈕【中止】機台運行！"
   },
   {
     "id": 4,
@@ -41,7 +56,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "absence report",
     "exampleSentence": "Inform your supervisor before taking absence.",
-    "exampleMeaning": "請假缺席前請先通知主管。"
+    "exampleMeaning": "請假缺席前請先通知主管。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 同事請假沒來上班叫做【缺席】！"
   },
   {
     "id": 5,
@@ -52,7 +72,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "acid tank",
     "exampleSentence": "Wear chemical gloves when handling acid.",
-    "exampleMeaning": "處理酸液時請戴化學手套。"
+    "exampleMeaning": "處理酸液時請戴化學手套。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 咬蝕晶圓表面用的腐蝕性強【酸】！"
   },
   {
     "id": 6,
@@ -63,7 +88,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "active status",
     "exampleSentence": "Make sure the recipe is in active status.",
-    "exampleMeaning": "確認配方處於啟動狀態。"
+    "exampleMeaning": "確認配方處於啟動狀態。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 主動積極、或者系統處於【運作中的／主動的】！"
   },
   {
     "id": 7,
@@ -74,7 +104,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "actual yield",
     "exampleSentence": "Check the actual yield on the monitor.",
-    "exampleMeaning": "在螢幕上檢查實際良率。"
+    "exampleMeaning": "在螢幕上檢查實際良率。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 報表上記錄的【真實的／實際的】數據！"
   },
   {
     "id": 8,
@@ -85,7 +120,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "add chemical",
     "exampleSentence": "Do not add chemical without authorization.",
-    "exampleMeaning": "未經授權切勿添加化學液。"
+    "exampleMeaning": "未經授權切勿添加化學液。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 在清單上額外【增加】項目！"
   },
   {
     "id": 9,
@@ -96,7 +136,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "adjust parameter",
     "exampleSentence": "Adjust the parameter according to the S.O.P.",
-    "exampleMeaning": "依照 SOP 調整機台參數。"
+    "exampleMeaning": "依照 SOP 調整機台參數。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": false,
+    "mnemonic": "💡 數值歪了，技術員動手【調整】！"
   },
   {
     "id": 10,
@@ -107,7 +152,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "AI inspection",
     "exampleSentence": "AI inspection improves wafer defect detection.",
-    "exampleMeaning": "AI 檢測能提升晶圓缺陷判讀效率。"
+    "exampleMeaning": "AI 檢測能提升晶圓缺陷判讀效率。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": true,
+    "mnemonic": "💡 台積電導入智慧工廠生產的【人工智慧】！"
   },
   {
     "id": 11,
@@ -118,7 +168,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "pass air shower",
     "exampleSentence": "Enter the air shower before stepping into the clean room.",
-    "exampleMeaning": "進入無塵室前必須先經過潔淨通道。"
+    "exampleMeaning": "進入無塵室前必須先經過潔淨通道。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": true,
+    "mnemonic": "💡 進門前被狂風吹身體的【潔淨通道／風淋室】！"
   },
   {
     "id": 12,
@@ -129,7 +184,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "alarm buzzes",
     "exampleSentence": "Call the leader immediately when an alarm buzzes.",
-    "exampleMeaning": "警報響起時請立即通報副理或組長。"
+    "exampleMeaning": "警報響起時請立即通報副理或組長。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡【阿爛】機台又發出嗶嗶嗶【警報】！"
   },
   {
     "id": 13,
@@ -140,7 +200,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "system alert",
     "exampleSentence": "Check the system alert message carefully.",
-    "exampleMeaning": "仔細檢查系統發出的警示訊息。"
+    "exampleMeaning": "仔細檢查系統發出的警示訊息。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 發出【阿樂特】級別的【警報／警戒】！"
   },
   {
     "id": 14,
@@ -151,7 +216,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "align wafer",
     "exampleSentence": "The robot arm will align the wafer automatically.",
-    "exampleMeaning": "機械手臂會自動對齊晶圓中心。"
+    "exampleMeaning": "機械手臂會自動對齊晶圓中心。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 曝光前晶圓角度要旋轉【對焦／對齊】！"
   },
   {
     "id": 15,
@@ -162,7 +232,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "certified annually",
     "exampleSentence": "Technicians are re-certified annually.",
-    "exampleMeaning": "技術員每年均需重新通過認證考核。"
+    "exampleMeaning": "技術員每年均需重新通過認證考核。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 一年一度舉辦的【每年的】運動會！"
   },
   {
     "id": 16,
@@ -173,7 +248,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "fab area",
     "exampleSentence": "Safety glasses are required in this fab area.",
-    "exampleMeaning": "在此廠區範圍內必須配戴護目鏡。"
+    "exampleMeaning": "在此廠區範圍內必須配戴護目鏡。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 廠房內部劃分不同的作業【區域】！"
   },
   {
     "id": 17,
@@ -184,7 +264,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "attach label",
     "exampleSentence": "Attach the correct label on the cassette.",
-    "exampleMeaning": "在晶圓盒上貼上正確的標籤。"
+    "exampleMeaning": "在晶圓盒上貼上正確的標籤。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把條碼貼紙【附上／貼在】外盒！"
   },
   {
     "id": 18,
@@ -195,7 +280,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "quality audit",
     "exampleSentence": "Follow all standard rules during the quality audit.",
-    "exampleMeaning": "品質稽核期間請遵守所有標準規範。"
+    "exampleMeaning": "品質稽核期間請遵守所有標準規範。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 客戶或主管來無塵室現場【稽核／查核】！"
   },
   {
     "id": 19,
@@ -206,7 +296,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "automatic track",
     "exampleSentence": "The wafer is transferred by an automatic track.",
-    "exampleMeaning": "晶圓透過天車與自動軌道進行傳送。"
+    "exampleMeaning": "晶圓透過天車與自動軌道進行傳送。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": true,
+    "mnemonic": "💡 天花板與機台全天候【自動的】傳送！"
   },
   {
     "id": 20,
@@ -217,7 +312,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "automotive chip",
     "exampleSentence": "Automotive chips require zero-defect quality.",
-    "exampleMeaning": "車用晶片要求零缺陷的高品質標準。"
+    "exampleMeaning": "車用晶片要求零缺陷的高品質標準。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": true,
+    "mnemonic": "💡 車用晶片領域的【汽車的】嚴格認證！"
   },
   {
     "id": 21,
@@ -228,7 +328,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "machine available",
     "exampleSentence": "This machine is available for the next run.",
-    "exampleMeaning": "這台機台目前可供下一批次生產使用。"
+    "exampleMeaning": "這台機台目前可供下一批次生產使用。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 機台亮綠燈隨時【可使用的】！"
   },
   {
     "id": 22,
@@ -239,7 +344,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "average output",
     "exampleSentence": "Maintain the average daily output safely.",
-    "exampleMeaning": "在安全的前提下維持平均每日產量。"
+    "exampleMeaning": "在安全的前提下維持平均每日產量。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 這一批貨測出來的【平均】厚度！"
   },
   {
     "id": 23,
@@ -250,7 +360,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "backup system",
     "exampleSentence": "Switch to the backup system if the primary tool fails.",
-    "exampleMeaning": "若主系統異常請切換至備援系統。"
+    "exampleMeaning": "若主系統異常請切換至備援系統。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：支援"
   },
   {
     "id": 24,
@@ -261,7 +376,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "wafer bank",
     "exampleSentence": "Store finished cassettes in the wafer bank.",
-    "exampleMeaning": "將處理好的晶圓盒暫存至晶圓暫存庫。"
+    "exampleMeaning": "將處理好的晶圓盒暫存至晶圓暫存庫。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：銀行(v.) 暫存"
   },
   {
     "id": 25,
@@ -272,7 +392,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "basic knowledge",
     "exampleSentence": "Master basic semiconductor knowledge first.",
-    "exampleMeaning": "先掌握半導體與無塵室基礎知識。"
+    "exampleMeaning": "先掌握半導體與無塵室基礎知識。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 英文與數學甄選必備的【基礎的】實力！"
   },
   {
     "id": 26,
@@ -283,7 +408,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "laser beam",
     "exampleSentence": "Do not look directly into the laser beam.",
-    "exampleMeaning": "嚴禁直視雷射光束。"
+    "exampleMeaning": "嚴禁直視雷射光束。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 雷射打出來的一道筆直【光束】！"
   },
   {
     "id": 27,
@@ -294,7 +424,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "benchmark line",
     "exampleSentence": "Use this recipe as the quality benchmark.",
-    "exampleMeaning": "將此配方作為品質標準標竿。"
+    "exampleMeaning": "將此配方作為品質標準標竿。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": false,
+    "mnemonic": "💡 跟最優秀的台積電廠區進行【標竿學習】！"
   },
   {
     "id": 28,
@@ -305,7 +440,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "chemical bottle",
     "exampleSentence": "Dispose of the empty chemical bottle properly.",
-    "exampleMeaning": "請依規妥善回收空化學品瓶罐。"
+    "exampleMeaning": "請依規妥善回收空化學品瓶罐。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": false,
+    "mnemonic": "💡 裝盛專用測試溶劑的防爆【瓶子】！"
   },
   {
     "id": 29,
@@ -316,7 +456,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "bottom layer",
     "exampleSentence": "Inspect the bottom layer of the wafer.",
-    "exampleMeaning": "檢驗晶圓底層的平整度。"
+    "exampleMeaning": "檢驗晶圓底層的平整度。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶舟的最底層放置在【底部】！"
   },
   {
     "id": 30,
@@ -327,7 +472,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "broken wafer",
     "exampleSentence": "Stop machine immediately if a broken wafer occurs.",
-    "exampleMeaning": "若發生破片請立即停機隔離。"
+    "exampleMeaning": "若發生破片請立即停機隔離。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 晶圓摔到地上【破掉破碎的】！"
   },
   {
     "id": 31,
@@ -338,7 +488,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "cancel command",
     "exampleSentence": "Cancel the command if recipe name is incorrect.",
-    "exampleMeaning": "若配方名稱錯誤請立即取消指令。"
+    "exampleMeaning": "若配方名稱錯誤請立即取消指令。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 點錯按鈕別慌，按【看手】趕快【取消】！"
   },
   {
     "id": 32,
@@ -349,7 +504,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "ID card",
     "exampleSentence": "Always wear your company ID card in the fab.",
-    "exampleMeaning": "在廠內請務必隨身配戴識別證。"
+    "exampleMeaning": "在廠內請務必隨身配戴識別證。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 員工進出感應刷門禁的識別【卡片】！"
   },
   {
     "id": 33,
@@ -360,7 +520,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "transport cart",
     "exampleSentence": "Push the transport cart slowly in the hallway.",
-    "exampleMeaning": "在走廊推運送推車時請減速慢行。"
+    "exampleMeaning": "在走廊推運送推車時請減速慢行。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": false,
+    "mnemonic": "💡 推著【卡丁車】一樣的推車送貨【手推車】！"
   },
   {
     "id": 34,
@@ -371,7 +536,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "load cassette",
     "exampleSentence": "Load the cassette into the stocker port.",
-    "exampleMeaning": "將晶圓盒裝載至儲存櫃載入端口。"
+    "exampleMeaning": "將晶圓盒裝載至儲存櫃載入端口。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 晶片【卡死特】在裡面的【晶片專用盒／晶舟】！"
   },
   {
     "id": 35,
@@ -382,7 +552,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "wafer center",
     "exampleSentence": "Align the robot blade with the wafer center.",
-    "exampleMeaning": "讓機械手臂承載托盤對準晶圓中心。"
+    "exampleMeaning": "讓機械手臂承載托盤對準晶圓中心。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 旋塗光阻時液體滴在晶圓【中心】！"
   },
   {
     "id": 36,
@@ -393,7 +568,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "certify operator",
     "exampleSentence": "The trainer will certify the new operator.",
-    "exampleMeaning": "訓練員將考核並認證新進操作員。"
+    "exampleMeaning": "訓練員將考核並認證新進操作員。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": false,
+    "mnemonic": "💡 技術員考核通過頒發【證實／認證】！"
   },
   {
     "id": 37,
@@ -404,7 +584,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "change recipe",
     "exampleSentence": "Confirm lot ID before you change the recipe.",
-    "exampleMeaning": "更改配方前請務必核對批號。"
+    "exampleMeaning": "更改配方前請務必核對批號。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 刀片鈍了立刻進行【更換】！"
   },
   {
     "id": 38,
@@ -415,7 +600,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "control chart",
     "exampleSentence": "Review the SPC control chart every hour.",
-    "exampleMeaning": "每小時檢視一次 SPC 管制圖趨勢。"
+    "exampleMeaning": "每小時檢視一次 SPC 管制圖趨勢。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 晨會投影機上看的良率【圖表】！"
   },
   {
     "id": 39,
@@ -426,7 +616,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "double check",
     "exampleSentence": "Double check the lot number with the run-card.",
-    "exampleMeaning": "與流程卡仔細雙重覆核批號。"
+    "exampleMeaning": "與流程卡仔細雙重覆核批號。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 拿起檢查表一項一項打勾【檢查】！"
   },
   {
     "id": 40,
@@ -437,7 +632,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "chemical waste",
     "exampleSentence": "Separate chemical waste into designated tanks.",
-    "exampleMeaning": "化學廢液必須分流倒入專用儲槽。"
+    "exampleMeaning": "化學廢液必須分流倒入專用儲槽。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 黃光與清洗製程用的【化學／化學品】！"
   },
   {
     "id": 41,
@@ -448,7 +648,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "silicon chip",
     "exampleSentence": "Each wafer contains hundreds of silicon chips.",
-    "exampleMeaning": "每一片晶圓包含數百個晶片晶粒。"
+    "exampleMeaning": "每一片晶圓包含數百個晶片晶粒。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 晶圓切割封裝完成的微型【晶片】！"
   },
   {
     "id": 42,
@@ -459,7 +664,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "choose option",
     "exampleSentence": "Choose the right option on the touch screen.",
-    "exampleMeaning": "在觸控螢幕上選擇正確的操作選項。"
+    "exampleMeaning": "在觸控螢幕上選擇正確的操作選項。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 在三個選項裡面仔細【挑選】！"
   },
   {
     "id": 43,
@@ -470,7 +680,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "clean surface",
     "exampleSentence": "Keep the load port surface completely clean.",
-    "exampleMeaning": "保持裝載端口表面完全清潔無塵。"
+    "exampleMeaning": "保持裝載端口表面完全清潔無塵。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": true,
+    "mnemonic": "💡 無塵布拿起來把桌面【清潔】乾淨！"
   },
   {
     "id": 44,
@@ -481,7 +696,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "clean chamber cycle",
     "exampleSentence": "Run a clean chamber cycle after twenty runs.",
-    "exampleMeaning": "每生產二十批後需執行腔體清潔程序。"
+    "exampleMeaning": "每生產二十批後需執行腔體清潔程序。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": false,
+    "mnemonic": "💡 機台內部必須維持真空的【潔淨腔體】！"
   },
   {
     "id": 45,
@@ -492,7 +712,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "clear message",
     "exampleSentence": "Clear the alarm message after solving the issue.",
-    "exampleMeaning": "排除問題後在系統上清除警報訊息。"
+    "exampleMeaning": "排除問題後在系統上清除警報訊息。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 擦拭乾淨，或者【清除】警報！"
   },
   {
     "id": 46,
@@ -503,7 +728,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "collect data",
     "exampleSentence": "Collect process data for the shift report.",
-    "exampleMeaning": "收集製程參數數據以供交接報告使用。"
+    "exampleMeaning": "收集製程參數數據以供交接報告使用。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把分散的螺絲通通【蒐集】起來！"
   },
   {
     "id": 47,
@@ -514,7 +744,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "color indicator",
     "exampleSentence": "Green color indicates normal operating status.",
-    "exampleMeaning": "綠色燈號表示機台處於正常運轉狀態。"
+    "exampleMeaning": "綠色燈號表示機台處於正常運轉狀態。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 警示燈有紅、黃、綠三種【顏色】！"
   },
   {
     "id": 48,
@@ -525,7 +760,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "shift comment",
     "exampleSentence": "Leave a detailed comment in the log sheet.",
-    "exampleMeaning": "在工作日誌中留下詳細的交接備註。"
+    "exampleMeaning": "在工作日誌中留下詳細的交接備註。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 在換班紀錄上寫下評語與【評論】！"
   },
   {
     "id": 49,
@@ -536,7 +776,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "company policy",
     "exampleSentence": "Follow TSMC company safety policies strictly.",
-    "exampleMeaning": "嚴格遵守台積電公司工安與各項規範。"
+    "exampleMeaning": "嚴格遵守台積電公司工安與各項規範。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 享譽全球的台積電半導體【公司】！"
   },
   {
     "id": 50,
@@ -547,7 +792,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "complete run",
     "exampleSentence": "Wait until the machine completes the entire run.",
-    "exampleMeaning": "靜候機台完整執行完畢該生產流程。"
+    "exampleMeaning": "靜候機台完整執行完畢該生產流程。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 工單上的200片已經全數【完成】！"
   },
   {
     "id": 51,
@@ -558,7 +808,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "host computer",
     "exampleSentence": "Upload the measurement results to the host computer.",
-    "exampleMeaning": "將量測結果上傳至主電腦伺服器。"
+    "exampleMeaning": "將量測結果上傳至主電腦伺服器。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 控制整個自動化生產線的工業【電腦】！"
   },
   {
     "id": 52,
@@ -569,7 +824,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "safety concern",
     "exampleSentence": "Report any safety concern to your leader.",
-    "exampleMeaning": "若有任何工安疑慮請立即向副理回報。"
+    "exampleMeaning": "若有任何工安疑慮請立即向副理回報。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": false,
+    "mnemonic": "💡 主管對這個瑕疵表示非常【擔憂關注】！"
   },
   {
     "id": 53,
@@ -580,7 +840,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "strictly confidential",
     "exampleSentence": "All fab manufacturing data is strictly confidential.",
-    "exampleMeaning": "所有晶圓廠製程數據均屬高度機密。"
+    "exampleMeaning": "所有晶圓廠製程數據均屬高度機密。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 台積電最高天條，絕對不能外流的【機密的】！"
   },
   {
     "id": 54,
@@ -591,7 +856,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "confirm lot ID",
     "exampleSentence": "Confirm the lot ID before pushing the start button.",
-    "exampleMeaning": "按下啟動鈕前務必核對確認批號。"
+    "exampleMeaning": "按下啟動鈕前務必核對確認批號。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 【看風】景前要先按【確認】鍵！"
   },
   {
     "id": 55,
@@ -602,7 +872,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "prevent contamination",
     "exampleSentence": "Wear face masks to prevent particle contamination.",
-    "exampleMeaning": "配戴口罩以避免微塵粒子汙染晶圓。"
+    "exampleMeaning": "配戴口罩以避免微塵粒子汙染晶圓。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 晶圓絕對不能被雜質沾染產生【污染】！"
   },
   {
     "id": 56,
@@ -613,7 +888,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "continue process",
     "exampleSentence": "Check equipment status before you continue.",
-    "exampleMeaning": "繼續運作前請再次確認機台狀態正常。"
+    "exampleMeaning": "繼續運作前請再次確認機台狀態正常。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：繼續"
   },
   {
     "id": 57,
@@ -624,7 +904,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "temperature control",
     "exampleSentence": "Maintain precise temperature control in the furnace.",
-    "exampleMeaning": "在爐管製程中維持精確的溫度控制。"
+    "exampleMeaning": "在爐管製程中維持精確的溫度控制。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：控制"
   },
   {
     "id": 58,
@@ -635,7 +920,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "copy file",
     "exampleSentence": "Do not copy unauthorized files on the terminal.",
-    "exampleMeaning": "機台終端機嚴禁複製未經許可的檔案。"
+    "exampleMeaning": "機台終端機嚴禁複製未經許可的檔案。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把資料【拷貝／複製】一份存檔！"
   },
   {
     "id": 59,
@@ -646,7 +936,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "wafer count",
     "exampleSentence": "Check that the wafer count equals 25.",
-    "exampleMeaning": "確認晶圓盒內的片數是否整卡滿 25 片。"
+    "exampleMeaning": "確認晶圓盒內的片數是否整卡滿 25 片。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 用紅外線感測器重新【計算】數量！"
   },
   {
     "id": 60,
@@ -657,7 +952,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "customer wafer",
     "exampleSentence": "Handle customer wafers with extra care.",
-    "exampleMeaning": "搬運與處理客戶晶圓時務必格外小心。"
+    "exampleMeaning": "搬運與處理客戶晶圓時務必格外小心。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 蘋果高通輝達等重要下單【客戶】！"
   },
   {
     "id": 61,
@@ -668,7 +968,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "clean cycle",
     "exampleSentence": "Do not interrupt the automated clean cycle.",
-    "exampleMeaning": "請勿中途中斷自動清洗循環。"
+    "exampleMeaning": "請勿中途中斷自動清洗循環。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 像摩天輪一樣不斷循環的【週期】！"
   },
   {
     "id": 62,
@@ -679,7 +984,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "reduce cycle time",
     "exampleSentence": "Optimize workflow to reduce wafer cycle time.",
-    "exampleMeaning": "最佳化作業流程以縮短晶圓生產週期。"
+    "exampleMeaning": "最佳化作業流程以縮短晶圓生產週期。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": true,
+    "mnemonic": "💡 一批貨從進站到出站耗費的【生產週期】！"
   },
   {
     "id": 63,
@@ -690,7 +1000,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "daily meeting",
     "exampleSentence": "Attend the daily shift meeting on time.",
-    "exampleMeaning": "準時出席每日交接晨會或夕會。"
+    "exampleMeaning": "準時出席每日交接晨會或夕會。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 每天都要執行的【每日的】點檢！"
   },
   {
     "id": 64,
@@ -701,7 +1016,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "log data",
     "exampleSentence": "Save the inspection log data immediately.",
-    "exampleMeaning": "立即將量測與檢驗數據存檔備份。"
+    "exampleMeaning": "立即將量測與檢驗數據存檔備份。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 機台跑完自動上傳中央伺服器的【資料】！"
   },
   {
     "id": 65,
@@ -712,7 +1032,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "due date",
     "exampleSentence": "Verify the expiration date of the chemical.",
-    "exampleMeaning": "確認化學藥劑的有效保存期限。"
+    "exampleMeaning": "確認化學藥劑的有效保存期限。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 工單右上方填寫今天的【日期】！"
   },
   {
     "id": 66,
@@ -723,7 +1048,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "yield decline",
     "exampleSentence": "Investigate causes if daily yield shows decline.",
-    "exampleMeaning": "良率出現下滑時需立即追查異常原因。"
+    "exampleMeaning": "良率出現下滑時需立即追查異常原因。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 機台老化導致良率出現【減少／下降】！"
   },
   {
     "id": 67,
@@ -734,7 +1064,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "defect inspection",
     "exampleSentence": "Inspect wafer surface for any visual defect.",
-    "exampleMeaning": "檢查晶圓表面是否有刮傷或任何微外觀缺陷。"
+    "exampleMeaning": "檢查晶圓表面是否有刮傷或任何微外觀缺陷。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 產品有瑕疵，【地飛客】氣得客訴退貨！"
   },
   {
     "id": 68,
@@ -745,7 +1080,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "production delay",
     "exampleSentence": "Report equipment issues to avoid production delay.",
-    "exampleMeaning": "即時回報機台障礙以避免生產延遲。"
+    "exampleMeaning": "即時回報機台障礙以避免生產延遲。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": true,
+    "mnemonic": "💡 機台停機導致生產時程【延遲】！"
   },
   {
     "id": 69,
@@ -756,7 +1096,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "delete recipe",
     "exampleSentence": "Never delete recipe files from the machine.",
-    "exampleMeaning": "絕不可隨意刪除機台內的配方檔案。"
+    "exampleMeaning": "絕不可隨意刪除機台內的配方檔案。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 按下鍵盤上的Del鍵【刪除】！"
   },
   {
     "id": 70,
@@ -767,7 +1112,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "diffusion area",
     "exampleSentence": "Diffusion furnace operates at very high temperatures.",
-    "exampleMeaning": "擴散製程區的高溫爐管處於極高溫度。"
+    "exampleMeaning": "擴散製程區的高溫爐管處於極高溫度。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 高溫爐管把原子打進去的【擴散製程】！"
   },
   {
     "id": 71,
@@ -778,7 +1128,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "standard document",
     "exampleSentence": "Follow the operational standard document.",
-    "exampleMeaning": "所有操作步驟均須參照標準作業文件。"
+    "exampleMeaning": "所有操作步驟均須參照標準作業文件。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": false,
+    "mnemonic": "💡 廠區內保存的紙本機密【文件】！"
   },
   {
     "id": 72,
@@ -789,7 +1144,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "spin dry",
     "exampleSentence": "The wafer is spun dry after chemical rinse.",
-    "exampleMeaning": "晶圓經化學清洗後會進行旋轉甩乾。"
+    "exampleMeaning": "晶圓經化學清洗後會進行旋轉甩乾。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓洗完後用氮氣吹到【乾的】！"
   },
   {
     "id": 73,
@@ -800,7 +1160,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "emergency exit",
     "exampleSentence": "Know the location of every emergency exit.",
-    "exampleMeaning": "牢記無塵室內各個緊急逃生出口位置。"
+    "exampleMeaning": "牢記無塵室內各個緊急逃生出口位置。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 看到【一抹針死】快跑，發生【緊急情況】！"
   },
   {
     "id": 74,
@@ -811,7 +1176,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "press emergency stop",
     "exampleSentence": "Press emergency stop in case of mechanical jam.",
-    "exampleMeaning": "機台發生機械卡死時立即拍下急停鈕。"
+    "exampleMeaning": "機台發生機械卡死時立即拍下急停鈕。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 救命大紅鈕！一掌拍下去【緊急停止】！"
   },
   {
     "id": 75,
@@ -822,7 +1192,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "process engineer",
     "exampleSentence": "Contact the process engineer to release hold lots.",
-    "exampleMeaning": "聯絡製程工程師協助解批卡住的貨。"
+    "exampleMeaning": "聯絡製程工程師協助解批卡住的貨。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 負責寫配方抓問題的製程與設備【工程師】！"
   },
   {
     "id": 76,
@@ -833,7 +1208,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "enhance quality",
     "exampleSentence": "Continuous checks enhance overall yield and quality.",
-    "exampleMeaning": "持續點檢有助於提升整體良率與品質。"
+    "exampleMeaning": "持續點檢有助於提升整體良率與品質。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 透過優化參數進一步【增進／提升】效率！"
   },
   {
     "id": 77,
@@ -844,7 +1224,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "enter clean room",
     "exampleSentence": "Put on booties before you enter the gowning room.",
-    "exampleMeaning": "進入更衣室前請先套上鞋套。"
+    "exampleMeaning": "進入更衣室前請先套上鞋套。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 刷識別證後【進入】無塵室！"
   },
   {
     "id": 78,
@@ -855,7 +1240,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "fab environment",
     "exampleSentence": "Maintain strict humidity in the fab environment.",
-    "exampleMeaning": "廠房環境需保持嚴格的恆溫恆濕控制。"
+    "exampleMeaning": "廠房環境需保持嚴格的恆溫恆濕控制。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": false,
+    "mnemonic": "💡 無塵室的溫濕度【環境】要求極高！"
   },
   {
     "id": 79,
@@ -866,7 +1256,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "equipment status",
     "exampleSentence": "Verify that the equipment is green before loading.",
-    "exampleMeaning": "上貨前確認機台燈號呈現綠色可生產。"
+    "exampleMeaning": "上貨前確認機台燈號呈現綠色可生產。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 廠區裡每一台造價上億的【設備／機台】！"
   },
   {
     "id": 80,
@@ -877,7 +1272,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "error code",
     "exampleSentence": "Write down the error code displayed on screen.",
-    "exampleMeaning": "抄寫記錄螢幕上顯示的異常錯誤代碼。"
+    "exampleMeaning": "抄寫記錄螢幕上顯示的異常錯誤代碼。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 螢幕紅字跳【error】就是出【錯誤】啦！"
   },
   {
     "id": 81,
@@ -888,7 +1288,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "etching process",
     "exampleSentence": "Dry etching removes material from the wafer surface.",
-    "exampleMeaning": "乾式蝕刻製程能精準剝除晶圓表面膜層。"
+    "exampleMeaning": "乾式蝕刻製程能精準剝除晶圓表面膜層。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 用酸或氣體雕刻線路的【蝕刻製程】！"
   },
   {
     "id": 82,
@@ -899,7 +1304,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "EUV lithography",
     "exampleSentence": "EUV lithography produces advanced node chips.",
-    "exampleMeaning": "極紫外光微影技術用於生產最先進製程晶片。"
+    "exampleMeaning": "極紫外光微影技術用於生產最先進製程晶片。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 艾司摩爾最昂貴曝光機使用的【極紫外光】！"
   },
   {
     "id": 83,
@@ -910,7 +1320,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "event log",
     "exampleSentence": "Record every tool down event into the system.",
-    "exampleMeaning": "將機台當機與停機事件詳實登錄系統。"
+    "exampleMeaning": "將機台當機與停機事件詳實登錄系統。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 系統內詳實記載發生的每一件【事件】！"
   },
   {
     "id": 84,
@@ -921,7 +1336,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "execute command",
     "exampleSentence": "Execute the batch command after confirmation.",
-    "exampleMeaning": "覆核無誤後方可執行批次加載指令。"
+    "exampleMeaning": "覆核無誤後方可執行批次加載指令。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 【一腳去死】的決心按下【執行】運算！"
   },
   {
     "id": 85,
@@ -932,7 +1352,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "emergency exit",
     "exampleSentence": "Keep the emergency exit path clear of carts.",
-    "exampleMeaning": "保持緊急疏散走道順暢，嚴禁堆放推車。"
+    "exampleMeaning": "保持緊急疏散走道順暢，嚴禁堆放推車。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 緊急疏散時尋找綠色【安全出口／退出】！"
   },
   {
     "id": 86,
@@ -943,7 +1368,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "machine fault",
     "exampleSentence": "Technician called maintenance for machine fault.",
-    "exampleMeaning": "機台發生硬體故障，技術員已聯絡設備課。"
+    "exampleMeaning": "機台發生硬體故障，技術員已聯絡設備課。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": false,
+    "mnemonic": "💡 機台有【否認的故障】就是出現【錯誤／故障】！"
   },
   {
     "id": 87,
@@ -954,7 +1384,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "find root cause",
     "exampleSentence": "Engineers work to find the root cause of defect.",
-    "exampleMeaning": "工程師與技術員通力合作找出缺陷真因。"
+    "exampleMeaning": "工程師與技術員通力合作找出缺陷真因。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 在顯微鏡下【發現】微小髒污！"
   },
   {
     "id": 88,
@@ -965,7 +1400,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "raised floor",
     "exampleSentence": "Cables and pipes run beneath the fab raised floor.",
-    "exampleMeaning": "無塵室高架地板下方鋪設了管線與電纜。"
+    "exampleMeaning": "無塵室高架地板下方鋪設了管線與電纜。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": false,
+    "mnemonic": "💡 無塵室的【地板】都是高架開孔防靜電的！"
   },
   {
     "id": 89,
@@ -976,7 +1416,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "laser focus",
     "exampleSentence": "Calibrate the laser focus before exposure.",
-    "exampleMeaning": "曝光前需精準校正雷射對焦焦點。"
+    "exampleMeaning": "曝光前需精準校正雷射對焦焦點。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：焦點"
   },
   {
     "id": 90,
@@ -987,7 +1432,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "follow SOP",
     "exampleSentence": "Always follow the SOP without skipping steps.",
-    "exampleMeaning": "嚴格遵守標準作業程序，不可跳過任何步驟。"
+    "exampleMeaning": "嚴格遵守標準作業程序，不可跳過任何步驟。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 嚴格【照做／跟隨】SOP步驟！"
   },
   {
     "id": 91,
@@ -998,7 +1448,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "screen freeze",
     "exampleSentence": "Reboot the terminal if the UI screen freezes.",
-    "exampleMeaning": "若控制面板畫面當機凍結請回報處理。"
+    "exampleMeaning": "若控制面板畫面當機凍結請回報處理。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 畫面卡死動彈不得叫【凍結／當機】！"
   },
   {
     "id": 92,
@@ -1009,7 +1464,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "cassette full",
     "exampleSentence": "The cassette is full with 25 silicon wafers.",
-    "exampleMeaning": "該晶圓盒目前已裝滿 25 片完整晶圓。"
+    "exampleMeaning": "該晶圓盒目前已裝滿 25 片完整晶圓。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶舟裡面25片塞得【滿的】！"
   },
   {
     "id": 93,
@@ -1020,7 +1480,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "safety function",
     "exampleSentence": "Test the interlock safety function regularly.",
-    "exampleMeaning": "定期檢測機台互鎖安全防護機能。"
+    "exampleMeaning": "定期檢測機台互鎖安全防護機能。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 按鈕各司其職具備不同【功能】！"
   },
   {
     "id": 94,
@@ -1031,7 +1496,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "specialty gas",
     "exampleSentence": "Check the specialty gas pressure gauges daily.",
-    "exampleMeaning": "每日例行抄檢特殊製程氣體之壓力表數值。"
+    "exampleMeaning": "每日例行抄檢特殊製程氣體之壓力表數值。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 蝕刻機台鋼瓶輸送的高純度【氣體】！"
   },
   {
     "id": 95,
@@ -1042,7 +1512,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "safety glasses",
     "exampleSentence": "Put on safety glasses before pouring liquid.",
-    "exampleMeaning": "傾倒藥水前務必戴好防護面罩或護目鏡。"
+    "exampleMeaning": "傾倒藥水前務必戴好防護面罩或護目鏡。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": false,
+    "mnemonic": "💡 精密光學感應鏡頭上的【玻璃／鏡片】！"
   },
   {
     "id": 96,
@@ -1053,7 +1528,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "nitrile gloves",
     "exampleSentence": "Change clean room gloves if tears appear.",
-    "exampleMeaning": "無塵室手套若有磨損或破損請立即更換。"
+    "exampleMeaning": "無塵室手套若有磨損或破損請立即更換。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": true,
+    "mnemonic": "💡 進無塵室雙手必須戴好【手套】！"
   },
   {
     "id": 97,
@@ -1064,7 +1544,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "product grade",
     "exampleSentence": "Sort the finished chips according to product grade.",
-    "exampleMeaning": "依照產品品質等級將晶片分類儲存。"
+    "exampleMeaning": "依照產品品質等級將晶片分類儲存。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": false,
+    "mnemonic": "💡 品質好的晶圓打上A【等級】！"
   },
   {
     "id": 98,
@@ -1075,7 +1560,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "green light",
     "exampleSentence": "Machine is ready to run when the green light is on.",
-    "exampleMeaning": "綠燈亮起表示機台處於備便可生產狀態。"
+    "exampleMeaning": "綠燈亮起表示機台處於備便可生產狀態。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 代表機台正常運轉中最安心的【綠色】！"
   },
   {
     "id": 99,
@@ -1086,7 +1576,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "module group",
     "exampleSentence": "Coordinate tasks within your module group.",
-    "exampleMeaning": "在所屬課別模組小組內緊密配合工作。"
+    "exampleMeaning": "在所屬課別模組小組內緊密配合工作。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 產線內劃分成不同機能的【群組】！"
   },
   {
     "id": 100,
@@ -1097,7 +1592,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "handle wafer",
     "exampleSentence": "Handle the wafer only with designated vacuum wands.",
-    "exampleMeaning": "僅可使用專用真空吸筆拿取晶圓邊緣。"
+    "exampleMeaning": "僅可使用專用真空吸筆拿取晶圓邊緣。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 小心翼翼【處理】這批易碎晶圓！"
   },
   {
     "id": 101,
@@ -1108,7 +1608,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "system hard-disk",
     "exampleSentence": "System logs are stored on the local hard-disk.",
-    "exampleMeaning": "機台運作日誌存儲於機載硬碟中。"
+    "exampleMeaning": "機台運作日誌存儲於機載硬碟中。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 儲存十年生產歷史紀錄的大容量【硬盤】！"
   },
   {
     "id": 102,
@@ -1119,7 +1624,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "heavy equipment",
     "exampleSentence": "Use ergonomic lifting when moving heavy boxes.",
-    "exampleMeaning": "搬運較重之零件箱體時請善用符合人體工學姿勢。"
+    "exampleMeaning": "搬運較重之零件箱體時請善用符合人體工學姿勢。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 搬運大型零件太【重的】請兩個人一起抬！"
   },
   {
     "id": 103,
@@ -1130,7 +1640,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "safety helmet",
     "exampleSentence": "Wear a safety helmet during tool maintenance.",
-    "exampleMeaning": "機台歲修保養施工期間請務必配戴工程安全帽。"
+    "exampleMeaning": "機台歲修保養施工期間請務必配戴工程安全帽。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": true,
+    "mnemonic": "💡 頭頂要戴好硬邦邦的【安全帽】！"
   },
   {
     "id": 104,
@@ -1141,7 +1656,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "ask for help",
     "exampleSentence": "Ask your shift buddy for help when in doubt.",
-    "exampleMeaning": "若對步驟有疑慮時，立即向組長或同仁求助。"
+    "exampleMeaning": "若對步驟有疑慮時，立即向組長或同仁求助。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 主動伸出雙手提供同事【幫助】！"
   },
   {
     "id": 105,
@@ -1152,7 +1672,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "hold lot",
     "exampleSentence": "Put the lot on hold until inspection finishes.",
-    "exampleMeaning": "暫停該批次貨件運送，等待品檢判定。"
+    "exampleMeaning": "暫停該批次貨件運送，等待品檢判定。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：暫停"
   },
   {
     "id": 106,
@@ -1163,7 +1688,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "contact hole",
     "exampleSentence": "Verify that the contact hole has no residue.",
-    "exampleMeaning": "檢測接觸孔洞底層是否有任何殘留物。"
+    "exampleMeaning": "檢測接觸孔洞底層是否有任何殘留物。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓表面被打穿一個【孔／洞】！"
   },
   {
     "id": 107,
@@ -1174,7 +1704,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "hot surface",
     "exampleSentence": "Caution: Hot surface warning on furnace tubes.",
-    "exampleMeaning": "注意：高溫爐管外壁具有灼熱高溫警示。"
+    "exampleMeaning": "注意：高溫爐管外壁具有灼熱高溫警示。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 剛從爐管出爐非常【熱的】！"
   },
   {
     "id": 108,
@@ -1185,7 +1720,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "yield impact",
     "exampleSentence": "Assess whether particle count has a yield impact.",
-    "exampleMeaning": "評估落塵微粒增加是否會對良率造成衝擊。"
+    "exampleMeaning": "評估落塵微粒增加是否會對良率造成衝擊。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：影馨"
   },
   {
     "id": 109,
@@ -1196,7 +1736,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "improve yield",
     "exampleSentence": "Adhere to clean procedures to improve yield.",
-    "exampleMeaning": "落實無塵室清潔標準作業以提升良率。"
+    "exampleMeaning": "落實無塵室清潔標準作業以提升良率。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：改善"
   },
   {
     "id": 110,
@@ -1207,7 +1752,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "inform supervisor",
     "exampleSentence": "Inform your supervisor of any tool abnormality.",
-    "exampleMeaning": "機台發生任何異常請第一時間回報主管。"
+    "exampleMeaning": "機台發生任何異常請第一時間回報主管。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 發現異常立即打電話【通知】組長！"
   },
   {
     "id": 111,
@@ -1218,7 +1768,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "lot information",
     "exampleSentence": "Check lot information on the MES terminal.",
-    "exampleMeaning": "在製造執行系統 (MES) 終端機上核對貨批資訊。"
+    "exampleMeaning": "在製造執行系統 (MES) 終端機上核對貨批資訊。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 系統內記載各批產品的詳細【資訊】！"
   },
   {
     "id": 112,
@@ -1229,7 +1784,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tool inhibition",
     "exampleSentence": "Tool inhibition prevents loading wrong recipes.",
-    "exampleMeaning": "機台互鎖防呆機制可防止載入錯誤配方。"
+    "exampleMeaning": "機台互鎖防呆機制可防止載入錯誤配方。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": false,
+    "mnemonic": "💡 機台亮紅燈【硬是逼你】停下來【禁止】操作！"
   },
   {
     "id": 113,
@@ -1240,7 +1800,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "input parameter",
     "exampleSentence": "Input the parameter values specified by S.O.P.",
-    "exampleMeaning": "依照 SOP 規定數值精確輸入製程參數。"
+    "exampleMeaning": "依照 SOP 規定數值精確輸入製程參數。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 鍵盤打入數值，進行資料【輸入】！"
   },
   {
     "id": 114,
@@ -1251,7 +1816,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "inspect cassette",
     "exampleSentence": "Inspect cassette edges for physical scratches.",
-    "exampleMeaning": "仔細目視檢查晶圓盒外框是否有磨損刮傷。"
+    "exampleMeaning": "仔細目視檢查晶圓盒外框是否有磨損刮傷。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 拿顯微鏡仔細【審查／檢查】！"
   },
   {
     "id": 115,
@@ -1262,7 +1832,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "wafer inspection",
     "exampleSentence": "Send samples for microscopic wafer inspection.",
-    "exampleMeaning": "抽樣晶圓送往顯微鏡進行高解析外觀檢驗。"
+    "exampleMeaning": "抽樣晶圓送往顯微鏡進行高解析外觀檢驗。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 正在進行產品【檢驗程序】！"
   },
   {
     "id": 116,
@@ -1273,7 +1848,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "follow instruction",
     "exampleSentence": "Carry out each step following the work instruction.",
-    "exampleMeaning": "遵照作業指引卡上的每一步驟確實操作。"
+    "exampleMeaning": "遵照作業指引卡上的每一步驟確實操作。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 系統跳出來一步一步引導的【指令／說明】！"
   },
   {
     "id": 117,
@@ -1284,7 +1864,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "intranet access",
     "exampleSentence": "Fab workstations connect only to internal network.",
-    "exampleMeaning": "廠區機台工作站僅限連線內部管制網路。"
+    "exampleMeaning": "廠區機台工作站僅限連線內部管制網路。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 全球互相溝通的【網際網路】！"
   },
   {
     "id": 118,
@@ -1295,7 +1880,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "job interview",
     "exampleSentence": "Explain your shift adaptability during the interview.",
-    "exampleMeaning": "面試時具體展現您對四班二輪與細心度的適應力。"
+    "exampleMeaning": "面試時具體展現您對四班二輪與細心度的適應力。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 穿戴整齊去台積電人資【面試】！"
   },
   {
     "id": 119,
@@ -1306,7 +1896,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "report issue",
     "exampleSentence": "Log the mechanical issue in the online system.",
-    "exampleMeaning": "將機台機械異常問題即刻通報登錄系統。"
+    "exampleMeaning": "將機台機械異常問題即刻通報登錄系統。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": true,
+    "mnemonic": "💡 晨會上提出討論的品質【議題／問題】！"
   },
   {
     "id": 120,
@@ -1317,7 +1912,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "shift job",
     "exampleSentence": "Technician job demands focus and adherence to rules.",
-    "exampleMeaning": "技術員工作要求高度專注並嚴格遵循規範。"
+    "exampleMeaning": "技術員工作要求高度專注並嚴格遵循規範。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 這是一份穩定有保障的【工作】！"
   },
   {
     "id": 121,
@@ -1328,7 +1928,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "keep clean",
     "exampleSentence": "Keep your working station orderly and clean.",
-    "exampleMeaning": "隨時保持機台機台工作站整齊與乾淨。"
+    "exampleMeaning": "隨時保持機台機台工作站整齊與乾淨。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 時刻【保持】無塵室走道暢通！"
   },
   {
     "id": 122,
@@ -1339,7 +1944,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "clean keyboard",
     "exampleSentence": "Cover the keyboard with clean protective film.",
-    "exampleMeaning": "機台鍵盤外部需包覆專用抗靜電保護膜。"
+    "exampleMeaning": "機台鍵盤外部需包覆專用抗靜電保護膜。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 工業電腦前打指令用的【鍵盤】！"
   },
   {
     "id": 123,
@@ -1350,7 +1960,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "barcode label",
     "exampleSentence": "Scan the barcode label before loading wafers.",
-    "exampleMeaning": "將晶圓盒上架前請先用讀碼槍掃描條碼標籤。"
+    "exampleMeaning": "將晶圓盒上架前請先用讀碼槍掃描條碼標籤。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 盒子上印著二維條碼的【標籤貼紙】！"
   },
   {
     "id": 124,
@@ -1361,7 +1976,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "analytical laboratory",
     "exampleSentence": "Send chemical samples to the laboratory for analysis.",
-    "exampleMeaning": "將化學品樣品送至分析實驗室檢驗濃度。"
+    "exampleMeaning": "將化學品樣品送至分析實驗室檢驗濃度。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：實驗室"
   },
   {
     "id": 125,
@@ -1372,7 +1992,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "shift leader",
     "exampleSentence": "Report attendance directly to your shift leader.",
-    "exampleMeaning": "班前請先向值班帶線組長報到。"
+    "exampleMeaning": "班前請先向值班帶線組長報到。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 現場排班指導新人的班手【組長】！"
   },
   {
     "id": 126,
@@ -1383,7 +2008,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "learn SOP",
     "exampleSentence": "Take time to learn every step in the new SOP.",
-    "exampleMeaning": "花時間認真熟讀並學會新修訂的 SOP 流程。"
+    "exampleMeaning": "花時間認真熟讀並學會新修訂的 SOP 流程。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 每天上班虛心向師父【學習】！"
   },
   {
     "id": 127,
@@ -1394,7 +2024,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "liquid level",
     "exampleSentence": "Check the liquid level sensor before starting.",
-    "exampleMeaning": "啟動前請先確認化學槽液位感測器正常。"
+    "exampleMeaning": "啟動前請先確認化學槽液位感測器正常。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 液體表面目前的高低【程度／水平】！"
   },
   {
     "id": 128,
@@ -1405,7 +2040,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "elevator lift",
     "exampleSentence": "The cassette lift moves wafers smoothly up.",
-    "exampleMeaning": "機台內部升降機構能平穩托起晶圓盒。"
+    "exampleMeaning": "機台內部升降機構能平穩托起晶圓盒。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 用雙手把笨重的治具【抬起／舉起】！"
   },
   {
     "id": 129,
@@ -1416,7 +2056,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "warning light",
     "exampleSentence": "Amber warning light means tool needs operator attention.",
-    "exampleMeaning": "黃色警示燈代表機台需要技術員介入處理。"
+    "exampleMeaning": "黃色警示燈代表機台需要技術員介入處理。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：光"
   },
   {
     "id": 130,
@@ -1427,7 +2072,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "production line",
     "exampleSentence": "Clean room production line runs twenty-four hours.",
-    "exampleMeaning": "無塵室晶圓生產線採全年無休二十四小時運轉。"
+    "exampleMeaning": "無塵室晶圓生產線採全年無休二十四小時運轉。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓表面雕刻的一條微細【直線】！"
   },
   {
     "id": 131,
@@ -1438,7 +2088,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "MES link",
     "exampleSentence": "Ensure the tool is online with active MES link.",
-    "exampleMeaning": "確認機台通訊處於連線中且 MES 連結正常。"
+    "exampleMeaning": "確認機台通訊處於連線中且 MES 連結正常。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 點選網頁超連結【連結】！"
   },
   {
     "id": 132,
@@ -1449,7 +2104,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "cleaning liquid",
     "exampleSentence": "Pump cleaning liquid into the rinse chamber.",
-    "exampleMeaning": "將高純度清洗液泵入清洗腔體內。"
+    "exampleMeaning": "將高純度清洗液泵入清洗腔體內。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 容器裡面裝盛的透明【液體】！"
   },
   {
     "id": 133,
@@ -1460,7 +2120,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "checklist",
     "exampleSentence": "Check off every item on the daily checklist.",
-    "exampleMeaning": "逐一勾選日常機台點檢表上的所有檢驗項目。"
+    "exampleMeaning": "逐一勾選日常機台點檢表上的所有檢驗項目。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：清單"
   },
   {
     "id": 134,
@@ -1471,7 +2136,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "lithography track",
     "exampleSentence": "Lithography process transfers patterns onto wafer.",
-    "exampleMeaning": "黃光微影製程負責將電路圖案轉移至晶圓上。"
+    "exampleMeaning": "黃光微影製程負責將電路圖案轉移至晶圓上。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 晶圓塗光阻照光的【黃光／微影製程】！"
   },
   {
     "id": 135,
@@ -1482,7 +2152,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "load wafer",
     "exampleSentence": "Load the wafer cassette onto port one carefully.",
-    "exampleMeaning": "小心將晶圓盒載入至第一號進料端口。"
+    "exampleMeaning": "小心將晶圓盒載入至第一號進料端口。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 把晶舟推進機台入口叫【上貨／裝載】！"
   },
   {
     "id": 136,
@@ -1493,7 +2168,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "loading port",
     "exampleSentence": "Do not block the loading port with spare carts.",
-    "exampleMeaning": "請勿將備用推車停放在機台裝載口前方阻擋。"
+    "exampleMeaning": "請勿將備用推車停放在機台裝載口前方阻擋。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：負荷"
   },
   {
     "id": 137,
@@ -1504,7 +2184,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "fab lobby",
     "exampleSentence": "Visitors must register at the reception lobby.",
-    "exampleMeaning": "外賓必須在晶圓廠一樓大廳櫃檯完成換證登記。"
+    "exampleMeaning": "外賓必須在晶圓廠一樓大廳櫃檯完成換證登記。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 訪客換證等候的明亮【大廳】！"
   },
   {
     "id": 138,
@@ -1515,7 +2200,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "tool location",
     "exampleSentence": "Verify the exact location of the target stocker.",
-    "exampleMeaning": "核對目標自動儲存櫃在無塵室中的確切代號位置。"
+    "exampleMeaning": "核對目標自動儲存櫃在無塵室中的確切代號位置。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 地圖上標註貨架存放的【位置】！"
   },
   {
     "id": 139,
@@ -1526,7 +2216,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "door lock",
     "exampleSentence": "Safety door lock engages while the robot moves.",
-    "exampleMeaning": "當內部機械手臂動作時，機台安全防護門會自動上鎖。"
+    "exampleMeaning": "當內部機械手臂動作時，機台安全防護門會自動上鎖。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 安全開關在運轉時會自動上【鎖住】！"
   },
   {
     "id": 140,
@@ -1537,7 +2232,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "sign log sheet",
     "exampleSentence": "Sign the log sheet after completing shift handover.",
-    "exampleMeaning": "完成交接盤點後，請在班別工作日誌上簽名覆核。"
+    "exampleMeaning": "完成交接盤點後，請在班別工作日誌上簽名覆核。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 每次動手作業都要手寫簽名的【工作紀錄表】！"
   },
   {
     "id": 141,
@@ -1548,7 +2248,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "lose track",
     "exampleSentence": "Scan barcodes carefully so system never loses track.",
-    "exampleMeaning": "確實刷讀條碼，確保系統不會遺漏追蹤任何一批貨。"
+    "exampleMeaning": "確實刷讀條碼，確保系統不會遺漏追蹤任何一批貨。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：遺失"
   },
   {
     "id": 142,
@@ -1559,7 +2264,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "wafer lot",
     "exampleSentence": "Each wafer lot typically contains twenty-five wafers.",
-    "exampleMeaning": "一個標準晶圓批通常包含二十五片晶圓。"
+    "exampleMeaning": "一個標準晶圓批通常包含二十五片晶圓。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 抽到【樂透】領一整大盒生產【批貨】！"
   },
   {
     "id": 143,
@@ -1570,7 +2280,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "machine status",
     "exampleSentence": "Check machine status before pressing the run key.",
-    "exampleMeaning": "按下啟動鍵前，務必再三檢視機台狀態。"
+    "exampleMeaning": "按下啟動鍵前，務必再三檢視機台狀態。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 正在自動作業的生產【機器】！"
   },
   {
     "id": 144,
@@ -1581,7 +2296,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "maintain tool",
     "exampleSentence": "Technicians and engineers maintain tool uptime.",
-    "exampleMeaning": "技術員與設備工程師通力維持機台高妥善運轉率。"
+    "exampleMeaning": "技術員與設備工程師通力維持機台高妥善運轉率。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 每天都要小心【維護】機器壽命！"
   },
   {
     "id": 145,
@@ -1592,7 +2312,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "manual mode",
     "exampleSentence": "Switch to manual mode only when authorized.",
-    "exampleMeaning": "僅在工程師授權下才可將機台切換至手動模式。"
+    "exampleMeaning": "僅在工程師授權下才可將機台切換至手動模式。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：手動的"
   },
   {
     "id": 146,
@@ -1603,7 +2328,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "manufacture chips",
     "exampleSentence": "TSMC manufactures world-leading semiconductor chips.",
-    "exampleMeaning": "台積電致力於製造全球最領先的半導體晶片。"
+    "exampleMeaning": "台積電致力於製造全球最領先的半導體晶片。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓廠大規模自動化【製造】！"
   },
   {
     "id": 147,
@@ -1614,7 +2344,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "alignment mark",
     "exampleSentence": "Robot optical sensor scans the alignment mark.",
-    "exampleMeaning": "機械手臂之光學感測器負責辨讀對齊標記。"
+    "exampleMeaning": "機械手臂之光學感測器負責辨讀對齊標記。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：記號"
   },
   {
     "id": 148,
@@ -1625,7 +2360,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "photomask",
     "exampleSentence": "Inspect the photomask for particles before exposure.",
-    "exampleMeaning": "曝光前仔細檢查光罩表面是否有落塵微粒。"
+    "exampleMeaning": "曝光前仔細檢查光罩表面是否有落塵微粒。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": true,
+    "mnemonic": "💡 臉上戴【口罩】，機台曝光用【光罩】！"
   },
   {
     "id": 149,
@@ -1636,7 +2376,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "raw material",
     "exampleSentence": "Check the raw material lot number before replenishment.",
-    "exampleMeaning": "化學耗材更換前請核對原材料之生產批號。"
+    "exampleMeaning": "化學耗材更換前請核對原材料之生產批號。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 倉庫領出生產晶圓的純矽【原料】！"
   },
   {
     "id": 150,
@@ -1647,7 +2392,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "measure thickness",
     "exampleSentence": "Measure oxide thickness at five points on the wafer.",
-    "exampleMeaning": "在晶圓表面量測五點氧化層膜厚均勻度。"
+    "exampleMeaning": "在晶圓表面量測五點氧化層膜厚均勻度。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 拿儀器量測厚度叫【量測／測量】！"
   },
   {
     "id": 151,
@@ -1658,7 +2408,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "mechanical arm",
     "exampleSentence": "Keep hands clear while the mechanical arm operates.",
-    "exampleMeaning": "機械手臂運動過程中嚴禁伸手伸入安全光柵內。"
+    "exampleMeaning": "機械手臂運動過程中嚴禁伸手伸入安全光柵內。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 齒輪與馬達構成的【機械的】構造！"
   },
   {
     "id": 152,
@@ -1669,7 +2424,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "merge lots",
     "exampleSentence": "Merge split lots according to engineer instructions.",
-    "exampleMeaning": "依照工程師開立之批單指示進行合批操作。"
+    "exampleMeaning": "依照工程師開立之批單指示進行合批操作。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把兩批散單合併成一大批【合併】！"
   },
   {
     "id": 153,
@@ -1680,7 +2440,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "system message",
     "exampleSentence": "Read the on-screen system message before proceeding.",
-    "exampleMeaning": "進行下一步操作前請詳閱螢幕上的系統提示訊息。"
+    "exampleMeaning": "進行下一步操作前請詳閱螢幕上的系統提示訊息。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 螢幕右下角跳出系統提示【訊息】！"
   },
   {
     "id": 154,
@@ -1691,7 +2456,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "metal deposition",
     "exampleSentence": "Thin metal layers form interconnects on the wafer.",
-    "exampleMeaning": "晶圓金屬薄膜沈積製程形成微米級電路導線。"
+    "exampleMeaning": "晶圓金屬薄膜沈積製程形成微米級電路導線。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": false,
+    "mnemonic": "💡 導電線路層使用的特殊【金屬】！"
   },
   {
     "id": 155,
@@ -1702,7 +2472,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "zero miss-operation",
     "exampleSentence": "Follow the double-check procedure to avoid miss-operation.",
-    "exampleMeaning": "嚴格落實覆核防呆程序，追求零誤動作。"
+    "exampleMeaning": "嚴格落實覆核防呆程序，追求零誤動作。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": true,
+    "mnemonic": "💡 按錯鈕手滑造成的【錯誤動作】！"
   },
   {
     "id": 156,
@@ -1713,7 +2488,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "monitor screen",
     "exampleSentence": "Watch the monitor screen for recipe progress.",
-    "exampleMeaning": "在操作螢幕上即時監視配方加工進度條。"
+    "exampleMeaning": "在操作螢幕上即時監視配方加工進度條。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 每天上班先跑一張晶片【監視器／測機】！"
   },
   {
     "id": 157,
@@ -1724,7 +2504,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "monthly maintenance",
     "exampleSentence": "The equipment undergoes monthly preventive maintenance.",
-    "exampleMeaning": "機台每個月均需定期執行停機預防保養 (PM)。"
+    "exampleMeaning": "機台每個月均需定期執行停機預防保養 (PM)。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": false,
+    "mnemonic": "💡 每個月發放津貼的【每月的】結算！"
   },
   {
     "id": 158,
@@ -1735,7 +2520,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "more wafers",
     "exampleSentence": "Load more wafers when the input port is clear.",
-    "exampleMeaning": "當進料端口淨空後即可裝載下一批晶圓。"
+    "exampleMeaning": "當進料端口淨空後即可裝載下一批晶圓。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 為了滿足客戶需要【更多的】產能！"
   },
   {
     "id": 159,
@@ -1746,7 +2536,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "robot move",
     "exampleSentence": "Wait until the robot completes its move.",
-    "exampleMeaning": "請靜待機械手臂完整歸位並停止動作。"
+    "exampleMeaning": "請靜待機械手臂完整歸位並停止動作。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 按照路線將貨物【移動】！"
   },
   {
     "id": 160,
@@ -1757,7 +2552,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "new recipe",
     "exampleSentence": "Test the new recipe under engineer supervision.",
-    "exampleMeaning": "在工程師陪同指導下測試新版配方。"
+    "exampleMeaning": "在工程師陪同指導下測試新版配方。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 剛開箱拆封的【新的】配件！"
   },
   {
     "id": 161,
@@ -1768,7 +2568,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "normal operation",
     "exampleSentence": "Confirm that vacuum pressure returns to normal.",
-    "exampleMeaning": "確認腔體內部真空度已恢復至正常規格值。"
+    "exampleMeaning": "確認腔體內部真空度已恢復至正常規格值。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 綠燈穩定常亮，機台運作【正常的】！"
   },
   {
     "id": 162,
@@ -1779,7 +2584,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "handover note",
     "exampleSentence": "Write down tool remarks in the handover note.",
-    "exampleMeaning": "將機台微異狀詳記於交接備忘錄提供下一班參考。"
+    "exampleMeaning": "將機台微異狀詳記於交接備忘錄提供下一班參考。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 隨身小筆記本上寫的【註解／便條】！"
   },
   {
     "id": 163,
@@ -1790,7 +2600,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "safety notice",
     "exampleSentence": "Read the safety notice posted near the acid bench.",
-    "exampleMeaning": "詳讀張貼於化學清洗機台旁的工安注意事項公告。"
+    "exampleMeaning": "詳讀張貼於化學清洗機台旁的工安注意事項公告。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 佈告欄上貼出最新工安【通知】！"
   },
   {
     "id": 164,
@@ -1801,7 +2616,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "lot number",
     "exampleSentence": "Type in the exact lot number on the keyboard.",
-    "exampleMeaning": "在鍵盤上精確輸入欲加工之晶圓批號。"
+    "exampleMeaning": "在鍵盤上精確輸入欲加工之晶圓批號。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶舟盒子外面刻印的流水【號碼】！"
   },
   {
     "id": 165,
@@ -1812,7 +2632,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "department office",
     "exampleSentence": "Handover meetings are held in the department office.",
-    "exampleMeaning": "每日交接會均於部課辦公室內準時召開。"
+    "exampleMeaning": "每日交接會均於部課辦公室內準時召開。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 主管打考績吹冷氣的【辦公室】！"
   },
   {
     "id": 166,
@@ -1823,7 +2648,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tool off-line",
     "exampleSentence": "Set tool off-line before technicians start maintenance.",
-    "exampleMeaning": "技術員開始執行保養前，請先將機台設為離線。"
+    "exampleMeaning": "技術員開始執行保養前，請先將機台設為離線。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 斷網或抽走晶片進行【離線的】測試！"
   },
   {
     "id": 167,
@@ -1834,7 +2664,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "arrive on time",
     "exampleSentence": "Always arrive on time for shift changeover.",
-    "exampleMeaning": "輪班交接班時請務必提前準時抵達無塵室。"
+    "exampleMeaning": "輪班交接班時請務必提前準時抵達無塵室。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": true,
+    "mnemonic": "💡 下班交接與出貨必須【準時】！"
   },
   {
     "id": 168,
@@ -1845,7 +2680,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "bring on-line",
     "exampleSentence": "Bring tool on-line after engineering approves release.",
-    "exampleMeaning": "工程師簽核放行後，即可將機台重新切回在線生產。"
+    "exampleMeaning": "工程師簽核放行後，即可將機台重新切回在線生產。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 網路正常連線狀態【在線的】！"
   },
   {
     "id": 169,
@@ -1856,7 +2696,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "standard operation",
     "exampleSentence": "Execute standard operation following every single step.",
-    "exampleMeaning": "遵照規範落實每一步標準作業，絕不圖快省略。"
+    "exampleMeaning": "遵照規範落實每一步標準作業，絕不圖快省略。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：操作"
   },
   {
     "id": 170,
@@ -1867,7 +2712,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "daily output",
     "exampleSentence": "Shift team worked safely to achieve the target daily output.",
-    "exampleMeaning": "輪班團隊在安全前提下齊心達成每日目標產能。"
+    "exampleMeaning": "輪班團隊在安全前提下齊心達成每日目標產能。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": true,
+    "mnemonic": "💡 一整天努力做出來的總件數叫做【輸出／產出】！"
   },
   {
     "id": 171,
@@ -1878,7 +2728,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "bake in oven",
     "exampleSentence": "Bake the photoresist in the oven at specified temperature.",
-    "exampleMeaning": "在烘烤箱中以設定溫度對光阻進行軟烤硬烤。"
+    "exampleMeaning": "在烘烤箱中以設定溫度對光阻進行軟烤硬烤。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": false,
+    "mnemonic": "💡 塗完光阻推進去加溫烘烤的【烤箱】！"
   },
   {
     "id": 172,
@@ -1889,7 +2744,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "work over time",
     "exampleSentence": "Over time hours are arranged according to labor regulations.",
-    "exampleMeaning": "加班出勤均依勞基法規定並預先安排確認。"
+    "exampleMeaning": "加班出勤均依勞基法規定並預先安排確認。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 產能爆滿下班留下來幫忙【加班】！"
   },
   {
     "id": 173,
@@ -1900,7 +2760,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "SOP page",
     "exampleSentence": "Turn to page three of the equipment manual.",
-    "exampleMeaning": "翻閱至機台操作手冊第三頁查看排除步驟。"
+    "exampleMeaning": "翻閱至機台操作手冊第三頁查看排除步驟。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 查閱SOP手冊翻到第幾【頁數】！"
   },
   {
     "id": 174,
@@ -1911,7 +2776,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "clean room paper",
     "exampleSentence": "Use only special clean room paper inside the fab.",
-    "exampleMeaning": "無塵室內僅能使用不起塵的專用無塵紙書寫。"
+    "exampleMeaning": "無塵室內僅能使用不起塵的專用無塵紙書寫。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 無塵室專用不會掉毛屑的無塵【紙張】！"
   },
   {
     "id": 175,
@@ -1922,7 +2792,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "recipe parameter",
     "exampleSentence": "Verify that every recipe parameter matches the spec.",
-    "exampleMeaning": "核對各項配方參數是否與規格書嚴格相符。"
+    "exampleMeaning": "核對各項配方參數是否與規格書嚴格相符。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 機台運轉的核心數值叫【參數】！"
   },
   {
     "id": 176,
@@ -1933,7 +2808,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "spare part",
     "exampleSentence": "Confirm the serial number of the replacement spare part.",
-    "exampleMeaning": "更換機台零件前核對備品序號。"
+    "exampleMeaning": "更換機台零件前核對備品序號。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 保養時拆下來更換的老化【零件】！"
   },
   {
     "id": 177,
@@ -1944,7 +2824,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "particle count",
     "exampleSentence": "High particle count triggers an automatic quality hold.",
-    "exampleMeaning": "微塵粒子超標將自動觸發晶圓品質暫停管制作業。"
+    "exampleMeaning": "微塵粒子超標將自動觸發晶圓品質暫停管制作業。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 【趴踢客】身上掉下來的【落塵／微粒】！"
   },
   {
     "id": 178,
@@ -1955,7 +2840,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "pass inspection",
     "exampleSentence": "Only wafers that pass inspection move to next step.",
-    "exampleMeaning": "唯有通過品質檢驗的晶圓才能放行至下個製程站點。"
+    "exampleMeaning": "唯有通過品質檢驗的晶圓才能放行至下個製程站點。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 測試結果亮綠燈，檢驗【合格／通過】！"
   },
   {
     "id": 179,
@@ -1966,7 +2856,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "login password",
     "exampleSentence": "Never share your system login password with others.",
-    "exampleMeaning": "絕不可將個人的機台登入密碼借調給他人使用。"
+    "exampleMeaning": "絕不可將個人的機台登入密碼借調給他人使用。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 登入機台螢幕必須輸入個人【密碼】！"
   },
   {
     "id": 180,
@@ -1977,7 +2872,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "perfect yield",
     "exampleSentence": "Dedicated team achieved perfect yield on sample run.",
-    "exampleMeaning": "技術員細心操作使試產批次達成了完美良率。"
+    "exampleMeaning": "技術員細心操作使試產批次達成了完美良率。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 良率達到100分，表現【完美的】！"
   },
   {
     "id": 181,
@@ -1988,7 +2888,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "personal safety",
     "exampleSentence": "Personal safety is the top priority in the fab.",
-    "exampleMeaning": "在晶圓廠內，同仁的人身安全永遠是第一優先。"
+    "exampleMeaning": "在晶圓廠內，同仁的人身安全永遠是第一優先。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 識別證與置物櫃屬於【個人的】物品！"
   },
   {
     "id": 182,
@@ -1999,7 +2904,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "ramp-up phase",
     "exampleSentence": "Follow strict guidelines during the new fab ramp-up phase.",
-    "exampleMeaning": "新廠產能爬坡擴產階段須嚴格遵守標準作業。"
+    "exampleMeaning": "新廠產能爬坡擴產階段須嚴格遵守標準作業。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 整個製程推進到了第二【階段】！"
   },
   {
     "id": 183,
@@ -2010,7 +2920,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "photo area",
     "exampleSentence": "Yellow lighting protects sensitive photoresist in photo area.",
-    "exampleMeaning": "黃光微影區採用黃色光源以保護光阻不被感光。"
+    "exampleMeaning": "黃光微影區採用黃色光源以保護光阻不被感光。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 黃光微影工程用的專用名詞【曝光／相片】！"
   },
   {
     "id": 184,
@@ -2021,7 +2936,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "shift plan",
     "exampleSentence": "Review the daily shift plan before distributing lots.",
-    "exampleMeaning": "派工前先審視當班生產計畫與排程目標。"
+    "exampleMeaning": "派工前先審視當班生產計畫與排程目標。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 生產線這個月的出貨【計劃】！"
   },
   {
     "id": 185,
@@ -2032,7 +2952,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "plus or minus",
     "exampleSentence": "Thickness tolerance is plus or minus five angstroms.",
-    "exampleMeaning": "膜厚容許公差為正負五個埃 (Angstrom)。"
+    "exampleMeaning": "膜厚容許公差為正負五個埃 (Angstrom)。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 基本產量再【加上】加班產量！"
   },
   {
     "id": 186,
@@ -2043,7 +2968,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "FOUP pod",
     "exampleSentence": "Transport FOUP pod with both hands holding bottom.",
-    "exampleMeaning": "雙手搬運晶圓傳送盒 (FOUP) 時請托住底部兩側。"
+    "exampleMeaning": "雙手搬運晶圓傳送盒 (FOUP) 時請托住底部兩側。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 傳送晶圓的密封手提箱【晶片傳送盒】！"
   },
   {
     "id": 187,
@@ -2054,7 +2984,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "key point",
     "exampleSentence": "Remember the key safety point during chemical hookup.",
-    "exampleMeaning": "牢記化學管路接管作業時的各項工安重點。"
+    "exampleMeaning": "牢記化學管路接管作業時的各項工安重點。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 測量時探針點在晶圓的一個【點】！"
   },
   {
     "id": 188,
@@ -2065,7 +3000,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "home position",
     "exampleSentence": "The robot arm returned safely to its home position.",
-    "exampleMeaning": "機械手臂已安全平穩回歸機械原點位置。"
+    "exampleMeaning": "機械手臂已安全平穩回歸機械原點位置。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 機械手臂精準移動到預定【位置】！"
   },
   {
     "id": 189,
@@ -2076,7 +3016,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "positive attitude",
     "exampleSentence": "Keep a positive and responsible attitude toward quality.",
-    "exampleMeaning": "對產品品質保持正面積極與高度負責的態度。"
+    "exampleMeaning": "對產品品質保持正面積極與高度負責的態度。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 心態保持樂觀【正向的】！"
   },
   {
     "id": 190,
@@ -2087,7 +3032,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "postpone maintenance",
     "exampleSentence": "Do not postpone scheduled preventive maintenance.",
-    "exampleMeaning": "定期排定的預防保養作業不可無故拖延推遲。"
+    "exampleMeaning": "定期排定的預防保養作業不可無故拖延推遲。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 主管臨時出差，早會【延期】！"
   },
   {
     "id": 191,
@@ -2098,7 +3048,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "power switch",
     "exampleSentence": "Do not toggle main power switch without supervisor signoff.",
-    "exampleMeaning": "未經副理級主管簽核，嚴禁擅自切換主電源總開關。"
+    "exampleMeaning": "未經副理級主管簽核，嚴禁擅自切換主電源總開關。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 供應機台運轉的電力與【力量／電力】！"
   },
   {
     "id": 192,
@@ -2109,7 +3064,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "good practice",
     "exampleSentence": "Labeling containers clearly is a good safety practice.",
-    "exampleMeaning": "將容器清楚張貼標籤是落實工安的良好典範實踐。"
+    "exampleMeaning": "將容器清楚張貼標籤是落實工安的良好典範實踐。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 新人進廠反覆進行操作【練習】！"
   },
   {
     "id": 193,
@@ -2120,7 +3080,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "prepare tool",
     "exampleSentence": "Prepare cleaning swabs before opening the chamber door.",
-    "exampleMeaning": "開啟機台真空腔體門前，先備妥專用無塵擦拭布。"
+    "exampleMeaning": "開啟機台真空腔體門前，先備妥專用無塵擦拭布。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 開機前把工具【準備】齊全！"
   },
   {
     "id": 194,
@@ -2131,7 +3096,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "press button",
     "exampleSentence": "Press the start button only after double-checking.",
-    "exampleMeaning": "完成兩道防呆覆核手續後，才可按下啟動按鈕。"
+    "exampleMeaning": "完成兩道防呆覆核手續後，才可按下啟動按鈕。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": false,
+    "mnemonic": "💡 用手指用力【按下】開關！"
   },
   {
     "id": 195,
@@ -2142,7 +3112,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "chamber pressure",
     "exampleSentence": "Chamber pressure must reach high vacuum before processing.",
-    "exampleMeaning": "進料加工前，腔體內部壓力必須抽至高真空狀態。"
+    "exampleMeaning": "進料加工前，腔體內部壓力必須抽至高真空狀態。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 真空腔體裡面的大氣【壓力】！"
   },
   {
     "id": 196,
@@ -2153,7 +3128,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "preview recipe",
     "exampleSentence": "Preview the recipe settings on the screen first.",
-    "exampleMeaning": "先在終端螢幕上預覽配方步驟設定是否正確。"
+    "exampleMeaning": "先在終端螢幕上預覽配方步驟設定是否正確。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 送出前先在螢幕上進行排版【預覽】！"
   },
   {
     "id": 197,
@@ -2164,7 +3144,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "equipment price",
     "exampleSentence": "Advanced semiconductor equipment has high market price.",
-    "exampleMeaning": "先進半導體製程機台價值極其昂貴，操作需萬分小心。"
+    "exampleMeaning": "先進半導體製程機台價值極其昂貴，操作需萬分小心。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 高階晶圓每片造價不斐的【價格】！"
   },
   {
     "id": 198,
@@ -2175,7 +3160,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "print run-card",
     "exampleSentence": "Print a new run-card if the barcode becomes blurred.",
-    "exampleMeaning": "條碼若出現髒污磨損，請立即重新列印新流程卡。"
+    "exampleMeaning": "條碼若出現髒污磨損，請立即重新列印新流程卡。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把工作日誌從列表機【列印】出來！"
   },
   {
     "id": 199,
@@ -2186,7 +3176,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "hot lot priority",
     "exampleSentence": "Give super hot run lots the highest tool priority.",
-    "exampleMeaning": "優先將機台產能提供給最急件特急貨批生產。"
+    "exampleMeaning": "優先將機台產能提供給最急件特急貨批生產。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 標紅旗最緊急先做的【優先權】！"
   },
   {
     "id": 200,
@@ -2197,7 +3192,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "semiconductor process",
     "exampleSentence": "Each semiconductor process requires precise temperature.",
-    "exampleMeaning": "每道半導體製程都需要精密的溫度與壓力控制。"
+    "exampleMeaning": "每道半導體製程都需要精密的溫度與壓力控制。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 晶圓製造一千道繁複的【過程／流程】！"
   },
   {
     "id": 201,
@@ -2208,7 +3208,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "finished product",
     "exampleSentence": "Keep finished product cassettes securely locked.",
-    "exampleMeaning": "已產出之成品晶圓盒應穩妥鎖固於儲存櫃中。"
+    "exampleMeaning": "已產出之成品晶圓盒應穩妥鎖固於儲存櫃中。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：產品"
   },
   {
     "id": 202,
@@ -2219,7 +3224,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "protect wafer",
     "exampleSentence": "Wear clean room garments to protect wafers from dust.",
-    "exampleMeaning": "確實穿著無塵衣以保護晶圓免受微塵落塵危害。"
+    "exampleMeaning": "確實穿著無塵衣以保護晶圓免受微塵落塵危害。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：保護"
   },
   {
     "id": 203,
@@ -2230,7 +3240,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "nitrogen purge",
     "exampleSentence": "Purge the loadlock chamber with ultra-pure nitrogen.",
-    "exampleMeaning": "以超高純度氮氣對進出料載入腔體進行氣體吹掃置換。"
+    "exampleMeaning": "以超高純度氮氣對進出料載入腔體進行氣體吹掃置換。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 排空殘氣進行管路【清除】！"
   },
   {
     "id": 204,
@@ -2241,7 +3256,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "push cart",
     "exampleSentence": "Push the FOUP cart with two hands in designated lanes.",
-    "exampleMeaning": "雙手推運晶圓推車並行駛於無塵室專用推車道。"
+    "exampleMeaning": "雙手推運晶圓推車並行駛於無塵室專用推車道。",
+    "stageId": 15,
+    "stageName": "基礎動作詞彙",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 用力往前【推進】門口！"
   },
   {
     "id": 205,
@@ -2252,7 +3272,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "quality first",
     "exampleSentence": "In TSMC manufacturing culture, quality always comes first.",
-    "exampleMeaning": "在台積電製造文化中，品質與紀律永遠擺在第一位。"
+    "exampleMeaning": "在台積電製造文化中，品質與紀律永遠擺在第一位。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": true,
+    "mnemonic": "💡 台積電最驕傲、客戶最要求的【品質】！"
   },
   {
     "id": 206,
@@ -2263,7 +3288,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "wafer quantity",
     "exampleSentence": "Confirm wafer quantity matches the dispatch sheet.",
-    "exampleMeaning": "確認晶圓實體片數與系統派工單上數量完全相符。"
+    "exampleMeaning": "確認晶圓實體片數與系統派工單上數量完全相符。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 出貨箱外貼上總【數量】！"
   },
   {
     "id": 207,
@@ -2274,7 +3304,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "sampling rate",
     "exampleSentence": "Increase inspection sampling rate when defect count rises.",
-    "exampleMeaning": "當異常數量增加時，應提高品檢抽樣頻率。"
+    "exampleMeaning": "當異常數量增加時，應提高品檢抽樣頻率。",
+    "stageId": 20,
+    "stageName": "數量計算與計量",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 良品數除以總數得到的【比率】！"
   },
   {
     "id": 208,
@@ -2285,7 +3320,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "re-certify skill",
     "exampleSentence": "Technicians re-certify their operation skills periodically.",
-    "exampleMeaning": "技術員定期需重新參加技能檢定考核以維持合格認證。"
+    "exampleMeaning": "技術員定期需重新參加技能檢定考核以維持合格認證。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": false,
+    "mnemonic": "💡 每年證照到期要重新考試進行【重新認證】！"
   },
   {
     "id": 209,
@@ -2296,7 +3336,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "select recipe",
     "exampleSentence": "Always double check the recipe name before starting run.",
-    "exampleMeaning": "上機啟動前務必雙重覆核配方代碼名稱是否無誤。"
+    "exampleMeaning": "上機啟動前務必雙重覆核配方代碼名稱是否無誤。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 【熱死批】機台吃什麼參數，全靠這份【食譜／處方程式】！"
   },
   {
     "id": 210,
@@ -2307,7 +3352,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "record anomaly",
     "exampleSentence": "Record every tool anomaly immediately in the e-log.",
-    "exampleMeaning": "將機台微幅異常記錄詳實登載於電子交接紀錄簿中。"
+    "exampleMeaning": "將機台微幅異常記錄詳實登載於電子交接紀錄簿中。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：記錄"
   },
   {
     "id": 211,
@@ -2318,7 +3368,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tool recover",
     "exampleSentence": "Perform manual homing to recover the jammed robot.",
-    "exampleMeaning": "執行手臂手動復歸程序以使卡滯機械結構恢復正常。"
+    "exampleMeaning": "執行手臂手動復歸程序以使卡滯機械結構恢復正常。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 當機排除後，按步驟進行【復機】！"
   },
   {
     "id": 212,
@@ -2329,7 +3384,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "release lot",
     "exampleSentence": "Wait for QC engineer to release the held lot.",
-    "exampleMeaning": "靜待品管工程師於線上系統完成簽核放行動作。"
+    "exampleMeaning": "靜待品管工程師於線上系統完成簽核放行動作。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 測試無誤後將機台【釋放】回線！"
   },
   {
     "id": 213,
@@ -2340,7 +3400,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "add remark",
     "exampleSentence": "Add a detailed remark when transferring WIP to next shift.",
-    "exampleMeaning": "交接在製品 WIP 時請詳細加註機台目前狀況。"
+    "exampleMeaning": "交接在製品 WIP 時請詳細加註機台目前狀況。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 在系統裡面寫下一行注意事項【註記】！"
   },
   {
     "id": 214,
@@ -2351,7 +3416,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "remind buddy",
     "exampleSentence": "Remind your buddy to wear safety goggles near chemicals.",
-    "exampleMeaning": "在化學酸槽旁主動提醒身旁同仁確實戴上防護鏡。"
+    "exampleMeaning": "在化學酸槽旁主動提醒身旁同仁確實戴上防護鏡。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": false,
+    "mnemonic": "💡 口頭善意【提醒】學弟戴好護目鏡！"
   },
   {
     "id": 215,
@@ -2362,7 +3432,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "remove cassette",
     "exampleSentence": "Remove the cassette only after the green unload lamp lights.",
-    "exampleMeaning": "待卸料指示綠燈亮起後，方可將晶圓盒取下。"
+    "exampleMeaning": "待卸料指示綠燈亮起後，方可將晶圓盒取下。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 把卡在機台裡的碎片【移開／移除】！"
   },
   {
     "id": 216,
@@ -2373,7 +3448,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "repair tool",
     "exampleSentence": "Call equipment engineers to repair damaged vacuum seals.",
-    "exampleMeaning": "聯絡設備工程人員更換並維修老化的真空密封橡膠環。"
+    "exampleMeaning": "聯絡設備工程人員更換並維修老化的真空密封橡膠環。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 壞掉的馬達請廠商進來【修理／維修】！"
   },
   {
     "id": 217,
@@ -2384,7 +3464,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "report immediately",
     "exampleSentence": "Report any chemical leak immediately to the control center.",
-    "exampleMeaning": "若察覺任何微量化學品洩漏，請立即通報應變中心。"
+    "exampleMeaning": "若察覺任何微量化學品洩漏，請立即通報應變中心。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": true,
+    "mnemonic": "💡 換班時向值班長官呈報【報告】！"
   },
   {
     "id": 218,
@@ -2395,7 +3480,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "reset alarm",
     "exampleSentence": "Investigate root cause before you reset the alarm.",
-    "exampleMeaning": "在按下復歸鍵清除警報前，務必先確認異常發生原因。"
+    "exampleMeaning": "在按下復歸鍵清除警報前，務必先確認異常發生原因。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 當機不用怕，重新啟動按【重設／重置】！"
   },
   {
     "id": 219,
@@ -2406,7 +3496,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "rework wafer",
     "exampleSentence": "Engineer ordered rework on photoresist coating error.",
-    "exampleMeaning": "針對光阻塗布厚度異常之晶圓批開立重工清洗指令。"
+    "exampleMeaning": "針對光阻塗布厚度異常之晶圓批開立重工清洗指令。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 品質沒過關，必須拿回去【重做】！"
   },
   {
     "id": 220,
@@ -2417,7 +3512,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "process route",
     "exampleSentence": "Wafers move along a predefined process route.",
-    "exampleMeaning": "晶圓依照系統預先定義之工藝路線順序進行各站加工。"
+    "exampleMeaning": "晶圓依照系統預先定義之工藝路線順序進行各站加工。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓按照工單排定的生產【路線】！"
   },
   {
     "id": 221,
@@ -2428,7 +3528,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "clean room rule",
     "exampleSentence": "Follow every clean room rule strictly at all times.",
-    "exampleMeaning": "無塵室各項工安與行為守則於任何時刻均須嚴格遵循。"
+    "exampleMeaning": "無塵室各項工安與行為守則於任何時刻均須嚴格遵循。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 廠區進出安全嚴格遵守的【規則】！"
   },
   {
     "id": 222,
@@ -2439,7 +3544,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "start run",
     "exampleSentence": "Check all interlocks before you start the production run.",
-    "exampleMeaning": "開始批次生產運行前，確認各安全防護開關皆已就位。"
+    "exampleMeaning": "開始批次生產運行前，確認各安全防護開關皆已就位。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 綠燈狂閃，機台正在高速【運轉跑貨】！"
   },
   {
     "id": 223,
@@ -2450,7 +3560,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "check run-card",
     "exampleSentence": "Run-card specifies the recipe and target thickness.",
-    "exampleMeaning": "流程卡詳細註明了當站規定配方與目標膜厚加工值。"
+    "exampleMeaning": "流程卡詳細註明了當站規定配方與目標膜厚加工值。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 每一批貨跟著走的生產【流程卡】！"
   },
   {
     "id": 224,
@@ -2461,7 +3576,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "strict S.O.P",
     "exampleSentence": "Strict S.O.P adherence ensures zero-defect manufacturing.",
-    "exampleMeaning": "嚴格遵守標準作業程序 (SOP) 是零缺陷製造的基石。"
+    "exampleMeaning": "嚴格遵守標準作業程序 (SOP) 是零缺陷製造的基石。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 台積電人人必須背熟的【標準作業程序】！"
   },
   {
     "id": 225,
@@ -2472,7 +3592,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "stay safe",
     "exampleSentence": "Follow safety protocols to keep everyone in the fab safe.",
-    "exampleMeaning": "落實各項工安防護步驟，確保廠內全體同仁人身安全。"
+    "exampleMeaning": "落實各項工安防護步驟，確保廠內全體同仁人身安全。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 安全第一，綠燈亮起表示【安全的】！"
   },
   {
     "id": 226,
@@ -2483,7 +3608,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "same lot",
     "exampleSentence": "All wafers in the same lot share identical parameters.",
-    "exampleMeaning": "同一批晶圓內的二十五片晶圓共享完全相同的製程參數。"
+    "exampleMeaning": "同一批晶圓內的二十五片晶圓共享完全相同的製程參數。",
+    "stageId": 17,
+    "stageName": "基礎狀態形容詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 兩批貨所使用的參數是【相同的】！"
   },
   {
     "id": 227,
@@ -2494,7 +3624,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "save configuration",
     "exampleSentence": "Save the parameter configuration before closing window.",
-    "exampleMeaning": "在關閉機台設定視窗前，請務必點擊儲存變更。"
+    "exampleMeaning": "在關閉機台設定視窗前，請務必點擊儲存變更。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 作業完畢記得按Ctrl+S進行存檔【儲存】！"
   },
   {
     "id": 228,
@@ -2505,7 +3640,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "scrap wafer",
     "exampleSentence": "Severe crack on wafer resulted in unavoidable scrap.",
-    "exampleMeaning": "晶圓發生嚴重碎裂，經工程師判定無可挽回必須報廢。"
+    "exampleMeaning": "晶圓發生嚴重碎裂，經工程師判定無可挽回必須報廢。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 救不回來了，【撕開撲】進廢品桶【報廢】！"
   },
   {
     "id": 229,
@@ -2516,7 +3656,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "wafer scratch",
     "exampleSentence": "Avoid touching wafer surface to prevent micro scratch.",
-    "exampleMeaning": "嚴禁徒手接觸晶圓表面以避免造成肉眼不可見的微刮傷。"
+    "exampleMeaning": "嚴禁徒手接觸晶圓表面以避免造成肉眼不可見的微刮傷。",
+    "stageId": 3,
+    "stageName": "外觀瑕疵與異常",
+    "stageIcon": "⚠️",
+    "isCore50": true,
+    "mnemonic": "💡 手千萬別【死抓著】晶圓，會產生【刮傷】！"
   },
   {
     "id": 230,
@@ -2527,7 +3672,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "touch screen",
     "exampleSentence": "Wipe the touch screen only with approved clean room wipes.",
-    "exampleMeaning": "僅可使用指定抗靜電無塵擦拭布清潔操作螢幕。"
+    "exampleMeaning": "僅可使用指定抗靜電無塵擦拭布清潔操作螢幕。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": false,
+    "mnemonic": "💡 顯示機台即時警報的液晶【螢幕】！"
   },
   {
     "id": 231,
@@ -2538,7 +3688,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "select menu",
     "exampleSentence": "Select the correct lot number from the on-screen menu.",
-    "exampleMeaning": "在螢幕操作選單中正確點選當前欲生產之批號。"
+    "exampleMeaning": "在螢幕操作選單中正確點選當前欲生產之批號。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 菜單上有五個配方，點擊【選擇】！"
   },
   {
     "id": 232,
@@ -2549,7 +3704,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "semiconductor fab",
     "exampleSentence": "TSMC operates the most advanced semiconductor fabs.",
-    "exampleMeaning": "台積電擁有並營運著全球技術最頂尖的半導體晶圓廠。"
+    "exampleMeaning": "台積電擁有並營運著全球技術最頂尖的半導體晶圓廠。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 護國神山的核心產業【半導體】！"
   },
   {
     "id": 233,
@@ -2560,7 +3720,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "vendor service",
     "exampleSentence": "Vendor service technicians wear distinct guest badges.",
-    "exampleMeaning": "駐廠廠商工程師入廠檢修時均配戴專屬外賓識別證。"
+    "exampleMeaning": "駐廠廠商工程師入廠檢修時均配戴專屬外賓識別證。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：服務"
   },
   {
     "id": 234,
@@ -2571,7 +3736,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "inspection sheet",
     "exampleSentence": "Sign your employee number on the paper inspection sheet.",
-    "exampleMeaning": "在紙本巡檢表上工整簽上員工工號以示確認負責。"
+    "exampleMeaning": "在紙本巡檢表上工整簽上員工工號以示確認負責。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": false,
+    "mnemonic": "💡 夾在貨盒上方的一張流程【表單】！"
   },
   {
     "id": 235,
@@ -2582,7 +3752,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "day shift",
     "exampleSentence": "Technicians rotate smoothly between day shift and night shift.",
-    "exampleMeaning": "技術員依排班表順暢輪替於日班與夜班之間。"
+    "exampleMeaning": "技術員依排班表順暢輪替於日班與夜班之間。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 四班二輪做二休二的換【班次／輪班】！"
   },
   {
     "id": 236,
@@ -2593,7 +3768,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "show result",
     "exampleSentence": "The monitor will show measurement result in green text.",
-    "exampleMeaning": "檢驗機台螢幕將以綠色文字顯示通過之量測結果。"
+    "exampleMeaning": "檢驗機台螢幕將以綠色文字顯示通過之量測結果。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：顯示"
   },
   {
     "id": 237,
@@ -2604,7 +3784,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "company shuttle",
     "exampleSentence": "Take the company shuttle bus between fabs safely.",
-    "exampleMeaning": "往返不同廠區與宿舍之間請搭乘公司免費交通接駁車。"
+    "exampleMeaning": "往返不同廠區與宿舍之間請搭乘公司免費交通接駁車。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 往返不同廠區與高鐵站的台積【接駁車】！"
   },
   {
     "id": 238,
@@ -2615,7 +3800,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "never skip steps",
     "exampleSentence": "Never skip steps even when rushing for daily quota.",
-    "exampleMeaning": "即使趕進度也絕不可擅自跳過或省略任何一個 SOP 步驟。"
+    "exampleMeaning": "即使趕進度也絕不可擅自跳過或省略任何一個 SOP 步驟。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 嚴禁跳過檢驗步驟直接【跳過】！"
   },
   {
     "id": 239,
@@ -2626,7 +3816,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "wafer sorter",
     "exampleSentence": "Wafer sorter transfers wafers between two cassettes.",
-    "exampleMeaning": "晶圓挑片機在不同晶圓盒之間自動分揀傳送晶圓。"
+    "exampleMeaning": "晶圓挑片機在不同晶圓盒之間自動分揀傳送晶圓。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": true,
+    "mnemonic": "💡 自動把晶圓按號碼排好的【排序機／分類機】！"
   },
   {
     "id": 240,
@@ -2637,7 +3832,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "light source",
     "exampleSentence": "Check the output power level of the exposure light source.",
-    "exampleMeaning": "檢查黃光曝光光源之輸出能量等級是否在容許範圍內。"
+    "exampleMeaning": "檢查黃光曝光光源之輸出能量等級是否在容許範圍內。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：來源"
   },
   {
     "id": 241,
@@ -2648,7 +3848,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "out of spec",
     "exampleSentence": "Any parameter out of spec must be flagged immediately.",
-    "exampleMeaning": "任何量測數值超出規格 (OOS) 時均須立即拉紅線報備。"
+    "exampleMeaning": "任何量測數值超出規格 (OOS) 時均須立即拉紅線報備。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 產品尺寸必須符合客戶【規格】！"
   },
   {
     "id": 242,
@@ -2659,7 +3864,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "rotation speed",
     "exampleSentence": "Spindle motor rotation speed reached five thousand RPM.",
-    "exampleMeaning": "旋轉主軸馬達轉速穩定達到設定之每分鐘五千轉。"
+    "exampleMeaning": "旋轉主軸馬達轉速穩定達到設定之每分鐘五千轉。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 機械手臂抓取晶圓的移動【速度】！"
   },
   {
     "id": 243,
@@ -2670,7 +3880,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "split lot",
     "exampleSentence": "Split five wafers from the main lot for testing.",
-    "exampleMeaning": "依照工程需求從主批中分拆出五片晶圓作為實驗監控批。"
+    "exampleMeaning": "依照工程需求從主批中分拆出五片晶圓作為實驗監控批。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 把一批25片晶圓拆成兩組【分帳／分批】！"
   },
   {
     "id": 244,
@@ -2681,7 +3896,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "chuck stage",
     "exampleSentence": "Vacuum chuck stage firmly holds the wafer during spinning.",
-    "exampleMeaning": "真空晶圓吸盤於高速旋轉加工時牢固吸附固定晶圓。"
+    "exampleMeaning": "真空晶圓吸盤於高速旋轉加工時牢固吸附固定晶圓。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": false,
+    "mnemonic": "💡 這一批貨目前走到了第幾【站別／階段】！"
   },
   {
     "id": 245,
@@ -2692,7 +3912,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "standard protocol",
     "exampleSentence": "Execute every task according to company standard protocol.",
-    "exampleMeaning": "嚴格按照公司制定的標準規章手冊執行各項日常業務。"
+    "exampleMeaning": "嚴格按照公司制定的標準規章手冊執行各項日常業務。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 做事必須符合台積電的一致【標準】！"
   },
   {
     "id": 246,
@@ -2703,7 +3928,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tool on standby",
     "exampleSentence": "The tool is on standby waiting for the next lot.",
-    "exampleMeaning": "機台目前處於待機狀態，等待派工系統派送下一批貨。"
+    "exampleMeaning": "機台目前處於待機狀態，等待派工系統派送下一批貨。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": false,
+    "mnemonic": "💡 備用機台隨時在旁【等待備用】！"
   },
   {
     "id": 247,
@@ -2714,7 +3944,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "press start",
     "exampleSentence": "Press start after verifying cassette slot mapping.",
-    "exampleMeaning": "再次核對晶圓片號圖譜無誤後，即可按下機台啟動鈕。"
+    "exampleMeaning": "再次核對晶圓片號圖譜無誤後，即可按下機台啟動鈕。",
+    "stageId": 2,
+    "stageName": "機台核心動作鈕",
+    "stageIcon": "🔘",
+    "isCore50": true,
+    "mnemonic": "💡 綠色【Start】按下去機台【開始／啟動】！"
   },
   {
     "id": 248,
@@ -2725,7 +3960,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "work station",
     "exampleSentence": "Keep personal belongings outside the clean work station.",
-    "exampleMeaning": "個人私人物品嚴禁攜入無塵室專屬作業站點。"
+    "exampleMeaning": "個人私人物品嚴禁攜入無塵室專屬作業站點。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": false,
+    "mnemonic": "💡 刷完條碼停下來作業的生產【工作站】！"
   },
   {
     "id": 249,
@@ -2736,7 +3976,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tool status",
     "exampleSentence": "Report any red tool status to the area leader.",
-    "exampleMeaning": "機台燈號若變為紅色停機狀態，請立刻向線長通報。"
+    "exampleMeaning": "機台燈號若變為紅色停機狀態，請立刻向線長通報。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": true,
+    "mnemonic": "💡 點開系統查看機台目前的運作【狀況／狀態】！"
   },
   {
     "id": 250,
@@ -2747,7 +3992,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "next step",
     "exampleSentence": "Verify parameters before advancing to the next step.",
-    "exampleMeaning": "推進至下一步驟前，請務必先驗證當前加工結果符合規定。"
+    "exampleMeaning": "推進至下一步驟前，請務必先驗證當前加工結果符合規定。",
+    "stageId": 13,
+    "stageName": "SOP規範與配方",
+    "stageIcon": "📋",
+    "isCore50": true,
+    "mnemonic": "💡 SOP上面的第一、第二【步驟】！"
   },
   {
     "id": 251,
@@ -2758,7 +4008,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "automated stocker",
     "exampleSentence": "Automated stocker stores and dispatches wafer cassettes.",
-    "exampleMeaning": "無塵室自動晶圓儲存倉負責自動化保管與派發晶圓盒。"
+    "exampleMeaning": "無塵室自動晶圓儲存倉負責自動化保管與派發晶圓盒。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 天花板軌道上的晶圓自動【儲存櫃】！"
   },
   {
     "id": 252,
@@ -2769,7 +4024,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "successful test",
     "exampleSentence": "Engineering team celebrated the successful test run.",
-    "exampleMeaning": "工程與技術員團隊共同慶祝本次試產批次順利成功。"
+    "exampleMeaning": "工程與技術員團隊共同慶祝本次試產批次順利成功。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 經過努力順利錄取台積電迎來【成功】！"
   },
   {
     "id": 253,
@@ -2780,7 +4040,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "super clean",
     "exampleSentence": "Advanced fabs maintain a super clean manufacturing floor.",
-    "exampleMeaning": "先進晶圓廠始終維持著超越醫療級別的超純淨無塵環境。"
+    "exampleMeaning": "先進晶圓廠始終維持著超越醫療級別的超純淨無塵環境。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 表現頂尖的【超級的】員工！"
   },
   {
     "id": 254,
@@ -2791,7 +4056,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "super hot run lot",
     "exampleSentence": "Give super hot run lots immediate processing priority.",
-    "exampleMeaning": "特急件急單晶圓 (Super Hot Run) 享有最優先上機排程。"
+    "exampleMeaning": "特急件急單晶圓 (Super Hot Run) 享有最優先上機排程。",
+    "stageId": 14,
+    "stageName": "主管指示與急件",
+    "stageIcon": "💬",
+    "isCore50": true,
+    "mnemonic": "💡 客戶高層親自盯梢、一路綠燈通關的【超級急件】！"
   },
   {
     "id": 255,
@@ -2802,7 +4072,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "shift supervisor",
     "exampleSentence": "Inform your shift supervisor about equipment downtime.",
-    "exampleMeaning": "機台發生不可排除之停機異常時，請迅速向輪班副理報告。"
+    "exampleMeaning": "機台發生不可排除之停機異常時，請迅速向輪班副理報告。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 在交接會議上聽取報告的長官【監督者／主管】！"
   },
   {
     "id": 256,
@@ -2813,7 +4088,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "cross support",
     "exampleSentence": "Technicians provide mutual cross support during heavy shifts.",
-    "exampleMeaning": "產線繁忙出貨量大時，技術員同仁彼此發揮跨模組互相支援。"
+    "exampleMeaning": "產線繁忙出貨量大時，技術員同仁彼此發揮跨模組互相支援。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 隔壁機台忙不過來，過去幫忙【支援】！"
   },
   {
     "id": 257,
@@ -2824,7 +4104,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "toggle switch",
     "exampleSentence": "Toggle the manual switch only when prompted by GUI.",
-    "exampleMeaning": "僅在操作介面出現明確導引提示時才撥動特定實體開關。"
+    "exampleMeaning": "僅在操作介面出現明確導引提示時才撥動特定實體開關。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": true,
+    "mnemonic": "💡 牆壁上控制總電源的通電【開關】！"
   },
   {
     "id": 258,
@@ -2835,7 +4120,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "MES system",
     "exampleSentence": "Record wafer transfer transactions in the MES system.",
-    "exampleMeaning": "晶圓盒各站移載交接均須確實於 MES 系統完成刷卡過帳。"
+    "exampleMeaning": "晶圓盒各站移載交接均須確實於 MES 系統完成刷卡過帳。",
+    "stageId": 12,
+    "stageName": "機台硬體與機構",
+    "stageIcon": "⚙️",
+    "isCore50": true,
+    "mnemonic": "💡 掌管全廠排程的中央調度【系統】！"
   },
   {
     "id": 259,
@@ -2846,7 +4136,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "tag out",
     "exampleSentence": "Apply lock-out and tag-out before opening the tool panel.",
-    "exampleMeaning": "開啟機台維修蓋板前，務必確實落實上鎖掛牌 (LOTO) 規範。"
+    "exampleMeaning": "開啟機台維修蓋板前，務必確實落實上鎖掛牌 (LOTO) 規範。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 綁在手推車把手上的黃色【標籤】！"
   },
   {
     "id": 260,
@@ -2857,7 +4152,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "apply to take leave",
     "exampleSentence": "Apply to take leave at least one week ahead of time.",
-    "exampleMeaning": "若欲請特別休假，請儘早於一週前循系統完成請假申請。"
+    "exampleMeaning": "若欲請特別休假，請儘早於一週前循系統完成請假申請。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 身體不舒服填寫請假系統去【請假】！"
   },
   {
     "id": 261,
@@ -2868,7 +4168,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "wafer dicing tape",
     "exampleSentence": "Apply protective tape on wafer backside before dicing.",
-    "exampleMeaning": "在晶圓切割道研磨作業前，需於晶圓背面貼合專用保護膠帶。"
+    "exampleMeaning": "在晶圓切割道研磨作業前，需於晶圓背面貼合專用保護膠帶。",
+    "stageId": 22,
+    "stageName": "材料工具與用品",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 包裝晶舟外盒專用的無痕防靜電【膠帶】！"
   },
   {
     "id": 262,
@@ -2879,7 +4184,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "daily target",
     "exampleSentence": "Our shift achieved its daily target with high quality.",
-    "exampleMeaning": "本班技術團隊在兼顧高品質要求下圓滿達成今日產能目標。"
+    "exampleMeaning": "本班技術團隊在兼顧高品質要求下圓滿達成今日產能目標。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 今天的生產目標已經達成【目標】！"
   },
   {
     "id": 263,
@@ -2890,7 +4200,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "fab technician",
     "exampleSentence": "Fab technicians are essential to TSMC's manufacturing excellence.",
-    "exampleMeaning": "技術員是台積電維持全球卓越製造競爭力不可或缺的核心力量。"
+    "exampleMeaning": "技術員是台積電維持全球卓越製造競爭力不可或缺的核心力量。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": true,
+    "mnemonic": "💡 穿無塵衣守護神山的第一線【技術員】！"
   },
   {
     "id": 264,
@@ -2901,7 +4216,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "emergency telephone",
     "exampleSentence": "Pick up the clean room telephone to call extension 119.",
-    "exampleMeaning": "遇緊急狀況請立即拿起無塵室專用電話直撥廠內緊急分機。"
+    "exampleMeaning": "遇緊急狀況請立即拿起無塵室專用電話直撥廠內緊急分機。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 遇到緊急工安第一時間拿分機打【電話】！"
   },
   {
     "id": 265,
@@ -2912,7 +4232,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "control temperature",
     "exampleSentence": "The furnace chamber operates at a temperature over 800 degrees.",
-    "exampleMeaning": "擴散爐管內部維持高達八百度以上之超高溫運轉。"
+    "exampleMeaning": "擴散爐管內部維持高達八百度以上之超高溫運轉。",
+    "stageId": 9,
+    "stageName": "化學品與氣體",
+    "stageIcon": "🧪",
+    "isCore50": true,
+    "mnemonic": "💡 烤箱與爐管裡面的攝氏【溫度】！"
   },
   {
     "id": 266,
@@ -2923,7 +4248,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "film thickness",
     "exampleSentence": "Measure oxide film thickness across forty-nine points.",
-    "exampleMeaning": "在整片晶圓均勻抽檢量測四十九點之氧化薄膜厚度。"
+    "exampleMeaning": "在整片晶圓均勻抽檢量測四十九點之氧化薄膜厚度。",
+    "stageId": 6,
+    "stageName": "檢驗測量與規格",
+    "stageIcon": "🔍",
+    "isCore50": true,
+    "mnemonic": "💡 儀器精密測量薄膜的【厚度】！"
   },
   {
     "id": 267,
@@ -2934,7 +4264,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "thin film deposition",
     "exampleSentence": "Thin film deposition adds microscopic insulating layers.",
-    "exampleMeaning": "薄膜沈積技術在矽晶圓表面生長微觀絕緣保護與導電膜層。"
+    "exampleMeaning": "薄膜沈積技術在矽晶圓表面生長微觀絕緣保護與導電膜層。",
+    "stageId": 11,
+    "stageName": "半導體製程步驟",
+    "stageIcon": "📐",
+    "isCore50": true,
+    "mnemonic": "💡 在晶圓鍍上奈米級保護層的【薄膜製程】！"
   },
   {
     "id": 268,
@@ -2945,7 +4280,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "process time",
     "exampleSentence": "Total process time for this step is approximately forty minutes.",
-    "exampleMeaning": "本道站點處理流程之總加工時間約為四十分鐘。"
+    "exampleMeaning": "本道站點處理流程之總加工時間約為四十分鐘。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓進入機台記錄開始【時間】！"
   },
   {
     "id": 269,
@@ -2956,7 +4296,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "job title",
     "exampleSentence": "His official job title is Senior Manufacturing Technician.",
-    "exampleMeaning": "他的正式職稱為台積電資深製造部技術員。"
+    "exampleMeaning": "他的正式職稱為台積電資深製造部技術員。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 每一份正式文件最上方的【標題】！"
   },
   {
     "id": 270,
@@ -2967,7 +4312,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "top surface",
     "exampleSentence": "Never allow metallic tools to touch the wafer top surface.",
-    "exampleMeaning": "嚴禁任何金屬手工具直接觸碰晶圓正面電路區。"
+    "exampleMeaning": "嚴禁任何金屬手工具直接觸碰晶圓正面電路區。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 晶舟最上面第一片放在【頂端】！"
   },
   {
     "id": 271,
@@ -2978,7 +4328,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "overhead track",
     "exampleSentence": "Overhead transport track conveys FOUP pods smoothly.",
-    "exampleMeaning": "天車天軌自動化搬運系統於高空軌道平穩快速運送晶圓盒。"
+    "exampleMeaning": "天車天軌自動化搬運系統於高空軌道平穩快速運送晶圓盒。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": false,
+    "mnemonic": "💡 用系統隨時【追蹤】這批貨跑到哪一站！"
   },
   {
     "id": 272,
@@ -2989,7 +4344,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "safety training",
     "exampleSentence": "Complete mandatory safety training before entering fab.",
-    "exampleMeaning": "進入無塵室工作前，必須全數通過各項必修安全訓練考核。"
+    "exampleMeaning": "進入無塵室工作前，必須全數通過各項必修安全訓練考核。",
+    "stageId": 18,
+    "stageName": "時間排程與頻率",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 在訓練中心接受扎實的技能【訓練】！"
   },
   {
     "id": 273,
@@ -3000,7 +4360,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "yield trend",
     "exampleSentence": "Analyze the weekly yield trend to detect minor anomalies.",
-    "exampleMeaning": "深入分析每週良率走勢圖，及早捕捉並撲滅潛在製程微異常。"
+    "exampleMeaning": "深入分析每週良率走勢圖，及早捕捉並撲滅潛在製程微異常。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 看圖表線條往上還是往下發展的【趨勢】！"
   },
   {
     "id": 274,
@@ -3011,7 +4376,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "tune parameter",
     "exampleSentence": "Engineers tune RF power parameters to optimize etch rate.",
-    "exampleMeaning": "工程師微調射頻微波功率參數以達到最佳蝕刻速率。"
+    "exampleMeaning": "工程師微調射頻微波功率參數以達到最佳蝕刻速率。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 細部旋鈕微調校正【調整】！"
   },
   {
     "id": 275,
@@ -3022,7 +4392,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "spindle turn rate",
     "exampleSentence": "Maintain uniform spindle turn rate to ensure coating thickness.",
-    "exampleMeaning": "維持恆定均勻的旋塗轉速以保證光阻膜厚高度一致。"
+    "exampleMeaning": "維持恆定均勻的旋塗轉速以保證光阻膜厚高度一致。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 晶圓在無塵室流轉的速度叫【週轉率】！"
   },
   {
     "id": 276,
@@ -3033,7 +4408,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "unload cassette",
     "exampleSentence": "Unload the finished cassette and transfer it to the cart.",
-    "exampleMeaning": "將已完成之晶圓盒自裝載口小心卸下，並平穩放置於專用推車上。"
+    "exampleMeaning": "將已完成之晶圓盒自裝載口小心卸下，並平穩放置於專用推車上。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 做完後機器把晶圓吐出來叫【下貨／卸載】！"
   },
   {
     "id": 277,
@@ -3044,7 +4424,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "use equipment",
     "exampleSentence": "Use equipment strictly in accordance with certified training.",
-    "exampleMeaning": "僅可在自身具備合格考核認證的授權機台範圍內進行操作。"
+    "exampleMeaning": "僅可在自身具備合格考核認證的授權機台範圍內進行操作。",
+    "stageId": 16,
+    "stageName": "基礎處理動詞",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 依照規定【使用】防靜電手套！"
   },
   {
     "id": 278,
@@ -3055,7 +4440,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "enter username",
     "exampleSentence": "Enter your employee username to sign into the workstation.",
-    "exampleMeaning": "在工作站畫面鍵入個人員工帳號以完成身分驗證登入。"
+    "exampleMeaning": "在工作站畫面鍵入個人員工帳號以完成身分驗證登入。",
+    "stageId": 21,
+    "stageName": "資訊數據與系統",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 電腦登入框輸入工號【使用者名稱】！"
   },
   {
     "id": 279,
@@ -3066,7 +4456,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "equipment vendor",
     "exampleSentence": "Escort the equipment vendor inside the clean room.",
-    "exampleMeaning": "設備原廠供應商工程師入廠檢修時須由廠內人員全程陪同。"
+    "exampleMeaning": "設備原廠供應商工程師入廠檢修時須由廠內人員全程陪同。",
+    "stageId": 23,
+    "stageName": "團隊合作與學習",
+    "stageIcon": "💡",
+    "isCore50": true,
+    "mnemonic": "💡 外包進廠維修設備的協力【廠商】！"
   },
   {
     "id": 280,
@@ -3077,7 +4472,12 @@
     "categoryLabel": "基礎通用",
     "fabPhrase": "view screen",
     "exampleSentence": "View the summary screen to verify recipe completion.",
-    "exampleMeaning": "檢視機台總結畫面以確認所有配方步驟均已順利完工。"
+    "exampleMeaning": "檢視機台總結畫面以確認所有配方步驟均已順利完工。",
+    "stageId": 24,
+    "stageName": "技術員甄試加分",
+    "stageIcon": "🏆",
+    "isCore50": false,
+    "mnemonic": "💡 記住這個單字：查看"
   },
   {
     "id": 281,
@@ -3088,7 +4488,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "silicon wafer",
     "exampleSentence": "Handle each twelve-inch silicon wafer with maximum care.",
-    "exampleMeaning": "搬運與處理每一片十二吋矽晶圓時均須抱持最高等級謹慎。"
+    "exampleMeaning": "搬運與處理每一片十二吋矽晶圓時均須抱持最高等級謹慎。",
+    "stageId": 5,
+    "stageName": "晶圓載具與批號",
+    "stageIcon": "📦",
+    "isCore50": true,
+    "mnemonic": "💡 像【威化餅乾】一樣又薄又脆的矽【晶圓】！"
   },
   {
     "id": 282,
@@ -3099,7 +4504,12 @@
     "categoryLabel": "機台操作",
     "fabPhrase": "waiting for lot",
     "exampleSentence": "The green light blinks indicating the tool is waiting for lot.",
-    "exampleMeaning": "綠色燈號規律閃爍表示機台目前正處於備便等料狀態。"
+    "exampleMeaning": "綠色燈號規律閃爍表示機台目前正處於備便等料狀態。",
+    "stageId": 7,
+    "stageName": "機台保養與狀態",
+    "stageIcon": "🛠️",
+    "isCore50": false,
+    "mnemonic": "💡 貨還沒來，機台在螢幕上顯示【等待中】！"
   },
   {
     "id": 283,
@@ -3110,7 +4520,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "warning buzzer",
     "exampleSentence": "A loud warning buzzer sounded when the interlock tripped.",
-    "exampleMeaning": "當安全防護互鎖開關跳脫時，現場隨即響起高分貝蜂鳴警報。"
+    "exampleMeaning": "當安全防護互鎖開關跳脫時，現場隨即響起高分貝蜂鳴警報。",
+    "stageId": 1,
+    "stageName": "廠區緊急與警報",
+    "stageIcon": "🚨",
+    "isCore50": true,
+    "mnemonic": "💡 螢幕跳黃燈，發出嚴厲【警告】！"
   },
   {
     "id": 284,
@@ -3121,7 +4536,12 @@
     "categoryLabel": "廠務交接",
     "fabPhrase": "weekly checklist",
     "exampleSentence": "Complete the weekly PM checklist before Friday afternoon.",
-    "exampleMeaning": "請務必於每週五下午前確實逐項填妥週保養點檢核對表。"
+    "exampleMeaning": "請務必於每週五下午前確實逐項填妥週保養點檢核對表。",
+    "stageId": 10,
+    "stageName": "輪班值班與交接",
+    "stageIcon": "🤝",
+    "isCore50": false,
+    "mnemonic": "💡 每個禮拜開一次的【每週地】例會！"
   },
   {
     "id": 285,
@@ -3132,7 +4552,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "wet bench",
     "exampleSentence": "Wear a full acid apron and face shield at the wet bench.",
-    "exampleMeaning": "於濕式化學清洗酸槽站作業時，務必著全套防酸圍裙與面罩。"
+    "exampleMeaning": "於濕式化學清洗酸槽站作業時，務必著全套防酸圍裙與面罩。",
+    "stageId": 4,
+    "stageName": "無塵室防護裝備",
+    "stageIcon": "🥼",
+    "isCore50": false,
+    "mnemonic": "💡 沾到化學液體，手套摸起來【濕的】！"
   },
   {
     "id": 286,
@@ -3143,7 +4568,12 @@
     "categoryLabel": "晶圓製程",
     "fabPhrase": "viewing window",
     "exampleSentence": "Look through the chamber viewing window to check plasma glow.",
-    "exampleMeaning": "透過真空腔體石英觀景視窗觀察電漿電弧輝光是否均勻。"
+    "exampleMeaning": "透過真空腔體石英觀景視窗觀察電漿電弧輝光是否均勻。",
+    "stageId": 19,
+    "stageName": "方位空間與區域",
+    "stageIcon": "💡",
+    "isCore50": false,
+    "mnemonic": "💡 機台上透明可看到內部的觀察【視窗】！"
   },
   {
     "id": 287,
@@ -3154,7 +4584,12 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "die yield",
     "exampleSentence": "Excellence in particle control directly boosts overall die yield.",
-    "exampleMeaning": "落實無塵室落塵微粒嚴密控管，能直接顯著提升晶圓良率。"
+    "exampleMeaning": "落實無塵室落塵微粒嚴密控管，能直接顯著提升晶圓良率。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": true,
+    "mnemonic": "💡 【一打】晶圓切出來好幾千顆，最看重的就是【良率】！"
   },
   {
     "id": 288,
@@ -3165,6 +4600,11 @@
     "categoryLabel": "品質異常",
     "fabPhrase": "zero defect",
     "exampleSentence": "Our team strives every single shift for zero defect quality.",
-    "exampleMeaning": "全體輪班同仁在每一班別均齊心協力追求零缺陷之極致品質。"
+    "exampleMeaning": "全體輪班同仁在每一班別均齊心協力追求零缺陷之極致品質。",
+    "stageId": 8,
+    "stageName": "良率指標與產能",
+    "stageIcon": "📈",
+    "isCore50": false,
+    "mnemonic": "💡 追求工安意外掛【零】！"
   }
 ]

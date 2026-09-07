@@ -80,144 +80,232 @@
 
       <section id="tsmc-view" class="app-view" hidden>
         <section class="panel tsmc-practice" aria-labelledby="tsmc-practice-title">
+          <!-- Top Header -->
           <div class="panel-heading">
             <div>
-              <p class="eyebrow">台積電技術員</p>
-              <h2 id="tsmc-practice-title">甄選練習</h2>
+              <p class="eyebrow">台積電技術員甄試</p>
+              <h2 id="tsmc-practice-title">英文新手闖關</h2>
             </div>
             <div class="panel-heading-right">
               <button id="tsmc-font-size-toggle" class="tsmc-font-size-btn" type="button" aria-label="切換字體大小">🔠 特大字體</button>
-              <span id="tsmc-word-progress">1 / 288</span>
+              <span id="tsmc-stage-badge" class="tsmc-stage-badge">🏆 0/24 關</span>
             </div>
           </div>
 
-          <!-- Mode Tabs -->
-          <div class="tsmc-mode-tabs" aria-label="選擇練習類型">
-            <button class="tsmc-mode-button active" data-tsmc-mode="words" type="button">英文單字</button>
-            <button class="tsmc-mode-button" data-tsmc-mode="wordQuiz" type="button">單字測驗</button>
-            <button class="tsmc-mode-button" data-tsmc-mode="math" type="button">數學模擬</button>
-            <button class="tsmc-mode-button" data-tsmc-mode="interview" type="button">面試練習</button>
+          <!-- Feature Nav Tabs -->
+          <div class="tsmc-feature-nav" aria-label="學習模式切換">
+            <button class="tsmc-tab-btn active" data-tsmc-tab="map" type="button">🗺️ 闖關地圖</button>
+            <button class="tsmc-tab-btn" data-tsmc-tab="core50" type="button">⭐ 必考50字</button>
+            <button class="tsmc-tab-btn" data-tsmc-tab="autoplay" type="button">🎧 連續聽讀</button>
+            <button class="tsmc-tab-btn" data-tsmc-tab="exam" type="button">📝 15題模擬考</button>
+            <button class="tsmc-tab-btn" data-tsmc-tab="extras" type="button">🔢 數學面試</button>
           </div>
 
-          <!-- Collapsible Sleek Daily Mission -->
-          <details class="tsmc-daily-accordion" id="tsmc-daily-accordion">
-            <summary class="tsmc-daily-summary">
-              <div class="tsmc-daily-summary-left">
-                <span id="tsmc-daily-day" class="tsmc-daily-badge">第 1 天</span>
-                <span id="tsmc-daily-title" class="tsmc-daily-title-text">每日任務</span>
-                <strong id="tsmc-daily-status" class="tsmc-daily-status-pill">今日未完成</strong>
+          <!-- SUB-VIEW 1: 🗺️ 關卡地圖 (Stage Map) -->
+          <div id="tsmc-subview-map" class="tsmc-subview">
+            <div class="tsmc-map-banner">
+              <div class="tsmc-map-stats">
+                <span>🌟 總星數：<strong id="tsmc-total-stars">0</strong> / 72</span>
+                <span>🏆 通關進度：<strong id="tsmc-cleared-stages">0</strong> / 24 關</span>
               </div>
-              <span class="tsmc-daily-summary-arrow">展開任務 ▾</span>
-            </summary>
-            <div class="tsmc-daily-content">
-              <p>先複習今天到期的字，再學 10 個新字；答錯會重新出題，真的記住才完成。</p>
-              <p id="tsmc-daily-review-count" class="tsmc-daily-review-count">今天到期複習：0 個</p>
-              <div class="tsmc-daily-steps">
-                <span id="tsmc-daily-learn-step">1. 學單字 0 / 10</span>
-                <span id="tsmc-daily-quiz-step">2. 小測驗 0 / 10</span>
-              </div>
-              <button id="tsmc-daily-start" class="primary action-button" type="button">開始今天 10 個單字</button>
-              <small id="tsmc-daily-total">累計完成 0 天</small>
+              <p class="tsmc-map-tip">每關只有 12 個字！看完超好笑諧音口訣，花 1 分鐘打怪測驗即可過關蓋章！</p>
             </div>
-          </details>
-
-          <button id="tsmc-review-shortcut" class="tsmc-review-shortcut" type="button" style="display: none !important;" hidden>
-            待複習單字 <strong>0</strong> 個
-          </button>
-
-          <!-- Filters & Categories -->
-          <div id="tsmc-study-tools" class="tsmc-study-tools">
-            <div class="tsmc-study-filters" aria-label="選擇單字範圍">
-              <button class="tsmc-filter-button active" data-tsmc-filter="all" type="button">全部 288</button>
-              <button class="tsmc-filter-button" data-tsmc-filter="daily" type="button">今日 10 字</button>
-              <button class="tsmc-filter-button" data-tsmc-filter="review" type="button">待複習 0</button>
-            </div>
-            <div class="tsmc-category-pills" aria-label="主題分類篩選">
-              <button class="tsmc-cat-btn active" data-tsmc-cat="all" type="button">全部主題</button>
-              <button class="tsmc-cat-btn" data-tsmc-cat="machine" type="button">🟡 機台操作</button>
-              <button class="tsmc-cat-btn" data-tsmc-cat="quality" type="button">🔴 品質異常</button>
-              <button class="tsmc-cat-btn" data-tsmc-cat="process" type="button">🔵 晶圓製程</button>
-              <button class="tsmc-cat-btn" data-tsmc-cat="workplace" type="button">🟢 廠務交接</button>
-              <button class="tsmc-cat-btn" data-tsmc-cat="general" type="button">⚪ 基礎通用</button>
+            <div id="tsmc-stages-list" class="tsmc-stages-list">
+              <!-- Dynamically generated 24 stage cards -->
             </div>
           </div>
 
-          <!-- THE WORD FLASHCARD -->
-          <div id="tsmc-word-card" class="tsmc-word-card" data-mode="words" title="點擊卡片翻面">
-            <div class="tsmc-card-top-tags">
-              <span id="tsmc-word-category" class="tsmc-tag-category">機台操作</span>
-              <span id="tsmc-word-type" class="tsmc-word-type">noun</span>
-              <span class="tsmc-card-flip-tip">👆 點擊翻面</span>
+          <!-- SUB-VIEW 2: 📖 關卡學習單字卡 (Stage Learn) -->
+          <div id="tsmc-subview-learn" class="tsmc-subview" hidden>
+            <div class="tsmc-learn-header">
+              <button id="tsmc-learn-back" class="tsmc-back-btn" type="button">‹ 回關卡地圖</button>
+              <h3 id="tsmc-learn-stage-title">🚨 第 1 關：廠區緊急與警報</h3>
+              <span id="tsmc-learn-progress-counter" class="tsmc-learn-progress-badge">1 / 12</span>
             </div>
-            <strong id="tsmc-word">ability</strong>
-            <div id="tsmc-word-answer-box" class="tsmc-word-answer-box" hidden>
-              <p id="tsmc-word-answer" class="tsmc-word-meaning">能力</p>
-              <div id="tsmc-word-collocation" class="tsmc-word-collocation">
-                <span class="collocation-label">廠區搭配</span>
-                <strong id="tsmc-word-phrase">operation ability</strong>
-              </div>
-              <div id="tsmc-word-example-box" class="tsmc-word-example-box">
-                <p id="tsmc-word-sentence">The technician has the ability to operate this tool.</p>
-                <small id="tsmc-word-sentence-meaning">該技術員具備操作此機台的能力。</small>
-              </div>
-            </div>
-            <small id="tsmc-current-status" class="tsmc-current-status">尚未標記</small>
-          </div>
 
-          <section id="tsmc-quiz-card" class="tsmc-quiz-card" aria-live="polite" hidden>
-            <div class="tsmc-quiz-type-nav" aria-label="測驗題型">
-              <button class="tsmc-quiz-type-btn active" data-quiz-type="mixed" type="button">綜合題型</button>
-              <button class="tsmc-quiz-type-btn" data-quiz-type="en2zh" type="button">英選中</button>
-              <button class="tsmc-quiz-type-btn" data-quiz-type="zh2en" type="button">中選英</button>
-              <button class="tsmc-quiz-type-btn" data-quiz-type="listen" type="button">👂 聽音辨字</button>
-            </div>
-            <div class="tsmc-quiz-meta">
-              <span id="tsmc-quiz-progress">第 1 / 10 題</span>
-              <strong id="tsmc-quiz-score">答對 0 題</strong>
-            </div>
-            <div class="tsmc-quiz-progress-track" aria-hidden="true">
-              <span id="tsmc-quiz-progress-fill"></span>
-            </div>
-            <p id="tsmc-quiz-instruction" class="tsmc-quiz-instruction">選出正確的中文意思</p>
-            <div class="tsmc-quiz-question-wrapper">
-              <h3 id="tsmc-quiz-question">ability</h3>
-              <button id="tsmc-quiz-speak" class="tsmc-quiz-speak-btn" type="button" aria-label="朗讀發音">🔊 聽發音</button>
-            </div>
-            <div id="tsmc-quiz-choices" class="tsmc-quiz-choices"></div>
-            <p id="tsmc-quiz-feedback" class="tsmc-quiz-feedback" hidden></p>
-            <div id="tsmc-quiz-extra-info" class="tsmc-quiz-extra-info" hidden></div>
-            <button id="tsmc-quiz-next" class="primary action-button" type="button" hidden>下一題</button>
-          </section>
+            <!-- THE GIANT MNEMONIC FLASHCARD -->
+            <div id="tsmc-mnemonic-card" class="tsmc-mnemonic-card">
+              <div class="tsmc-card-top-tags">
+                <span id="tsmc-learn-category" class="tsmc-tag-category">機台操作</span>
+                <span id="tsmc-learn-type" class="tsmc-word-type">VERB</span>
+                <span id="tsmc-learn-core-badge" class="tsmc-core-badge">⭐ 必考高頻</span>
+              </div>
 
-          <div id="tsmc-word-actions" class="tsmc-word-actions">
-            <button id="tsmc-autoplay" class="tsmc-autoplay-button" type="button">
-              <span class="autoplay-icon">🎧</span>
-              <span class="autoplay-text">自動連續朗讀 (免動手)</span>
+              <!-- Word & Pronunciation -->
+              <div class="tsmc-word-head">
+                <h2 id="tsmc-learn-word">abort</h2>
+                <div class="tsmc-pronounce-pair">
+                  <button id="tsmc-learn-speak" class="tsmc-audio-btn" type="button">🔊 正常</button>
+                  <button id="tsmc-learn-speak-slow" class="tsmc-audio-btn" type="button">🐢 慢速</button>
+                </div>
+              </div>
+
+              <!-- Big Chinese Meaning -->
+              <p id="tsmc-learn-meaning" class="tsmc-learn-meaning">中止、放棄</p>
+
+              <!-- Mnemonic Box (諧音洗腦口訣盒) -->
+              <div class="tsmc-mnemonic-box">
+                <div class="tsmc-mnemonic-label">💡 洗腦秒記口訣</div>
+                <p id="tsmc-learn-mnemonic" class="tsmc-mnemonic-text">【阿伯特】地按按鈕【中止】機台運行！</p>
+              </div>
+
+              <!-- Collocation & Example -->
+              <div class="tsmc-fab-phrase-box">
+                <span class="tsmc-fab-tag">廠區短語</span>
+                <strong id="tsmc-learn-phrase">abort the run (中止運轉)</strong>
+              </div>
+              <div class="tsmc-example-quote">
+                <p id="tsmc-learn-sentence">Press abort if an emergency occurs.</p>
+                <small id="tsmc-learn-sentence-meaning">緊急狀況時請按下中止。</small>
+              </div>
+            </div>
+
+            <!-- Learn Navigation Controls -->
+            <div class="tsmc-learn-nav-row">
+              <button id="tsmc-learn-prev" class="action-button secondary" type="button">⬅️ 上一個字</button>
+              <button id="tsmc-learn-next" class="action-button secondary" type="button">下一個字 ➡️</button>
+            </div>
+            <button id="tsmc-start-stage-quiz" class="action-button primary tsmc-start-quiz-btn" type="button">
+              ⚔️ 開始本關過關打怪測驗 (30秒)
             </button>
-            <div class="tsmc-btn-pair">
-              <button id="tsmc-speak" class="mini-button" type="button">🔊 正常發音</button>
-              <button id="tsmc-speak-slow" class="mini-button" type="button">🐢 慢速發音</button>
+          </div>
+
+          <!-- SUB-VIEW 3: ⚔️ 關卡打怪過關測驗 (Stage Boss Quiz) -->
+          <div id="tsmc-subview-quiz" class="tsmc-subview" hidden>
+            <div class="tsmc-quiz-top-bar">
+              <button id="tsmc-quiz-quit" class="tsmc-back-btn" type="button">‹ 放棄測驗</button>
+              <span id="tsmc-stage-quiz-progress">第 1 / 12 題</span>
+              <strong id="tsmc-stage-quiz-score">目前得分: 0</strong>
             </div>
-            <div class="tsmc-btn-pair">
-              <button id="tsmc-reveal" class="secondary action-button" type="button">👁️ 顯示答案</button>
-              <button id="tsmc-next" class="primary action-button" type="button">➔ 下一個</button>
+
+            <div class="tsmc-quiz-progress-track" aria-hidden="true">
+              <span id="tsmc-stage-quiz-bar"></span>
+            </div>
+
+            <div class="tsmc-stage-quiz-card">
+              <p id="tsmc-stage-quiz-instruction" class="tsmc-quiz-instruction">請選出正確的中文意思：</p>
+              <div class="tsmc-quiz-prompt-wrapper">
+                <h3 id="tsmc-stage-quiz-word">abort</h3>
+                <button id="tsmc-stage-quiz-audio" class="tsmc-audio-btn" type="button">🔊 聽發音</button>
+              </div>
+
+              <div id="tsmc-stage-quiz-options" class="tsmc-stage-quiz-options">
+                <!-- 4 Choices -->
+              </div>
+
+              <div id="tsmc-stage-quiz-feedback" class="tsmc-quiz-feedback" hidden>
+                <p id="tsmc-quiz-feedback-text"></p>
+                <div id="tsmc-quiz-mnemonic-rescue" class="tsmc-mnemonic-rescue"></div>
+              </div>
+
+              <button id="tsmc-stage-quiz-next-btn" class="primary action-button" type="button" hidden>下一題 ➔</button>
             </div>
           </div>
 
-          <div id="tsmc-memory-actions" class="tsmc-memory-actions">
-            <button id="tsmc-mark-review" class="review-button" type="button">❌ 還不熟，繼續背</button>
-            <button id="tsmc-mark-known" class="known-button" type="button">✅ 這個會了</button>
+          <!-- SUB-VIEW 4: 🎧 自動連續朗讀 (Autoplay Audiobook Mode) -->
+          <div id="tsmc-subview-autoplay" class="tsmc-subview" hidden>
+            <div class="tsmc-autoplay-panel">
+              <div class="tsmc-autoplay-header">
+                <h3>🎧 免動手洗腦連續聽讀</h3>
+                <p>戴上耳機，系統會自動按順序朗讀：英文 ➔ 中文 ➔ 諧音口訣 ➔ 下一個字。通勤、散步或睡前無痛磨耳朵！</p>
+              </div>
+
+              <div class="tsmc-autoplay-controls">
+                <label class="field">
+                  <span>選擇聽讀關卡範圍</span>
+                  <select id="tsmc-autoplay-stage-select">
+                    <option value="all">全部 288 字</option>
+                    <option value="core50">⭐ 考前必背 50 字</option>
+                    <!-- Stage 1 to 24 -->
+                  </select>
+                </label>
+
+                <button id="tsmc-autoplay-toggle-btn" class="tsmc-autoplay-button" type="button">
+                  <span class="autoplay-icon">▶</span>
+                  <span class="autoplay-text">開始連續朗讀</span>
+                </button>
+              </div>
+
+              <div id="tsmc-autoplay-card" class="tsmc-autoplay-card">
+                <div class="tsmc-autoplay-word-title" id="tsmc-autoplay-word">準備播放...</div>
+                <div class="tsmc-autoplay-meaning" id="tsmc-autoplay-meaning">點擊上方按鈕開始</div>
+                <div class="tsmc-autoplay-mnemonic" id="tsmc-autoplay-mnemonic"></div>
+              </div>
+            </div>
           </div>
 
-          <p id="tsmc-study-summary" class="tsmc-study-summary">已記住 0 個 · 待複習 0 個</p>
-          <p id="tsmc-practice-note" class="tsmc-practice-note">單字取自台積電官方參考資料。</p>
+          <!-- SUB-VIEW 5: 📝 15 題台積電技術員模擬考 (Exam 15) -->
+          <div id="tsmc-subview-exam" class="tsmc-subview" hidden>
+            <div class="tsmc-exam-panel">
+              <div class="tsmc-exam-intro" id="tsmc-exam-intro">
+                <h3>📝 台積電技術員 15 題英文模擬考</h3>
+                <p>依據台積電甄選歷年出題比例，隨機抽取 15 題四選一單選題，限時 15 分鐘，測驗真實實力！</p>
+                <button id="tsmc-exam-start-btn" class="primary action-button" type="button">🚀 開始 15 題測驗</button>
+              </div>
+
+              <div id="tsmc-exam-active-box" class="tsmc-exam-active-box" hidden>
+                <div class="tsmc-exam-meta-bar">
+                  <span id="tsmc-exam-timer">⏱️ 剩餘時間: 15:00</span>
+                  <span id="tsmc-exam-counter">第 1 / 15 題</span>
+                </div>
+                <div class="tsmc-exam-question-card">
+                  <h4 id="tsmc-exam-question-text">ability</h4>
+                  <div id="tsmc-exam-choices" class="tsmc-exam-choices"></div>
+                  <button id="tsmc-exam-next-btn" class="primary action-button" type="button" hidden>確認並進入下一題 ➔</button>
+                </div>
+              </div>
+
+              <div id="tsmc-exam-result-box" class="tsmc-exam-result-box" hidden>
+                <div class="tsmc-exam-score-banner">
+                  <h3 id="tsmc-exam-verdict">測驗完成</h3>
+                  <div class="tsmc-exam-score" id="tsmc-exam-final-score">80 分</div>
+                  <p id="tsmc-exam-comment"></p>
+                </div>
+                <div id="tsmc-exam-breakdown" class="tsmc-exam-breakdown"></div>
+                <button id="tsmc-exam-restart-btn" class="primary action-button" type="button">🔄 再測驗一次</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUB-VIEW 6: 🔢 數學模擬與面試練習 -->
+          <div id="tsmc-subview-extras" class="tsmc-subview" hidden>
+            <div class="tsmc-extras-tabs">
+              <button class="tsmc-extras-tab-btn active" data-extras-mode="math" type="button">🔢 數學模擬測驗</button>
+              <button class="tsmc-extras-tab-btn" data-extras-mode="interview" type="button">💼 技術員面試練習</button>
+            </div>
+            <div id="tsmc-extras-card" class="tsmc-word-card compact">
+              <strong id="tsmc-extras-title">題目載入中...</strong>
+              <div id="tsmc-extras-answer-box" class="tsmc-word-answer-box" hidden>
+                <p id="tsmc-extras-answer" class="tsmc-word-meaning"></p>
+              </div>
+            </div>
+            <div class="tsmc-btn-pair" style="margin-top: 14px;">
+              <button id="tsmc-extras-reveal" class="secondary action-button" type="button">👁️ 顯示解答</button>
+              <button id="tsmc-extras-next" class="primary action-button" type="button">➔ 下一題</button>
+            </div>
+          </div>
+
+          <!-- STAGE CLEAR MODAL (🎉 關卡通關慶祝彈窗) -->
+          <div id="tsmc-clear-modal" class="tsmc-modal-overlay" hidden>
+            <div class="tsmc-modal-content">
+              <div class="tsmc-modal-confetti">🎉</div>
+              <h2 id="tsmc-modal-title">第 1 關通關成功！</h2>
+              <div class="tsmc-modal-stars" id="tsmc-modal-stars">⭐⭐⭐</div>
+              <p id="tsmc-modal-desc">太棒了！您已經掌握本關的 12 個核心單字與口訣！</p>
+              <div class="tsmc-modal-buttons">
+                <button id="tsmc-modal-next-stage" class="primary action-button" type="button">🏆 進入下一關</button>
+                <button id="tsmc-modal-to-map" class="secondary action-button" type="button">🗺️ 返回關卡地圖</button>
+              </div>
+            </div>
+          </div>
 
           <a
             class="tsmc-pdf-link"
             href="https://www.tsmc.com/sites/dcom/2023-11/tsmc_vocabulary.pdf"
             target="_blank"
             rel="noopener noreferrer"
-          >查看台積電官方英文單字 PDF</a>
+            style="margin-top: 20px;"
+          >查看台積電官方英文單字 PDF 原文</a>
         </section>
       </section>
 
@@ -348,6 +436,6 @@
       </button>
     </nav>
 
-    <script src="./app.js?v=20260907-4"></script>
+    <script src="./app.js?v=20260907-5"></script>
   </body>
 </html>

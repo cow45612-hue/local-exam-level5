@@ -122,1207 +122,1113 @@ const els = {
   retrySame: document.querySelector("#retry-same"),
   resultHome: document.querySelector("#result-home"),
   reviewList: document.querySelector("#review-list"),
-  tsmcWord: document.querySelector("#tsmc-word"),
-  tsmcWordType: document.querySelector("#tsmc-word-type"),
-  tsmcWordCategory: document.querySelector("#tsmc-word-category"),
-  tsmcWordAnswer: document.querySelector("#tsmc-word-answer"),
-  tsmcWordAnswerBox: document.querySelector("#tsmc-word-answer-box"),
-  tsmcWordPhrase: document.querySelector("#tsmc-word-phrase"),
-  tsmcWordSentence: document.querySelector("#tsmc-word-sentence"),
-  tsmcWordSentenceMeaning: document.querySelector("#tsmc-word-sentence-meaning"),
-  tsmcWordCollocation: document.querySelector("#tsmc-word-collocation"),
-  tsmcWordExampleBox: document.querySelector("#tsmc-word-example-box"),
-  tsmcWordProgress: document.querySelector("#tsmc-word-progress"),
-  tsmcAutoplay: document.querySelector("#tsmc-autoplay"),
-  tsmcSpeak: document.querySelector("#tsmc-speak"),
-  tsmcSpeakSlow: document.querySelector("#tsmc-speak-slow"),
-  tsmcReveal: document.querySelector("#tsmc-reveal"),
-  tsmcNext: document.querySelector("#tsmc-next"),
-  tsmcWordCard: document.querySelector("#tsmc-word-card"),
-  tsmcPracticeNote: document.querySelector("#tsmc-practice-note"),
-  tsmcModeButtons: document.querySelectorAll(".tsmc-mode-button"),
-  tsmcStudyTools: document.querySelector("#tsmc-study-tools"),
-  tsmcStudySummary: document.querySelector("#tsmc-study-summary"),
-  tsmcFilterButtons: document.querySelectorAll(".tsmc-filter-button"),
-  tsmcCatButtons: document.querySelectorAll(".tsmc-cat-btn"),
-  tsmcCurrentStatus: document.querySelector("#tsmc-current-status"),
-  tsmcMemoryActions: document.querySelector("#tsmc-memory-actions"),
-  tsmcMarkReview: document.querySelector("#tsmc-mark-review"),
-  tsmcMarkKnown: document.querySelector("#tsmc-mark-known"),
-  tsmcWordActions: document.querySelector("#tsmc-word-actions"),
-  tsmcQuizCard: document.querySelector("#tsmc-quiz-card"),
-  tsmcQuizTypeButtons: document.querySelectorAll(".tsmc-quiz-type-btn"),
-  tsmcQuizSpeak: document.querySelector("#tsmc-quiz-speak"),
-  tsmcQuizExtraInfo: document.querySelector("#tsmc-quiz-extra-info"),
-  tsmcQuizProgress: document.querySelector("#tsmc-quiz-progress"),
-  tsmcQuizScore: document.querySelector("#tsmc-quiz-score"),
-  tsmcQuizProgressFill: document.querySelector("#tsmc-quiz-progress-fill"),
-  tsmcQuizQuestion: document.querySelector("#tsmc-quiz-question"),
-  tsmcQuizChoices: document.querySelector("#tsmc-quiz-choices"),
-  tsmcQuizFeedback: document.querySelector("#tsmc-quiz-feedback"),
-  tsmcQuizNext: document.querySelector("#tsmc-quiz-next"),
-  tsmcReviewShortcut: document.querySelector("#tsmc-review-shortcut"),
-  tsmcDailyDay: document.querySelector("#tsmc-daily-day"),
-  tsmcDailyStatus: document.querySelector("#tsmc-daily-status"),
-  tsmcDailyLearnStep: document.querySelector("#tsmc-daily-learn-step"),
-  tsmcDailyQuizStep: document.querySelector("#tsmc-daily-quiz-step"),
-  tsmcDailyStart: document.querySelector("#tsmc-daily-start"),
-  tsmcDailyTotal: document.querySelector("#tsmc-daily-total"),
-  tsmcDailyReviewCount: document.querySelector("#tsmc-daily-review-count"),
-  tsmcQuizInstruction: document.querySelector("#tsmc-quiz-instruction"),
 };
 
-const tsmcPracticeIndices = { words: 0, math: 0, interview: 0 };
-let tsmcPracticeMode = "words";
-let tsmcWordFilter = "all";
-let tsmcCategoryFilter = "all";
-let tsmcQuizType = "mixed";
-let tsmcAutoplayActive = false;
+// ==========================================
+// 🚀 台積電技術員英文闖關與模擬考系統 (Duolingo-style TSMC System)
+// ==========================================
+
+const TSMC_STAGES_META = [
+  { id: 1, name: "廠區緊急與警報", icon: "🚨" },
+  { id: 2, name: "機台核心動作鈕", icon: "🔘" },
+  { id: 3, name: "外觀瑕疵與異常", icon: "⚠️" },
+  { id: 4, name: "無塵室防護裝備", icon: "🥼" },
+  { id: 5, name: "晶圓載具與批號", icon: "📦" },
+  { id: 6, name: "檢驗測量與規格", icon: "🔍" },
+  { id: 7, name: "機台保養與狀態", icon: "🛠️" },
+  { id: 8, name: "良率指標與產能", icon: "📈" },
+  { id: 9, name: "化學品與氣體", icon: "🧪" },
+  { id: 10, name: "輪班值班與交接", icon: "🤝" },
+  { id: 11, name: "半導體製程步驟", icon: "📐" },
+  { id: 12, name: "機台硬體與機構", icon: "⚙️" },
+  { id: 13, name: "SOP規範與配方", icon: "📋" },
+  { id: 14, name: "主管指示與急件", icon: "💬" },
+  { id: 15, name: "基礎動作詞彙", icon: "💡" },
+  { id: 16, name: "基礎處理動詞", icon: "💡" },
+  { id: 17, name: "基礎狀態形容詞", icon: "💡" },
+  { id: 18, name: "時間排程與頻率", icon: "💡" },
+  { id: 19, name: "方位空間與區域", icon: "💡" },
+  { id: 20, name: "數量計算與計量", icon: "💡" },
+  { id: 21, name: "資訊數據與系統", icon: "💡" },
+  { id: 22, name: "材料工具與用品", icon: "💡" },
+  { id: 23, name: "團隊合作與學習", icon: "💡" },
+  { id: 24, name: "技術員甄試加分", icon: "🏆" },
+];
+
+const TSMC_STAGE_PROGRESS_KEY = "tsmc_stage_progress_v2";
+
+function loadTsmcStageProgress() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(TSMC_STAGE_PROGRESS_KEY));
+    return raw && typeof raw === "object" ? raw : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveTsmcStageProgress(progress) {
+  try {
+    localStorage.setItem(TSMC_STAGE_PROGRESS_KEY, JSON.stringify(progress));
+  } catch (err) {
+    console.warn("無法儲存關卡進度:", err);
+  }
+}
+
+let tsmcStageProgress = loadTsmcStageProgress();
+let tsmcCurrentTab = "map";
+let tsmcCurrentStageId = 1;
+let tsmcLearnWords = [];
+let tsmcLearnIndex = 0;
+
+// Stage Quiz State
+let tsmcStageQuizState = {
+  active: false,
+  stageId: 1,
+  questions: [],
+  currentIndex: 0,
+  score: 0,
+  answered: false,
+};
+
+// Autoplay State
+let tsmcAutoplayRunning = false;
+let tsmcAutoplayIndex = 0;
+let tsmcAutoplayPool = [];
 let tsmcAutoplayTimeout = null;
-let tsmcWordProgress = loadTsmcWordProgress();
-let tsmcWordSrs = loadTsmcWordSrs();
-let tsmcDailyState = loadTsmcDailyState();
-let tsmcQuizState = createEmptyTsmcQuizState();
 
-function loadTsmcWordProgress() {
-  try {
-    return JSON.parse(localStorage.getItem(TSMC_PROGRESS_KEY)) || {};
-  } catch {
-    return {};
-  }
-}
-
-function tsmcWordKey(item) {
-  return item.word.toLowerCase();
-}
-
-function saveTsmcWordProgress() {
-  localStorage.setItem(TSMC_PROGRESS_KEY, JSON.stringify(tsmcWordProgress));
-}
-
-function loadTsmcWordSrs() {
-  try {
-    return JSON.parse(localStorage.getItem(TSMC_SRS_KEY)) || {};
-  } catch {
-    return {};
-  }
-}
-
-function saveTsmcWordSrs() {
-  localStorage.setItem(TSMC_SRS_KEY, JSON.stringify(tsmcWordSrs));
-}
-
-function tsmcSrsRecord(item) {
-  const key = tsmcWordKey(item);
-  const stored = tsmcWordSrs[key] || {};
-  return {
-    introduced: Boolean(stored.introduced),
-    level: Math.max(0, Math.min(4, Number(stored.level) || 0)),
-    dueDate: stored.dueDate || "",
-    correctStreak: Math.max(0, Number(stored.correctStreak) || 0),
-  };
-}
-
-function dateKeyAfter(days, baseKey = todayKey()) {
-  const [year, month, day] = baseKey.split("-").map(Number);
-  const date = new Date(year, month - 1, day);
-  date.setDate(date.getDate() + days);
-  return todayKey(date);
-}
-
-function introduceTsmcWord(item) {
-  const key = tsmcWordKey(item);
-  const record = tsmcSrsRecord(item);
-  tsmcWordSrs[key] = { ...record, introduced: true, dueDate: record.dueDate || todayKey() };
-  saveTsmcWordSrs();
-}
-
-function recordTsmcQuizResult(item, isCorrect) {
-  const key = tsmcWordKey(item);
-  const record = tsmcSrsRecord(item);
-  if (isCorrect) {
-    const level = Math.min(4, record.level + 1);
-    const intervals = [0, 1, 3, 7, 14];
-    tsmcWordSrs[key] = {
-      introduced: true,
-      level,
-      dueDate: dateKeyAfter(intervals[level]),
-      correctStreak: record.correctStreak + 1,
-    };
-    tsmcWordProgress[key] = "known";
-  } else {
-    tsmcWordSrs[key] = {
-      introduced: true,
-      level: Math.max(0, record.level - 1),
-      dueDate: todayKey(),
-      correctStreak: 0,
-    };
-    tsmcWordProgress[key] = "review";
-  }
-  saveTsmcWordSrs();
-  saveTsmcWordProgress();
-}
-
-function isTsmcWordDue(item) {
-  const record = tsmcSrsRecord(item);
-  return record.introduced && Boolean(record.dueDate) && record.dueDate <= todayKey();
-}
-
-function createEmptyTsmcQuizState() {
-  return {
-    questions: [],
-    index: 0,
-    score: 0,
-    wrongAttempts: 0,
-    answered: false,
-    finished: false,
-    dailyMission: false,
-    targetCount: 0,
-    failedKeys: new Set(),
-    retryStreaks: {},
-    masteredKeys: new Set(),
-  };
-}
-
-function loadTsmcDailyState() {
-  let stored = {};
-  try {
-    stored = JSON.parse(localStorage.getItem(TSMC_DAILY_KEY)) || {};
-  } catch {
-    stored = {};
-  }
-
-  const today = todayKey();
-  const totalCompletedDays = Number(stored.totalCompletedDays) || 0;
-  if (stored.date !== today) {
-    return {
-      date: today,
-      dayNumber: totalCompletedDays + 1,
-      learned: [],
-      newWordKeys: [],
-      quizAnswered: 0,
-      quizScore: 0,
-      quizMastered: [],
-      reviewKeys: [],
-      reviewInitialized: false,
-      completed: false,
-      totalCompletedDays,
-    };
-  }
-
-  return {
-    date: today,
-    dayNumber: Number(stored.dayNumber) || totalCompletedDays + 1,
-    learned: Array.isArray(stored.learned) ? stored.learned : [],
-    newWordKeys: Array.isArray(stored.newWordKeys) ? stored.newWordKeys : [],
-    quizAnswered: Number(stored.quizAnswered) || 0,
-    quizScore: Number(stored.quizScore) || 0,
-    quizMastered: Array.isArray(stored.quizMastered) ? stored.quizMastered : [],
-    reviewKeys: Array.isArray(stored.reviewKeys) ? stored.reviewKeys : [],
-    reviewInitialized: Boolean(stored.reviewInitialized),
-    completed: Boolean(stored.completed),
-    totalCompletedDays,
-  };
-}
-
-function saveTsmcDailyState() {
-  localStorage.setItem(TSMC_DAILY_KEY, JSON.stringify(tsmcDailyState));
-}
-
-function currentTsmcDailyWords() {
-  const keys = new Set(tsmcDailyState.newWordKeys);
-  if (keys.size) return TSMC_WORDS.filter((item) => keys.has(tsmcWordKey(item)));
-
-  const learnedKeys = new Set(tsmcDailyState.learned);
-  const selected = TSMC_WORDS.filter((item) => learnedKeys.has(tsmcWordKey(item)));
-  if (tsmcDailyState.completed) return selected;
-
-  const selectedKeys = new Set(selected.map(tsmcWordKey));
-  for (const item of TSMC_WORDS) {
-    const key = tsmcWordKey(item);
-    const alreadySeen = tsmcSrsRecord(item).introduced || Boolean(tsmcWordProgress[key]);
-    if (selectedKeys.has(key) || alreadySeen) continue;
-    selected.push(item);
-    selectedKeys.add(key);
-    if (selected.length === TSMC_DAILY_WORD_COUNT) break;
-  }
-  return selected;
-}
-
-function initializeTsmcDailyNewWords() {
-  if (tsmcDailyState.newWordKeys.length) return;
-  tsmcDailyState.newWordKeys = currentTsmcDailyWords().map(tsmcWordKey);
-  saveTsmcDailyState();
-}
-
-function initializeTsmcDailyReviews() {
-  if (tsmcDailyState.reviewInitialized) return;
-  const newWordKeys = new Set(currentTsmcDailyWords().map(tsmcWordKey));
-  tsmcDailyState.reviewKeys = TSMC_WORDS
-    .filter((item) => {
-      const key = tsmcWordKey(item);
-      return !newWordKeys.has(key) && (isTsmcWordDue(item) || tsmcWordProgress[key] === "review");
-    })
-    .map(tsmcWordKey);
-  tsmcDailyState.reviewInitialized = true;
-  saveTsmcDailyState();
-}
-
-function currentTsmcDueReviewWords() {
-  const keys = new Set(tsmcDailyState.reviewKeys);
-  return TSMC_WORDS.filter((item) => keys.has(tsmcWordKey(item)));
-}
-
-function currentTsmcDailyQuizWords() {
-  const seen = new Set();
-  return [...currentTsmcDueReviewWords(), ...currentTsmcDailyWords()].filter((item) => {
-    const key = tsmcWordKey(item);
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
-
-function renderTsmcDailyMission() {
-  const dailyWords = currentTsmcDailyWords();
-  const dailyQuizWords = currentTsmcDailyQuizWords();
-  const dailyKeys = new Set(dailyWords.map(tsmcWordKey));
-  const learnedCount = new Set(tsmcDailyState.learned.filter((key) => dailyKeys.has(key))).size;
-  const quizKeys = new Set(dailyQuizWords.map(tsmcWordKey));
-  const quizCount = new Set(tsmcDailyState.quizMastered.filter((key) => quizKeys.has(key))).size;
-
-  els.tsmcDailyDay.textContent = `第 ${tsmcDailyState.dayNumber} 天`;
-  els.tsmcDailyStatus.textContent = tsmcDailyState.completed ? "今日已完成" : "今日未完成";
-  els.tsmcDailyLearnStep.textContent = `1. 學單字 ${learnedCount} / ${dailyWords.length}`;
-  els.tsmcDailyQuizStep.textContent = `2. 小測驗 ${quizCount} / ${dailyQuizWords.length}`;
-  els.tsmcDailyReviewCount.textContent = `今天到期複習：${currentTsmcDueReviewWords().length} 個`;
-  els.tsmcDailyLearnStep.classList.toggle("done", learnedCount === dailyWords.length);
-  els.tsmcDailyQuizStep.classList.toggle("done", tsmcDailyState.completed);
-  els.tsmcDailyTotal.textContent = `累計完成 ${tsmcDailyState.totalCompletedDays} 天`;
-  els.tsmcDailyStart.disabled = false;
-
-  if (tsmcDailyState.completed) {
-    els.tsmcDailyStart.textContent = dailyWords.length ? `複習今天 ${dailyWords.length} 個單字` : "查看今天複習";
-  } else if (learnedCount < dailyWords.length) {
-    els.tsmcDailyStart.textContent = learnedCount ? `繼續學習 ${learnedCount} / ${dailyWords.length}` : `開始今天 ${dailyWords.length} 個單字`;
-    els.tsmcDailyStart.disabled = false;
-  } else if (!dailyQuizWords.length) {
-    els.tsmcDailyStart.textContent = "今天沒有到期單字";
-    els.tsmcDailyStart.disabled = true;
-  } else {
-    els.tsmcDailyStart.textContent = `開始今天 ${dailyQuizWords.length} 題小測驗`;
-    els.tsmcDailyStart.disabled = false;
-  }
-}
-
-async function loadTsmcVocabulary() {
-  try {
-    const response = await fetch("./tsmc-vocabulary.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-    const vocabulary = await response.json();
-    if (!Array.isArray(vocabulary) || vocabulary.length !== 288) {
-      throw new Error(`Expected 288 words, found ${vocabulary?.length ?? 0}`);
-    }
-
-    TSMC_WORDS = vocabulary;
-    tsmcPracticeIndices.words = 0;
-    initializeTsmcDailyNewWords();
-    initializeTsmcDailyReviews();
-    renderTsmcDailyMission();
-    if (tsmcPracticeMode === "wordQuiz") {
-      if (tsmcQuizState.dailyMission) startTsmcQuiz(currentTsmcDailyQuizWords(), true);
-      else startTsmcQuiz();
-    }
-    else if (tsmcPracticeMode === "words") renderTsmcWord();
-  } catch (error) {
-    console.warn("Unable to load the complete TSMC vocabulary; using the built-in fallback.", error);
-  }
-}
-
-function currentTsmcItems() {
-  if (tsmcPracticeMode === "math") return TSMC_MATH_QUESTIONS;
-  if (tsmcPracticeMode === "interview") return TSMC_INTERVIEW_QUESTIONS;
-  let items = TSMC_WORDS;
-  if (tsmcWordFilter === "daily") items = currentTsmcDailyWords();
-  else if (tsmcWordFilter === "review") {
-    items = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review" || isTsmcWordDue(item));
-  }
-  if (tsmcCategoryFilter !== "all") {
-    items = items.filter((item) => item.category === tsmcCategoryFilter);
-  }
-  return items;
-}
-
-function renderTsmcStudySummary() {
-  const knownCount = TSMC_WORDS.filter((item) => {
-    const key = tsmcWordKey(item);
-    const record = tsmcSrsRecord(item);
-    if (record.introduced) return record.level > 0 && !isTsmcWordDue(item);
-    return tsmcWordProgress[key] === "known";
-  }).length;
-  const reviewCount = TSMC_WORDS.filter((item) => tsmcWordProgress[tsmcWordKey(item)] === "review" || isTsmcWordDue(item)).length;
-  els.tsmcStudySummary.textContent = `已記住 ${knownCount} 個 · 待複習 ${reviewCount} 個`;
-  els.tsmcReviewShortcut.innerHTML = `待複習單字 <strong>${reviewCount}</strong> 個`;
-  els.tsmcReviewShortcut.hidden = reviewCount === 0;
-  els.tsmcFilterButtons.forEach((button) => {
-    const filter = button.dataset.tsmcFilter;
-    if (filter === "review") button.textContent = `待複習 ${reviewCount}`;
-    if (filter === "daily") button.textContent = `今日 ${currentTsmcDailyWords().length} 字`;
-    if (filter === "all") button.textContent = `全部 ${TSMC_WORDS.length}`;
-    button.classList.toggle("active", button.dataset.tsmcFilter === tsmcWordFilter);
-  });
-  if (els.tsmcCatButtons) {
-    els.tsmcCatButtons.forEach((button) => {
-      button.classList.toggle("active", button.dataset.tsmcCat === tsmcCategoryFilter);
-    });
-  }
-}
-
-els.tsmcReviewShortcut.addEventListener("click", () => {
-  tsmcPracticeMode = "words";
-  tsmcWordFilter = "review";
-  tsmcPracticeIndices.words = 0;
-  renderTsmcWord();
-  els.tsmcWordCard.scrollIntoView({ behavior: "smooth", block: "center" });
-});
-
-els.tsmcDailyStart.addEventListener("click", () => {
-  const dailyWords = currentTsmcDailyWords();
-  const dailyQuizWords = currentTsmcDailyQuizWords();
-  const learnedKeys = new Set(tsmcDailyState.learned);
-  const learnedCount = dailyWords.filter((word) => learnedKeys.has(tsmcWordKey(word))).length;
-
-  if (tsmcDailyState.completed && !dailyWords.length && dailyQuizWords.length) {
-    tsmcPracticeMode = "wordQuiz";
-    startTsmcQuiz(dailyQuizWords, true);
-    els.tsmcQuizCard.scrollIntoView({ behavior: "smooth", block: "start" });
-    return;
-  }
-
-  if (!tsmcDailyState.completed && learnedCount === dailyWords.length) {
-    tsmcDailyState.quizAnswered = 0;
-    tsmcDailyState.quizScore = 0;
-    tsmcDailyState.quizMastered = [];
-    saveTsmcDailyState();
-    tsmcPracticeMode = "wordQuiz";
-    startTsmcQuiz(dailyQuizWords, true);
-    els.tsmcQuizCard.scrollIntoView({ behavior: "smooth", block: "start" });
-    return;
-  }
-
-  tsmcPracticeMode = "words";
-  tsmcWordFilter = "daily";
-  tsmcPracticeIndices.words = 0;
-  const accordion = document.querySelector("#tsmc-daily-accordion");
-  if (accordion) accordion.open = false;
-  renderTsmcWord();
-  els.tsmcWordCard.scrollIntoView({ behavior: "smooth", block: "center" });
-});
-
-function syncTsmcModeButtons() {
-  els.tsmcModeButtons.forEach((button) => button.classList.toggle("active", button.dataset.tsmcMode === tsmcPracticeMode));
-}
-
-function renderTsmcWord() {
-  const items = currentTsmcItems();
-  const isWordMode = tsmcPracticeMode === "words";
-  if (isWordMode) renderTsmcStudySummary();
-  els.tsmcStudyTools.hidden = !isWordMode;
-  els.tsmcMemoryActions.hidden = !isWordMode;
-  els.tsmcCurrentStatus.hidden = !isWordMode;
-  els.tsmcWordCard.hidden = false;
-  els.tsmcWordActions.hidden = false;
-  els.tsmcQuizCard.hidden = true;
-  syncTsmcModeButtons();
-  stopCurrentSpeech();
-  setSpeakButtonState(false);
-
-  if (isWordMode && items.length === 0) {
-    const isDailyEmpty = tsmcWordFilter === "daily";
-    els.tsmcWord.textContent = tsmcCategoryFilter !== "all" ? "此分類目前沒有單字" : isDailyEmpty ? "今天沒有新單字" : "目前沒有待複習單字";
-    els.tsmcWordType.textContent = "提示";
-    if (els.tsmcWordCategory) els.tsmcWordCategory.hidden = true;
-    if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = true;
-    els.tsmcWordAnswer.textContent = isDailyEmpty
-      ? "回到每日任務，完成今天到期的複習即可。"
-      : "切換其他主題或切回「全部」，繼續標記不熟的單字。";
-    els.tsmcWordAnswer.hidden = false;
-    els.tsmcCurrentStatus.textContent = "清單是空的";
-    els.tsmcWordProgress.textContent = "0 / 0";
-    els.tsmcSpeak.disabled = true;
-    els.tsmcSpeakSlow.disabled = true;
-    if (els.tsmcAutoplay) els.tsmcAutoplay.disabled = true;
-    els.tsmcReveal.disabled = true;
-    els.tsmcNext.disabled = true;
-    els.tsmcMarkReview.disabled = true;
-    els.tsmcMarkKnown.disabled = true;
-    els.tsmcWordCard.dataset.studyStatus = "empty";
-    return;
-  }
-
-  tsmcPracticeIndices[tsmcPracticeMode] %= items.length;
-  const index = tsmcPracticeIndices[tsmcPracticeMode];
-  const item = items[index];
-  els.tsmcWord.textContent = isWordMode ? item.word : item.prompt;
-  els.tsmcWordType.textContent = isWordMode ? item.type : tsmcPracticeMode === "math" ? "數學模擬" : "面試題";
-
-  if (els.tsmcWordCategory) {
-    if (isWordMode && item.categoryLabel) {
-      els.tsmcWordCategory.textContent = item.categoryLabel;
-      els.tsmcWordCategory.hidden = false;
-      els.tsmcWordCategory.dataset.cat = item.category || "general";
-    } else {
-      els.tsmcWordCategory.hidden = true;
-    }
-  }
-
-  els.tsmcWordAnswer.textContent = isWordMode ? item.meaning : item.answer;
-
-  if (isWordMode && item.fabPhrase) {
-    if (els.tsmcWordCollocation) els.tsmcWordCollocation.hidden = false;
-    if (els.tsmcWordPhrase) els.tsmcWordPhrase.textContent = item.fabPhrase;
-  } else if (els.tsmcWordCollocation) {
-    els.tsmcWordCollocation.hidden = true;
-  }
-
-  if (isWordMode && item.exampleSentence) {
-    if (els.tsmcWordExampleBox) els.tsmcWordExampleBox.hidden = false;
-    if (els.tsmcWordSentence) els.tsmcWordSentence.textContent = item.exampleSentence;
-    if (els.tsmcWordSentenceMeaning) els.tsmcWordSentenceMeaning.textContent = item.exampleMeaning || "";
-  } else if (els.tsmcWordExampleBox) {
-    els.tsmcWordExampleBox.hidden = true;
-  }
-
-  if (els.tsmcWordAnswerBox) {
-    els.tsmcWordAnswerBox.hidden = true;
-  } else {
-    els.tsmcWordAnswer.hidden = true;
-  }
-
-  els.tsmcReveal.textContent = "顯示答案";
-  els.tsmcWordProgress.textContent = `${index + 1} / ${items.length}`;
-  els.tsmcSpeak.hidden = !isWordMode;
-  els.tsmcSpeak.disabled = false;
-  els.tsmcSpeakSlow.hidden = !isWordMode;
-  els.tsmcSpeakSlow.disabled = false;
-  if (els.tsmcAutoplay) {
-    els.tsmcAutoplay.hidden = !isWordMode;
-    els.tsmcAutoplay.disabled = false;
-  }
-  els.tsmcReveal.disabled = false;
-  els.tsmcNext.disabled = false;
-  els.tsmcMarkReview.disabled = false;
-  els.tsmcMarkKnown.disabled = false;
-  els.tsmcWordCard.classList.toggle("compact", !isWordMode);
-  els.tsmcWordCard.dataset.mode = tsmcPracticeMode;
-  const studyStatus = isWordMode ? tsmcWordProgress[tsmcWordKey(item)] || "unseen" : "";
-  const srsRecord = isWordMode ? tsmcSrsRecord(item) : { level: 0, dueDate: "" };
-  els.tsmcWordCard.dataset.studyStatus = isWordMode && (studyStatus === "review" || isTsmcWordDue(item)) ? "review" : studyStatus;
-  els.tsmcCurrentStatus.textContent = isWordMode
-    ? `熟練度 ${srsRecord.level} / 4 · ${studyStatus === "review" || isTsmcWordDue(item) ? "需要複習" : srsRecord.dueDate ? `下次 ${srsRecord.dueDate}` : "尚未測驗"}`
-    : "";
-  els.tsmcPracticeNote.textContent = isWordMode
-    ? tsmcWordFilter === "daily"
-      ? `今天練 ${currentTsmcDailyWords().length} 個新字；看完答案後，選擇「還不熟」或「這個會了」。`
-      : "單字取自台積電官方參考資料。"
-    : tsmcPracticeMode === "math"
-      ? "依常見題型自編的模擬題，並非台積電官方或外流考題。"
-      : "回答重點供你練習組織內容，請換成自己的真實經驗。";
-}
-
-function buildTsmcQuizQuestion(word, type = "en2zh") {
-  let actualType = type;
-  if (actualType === "mixed") {
-    const types = ["en2zh", "zh2en", "listen"];
-    actualType = types[Math.floor(Math.random() * types.length)];
-  }
-
-  const isZhTarget = actualType === "en2zh" || actualType === "listen";
-  const correctChoice = isZhTarget ? word.meaning : word.word;
-  const choices = [correctChoice];
-
-  for (const candidate of shuffle(TSMC_WORDS)) {
-    const candidateChoice = isZhTarget ? candidate.meaning : candidate.word;
-    const sameMeaning = !isZhTarget && candidate.meaning === word.meaning;
-    if (candidate.word === word.word || sameMeaning || choices.includes(candidateChoice)) continue;
-    choices.push(candidateChoice);
-    if (choices.length === 4) break;
-  }
-
-  let prompt = word.word;
-  let instruction = "選出正確的中文意思";
-  if (actualType === "zh2en") {
-    prompt = word.meaning;
-    instruction = "選出正確的英文單字";
-  } else if (actualType === "listen") {
-    prompt = "🎧 請聽發音";
-    instruction = "聽英文發音，選出正確的中文意思";
-  }
-
-  return {
-    word,
-    type: actualType,
-    prompt,
-    instruction,
-    correctChoice,
-    choices: shuffle(choices),
-  };
-}
-
-function startTsmcQuiz(wordPool = TSMC_WORDS, dailyMission = false) {
-  stopCurrentSpeech();
-  stopTsmcAutoplay();
-  const questionCount = dailyMission ? wordPool.length : TSMC_QUIZ_COUNT;
-  const selected = shuffle(wordPool).slice(0, Math.min(questionCount, wordPool.length));
-  tsmcQuizState = createEmptyTsmcQuizState();
-  tsmcQuizState.questions = selected.map((word, index) => {
-    let qType = tsmcQuizType;
-    if (qType === "mixed") {
-      const types = ["en2zh", "zh2en", "listen"];
-      qType = types[index % types.length];
-    }
-    return buildTsmcQuizQuestion(word, qType);
-  });
-  tsmcQuizState.dailyMission = dailyMission;
-  tsmcQuizState.targetCount = selected.length;
-  renderTsmcQuiz();
-}
-
-function renderTsmcQuiz() {
-  syncTsmcModeButtons();
-  els.tsmcStudyTools.hidden = true;
-  els.tsmcMemoryActions.hidden = true;
-  els.tsmcCurrentStatus.hidden = true;
-  els.tsmcWordCard.hidden = true;
-  els.tsmcWordActions.hidden = true;
-  els.tsmcQuizCard.hidden = false;
-  if (els.tsmcQuizTypeButtons) {
-    els.tsmcQuizTypeButtons.forEach((b) => b.classList.toggle("active", b.dataset.quizType === tsmcQuizType));
-  }
-  els.tsmcPracticeNote.textContent = tsmcQuizState.dailyMission
-    ? `今日小測驗包含到期複習與 ${currentTsmcDailyWords().length} 個新字；答錯會重新出題，連對兩次才通過。`
-    : "每回隨機 10 題；答錯的單字會自動加入待複習。";
-
-  if (tsmcQuizState.finished) {
-    const totalAttempts = tsmcQuizState.score + tsmcQuizState.wrongAttempts;
-    const rate = totalAttempts ? Math.round((tsmcQuizState.score / totalAttempts) * 100) : 0;
-    els.tsmcWordProgress.textContent = "測驗完成";
-    els.tsmcQuizProgress.textContent = "本回成績";
-    els.tsmcQuizScore.textContent = `通過 ${tsmcQuizState.masteredKeys.size} 個`;
-    els.tsmcQuizProgressFill.style.width = "100%";
-    els.tsmcQuizInstruction.textContent = "所有單字都已通過";
-    els.tsmcQuizQuestion.textContent = `${tsmcQuizState.masteredKeys.size} / ${tsmcQuizState.targetCount}`;
-    if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.hidden = true;
-    if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
-    els.tsmcQuizChoices.replaceChildren();
-    els.tsmcQuizFeedback.textContent = `共作答 ${totalAttempts} 題 · 答對率 ${rate}% · 答錯 ${tsmcQuizState.wrongAttempts} 次`;
-    els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${tsmcQuizState.wrongAttempts ? "wrong" : "correct"}`;
-    els.tsmcQuizFeedback.hidden = false;
-    els.tsmcQuizNext.textContent = tsmcQuizState.dailyMission ? `再練今日 ${tsmcQuizState.targetCount} 個字` : "再測 10 題";
-    els.tsmcQuizNext.hidden = false;
-    return;
-  }
-
-  const current = tsmcQuizState.questions[tsmcQuizState.index];
-  const masteredCount = tsmcQuizState.masteredKeys.size;
-  const attempts = tsmcQuizState.score + tsmcQuizState.wrongAttempts;
-  els.tsmcWordProgress.textContent = `通過 ${masteredCount} / ${tsmcQuizState.targetCount}`;
-  els.tsmcQuizProgress.textContent = `已通過 ${masteredCount} / ${tsmcQuizState.targetCount}`;
-  els.tsmcQuizScore.textContent = `作答 ${attempts} 題`;
-  els.tsmcQuizProgressFill.style.width = `${(masteredCount / tsmcQuizState.targetCount) * 100}%`;
-  els.tsmcQuizInstruction.textContent = current.instruction;
-  els.tsmcQuizQuestion.textContent = current.prompt;
-  if (els.tsmcQuizSpeak) {
-    els.tsmcQuizSpeak.hidden = false;
-    els.tsmcQuizSpeak.onclick = () => speakTsmcQuizWord(current.word);
-  }
-  if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
-  els.tsmcQuizFeedback.hidden = true;
-  els.tsmcQuizFeedback.className = "tsmc-quiz-feedback";
-  els.tsmcQuizNext.hidden = true;
-  els.tsmcQuizNext.textContent = "下一題";
-  els.tsmcQuizChoices.replaceChildren();
-
-  current.choices.forEach((choice, index) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "tsmc-quiz-choice";
-    button.dataset.choice = choice;
-    button.textContent = `${String.fromCharCode(65 + index)}. ${choice}`;
-    button.addEventListener("click", () => answerTsmcQuiz(choice, button));
-    els.tsmcQuizChoices.append(button);
-  });
-
-  if (current.type === "listen") {
-    speakTsmcQuizWord(current.word);
-  }
-}
-
-function answerTsmcQuiz(choice, selectedButton) {
-  if (tsmcQuizState.answered) return;
-  tsmcQuizState.answered = true;
-  const current = tsmcQuizState.questions[tsmcQuizState.index];
-  const isCorrect = choice === current.correctChoice;
-  const key = tsmcWordKey(current.word);
-
-  if (current.type === "listen") {
-    els.tsmcQuizQuestion.textContent = `${current.word.word} (${current.word.type || ""})`;
-  }
-
-  if (isCorrect) {
-    tsmcQuizState.score += 1;
-    recordTsmcQuizResult(current.word, true);
-    if (tsmcQuizState.failedKeys.has(key)) {
-      const streak = (tsmcQuizState.retryStreaks[key] || 0) + 1;
-      tsmcQuizState.retryStreaks[key] = streak;
-      if (streak >= 2) {
-        tsmcQuizState.masteredKeys.add(key);
-      } else {
-        const nextType = current.type === "en2zh" ? "zh2en" : current.type === "zh2en" ? "listen" : "en2zh";
-        tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextType));
-      }
-    } else {
-      tsmcQuizState.masteredKeys.add(key);
-    }
-  } else {
-    tsmcQuizState.wrongAttempts += 1;
-    tsmcQuizState.failedKeys.add(key);
-    tsmcQuizState.retryStreaks[key] = 0;
-    recordTsmcQuizResult(current.word, false);
-    const nextType = current.type === "en2zh" ? "zh2en" : current.type === "zh2en" ? "listen" : "en2zh";
-    tsmcQuizState.questions.push(buildTsmcQuizQuestion(current.word, nextType));
-  }
-
-  renderTsmcStudySummary();
-
-  if (tsmcQuizState.dailyMission && !tsmcDailyState.completed) {
-    tsmcDailyState.quizAnswered = tsmcQuizState.index + 1;
-    tsmcDailyState.quizScore = tsmcQuizState.score;
-    tsmcDailyState.quizMastered = [...tsmcQuizState.masteredKeys];
-    saveTsmcDailyState();
-    renderTsmcDailyMission();
-  }
-
-  [...els.tsmcQuizChoices.children].forEach((button) => {
-    button.disabled = true;
-    if (button.dataset.choice === current.correctChoice) button.classList.add("correct");
-  });
-  if (!isCorrect) selectedButton.classList.add("wrong");
-
-  els.tsmcQuizScore.textContent = `作答 ${tsmcQuizState.score + tsmcQuizState.wrongAttempts} 題`;
-  const needsAnotherCorrect = isCorrect && tsmcQuizState.failedKeys.has(key) && !tsmcQuizState.masteredKeys.has(key);
-  els.tsmcQuizFeedback.textContent = isCorrect
-    ? needsAnotherCorrect
-      ? `答對一次！再答對 1 次才通過：${current.word.word} = ${current.word.meaning}`
-      : `答對了！${current.word.word} = ${current.word.meaning}`
-    : `答錯了，正確是「${current.correctChoice}」。這個字稍後會再出現。`;
-  els.tsmcQuizFeedback.className = `tsmc-quiz-feedback ${isCorrect ? "correct" : "wrong"}`;
-  els.tsmcQuizFeedback.hidden = false;
-
-  if (els.tsmcQuizExtraInfo) {
-    let extraHtml = ``;
-    if (current.word.categoryLabel) {
-      extraHtml += `<div style="margin-bottom: 4px;"><span class="tsmc-tag-category">${current.word.categoryLabel}</span></div>`;
-    }
-    if (current.word.fabPhrase) {
-      extraHtml += `<div>🏭 廠區搭配：<strong>${current.word.fabPhrase}</strong></div>`;
-    }
-    if (current.word.exampleSentence) {
-      extraHtml += `<div style="margin-top: 4px;">💡 例句：${current.word.exampleSentence}<br><span style="opacity:0.85;">${current.word.exampleMeaning || ""}</span></div>`;
-    }
-    if (extraHtml) {
-      els.tsmcQuizExtraInfo.innerHTML = extraHtml;
-      els.tsmcQuizExtraInfo.hidden = false;
-    } else {
-      els.tsmcQuizExtraInfo.hidden = true;
-    }
-  }
-
-  els.tsmcQuizNext.textContent = tsmcQuizState.index === tsmcQuizState.questions.length - 1 ? "看成績" : "下一題";
-  els.tsmcQuizNext.hidden = false;
-}
-
-els.tsmcQuizNext.addEventListener("click", () => {
-  if (els.tsmcQuizExtraInfo) els.tsmcQuizExtraInfo.hidden = true;
-  if (tsmcQuizState.finished) {
-    if (tsmcQuizState.dailyMission) startTsmcQuiz(currentTsmcDailyQuizWords(), true);
-    else startTsmcQuiz();
-    return;
-  }
-  if (!tsmcQuizState.answered) return;
-  if (tsmcQuizState.index === tsmcQuizState.questions.length - 1) {
-    tsmcQuizState.finished = true;
-    if (tsmcQuizState.dailyMission && !tsmcDailyState.completed) {
-      tsmcDailyState.quizAnswered = tsmcQuizState.questions.length;
-      tsmcDailyState.quizScore = tsmcQuizState.score;
-      tsmcDailyState.quizMastered = [...tsmcQuizState.masteredKeys];
-      tsmcDailyState.completed = true;
-      tsmcDailyState.totalCompletedDays += 1;
-      saveTsmcDailyState();
-      renderTsmcDailyMission();
-    }
-  } else {
-    tsmcQuizState.index += 1;
-    tsmcQuizState.answered = false;
-  }
-  renderTsmcQuiz();
-});
-
-els.tsmcReveal.addEventListener("click", () => {
-  const isHidden = els.tsmcWordAnswerBox ? els.tsmcWordAnswerBox.hidden : els.tsmcWordAnswer.hidden;
-  const willShow = isHidden;
-  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = !willShow;
-  els.tsmcWordAnswer.hidden = !willShow;
-  els.tsmcReveal.textContent = willShow ? "隱藏答案" : "顯示答案";
-});
-
-els.tsmcWordCard.addEventListener("click", (e) => {
-  if (e.target.closest("button, a, select, input")) return;
-  if (!els.tsmcReveal.disabled && !els.tsmcReveal.hidden) {
-    els.tsmcReveal.click();
-  }
-});
-
-els.tsmcNext.addEventListener("click", () => {
-  stopTsmcAutoplay();
-  const items = currentTsmcItems();
-  tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
-  renderTsmcWord();
-});
-
-function markCurrentTsmcWord(status) {
-  stopTsmcAutoplay();
-  const items = currentTsmcItems();
-  const item = items[tsmcPracticeIndices.words];
-  if (!item) return;
-
-  introduceTsmcWord(item);
-  if (tsmcWordFilter === "daily") {
-    tsmcWordProgress[tsmcWordKey(item)] = status;
-    saveTsmcWordProgress();
-  } else {
-    recordTsmcQuizResult(item, status === "known");
-  }
-  if (tsmcWordFilter === "all") tsmcPracticeIndices.words = (tsmcPracticeIndices.words + 1) % items.length;
-  if (tsmcWordFilter === "daily") {
-    const key = tsmcWordKey(item);
-    if (!tsmcDailyState.learned.includes(key)) tsmcDailyState.learned.push(key);
-    saveTsmcDailyState();
-    renderTsmcDailyMission();
-    tsmcPracticeIndices.words = (tsmcPracticeIndices.words + 1) % items.length;
-  }
-  if (tsmcWordFilter === "review" && status === "review") {
-    tsmcPracticeIndices.words = (tsmcPracticeIndices.words + 1) % items.length;
-  }
-  renderTsmcWord();
-}
-
-els.tsmcMarkReview.addEventListener("click", () => markCurrentTsmcWord("review"));
-els.tsmcMarkKnown.addEventListener("click", () => markCurrentTsmcWord("known"));
-
-els.tsmcFilterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    stopTsmcAutoplay();
-    tsmcWordFilter = button.dataset.tsmcFilter;
-    tsmcPracticeIndices.words = 0;
-    renderTsmcWord();
-  });
-});
-
-if (els.tsmcCatButtons) {
-  els.tsmcCatButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      stopTsmcAutoplay();
-      tsmcCategoryFilter = button.dataset.tsmcCat;
-      tsmcPracticeIndices.words = 0;
-      renderTsmcWord();
-    });
-  });
-}
-
-if (els.tsmcQuizTypeButtons) {
-  els.tsmcQuizTypeButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      tsmcQuizType = btn.dataset.quizType;
-      els.tsmcQuizTypeButtons.forEach((b) => b.classList.toggle("active", b.dataset.quizType === tsmcQuizType));
-      if (tsmcQuizState.dailyMission) startTsmcQuiz(currentTsmcDailyQuizWords(), true);
-      else startTsmcQuiz();
-    });
-  });
-}
-
+// 15-Question Exam State
+let tsmcExamState = {
+  active: false,
+  questions: [],
+  currentIndex: 0,
+  userAnswers: [],
+  timer: null,
+  secondsLeft: 900,
+};
+
+// Extras State
+let tsmcExtrasMode = "math";
+let tsmcExtrasIndex = 0;
+let tsmcExtrasRevealed = false;
+
+// Shared Audio element
 let tsmcAudioElement = null;
-let currentPlayingAudio = null;
-
 function getTsmcAudio() {
   if (!tsmcAudioElement) {
     tsmcAudioElement = new Audio();
+    tsmcAudioElement.preload = "auto";
   }
   return tsmcAudioElement;
 }
 
 function unlockTsmcAudio() {
-  try {
-    const audio = getTsmcAudio();
-    audio.src = "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA";
-    const p = audio.play();
-    if (p !== undefined) p.catch(() => {});
-  } catch (_) {}
-}
-
-function stopCurrentSpeech() {
-  if (tsmcAudioElement) {
-    try {
-      tsmcAudioElement.pause();
-      tsmcAudioElement.currentTime = 0;
-    } catch (_) {}
-  }
-  if (currentPlayingAudio && currentPlayingAudio !== tsmcAudioElement) {
-    try {
-      currentPlayingAudio.pause();
-      currentPlayingAudio.currentTime = 0;
-    } catch (_) {}
-  }
-  currentPlayingAudio = null;
-  if ("speechSynthesis" in window) {
-    try {
-      window.speechSynthesis.cancel();
-    } catch (_) {}
+  const audio = getTsmcAudio();
+  if (!audio.dataset.unlocked) {
+    audio.src = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=";
+    audio.play().then(() => {
+      audio.dataset.unlocked = "true";
+      audio.pause();
+    }).catch(() => {});
   }
 }
-
-function setSpeakButtonState(active, slow = false) {
-  const targetBtn = slow ? els.tsmcSpeakSlow : els.tsmcSpeak;
-  const otherBtn = slow ? els.tsmcSpeak : els.tsmcSpeakSlow;
-  if (targetBtn) {
-    targetBtn.classList.toggle("is-speaking", active);
-  }
-  if (otherBtn && active) {
-    otherBtn.classList.remove("is-speaking");
-  }
-}
-
-function playAudioUrl(url, slow = false) {
-  return new Promise((resolve) => {
-    const audio = getTsmcAudio();
-    currentPlayingAudio = audio;
-    audio.preload = "auto";
-    audio.playbackRate = slow ? 0.72 : 1.0;
-
-    let finished = false;
-    let safetyTimeout = null;
-
-    const cleanup = () => {
-      if (finished) return;
-      finished = true;
-      if (safetyTimeout) {
-        clearTimeout(safetyTimeout);
-        safetyTimeout = null;
-      }
-      audio.onended = null;
-      audio.onerror = null;
-      resolve();
-    };
-
-    // 5 秒安全超時：確保在手機網路不穩或 iOS 背景阻擋時永不卡死
-    safetyTimeout = setTimeout(cleanup, 5000);
-
-    audio.onended = cleanup;
-    audio.onerror = (err) => {
-      console.warn("Audio playback error:", err);
-      cleanup();
-    };
-
-    try {
-      audio.src = url;
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((err) => {
-          console.warn("audio.play() rejected:", err);
-          cleanup();
-        });
-      }
-    } catch (e) {
-      console.warn("Audio exception:", e);
-      cleanup();
-    }
-  });
-}
-
-function scoreEnglishVoice(voice) {
-  const name = voice.name.toLowerCase();
-  const lang = voice.lang.toLowerCase();
-  let score = lang === "en-us" ? 100 : lang.startsWith("en") ? 30 : 0;
-
-  if (/natural|premium|enhanced/.test(name)) score += 40;
-  if (/google us english/.test(name)) score += 35;
-  if (/microsoft.*(aria|jenny|guy|zira|david)/.test(name)) score += 30;
-  if (/samantha|ava|nicky|aaron|alex/.test(name)) score += 25;
-  if (/compact/.test(name)) score -= 15;
-  if (voice.localService) score += 5;
-  return score;
-}
-
-function bestEnglishVoice() {
-  if (!("speechSynthesis" in window)) return null;
-  const voices = window.speechSynthesis
-    .getVoices()
-    .filter((voice) => voice.lang.toLowerCase().startsWith("en"));
-  return voices.sort((a, b) => scoreEnglishVoice(b) - scoreEnglishVoice(a))[0] ?? null;
-}
-
-function speakWithWebSpeechFallback(speechText, slow) {
-  if (!("speechSynthesis" in window)) return;
-  const utterance = new SpeechSynthesisUtterance(speechText);
-  const voice = bestEnglishVoice();
-  if (voice) utterance.voice = voice;
-  utterance.lang = voice?.lang ?? "en-US";
-  utterance.rate = slow ? 0.65 : 0.85;
-  utterance.pitch = 1;
-  window.speechSynthesis.speak(utterance);
-}
+document.addEventListener("click", unlockTsmcAudio, { once: true });
+document.addEventListener("touchstart", unlockTsmcAudio, { once: true });
 
 function getTsmcWordId(item) {
-  if (item && item.id) return item.id;
-  if (!item || !item.word) return null;
-  const match = TSMC_WORDS.find((w) => w.word.toLowerCase() === item.word.toLowerCase());
-  return match?.id ?? null;
+  if (!item) return null;
+  if (typeof item.id === "number") return item.id;
+  const index = TSMC_WORDS.findIndex((w) => w.word.toLowerCase() === item.word.toLowerCase());
+  return index >= 0 ? (TSMC_WORDS[index].id || index + 1) : null;
 }
 
-async function speakCurrentTsmcWord(slow = false) {
-  const item = currentTsmcItems()[tsmcPracticeIndices.words];
+function playTsmcAudio(item, slow = false) {
+  unlockTsmcAudio();
   if (!item) return;
 
-  unlockTsmcAudio();
-  stopCurrentSpeech();
-  setSpeakButtonState(true, slow);
-
   const wordId = getTsmcWordId(item);
-  const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
+  const audio = getTsmcAudio();
 
-  // 1. 優先使用微軟 Edge Neural 錄音室級離線音訊
-  if (wordId) {
-    const localAudioUrl = `./audio/${wordId}.mp3`;
-    try {
-      await playAudioUrl(localAudioUrl, slow);
-      setSpeakButtonState(false, slow);
-      return;
-    } catch (err) {
-      console.warn(`Local audio for word #${wordId} (${item.word}) failed, falling back:`, err);
-    }
+  if (!slow && wordId) {
+    audio.src = `./audio/${wordId}.mp3`;
+    audio.playbackRate = 1.0;
+    audio.play().catch(() => {
+      speakEnglishFallback(item.word, slow);
+    });
+  } else {
+    speakEnglishFallback(item.word, slow);
   }
+}
 
-  // 2. 次要嘗試在線雲端 Google TTS 音訊串流
-  try {
-    const onlineUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`;
-    await playAudioUrl(onlineUrl, slow);
-    setSpeakButtonState(false, slow);
-    return;
-  } catch (err) {
-    console.warn("Online TTS failed, falling back to Web Speech API:", err);
-  }
-
-  // 3. 終極保底：原生 Web Speech API
-  speakWithWebSpeechFallback(speechText, slow);
-  setSpeakButtonState(false, slow);
+function speakEnglishFallback(text, slow = false) {
+  if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const override = TSMC_SPEECH_OVERRIDES[text] || text;
+  const utter = new SpeechSynthesisUtterance(override);
+  utter.lang = "en-US";
+  utter.rate = slow ? 0.72 : 0.95;
+  const voices = window.speechSynthesis.getVoices();
+  const enVoice = voices.find((v) => v.lang.startsWith("en") && !v.localService) || voices.find((v) => v.lang.startsWith("en"));
+  if (enVoice) utter.voice = enVoice;
+  window.speechSynthesis.speak(utter);
 }
 
 function speakChineseText(text) {
   return new Promise((resolve) => {
-    if (!text) {
-      resolve();
+    if (!("speechSynthesis" in window)) {
+      setTimeout(resolve, 800);
       return;
     }
-
-    let finished = false;
-    let safetyTimer = null;
-
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "zh-TW";
+    utter.rate = 1.0;
+    const voices = window.speechSynthesis.getVoices();
+    const zhVoice = voices.find((v) => v.lang.includes("zh") || v.lang.includes("TW") || v.lang.includes("cmn"));
+    if (zhVoice) utter.voice = zhVoice;
+    
+    let resolved = false;
     const done = () => {
-      if (!finished) {
-        finished = true;
-        if (safetyTimer) {
-          clearTimeout(safetyTimer);
-          safetyTimer = null;
-        }
+      if (!resolved) {
+        resolved = true;
         resolve();
       }
     };
-
-    // iOS Safari 關鍵修復：iOS 上 onend 常被作業系統吃掉不觸發，設定動態上限時間保證必 resolve
-    const maxWait = Math.min(2800, Math.max(1000, text.length * 280));
-    safetyTimer = setTimeout(done, maxWait);
-
-    if ("speechSynthesis" in window) {
-      try {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = "zh-TW";
-        utterance.rate = 0.95;
-        utterance.onend = done;
-        utterance.onerror = done;
-        window.speechSynthesis.speak(utterance);
-      } catch (_) {
-        done();
-      }
-    } else {
-      done();
-    }
+    utter.onend = done;
+    utter.onerror = done;
+    setTimeout(done, 3000);
+    window.speechSynthesis.speak(utter);
   });
 }
 
-function sleepAutoplay(ms) {
-  return new Promise((resolve) => {
-    tsmcAutoplayTimeout = setTimeout(resolve, ms);
+function stopCurrentSpeech() {
+  if ("speechSynthesis" in window) {
+    window.speechSynthesis.cancel();
+  }
+  if (tsmcAudioElement) {
+    tsmcAudioElement.pause();
+  }
+}
+
+// ------------------------------------------
+// Subview Switcher
+// ------------------------------------------
+function showTsmcSubview(subviewId) {
+  const subviews = ["tsmc-subview-map", "tsmc-subview-learn", "tsmc-subview-quiz", "tsmc-subview-autoplay", "tsmc-subview-exam", "tsmc-subview-extras"];
+  subviews.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.hidden = (id !== subviewId);
   });
+}
+
+function switchTsmcTab(tabName) {
+  tsmcCurrentTab = tabName;
+  stopTsmcAutoplay();
+  stopCurrentSpeech();
+
+  // Update tab buttons
+  document.querySelectorAll(".tsmc-tab-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tsmcTab === tabName);
+  });
+
+  if (tabName === "map") {
+    showTsmcSubview("tsmc-subview-map");
+    renderStageMap();
+  } else if (tabName === "core50") {
+    openStageLearn("core50");
+  } else if (tabName === "autoplay") {
+    showTsmcSubview("tsmc-subview-autoplay");
+    initAutoplaySelect();
+  } else if (tabName === "exam") {
+    showTsmcSubview("tsmc-subview-exam");
+    reset15Exam();
+  } else if (tabName === "extras") {
+    showTsmcSubview("tsmc-subview-extras");
+    renderTsmcExtras();
+  }
+}
+
+// ------------------------------------------
+// Stage Map View
+// ------------------------------------------
+function renderStageMap() {
+  const stagesList = document.querySelector("#tsmc-stages-list");
+  const totalStarsEl = document.querySelector("#tsmc-total-stars");
+  const clearedStagesEl = document.querySelector("#tsmc-cleared-stages");
+  const stageBadgeEl = document.querySelector("#tsmc-stage-badge");
+
+  if (!stagesList) return;
+
+  let totalStars = 0;
+  let clearedStages = 0;
+
+  stagesList.innerHTML = "";
+
+  TSMC_STAGES_META.forEach((stage, idx) => {
+    const prog = tsmcStageProgress[stage.id] || {};
+    const isCleared = Boolean(prog.completed);
+    const stars = prog.stars || 0;
+    totalStars += stars;
+    if (isCleared) clearedStages += 1;
+
+    // Stage 1 is always unlocked; Stage N is unlocked if Stage N-1 is cleared (or user can still click to play!)
+    const isUnlocked = stage.id === 1 || Boolean(tsmcStageProgress[stage.id - 1]?.completed) || isCleared;
+
+    const card = document.createElement("div");
+    card.className = `tsmc-stage-card ${isCleared ? "cleared" : ""} ${!isUnlocked ? "locked" : ""}`;
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", `第 ${stage.id} 關：${stage.name}`);
+
+    const starsDisplay = "⭐".repeat(stars) + "☆".repeat(Math.max(0, 3 - stars));
+
+    let actionLabel = "開始挑戰 ⚔️";
+    if (isCleared) actionLabel = "已過關 🎉";
+    else if (!isUnlocked) actionLabel = "未解鎖 🔒";
+
+    card.innerHTML = `
+      <div class="tsmc-stage-left">
+        <div class="tsmc-stage-icon-box">${stage.icon}</div>
+        <div class="tsmc-stage-info">
+          <h4>第 ${stage.id} 關：${stage.name}</h4>
+          <p>共 12 個核心單字與洗腦口訣</p>
+        </div>
+      </div>
+      <div class="tsmc-stage-right">
+        <div class="tsmc-stage-stars">${starsDisplay}</div>
+        <div class="tsmc-stage-action-pill">${actionLabel}</div>
+      </div>
+    `;
+
+    card.addEventListener("click", () => {
+      openStageLearn(stage.id);
+    });
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openStageLearn(stage.id);
+      }
+    });
+
+    stagesList.appendChild(card);
+  });
+
+  if (totalStarsEl) totalStarsEl.textContent = totalStars;
+  if (clearedStagesEl) clearedStagesEl.textContent = clearedStages;
+  if (stageBadgeEl) stageBadgeEl.textContent = `🏆 ${clearedStages}/24 關`;
+}
+
+// ------------------------------------------
+// Stage Learn View (Mnemonic Flashcard)
+// ------------------------------------------
+function openStageLearn(stageId, startIndex = 0) {
+  tsmcCurrentStageId = stageId;
+  stopCurrentSpeech();
+
+  if (stageId === "core50") {
+    tsmcLearnWords = TSMC_WORDS.filter((w) => w.isCore50);
+  } else {
+    tsmcLearnWords = TSMC_WORDS.filter((w) => w.stageId === stageId);
+  }
+
+  if (tsmcLearnWords.length === 0) {
+    tsmcLearnWords = TSMC_WORDS.slice(0, 12);
+  }
+
+  tsmcLearnIndex = Math.max(0, Math.min(startIndex, tsmcLearnWords.length - 1));
+
+  showTsmcSubview("tsmc-subview-learn");
+  renderStageLearnWord();
+}
+
+function renderStageLearnWord() {
+  const item = tsmcLearnWords[tsmcLearnIndex];
+  if (!item) return;
+
+  // Header
+  const titleEl = document.querySelector("#tsmc-learn-stage-title");
+  const counterEl = document.querySelector("#tsmc-learn-progress-counter");
+  if (titleEl) {
+    if (tsmcCurrentStageId === "core50") {
+      titleEl.textContent = "⭐ 考前必背 50 字速成";
+    } else {
+      const meta = TSMC_STAGES_META.find((s) => s.id === tsmcCurrentStageId);
+      titleEl.textContent = `${meta ? meta.icon : "📖"} 第 ${tsmcCurrentStageId} 關：${meta ? meta.name : ""}`;
+    }
+  }
+  if (counterEl) {
+    counterEl.textContent = `${tsmcLearnIndex + 1} / ${tsmcLearnWords.length}`;
+  }
+
+  // Tags
+  const catEl = document.querySelector("#tsmc-learn-category");
+  const typeEl = document.querySelector("#tsmc-learn-type");
+  const coreEl = document.querySelector("#tsmc-learn-core-badge");
+  if (catEl) catEl.textContent = item.categoryLabel || "半導體常用";
+  if (typeEl) typeEl.textContent = (item.type || "vocab").toUpperCase();
+  if (coreEl) coreEl.hidden = !item.isCore50;
+
+  // Word & Pronounce
+  const wordEl = document.querySelector("#tsmc-learn-word");
+  const meaningEl = document.querySelector("#tsmc-learn-meaning");
+  const mnemonicEl = document.querySelector("#tsmc-learn-mnemonic");
+  const phraseEl = document.querySelector("#tsmc-learn-phrase");
+  const sentenceEl = document.querySelector("#tsmc-learn-sentence");
+  const sentenceMeaningEl = document.querySelector("#tsmc-learn-sentence-meaning");
+
+  if (wordEl) wordEl.textContent = item.word;
+  if (meaningEl) meaningEl.textContent = item.meaning;
+  if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || `💡 廠區高頻單字，請務必熟記！`;
+  if (phraseEl) phraseEl.textContent = item.fabPhrase ? `${item.fabPhrase}` : `${item.word} (廠區常用)`;
+  if (sentenceEl) sentenceEl.textContent = item.exampleSentence || "";
+  if (sentenceMeaningEl) sentenceMeaningEl.textContent = item.exampleMeaning || "";
+
+  // Prev / Next button states
+  const prevBtn = document.querySelector("#tsmc-learn-prev");
+  const nextBtn = document.querySelector("#tsmc-learn-next");
+  if (prevBtn) prevBtn.disabled = tsmcLearnIndex === 0;
+  if (nextBtn) nextBtn.disabled = tsmcLearnIndex === tsmcLearnWords.length - 1;
+}
+
+// ------------------------------------------
+// Stage Boss Quiz View
+// ------------------------------------------
+function startStageQuiz(stageId) {
+  stopCurrentSpeech();
+
+  let pool = [];
+  if (stageId === "core50") {
+    pool = TSMC_WORDS.filter((w) => w.isCore50);
+  } else {
+    pool = TSMC_WORDS.filter((w) => w.stageId === stageId);
+  }
+  if (pool.length === 0) pool = TSMC_WORDS.slice(0, 12);
+
+  // Shuffle the stage words
+  const shuffledPool = [...pool].sort(() => Math.random() - 0.5);
+
+  // Create 12 questions
+  const questions = shuffledPool.map((targetWord) => {
+    // Pick 3 distractors with different meanings
+    const distractors = TSMC_WORDS.filter((w) => w.meaning !== targetWord.meaning)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+
+    const choices = [
+      { text: targetWord.meaning, isCorrect: true, word: targetWord },
+      ...distractors.map((d) => ({ text: d.meaning, isCorrect: false, word: d })),
+    ].sort(() => Math.random() - 0.5);
+
+    return {
+      word: targetWord,
+      choices,
+    };
+  });
+
+  tsmcStageQuizState = {
+    active: true,
+    stageId,
+    questions,
+    currentIndex: 0,
+    score: 0,
+    answered: false,
+  };
+
+  showTsmcSubview("tsmc-subview-quiz");
+  renderStageQuizQuestion();
+}
+
+function renderStageQuizQuestion() {
+  const q = tsmcStageQuizState.questions[tsmcStageQuizState.currentIndex];
+  if (!q) {
+    finishStageQuiz();
+    return;
+  }
+
+  tsmcStageQuizState.answered = false;
+
+  const total = tsmcStageQuizState.questions.length;
+  const curr = tsmcStageQuizState.currentIndex + 1;
+
+  const progEl = document.querySelector("#tsmc-stage-quiz-progress");
+  const scoreEl = document.querySelector("#tsmc-stage-quiz-score");
+  const barEl = document.querySelector("#tsmc-stage-quiz-bar");
+  const wordEl = document.querySelector("#tsmc-stage-quiz-word");
+  const optionsContainer = document.querySelector("#tsmc-stage-quiz-options");
+  const feedbackEl = document.querySelector("#tsmc-stage-quiz-feedback");
+  const nextBtn = document.querySelector("#tsmc-stage-quiz-next-btn");
+
+  if (progEl) progEl.textContent = `第 ${curr} / ${total} 題`;
+  if (scoreEl) scoreEl.textContent = `目前得分: ${tsmcStageQuizState.score}`;
+  if (barEl) barEl.style.width = `${((curr - 1) / total) * 100}%`;
+  if (wordEl) wordEl.textContent = q.word.word;
+
+  if (feedbackEl) {
+    feedbackEl.hidden = true;
+    feedbackEl.classList.remove("correct", "wrong");
+  }
+  if (nextBtn) nextBtn.hidden = true;
+
+  if (optionsContainer) {
+    optionsContainer.innerHTML = "";
+    q.choices.forEach((choice) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "tsmc-stage-quiz-opt";
+      btn.textContent = choice.text;
+
+      btn.addEventListener("click", () => {
+        handleStageQuizAnswer(choice, btn);
+      });
+      optionsContainer.appendChild(btn);
+    });
+  }
+
+  // Play audio automatically for the question
+  playTsmcAudio(q.word, false);
+}
+
+function handleStageQuizAnswer(choice, clickedBtn) {
+  if (tsmcStageQuizState.answered) return;
+  tsmcStageQuizState.answered = true;
+
+  const q = tsmcStageQuizState.questions[tsmcStageQuizState.currentIndex];
+  const isCorrect = choice.isCorrect;
+
+  if (isCorrect) {
+    tsmcStageQuizState.score += 1;
+    clickedBtn.classList.add("correct");
+  } else {
+    clickedBtn.classList.add("wrong");
+    // highlight correct choice
+    const allBtns = document.querySelectorAll(".tsmc-stage-quiz-opt");
+    allBtns.forEach((btn) => {
+      if (btn.textContent === q.word.meaning) {
+        btn.classList.add("correct");
+      }
+    });
+  }
+
+  // Update Score
+  const scoreEl = document.querySelector("#tsmc-stage-quiz-score");
+  if (scoreEl) scoreEl.textContent = `目前得分: ${tsmcStageQuizState.score}`;
+
+  // Feedback Box
+  const feedbackEl = document.querySelector("#tsmc-stage-quiz-feedback");
+  const feedbackTextEl = document.querySelector("#tsmc-quiz-feedback-text");
+  const rescueEl = document.querySelector("#tsmc-quiz-mnemonic-rescue");
+  const nextBtn = document.querySelector("#tsmc-stage-quiz-next-btn");
+
+  if (feedbackEl && feedbackTextEl) {
+    feedbackEl.hidden = false;
+    feedbackEl.classList.remove("correct", "wrong");
+    feedbackEl.classList.add(isCorrect ? "correct" : "wrong");
+
+    if (isCorrect) {
+      feedbackTextEl.textContent = `🎉 太棒了，完全答對！「${q.word.word}」＝「${q.word.meaning}」`;
+      if (rescueEl) rescueEl.innerHTML = "";
+    } else {
+      feedbackTextEl.textContent = `❌ 答錯囉！正確答案是「${q.word.meaning}」`;
+      if (rescueEl) {
+        rescueEl.innerHTML = `<strong>💡 洗腦口訣搶救記憶：</strong><p>${q.word.mnemonic || "請多看兩次例句加深印象！"}</p>`;
+      }
+    }
+  }
+
+  if (nextBtn) {
+    nextBtn.hidden = false;
+    const isLast = tsmcStageQuizState.currentIndex === tsmcStageQuizState.questions.length - 1;
+    nextBtn.textContent = isLast ? "查看測驗成績 ➔" : "下一題 ➔";
+  }
+}
+
+function nextStageQuizQuestion() {
+  if (tsmcStageQuizState.currentIndex < tsmcStageQuizState.questions.length - 1) {
+    tsmcStageQuizState.currentIndex += 1;
+    renderStageQuizQuestion();
+  } else {
+    finishStageQuiz();
+  }
+}
+
+function finishStageQuiz() {
+  const total = tsmcStageQuizState.questions.length;
+  const score = tsmcStageQuizState.score;
+  const pct = Math.round((score / total) * 100);
+  const stageId = tsmcStageQuizState.stageId;
+
+  // Star logic: 12/12 = 3 stars, 10-11 = 2 stars, 9 = 1 star
+  let stars = 0;
+  if (score >= 12) stars = 3;
+  else if (score >= 10) stars = 2;
+  else if (score >= 9) stars = 1;
+
+  const passed = pct >= 75;
+
+  if (passed && typeof stageId === "number") {
+    const prev = tsmcStageProgress[stageId] || {};
+    tsmcStageProgress[stageId] = {
+      completed: true,
+      stars: Math.max(prev.stars || 0, stars),
+      bestScore: Math.max(prev.bestScore || 0, pct),
+    };
+    saveTsmcStageProgress(tsmcStageProgress);
+  }
+
+  // Populate clear modal
+  const modal = document.querySelector("#tsmc-clear-modal");
+  const modalTitle = document.querySelector("#tsmc-modal-title");
+  const modalStars = document.querySelector("#tsmc-modal-stars");
+  const modalDesc = document.querySelector("#tsmc-modal-desc");
+  const nextStageBtn = document.querySelector("#tsmc-modal-next-stage");
+  const toMapBtn = document.querySelector("#tsmc-modal-to-map");
+
+  if (!modal) return;
+
+  if (passed) {
+    if (modalTitle) modalTitle.textContent = typeof stageId === "number" ? `🎉 第 ${stageId} 關通關成功！` : `🎉 考前必背 50 字測驗通過！`;
+    if (modalStars) modalStars.textContent = "⭐".repeat(stars) || "⭐";
+    if (modalDesc) modalDesc.textContent = `測驗得分 ${pct} 分 (${score}/${total})！太厲害了，您已經掌握本關的核心單字！`;
+    if (nextStageBtn) {
+      if (typeof stageId === "number" && stageId < 24) {
+        nextStageBtn.textContent = `🏆 進入第 ${stageId + 1} 關`;
+        nextStageBtn.onclick = () => {
+          modal.hidden = true;
+          openStageLearn(stageId + 1);
+        };
+      } else {
+        nextStageBtn.textContent = "🏆 再次挑戰本關";
+        nextStageBtn.onclick = () => {
+          modal.hidden = true;
+          startStageQuiz(stageId);
+        };
+      }
+    }
+  } else {
+    if (modalTitle) modalTitle.textContent = "💪 差一點點就過關！";
+    if (modalStars) modalStars.textContent = "☆☆☆";
+    if (modalDesc) modalDesc.textContent = `測驗得分 ${pct} 分 (${score}/${total})。過關標準為 75 分，請再複習一下洗腦口訣，馬上就能過關！`;
+    if (nextStageBtn) {
+      nextStageBtn.textContent = "⚔️ 重新挑戰本關";
+      nextStageBtn.onclick = () => {
+        modal.hidden = true;
+        startStageQuiz(stageId);
+      };
+    }
+  }
+
+  if (toMapBtn) {
+    toMapBtn.onclick = () => {
+      modal.hidden = true;
+      switchTsmcTab("map");
+    };
+  }
+
+  modal.hidden = false;
+}
+
+// ------------------------------------------
+// Continuous Autoplay Mode
+// ------------------------------------------
+function initAutoplaySelect() {
+  const select = document.querySelector("#tsmc-autoplay-stage-select");
+  if (!select || select.dataset.initialized) return;
+
+  select.innerHTML = `
+    <option value="all">全部 288 字</option>
+    <option value="core50">⭐ 考前必背 50 字</option>
+  `;
+
+  TSMC_STAGES_META.forEach((s) => {
+    const opt = document.createElement("option");
+    opt.value = String(s.id);
+    opt.textContent = `${s.icon} 第 ${s.id} 關：${s.name}`;
+    select.appendChild(opt);
+  });
+
+  select.dataset.initialized = "true";
 }
 
 function stopTsmcAutoplay() {
-  tsmcAutoplayActive = false;
+  tsmcAutoplayRunning = false;
   if (tsmcAutoplayTimeout) {
     clearTimeout(tsmcAutoplayTimeout);
     tsmcAutoplayTimeout = null;
   }
-  if (els.tsmcAutoplay) {
-    els.tsmcAutoplay.classList.remove("active");
-    els.tsmcAutoplay.textContent = "🎧 自動連播";
+  stopCurrentSpeech();
+
+  const toggleBtn = document.querySelector("#tsmc-autoplay-toggle-btn");
+  if (toggleBtn) {
+    const icon = toggleBtn.querySelector(".autoplay-icon");
+    const text = toggleBtn.querySelector(".autoplay-text");
+    if (icon) icon.textContent = "▶";
+    if (text) text.textContent = "開始連續朗讀";
   }
 }
 
-async function startTsmcAutoplay() {
+function toggleTsmcAutoplay() {
+  if (tsmcAutoplayRunning) {
+    stopTsmcAutoplay();
+  } else {
+    startTsmcAutoplay();
+  }
+}
+
+function startTsmcAutoplay() {
   unlockTsmcAudio();
-  stopCurrentSpeech();
-  tsmcAutoplayActive = true;
-  if (els.tsmcAutoplay) {
-    els.tsmcAutoplay.classList.add("active");
-    els.tsmcAutoplay.textContent = "⏹️ 停止連播";
+  const select = document.querySelector("#tsmc-autoplay-stage-select");
+  const val = select ? select.value : "all";
+
+  if (val === "all") {
+    tsmcAutoplayPool = [...TSMC_WORDS];
+  } else if (val === "core50") {
+    tsmcAutoplayPool = TSMC_WORDS.filter((w) => w.isCore50);
+  } else {
+    const sid = parseInt(val, 10);
+    tsmcAutoplayPool = TSMC_WORDS.filter((w) => w.stageId === sid);
   }
-  await runTsmcAutoplayStep();
+
+  if (tsmcAutoplayPool.length === 0) tsmcAutoplayPool = [...TSMC_WORDS];
+
+  tsmcAutoplayRunning = true;
+  tsmcAutoplayIndex = 0;
+
+  const toggleBtn = document.querySelector("#tsmc-autoplay-toggle-btn");
+  if (toggleBtn) {
+    const icon = toggleBtn.querySelector(".autoplay-icon");
+    const text = toggleBtn.querySelector(".autoplay-text");
+    if (icon) icon.textContent = "⏸️";
+    if (text) text.textContent = "暫停朗讀";
+  }
+
+  runAutoplayStep();
 }
 
-async function runTsmcAutoplayStep() {
-  if (!tsmcAutoplayActive) return;
-  const items = currentTsmcItems();
-  if (!items.length) {
-    stopTsmcAutoplay();
-    return;
+async function runAutoplayStep() {
+  if (!tsmcAutoplayRunning) return;
+
+  if (tsmcAutoplayIndex >= tsmcAutoplayPool.length) {
+    tsmcAutoplayIndex = 0; // loop
   }
 
-  const index = tsmcPracticeIndices[tsmcPracticeMode];
-  const item = items[index];
-  if (!item) {
-    stopTsmcAutoplay();
-    return;
-  }
+  const item = tsmcAutoplayPool[tsmcAutoplayIndex];
+  if (!item) return;
 
-  // 1. 隱藏答案，重置顯示按鈕
-  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = true;
-  els.tsmcWordAnswer.hidden = true;
-  els.tsmcReveal.textContent = "顯示答案";
+  const wordEl = document.querySelector("#tsmc-autoplay-word");
+  const meaningEl = document.querySelector("#tsmc-autoplay-meaning");
+  const mnemonicEl = document.querySelector("#tsmc-autoplay-mnemonic");
 
-  // 2. 朗讀英文單字（透過持久化 Audio 物件播放）
-  try {
-    const wordId = getTsmcWordId(item);
-    const speechText = TSMC_SPEECH_OVERRIDES[item.word] ?? item.word;
-    setSpeakButtonState(true, false);
-    if (wordId) {
-      await playAudioUrl(`./audio/${wordId}.mp3`, false);
-    } else {
-      await playAudioUrl(`https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`, false);
-    }
-  } catch (_) {}
-  setSpeakButtonState(false, false);
+  if (wordEl) wordEl.textContent = item.word;
+  if (meaningEl) meaningEl.textContent = item.meaning;
+  if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || "";
 
-  if (!tsmcAutoplayActive) return;
+  // 1. Speak English
+  playTsmcAudio(item, false);
 
-  // 3. 停頓 1.2 秒讓學習者自行在腦中回憶
-  await sleepAutoplay(1200);
-  if (!tsmcAutoplayActive) return;
-
-  // 4. 自動翻牌顯示中文、搭配詞與例句
-  if (els.tsmcWordAnswerBox) els.tsmcWordAnswerBox.hidden = false;
-  els.tsmcWordAnswer.hidden = false;
-  els.tsmcReveal.textContent = "隱藏答案";
-
-  // 5. 語音朗讀中文意思（帶安全超時，防止 iOS 卡死）
-  if (item.meaning) {
+  // 2. Wait 1200ms, then speak Chinese
+  tsmcAutoplayTimeout = setTimeout(async () => {
+    if (!tsmcAutoplayRunning) return;
     await speakChineseText(item.meaning);
-  }
 
-  if (!tsmcAutoplayActive) return;
+    // 3. Wait 800ms, then speak mnemonic
+    tsmcAutoplayTimeout = setTimeout(async () => {
+      if (!tsmcAutoplayRunning) return;
+      if (item.mnemonic) {
+        await speakChineseText(item.mnemonic);
+      }
 
-  // 6. 停頓 2 秒供學習者記憶例句與搭配
-  await sleepAutoplay(2000);
-  if (!tsmcAutoplayActive) return;
-
-  // 7. 自動切換到下一個單字並延續播放
-  tsmcPracticeIndices[tsmcPracticeMode] = (tsmcPracticeIndices[tsmcPracticeMode] + 1) % items.length;
-  renderTsmcWord();
-  runTsmcAutoplayStep();
+      // 4. Wait 1400ms, move to next
+      tsmcAutoplayTimeout = setTimeout(() => {
+        if (!tsmcAutoplayRunning) return;
+        tsmcAutoplayIndex += 1;
+        runAutoplayStep();
+      }, 1400);
+    }, 800);
+  }, 1200);
 }
 
-async function speakTsmcQuizWord(word) {
-  stopCurrentSpeech();
-  const wordId = getTsmcWordId(word);
-  const speechText = TSMC_SPEECH_OVERRIDES[word.word] ?? word.word;
-  if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.add("is-speaking");
-  if (wordId) {
-    try {
-      await playAudioUrl(`./audio/${wordId}.mp3`, false);
-      if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
-      return;
-    } catch (_) {}
+// ------------------------------------------
+// 15-Question Exam Simulator
+// ------------------------------------------
+function reset15Exam() {
+  if (tsmcExamState.timer) {
+    clearInterval(tsmcExamState.timer);
+    tsmcExamState.timer = null;
   }
-  try {
-    const onlineUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(speechText)}`;
-    await playAudioUrl(onlineUrl, false);
-    if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
+  tsmcExamState.active = false;
+
+  const intro = document.querySelector("#tsmc-exam-intro");
+  const activeBox = document.querySelector("#tsmc-exam-active-box");
+  const resultBox = document.querySelector("#tsmc-exam-result-box");
+
+  if (intro) intro.hidden = false;
+  if (activeBox) activeBox.hidden = true;
+  if (resultBox) resultBox.hidden = true;
+}
+
+function start15Exam() {
+  reset15Exam();
+  unlockTsmcAudio();
+
+  // Pick 15 random unique words (mix of core and all)
+  const coreWords = TSMC_WORDS.filter((w) => w.isCore50).sort(() => Math.random() - 0.5).slice(0, 8);
+  const otherWords = TSMC_WORDS.filter((w) => !w.isCore50).sort(() => Math.random() - 0.5).slice(0, 7);
+  const selectedWords = [...coreWords, ...otherWords].sort(() => Math.random() - 0.5);
+
+  const questions = selectedWords.map((target) => {
+    const distractors = TSMC_WORDS.filter((w) => w.meaning !== target.meaning)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+
+    const choices = [
+      { text: target.meaning, isCorrect: true },
+      ...distractors.map((d) => ({ text: d.meaning, isCorrect: false })),
+    ].sort(() => Math.random() - 0.5);
+
+    return {
+      word: target,
+      choices,
+      userChoice: null,
+    };
+  });
+
+  tsmcExamState = {
+    active: true,
+    questions,
+    currentIndex: 0,
+    userAnswers: [],
+    timer: null,
+    secondsLeft: 15 * 60,
+  };
+
+  const intro = document.querySelector("#tsmc-exam-intro");
+  const activeBox = document.querySelector("#tsmc-exam-active-box");
+  const resultBox = document.querySelector("#tsmc-exam-result-box");
+
+  if (intro) intro.hidden = true;
+  if (activeBox) activeBox.hidden = false;
+  if (resultBox) resultBox.hidden = true;
+
+  // Timer
+  updateExamTimerDisplay();
+  tsmcExamState.timer = setInterval(() => {
+    tsmcExamState.secondsLeft -= 1;
+    updateExamTimerDisplay();
+    if (tsmcExamState.secondsLeft <= 0) {
+      finish15Exam();
+    }
+  }, 1000);
+
+  render15ExamQuestion();
+}
+
+function updateExamTimerDisplay() {
+  const timerEl = document.querySelector("#tsmc-exam-timer");
+  if (!timerEl) return;
+  const m = Math.floor(Math.max(0, tsmcExamState.secondsLeft) / 60);
+  const s = Math.max(0, tsmcExamState.secondsLeft) % 60;
+  timerEl.textContent = `⏱️ 剩餘時間: ${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+function render15ExamQuestion() {
+  const q = tsmcExamState.questions[tsmcExamState.currentIndex];
+  if (!q) {
+    finish15Exam();
     return;
-  } catch (_) {}
-  speakWithWebSpeechFallback(speechText, false);
-  if (els.tsmcQuizSpeak) els.tsmcQuizSpeak.classList.remove("is-speaking");
+  }
+
+  const counterEl = document.querySelector("#tsmc-exam-counter");
+  const questionTextEl = document.querySelector("#tsmc-exam-question-text");
+  const choicesContainer = document.querySelector("#tsmc-exam-choices");
+  const nextBtn = document.querySelector("#tsmc-exam-next-btn");
+
+  if (counterEl) counterEl.textContent = `第 ${tsmcExamState.currentIndex + 1} / 15 題`;
+  if (questionTextEl) questionTextEl.textContent = q.word.word;
+  if (nextBtn) nextBtn.hidden = true;
+
+  if (choicesContainer) {
+    choicesContainer.innerHTML = "";
+    q.choices.forEach((choice, idx) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `tsmc-exam-choice ${q.userChoice === idx ? "selected" : ""}`;
+      btn.textContent = choice.text;
+
+      btn.addEventListener("click", () => {
+        q.userChoice = idx;
+        choicesContainer.querySelectorAll(".tsmc-exam-choice").forEach((b, i) => {
+          b.classList.toggle("selected", i === idx);
+        });
+
+        // Automatically advance after brief delay
+        setTimeout(() => {
+          if (tsmcExamState.currentIndex < tsmcExamState.questions.length - 1) {
+            tsmcExamState.currentIndex += 1;
+            render15ExamQuestion();
+          } else {
+            finish15Exam();
+          }
+        }, 300);
+      });
+
+      choicesContainer.appendChild(btn);
+    });
+  }
 }
 
-if ("speechSynthesis" in window) {
-  window.speechSynthesis.getVoices();
-  window.speechSynthesis.addEventListener("voiceschanged", bestEnglishVoice);
-}
+function finish15Exam() {
+  if (tsmcExamState.timer) {
+    clearInterval(tsmcExamState.timer);
+    tsmcExamState.timer = null;
+  }
+  tsmcExamState.active = false;
 
-if (els.tsmcAutoplay) {
-  els.tsmcAutoplay.addEventListener("click", () => {
-    if (tsmcAutoplayActive) {
-      stopTsmcAutoplay();
-    } else {
-      startTsmcAutoplay();
+  let correctCount = 0;
+  tsmcExamState.questions.forEach((q) => {
+    if (q.userChoice !== null && q.choices[q.userChoice]?.isCorrect) {
+      correctCount += 1;
     }
+  });
+
+  const total = tsmcExamState.questions.length;
+  const score = Math.round((correctCount / total) * 100);
+
+  const activeBox = document.querySelector("#tsmc-exam-active-box");
+  const resultBox = document.querySelector("#tsmc-exam-result-box");
+  const verdictEl = document.querySelector("#tsmc-exam-verdict");
+  const scoreEl = document.querySelector("#tsmc-exam-final-score");
+  const commentEl = document.querySelector("#tsmc-exam-comment");
+  const breakdownEl = document.querySelector("#tsmc-exam-breakdown");
+
+  if (activeBox) activeBox.hidden = true;
+  if (resultBox) resultBox.hidden = false;
+
+  if (scoreEl) scoreEl.textContent = `${score} 分`;
+
+  if (verdictEl && commentEl) {
+    if (score >= 90) {
+      verdictEl.textContent = "🏆 卓越神手！穩拿滿分！";
+      commentEl.textContent = `答對 ${correctCount} / ${total} 題。您的台積電廠區英文能力非常出色，筆試絕對能高分通過！`;
+    } else if (score >= 70) {
+      verdictEl.textContent = "🎉 及格通過！符合甄試標準！";
+      commentEl.textContent = `答對 ${correctCount} / ${total} 題。已達台積電技術員甄試及格門檻，檢視下方錯題口訣可更上一層樓！`;
+    } else {
+      verdictEl.textContent = "💪 再接再厲！加強衝刺！";
+      commentEl.textContent = `答對 ${correctCount} / ${total} 題。尚未達及格標準，建議利用「🗺️ 闖關地圖」與「💡 洗腦口訣」多練幾次！`;
+    }
+  }
+
+  // Breakdown Table
+  if (breakdownEl) {
+    breakdownEl.innerHTML = "<h4>📋 每題解析與錯題口訣搶救</h4>";
+    tsmcExamState.questions.forEach((q, idx) => {
+      const isCorrect = q.userChoice !== null && q.choices[q.userChoice]?.isCorrect;
+      const userText = q.userChoice !== null ? q.choices[q.userChoice]?.text : "未作答";
+      const correctText = q.word.meaning;
+
+      const card = document.createElement("div");
+      card.className = `tsmc-exam-review-card ${isCorrect ? "correct" : "wrong"}`;
+      card.style.cssText = "background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 12px;";
+
+      card.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <strong style="font-size:18px;">${idx + 1}. ${q.word.word}</strong>
+          <span style="font-weight:bold; color:${isCorrect ? "#10b981" : "#ef4444"};">${isCorrect ? "✅ 答對" : "❌ 答錯"}</span>
+        </div>
+        <p style="margin:4px 0; font-size:15px;">你的答案：${userText}</p>
+        <p style="margin:4px 0; font-size:15px; font-weight:bold;">正確意思：${correctText}</p>
+        ${!isCorrect && q.word.mnemonic ? `<div style="background:#fef3c7; color:#92400e; padding:8px 12px; border-radius:8px; margin-top:8px; font-size:14px; font-weight:600;">💡 洗腦口訣：${q.word.mnemonic}</div>` : ""}
+      `;
+      breakdownEl.appendChild(card);
+    });
+  }
+}
+
+// ------------------------------------------
+// Extras View (Math & Interview)
+// ------------------------------------------
+function renderTsmcExtras() {
+  const isMath = tsmcExtrasMode === "math";
+  const list = isMath ? TSMC_MATH_QUESTIONS : TSMC_INTERVIEW_QUESTIONS;
+  const item = list[tsmcExtrasIndex % list.length];
+
+  const titleEl = document.querySelector("#tsmc-extras-title");
+  const answerBox = document.querySelector("#tsmc-extras-answer-box");
+  const answerEl = document.querySelector("#tsmc-extras-answer");
+  const revealBtn = document.querySelector("#tsmc-extras-reveal");
+
+  if (titleEl) {
+    titleEl.textContent = `[${isMath ? "數學題" : "面試題"} ${tsmcExtrasIndex + 1}/${list.length}] ${item.prompt}`;
+  }
+  if (answerEl) answerEl.textContent = item.answer;
+
+  if (answerBox) answerBox.hidden = !tsmcExtrasRevealed;
+  if (revealBtn) revealBtn.textContent = tsmcExtrasRevealed ? "🙈 隱藏解答" : "👁️ 顯示解答";
+
+  document.querySelectorAll(".tsmc-extras-tab-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.extrasMode === tsmcExtrasMode);
   });
 }
 
-els.tsmcSpeak.addEventListener("click", () => {
-  stopTsmcAutoplay();
-  speakCurrentTsmcWord(false);
-});
-els.tsmcSpeakSlow.addEventListener("click", () => {
-  stopTsmcAutoplay();
-  speakCurrentTsmcWord(true);
-});
-
-els.tsmcModeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    stopTsmcAutoplay();
-    tsmcPracticeMode = button.dataset.tsmcMode;
-    if (tsmcPracticeMode === "wordQuiz") {
-      if (tsmcQuizState.questions.length && !tsmcQuizState.finished) renderTsmcQuiz();
-      else startTsmcQuiz();
-    } else {
-      renderTsmcWord();
-    }
+// ------------------------------------------
+// Initialization & Event Binding
+// ------------------------------------------
+function initTsmcSystem() {
+  // Navigation Tabs
+  document.querySelectorAll(".tsmc-tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      switchTsmcTab(btn.dataset.tsmcTab);
+    });
   });
-});
 
-renderTsmcDailyMission();
-renderTsmcWord();
-loadTsmcVocabulary();
+  // Learn View Controls
+  const learnBack = document.querySelector("#tsmc-learn-back");
+  if (learnBack) {
+    learnBack.addEventListener("click", () => switchTsmcTab("map"));
+  }
+
+  const learnPrev = document.querySelector("#tsmc-learn-prev");
+  if (learnPrev) {
+    learnPrev.addEventListener("click", () => {
+      if (tsmcLearnIndex > 0) {
+        tsmcLearnIndex -= 1;
+        renderStageLearnWord();
+      }
+    });
+  }
+
+  const learnNext = document.querySelector("#tsmc-learn-next");
+  if (learnNext) {
+    learnNext.addEventListener("click", () => {
+      if (tsmcLearnIndex < tsmcLearnWords.length - 1) {
+        tsmcLearnIndex += 1;
+        renderStageLearnWord();
+      }
+    });
+  }
+
+  const speakBtn = document.querySelector("#tsmc-learn-speak");
+  if (speakBtn) {
+    speakBtn.addEventListener("click", () => {
+      playTsmcAudio(tsmcLearnWords[tsmcLearnIndex], false);
+    });
+  }
+
+  const speakSlowBtn = document.querySelector("#tsmc-learn-speak-slow");
+  if (speakSlowBtn) {
+    speakSlowBtn.addEventListener("click", () => {
+      playTsmcAudio(tsmcLearnWords[tsmcLearnIndex], true);
+    });
+  }
+
+  const startQuizBtn = document.querySelector("#tsmc-start-stage-quiz");
+  if (startQuizBtn) {
+    startQuizBtn.addEventListener("click", () => {
+      startStageQuiz(tsmcCurrentStageId);
+    });
+  }
+
+  // Quiz View Controls
+  const quizQuit = document.querySelector("#tsmc-quiz-quit");
+  if (quizQuit) {
+    quizQuit.addEventListener("click", () => {
+      openStageLearn(tsmcStageQuizState.stageId);
+    });
+  }
+
+  const quizAudio = document.querySelector("#tsmc-stage-quiz-audio");
+  if (quizAudio) {
+    quizAudio.addEventListener("click", () => {
+      const q = tsmcStageQuizState.questions[tsmcStageQuizState.currentIndex];
+      if (q) playTsmcAudio(q.word, false);
+    });
+  }
+
+  const quizNext = document.querySelector("#tsmc-stage-quiz-next-btn");
+  if (quizNext) {
+    quizNext.addEventListener("click", nextStageQuizQuestion);
+  }
+
+  // Autoplay Controls
+  const autoToggle = document.querySelector("#tsmc-autoplay-toggle-btn");
+  if (autoToggle) {
+    autoToggle.addEventListener("click", toggleTsmcAutoplay);
+  }
+
+  // Exam Controls
+  const examStartBtn = document.querySelector("#tsmc-exam-start-btn");
+  if (examStartBtn) {
+    examStartBtn.addEventListener("click", start15Exam);
+  }
+
+  const examRestartBtn = document.querySelector("#tsmc-exam-restart-btn");
+  if (examRestartBtn) {
+    examRestartBtn.addEventListener("click", start15Exam);
+  }
+
+  // Extras Controls
+  document.querySelectorAll(".tsmc-extras-tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tsmcExtrasMode = btn.dataset.extrasMode;
+      tsmcExtrasIndex = 0;
+      tsmcExtrasRevealed = false;
+      renderTsmcExtras();
+    });
+  });
+
+  const extrasReveal = document.querySelector("#tsmc-extras-reveal");
+  if (extrasReveal) {
+    extrasReveal.addEventListener("click", () => {
+      tsmcExtrasRevealed = !tsmcExtrasRevealed;
+      renderTsmcExtras();
+    });
+  }
+
+  const extrasNext = document.querySelector("#tsmc-extras-next");
+  if (extrasNext) {
+    extrasNext.addEventListener("click", () => {
+      tsmcExtrasIndex += 1;
+      tsmcExtrasRevealed = false;
+      renderTsmcExtras();
+    });
+  }
+
+  loadTsmcVocabulary();
+}
+
+async function loadTsmcVocabulary() {
+  try {
+    const res = await fetch("./tsmc-vocabulary.json?v=20260907-5", { cache: "no-store" });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        TSMC_WORDS = data;
+      }
+    }
+  } catch (err) {
+    console.warn("無法載入 tsmc-vocabulary.json，使用預設備援詞庫:", err);
+  }
+  renderStageMap();
+  initAutoplaySelect();
+}
+
+function initOrRefreshTsmcView() {
+  if (tsmcCurrentTab === "map") {
+    showTsmcSubview("tsmc-subview-map");
+    renderStageMap();
+  } else if (tsmcCurrentTab === "core50") {
+    openStageLearn("core50");
+  } else if (tsmcCurrentTab === "autoplay") {
+    showTsmcSubview("tsmc-subview-autoplay");
+  } else if (tsmcCurrentTab === "exam") {
+    showTsmcSubview("tsmc-subview-exam");
+  } else if (tsmcCurrentTab === "extras") {
+    showTsmcSubview("tsmc-subview-extras");
+    renderTsmcExtras();
+  }
+}
+
+// Call initialization
+initTsmcSystem();
 
 function normalizeQuestion(raw, index) {
   const teacher = raw.teacherExplanation ?? {};
@@ -1509,13 +1415,7 @@ function setView(view) {
     updateDashboard();
   }
   if (view === "tsmc") {
-    renderTsmcDailyMission();
-    if (tsmcPracticeMode === "wordQuiz") {
-      if (tsmcQuizState.questions.length && !tsmcQuizState.finished) renderTsmcQuiz();
-      else startTsmcQuiz();
-    } else {
-      renderTsmcWord();
-    }
+    initOrRefreshTsmcView();
   }
 }
 
