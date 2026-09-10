@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>公職初考刷題 App</title>
-    <link rel="stylesheet" href="./style.css?v=20260907-6" />
+    <link rel="stylesheet" href="./style.css?v=20260910-1" />
   </head>
   <body>
     <main class="app-shell">
@@ -155,8 +155,24 @@
                 <strong id="tsmc-learn-phrase">abort the run (中止運轉)</strong>
               </div>
               <div class="tsmc-example-quote">
+                <div class="tsmc-quote-header">
+                  <span class="tsmc-quote-tag">廠區實戰例句</span>
+                  <span class="tsmc-quote-tip">👆 點擊任一英文單字可看個別翻譯與發音</span>
+                </div>
                 <p id="tsmc-learn-sentence">Press abort if an emergency occurs.</p>
                 <small id="tsmc-learn-sentence-meaning">緊急狀況時請按下中止。</small>
+
+                <!-- Interactive Word Breakdown Box (點擊單字即時解說) -->
+                <div id="tsmc-word-breakdown-box" class="tsmc-word-breakdown-box" hidden>
+                  <div class="tsmc-breakdown-main">
+                    <div class="tsmc-breakdown-term">
+                      <strong id="tsmc-breakdown-word">wafer</strong>
+                      <button id="tsmc-breakdown-speak" class="tsmc-breakdown-audio-btn" type="button" aria-label="朗讀此單字">🔊</button>
+                    </div>
+                    <div id="tsmc-breakdown-meaning" class="tsmc-breakdown-meaning">晶圓、矽晶片</div>
+                  </div>
+                  <button id="tsmc-breakdown-close" class="tsmc-breakdown-close-btn" type="button" aria-label="關閉解說">✕</button>
+                </div>
               </div>
             </div>
 
@@ -436,6 +452,6 @@
       </button>
     </nav>
 
-    <script src="./app.js?v=20260907-6"></script>
+    <script src="./app.js?v=20260910-1"></script>
   </body>
 </html>

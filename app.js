@@ -452,6 +452,106 @@ function applyWordLengthClass(el, text) {
   }
 }
 
+let TSMC_SENTENCE_DICT = {};
+let currentActiveWordEl = null;
+
+function hideWordBreakdown() {
+  const box = document.querySelector("#tsmc-word-breakdown-box");
+  if (box) box.hidden = true;
+  if (currentActiveWordEl) {
+    currentActiveWordEl.classList.remove("active");
+    currentActiveWordEl = null;
+  }
+}
+
+function onInteractiveWordClick(word, el) {
+  if (currentActiveWordEl) {
+    currentActiveWordEl.classList.remove("active");
+  }
+  currentActiveWordEl = el;
+  el.classList.add("active");
+
+  const meaning = lookupWordTranslation(word);
+
+  const box = document.querySelector("#tsmc-word-breakdown-box");
+  const wordEl = document.querySelector("#tsmc-breakdown-word");
+  const meaningEl = document.querySelector("#tsmc-breakdown-meaning");
+  const speakBtn = document.querySelector("#tsmc-breakdown-speak");
+
+  if (wordEl) wordEl.textContent = word;
+  if (meaningEl) meaningEl.textContent = meaning;
+  if (box) box.hidden = false;
+
+  // Speak the clicked word
+  speakEnglishFallback(word, false);
+
+  if (speakBtn) {
+    speakBtn.onclick = (e) => {
+      e.stopPropagation();
+      speakEnglishFallback(word, false);
+    };
+  }
+}
+
+function lookupWordTranslation(rawWord) {
+  if (!rawWord) return "查無翻譯";
+  const clean = rawWord.toLowerCase().replace(/[^a-z']/g, "");
+  if (!clean) return rawWord;
+
+  // 1. Direct dictionary match
+  if (TSMC_SENTENCE_DICT[clean]) return TSMC_SENTENCE_DICT[clean];
+
+  // 2. Strip 's
+  const noApos = clean.replace(/'s$/, "");
+  if (TSMC_SENTENCE_DICT[noApos]) return TSMC_SENTENCE_DICT[noApos];
+
+  // 3. Match in TSMC_WORDS
+  const tsmcMatch = TSMC_WORDS.find((w) => w.word.toLowerCase() === clean || w.word.toLowerCase() === noApos);
+  if (tsmcMatch) return tsmcMatch.meaning;
+
+  // 4. Stemming / Lemmatization rules
+  if (clean.endsWith("ies") && TSMC_SENTENCE_DICT[clean.slice(0, -3) + "y"]) return TSMC_SENTENCE_DICT[clean.slice(0, -3) + "y"];
+  if (clean.endsWith("es") && TSMC_SENTENCE_DICT[clean.slice(0, -2)]) return TSMC_SENTENCE_DICT[clean.slice(0, -2)];
+  if (clean.endsWith("s") && TSMC_SENTENCE_DICT[clean.slice(0, -1)]) return TSMC_SENTENCE_DICT[clean.slice(0, -1)];
+
+  if (clean.endsWith("ied") && TSMC_SENTENCE_DICT[clean.slice(0, -3) + "y"]) return TSMC_SENTENCE_DICT[clean.slice(0, -3) + "y"];
+  if (clean.endsWith("ed") && TSMC_SENTENCE_DICT[clean.slice(0, -2)]) return TSMC_SENTENCE_DICT[clean.slice(0, -2)];
+  if (clean.endsWith("ed") && TSMC_SENTENCE_DICT[clean.slice(0, -1)]) return TSMC_SENTENCE_DICT[clean.slice(0, -1)];
+
+  if (clean.endsWith("ing") && TSMC_SENTENCE_DICT[clean.slice(0, -3)]) return TSMC_SENTENCE_DICT[clean.slice(0, -3)];
+  if (clean.endsWith("ing") && TSMC_SENTENCE_DICT[clean.slice(0, -3) + "e"]) return TSMC_SENTENCE_DICT[clean.slice(0, -3) + "e"];
+
+  if (clean.endsWith("ly") && TSMC_SENTENCE_DICT[clean.slice(0, -2)]) return TSMC_SENTENCE_DICT[clean.slice(0, -2)];
+
+  return "半導體廠區常用字";
+}
+
+function renderInteractiveSentence(container, text) {
+  if (!container) return;
+  container.innerHTML = "";
+  if (!text) return;
+
+  const tokens = text.split(/([a-zA-Z0-9'-]+)/);
+  tokens.forEach((tok) => {
+    if (/^[a-zA-Z0-9'-]+$/.test(tok)) {
+      const span = document.createElement("span");
+      span.className = "tsmc-clickable-word";
+      span.textContent = tok;
+      span.dataset.word = tok;
+      span.tabIndex = 0;
+      span.setAttribute("role", "button");
+      span.setAttribute("aria-label", `點擊查詢 ${tok} 的中文翻譯與發音`);
+      span.addEventListener("click", (e) => {
+        e.stopPropagation();
+        onInteractiveWordClick(tok, span);
+      });
+      container.appendChild(span);
+    } else {
+      container.appendChild(document.createTextNode(tok));
+    }
+  });
+}
+
 function renderStageLearnWord() {
   const item = tsmcLearnWords[tsmcLearnIndex];
   if (!item) return;
@@ -493,8 +593,15 @@ function renderStageLearnWord() {
   }
   if (meaningEl) meaningEl.textContent = item.meaning;
   if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || `💡 廠區高頻單字，請務必熟記！`;
-  if (phraseEl) phraseEl.textContent = item.fabPhrase ? `${item.fabPhrase}` : `${item.word} (廠區常用)`;
-  if (sentenceEl) sentenceEl.textContent = item.exampleSentence || "";
+  hideWordBreakdown();
+
+  if (phraseEl) {
+    const pText = item.fabPhrase ? item.fabPhrase : `${item.word} (廠區常用)`;
+    renderInteractiveSentence(phraseEl, pText);
+  }
+  if (sentenceEl) {
+    renderInteractiveSentence(sentenceEl, item.exampleSentence || "");
+  }
   if (sentenceMeaningEl) sentenceMeaningEl.textContent = item.exampleMeaning || "";
 
   // Prev / Next button states
@@ -1221,20 +1328,34 @@ function initTsmcSystem() {
     });
   }
 
+  const breakdownClose = document.querySelector("#tsmc-breakdown-close");
+  if (breakdownClose) {
+    breakdownClose.addEventListener("click", (e) => {
+      e.stopPropagation();
+      hideWordBreakdown();
+    });
+  }
+
   loadTsmcVocabulary();
 }
 
 async function loadTsmcVocabulary() {
   try {
-    const res = await fetch("./tsmc-vocabulary.json?v=20260907-5", { cache: "no-store" });
-    if (res.ok) {
-      const data = await res.json();
+    const [resVocab, resDict] = await Promise.all([
+      fetch("./tsmc-vocabulary.json?v=20260910-1", { cache: "no-store" }),
+      fetch("./sentence-dict.json?v=20260910-1", { cache: "no-store" }).catch(() => null),
+    ]);
+    if (resVocab && resVocab.ok) {
+      const data = await resVocab.json();
       if (Array.isArray(data) && data.length > 0) {
         TSMC_WORDS = data;
       }
     }
+    if (resDict && resDict.ok) {
+      TSMC_SENTENCE_DICT = await resDict.json();
+    }
   } catch (err) {
-    console.warn("無法載入 tsmc-vocabulary.json，使用預設備援詞庫:", err);
+    console.warn("無法載入 tsmc-vocabulary.json 或 sentence-dict.json:", err);
   }
   renderStageMap();
   initAutoplaySelect();

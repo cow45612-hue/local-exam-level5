@@ -743,24 +743,163 @@ body.in-tsmc .app-shell {
 
 .tsmc-example-quote {
   background: #f8fafc;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 10px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 12px 14px;
+  position: relative;
+}
+
+.tsmc-quote-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.tsmc-quote-tag {
+  font-size: 11px;
+  font-weight: 900;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 2px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tsmc-quote-tip {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0284c7;
 }
 
 .tsmc-example-quote p {
-  margin: 0 0 4px 0;
-  font-size: clamp(15px, 3.8vw, 17px);
+  margin: 0 0 6px 0;
+  font-size: clamp(15px, 4vw, 18px);
   font-weight: 700;
   color: #1e293b;
-  line-height: 1.45;
+  line-height: 1.6;
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
+.tsmc-clickable-word {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1px 4px;
+  margin: 0 1px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  border-bottom: 2px dashed #60a5fa;
+  color: #1d4ed8;
+  touch-action: manipulation;
+  font-weight: 800;
+}
+
+.tsmc-clickable-word:hover,
+.tsmc-clickable-word:active {
+  background: #dbeafe;
+  color: #1e40af;
+  border-bottom-color: #2563eb;
+}
+
+.tsmc-clickable-word.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid transparent !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.tsmc-word-breakdown-box {
+  margin-top: 10px;
+  background: #ffffff;
+  border: 2px solid #38bdf8;
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.15);
+  animation: pop-in 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tsmc-word-breakdown-box[hidden] {
+  display: none !important;
+}
+
+.tsmc-breakdown-main {
+  flex: 1 1 auto;
+}
+
+.tsmc-breakdown-term {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tsmc-breakdown-term strong {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0369a1;
+  letter-spacing: -0.01em;
+}
+
+.tsmc-breakdown-audio-btn {
+  min-height: 28px;
+  width: 28px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  color: #0284c7;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.12s ease;
+}
+
+.tsmc-breakdown-audio-btn:active {
+  transform: scale(0.92);
+  background: #bae6fd;
+}
+
+.tsmc-breakdown-meaning {
+  margin-top: 4px;
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.45;
+}
+
+.tsmc-breakdown-close-btn {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.tsmc-breakdown-close-btn:active {
+  background: #e2e8f0;
+}
+
 .tsmc-example-quote small {
   display: block;
-  font-size: clamp(13px, 3.4vw, 15px);
+  font-size: clamp(13.5px, 3.5vw, 15.5px);
   color: #64748b;
   line-height: 1.45;
   font-weight: 600;
