@@ -241,36 +241,135 @@ function getTsmcWordId(item) {
   return index >= 0 ? (TSMC_WORDS[index].id || index + 1) : null;
 }
 
-function playTsmcAudio(item, slow = false) {
-  unlockTsmcAudio();
-  if (!item) return;
+// ==========================================
+// 🔊 高音質真人美式發音引擎 (Natural Human Pronunciation Engine)
+// ==========================================
 
-  const wordId = getTsmcWordId(item);
-  const audio = getTsmcAudio();
+let cachedBestEnVoice = null;
+let cachedBestZhVoice = null;
 
-  if (!slow && wordId) {
-    audio.src = `./audio/${wordId}.mp3`;
-    audio.playbackRate = 1.0;
-    audio.play().catch(() => {
-      speakEnglishFallback(item.word, slow);
-    });
-  } else {
-    speakEnglishFallback(item.word, slow);
+function updateCachedVoices() {
+  if (!("speechSynthesis" in window)) return;
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices || voices.length === 0) return;
+
+  // Best English Voice (Natural US English)
+  const enPreferences = [
+    (v) => v.lang === "en-US" && (v.name.includes("Natural") || v.name.includes("Online")),
+    (v) => v.lang === "en-US" && (v.name.includes("Google") || v.name.includes("Jenny") || v.name.includes("Samantha") || v.name.includes("Ava")),
+    (v) => v.lang === "en-US" && !v.localService,
+    (v) => v.lang === "en-US",
+    (v) => v.lang.startsWith("en"),
+  ];
+  for (const pref of enPreferences) {
+    const found = voices.find(pref);
+    if (found) {
+      cachedBestEnVoice = found;
+      break;
+    }
+  }
+  if (!cachedBestEnVoice) {
+    cachedBestEnVoice = voices.find((v) => v.lang.startsWith("en")) || null;
+  }
+
+  // Best Chinese Voice (Taiwan zh-TW)
+  const zhPreferences = [
+    (v) => (v.lang === "zh-TW" || v.lang === "cmn-Hant-TW") && (v.name.includes("Natural") || v.name.includes("Google") || v.name.includes("Mei-Jia") || v.name.includes("HsiaoChen")),
+    (v) => v.lang === "zh-TW" || v.lang === "cmn-Hant-TW",
+    (v) => v.lang.includes("TW") || v.lang.includes("Hant"),
+    (v) => v.lang.includes("zh"),
+  ];
+  for (const pref of zhPreferences) {
+    const found = voices.find(pref);
+    if (found) {
+      cachedBestZhVoice = found;
+      break;
+    }
+  }
+  if (!cachedBestZhVoice) {
+    cachedBestZhVoice = voices.find((v) => v.lang.includes("zh")) || null;
   }
 }
 
-function speakEnglishFallback(text, slow = false) {
+if ("speechSynthesis" in window) {
+  window.speechSynthesis.onvoiceschanged = updateCachedVoices;
+  updateCachedVoices();
+}
+
+function speakOptimizedEnglishSpeech(text, slow = false) {
   if (!("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
+
   const override = TSMC_SPEECH_OVERRIDES[text] || text;
   const utter = new SpeechSynthesisUtterance(override);
   utter.lang = "en-US";
-  utter.rate = slow ? 0.72 : 0.95;
-  const voices = window.speechSynthesis.getVoices();
-  const enVoice = voices.find((v) => v.lang.startsWith("en") && !v.localService) || voices.find((v) => v.lang.startsWith("en"));
-  if (enVoice) utter.voice = enVoice;
+  utter.rate = slow ? 0.72 : 0.92;
+  utter.pitch = 1.0;
+
+  if (!cachedBestEnVoice) updateCachedVoices();
+  if (cachedBestEnVoice) utter.voice = cachedBestEnVoice;
+
   window.speechSynthesis.speak(utter);
 }
+
+function playNaturalWordAudio(target, slow = false) {
+  unlockTsmcAudio();
+  if (!target) return;
+
+  let wordText = "";
+  let wordId = null;
+
+  if (typeof target === "string") {
+    wordText = target.trim();
+    const clean = wordText.toLowerCase().replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, "");
+    const match = TSMC_WORDS.find((w) => w.word.toLowerCase() === clean);
+    if (match) {
+      wordId = getTsmcWordId(match);
+    }
+  } else if (typeof target === "object") {
+    wordText = target.word || "";
+    wordId = getTsmcWordId(target);
+  }
+
+  const cleanWord = wordText.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "");
+  if (!cleanWord) return;
+
+  const audio = getTsmcAudio();
+  stopCurrentSpeech();
+
+  // Speed settings: slow 0.72x, normal 1.0x with pitch preserved
+  audio.playbackRate = slow ? 0.72 : 1.0;
+  if ("preservesPitch" in audio) {
+    audio.preservesPitch = true;
+  }
+
+  // Audio source candidates (Priority: Local MP3 -> Youdao Native US human voice -> Google TTS)
+  const candidates = [];
+
+  if (wordId) {
+    candidates.push(`./audio/${wordId}.mp3`);
+  }
+  candidates.push(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanWord)}&type=2`);
+  candidates.push(`https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(cleanWord)}`);
+
+  let idx = 0;
+  function tryNextCandidate() {
+    if (idx >= candidates.length) {
+      speakOptimizedEnglishSpeech(cleanWord, slow);
+      return;
+    }
+    const url = candidates[idx++];
+    audio.src = url;
+    audio.play().catch(() => {
+      tryNextCandidate();
+    });
+  }
+
+  tryNextCandidate();
+}
+
+const playTsmcAudio = playNaturalWordAudio;
+const speakEnglishFallback = playNaturalWordAudio;
 
 function speakChineseText(text) {
   return new Promise((resolve) => {
@@ -282,10 +381,11 @@ function speakChineseText(text) {
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = "zh-TW";
     utter.rate = 1.0;
-    const voices = window.speechSynthesis.getVoices();
-    const zhVoice = voices.find((v) => v.lang.includes("zh") || v.lang.includes("TW") || v.lang.includes("cmn"));
-    if (zhVoice) utter.voice = zhVoice;
-    
+    utter.pitch = 1.0;
+
+    if (!cachedBestZhVoice) updateCachedVoices();
+    if (cachedBestZhVoice) utter.voice = cachedBestZhVoice;
+
     let resolved = false;
     const done = () => {
       if (!resolved) {
@@ -295,7 +395,7 @@ function speakChineseText(text) {
     };
     utter.onend = done;
     utter.onerror = done;
-    setTimeout(done, 3000);
+    setTimeout(done, 3500);
     window.speechSynthesis.speak(utter);
   });
 }
