@@ -1,78 +1,13 @@
 [
   {
-    "id": 9,
-    "word": "adjust",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 11,
     "word": "air shower",
     "reason": "filename_not_found"
   },
   {
-    "id": 14,
-    "word": "align",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 15,
-    "word": "annually",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 17,
-    "word": "attach",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 20,
-    "word": "automotive",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 23,
-    "word": "backup",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 25,
-    "word": "basic",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 31,
-    "word": "cancel",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 34,
-    "word": "cassette",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 36,
-    "word": "certify",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 44,
     "word": "clean chamber",
     "reason": "filename_not_found"
-  },
-  {
-    "id": 60,
-    "word": "customer",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 62,
-    "word": "cycle time",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 70,
-    "word": "diffusion",
-    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 74,
@@ -85,99 +20,14 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 101,
-    "word": "hard-disk",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 103,
-    "word": "helmet",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 108,
-    "word": "impact",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 112,
-    "word": "inhibition",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 113,
-    "word": "input",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 136,
-    "word": "loading",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 137,
-    "word": "lobby",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 140,
     "word": "log sheet",
     "reason": "filename_not_found"
   },
   {
-    "id": 146,
-    "word": "manufacture",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 155,
     "word": "miss-operation",
     "reason": "filename_not_found"
-  },
-  {
-    "id": 166,
-    "word": "off-line",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 170,
-    "word": "output",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 172,
-    "word": "over time",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 179,
-    "word": "password",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 196,
-    "word": "preview",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 199,
-    "word": "priority",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 208,
-    "word": "re-certify",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 214,
-    "word": "remind",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 218,
-    "word": "reset",
-    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 223,
@@ -190,54 +40,9 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 231,
-    "word": "select",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 232,
-    "word": "semiconductor",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 238,
-    "word": "skip",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 239,
-    "word": "sorter",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 246,
-    "word": "standby",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 251,
-    "word": "stocker",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 253,
-    "word": "super",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 254,
     "word": "super hot run",
     "reason": "filename_not_found"
-  },
-  {
-    "id": 255,
-    "word": "supervisor",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 259,
-    "word": "tag",
-    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 260,
@@ -245,33 +50,13 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 263,
-    "word": "technician",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
-    "id": 266,
-    "word": "thickness",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 267,
     "word": "thin film",
     "reason": "filename_not_found"
   },
   {
-    "id": 273,
-    "word": "trend",
-    "reason": "us_recording_needed_no_other_accent_substitution"
-  },
-  {
     "id": 275,
     "word": "turn rate",
     "reason": "filename_not_found"
-  },
-  {
-    "id": 276,
-    "word": "unload",
-    "reason": "us_recording_needed_no_other_accent_substitution"
   }
 ]

@@ -104,6 +104,36 @@
     "duration": 1.0
   },
   {
+    "id": 9,
+    "word": "adjust",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/adjust",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/adjust",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/adj/adjus/adjust__us_1.mp3",
+    "spokenText": "adjust",
+    "sha256": "2742be80f61a41ff94e4b9a012e755d7f00fa39d1bff294eb9d686f11f8a81be",
+    "duration": 1.001565,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 10,
+    "word": "AI",
+    "originalExtension": "oga",
+    "accent": "US",
+    "artist": "Paul2520",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-AI.oga",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/En-us-AI.oga",
+    "spokenText": "AI",
+    "originalSha256": "db3c2f759018461a1d6233781b46ec9d7c29d93aa90c8e4202c90d269aa2632d",
+    "sha256": "ac2ba28c1cbd235801aacd28a9d618fe7688f7c80299f7e0166f96b3488aba71",
+    "duration": 0.917188,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 12,
     "word": "alarm",
     "accent": "US",
@@ -130,6 +160,34 @@
     "duration": 1.65
   },
   {
+    "id": 14,
+    "word": "align",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/align",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/align",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/ali/align/align__us_1.mp3",
+    "spokenText": "align",
+    "sha256": "521159f4e354ea6eef068884a75a101c50d78df0f852188e16858cd9ee0bcaed",
+    "duration": 0.96093,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 15,
+    "word": "annually",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/annually",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/annually",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/ann/annua/annually__us_1.mp3",
+    "spokenText": "annually",
+    "sha256": "921be75e2ec3fb11aeb88e81c73dfa7a825fb63e6c783f3de95e413b3b1210f5",
+    "duration": 1.055646,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 16,
     "word": "area",
     "accent": "US",
@@ -141,6 +199,20 @@
     "originalSha256": "d13d794d2834d9d458cddeaa76047cf6c77525162b0cdd3c218be205b0cacfad",
     "sha256": "f26458d40137beb404a2fe3fa2de30540158965b45d747feee27428cb71f9dfe",
     "duration": 1.0
+  },
+  {
+    "id": 17,
+    "word": "attach",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/attach",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/attach",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/att/attac/attach__us_1.mp3",
+    "spokenText": "attach",
+    "sha256": "3bd792fdf78619cd34a913a914df16eb74722246e50bfc775812506edebb6475",
+    "duration": 0.945692,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 18,
@@ -169,6 +241,20 @@
     "duration": 0.986848
   },
   {
+    "id": 20,
+    "word": "automotive",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/automotive",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/automotive",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/aut/autom/automotive__us_1.mp3",
+    "spokenText": "automotive",
+    "sha256": "16f9544f6bbe205c8a857bc79b5789f142a20cd0c8002e174f0db5f3c13cada7",
+    "duration": 1.0422,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 21,
     "word": "available",
     "accent": "US",
@@ -195,6 +281,20 @@
     "duration": 1.150454
   },
   {
+    "id": 23,
+    "word": "backup",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/backup",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/backup",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/b/bac/backu/backup__us_1.mp3",
+    "spokenText": "backup",
+    "sha256": "99414313e035c912bccb3ddc71340237a1a5c6a097dcd76b8d5dbe1c44a23dfa",
+    "duration": 0.79839,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 24,
     "word": "bank",
     "accent": "US",
@@ -208,6 +308,20 @@
     "duration": 0.650159
   },
   {
+    "id": 25,
+    "word": "basic",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/basic",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/basic",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/b/bas/basic/basic__us_1.mp3",
+    "spokenText": "basic",
+    "sha256": "24ee7cb7eb202666cffd25010c0378bcc7129069deac8f04262f568631dc8a6c",
+    "duration": 0.859456,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 26,
     "word": "beam",
     "accent": "US",
@@ -219,6 +333,22 @@
     "originalSha256": "a230fc09c50cf525bc29bf2b2ffdae394ea859692a3861ae71dfd1e64e26b448",
     "sha256": "cd96f26797ca828613b1cb4f13656e404bd4b21ece3c25e8df2b913ae7a35819",
     "duration": 0.615329
+  },
+  {
+    "id": 27,
+    "word": "benchmark",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Vininn126",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-benchmark.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/LL-Q1860_%28eng%29-Vininn126-benchmark.wav",
+    "spokenText": "benchmark",
+    "originalSha256": "cda3dca20e79708bdfdb0f8a24378870954ac44bb82def16b23a112c86c427bf",
+    "sha256": "0f4dc1db4c6dab5c9b66d1d9a64582ebcef6d3d6a1d4784fa7dbcbd7b11e76b5",
+    "duration": 1.138667,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 28,
@@ -260,6 +390,20 @@
     "duration": 0.731429
   },
   {
+    "id": 31,
+    "word": "cancel",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cancel",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cancel",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/can/cance/cancel__us_1.mp3",
+    "spokenText": "cancel",
+    "sha256": "4fe487d8776369451231ecfa3fa4821ba4261a7726b615524c2759462143c054",
+    "duration": 0.87966,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 32,
     "word": "card",
     "accent": "US",
@@ -286,6 +430,20 @@
     "duration": 0.452789
   },
   {
+    "id": 34,
+    "word": "cassette",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cassette",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cassette",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cas/casse/cassette__us_1.mp3",
+    "spokenText": "cassette",
+    "sha256": "0852a565d218718ffc7162410b47f80acbefdbc512e204300647ef9a49e82191",
+    "duration": 0.87966,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 35,
     "word": "center",
     "accent": "US",
@@ -297,6 +455,20 @@
     "originalSha256": "cc9307a26c338d994f25759fd4bf1b508e5ef21deb472e08e040bfb9dcf435d3",
     "sha256": "6156fa8c6ca8ab71968f9ae47f7f19934ff03271ae99960b21903f67d52a1255",
     "duration": 0.696599
+  },
+  {
+    "id": 36,
+    "word": "certify",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/certify",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/certify",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cer/certi/certify__us_1.mp3",
+    "spokenText": "certify",
+    "sha256": "bf41e76c2254581921777585d8441749481458b3de6b3f241fd2d4800cc48d3f",
+    "duration": 1.129274,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 37,
@@ -520,6 +692,22 @@
     "duration": 1.150454
   },
   {
+    "id": 55,
+    "word": "contamination",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Simplificationalizer",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Simplificationalizer-contamination.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/LL-Q1860_%28eng%29-Simplificationalizer-contamination.wav",
+    "spokenText": "contamination",
+    "originalSha256": "e3317d6af8dc1093bd7fdee3ecfe05af237045f343096ca11a7c70c3068617f4",
+    "sha256": "181e7e097d3e96d3f42590263ecaf8440ee3cabe00fcc5509fe42f85744a13b6",
+    "duration": 1.48,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 56,
     "word": "continue",
     "accent": "US",
@@ -572,6 +760,20 @@
     "duration": 0.626939
   },
   {
+    "id": 60,
+    "word": "customer",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/customer",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/customer",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cus/custo/customer__us_1.mp3",
+    "spokenText": "customer",
+    "sha256": "9b414c72b6d4d92d03b10e1d31a873970b0a9a928e9058b484675661b8f2393e",
+    "duration": 0.931905,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 61,
     "word": "cycle",
     "accent": "US",
@@ -585,6 +787,20 @@
     "duration": 1.05
   },
   {
+    "id": 62,
+    "word": "cycle time",
+    "accent": "US",
+    "artist": "Cambridge Dictionary",
+    "license": "Dictionary source",
+    "licenseUrl": "https://dictionary.cambridge.org/pronunciation/english/cycle-time",
+    "page": "https://dictionary.cambridge.org/pronunciation/english/cycle-time",
+    "audioUrl": "https://dictionary.cambridge.org/media/english/us_pron/c/cbe/cbedu/cbedus02386.mp3",
+    "spokenText": "cycle time",
+    "sha256": "da6961a69ec136df1c0bb37e3be97a09b78dc6cfe6b7dbb382b6e4ca9161defd",
+    "duration": 1.14,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 63,
     "word": "daily",
     "accent": "US",
@@ -596,6 +812,22 @@
     "originalSha256": "530a90201872729f87bcaf060f67b9fc96ec6aa9e259a9a46c855c7534a92979",
     "sha256": "71a3d78657b9b3db672c54ae30dda018515a6ade5b6c64218d63bf58420315f2",
     "duration": 0.615329
+  },
+  {
+    "id": 64,
+    "word": "data",
+    "originalExtension": "ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-data1.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/En-us-data1.ogg",
+    "spokenText": "data",
+    "originalSha256": "a3ad586181316fee789011e1406ff635d5b9cabe3b5b4ffcb567455e29e7f22f",
+    "sha256": "af4f788dbe90997211d888ab02d7c7621c299875e4405c3cad297b5f2851259a",
+    "duration": 0.417959,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 65,
@@ -661,6 +893,20 @@
     "originalSha256": "d018f73d6a76b7f9af9caab49c8b253ab2e72c11a7c2e6e509e01f04fceeb9d0",
     "sha256": "286e36f99785716211065bb26a6a9c88d6d8e93e3c237f3eb2d5b714b2cd64c1",
     "duration": 1.1
+  },
+  {
+    "id": 70,
+    "word": "diffusion",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/diffusion",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/diffusion",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/d/dif/diffu/diffusion__us_1.mp3",
+    "spokenText": "diffusion",
+    "sha256": "369ae0c6f0aaf5e31f4afb0e655d00c3cd8b00b4c5e89e4aa44603f570e41a07",
+    "duration": 1.01898,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 71,
@@ -780,6 +1026,22 @@
     "duration": 0.626939
   },
   {
+    "id": 81,
+    "word": "etching",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Persent101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-etching.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LL-Q1860_%28eng%29-Persent101-etching.wav",
+    "spokenText": "etching",
+    "originalSha256": "8eda76634546ef4c29fa3b89a341ead14dab90ce39a7585563a3681a5521e8fd",
+    "sha256": "b2e461f0d872fbf5d399fd7d4fe40119dcc4a149be02d2513cbbd02ad37f1886",
+    "duration": 0.850667,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 83,
     "word": "event",
     "accent": "US",
@@ -856,6 +1118,22 @@
     "originalSha256": "f8967505a89119c5721529be824ad34c4bfe3b5669e80525eda942523f03365e",
     "sha256": "c978ad67823e289d932b4f3aeac3e7f7a2f860a1dbc0beb4c743abed68e11d1a",
     "duration": 0.766259
+  },
+  {
+    "id": 89,
+    "word": "focus",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-focus.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/LL-Q1860_%28eng%29-Wodencafe-focus.wav",
+    "spokenText": "focus",
+    "originalSha256": "397e5455bf3ee50709c76d699e9a871316e00138e77d23699cf7eb54ced63ee2",
+    "sha256": "a403bfcf9c8853f538ba2bc0bcc91a491ea0331d55c545fb797121e4d398fa2f",
+    "duration": 0.970667,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 90,
@@ -937,6 +1215,22 @@
     "duration": 0.766259
   },
   {
+    "id": 96,
+    "word": "gloves",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Persent101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-gloves.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/LL-Q1860_%28eng%29-Persent101-gloves.wav",
+    "spokenText": "gloves",
+    "originalSha256": "c514d26acec062337b062b32ff89c07b906c1c1bffc6560b1be067c100d49f59",
+    "sha256": "7e1f7a36e6e8e044e48ae17e9be4be58b4a9ef336640045d76a2a2284631df25",
+    "duration": 0.978667,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 97,
     "word": "grade",
     "accent": "US",
@@ -989,6 +1283,20 @@
     "duration": 0.696599
   },
   {
+    "id": 101,
+    "word": "hard-disk",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hard-disk",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hard-disk",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/h/har/hard_/hard_disk_1_us_1.mp3",
+    "spokenText": "hard disk",
+    "sha256": "17b870979ff16e1244ce7d6e88e59cb28ecaea124484dbf493531eba9e41e530",
+    "duration": 1.0422,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 102,
     "word": "heavy",
     "accent": "US",
@@ -1000,6 +1308,20 @@
     "originalSha256": "7011b3d5a7aa75617aa94840cd7680e3b189e209fd8c87aa8489474488142831",
     "sha256": "2af111fcbedd51a5e4733dab9caea0fa6027faa834f5015cfe72200233c9ad39",
     "duration": 0.580499
+  },
+  {
+    "id": 103,
+    "word": "helmet",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/helmet",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/helmet",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/h/hel/helme/helmet__us_1.mp3",
+    "spokenText": "helmet",
+    "sha256": "8b07e533d807d44f881fb98be6f31ccdac7e77e7d53632648b8c3043379b5a61",
+    "duration": 0.830862,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 104,
@@ -1054,6 +1376,20 @@
     "duration": 0.684989
   },
   {
+    "id": 108,
+    "word": "impact",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/impact",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/impact",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/i/imp/impac/impact__us_1.mp3",
+    "spokenText": "impact",
+    "sha256": "d919ba38c99e40d24a0f6b7151524cfdaf3f8edf15d4bd89b1dbfa34775ac6b6",
+    "duration": 1.106054,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 109,
     "word": "improve",
     "accent": "US",
@@ -1091,6 +1427,34 @@
     "originalSha256": "5b8645d8b67b487ab8519a72be1cf27b312c6e97ccd4d059a60df50369903074",
     "sha256": "39aafac4adbf32838aaf01becac0850bccd96b1d402f8b712c830a13b6672871",
     "duration": 0.928798
+  },
+  {
+    "id": 112,
+    "word": "inhibition",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/inhibition",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/inhibition",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/i/inh/inhib/inhibition__us_1_rr.mp3",
+    "spokenText": "inhibition",
+    "sha256": "2c6ee4aeefb55778d85c6ae8950ab9f103109f7d7d62984e68bc6ec88440c1ba",
+    "duration": 1.054875,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 113,
+    "word": "input",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/input",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/input",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/i/inp/input/input__us_1.mp3",
+    "spokenText": "input",
+    "sha256": "bde1d6d45df3537c09bd8df842e67c8e81778481bc9fee68f2bde06ccf3d17b0",
+    "duration": 0.87966,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 114,
@@ -1353,6 +1717,22 @@
     "duration": 0.615329
   },
   {
+    "id": 134,
+    "word": "lithography",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Vininn126",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-lithography.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/LL-Q1860_%28eng%29-Vininn126-lithography.wav",
+    "spokenText": "lithography",
+    "originalSha256": "2a22a7136ab7170bd644062f12b3778aa6d607954c1a6aa5933e67c15dc001c8",
+    "sha256": "ec24a74d3d7fc3a46af924152ccd72168ceed248adb1a35f85b6d8d815997403",
+    "duration": 1.309333,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 135,
     "word": "load",
     "accent": "US",
@@ -1364,6 +1744,34 @@
     "originalSha256": "9e7dd4bcf6d443081b502fa1a9bd96f160c9d60a3cb4eed49a07d0ee1b18326c",
     "sha256": "874aff0fd7707ee1f1193a62cf27146ee4dca218cfa8ec3631d2688b04abaff3",
     "duration": 1.056508
+  },
+  {
+    "id": 136,
+    "word": "loading",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/english/loading",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/loading",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/l/loa/loadi/loading__us_1.mp3",
+    "spokenText": "loading",
+    "sha256": "1772350bb8ebcea06dda7d88ee7bfd2d587cdbea524c443f838fb56668dee749",
+    "duration": 1.355669,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 137,
+    "word": "lobby",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lobby",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lobby",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/lob/lobby/lobby__us_1.mp3",
+    "spokenText": "lobby",
+    "sha256": "422fd6729392a8555a091a7e611706df4fc685b08b40abc98f7066223659c088",
+    "duration": 0.885533,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 138,
@@ -1457,6 +1865,20 @@
     "duration": 1.45
   },
   {
+    "id": 146,
+    "word": "manufacture",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/manufacture",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/manufacture",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/m/man/manuf/manufacture__us_1.mp3",
+    "spokenText": "manufacture",
+    "sha256": "c0f99e30f213dec70780b1131934ef2c58fbd5930fcddad8dfd41982ffa5eca7",
+    "duration": 1.227959,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 147,
     "word": "mark",
     "accent": "US",
@@ -1494,6 +1916,22 @@
     "originalSha256": "a4f159d73e5befb89c760afad7abf30fb92554d16c586839be12e0c650b88813",
     "sha256": "3801d036405bbc9cca963a6d29748b4b0e648d3609ac07db4c7fcb983b36d4f4",
     "duration": 0.766259
+  },
+  {
+    "id": 150,
+    "word": "measure",
+    "originalExtension": "ogg",
+    "accent": "US",
+    "artist": "Muke",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-measure.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/En-us-measure.ogg",
+    "spokenText": "measure",
+    "originalSha256": "78a2dfaf437e0b5096427db017ea322ab3fabfd6717544cd8ac953a3354cc98d",
+    "sha256": "581bb5383679740fdfe48cf4a1962dd6ebf01b87547b43bfcc9a443f89cce15a",
+    "duration": 1.323537,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 151,
@@ -1546,6 +1984,22 @@
     "originalSha256": "7cdbcc686dfd26fd514b8af8cf73c809d7190734e7f393f32df0eebad6fce68d",
     "sha256": "d5f209e0876bb2b06ef06e5a851cdd1e4d84a9373b07dc02297e17876ce34c18",
     "duration": 0.673379
+  },
+  {
+    "id": 156,
+    "word": "monitor",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-monitor.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/LL-Q1860_%28eng%29-Wodencafe-monitor.wav",
+    "spokenText": "monitor",
+    "originalSha256": "421c4066eda6da3b388b6766232ab0bfa2363d93cd6c716caf64770fb835e3f9",
+    "sha256": "9e486ad87197facf7d199a22d1e9b795ba71f16532ff54f9c199c205154f35f8",
+    "duration": 1.088,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 157,
@@ -1665,6 +2119,52 @@
     "duration": 0.603719
   },
   {
+    "id": 166,
+    "word": "off-line",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/offline",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/offline",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/o/off/offli/offline__us_1_rr.mp3",
+    "spokenText": "offline",
+    "sha256": "d44c35b2bb69c55f44eeaa893d1bce7d9a7c5d6dd21caa69d0cc41af08f975dc",
+    "duration": 1.159909,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 167,
+    "word": "on time",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Flame, not lame",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-on_time.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/LL-Q1860_%28eng%29-Flame%2C_not_lame-on_time.wav",
+    "spokenText": "on time",
+    "originalSha256": "c4104bb04c33b9e119ae40b3539b076ed8e8346339634bf0f29187935d196c79",
+    "sha256": "9cfe5f7f6a7d693563943de8c1cc8b82fa9e09df563f9c0dfb7f4f37c2b4deac",
+    "duration": 1.269333,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
+    "id": 168,
+    "word": "on-line",
+    "originalExtension": "ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-online.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/En-us-online.ogg",
+    "spokenText": "online",
+    "originalSha256": "bfe6110e0d29d70a3ced771ff99a0ec6daffc09856f074d18179121a5803f748",
+    "sha256": "e034b2716e72080a515c6ab853777c87cd9a69365e6d533d491bab829300b742",
+    "duration": 1.05,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 169,
     "word": "operation",
     "accent": "US",
@@ -1678,6 +2178,20 @@
     "duration": 0.928798
   },
   {
+    "id": 170,
+    "word": "output",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/output",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/output",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/o/out/outpu/output__us_1.mp3",
+    "spokenText": "output",
+    "sha256": "d484c84248111f85db920eb67b9047f45eeb8b05338429ca3eb8736eb66efdb9",
+    "duration": 0.86805,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 171,
     "word": "oven",
     "accent": "US",
@@ -1689,6 +2203,20 @@
     "originalSha256": "af5938f366f2b704b8c31e7e21a079dc91ac916470749552cccc9f4e50f2e6d5",
     "sha256": "bc919a7d683f955e5dd6f3e19bb43694def419f158200f903fb71c5f8f15c769",
     "duration": 0.696599
+  },
+  {
+    "id": 172,
+    "word": "over time",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/overtime",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/overtime",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/o/ove/overt/overtime__us_1.mp3",
+    "spokenText": "overtime",
+    "sha256": "84e05c3dd3836305b11a3485eef1fdfbd486b941bebc9bfe874f3bf88169ce62",
+    "duration": 1.094444,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 173,
@@ -1769,6 +2297,36 @@
     "duration": 0.650159
   },
   {
+    "id": 179,
+    "word": "password",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/password",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/password",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/p/pas/passw/password__us_1.mp3",
+    "spokenText": "password",
+    "sha256": "abe9ff1b2335637442a7cc7acc1112fa96b410b5c0027d1c824321d5eb60ef23",
+    "duration": 1.010522,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 180,
+    "word": "perfect",
+    "originalExtension": "ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-perfect-adj.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/En-us-perfect-adj.ogg",
+    "spokenText": "perfect",
+    "originalSha256": "3e06078204581c08fadabcdc26d16141fa5368c37160299aca303add4de4e6fa",
+    "sha256": "4cd3f7dac0b1ba39ac89c7f0b9375cae68a7bda030b16141002a476e27d39033",
+    "duration": 0.626939,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
     "id": 181,
     "word": "personal",
     "accent": "US",
@@ -1832,6 +2390,22 @@
     "originalSha256": "dfccda11c20ca48b56dbd8186077022cf65c9601776fcb31e0b66be383d0e48e",
     "sha256": "520ec4013b47fa9e65528f0abcc20ca252b5149e609c411248209386fe18a6fb",
     "duration": 0.617891
+  },
+  {
+    "id": 186,
+    "word": "pod",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-pod.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/LL-Q1860_%28eng%29-Wodencafe-pod.wav",
+    "spokenText": "pod",
+    "originalSha256": "f8e0db8921906c3d0e9858c37da8ed76f4d57a79108ccd7630b0deadfc001a90",
+    "sha256": "97dbc754370afdfc59148492c14d19f26be3e3b49e532a9893f408b41a69c16d",
+    "duration": 0.688,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 187,
@@ -1951,6 +2525,20 @@
     "duration": 1.0
   },
   {
+    "id": 196,
+    "word": "preview",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/preview",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/preview",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/p/pre/previ/preview__us_1.mp3",
+    "spokenText": "preview",
+    "sha256": "e01f8d7c24e62f49890a3b3eac2e175ecc3b35472b02957a51831680d809d5cf",
+    "duration": 0.920295,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 197,
     "word": "price",
     "accent": "US",
@@ -1975,6 +2563,20 @@
     "originalSha256": "2d92ee3045d76f939bb35eecd37ffe9d30ba6693653104252866af417a0e24e4",
     "sha256": "271ce8e3acc813947187011767e0a3c1197a1fbf0d124076ee1184285b6d0007",
     "duration": 0.731429
+  },
+  {
+    "id": 199,
+    "word": "priority",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/priority",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/priority",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/p/pri/prior/priority__us_1_rr.mp3",
+    "spokenText": "priority",
+    "sha256": "641d1269cf1f8483d6b310ab3e14d6dfe652768001c351bd2b2d551554567a49",
+    "duration": 1.096009,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 200,
@@ -2081,6 +2683,20 @@
     "duration": 0.522449
   },
   {
+    "id": 208,
+    "word": "re-certify",
+    "accent": "US",
+    "artist": "Cambridge Dictionary",
+    "license": "Dictionary source",
+    "licenseUrl": "https://dictionary.cambridge.org/pronunciation/english/recertify",
+    "page": "https://dictionary.cambridge.org/pronunciation/english/recertify",
+    "audioUrl": "https://dictionary.cambridge.org/media/english/us_pron/c/cdo/cdo11/cdo1121usrece3610.mp3",
+    "spokenText": "recertify",
+    "sha256": "09d7ba226b73e66eebed8c7689f395f7a7f78520b3f31ca6b4c58da6a515e646",
+    "duration": 2.148,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 209,
     "word": "recipe",
     "accent": "US",
@@ -2092,6 +2708,22 @@
     "originalSha256": "f448bf24a256b4426e8646a0351d0d6b3c492441f6d6588ef8c90401c2dc296f",
     "sha256": "8a883c4b0073e6d2fcfaf6e96059038d046aa9a120616c4b23316337beb48cc2",
     "duration": 1.05
+  },
+  {
+    "id": 210,
+    "word": "record",
+    "originalExtension": "ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-record-noun.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/En-us-record-noun.ogg",
+    "spokenText": "record",
+    "originalSha256": "0112e9fc7875661b2a5d5a2fa0c691192374d6357d1d0da6f37d27afacf44ac2",
+    "sha256": "3f83c3533858e49bf346b20c70e3881ed42220dda17c730c5a51f894488447a5",
+    "duration": 0.615329,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 211,
@@ -2133,6 +2765,20 @@
     "duration": 1.150454
   },
   {
+    "id": 214,
+    "word": "remind",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/remind",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/remind",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/r/rem/remin/remind__us_1.mp3",
+    "spokenText": "remind",
+    "sha256": "8f1c023d31c8c088458a3f5da241aae4628113e8d3aa9531f50a3f2f0575a07e",
+    "duration": 1.00737,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 215,
     "word": "remove",
     "accent": "US",
@@ -2170,6 +2816,20 @@
     "originalSha256": "caa8bf4e84dc706681ed701aa78126ebf89f06b10f96d23a1112234140f8bdd5",
     "sha256": "989b7d29f3c9496d4a63bcec70e91b2e09f862a5c1ac83b1ecb9c1dd5c4dc38a",
     "duration": 0.731429
+  },
+  {
+    "id": 218,
+    "word": "reset",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/reset",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/reset",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/r/res/reset/reset__us_1.mp3",
+    "spokenText": "reset",
+    "sha256": "a461139b5123943ce49b1bf5183ef26893cd9da330270e448778a7e3e82dff83",
+    "duration": 0.96093,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 219,
@@ -2302,6 +2962,34 @@
     "duration": 1.091338
   },
   {
+    "id": 231,
+    "word": "select",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/select",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/select",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sel/selec/select__us_1.mp3",
+    "spokenText": "select",
+    "sha256": "07a502ba3bf77403ca635d9d7283d7cd59e535d76afa230646a187900f46fed5",
+    "duration": 1.01898,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 232,
+    "word": "semiconductor",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/semiconductor",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/semiconductor",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sem/semic/semiconductor__us_1_rr.mp3",
+    "spokenText": "semiconductor",
+    "sha256": "d9a092be62f62af29b0406c6c8bf112a6fde01378cdb7c6bd5a558bd7a882fd1",
+    "duration": 1.386145,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 233,
     "word": "service",
     "accent": "US",
@@ -2367,6 +3055,34 @@
     "duration": 0.777868
   },
   {
+    "id": 238,
+    "word": "skip",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/skip",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/skip",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/ski/skip_/skip__us_1.mp3",
+    "spokenText": "skip",
+    "sha256": "442da71789379d35ff78fe1a673ea7b9616c6ae7af72ede0ca6216513c4a2949",
+    "duration": 0.83229,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 239,
+    "word": "sorter",
+    "accent": "US",
+    "artist": "Cambridge Dictionary",
+    "license": "Dictionary source",
+    "licenseUrl": "https://dictionary.cambridge.org/us/pronunciation/english/sorter",
+    "page": "https://dictionary.cambridge.org/us/pronunciation/english/sorter",
+    "audioUrl": "https://dictionary.cambridge.org/us/media/english/us_pron/u/uss/ussor/ussoreh008.mp3",
+    "spokenText": "sorter",
+    "sha256": "1236bc2e2af1b88d87e4dad2d2a07dc2d0b837a67c79eac3051f6c476b9b82db",
+    "duration": 0.66,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 240,
     "word": "source",
     "accent": "US",
@@ -2378,6 +3094,22 @@
     "originalSha256": "53c19b2e2eb3a60d466f6c13c5ceecacc17f04a49f7397064e15eef5a7c85c0c",
     "sha256": "2442ec6a2c1f52991cd6d6beef65fe3db07bc62757d201fcf1cd9a4ed4d4986b",
     "duration": 1.1
+  },
+  {
+    "id": 241,
+    "word": "Spec. / specification",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Vininn126",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-specification.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/LL-Q1860_%28eng%29-Vininn126-specification.wav",
+    "spokenText": "specification",
+    "originalSha256": "f986060a765364ae5c46f416c14a421786d0d7b0eb8f82ce162984e16a39176a",
+    "sha256": "fd12052f48af6c0e7908700a2b32ec87f73c06b45b6ac8d7d5153a022ab5e1fb",
+    "duration": 1.48,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 242,
@@ -2432,6 +3164,20 @@
     "duration": 1.2
   },
   {
+    "id": 246,
+    "word": "standby",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/standby",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/standby",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sta/stand/standby__us_1.mp3",
+    "spokenText": "standby",
+    "sha256": "9102705961fd503dcc5c3627b4a245f147838707881b85d3e715e9c033dab07b",
+    "duration": 1.152494,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 247,
     "word": "start",
     "accent": "US",
@@ -2484,6 +3230,20 @@
     "duration": 0.615329
   },
   {
+    "id": 251,
+    "word": "stocker",
+    "accent": "US",
+    "artist": "Cambridge Dictionary",
+    "license": "Dictionary source",
+    "licenseUrl": "https://dictionary.cambridge.org/pronunciation/english/stocker",
+    "page": "https://dictionary.cambridge.org/pronunciation/english/stocker",
+    "audioUrl": "https://dictionary.cambridge.org/media/english/us_pron/c/cdo/cdo08/cdo0824usstoc2349.mp3",
+    "spokenText": "stocker",
+    "sha256": "493f3cbd5f1bc72e569097c3624ec3ea9fe0404eca439ab14de75c0876c79f1f",
+    "duration": 1.716,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 252,
     "word": "success",
     "accent": "US",
@@ -2495,6 +3255,34 @@
     "originalSha256": "559591d835981632dfc5a8315f707b59b738793d4b56ad275fb7478353c4fe52",
     "sha256": "1c2b26f31e68eff32e8fe2d32a3bc4b51fab6e7bccd3e032e5119c16e055003b",
     "duration": 0.963628
+  },
+  {
+    "id": 253,
+    "word": "super",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sup/super/super__us_1.mp3",
+    "spokenText": "super",
+    "sha256": "a167819a8c2879dc7f01899c4292ff56b4f6eae559db18859950163b84f83f76",
+    "duration": 0.9261,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 255,
+    "word": "supervisor",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/supervisor",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/supervisor",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sup/super/supervisor__us_1.mp3",
+    "spokenText": "supervisor",
+    "sha256": "372938348fd5c7f8cf4625707ba76965ee667bfdb048287af38bc5389fd560ac",
+    "duration": 1.228594,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 256,
@@ -2536,6 +3324,20 @@
     "duration": 0.743039
   },
   {
+    "id": 259,
+    "word": "tag",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tag",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tag",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tag/tag__/tag__us_1.mp3",
+    "spokenText": "tag",
+    "sha256": "53af3f1dc78f33e28f7182145e095a48db5033eaca96533c15ac86f60d3345d3",
+    "duration": 0.799524,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 261,
     "word": "tape",
     "accent": "US",
@@ -2562,6 +3364,20 @@
     "duration": 0.626939
   },
   {
+    "id": 263,
+    "word": "technician",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/technician",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/technician",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tec/techn/technician__us_1.mp3",
+    "spokenText": "technician",
+    "sha256": "84ee1fa0d4a407e1be32a9fb9a5b1cff5f6f227e7f065e84b3e327754ce4333e",
+    "duration": 1.045125,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 264,
     "word": "telephone",
     "accent": "US",
@@ -2586,6 +3402,20 @@
     "originalSha256": "9d24950a350a9560ad1615e6883a6321f75fc565298b73c06215ca8b61183b4c",
     "sha256": "7869991b9a7ee0f905141dec03f6aacd645453eb70cd289c1d09c005094ee03b",
     "duration": 1.150454
+  },
+  {
+    "id": 266,
+    "word": "thickness",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thickness",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thickness",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/thi/thick/thickness__us_1.mp3",
+    "spokenText": "thickness",
+    "sha256": "46f2aade7dcd6bcd63003efc8f28796058baa9f6aa42dd9e15123b95343765c2",
+    "duration": 1.019751,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
     "id": 268,
@@ -2653,6 +3483,20 @@
     "duration": 0.85
   },
   {
+    "id": 273,
+    "word": "trend",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/trend",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/trend",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tre/trend/trend__us_1.mp3",
+    "spokenText": "trend",
+    "sha256": "b6e04e2a4f4c7d9400ae1094497b95ff42310fc9aa93dfec294b6448fdd148f7",
+    "duration": 0.9261,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 274,
     "word": "tune",
     "accent": "US",
@@ -2666,6 +3510,20 @@
     "duration": 0.893968
   },
   {
+    "id": 276,
+    "word": "unload",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "Dictionary source",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/unload",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/unload",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/u/unl/unloa/unload__us_1.mp3",
+    "spokenText": "unload",
+    "sha256": "788556d2dce9ed24a8c88838b2057c23c6523a3d3abcd835ae22775ed2781ab3",
+    "duration": 1.06542,
+    "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "id": 277,
     "word": "use",
     "accent": "US",
@@ -2677,6 +3535,22 @@
     "originalSha256": "8c86dc79c3d70ba013c533869589e3ba44abddaf82ba315660f1478d89a581e7",
     "sha256": "c5dcf197738666e52c2aad2a4d1227d77c7feae9bfc708936b21834b40da6b14",
     "duration": 0.824308
+  },
+  {
+    "id": 278,
+    "word": "username",
+    "originalExtension": "wav",
+    "accent": "US",
+    "artist": "Flame, not lame",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-username.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/LL-Q1860_%28eng%29-Flame%2C_not_lame-username.wav",
+    "spokenText": "username",
+    "originalSha256": "06557df0c165acc4aa47d66281c6992282d9f8e5a811823d3d934fd35e06ea3b",
+    "sha256": "f49dc54cb8a876bb07827c44e552cf7790576ea8167a087cb97ca6f29dfed67a",
+    "duration": 1.290667,
+    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
     "id": 279,
@@ -2807,277 +3681,5 @@
     "originalSha256": "f5c441cd687c66c4c88f71c5a38292d4af80bb43e7510c852257b1d3a2a91e4d",
     "sha256": "dcdf1c9c7c577f6480b9c8090b93be17a790b57b56b96da35de45d2c6fc64047",
     "duration": 0.789478
-  },
-  {
-    "id": 10,
-    "word": "AI",
-    "originalExtension": "oga",
-    "accent": "US",
-    "artist": "Paul2520",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-AI.oga",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/En-us-AI.oga",
-    "spokenText": "AI",
-    "originalSha256": "db3c2f759018461a1d6233781b46ec9d7c29d93aa90c8e4202c90d269aa2632d",
-    "sha256": "ac2ba28c1cbd235801aacd28a9d618fe7688f7c80299f7e0166f96b3488aba71",
-    "duration": 0.917188,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 27,
-    "word": "benchmark",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Vininn126",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-benchmark.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/LL-Q1860_%28eng%29-Vininn126-benchmark.wav",
-    "spokenText": "benchmark",
-    "originalSha256": "cda3dca20e79708bdfdb0f8a24378870954ac44bb82def16b23a112c86c427bf",
-    "sha256": "0f4dc1db4c6dab5c9b66d1d9a64582ebcef6d3d6a1d4784fa7dbcbd7b11e76b5",
-    "duration": 1.138667,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 55,
-    "word": "contamination",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Simplificationalizer",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Simplificationalizer-contamination.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/LL-Q1860_%28eng%29-Simplificationalizer-contamination.wav",
-    "spokenText": "contamination",
-    "originalSha256": "e3317d6af8dc1093bd7fdee3ecfe05af237045f343096ca11a7c70c3068617f4",
-    "sha256": "181e7e097d3e96d3f42590263ecaf8440ee3cabe00fcc5509fe42f85744a13b6",
-    "duration": 1.48,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 64,
-    "word": "data",
-    "originalExtension": "ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-data1.ogg",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/En-us-data1.ogg",
-    "spokenText": "data",
-    "originalSha256": "a3ad586181316fee789011e1406ff635d5b9cabe3b5b4ffcb567455e29e7f22f",
-    "sha256": "af4f788dbe90997211d888ab02d7c7621c299875e4405c3cad297b5f2851259a",
-    "duration": 0.417959,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 81,
-    "word": "etching",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Persent101",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-etching.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LL-Q1860_%28eng%29-Persent101-etching.wav",
-    "spokenText": "etching",
-    "originalSha256": "8eda76634546ef4c29fa3b89a341ead14dab90ce39a7585563a3681a5521e8fd",
-    "sha256": "b2e461f0d872fbf5d399fd7d4fe40119dcc4a149be02d2513cbbd02ad37f1886",
-    "duration": 0.850667,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 89,
-    "word": "focus",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Wodencafe",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-focus.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/LL-Q1860_%28eng%29-Wodencafe-focus.wav",
-    "spokenText": "focus",
-    "originalSha256": "397e5455bf3ee50709c76d699e9a871316e00138e77d23699cf7eb54ced63ee2",
-    "sha256": "a403bfcf9c8853f538ba2bc0bcc91a491ea0331d55c545fb797121e4d398fa2f",
-    "duration": 0.970667,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 96,
-    "word": "gloves",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Persent101",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-gloves.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/LL-Q1860_%28eng%29-Persent101-gloves.wav",
-    "spokenText": "gloves",
-    "originalSha256": "c514d26acec062337b062b32ff89c07b906c1c1bffc6560b1be067c100d49f59",
-    "sha256": "7e1f7a36e6e8e044e48ae17e9be4be58b4a9ef336640045d76a2a2284631df25",
-    "duration": 0.978667,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 134,
-    "word": "lithography",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Vininn126",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-lithography.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/LL-Q1860_%28eng%29-Vininn126-lithography.wav",
-    "spokenText": "lithography",
-    "originalSha256": "2a22a7136ab7170bd644062f12b3778aa6d607954c1a6aa5933e67c15dc001c8",
-    "sha256": "ec24a74d3d7fc3a46af924152ccd72168ceed248adb1a35f85b6d8d815997403",
-    "duration": 1.309333,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 150,
-    "word": "measure",
-    "originalExtension": "ogg",
-    "accent": "US",
-    "artist": "Muke",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-measure.ogg",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/En-us-measure.ogg",
-    "spokenText": "measure",
-    "originalSha256": "78a2dfaf437e0b5096427db017ea322ab3fabfd6717544cd8ac953a3354cc98d",
-    "sha256": "581bb5383679740fdfe48cf4a1962dd6ebf01b87547b43bfcc9a443f89cce15a",
-    "duration": 1.323537,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 156,
-    "word": "monitor",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Wodencafe",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-monitor.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/LL-Q1860_%28eng%29-Wodencafe-monitor.wav",
-    "spokenText": "monitor",
-    "originalSha256": "421c4066eda6da3b388b6766232ab0bfa2363d93cd6c716caf64770fb835e3f9",
-    "sha256": "9e486ad87197facf7d199a22d1e9b795ba71f16532ff54f9c199c205154f35f8",
-    "duration": 1.088,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 167,
-    "word": "on time",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Flame, not lame",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-on_time.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/LL-Q1860_%28eng%29-Flame%2C_not_lame-on_time.wav",
-    "spokenText": "on time",
-    "originalSha256": "c4104bb04c33b9e119ae40b3539b076ed8e8346339634bf0f29187935d196c79",
-    "sha256": "9cfe5f7f6a7d693563943de8c1cc8b82fa9e09df563f9c0dfb7f4f37c2b4deac",
-    "duration": 1.269333,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 168,
-    "word": "on-line",
-    "originalExtension": "ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-online.ogg",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/En-us-online.ogg",
-    "spokenText": "online",
-    "originalSha256": "bfe6110e0d29d70a3ced771ff99a0ec6daffc09856f074d18179121a5803f748",
-    "sha256": "e034b2716e72080a515c6ab853777c87cd9a69365e6d533d491bab829300b742",
-    "duration": 1.05,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 180,
-    "word": "perfect",
-    "originalExtension": "ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-perfect-adj.ogg",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/En-us-perfect-adj.ogg",
-    "spokenText": "perfect",
-    "originalSha256": "3e06078204581c08fadabcdc26d16141fa5368c37160299aca303add4de4e6fa",
-    "sha256": "4cd3f7dac0b1ba39ac89c7f0b9375cae68a7bda030b16141002a476e27d39033",
-    "duration": 0.626939,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 186,
-    "word": "pod",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Wodencafe",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-pod.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/LL-Q1860_%28eng%29-Wodencafe-pod.wav",
-    "spokenText": "pod",
-    "originalSha256": "f8e0db8921906c3d0e9858c37da8ed76f4d57a79108ccd7630b0deadfc001a90",
-    "sha256": "97dbc754370afdfc59148492c14d19f26be3e3b49e532a9893f408b41a69c16d",
-    "duration": 0.688,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 210,
-    "word": "record",
-    "originalExtension": "ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-record-noun.ogg",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/En-us-record-noun.ogg",
-    "spokenText": "record",
-    "originalSha256": "0112e9fc7875661b2a5d5a2fa0c691192374d6357d1d0da6f37d27afacf44ac2",
-    "sha256": "3f83c3533858e49bf346b20c70e3881ed42220dda17c730c5a51f894488447a5",
-    "duration": 0.615329,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 241,
-    "word": "Spec. / specification",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Vininn126",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-specification.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/LL-Q1860_%28eng%29-Vininn126-specification.wav",
-    "spokenText": "specification",
-    "originalSha256": "f986060a765364ae5c46f416c14a421786d0d7b0eb8f82ce162984e16a39176a",
-    "sha256": "fd12052f48af6c0e7908700a2b32ec87f73c06b45b6ac8d7d5153a022ab5e1fb",
-    "duration": 1.48,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
-  },
-  {
-    "id": 278,
-    "word": "username",
-    "originalExtension": "wav",
-    "accent": "US",
-    "artist": "Flame, not lame",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-username.wav",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/LL-Q1860_%28eng%29-Flame%2C_not_lame-username.wav",
-    "spokenText": "username",
-    "originalSha256": "06557df0c165acc4aa47d66281c6992282d9f8e5a811823d3d934fd35e06ea3b",
-    "sha256": "f49dc54cb8a876bb07827c44e552cf7790576ea8167a087cb97ca6f29dfed67a",
-    "duration": 1.290667,
-    "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   }
 ]
