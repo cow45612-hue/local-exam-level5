@@ -479,6 +479,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "badges": {
+    "file": "./audio-example/badges.mp3?v=7b7635931398",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-badges.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
   "bake": {
     "file": "./audio-example/bake.mp3?v=e138501b5758",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bake",
@@ -4999,12 +5007,12 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "badges": {
-    "file": "./audio-example/badges.mp3?v=7b7635931398",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-badges.wav",
+  "workstations": {
+    "file": "./audio-example/workstations.mp3?v=b7ca7e70b31f",
+    "page": "https://howtosay.com/en/en/word/workstations",
     "accent": "US",
-    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    "artist": "Not identified by source page",
+    "license": "",
+    "licenseUrl": "https://howtosay.com/en/about"
   }
 };

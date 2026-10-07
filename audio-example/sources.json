@@ -7158,6 +7158,23 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "workstations",
+    "filename": "workstations.mp3",
+    "originalFilename": "workstations.wav",
+    "originalSha256": "92180bc280cd9bfa7eb6afb1f965c6384cdb64125cc15a7f15254d9f0efd2b2a",
+    "sha256": "b7ca7e70b31f0153918b9706ad8cd9c8d34b054197ee5157f32c77c5750c257d",
+    "page": "https://howtosay.com/en/en/word/workstations",
+    "audioUrl": "https://howtosay.com/st/audio/6847925",
+    "accent": "US",
+    "artist": "Not identified by source page",
+    "license": "",
+    "licenseUrl": "https://howtosay.com/en/about",
+    "duration": 0.82,
+    "sourceEvidence": "https://howtosay.com/en/about",
+    "accentEvidence": "Word page labels American English Pronunciation; individual speaker accent not independently verified",
+    "verification": "Exact plural word recording observed in browser; publisher lists Common Voice and LibriVox as human recording sources; full audio decode passed; not individually listened"
+  },
+  {
     "word": "write",
     "filename": "write.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/write",

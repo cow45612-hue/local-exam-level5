@@ -1,7 +1,7 @@
 {
   "tokenCount": 914,
-  "availableCount": 895,
-  "exampleRecordingCount": 626,
+  "availableCount": 896,
+  "exampleRecordingCount": 627,
   "missing": [
     "angstroms",
     "barcodes",
@@ -19,7 +19,6 @@
     "tsmc's",
     "twelve-inch",
     "wip",
-    "workstations",
     "world-leading",
     "zero-defect"
   ]
