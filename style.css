@@ -2075,3 +2075,9 @@ select {
     font-size: 14px;
   }
 }
+:root .tsmc-ai-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #52616a;
+}
+

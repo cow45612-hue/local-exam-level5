@@ -33,6 +33,10 @@ const context = vm.createContext({
       active: { file: "./audio-human/6.mp3", artist: "Dvortygirl" },
       ability: { file: "./audio-human/1.mp3", artist: "Dvortygirl" },
     },
+    EXAMPLE_RECORDINGS: {
+      euv: { file: './audio-example/ai-euv.mp3', recordingType: 'ai_generated' },
+      active: { file: './audio-example/ai-active.mp3', recordingType: 'ai_generated' },
+    },
     alert: (text) => alerts.push(text),
     speechSynthesis: {
       getVoices: () => voices,
@@ -62,6 +66,10 @@ vm.runInContext(source.slice(start, end), context);
   vm.runInContext('playNaturalWordAudio({ id: 6, word: "active" }, true);', context);
   assert.equal(calls.at(-1).src, "./audio-human/6.mp3");
   assert.equal(calls.at(-1).rate, 0.72);
+  assert.equal(vm.runInContext('isAiWordAudio("active")', context), false, 'human recording must take priority');
+  assert.equal(vm.runInContext('isAiWordAudio("EUV")', context), true);
+  vm.runInContext('playNaturalWordAudio("EUV");', context);
+  assert.equal(calls.at(-1).src, './audio-example/ai-euv.mp3');
 
   vm.runInContext('speakOptimizedEnglishSpeech("hello");', context);
   assert.match(calls.at(-1).voice.name, /Jenny/);
@@ -84,8 +92,10 @@ vm.runInContext(source.slice(start, end), context);
     assert.equal(record.accent, "US", `Non-US recording must not be installed: ${record.word}`);
     assert.ok(vocabulary.some((word) => word.id === record.id && word.word === record.word));
     assert.ok(record.artist && record.license && record.page);
-    assert.match(record.page, /^https:\/\/commons\.wikimedia\.org\//);
-    for (const [ext, field] of [["mp3", "sha256"], [record.originalExtension || "ogg", "originalSha256"]]) {
+    assert.ok(['commons.wikimedia.org', 'www.oxfordlearnersdictionaries.com', 'dictionary.cambridge.org'].includes(new URL(record.page).hostname));
+    const assets = [["mp3", "sha256"]];
+    if (record.originalSha256) assets.push([record.originalExtension || "ogg", "originalSha256"]);
+    for (const [ext, field] of assets) {
       const bytes = fs.readFileSync(path.join(__dirname, "..", "audio-human", `${record.id}.${ext}`));
       assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), record[field]);
     }

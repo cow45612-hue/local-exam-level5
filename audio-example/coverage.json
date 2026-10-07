@@ -1,25 +1,7 @@
 {
   "tokenCount": 914,
-  "availableCount": 896,
-  "exampleRecordingCount": 627,
-  "missing": [
-    "angstroms",
-    "barcodes",
-    "e-log",
-    "euv",
-    "fabs",
-    "gowning",
-    "loadlock",
-    "mes",
-    "re-certified",
-    "rf",
-    "spc",
-    "tag-out",
-    "tsmc",
-    "tsmc's",
-    "twelve-inch",
-    "wip",
-    "world-leading",
-    "zero-defect"
-  ]
+  "availableCount": 914,
+  "exampleRecordingCount": 645,
+  "aiRecordingCount": 18,
+  "missing": []
 }

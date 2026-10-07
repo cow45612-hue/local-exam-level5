@@ -319,6 +319,15 @@ function speakOptimizedEnglishSpeech(text, slow = false) {
   window.speechSynthesis.speak(utter);
 }
 
+function getWordRecording(word) {
+  const key = word.toLowerCase().trim();
+  return HUMAN_RECORDINGS[key] || CAMBRIDGE_RECORDINGS[key] || EXAMPLE_RECORDINGS[key];
+}
+
+function isAiWordAudio(word) {
+  return getWordRecording(word)?.recordingType === "ai_generated";
+}
+
 function playNaturalWordAudio(target, slow = false) {
   unlockTsmcAudio();
   if (!target) return;
@@ -345,9 +354,7 @@ function playNaturalWordAudio(target, slow = false) {
   stopCurrentSpeech();
   const request = tsmcSpeechRequest;
 
-  const recording = HUMAN_RECORDINGS[wordText.toLowerCase().trim()]
-    || CAMBRIDGE_RECORDINGS[wordText.toLowerCase().trim()]
-    || EXAMPLE_RECORDINGS[wordText.toLowerCase().trim()];
+  const recording = getWordRecording(wordText);
   if (!recording) {
     window.alert("這個單字的真人錄音還在補齊中，暫不使用合成發音。");
     return;
@@ -577,9 +584,11 @@ function onInteractiveWordClick(word, el) {
   const wordEl = document.querySelector("#tsmc-breakdown-word");
   const meaningEl = document.querySelector("#tsmc-breakdown-meaning");
   const speakBtn = document.querySelector("#tsmc-breakdown-speak");
+  const aiLabel = document.querySelector("#tsmc-breakdown-ai");
 
   if (wordEl) wordEl.textContent = word;
   if (meaningEl) meaningEl.textContent = meaning;
+  if (aiLabel) aiLabel.hidden = !isAiWordAudio(word);
   if (box) box.hidden = false;
 
   // Speak the clicked word

@@ -5,7 +5,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "hillaryhaggin",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "119"
   },
   "25": {
     "file": "./audio-example/25.mp3?v=0eac8c5388c6",
@@ -13,7 +14,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "elliottdaniel",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "25"
   },
   "800": {
     "file": "./audio-example/800.mp3?v=55f06edb91b9",
@@ -21,7 +23,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "SeanMauch",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "800"
   },
   "a": {
     "file": "./audio-example/a.mp3?v=1e2f71199a42",
@@ -269,7 +272,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Siofra",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "anomalies"
   },
   "anomaly": {
     "file": "./audio-example/anomaly.mp3?v=fb851abd8a1e",
@@ -613,7 +617,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Rapunzel2011",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "booties"
   },
   "both": {
     "file": "./audio-example/both.mp3?v=8131a46ab760",
@@ -765,7 +770,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Slick",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "cassettes"
   },
   "cause": {
     "file": "./audio-example/cause.mp3?v=9579f434c0a4",
@@ -805,7 +811,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "JakSprats",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "certified"
   },
   "chamber": {
     "file": "./audio-example/chamber.mp3?v=b36cdf5b2c02",
@@ -1013,7 +1020,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Zuella",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "conveys"
   },
   "coordinate": {
     "file": "./audio-example/coordinate.mp3?v=e285cd7de93c",
@@ -1669,7 +1677,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "wkshimself",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "forty-nine"
   },
   "foup": {
     "file": "./audio-example/foup.mp3?v=8e2f52d7e6d8",
@@ -1789,7 +1798,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Slick",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "guidelines"
   },
   "hallway": {
     "file": "./audio-example/hallway.mp3?v=88acf800d016",
@@ -2325,7 +2335,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "anakat",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "lock out"
   },
   "locked": {
     "file": "./audio-example/locked.mp3?v=1a5cb0ca1afd",
@@ -2701,7 +2712,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Merriam-Webster Dictionary",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "nitrile"
   },
   "nitrogen": {
     "file": "./audio-example/nitrogen.mp3?v=6e6be9bb002a",
@@ -3005,7 +3017,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "katz0r",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "parameters"
   },
   "particles": {
     "file": "./audio-example/particles.mp3?v=98b674357cad",
@@ -3013,7 +3026,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "rdbedsole",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "particles"
   },
   "path": {
     "file": "./audio-example/path.mp3?v=7418834ab230",
@@ -3053,7 +3067,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Merriam-Webster Dictionary",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "photomask"
   },
   "photoresist": {
     "file": "./audio-example/photoresist.mp3?v=eee2119e4c8c",
@@ -3061,7 +3076,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Merriam-Webster Dictionary",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "photoresist"
   },
   "physical": {
     "file": "./audio-example/physical.mp3?v=b7cbf57f5e33",
@@ -3173,7 +3189,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "petaluma",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "predefined"
   },
   "pressing": {
     "file": "./audio-example/pressing.mp3?v=723da531f063",
@@ -3229,7 +3246,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "evergreen",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "procedures"
   },
   "proceeding": {
     "file": "./audio-example/proceeding.mp3?v=eab1e95ca79d",
@@ -3381,7 +3399,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "elliottdaniel",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "ramp up"
   },
   "raw": {
     "file": "./audio-example/raw.mp3?v=248847c4fc51",
@@ -3445,7 +3464,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Arn_Wendt",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "recipes"
   },
   "red": {
     "file": "./audio-example/red.mp3?v=fa6931e13fc6",
@@ -3869,7 +3889,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "npcarey",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "settings"
   },
   "severe": {
     "file": "./audio-example/severe.mp3?v=9c8e8ffde300",
@@ -3933,7 +3954,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Merriam-Webster Dictionary",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "sign off"
   },
   "silicon": {
     "file": "./audio-example/silicon.mp3?v=9afd5fa3ff41",
@@ -3965,7 +3987,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "jng52",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "skills"
   },
   "skipping": {
     "file": "./audio-example/skipping.mp3?v=2418a1eaf308",
@@ -4325,7 +4348,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "quartsize",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "technicians"
   },
   "temperatures": {
     "file": "./audio-example/temperatures.mp3?v=da95ede0904d",
@@ -4333,7 +4357,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "soondoobuu",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "temperatures"
   },
   "terminal": {
     "file": "./audio-example/terminal.mp3?v=e48f68f05ecc",
@@ -4525,7 +4550,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Will_Chicago_USA",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "transactions"
   },
   "transfer": {
     "file": "./audio-example/transfer.mp3?v=0df62cc35ea6",
@@ -4661,7 +4687,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Merriam-Webster Dictionary",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "ultrapure"
   },
   "unauthorized": {
     "file": "./audio-example/unauthorized.mp3?v=e00181153bb2",
@@ -4821,7 +4848,8 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "avlor",
     "license": "",
-    "licenseUrl": ""
+    "licenseUrl": "",
+    "spokenText": "wands"
   },
   "waste": {
     "file": "./audio-example/waste.mp3?v=86066abbdebb",
@@ -4967,6 +4995,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "workstations": {
+    "file": "./audio-example/workstations.mp3?v=b7ca7e70b31f",
+    "page": "https://howtosay.com/en/en/word/workstations",
+    "accent": "US",
+    "artist": "Not identified by source page",
+    "license": "",
+    "licenseUrl": "https://howtosay.com/en/about"
+  },
   "write": {
     "file": "./audio-example/write.mp3?v=4bfdd97bde6a",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/write",
@@ -5007,12 +5043,220 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "workstations": {
-    "file": "./audio-example/workstations.mp3?v=b7ca7e70b31f",
-    "page": "https://howtosay.com/en/en/word/workstations",
+  "angstroms": {
+    "file": "./audio-example/ai-angstroms.mp3?v=23c7df8d3e2e",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
     "accent": "US",
-    "artist": "Not identified by source page",
-    "license": "",
-    "licenseUrl": "https://howtosay.com/en/about"
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Angstroms."
+  },
+  "barcodes": {
+    "file": "./audio-example/ai-barcodes.mp3?v=cdf6f93963ea",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Barcodes."
+  },
+  "e-log": {
+    "file": "./audio-example/ai-e-log.mp3?v=55223e0ae4cb",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "E log."
+  },
+  "euv": {
+    "file": "./audio-example/ai-euv.mp3?v=1f929a54d41a",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "E U V."
+  },
+  "fabs": {
+    "file": "./audio-example/ai-fabs.mp3?v=bfedeaf69d49",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Fabs."
+  },
+  "gowning": {
+    "file": "./audio-example/ai-gowning.mp3?v=181bad3a0f3f",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Gowning."
+  },
+  "loadlock": {
+    "file": "./audio-example/ai-loadlock.mp3?v=e2bc3b148b49",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Load lock."
+  },
+  "mes": {
+    "file": "./audio-example/ai-mes.mp3?v=6376c583f9ae",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "M E S."
+  },
+  "re-certified": {
+    "file": "./audio-example/ai-re-certified.mp3?v=1e32409c5fbf",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Recertified."
+  },
+  "rf": {
+    "file": "./audio-example/ai-rf.mp3?v=61ba8d36b283",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "R F."
+  },
+  "spc": {
+    "file": "./audio-example/ai-spc.mp3?v=e4e7bf89cccc",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "S P C."
+  },
+  "tag-out": {
+    "file": "./audio-example/ai-tag-out.mp3?v=ba8e9b0e652f",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Tag out."
+  },
+  "tsmc": {
+    "file": "./audio-example/ai-tsmc.mp3?v=f71ee8972daf",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "T S M C."
+  },
+  "tsmc's": {
+    "file": "./audio-example/ai-tsmc_s.mp3?v=ad7f1c75d154",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "T S M C's."
+  },
+  "twelve-inch": {
+    "file": "./audio-example/ai-twelve-inch.mp3?v=fcd9cc68d09d",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Twelve inch."
+  },
+  "wip": {
+    "file": "./audio-example/ai-wip.mp3?v=835d0c1f7c77",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "W I P."
+  },
+  "world-leading": {
+    "file": "./audio-example/ai-world-leading.mp3?v=c82b4ba615ac",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "World leading."
+  },
+  "zero-defect": {
+    "file": "./audio-example/ai-zero-defect.mp3?v=b7a4ca784134",
+    "page": "https://github.com/kyutai-labs/pocket-tts",
+    "accent": "US",
+    "artist": "AI: Pocket TTS / Cosette",
+    "license": "MIT model/code; CC BY-NC 4.0 voice reference",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "recordingType": "ai_generated",
+    "model": "english_2026-09",
+    "voice": "cosette",
+    "spokenText": "Zero defect."
   }
 };

@@ -101,11 +101,13 @@ def save(records, tokens, primary):
     (OUT / 'sources.json').write_text(json.dumps(ordered, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     mapping = {key: {'file':'./audio-example/'+r['filename']+'?v='+r['sha256'][:12],
                     'page':r['page'], 'accent':'US', 'artist':r['artist'],
-                    'license':r.get('license', ''), 'licenseUrl':r.get('licenseUrl', '')} for key,r in records.items()}
+                    'license':r.get('license', ''), 'licenseUrl':r.get('licenseUrl', ''),
+                    **{field:r[field] for field in ('recordingType', 'model', 'voice', 'spokenText') if field in r}} for key,r in records.items()}
     (OUT / 'recordings.js').write_text('window.EXAMPLE_RECORDINGS = '+json.dumps(mapping, ensure_ascii=False, indent=2)+';\n', encoding='utf-8')
     missing = sorted(tokens - primary - records.keys())
     (OUT / 'coverage.json').write_text(json.dumps({'tokenCount':len(tokens),
         'availableCount':len(tokens)-len(missing), 'exampleRecordingCount':len(records),
+        'aiRecordingCount':sum(r.get('recordingType') == 'ai_generated' for r in ordered),
         'missing':missing}, indent=2)+'\n', encoding='utf-8')
 
 

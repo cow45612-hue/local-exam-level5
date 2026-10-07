@@ -1,8 +1,26 @@
 import unittest
+import json
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
 import fetch_example_audio as collector
 
 
 class ExampleAudioTests(unittest.TestCase):
+    def test_ai_metadata_survives_save_and_is_counted_separately(self):
+        record = {'word': 'euv', 'filename': 'ai-euv.mp3', 'sha256': 'a'*64,
+                  'page': 'https://github.com/kyutai-labs/pocket-tts',
+                  'artist': 'Pocket TTS / cosette', 'recordingType': 'ai_generated',
+                  'model': 'english_2026-09', 'voice': 'cosette', 'spokenText': 'E U V.'}
+        with tempfile.TemporaryDirectory() as folder, patch.object(collector, 'OUT', Path(folder)):
+            collector.save({'euv': record}, {'active', 'euv', 'missing'}, {'active'})
+            mapping = (Path(folder)/'recordings.js').read_text(encoding='utf-8')
+            self.assertIn('"recordingType": "ai_generated"', mapping)
+            coverage = json.loads((Path(folder)/'coverage.json').read_text())
+            self.assertEqual(coverage['aiRecordingCount'], 1)
+            self.assertEqual(coverage['availableCount'], 2)
+            self.assertEqual(coverage['missing'], ['missing'])
+
     def test_same_tokens_as_clickable_sentence(self):
         words = collector.clicked_tokens([{'fabPhrase': 'E-log 25 wafers',
                                            'exampleSentence': "Make sure TSMC's run-card is ready."}])
