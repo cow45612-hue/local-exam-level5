@@ -690,15 +690,27 @@ function renderStageLearnWord() {
       sourceLink.target = "_blank";
       sourceLink.rel = "noopener noreferrer";
       const accentLabel = { US: "美式", UK: "英式", AU: "澳洲", CA: "加拿大" }[human.accent] || "英文";
-      sourceLink.textContent = `${accentLabel}真人錄音 · ${human.artist} · 來源`;
+      sourceLink.textContent = human.recordingType === "segmented_human"
+        ? `${accentLabel}真人分詞發音 · 分詞練習，非整句連讀`
+        : `${accentLabel}真人錄音 · ${human.artist} · 來源`;
       const licenseLink = document.createElement("a");
       licenseLink.href = human.licenseUrl || human.page;
       licenseLink.target = "_blank";
       licenseLink.rel = "noopener noreferrer";
-      licenseLink.textContent = human.license;
+      licenseLink.textContent = human.recordingType === "segmented_human" ? "片段來源" : human.license;
       audioSourceEl.append(sourceLink, document.createTextNode(" · "), licenseLink);
       if (human.spokenText && human.spokenText.toLowerCase() !== item.word.toLowerCase()) {
         audioSourceEl.append(document.createTextNode(` · 錄音讀作：${human.spokenText}`));
+      }
+      if (human.recordingType === "segmented_human") {
+        human.segments.forEach((segment) => {
+          const link = document.createElement("a");
+          link.href = segment.page;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = segment.word;
+          audioSourceEl.append(document.createTextNode(" · "), link);
+        });
       }
     } else {
       audioSourceEl.textContent = cambridge

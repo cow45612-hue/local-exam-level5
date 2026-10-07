@@ -141,6 +141,19 @@ def update_page_version(records):
         index.write_text(updated, encoding="utf-8")
 
 
+def playback_record(r):
+    result = {
+        "file": "./audio-human/" + str(r["id"]) + ".mp3?v=" + r["sha256"][:12],
+        "artist": r["artist"], "page": r["page"],
+        "license": r["license"], "licenseUrl": r["licenseUrl"],
+        "accent": r.get("accent", "EN"), "spokenText": r.get("spokenText", r["word"]),
+    }
+    if r.get("recordingType") == "segmented_human":
+        result.update(recordingType=r["recordingType"], segmentWords=r["segmentWords"],
+                      segments=r.get("segments", []))
+    return result
+
+
 def save(records, pending):
     words = json.loads((ROOT / "tsmc-vocabulary.json").read_text(encoding="utf-8"))
     completed = {r["id"] for r in records}
@@ -149,12 +162,7 @@ def save(records, pending):
                for w in words if w["id"] not in completed]
     atomic_json(OUT / "sources.json", records)
     atomic_json(OUT / "pending.json", pending)
-    mapping = {r["word"].lower(): {
-        "file": "./audio-human/" + str(r["id"]) + ".mp3?v=" + r["sha256"][:12],
-        "artist": r["artist"], "page": r["page"],
-        "license": r["license"], "licenseUrl": r["licenseUrl"],
-        "accent": r.get("accent", "EN"), "spokenText": r.get("spokenText", r["word"]),
-    } for r in records}
+    mapping = {r["word"].lower(): playback_record(r) for r in records}
     temporary = OUT / "recordings.js.tmp"
     temporary.write_text("window.HUMAN_RECORDINGS = " + json.dumps(mapping, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
     temporary.replace(OUT / "recordings.js")

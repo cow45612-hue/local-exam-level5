@@ -89,6 +89,40 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "AI"
   },
+  "air shower": {
+    "file": "./audio-human/11.mp3?v=885236cb0e29",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+    "accent": "US",
+    "spokenText": "air / shower",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "air",
+      "shower"
+    ],
+    "segments": [
+      {
+        "word": "air",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/air/air__/air__us_1.mp3",
+        "accent": "US",
+        "sha256": "9081fe2d362cd55fa9638c05770664f6d3f3e3274cdc48070aaf3bea278f4975",
+        "duration": 0.759615,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "shower",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/shower",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sho/showe/shower__us_1.mp3",
+        "accent": "US",
+        "sha256": "018d30ee6d2a432b3187c48dbc24fa061b714d7dd2460f838286babf4feff121",
+        "duration": 0.879433,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
+  },
   "alarm": {
     "file": "./audio-human/12.mp3?v=f4caa8fa4a0a",
     "artist": "Dvortygirl",
@@ -377,6 +411,44 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "clean"
   },
+  "clean chamber": {
+    "file": "./audio-human/44.mp3?v=945e81c2411a",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+    "accent": "US",
+    "spokenText": "clean / chamber",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "clean",
+      "chamber"
+    ],
+    "segments": [
+      {
+        "id": 43,
+        "word": "clean",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/En-us-clean.ogg",
+        "originalSha256": "e2e17f6da1278674a3fd35630279397dd65c3c034005848bc84ff305eff7fd08",
+        "sha256": "27e550bac69dfab13ed0a8832226ac00b8da7baa16f3e442c963ec9b201d6620",
+        "duration": 0.650159
+      },
+      {
+        "word": "chamber",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chamber",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cha/chamb/chamber__us_1.mp3",
+        "accent": "US",
+        "sha256": "b36cdf5b2c02dcbef82285348fca1e6893c3beead42af72af80e894ab67d911d",
+        "duration": 0.89127,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
+  },
   "clear": {
     "file": "./audio-human/45.mp3?v=f38304762706",
     "artist": "Dvortygirl",
@@ -638,6 +710,44 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "emergency"
   },
+  "emergency stop": {
+    "file": "./audio-human/74.mp3?v=6732aaa44ce1",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+    "accent": "US",
+    "spokenText": "emergency / stop",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "emergency",
+      "stop"
+    ],
+    "segments": [
+      {
+        "id": 73,
+        "word": "emergency",
+        "accent": "US",
+        "artist": "Sylvanmoon",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/En-us-emergency.ogg",
+        "originalSha256": "d740d83e3920348a6d6f718cfb7bff95549161f4550896185fdfb5eb6c1d346e",
+        "sha256": "0349b6c92de5aece2bcd4cbf1661ff1977c50cbf58b2208b3952c7982401d710",
+        "duration": 1.404807
+      },
+      {
+        "word": "stop",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sto/stop_/stop__us_1.mp3",
+        "accent": "US",
+        "sha256": "81e7c1189145a18da76dacfef12d334ad97cb834ad80d4d94331d35f4e2c93ea",
+        "duration": 0.812245,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
+  },
   "engineer": {
     "file": "./audio-human/75.mp3?v=b7460daca685",
     "artist": "Dvortygirl",
@@ -700,6 +810,70 @@ window.HUMAN_RECORDINGS = {
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "accent": "US",
     "spokenText": "etching"
+  },
+  "euv / extreme ultraviolet": {
+    "file": "./audio-human/82.mp3?v=a5ab01960147",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+    "accent": "US",
+    "spokenText": "E / U / V / extreme / ultraviolet",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "e",
+      "u",
+      "v",
+      "extreme",
+      "ultraviolet"
+    ],
+    "segments": [
+      {
+        "word": "e",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/e/e__/e__us/e__us_1.mp3",
+        "accent": "US",
+        "sha256": "7ada4d30dce7d4ec10eefa50958be66c4f3f503bc0291134093a79e72fe6fc54",
+        "duration": 0.74034,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "u",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/u",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/u/u__/u__us/u__us_1.mp3",
+        "accent": "US",
+        "sha256": "88d4eefdda2aff45f5f54fba3931b533ea5ada4e33848e49b7b88acf3e6ae0ec",
+        "duration": 0.776825,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "v",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/v",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/v/v__/v__us/v__us_1.mp3",
+        "accent": "US",
+        "sha256": "d99157206cb5f590448a862b32650e5ef304b5ec703853a9c3e18edc0a6592ef",
+        "duration": 0.714649,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "extreme",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/extreme",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/e/ext/extre/extreme__us_1.mp3",
+        "accent": "US",
+        "sha256": "0fe85191957db931fe7522dceefd067633f4b9a99e9afbd5a4195d6c49f23983",
+        "duration": 1.077029,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "ultraviolet",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ultraviolet",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/u/ult/ultra/ultraviolet__us_1.mp3",
+        "accent": "US",
+        "sha256": "96453d1c5d5905d6dc067e5849c5f648cf567d9dfae89432dfe7f2c3812afe6e",
+        "duration": 1.169909,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
   },
   "event": {
     "file": "./audio-human/83.mp3?v=8720cebc7c06",
@@ -1214,6 +1388,44 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "lock"
   },
+  "log sheet": {
+    "file": "./audio-human/140.mp3?v=8e0255886a84",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+    "accent": "US",
+    "spokenText": "log / sheet",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "log",
+      "sheet"
+    ],
+    "segments": [
+      {
+        "word": "log",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/log/log__/log__us_1_rr.mp3",
+        "accent": "US",
+        "sha256": "2f7740ebf0c287a4a0a4ee68a9ae430ce638c3317374039bbac8a5c6d0b4f0a1",
+        "duration": 0.844308,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 234,
+        "word": "sheet",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-sheet.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/En-us-sheet.ogg",
+        "originalSha256": "9148e731bec09398003599e8c9c6105223ed3a9829fee2c7aeb98b583182d2d7",
+        "sha256": "d81bcc15354164ea68b95ad6b5d56b6458afab337f44cc12666a1fb41fc78412",
+        "duration": 1.0
+      }
+    ]
+  },
   "lose": {
     "file": "./audio-human/141.mp3?v=fdaef56bcdb5",
     "artist": "Dvortygirl",
@@ -1339,6 +1551,44 @@ window.HUMAN_RECORDINGS = {
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "accent": "US",
     "spokenText": "metal"
+  },
+  "miss-operation": {
+    "file": "./audio-human/155.mp3?v=e74562eaa3db",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+    "accent": "US",
+    "spokenText": "mis- / operation",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "miss",
+      "operation"
+    ],
+    "segments": [
+      {
+        "word": "miss",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/m/mis/miss_/miss__us_1.mp3",
+        "accent": "US",
+        "sha256": "8d5b63e6f5b3a45686f63581d2666a160e61144bdef24b9acaa93d0c384503aa",
+        "duration": 0.86805,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 169,
+        "word": "operation",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-operation.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/En-us-operation.ogg",
+        "originalSha256": "1ea3e2f24d1c84b50070d5f8e24f098b9a27ff0c48a573425adeed224c514847",
+        "sha256": "764870fe64f888516488d222e160c54b02a241cb2dfd46cad4500ec6ac2ba95e",
+        "duration": 0.928798
+      }
+    ]
   },
   "monitor": {
     "file": "./audio-human/156.mp3?v=9e486ad87197",
@@ -1943,6 +2193,92 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "run"
   },
+  "run-card": {
+    "file": "./audio-human/223.mp3?v=44d79dbbf59f",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+    "accent": "US",
+    "spokenText": "run / card",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "run",
+      "card"
+    ],
+    "segments": [
+      {
+        "id": 222,
+        "word": "run",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/En-us-run.ogg",
+        "originalSha256": "a32bd892184fd1e85c340a62548c6e75991c4fbc757c7e122c7691d4b523fe27",
+        "sha256": "c6bad3af62479eab6d6e37aa69353e14784949ade63ec806c35d46e890a54a03",
+        "duration": 0.534059
+      },
+      {
+        "id": 32,
+        "word": "card",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-card.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/En-us-card.ogg",
+        "originalSha256": "79de272cc42b68e45257082e704762f2f991d65c1916fe8b645ebee2fe2632e2",
+        "sha256": "0d67cae320d709078edddabb26c2aa6d4de38b5c279a5d4bd31f67233403c1e8",
+        "duration": 0.661769
+      }
+    ]
+  },
+  "s.o.p / standard operating procedures": {
+    "file": "./audio-human/224.mp3?v=76c3dad26d5b",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+    "accent": "US",
+    "spokenText": "S / O / P",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "s",
+      "o",
+      "p"
+    ],
+    "segments": [
+      {
+        "word": "s",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/s__/s__us/s__us_1.mp3",
+        "accent": "US",
+        "sha256": "bf075e015daa9cceca946f1defd471d6e5bede5169e1618f9fefee699f497a22",
+        "duration": 0.704558,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "o",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/o",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/o/o__/o__us/o__us_1.mp3",
+        "accent": "US",
+        "sha256": "ad11bc8c4c920bca16a7e5a21f85439917c2abfe6ab261ca2b2a0b88ebe47ede",
+        "duration": 0.752018,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "p",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/p",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/p/p__/p__us/p__us_1.mp3",
+        "accent": "US",
+        "sha256": "c55cf423cfcea0e65f71c17bb95af6448783f036d72be218b52b243bebef1eb1",
+        "duration": 0.636145,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
+  },
   "safe": {
     "file": "./audio-human/225.mp3?v=df44b6231c9d",
     "artist": "Dvortygirl",
@@ -2204,6 +2540,63 @@ window.HUMAN_RECORDINGS = {
     "accent": "US",
     "spokenText": "super"
   },
+  "super hot run": {
+    "file": "./audio-human/254.mp3?v=660329fda9e4",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "accent": "US",
+    "spokenText": "super / hot / run",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "super",
+      "hot",
+      "run"
+    ],
+    "segments": [
+      {
+        "id": 253,
+        "word": "super",
+        "accent": "US",
+        "artist": "Oxford Learners Dictionaries",
+        "license": "Dictionary source",
+        "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sup/super/super__us_1.mp3",
+        "spokenText": "super",
+        "sha256": "a167819a8c2879dc7f01899c4292ff56b4f6eae559db18859950163b84f83f76",
+        "duration": 0.9261,
+        "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+      },
+      {
+        "id": 107,
+        "word": "hot",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-hot.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/En-us-hot.ogg",
+        "originalSha256": "7f3846462101e6c80875d1eb22a205cb472a427b586d2933f3db998d5ee6aa3d",
+        "sha256": "0f982b8fce1fece0c8472244c89854b00499099f74e150c6e76520b20aeb815a",
+        "duration": 0.684989
+      },
+      {
+        "id": 222,
+        "word": "run",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/En-us-run.ogg",
+        "originalSha256": "a32bd892184fd1e85c340a62548c6e75991c4fbc757c7e122c7691d4b523fe27",
+        "sha256": "c6bad3af62479eab6d6e37aa69353e14784949ade63ec806c35d46e890a54a03",
+        "duration": 0.534059
+      }
+    ]
+  },
   "supervisor": {
     "file": "./audio-human/255.mp3?v=372938348fd5",
     "artist": "Oxford Learners Dictionaries",
@@ -2248,6 +2641,40 @@ window.HUMAN_RECORDINGS = {
     "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tag",
     "accent": "US",
     "spokenText": "tag"
+  },
+  "take leave": {
+    "file": "./audio-human/260.mp3?v=ae0e44a8e671",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+    "accent": "US",
+    "spokenText": "take / leave",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "take",
+      "leave"
+    ],
+    "segments": [
+      {
+        "word": "take",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tak/take_/take__us_1.mp3",
+        "accent": "US",
+        "sha256": "4284792ad7ac74c501aa1ba9d5aa37aa17fe00cf3b9509366f51dcc8e0ea1f6b",
+        "duration": 0.764195,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "leave",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/leave",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/lea/leave/leave__us_1.mp3",
+        "accent": "US",
+        "sha256": "2ae5dc3bf5f168519c577e126c5db4fad83fcdce5e59c2edb851a65103fd471f",
+        "duration": 0.752154,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
   },
   "tape": {
     "file": "./audio-human/261.mp3?v=c056d635ba57",
@@ -2302,6 +2729,40 @@ window.HUMAN_RECORDINGS = {
     "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thickness",
     "accent": "US",
     "spokenText": "thickness"
+  },
+  "thin film": {
+    "file": "./audio-human/267.mp3?v=86ae680ba8cc",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+    "accent": "US",
+    "spokenText": "thin / film",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "thin",
+      "film"
+    ],
+    "segments": [
+      {
+        "word": "thin",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/thi/thin_/thin__us_1.mp3",
+        "accent": "US",
+        "sha256": "34cd1d23cc37f53edc6f8cd384fa7b9d5b612b12c6dec9e6b03f215a87d44255",
+        "duration": 0.810635,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "film",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/f/fil/film_/film__us_1.mp3",
+        "accent": "US",
+        "sha256": "fa37af2a93ff7b0066267a8e30219b2545d92045c4a2270ebe020ff8a5c9dbea",
+        "duration": 0.765034,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ]
   },
   "time": {
     "file": "./audio-human/268.mp3?v=b7b4044bcb7b",
@@ -2365,6 +2826,44 @@ window.HUMAN_RECORDINGS = {
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "accent": "US",
     "spokenText": "tune"
+  },
+  "turn rate": {
+    "file": "./audio-human/275.mp3?v=d329c87bab1d",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+    "accent": "US",
+    "spokenText": "turn / rate",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "turn",
+      "rate"
+    ],
+    "segments": [
+      {
+        "word": "turn",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tur/turn_/turn__us_1.mp3",
+        "accent": "US",
+        "sha256": "cfd26aac814bc6063e944125637b331462a70e5dc9a41a3bc697a0ea316e01d0",
+        "duration": 0.82161,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 207,
+        "word": "rate",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-rate.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/En-us-rate.ogg",
+        "originalSha256": "b2c315bd173699ee4d09fcc3c9b1bc2b0a07ae7d0ae953c98554ce49a271aba8",
+        "sha256": "fd8195cc9080abf35095494b83ed59ff342c77ab279928b2b79315eedd58f121",
+        "duration": 0.522449
+      }
+    ]
   },
   "unload": {
     "file": "./audio-human/276.mp3?v=788556d2dce9",

@@ -134,6 +134,45 @@
     "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
   },
   {
+    "id": 11,
+    "word": "air shower",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "air",
+      "shower"
+    ],
+    "segments": [
+      {
+        "word": "air",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/a/air/air__/air__us_1.mp3",
+        "accent": "US",
+        "sha256": "9081fe2d362cd55fa9638c05770664f6d3f3e3274cdc48070aaf3bea278f4975",
+        "duration": 0.759615,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "shower",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/shower",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sho/showe/shower__us_1.mp3",
+        "accent": "US",
+        "sha256": "018d30ee6d2a432b3187c48dbc24fa061b714d7dd2460f838286babf4feff121",
+        "duration": 0.879433,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "air / shower",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+    "sha256": "885236cb0e2953cb9222dfe4e7af45b3147e63e69318e0e18516401ed102003b",
+    "duration": 0.94125,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 12,
     "word": "alarm",
     "accent": "US",
@@ -562,6 +601,49 @@
     "duration": 0.650159
   },
   {
+    "id": 44,
+    "word": "clean chamber",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "clean",
+      "chamber"
+    ],
+    "segments": [
+      {
+        "id": 43,
+        "word": "clean",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/En-us-clean.ogg",
+        "originalSha256": "e2e17f6da1278674a3fd35630279397dd65c3c034005848bc84ff305eff7fd08",
+        "sha256": "27e550bac69dfab13ed0a8832226ac00b8da7baa16f3e442c963ec9b201d6620",
+        "duration": 0.650159
+      },
+      {
+        "word": "chamber",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chamber",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cha/chamb/chamber__us_1.mp3",
+        "accent": "US",
+        "sha256": "b36cdf5b2c02dcbef82285348fca1e6893c3beead42af72af80e894ab67d911d",
+        "duration": 0.89127,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "clean / chamber",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-clean.ogg",
+    "sha256": "945e81c2411a21410fdcf46abc53bf01afd52d536885c25814c043486361fa58",
+    "duration": 1.207146,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 45,
     "word": "clear",
     "accent": "US",
@@ -948,6 +1030,49 @@
     "duration": 1.404807
   },
   {
+    "id": 74,
+    "word": "emergency stop",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "emergency",
+      "stop"
+    ],
+    "segments": [
+      {
+        "id": 73,
+        "word": "emergency",
+        "accent": "US",
+        "artist": "Sylvanmoon",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/En-us-emergency.ogg",
+        "originalSha256": "d740d83e3920348a6d6f718cfb7bff95549161f4550896185fdfb5eb6c1d346e",
+        "sha256": "0349b6c92de5aece2bcd4cbf1661ff1977c50cbf58b2208b3952c7982401d710",
+        "duration": 1.404807
+      },
+      {
+        "word": "stop",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sto/stop_/stop__us_1.mp3",
+        "accent": "US",
+        "sha256": "81e7c1189145a18da76dacfef12d334ad97cb834ad80d4d94331d35f4e2c93ea",
+        "duration": 0.812245,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "emergency / stop",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-emergency.ogg",
+    "sha256": "6732aaa44ce1c4da5e07b18e70a29dfc7bcaf8a3d17ea94b421d12bfd7139445",
+    "duration": 1.453667,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 75,
     "word": "engineer",
     "accent": "US",
@@ -1040,6 +1165,75 @@
     "sha256": "b2e461f0d872fbf5d399fd7d4fe40119dcc4a149be02d2513cbbd02ad37f1886",
     "duration": 0.850667,
     "pronunciationReview": "word_and_pos_source_checked_not_individually_listened"
+  },
+  {
+    "id": 82,
+    "word": "EUV / extreme ultraviolet",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "e",
+      "u",
+      "v",
+      "extreme",
+      "ultraviolet"
+    ],
+    "segments": [
+      {
+        "word": "e",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/e/e__/e__us/e__us_1.mp3",
+        "accent": "US",
+        "sha256": "7ada4d30dce7d4ec10eefa50958be66c4f3f503bc0291134093a79e72fe6fc54",
+        "duration": 0.74034,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "u",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/u",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/u/u__/u__us/u__us_1.mp3",
+        "accent": "US",
+        "sha256": "88d4eefdda2aff45f5f54fba3931b533ea5ada4e33848e49b7b88acf3e6ae0ec",
+        "duration": 0.776825,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "v",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/v",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/v/v__/v__us/v__us_1.mp3",
+        "accent": "US",
+        "sha256": "d99157206cb5f590448a862b32650e5ef304b5ec703853a9c3e18edc0a6592ef",
+        "duration": 0.714649,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "extreme",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/extreme",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/e/ext/extre/extreme__us_1.mp3",
+        "accent": "US",
+        "sha256": "0fe85191957db931fe7522dceefd067633f4b9a99e9afbd5a4195d6c49f23983",
+        "duration": 1.077029,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "ultraviolet",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ultraviolet",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/u/ult/ultra/ultraviolet__us_1.mp3",
+        "accent": "US",
+        "sha256": "96453d1c5d5905d6dc067e5849c5f648cf567d9dfae89432dfe7f2c3812afe6e",
+        "duration": 1.169909,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "E / U / V / extreme / ultraviolet",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/e",
+    "sha256": "a5ab019601474ea690bb66aa6b426a4003fd303296e1b402e1af2fe4dfad56ad",
+    "duration": 3.016438,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
   },
   {
     "id": 83,
@@ -1800,6 +1994,49 @@
     "duration": 0.534059
   },
   {
+    "id": 140,
+    "word": "log sheet",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "log",
+      "sheet"
+    ],
+    "segments": [
+      {
+        "word": "log",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/log/log__/log__us_1_rr.mp3",
+        "accent": "US",
+        "sha256": "2f7740ebf0c287a4a0a4ee68a9ae430ce638c3317374039bbac8a5c6d0b4f0a1",
+        "duration": 0.844308,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 234,
+        "word": "sheet",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-sheet.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/En-us-sheet.ogg",
+        "originalSha256": "9148e731bec09398003599e8c9c6105223ed3a9829fee2c7aeb98b583182d2d7",
+        "sha256": "d81bcc15354164ea68b95ad6b5d56b6458afab337f44cc12666a1fb41fc78412",
+        "duration": 1.0
+      }
+    ],
+    "spokenText": "log / sheet",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+    "sha256": "8e0255886a848be5da7c2e21770799e4e24e7031757b49948646ea1b1d901e49",
+    "duration": 1.380125,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 141,
     "word": "lose",
     "accent": "US",
@@ -1984,6 +2221,49 @@
     "originalSha256": "7cdbcc686dfd26fd514b8af8cf73c809d7190734e7f393f32df0eebad6fce68d",
     "sha256": "d5f209e0876bb2b06ef06e5a851cdd1e4d84a9373b07dc02297e17876ce34c18",
     "duration": 0.673379
+  },
+  {
+    "id": 155,
+    "word": "miss-operation",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "miss",
+      "operation"
+    ],
+    "segments": [
+      {
+        "word": "miss",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/m/mis/miss_/miss__us_1.mp3",
+        "accent": "US",
+        "sha256": "8d5b63e6f5b3a45686f63581d2666a160e61144bdef24b9acaa93d0c384503aa",
+        "duration": 0.86805,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 169,
+        "word": "operation",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-operation.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/En-us-operation.ogg",
+        "originalSha256": "1ea3e2f24d1c84b50070d5f8e24f098b9a27ff0c48a573425adeed224c514847",
+        "sha256": "764870fe64f888516488d222e160c54b02a241cb2dfd46cad4500ec6ac2ba95e",
+        "duration": 0.928798
+      }
+    ],
+    "spokenText": "mis- / operation",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miss",
+    "sha256": "e74562eaa3db93d0b322fc49a13093be8663b3181d190e84f4fa0837c173f0ef",
+    "duration": 1.320979,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
   },
   {
     "id": 156,
@@ -2884,6 +3164,102 @@
     "duration": 0.534059
   },
   {
+    "id": 223,
+    "word": "run-card",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "run",
+      "card"
+    ],
+    "segments": [
+      {
+        "id": 222,
+        "word": "run",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/En-us-run.ogg",
+        "originalSha256": "a32bd892184fd1e85c340a62548c6e75991c4fbc757c7e122c7691d4b523fe27",
+        "sha256": "c6bad3af62479eab6d6e37aa69353e14784949ade63ec806c35d46e890a54a03",
+        "duration": 0.534059
+      },
+      {
+        "id": 32,
+        "word": "card",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-card.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/En-us-card.ogg",
+        "originalSha256": "79de272cc42b68e45257082e704762f2f991d65c1916fe8b645ebee2fe2632e2",
+        "sha256": "0d67cae320d709078edddabb26c2aa6d4de38b5c279a5d4bd31f67233403c1e8",
+        "duration": 0.661769
+      }
+    ],
+    "spokenText": "run / card",
+    "artist": "US human word recordings",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+    "sha256": "44d79dbbf59f71d99569191b3d372f39ded50a74bd2bbf95e32a5d4bdc6866da",
+    "duration": 1.206917,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
+    "id": 224,
+    "word": "S.O.P / Standard Operating Procedures",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "s",
+      "o",
+      "p"
+    ],
+    "segments": [
+      {
+        "word": "s",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/s__/s__us/s__us_1.mp3",
+        "accent": "US",
+        "sha256": "bf075e015daa9cceca946f1defd471d6e5bede5169e1618f9fefee699f497a22",
+        "duration": 0.704558,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "o",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/o",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/o/o__/o__us/o__us_1.mp3",
+        "accent": "US",
+        "sha256": "ad11bc8c4c920bca16a7e5a21f85439917c2abfe6ab261ca2b2a0b88ebe47ede",
+        "duration": 0.752018,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "p",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/p",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/p/p__/p__us/p__us_1.mp3",
+        "accent": "US",
+        "sha256": "c55cf423cfcea0e65f71c17bb95af6448783f036d72be218b52b243bebef1eb1",
+        "duration": 0.636145,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "S / O / P",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+    "sha256": "76c3dad26d5b024609040e1951dbec051c5384990bccd5effa2a91dcc6e65731",
+    "duration": 1.330063,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 225,
     "word": "safe",
     "accent": "US",
@@ -3271,6 +3647,68 @@
     "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
   },
   {
+    "id": 254,
+    "word": "super hot run",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "super",
+      "hot",
+      "run"
+    ],
+    "segments": [
+      {
+        "id": 253,
+        "word": "super",
+        "accent": "US",
+        "artist": "Oxford Learners Dictionaries",
+        "license": "Dictionary source",
+        "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sup/super/super__us_1.mp3",
+        "spokenText": "super",
+        "sha256": "a167819a8c2879dc7f01899c4292ff56b4f6eae559db18859950163b84f83f76",
+        "duration": 0.9261,
+        "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+      },
+      {
+        "id": 107,
+        "word": "hot",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-hot.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/En-us-hot.ogg",
+        "originalSha256": "7f3846462101e6c80875d1eb22a205cb472a427b586d2933f3db998d5ee6aa3d",
+        "sha256": "0f982b8fce1fece0c8472244c89854b00499099f74e150c6e76520b20aeb815a",
+        "duration": 0.684989
+      },
+      {
+        "id": 222,
+        "word": "run",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/En-us-run.ogg",
+        "originalSha256": "a32bd892184fd1e85c340a62548c6e75991c4fbc757c7e122c7691d4b523fe27",
+        "sha256": "c6bad3af62479eab6d6e37aa69353e14784949ade63ec806c35d46e890a54a03",
+        "duration": 0.534059
+      }
+    ],
+    "spokenText": "super / hot / run",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/super",
+    "sha256": "660329fda9e4fc025d5c53c606c236db7a3855b92a230b4338dcd10249987180",
+    "duration": 1.604042,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
+  },
+  {
     "id": 255,
     "word": "supervisor",
     "accent": "US",
@@ -3336,6 +3774,45 @@
     "sha256": "53af3f1dc78f33e28f7182145e095a48db5033eaca96533c15ac86f60d3345d3",
     "duration": 0.799524,
     "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 260,
+    "word": "take leave",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "take",
+      "leave"
+    ],
+    "segments": [
+      {
+        "word": "take",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tak/take_/take__us_1.mp3",
+        "accent": "US",
+        "sha256": "4284792ad7ac74c501aa1ba9d5aa37aa17fe00cf3b9509366f51dcc8e0ea1f6b",
+        "duration": 0.764195,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "leave",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/leave",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/lea/leave/leave__us_1.mp3",
+        "accent": "US",
+        "sha256": "2ae5dc3bf5f168519c577e126c5db4fad83fcdce5e59c2edb851a65103fd471f",
+        "duration": 0.752154,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "take / leave",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+    "sha256": "ae0e44a8e67102f0486d9c1e3916f336f65390e0073b126b2b1059af2ef92351",
+    "duration": 0.871688,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
   },
   {
     "id": 261,
@@ -3416,6 +3893,45 @@
     "sha256": "46f2aade7dcd6bcd63003efc8f28796058baa9f6aa42dd9e15123b95343765c2",
     "duration": 1.019751,
     "pronunciationReview": "US dictionary source and word mapping checked; full MP3 decode passed; not individually listened"
+  },
+  {
+    "id": 267,
+    "word": "thin film",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "thin",
+      "film"
+    ],
+    "segments": [
+      {
+        "word": "thin",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/thi/thin_/thin__us_1.mp3",
+        "accent": "US",
+        "sha256": "34cd1d23cc37f53edc6f8cd384fa7b9d5b612b12c6dec9e6b03f215a87d44255",
+        "duration": 0.810635,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "word": "film",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/f/fil/film_/film__us_1.mp3",
+        "accent": "US",
+        "sha256": "fa37af2a93ff7b0066267a8e30219b2545d92045c4a2270ebe020ff8a5c9dbea",
+        "duration": 0.765034,
+        "artist": "Oxford Learners Dictionaries"
+      }
+    ],
+    "spokenText": "thin / film",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+    "sha256": "86ae680ba8ccf5ffe5680d53a08658d588ae0be7900c2f426c5d1323316f84e7",
+    "duration": 0.869042,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
   },
   {
     "id": 268,
@@ -3508,6 +4024,49 @@
     "originalSha256": "497ef34b272aaba3c6b35ab7a17ce3606a7bf38a0e59b182195e58c2f08e9367",
     "sha256": "b50f5291c366f09a8bd493788388701e6252f6b478bd1502ee85234688501e8b",
     "duration": 0.893968
+  },
+  {
+    "id": 275,
+    "word": "turn rate",
+    "accent": "US",
+    "recordingType": "segmented_human",
+    "segmentWords": [
+      "turn",
+      "rate"
+    ],
+    "segments": [
+      {
+        "word": "turn",
+        "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+        "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tur/turn_/turn__us_1.mp3",
+        "accent": "US",
+        "sha256": "cfd26aac814bc6063e944125637b331462a70e5dc9a41a3bc697a0ea316e01d0",
+        "duration": 0.82161,
+        "artist": "Oxford Learners Dictionaries"
+      },
+      {
+        "id": 207,
+        "word": "rate",
+        "accent": "US",
+        "artist": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-rate.ogg",
+        "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/En-us-rate.ogg",
+        "originalSha256": "b2c315bd173699ee4d09fcc3c9b1bc2b0a07ae7d0ae953c98554ce49a271aba8",
+        "sha256": "fd8195cc9080abf35095494b83ed59ff342c77ab279928b2b79315eedd58f121",
+        "duration": 0.522449
+      }
+    ],
+    "spokenText": "turn / rate",
+    "artist": "US human word recordings",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+    "audioUrl": "",
+    "license": "See individual segment sources",
+    "licenseUrl": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+    "sha256": "d329c87bab1d58d35ceab287e5f0cc5d8581bc8588430d5749e8a634d438d1c7",
+    "duration": 0.865875,
+    "pronunciationReview": "Human word/prefix practice with pauses; not a naturally spoken phrase"
   },
   {
     "id": 276,
