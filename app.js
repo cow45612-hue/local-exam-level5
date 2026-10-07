@@ -212,6 +212,13 @@ let tsmcExtrasIndex = 0;
 let tsmcExtrasRevealed = false;
 
 // Shared Audio element
+const CAMBRIDGE_RECORDINGS = {
+  active: {
+    file: "./audio-cambridge/6.mp3?v=cambridge-us-1",
+    page: "https://dictionary.cambridge.org/pronunciation/english/active",
+    ipa: "ˈæk.tɪv",
+  },
+};
 let tsmcAudioElement = null;
 let tsmcSpeechRequest = 0;
 function getTsmcAudio() {
@@ -336,7 +343,7 @@ function playNaturalWordAudio(target, slow = false) {
   stopCurrentSpeech();
   const request = tsmcSpeechRequest;
 
-  // Vocabulary always uses the same Jenny recording, including abbreviations.
+  // Verified Cambridge recordings take priority over the existing study audio.
   if (!wordId) {
     speakOptimizedEnglishSpeech(wordText, slow);
     return;
@@ -348,10 +355,10 @@ function playNaturalWordAudio(target, slow = false) {
     audio.preservesPitch = true;
   }
 
-  audio.src = `./audio/${wordId}.mp3`;
+  audio.src = CAMBRIDGE_RECORDINGS[wordText.toLowerCase()]?.file ?? `./audio/${wordId}.mp3`;
   audio.play().catch((error) => {
     if (request !== tsmcSpeechRequest || error.name === "AbortError") return;
-    window.alert("女聲音檔暫時無法播放，請確認網路後再點一次發音。");
+    window.alert("音檔暫時無法播放，請確認網路後再點一次發音。");
   });
 }
 
@@ -669,6 +676,13 @@ function renderStageLearnWord() {
 
   // Word & Pronounce
   const wordEl = document.querySelector("#tsmc-learn-word");
+  const audioSourceEl = document.querySelector("#tsmc-audio-source");
+  const cambridge = CAMBRIDGE_RECORDINGS[item.word.toLowerCase()];
+  if (audioSourceEl) {
+    audioSourceEl.textContent = cambridge
+      ? `劍橋字典 · 美式發音 /${cambridge.ipa}/`
+      : "美式女聲 · Jenny（尚未替換為劍橋錄音）";
+  }
   const meaningEl = document.querySelector("#tsmc-learn-meaning");
   const mnemonicEl = document.querySelector("#tsmc-learn-mnemonic");
   const phraseEl = document.querySelector("#tsmc-learn-phrase");

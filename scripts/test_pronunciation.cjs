@@ -50,6 +50,12 @@ vm.runInContext(source.slice(start, end), context);
   await Promise.resolve();
   assert.equal(alerts.length, 0, "stale failures must not interrupt the new word");
 
+  vm.runInContext('playNaturalWordAudio({ id: 6, word: "active" });', context);
+  assert.equal(calls.at(-1).src, "./audio-cambridge/6.mp3?v=cambridge-us-1");
+  vm.runInContext('playNaturalWordAudio({ id: 6, word: "active" }, true);', context);
+  assert.equal(calls.at(-1).src, "./audio-cambridge/6.mp3?v=cambridge-us-1");
+  assert.equal(calls.at(-1).rate, 0.72);
+
   vm.runInContext('speakOptimizedEnglishSpeech("hello");', context);
   assert.match(calls.at(-1).voice.name, /Jenny/);
   voices = [{ name: "Samantha", lang: "en-US" }, ...voices];
