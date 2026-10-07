@@ -2,12 +2,7 @@
   {
     "id": 9,
     "word": "adjust",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 10,
-    "word": "AI",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 11,
@@ -17,52 +12,47 @@
   {
     "id": 14,
     "word": "align",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 15,
     "word": "annually",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 17,
     "word": "attach",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 20,
     "word": "automotive",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 23,
     "word": "backup",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 25,
     "word": "basic",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 27,
-    "word": "benchmark",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 31,
     "word": "cancel",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 34,
     "word": "cassette",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 36,
     "word": "certify",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 44,
@@ -70,14 +60,9 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 55,
-    "word": "contamination",
-    "reason": "filename_not_found"
-  },
-  {
     "id": 60,
     "word": "customer",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 62,
@@ -85,23 +70,13 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 64,
-    "word": "data",
-    "reason": "filename_not_found"
-  },
-  {
     "id": 70,
     "word": "diffusion",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 74,
     "word": "emergency stop",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 81,
-    "word": "etching",
     "reason": "filename_not_found"
   },
   {
@@ -110,54 +85,39 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 89,
-    "word": "focus",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 96,
-    "word": "gloves",
-    "reason": "filename_not_found"
-  },
-  {
     "id": 101,
     "word": "hard-disk",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 103,
     "word": "helmet",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 108,
     "word": "impact",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 112,
     "word": "inhibition",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 113,
     "word": "input",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 134,
-    "word": "lithography",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 136,
     "word": "loading",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 137,
     "word": "lobby",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 140,
@@ -167,12 +127,7 @@
   {
     "id": 146,
     "word": "manufacture",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 150,
-    "word": "measure",
-    "reason": "license_or_attribution_review"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 155,
@@ -180,59 +135,34 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 156,
-    "word": "monitor",
-    "reason": "filename_not_found"
-  },
-  {
     "id": 166,
     "word": "off-line",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 167,
-    "word": "on time",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 168,
-    "word": "on-line",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 170,
     "word": "output",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 172,
     "word": "over time",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 179,
     "word": "password",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 180,
-    "word": "perfect",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 186,
-    "word": "pod",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 196,
     "word": "preview",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 199,
     "word": "priority",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 208,
@@ -240,19 +170,14 @@
     "reason": "filename_not_found"
   },
   {
-    "id": 210,
-    "word": "record",
-    "reason": "filename_not_found"
-  },
-  {
     "id": 214,
     "word": "remind",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 218,
     "word": "reset",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 223,
@@ -267,42 +192,37 @@
   {
     "id": 231,
     "word": "select",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 232,
     "word": "semiconductor",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 238,
     "word": "skip",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 239,
     "word": "sorter",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 241,
-    "word": "Spec. / specification",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 246,
     "word": "standby",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 251,
     "word": "stocker",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 253,
     "word": "super",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 254,
@@ -312,12 +232,12 @@
   {
     "id": 255,
     "word": "supervisor",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 259,
     "word": "tag",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 260,
@@ -327,12 +247,12 @@
   {
     "id": 263,
     "word": "technician",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 266,
     "word": "thickness",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 267,
@@ -342,7 +262,7 @@
   {
     "id": 273,
     "word": "trend",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   },
   {
     "id": 275,
@@ -352,11 +272,6 @@
   {
     "id": 276,
     "word": "unload",
-    "reason": "filename_not_found"
-  },
-  {
-    "id": 278,
-    "word": "username",
-    "reason": "filename_not_found"
+    "reason": "us_recording_needed_no_other_accent_substitution"
   }
 ]

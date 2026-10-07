@@ -52,12 +52,28 @@ const server = http.createServer((req, res) => {
     });
     assert.ok(decoding.length > 0 && decoding.every((n) => n > 0));
     const dialog = page.waitForEvent("dialog");
-    const missing = page.evaluate(() => playNaturalWordAudio("AI"));
+    const missing = page.evaluate(() => playNaturalWordAudio("__missing_recording_test__"));
     const prompt = await dialog;
     assert.match(prompt.message(), /真人錄音/);
     await prompt.accept();
     await missing;
     assert.equal(await page.evaluate(() => getTsmcAudio().paused), true);
+    const usWord = await page.evaluate(() => {
+      const item = TSMC_WORDS.find((w) => w.id === 10);
+      tsmcLearnWords = [item];
+      tsmcLearnIndex = 0;
+      renderStageLearnWord();
+      return item.word;
+    });
+    assert.equal(usWord, "AI");
+    assert.match(await attribution.innerText(), /美式真人錄音/);
+    assert.doesNotMatch(await attribution.innerText(), /英式真人錄音|澳洲真人錄音/);
+    await page.evaluate(() => {
+      tsmcLearnWords = [TSMC_WORDS.find((w) => w.id === 241)];
+      tsmcLearnIndex = 0;
+      renderStageLearnWord();
+    });
+    assert.match(await attribution.innerText(), /錄音讀作：specification/);
     const box = await attribution.boundingBox();
     assert.ok(box.x >= 0 && box.x + box.width <= 390);
     assert.deepEqual(errors, []);

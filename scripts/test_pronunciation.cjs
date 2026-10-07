@@ -81,10 +81,11 @@ vm.runInContext(source.slice(start, end), context);
   const records = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "audio-human", "sources.json"), "utf8"));
   const crypto = require("node:crypto");
   for (const record of records) {
+    assert.equal(record.accent, "US", `Non-US recording must not be installed: ${record.word}`);
     assert.ok(vocabulary.some((word) => word.id === record.id && word.word === record.word));
     assert.ok(record.artist && record.license && record.page);
     assert.match(record.page, /^https:\/\/commons\.wikimedia\.org\//);
-    for (const [ext, field] of [["mp3", "sha256"], ["ogg", "originalSha256"]]) {
+    for (const [ext, field] of [["mp3", "sha256"], [record.originalExtension || "ogg", "originalSha256"]]) {
       const bytes = fs.readFileSync(path.join(__dirname, "..", "audio-human", `${record.id}.${ext}`));
       assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), record[field]);
     }

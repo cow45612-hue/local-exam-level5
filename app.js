@@ -689,13 +689,17 @@ function renderStageLearnWord() {
       sourceLink.href = human.page;
       sourceLink.target = "_blank";
       sourceLink.rel = "noopener noreferrer";
-      sourceLink.textContent = `美式真人錄音 · ${human.artist} · 來源`;
+      const accentLabel = { US: "美式", UK: "英式", AU: "澳洲", CA: "加拿大" }[human.accent] || "英文";
+      sourceLink.textContent = `${accentLabel}真人錄音 · ${human.artist} · 來源`;
       const licenseLink = document.createElement("a");
       licenseLink.href = human.licenseUrl || human.page;
       licenseLink.target = "_blank";
       licenseLink.rel = "noopener noreferrer";
       licenseLink.textContent = human.license;
       audioSourceEl.append(sourceLink, document.createTextNode(" · "), licenseLink);
+      if (human.spokenText && human.spokenText.toLowerCase() !== item.word.toLowerCase()) {
+        audioSourceEl.append(document.createTextNode(` · 錄音讀作：${human.spokenText}`));
+      }
     } else {
       audioSourceEl.textContent = cambridge
         ? `劍橋字典 · 美式真人發音 /${cambridge.ipa}/`

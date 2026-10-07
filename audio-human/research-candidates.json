@@ -1,0 +1,1302 @@
+{
+  "checkedDate": "2026-10-07",
+  "scope": "72 vocabulary items without installed human audio",
+  "installedByThisResearch": true,
+  "installedCount": 17,
+  "candidateStatusNote": "Research candidates include unused accents. sources.json is the US-only installation manifest. Audio has not all been individually listened to.",
+  "words": [
+    {
+      "id": 9,
+      "word": "adjust",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-adjust.wav",
+          "details": "|a=Southern England",
+          "entry": "adjust",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-adjust.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/LL-Q1860_%28eng%29-Vealhurl-adjust.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 10,
+      "word": "AI",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-AI.wav",
+          "details": "|a=Southern England",
+          "entry": "AI",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-AI.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/LL-Q1860_%28eng%29-Vealhurl-AI.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "En-us-AI.oga",
+          "details": "|a=US",
+          "entry": "AI",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-AI.oga",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/En-us-AI.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 11,
+      "word": "air shower",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 14,
+      "word": "align",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-align.wav",
+          "details": "|a=Southern England",
+          "entry": "align",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-align.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/LL-Q1860_%28eng%29-Vealhurl-align.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 15,
+      "word": "annually",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Jjamesryan-annually.wav",
+          "details": "|a=Brisbane",
+          "entry": "annually",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Jjamesryan-annually.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/LL-Q1860_%28eng%29-Jjamesryan-annually.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 17,
+      "word": "attach",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-attach.wav",
+          "details": "|a=Southern England",
+          "entry": "attach",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-attach.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/LL-Q1860_%28eng%29-Vealhurl-attach.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 20,
+      "word": "automotive",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-automotive.wav",
+          "details": "|a=Southern England",
+          "entry": "automotive",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-automotive.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/LL-Q1860_%28eng%29-Vealhurl-automotive.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 23,
+      "word": "backup",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-backup.wav",
+          "details": "|a=Southern England",
+          "entry": "backup",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-backup.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/LL-Q1860_%28eng%29-Vealhurl-backup.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 25,
+      "word": "basic",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "En-au-basic.ogg",
+          "details": "|a=AU",
+          "entry": "basic",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-basic.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/En-au-basic.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 27,
+      "word": "benchmark",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vininn126-benchmark.wav",
+          "details": "|a=US",
+          "entry": "benchmark",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-benchmark.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/LL-Q1860_%28eng%29-Vininn126-benchmark.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 31,
+      "word": "cancel",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "En-au-cancel.ogg",
+          "details": "|a=AU",
+          "entry": "cancel",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-cancel.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/En-au-cancel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 34,
+      "word": "cassette",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-cassette.wav",
+          "details": "|a=Southern England",
+          "entry": "cassette",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-cassette.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/LL-Q1860_%28eng%29-Vealhurl-cassette.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 36,
+      "word": "certify",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-certify.wav",
+          "details": "|a=Southern England",
+          "entry": "certify",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-certify.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/LL-Q1860_%28eng%29-Vealhurl-certify.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 44,
+      "word": "clean chamber",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 55,
+      "word": "contamination",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-contamination.wav",
+          "details": "|a=Southern England",
+          "entry": "contamination",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-contamination.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/LL-Q1860_%28eng%29-Vealhurl-contamination.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Simplificationalizer-contamination.wav",
+          "details": "|a=New Jersey",
+          "entry": "contamination",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Simplificationalizer-contamination.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/LL-Q1860_%28eng%29-Simplificationalizer-contamination.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 60,
+      "word": "customer",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-customer.wav",
+          "details": "|a=Southern England",
+          "entry": "customer",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-customer.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/LL-Q1860_%28eng%29-Vealhurl-customer.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 62,
+      "word": "cycle time",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "Cambridge",
+          "url": "https://dictionary.cambridge.org/pronunciation/english/cycle-time",
+          "kind": "dictionary_audio_page",
+          "status": "page_found_audio_not_downloaded"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "word": "data",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-au-data.ogg",
+          "details": "|a=AU!Australia",
+          "entry": "data",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-data.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/En-au-data.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-us-data1.ogg",
+          "details": "|a=US",
+          "entry": "data",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-data1.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/En-us-data1.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 3.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-us-data2.ogg",
+          "details": "|a=US,flapping|IPA=[ˈdæɾə]",
+          "entry": "data",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-data2.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/En-us-data2.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 3.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 70,
+      "word": "diffusion",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-diffusion.wav",
+          "details": "|a=Southern England",
+          "entry": "diffusion",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-diffusion.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/LL-Q1860_%28eng%29-Vealhurl-diffusion.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 74,
+      "word": "emergency stop",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 81,
+      "word": "etching",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Persent101-etching.wav",
+          "details": "|a=US",
+          "entry": "etching",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-etching.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LL-Q1860_%28eng%29-Persent101-etching.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 82,
+      "word": "EUV / extreme ultraviolet",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "HowToPronounce",
+          "url": "https://www.howtopronounce.com/euv",
+          "kind": "community_audio_page",
+          "status": "quality_review_needed_phonetic_text_suspicious"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "word": "focus",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-focus.wav",
+          "details": "|a=Southern England",
+          "entry": "focus",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-focus.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/LL-Q1860_%28eng%29-Vealhurl-focus.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Wodencafe-focus.wav",
+          "details": "|a=US",
+          "entry": "focus",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-focus.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/LL-Q1860_%28eng%29-Wodencafe-focus.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 96,
+      "word": "gloves",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Persent101-gloves.wav",
+          "details": "|a=US",
+          "entry": "gloves",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-gloves.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/LL-Q1860_%28eng%29-Persent101-gloves.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 101,
+      "word": "hard-disk",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-hard disk.wav",
+          "details": "|a=Southern England",
+          "entry": "hard disk",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-hard_disk.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/LL-Q1860_%28eng%29-Vealhurl-hard_disk.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 103,
+      "word": "helmet",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-helmet.wav",
+          "details": "|a=Southern England",
+          "entry": "helmet",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-helmet.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/LL-Q1860_%28eng%29-Vealhurl-helmet.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 108,
+      "word": "impact",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-impact (noun).wav",
+          "details": "|a=Southern England",
+          "entry": "impact",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-impact_(noun).wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/LL-Q1860_%28eng%29-Vealhurl-impact_%28noun%29.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-impact (verb).wav",
+          "details": "|a=Southern England",
+          "entry": "impact",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-impact_(verb).wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LL-Q1860_%28eng%29-Vealhurl-impact_%28verb%29.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 112,
+      "word": "inhibition",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-inhibition.wav",
+          "details": "|a=Southern England",
+          "entry": "inhibition",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-inhibition.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/LL-Q1860_%28eng%29-Vealhurl-inhibition.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 113,
+      "word": "input",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-I learned some phrases-input.wav",
+          "details": "|a=SSB|IPA=/ˈɪnpɵt/",
+          "entry": "input",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-I_learned_some_phrases-input.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/LL-Q1860_%28eng%29-I_learned_some_phrases-input.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 134,
+      "word": "lithography",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vininn126-lithography.wav",
+          "details": "|a=US",
+          "entry": "lithography",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-lithography.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/LL-Q1860_%28eng%29-Vininn126-lithography.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 136,
+      "word": "loading",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-au-loading.ogg",
+          "details": "|a=AU",
+          "entry": "loading",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-loading.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/En-au-loading.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 137,
+      "word": "lobby",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-lobby.wav",
+          "details": "|a=Southern England",
+          "entry": "lobby",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-lobby.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/LL-Q1860_%28eng%29-Vealhurl-lobby.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 140,
+      "word": "log sheet",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 146,
+      "word": "manufacture",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-manufacture.wav",
+          "details": "|a=Southern England",
+          "entry": "manufacture",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-manufacture.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/LL-Q1860_%28eng%29-Vealhurl-manufacture.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 150,
+      "word": "measure",
+      "reason": "license_or_attribution_review",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-I learned some phrases-measure.wav",
+          "details": "|a=UK",
+          "entry": "measure",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-I_learned_some_phrases-measure.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/LL-Q1860_%28eng%29-I_learned_some_phrases-measure.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-us-measure.ogg",
+          "details": "|a=US",
+          "entry": "measure",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-measure.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/En-us-measure.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "Public domain",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 155,
+      "word": "miss-operation",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "Koolearn",
+          "url": "https://www.koolearn.com/dict/wd_95555.html",
+          "kind": "dictionary_entry",
+          "status": "human_audio_not_confirmed"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "word": "monitor",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-monitor.wav",
+          "details": "|a=Southern England",
+          "entry": "monitor",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-monitor.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/LL-Q1860_%28eng%29-Vealhurl-monitor.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Wodencafe-monitor.wav",
+          "details": "|a=Texas",
+          "entry": "monitor",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-monitor.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/LL-Q1860_%28eng%29-Wodencafe-monitor.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 166,
+      "word": "off-line",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-offline.wav",
+          "details": "|a=Southern England",
+          "entry": "offline",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-offline.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/LL-Q1860_%28eng%29-Vealhurl-offline.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 167,
+      "word": "on time",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Flame, not lame-on time.wav",
+          "details": "|a=US",
+          "entry": "on time",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-on_time.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/LL-Q1860_%28eng%29-Flame%2C_not_lame-on_time.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 168,
+      "word": "on-line",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "En-us-online.ogg",
+          "details": "|a=California",
+          "entry": "online",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-online.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/En-us-online.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 3.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 170,
+      "word": "output",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-output.wav",
+          "details": "|a=Southern England",
+          "entry": "output",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-output.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/LL-Q1860_%28eng%29-Vealhurl-output.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 172,
+      "word": "over time",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-overtime.wav",
+          "entry": "overtime",
+          "details": "|a=Southern England",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-overtime.wav",
+          "status": "not_downloaded_not_listened_spelling_review_needed"
+        }
+      ],
+      "otherSources": [],
+      "note": "Vocabulary displays 'over time' but the meaning is working extra hours: dictionary headword 'overtime'. Original vocabulary unchanged."
+    },
+    {
+      "id": 179,
+      "word": "password",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-password.wav",
+          "details": "|a=Southern England",
+          "entry": "password",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-password.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LL-Q1860_%28eng%29-Vealhurl-password.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 180,
+      "word": "perfect",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "En-us-perfect-adj.ogg",
+          "details": "|a=GA",
+          "entry": "perfect",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-perfect-adj.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/En-us-perfect-adj.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 3.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-us-perfect-verb.ogg",
+          "details": "|a=US",
+          "entry": "perfect",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-perfect-verb.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/En-us-perfect-verb.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 3.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 186,
+      "word": "pod",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-pod.wav",
+          "details": "|a=Southern England",
+          "entry": "pod",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-pod.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/LL-Q1860_%28eng%29-Vealhurl-pod.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Wodencafe-pod.wav",
+          "details": "|a=US",
+          "entry": "pod",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-pod.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/LL-Q1860_%28eng%29-Wodencafe-pod.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 196,
+      "word": "preview",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-preview.wav",
+          "details": "|a=Southern England",
+          "entry": "preview",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-preview.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/LL-Q1860_%28eng%29-Vealhurl-preview.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 199,
+      "word": "priority",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-priority.wav",
+          "details": "|a=Southern England",
+          "entry": "priority",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-priority.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LL-Q1860_%28eng%29-Vealhurl-priority.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 208,
+      "word": "re-certify",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "Cambridge",
+          "url": "https://dictionary.cambridge.org/pronunciation/english/recertify",
+          "kind": "dictionary_audio_page",
+          "status": "page_found_audio_not_downloaded"
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "word": "record",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-us-record-noun.ogg",
+          "details": "|a=US",
+          "entry": "record",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-record-noun.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/En-us-record-noun.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "Public domain",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-us-record-verb.ogg",
+          "details": "|a=US|pos=verb",
+          "entry": "record",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-record-verb.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/En-us-record-verb.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "Public domain",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 214,
+      "word": "remind",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-remind.wav",
+          "details": "|a=Southern England",
+          "entry": "remind",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-remind.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/LL-Q1860_%28eng%29-Vealhurl-remind.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 218,
+      "word": "reset",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-reset1.wav",
+          "details": "|a=Southern England",
+          "entry": "reset",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-reset1.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/LL-Q1860_%28eng%29-Vealhurl-reset1.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-reset2.wav",
+          "details": "|a=Southern England",
+          "entry": "reset",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-reset2.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/LL-Q1860_%28eng%29-Vealhurl-reset2.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 223,
+      "word": "run-card",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 224,
+      "word": "S.O.P / Standard Operating Procedures",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "Cambridge",
+          "url": "https://dictionary.cambridge.org/us/pronunciation/english/standard-operating-procedure",
+          "kind": "dictionary_audio_page",
+          "status": "singular_form_not_exact_plural"
+        },
+        {
+          "provider": "Oxford",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/standard-operating-procedure",
+          "kind": "dictionary_entry",
+          "status": "singular_form_not_exact_plural"
+        }
+      ]
+    },
+    {
+      "id": 231,
+      "word": "select",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-select.wav",
+          "details": "|a=Southern England",
+          "entry": "select",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-select.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/LL-Q1860_%28eng%29-Vealhurl-select.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 232,
+      "word": "semiconductor",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-PRB-semiconductor.wav",
+          "details": "|a=London",
+          "entry": "semiconductor",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-PRB-semiconductor.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/LL-Q1860_%28eng%29-PRB-semiconductor.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 238,
+      "word": "skip",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-au-skip.ogg",
+          "details": "|a=AU",
+          "entry": "skip",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-skip.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/En-au-skip.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 239,
+      "word": "sorter",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-sorter.wav",
+          "details": "|a=Southern England",
+          "entry": "sorter",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-sorter.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/LL-Q1860_%28eng%29-Vealhurl-sorter.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 241,
+      "word": "Spec. / specification",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vininn126-specification.wav",
+          "details": "|a=US",
+          "entry": "specification",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vininn126-specification.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/LL-Q1860_%28eng%29-Vininn126-specification.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": [],
+      "note": "Candidate pronounces specification only, not the abbreviation Spec."
+    },
+    {
+      "id": 246,
+      "word": "standby",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-standby.wav",
+          "details": "|a=Southern England",
+          "entry": "standby",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-standby.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/LL-Q1860_%28eng%29-Vealhurl-standby.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-standby2.wav",
+          "details": "|a=Southern England",
+          "entry": "standby",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-standby2.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/LL-Q1860_%28eng%29-Vealhurl-standby2.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 251,
+      "word": "stocker",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-stocker.wav",
+          "details": "|a=Southern England",
+          "entry": "stocker",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-stocker.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/LL-Q1860_%28eng%29-Vealhurl-stocker.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 253,
+      "word": "super",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-uk-super-without-yod.ogg",
+          "details": "|a=RP|IPA=/ˈsuːpə/",
+          "entry": "super",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-uk-super-without-yod.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/En-uk-super-without-yod.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY 4.0",
+          "status": "reject_source_description_conflicts_with_filename"
+        },
+        {
+          "file": "En-ca-super.ogg",
+          "details": "|a=Canada",
+          "entry": "super",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-ca-super.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/En-ca-super.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY 2.5",
+          "status": "reject_speaker_not_identified"
+        },
+        {
+          "file": "en-au-super.ogg",
+          "details": "|a=AU",
+          "entry": "super",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-super.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/En-au-super.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        },
+        {
+          "file": "en-uk-super-with-yod.ogg",
+          "details": "|a=RP|IPA=/ˈsjuːpə/",
+          "entry": "super",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-uk-super-with-yod.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/En-uk-super-with-yod.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY 4.0",
+          "status": "reject_source_description_conflicts_with_filename"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 254,
+      "word": "super hot run",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 255,
+      "word": "supervisor",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-supervisor.wav",
+          "details": "|a=Southern England",
+          "entry": "supervisor",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-supervisor.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/LL-Q1860_%28eng%29-Vealhurl-supervisor.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 259,
+      "word": "tag",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "en-us-stag.ogg",
+          "details": "|a=US",
+          "entry": "tag",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-stag.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/En-us-stag.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "reject_word_mismatch_stag_not_tag"
+        },
+        {
+          "file": "En-au-tag.ogg",
+          "details": "|a=AU",
+          "entry": "tag",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-tag.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/En-au-tag.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 260,
+      "word": "take leave",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "YouGlish",
+          "url": "https://youglish.com/pronounce/take%20leave/english/uk",
+          "kind": "context_video",
+          "status": "not_isolated_word_audio"
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "word": "technician",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-technician.wav",
+          "details": "|a=Southern England",
+          "entry": "technician",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-technician.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/LL-Q1860_%28eng%29-Vealhurl-technician.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 266,
+      "word": "thickness",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Vealhurl-thickness.wav",
+          "details": "|a=Southern England",
+          "entry": "thickness",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Vealhurl-thickness.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/LL-Q1860_%28eng%29-Vealhurl-thickness.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 267,
+      "word": "thin film",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": [
+        {
+          "provider": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:En-au-thin-film_interference.ogg",
+          "kind": "longer_phrase",
+          "status": "contains_extra_word_requires_audio_review"
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "word": "trend",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-I learned some phrases-trend.wav",
+          "details": "|a=UK",
+          "entry": "trend",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-I_learned_some_phrases-trend.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/LL-Q1860_%28eng%29-I_learned_some_phrases-trend.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 275,
+      "word": "turn rate",
+      "reason": "filename_not_found",
+      "candidates": [],
+      "otherSources": []
+    },
+    {
+      "id": 276,
+      "word": "unload",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "En-au-unload.ogg",
+          "details": "|a=AU",
+          "entry": "unload",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:En-au-unload.ogg",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/En-au-unload.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC BY-SA 4.0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    },
+    {
+      "id": 278,
+      "word": "username",
+      "reason": "filename_not_found",
+      "candidates": [
+        {
+          "file": "LL-Q1860 (eng)-Flame, not lame-username.wav",
+          "details": "|a=US",
+          "entry": "username",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-username.wav",
+          "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/LL-Q1860_%28eng%29-Flame%2C_not_lame-username.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "license": "CC0",
+          "status": "not_downloaded_not_listened"
+        }
+      ],
+      "otherSources": []
+    }
+  ],
+  "installationRule": "US English human recordings only; no UK/AU/CA substitution."
+}
