@@ -3,6 +3,14 @@ name: Download US Example Word Audio
 on:
   workflow_dispatch:
     inputs:
+      source:
+        description: 'Human recording provider'
+        default: 'oxford'
+        required: true
+        type: choice
+        options:
+          - oxford
+          - wikimedia
       limit:
         description: 'Maximum missing words to check (0 = all)'
         default: '0'
@@ -32,13 +40,19 @@ jobs:
       - name: Install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Test exact word and US source validation
-        run: python -m unittest discover -s scripts -p test_example_audio.py
+        run: python -m unittest discover -s scripts -p 'test_example*.py'
       - name: Download missing example words
         id: collect
         continue-on-error: true
         env:
           WORD_LIMIT: ${{ inputs.limit }}
-        run: python -u scripts/fetch_example_audio.py --limit "$WORD_LIMIT"
+          AUDIO_SOURCE: ${{ inputs.source }}
+        run: |
+          if [ "$AUDIO_SOURCE" = 'wikimedia' ]; then
+            python -u scripts/fetch_example_commons.py --limit "$WORD_LIMIT"
+          else
+            python -u scripts/fetch_example_audio.py --limit "$WORD_LIMIT"
+          fi
       - name: Check JavaScript and report coverage
         run: |
           node --check audio-example/recordings.js

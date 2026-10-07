@@ -55,6 +55,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "according",
+    "filename": "according.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-according.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/En-us-according.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "according.ogg",
+    "originalSha256": "f244666507d9cb4478d0846ef681ee0224efc8ce1f3254456182d595ea07d27c",
+    "sha256": "22dd3a136471cbe5fd92ee126aaab3b09d1cf9cda68893f7985c6d3d8ba0af3b",
+    "duration": 0.812698,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "achieve",
     "filename": "achieve.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/achieve",
@@ -294,6 +309,21 @@
     "sha256": "c46ba0e5c5748093ac418918a6db2041038ab08570657d80a548bf5bff6d7617",
     "duration": 0.95229,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "analyze",
+    "filename": "analyze.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-analyze.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/En-us-analyze.ogg",
+    "accent": "US",
+    "artist": "தகவலுழவன்",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "originalFilename": "analyze.ogg",
+    "originalSha256": "8660995a3bc2f8c6bc90324318677adbb629337a94084260e4e23d38e33b3bf8",
+    "sha256": "1a4ff3f3e822e4ed589112c40b74b4dfa84a8dc39e313e249f34274aa4bfee05",
+    "duration": 1.565813,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "and",

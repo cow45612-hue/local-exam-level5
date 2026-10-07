@@ -580,6 +580,36 @@ function onInteractiveWordClick(word, el) {
 
   if (wordEl) wordEl.textContent = word;
   if (meaningEl) meaningEl.textContent = meaning;
+  const recording = HUMAN_RECORDINGS[word.toLowerCase()] || EXAMPLE_RECORDINGS[word.toLowerCase()];
+  let sourceEl = document.querySelector("#tsmc-breakdown-source");
+  if (!sourceEl && meaningEl) {
+    sourceEl = document.createElement("p");
+    sourceEl.id = "tsmc-breakdown-source";
+    meaningEl.insertAdjacentElement("afterend", sourceEl);
+  }
+  if (sourceEl) {
+    sourceEl.replaceChildren();
+    sourceEl.hidden = !recording?.page;
+    if (recording?.page) {
+      const sourceLink = document.createElement("a");
+      sourceLink.href = recording.page;
+      sourceLink.target = "_blank";
+      sourceLink.rel = "noopener noreferrer";
+      sourceLink.textContent = `美式真人錄音 · ${recording.artist} · 來源`;
+      sourceEl.appendChild(sourceLink);
+      if (recording.license) {
+        sourceEl.appendChild(document.createTextNode(` · ${recording.license}`));
+        if (recording.licenseUrl) {
+          const licenseLink = document.createElement("a");
+          licenseLink.href = recording.licenseUrl;
+          licenseLink.target = "_blank";
+          licenseLink.rel = "noopener noreferrer";
+          licenseLink.textContent = " 授權";
+          sourceEl.appendChild(licenseLink);
+        }
+      }
+    }
+  }
   if (box) box.hidden = false;
 
   // Speak the clicked word

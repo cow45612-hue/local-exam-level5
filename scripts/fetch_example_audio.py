@@ -85,7 +85,8 @@ def save(records, tokens, primary):
     ordered = [records[key] for key in sorted(records)]
     (OUT / 'sources.json').write_text(json.dumps(ordered, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     mapping = {key: {'file':'./audio-example/'+r['filename']+'?v='+r['sha256'][:12],
-                    'page':r['page'], 'accent':'US', 'artist':r['artist']} for key,r in records.items()}
+                    'page':r['page'], 'accent':'US', 'artist':r['artist'],
+                    'license':r.get('license', ''), 'licenseUrl':r.get('licenseUrl', '')} for key,r in records.items()}
     (OUT / 'recordings.js').write_text('window.EXAMPLE_RECORDINGS = '+json.dumps(mapping, ensure_ascii=False, indent=2)+';\n', encoding='utf-8')
     missing = sorted(tokens - primary - records.keys())
     (OUT / 'coverage.json').write_text(json.dumps({'tokenCount':len(tokens),
