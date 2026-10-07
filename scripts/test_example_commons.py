@@ -1,5 +1,5 @@
 import unittest
-from fetch_example_commons import exact_recording
+from fetch_example_commons import exact_recording, wiktionary_audio
 
 
 class CommonsExampleTests(unittest.TestCase):
@@ -18,6 +18,16 @@ class CommonsExampleTests(unittest.TestCase):
 
     def test_numbered_recording(self):
         self.assertTrue(exact_recording('do', 'File:En-us-do2.ogg', {}))
+
+    def test_english_section_and_us_label(self):
+        text = '==English==\n{{audio|en|LL-Q1860 (eng)-Alice-particles.wav|a=General American}}\n==French==\n{{audio|fr|French-particles.wav}}'
+        self.assertEqual(wiktionary_audio(text), [('File:LL-Q1860 (eng)-Alice-particles.wav', True)])
+
+    def test_lingua_libre_requires_us_proof(self):
+        title = 'File:LL-Q1860 (eng)-Alice-particles.wav'
+        self.assertFalse(exact_recording('particles', title, {}))
+        self.assertTrue(exact_recording('particles', title, {}, us_label=True))
+        self.assertFalse(exact_recording('particle', title, {}, us_label=True))
 
 
 if __name__ == '__main__':

@@ -1,5 +1,50 @@
 [
   {
+    "word": "119",
+    "artist": "hillaryhaggin",
+    "recordingId": "7630715",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/u/8/u8_10070458_39_3302999.mp3",
+    "spokenText": "119",
+    "page": "https://forvo.com/word/119/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "119.mp3",
+    "accent": "US",
+    "sha256": "12118035883d17720f49ed6c3ca23a3d091aba6e2333745cca7acbee48a78e51",
+    "duration": 1.462813,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
+    "word": "25",
+    "artist": "elliottdaniel",
+    "recordingId": "6072011",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/s/g/sg_9345251_39_284664.mp3",
+    "spokenText": "25",
+    "page": "https://forvo.com/word/25/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "25.mp3",
+    "accent": "US",
+    "sha256": "0eac8c5388c60837c8fae36528f69ee24a97cc970eba8e9fcc46e6c207d7c64a",
+    "duration": 0.783625,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
+    "word": "800",
+    "artist": "SeanMauch",
+    "recordingId": "3542182",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/l/e/le_9378780_39_375105.mp3",
+    "spokenText": "800",
+    "page": "https://forvo.com/word/800/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "800.mp3",
+    "accent": "US",
+    "sha256": "55f06edb91b9ee19867c0ffb4a26bad12b51cf649610dd816acaf95059fdaf8c",
+    "duration": 0.91425,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "a",
     "filename": "a.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/a_1",
@@ -335,6 +380,21 @@
     "sha256": "d505506420f28442d27a642834230f5204af1f02acc01b0ef081e3c28460f67d",
     "duration": 0.621882,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "anomalies",
+    "artist": "Siofra",
+    "recordingId": "1229984",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/m/c/mc_9144213_39_1409099_1156538.mp3",
+    "spokenText": "anomalies",
+    "page": "https://forvo.com/word/anomalies/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "anomalies.mp3",
+    "accent": "US",
+    "sha256": "dad871cdabe5ef808f9aee03fbce3ce32386f03c5c592fc28cf0f0690bd69343",
+    "duration": 1.35825,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "anomaly",
@@ -788,6 +848,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "booties",
+    "artist": "Rapunzel2011",
+    "recordingId": "1290288",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/g/v/gv_9160292_39_1571758_1290021.mp3",
+    "spokenText": "booties",
+    "page": "https://forvo.com/word/booties/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "booties.mp3",
+    "accent": "US",
+    "sha256": "ff1e388b0f06b73d4f54d6719b5525de1dba8464f5ab1fee52305056d99fba3f",
+    "duration": 1.959125,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "both",
     "filename": "both.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/both",
@@ -891,6 +966,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "cables",
+    "filename": "cables.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cable_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/cab/cable/cables__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "7fed8ceb535c44da5d2f47edf5f28ccc6ad23eb795b6aea214dd877426e5e6c5",
+    "duration": 0.88932,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "calibrate",
     "filename": "calibrate.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/calibrate",
@@ -983,6 +1069,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "cassettes",
+    "artist": "Slick",
+    "recordingId": "2276018",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/h/8/h8_9326074_39_2442808.mp3",
+    "spokenText": "cassettes",
+    "page": "https://forvo.com/word/cassettes/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "cassettes.mp3",
+    "accent": "US",
+    "sha256": "063ffce81965a848c648e3476273a790d491c994a72b1ed362df825521dec224",
+    "duration": 0.799625,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "cause",
     "filename": "cause.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cause_1",
@@ -1029,6 +1130,21 @@
     "sha256": "7f0213d1fbf9043f2c9eeee7430088dfd74584f65b776c3ee166753a2fb6ccf6",
     "duration": 1.100249,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "certified",
+    "artist": "JakSprats",
+    "recordingId": "21931",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/8/g/8g_8973812_39_33911_1.mp3",
+    "spokenText": "certified",
+    "page": "https://forvo.com/word/certified/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "certified.mp3",
+    "accent": "US",
+    "sha256": "a0d044105fd71bd08f7e5857b3ce5516d21658589c8aaaa8171eb665c7746327",
+    "duration": 1.79225,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "chamber",
@@ -1203,6 +1319,28 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "completes",
+    "filename": "completes.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complete_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/com/compl/completes__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "b086c8c66b2b116c0d9932c178888b25311543ab9a0e902a505a66ff31f1bb14",
+    "duration": 1.01381,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "completing",
+    "filename": "completing.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complete_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/c/com/compl/completing__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "53427acb449d5237da9f6e697ff3d749939c5d39f8951f58222f6a717dfad21e",
+    "duration": 0.95576,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "completion",
     "filename": "completion.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/completion",
@@ -1211,6 +1349,39 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "45b27aa64d25cd16eb59970e85898b6dc1c4fb3e1359e4b4e98cc51f1b624011",
     "duration": 0.998231,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "configuration",
+    "filename": "configuration.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/configuration",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/x/xco/xconf/xconfiguration__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "a853b0e98038d0994e5599b46fd984d84200d9e4103f0f8ca9a1b7de94b503c2",
+    "duration": 1.245374,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "confirmation",
+    "filename": "confirmation.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/confirmation",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/x/xco/xconf/xconfirmation__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "cad9963e34c740e8901719ac2ac4a8ad27048c85b3e3d7a2eed60b1afac0a39e",
+    "duration": 1.146689,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "connect",
+    "filename": "connect.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/connect",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/x/xco/xconn/xconnect__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "3b14cc2714af9e0f42ced59158eb3e1ff896642c58e1581c05d1ba4c6543ad8b",
+    "duration": 0.908685,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -1272,6 +1443,21 @@
     "sha256": "606f030ebe7258c094c0ee1c9114803d00087ba49cd47c64e6a4aefa6bb911ef",
     "duration": 1.227755,
     "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "conveys",
+    "artist": "Zuella",
+    "recordingId": "4380731",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/c/4/c4_9605925_39_4545483.mp3",
+    "spokenText": "conveys",
+    "page": "https://forvo.com/word/conveys/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "conveys.mp3",
+    "accent": "US",
+    "sha256": "72e685acccde22563f6f26c55d1ae32c4814344ebf1085191ed874c27a165895",
+    "duration": 0.783625,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "coordinate",
@@ -1484,6 +1670,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "dicing",
+    "filename": "dicing.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/dice_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/d/dic/dicin/dicing__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "bbcab709d5d2690de796223fc23c4ac5141372d9c1d2959ddea85e7f72f45655",
+    "duration": 0.90263,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "die",
     "filename": "die.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/die_1",
@@ -1569,6 +1766,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "0830f1e2bea720e485876f44108dd3c465b41dee75e2ff3732f4fd2e55a9d307",
     "duration": 1.106735,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "do",
+    "filename": "do.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/do1_1",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/d/do_/do__u/do__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "0220bb77e54a95e7ca141069dd772dc8252eb314b85d84344daaa2a973601311",
+    "duration": 0.58941,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -1760,6 +1968,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "896dff51733273c80fe57675d7a58b3d5873df7c9cdc54b54e06dfee1e70fd42",
     "duration": 1.071224,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "engineers",
+    "filename": "engineers.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/engineer_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/e/eng/engin/engineers__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "46527994043c08268f2821cbec9b59a9816c5758501d73f2135640e72e7fe569",
+    "duration": 1.091497,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -2155,6 +2374,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "forty-nine",
+    "artist": "wkshimself",
+    "recordingId": "3674624",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/5/j/5j_9043306_39_3938729.mp3",
+    "spokenText": "forty-nine",
+    "page": "https://forvo.com/word/forty-nine/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "forty-nine.mp3",
+    "accent": "US",
+    "sha256": "7b78ef6f7372378f1dbc8414665e2a34918f66b2421d27d74e605577ce96dbb6",
+    "duration": 0.888125,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "foup",
     "filename": "foup.mp3",
     "page": "https://commons.wikimedia.org/wiki/File:En-us-FOUP.ogg",
@@ -2229,6 +2463,17 @@
     "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
+    "word": "gauges",
+    "filename": "gauges.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/gauge_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/g/gau/gauge/gauges__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "1486d0ec68788f7a853dca1d1ea8da1d60131ece326ef91202373f1e0519e039",
+    "duration": 0.914172,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "give",
     "filename": "give.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/give_1",
@@ -2237,6 +2482,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "95f5f2aa0ff7a9fcd975e8349091e3dda252e37f3667b67935ef139cc89cf1df",
     "duration": 0.809796,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "glasses",
+    "filename": "glasses.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/glass_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/g/gla/glass/glasses__us_2.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "21ce69018ea35b092bd55f5db52bd0815abce9d94ca29d738a6ff5314326f1b1",
+    "duration": 1.060249,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -2293,6 +2549,21 @@
     "sha256": "34a1da46bac69c6aa782c4f119f50a014e10046a7bd302a92f06251e6463f0cc",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "guidelines",
+    "artist": "Slick",
+    "recordingId": "2687572",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/h/4/h4_9326074_39_497588.mp3",
+    "spokenText": "guidelines",
+    "page": "https://forvo.com/word/guidelines/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "guidelines.mp3",
+    "accent": "US",
+    "sha256": "8b0742c39300aac6dba377f776ed2b1ba04bcaf982df4cdda449863b0e3f2e65",
+    "duration": 0.851875,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "hallway",
@@ -2891,6 +3162,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "labeling",
+    "filename": "labeling.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/label_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/l/lab/label/labeling__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "5547f8ec046e6d53751383eb9799322c1725173437ef425c7d38df4d9f9892fc",
+    "duration": 0.94415,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "labor",
     "filename": "labor.mp3",
     "page": "https://commons.wikimedia.org/wiki/File:En-us-labor.ogg",
@@ -2915,6 +3197,22 @@
     "sha256": "5728969294350a375da544fe715fcd900432cb78edc691099da1651f7d69dfa0",
     "duration": 0.653061,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "lanes",
+    "filename": "lanes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-lanes.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/LL-Q1860_%28eng%29-Flame%2C_not_lame-lanes.wav",
+    "accent": "US",
+    "artist": "Speaker: Flame, not lame\nRecorder: Flame, not lame",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalFilename": "lanes.wav",
+    "originalSha256": "2a641ff01919ec8109634846d9cf6d48ec7a8216ca49e0c533d7e0902c1dcc45",
+    "sha256": "727f9bbf1643dcdbfed0d83d4e57f522a5a6fb977904f905143ab9d61426565c",
+    "duration": 0.978667,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened",
+    "wiktionaryUS": true
   },
   {
     "word": "laser",
@@ -3032,6 +3330,21 @@
     "sha256": "47f3531edfcb424d9d870a00feb1ebce9348423e25b66bf44904461aec81e8a2",
     "duration": 0.914286,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "lock-out",
+    "spokenText": "lock out",
+    "page": "https://forvo.com/word/lock_out/#en",
+    "artist": "anakat",
+    "recordingId": "40276",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/3/q/3q_8975595_39_74988.mp3",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "lock-out.mp3",
+    "accent": "US",
+    "sha256": "63fb76835bacb668a41e7851abb551f986af9746580cf21fd45719d91df04c77",
+    "duration": 1.348125,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "locked",
@@ -3214,6 +3527,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "f09f9bd15cd345b37441e36c341158f484a186fd3d6fc953d821f1105073fcc3",
     "duration": 1.018776,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "masks",
+    "filename": "masks.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mask_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/m/mas/masks/masks__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "b4cdfff24439e3b2e80a4cf94cc442ac45f9f6500bc228b094ea5a7d5bf36f26",
+    "duration": 1.0022,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -3546,6 +3870,19 @@
     "sha256": "e73660069fc8f132449b3c8ff0fef80c1be7da4c5a7e556b0486b19c24b02ac8",
     "duration": 0.757551,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "nitrile",
+    "spokenText": "nitrile",
+    "page": "https://www.merriam-webster.com/dictionary/nitrile",
+    "audioUrl": "https://media.merriam-webster.com/audio/prons/en/us/mp3/n/nitril01.mp3",
+    "observedLink": "https://www.merriam-webster.com/dictionary/nitrile?pronunciation&lang=en_us&dir=n&file=nitril01",
+    "filename": "nitrile.mp3",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "sha256": "686c734237f0b8e44d6f3eb205e22c10cedf004e7edb03a83418f2a72efff4f2",
+    "duration": 0.657052,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "nitrogen",
@@ -3956,6 +4293,36 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "parameters",
+    "artist": "katz0r",
+    "recordingId": "4813710",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/q/1/q1_9647445_39_330986.mp3",
+    "spokenText": "parameters",
+    "page": "https://forvo.com/word/parameters/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "parameters.mp3",
+    "accent": "US",
+    "sha256": "76b278ec5e14154eeb878eacdf4595bc4bae79d79fb3d7ccf208046f08cbd2ba",
+    "duration": 1.488938,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
+    "word": "particles",
+    "artist": "rdbedsole",
+    "recordingId": "1105548",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/u/m/um_8986237_39_1373154_1.mp3",
+    "spokenText": "particles",
+    "page": "https://forvo.com/word/particles/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "particles.mp3",
+    "accent": "US",
+    "sha256": "98b674357cade65a1c84fbdf4dba05495d1fe48d906df9df120ca777fc8635c3",
+    "duration": 0.731375,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "path",
     "filename": "path.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/path",
@@ -4002,6 +4369,32 @@
     "sha256": "3dd5212b2138900fcdc0c853e10d57e449743d8c838a902d1da466e2ce2efc0d",
     "duration": 1.28,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "photomask",
+    "spokenText": "photomask",
+    "page": "https://www.merriam-webster.com/dictionary/photomask",
+    "audioUrl": "https://media.merriam-webster.com/audio/prons/en/us/mp3/p/photom02.mp3",
+    "observedLink": "https://www.merriam-webster.com/dictionary/photomask?pronunciation&lang=en_us&dir=p&file=photom02",
+    "filename": "photomask.mp3",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "sha256": "5169f6a55f7bce5224ac2eaa0c3a3af4ec6cc9c950a7dc75614d6f6953928c64",
+    "duration": 0.820952,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
+    "word": "photoresist",
+    "spokenText": "photoresist",
+    "page": "https://www.merriam-webster.com/dictionary/photoresist",
+    "audioUrl": "https://media.merriam-webster.com/audio/prons/en/us/mp3/p/photor11.mp3",
+    "observedLink": "https://www.merriam-webster.com/dictionary/photoresist?pronunciation&lang=en_us&dir=p&file=photor11",
+    "filename": "photoresist.mp3",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "sha256": "eee2119e4c8cde98cfaa889e19e6587bd0fa567b844372c8e56dbf4db8e970ac",
+    "duration": 0.925533,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "physical",
@@ -4061,6 +4454,22 @@
     "sha256": "f858b9edbfcd8013ead2f1b4fc9e1fc7f6e87790cd5f36c120e1e89cd95e8a67",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "pods",
+    "filename": "pods.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-pods.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/LL-Q1860_%28eng%29-Wodencafe-pods.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalFilename": "pods.wav",
+    "originalSha256": "47e0794e59057986f72cb1ac04d6368cf741245ecba280dae3badffd0458ac23",
+    "sha256": "369a0685e3a1d53d64c7f4a1f5a448b23f39231d5ffb823c3ac65d573421d7e7",
+    "duration": 0.88,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened",
+    "wiktionaryUS": true
   },
   {
     "word": "points",
@@ -4137,6 +4546,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "predefined",
+    "artist": "petaluma",
+    "recordingId": "87541",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/v/m/vm_8979661_39_330962_1.mp3",
+    "spokenText": "predefined",
+    "page": "https://forvo.com/word/predefined/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "predefined.mp3",
+    "accent": "US",
+    "sha256": "21711609b11afce6dad1eae3156691b9c2c189b3f8bb029c3f5f5d5009565386",
+    "duration": 2.340875,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "pressing",
     "filename": "pressing.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pressing_1",
@@ -4201,6 +4625,21 @@
     "sha256": "ed240ea87bacbadb342f80b9cb6feb19537bb6fb6cbe469ce2f16c56dffa093e",
     "duration": 1.07102,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "procedures",
+    "artist": "evergreen",
+    "recordingId": "17280",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/w/9/w9_8972330_39_20083_1.mp3",
+    "spokenText": "procedures",
+    "page": "https://forvo.com/word/procedures/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "procedures.mp3",
+    "accent": "US",
+    "sha256": "0e083a0f970e30d1aedd9b7c7302f1490ef1c4358843010a2abfb18d35566f0c",
+    "duration": 1.4265,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "proceeding",
@@ -4313,6 +4752,22 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "protocols",
+    "filename": "protocols.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-protocols.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/LL-Q1860_%28eng%29-Wodencafe-protocols.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalFilename": "protocols.wav",
+    "originalSha256": "b302f6b94b73d6206ef4f6ef031db8c9bd1eb6bc4590f79c37b2aebf788a9839",
+    "sha256": "e03c47afb9cb6863f1526d882c8396ed7de0f2b5ce02e3da8aa66fa693845468",
+    "duration": 1.082667,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened",
+    "wiktionaryUS": true
+  },
+  {
     "word": "provide",
     "filename": "provide.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/provide",
@@ -4390,6 +4845,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "ramp-up",
+    "spokenText": "ramp up",
+    "page": "https://forvo.com/word/ramp_up/#en",
+    "artist": "elliottdaniel",
+    "recordingId": "5816452",
+    "audioUrl": "https://audio12.forvo.com/mp3/9345251/39/9345251_39_5892534.mp3",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "ramp-up.mp3",
+    "accent": "US",
+    "sha256": "8c75c73707babf03e5bea7e2c344ee067642c54ff0085945e26ff70711684d17",
+    "duration": 3.082438,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "raw",
     "filename": "raw.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/raw_1",
@@ -4465,6 +4935,21 @@
     "sha256": "a74bc56a6c5e3dc94a88505399d252957d5c4089fe84040f842e60a74e9c897f",
     "duration": 1.123265,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "recipes",
+    "artist": "Arn_Wendt",
+    "recordingId": "609818",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/z/n/zn_9028683_39_884574_1.mp3",
+    "spokenText": "recipes",
+    "page": "https://forvo.com/word/recipes/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "recipes.mp3",
+    "accent": "US",
+    "sha256": "a93b25ade2ecbd57a4680feac720bf837e4bf4c234170a892f80f5c5958317ea",
+    "duration": 1.750125,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "red",
@@ -4893,6 +5378,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "samples",
+    "filename": "samples.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sample_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sam/sampl/samples__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "84cf4edda925ae9f6a3b96cab1ca00af8148e29fcac0e8c5f8c6146944d48715",
+    "duration": 0.978027,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "sampling",
     "filename": "sampling.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sampling",
@@ -4923,6 +5419,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "65ef443aba6f60e147787dbcba196e1485ff4a4ed706b67b5c68d5e14e449cb3",
     "duration": 1.07102,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "scheduled",
+    "filename": "scheduled.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/schedule_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sch/sched/scheduled__us_2.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "3dbac4311b9d5eb70ae5037fdd1dbc876f448cda4edc238297a2f180a0f93a07",
+    "duration": 0.956236,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -5036,6 +5543,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "settings",
+    "artist": "npcarey",
+    "recordingId": "3360897",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/s/8/s8_9400416_39_387141.mp3",
+    "spokenText": "settings",
+    "page": "https://forvo.com/word/settings/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "settings.mp3",
+    "accent": "US",
+    "sha256": "a22f12e82857a7b2159cb16b2cbe26362949e4fbfb0b22200146290f4db3fef3",
+    "duration": 0.82575,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "severe",
     "filename": "severe.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/severe",
@@ -5112,6 +5634,19 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "signoff",
+    "spokenText": "sign off",
+    "page": "https://www.merriam-webster.com/dictionary/signoff",
+    "audioUrl": "https://media.merriam-webster.com/audio/prons/en/us/mp3/s/signif11.mp3",
+    "observedLink": "https://www.merriam-webster.com/dictionary/signoff?pronunciation&lang=en_us&dir=s&file=signif11",
+    "filename": "signoff.mp3",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "sha256": "35b022eff9cd0dd30640cad4d81292cbf4c6182f8375c11042af32a569810086",
+    "duration": 0.709478,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "silicon",
     "filename": "silicon.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/silicon",
@@ -5143,6 +5678,21 @@
     "sha256": "5f29a0580f5b9570d2d0e92e257d8f58948e4f6d4954a9dc231822a883ad1ae1",
     "duration": 0.992653,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "skills",
+    "artist": "jng52",
+    "recordingId": "1108302",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/u/3/u3_9125270_39_1374515_1.mp3",
+    "spokenText": "skills",
+    "page": "https://forvo.com/word/skills/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "skills.mp3",
+    "accent": "US",
+    "sha256": "2c66cf34ad1267ec1f7930b572c2119785d053d71f6a8cdb60fbaaec7d019567",
+    "duration": 0.91425,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "skipping",
@@ -5384,6 +5934,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "stepping",
+    "filename": "stepping.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/step_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/s/ste/stepp/stepping__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "2a985fd3940b9847a5ee644a4dd73308bd01cbfdb39710d08ad48c9e496da01f",
+    "duration": 0.839093,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "steps",
     "filename": "steps.mp3",
     "page": "https://commons.wikimedia.org/wiki/File:En-us-steps.ogg",
@@ -5417,6 +5978,28 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "e7fc932e68e09ae5974c16e46ed6e9aa3c528779232cf2cd71f6f2e5874c3dcb",
     "duration": 1.018776,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "stored",
+    "filename": "stored.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/store_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sto/store/stored__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "9c9f5e5c929f886aff37b6093145fe74e9f82b25f263fe873ab9474652c41d99",
+    "duration": 0.857098,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "stores",
+    "filename": "stores.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/store_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/sto/store/stores__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "c663bec0a20122cb6b12129d4867dda78979ce9345d5fa26963093dd515e4641",
+    "duration": 0.921519,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -5508,6 +6091,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "swabs",
+    "filename": "swabs.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/swab_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/s/swa/swabs/swabs__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "84f26a674fd1d49c093cc1cf50aca520c732444f0853f351bda1b76515b5c677",
+    "duration": 0.907823,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "take",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
     "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tak/take_/take__us_1.mp3",
@@ -5540,6 +6134,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "tanks",
+    "filename": "tanks.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tank_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tan/tanks/tanks__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "2ad7776250049ac7b4ac97327b7a8907bb9649b47f09ead92bd78338b46e3c77",
+    "duration": 0.716349,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "task",
     "filename": "task.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/task_1",
@@ -5548,6 +6153,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "1285ca93c2b97d36aee6bea62ee1948efcb962dcd394b71d6ce1d63d7049da75",
     "duration": 0.914286,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "tasks",
+    "filename": "tasks.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/task_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tas/tasks/tasks__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "fc42f4610dbf9e71695f1ea7f009a58404242e0127131cb3e353bd97bed6eb27",
+    "duration": 0.855238,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -5560,6 +6176,47 @@
     "sha256": "6cbcbb67f47cfdcf228e664513fce36503dc6873f49242f069fd4230d02980f4",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "tears",
+    "filename": "tears.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tear1_1",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tea/tears/tears__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "2172b0aac0099e10418eba74c11f153b6ec607e8bd2eb3dc5e7a8f24d50598fc",
+    "duration": 0.741678,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "technicians",
+    "artist": "quartsize",
+    "recordingId": "5811563",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/r/w/rw_9842259_39_5888655.mp3",
+    "spokenText": "technicians",
+    "page": "https://forvo.com/word/technicians/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "technicians.mp3",
+    "accent": "US",
+    "sha256": "d0ddd275b9a439555dc7125a509c4804c4c73361c5e74ad53215fc633d0556eb",
+    "duration": 0.992625,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
+    "word": "temperatures",
+    "artist": "soondoobuu",
+    "recordingId": "1187516",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/z/o/zo_9138903_39_1190113_1015431.mp3",
+    "spokenText": "temperatures",
+    "page": "https://forvo.com/word/temperatures/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "temperatures.mp3",
+    "accent": "US",
+    "sha256": "da95ede0904de2328f2028b0194057beed42c4fa2fd4b02d4d46d7e56e02aa10",
+    "duration": 0.835875,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "terminal",
@@ -5748,6 +6405,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "tools",
+    "filename": "tools.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tool_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/too/tools/tools__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "8c4e43e6e8b7688d7a924f0f715b0f67bd1f4f715f1164ab1e7b40cb2e0a6caf",
+    "duration": 0.78093,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "total",
     "filename": "total.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/total_1",
@@ -5801,6 +6469,21 @@
     "sha256": "f788fada977d361afd0f03f2d6ec8b9fe6952a8a0de36e64c6c6b7ae2a67cb9a",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "transactions",
+    "artist": "Will_Chicago_USA",
+    "recordingId": "4632546",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/9/1/91_9392067_39_20356.mp3",
+    "spokenText": "transactions",
+    "page": "https://forvo.com/word/transactions/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "transactions.mp3",
+    "accent": "US",
+    "sha256": "3f6505f3154040cfdfdbcb6f7ce3e149fc903ecddf4900ab89392edcdebe7443",
+    "duration": 1.776313,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "transfer",
@@ -5866,6 +6549,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "b906066d0129328e4c647a071ec0e27b4408c16f91d62706cc6c322260294c66",
     "duration": 0.888163,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "tripped",
+    "filename": "tripped.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/trip_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tri/tripp/tripped__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "f77e4c1274a8f657a065ce126d187e99cebc8698ed2d5f88780a8542cbdace92",
+    "duration": 0.711179,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -6089,6 +6783,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "values",
+    "filename": "values.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/value_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/v/val/value/values__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "f1a239885db8c0154b279b59bd2f012e0c8b1822d6c052ae43325855c3954a34",
+    "duration": 0.878798,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "verify",
     "filename": "verify.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/verify",
@@ -6119,6 +6824,17 @@
     "artist": "Oxford Learners Dictionaries",
     "sha256": "e3356b90b9376c3993f683301bff11f51d0933f3258a9711745a6081bbb88197",
     "duration": 0.862041,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "viewing",
+    "filename": "viewing.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/view_2",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/v/vie/viewi/viewing__us_2.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "9b6777db2de4801910be11255d4e5307357c1333479fab6dba150267d2a4e931",
+    "duration": 0.734989,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
@@ -6172,6 +6888,21 @@
     "sha256": "da6c824ffdef0dd691d2ce95222638c32a833b73807e9ed5e7be76158df46336",
     "duration": 0.862041,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "wands",
+    "artist": "avlor",
+    "recordingId": "5910658",
+    "audioUrl": "https://audio12.forvo.com/audios/mp3/d/q/dq_9217346_39_5953823.mp3",
+    "spokenText": "wands",
+    "page": "https://forvo.com/word/wands/",
+    "speakerLocation": "United States",
+    "language": "English",
+    "filename": "wands.mp3",
+    "accent": "US",
+    "sha256": "ee55e8c0f30d28109cd10fe7a92c9de6fcaff33e3a811202fb4be6306a732092",
+    "duration": 0.70525,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
   },
   {
     "word": "waste",

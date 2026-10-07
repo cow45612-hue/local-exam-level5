@@ -22,6 +22,20 @@ class ExampleAudioTests(unittest.TestCase):
         url = 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/d/dou/doubl/double_check_1_us_1.mp3'
         self.assertEqual(collector.exact_audio('double-check', [url]), url)
 
+    def test_x_prefix_requires_matching_headword(self):
+        url = 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/x/xco/xconf/xconfiguration__us_1.mp3'
+        self.assertIsNone(collector.exact_audio('configuration', [url]))
+        self.assertEqual(collector.exact_audio('configuration', [url], {'configuration'}), url)
+        self.assertIsNone(collector.exact_audio('configuration', [url], {'configure'}))
+
+    def test_numbered_entries_are_checked(self):
+        self.assertIn('do_1', collector.entry_candidates('do'))
+
+    def test_parse_headword_ignores_homonym_number(self):
+        parser = collector.AudioParser('https://www.oxfordlearnersdictionaries.com')
+        parser.feed('<h1 class="headword">do<span class="hm">1</span></h1>')
+        self.assertEqual(parser.headwords, {'do'})
+
 
 if __name__ == '__main__':
     unittest.main()

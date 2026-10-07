@@ -1,4 +1,28 @@
 window.EXAMPLE_RECORDINGS = {
+  "119": {
+    "file": "./audio-example/119.mp3?v=12118035883d",
+    "page": "https://forvo.com/word/119/",
+    "accent": "US",
+    "artist": "hillaryhaggin",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "25": {
+    "file": "./audio-example/25.mp3?v=0eac8c5388c6",
+    "page": "https://forvo.com/word/25/",
+    "accent": "US",
+    "artist": "elliottdaniel",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "800": {
+    "file": "./audio-example/800.mp3?v=55f06edb91b9",
+    "page": "https://forvo.com/word/800/",
+    "accent": "US",
+    "artist": "SeanMauch",
+    "license": "",
+    "licenseUrl": ""
+  },
   "a": {
     "file": "./audio-example/a.mp3?v=1e2f71199a42",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/a_1",
@@ -236,6 +260,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/and",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "anomalies": {
+    "file": "./audio-example/anomalies.mp3?v=dad871cdabe5",
+    "page": "https://forvo.com/word/anomalies/",
+    "accent": "US",
+    "artist": "Siofra",
     "license": "",
     "licenseUrl": ""
   },
@@ -567,6 +599,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "booties": {
+    "file": "./audio-example/booties.mp3?v=ff1e388b0f06",
+    "page": "https://forvo.com/word/booties/",
+    "accent": "US",
+    "artist": "Rapunzel2011",
+    "license": "",
+    "licenseUrl": ""
+  },
   "both": {
     "file": "./audio-example/both.mp3?v=8131a46ab760",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/both",
@@ -574,6 +614,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "boxes": {
+    "file": "./audio-example/boxes.mp3?v=974246db9b67",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-boxes.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "bring": {
     "file": "./audio-example/bring.mp3?v=73f8cfa7583c",
@@ -631,6 +679,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "cables": {
+    "file": "./audio-example/cables.mp3?v=7fed8ceb535c",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cable_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "calibrate": {
     "file": "./audio-example/calibrate.mp3?v=3161fb9b8836",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/calibrate",
@@ -679,11 +735,27 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "carts": {
+    "file": "./audio-example/carts.mp3?v=adec846e087c",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-carts.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "case": {
     "file": "./audio-example/case.mp3?v=b1f17e280884",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/case_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "cassettes": {
+    "file": "./audio-example/cassettes.mp3?v=063ffce81965",
+    "page": "https://forvo.com/word/cassettes/",
+    "accent": "US",
+    "artist": "Slick",
     "license": "",
     "licenseUrl": ""
   },
@@ -694,6 +766,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "causes": {
+    "file": "./audio-example/causes.mp3?v=f9c7662578a3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-causes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "caution": {
     "file": "./audio-example/caution.mp3?v=3d769217a589",
@@ -708,6 +788,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/celebrated",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "certified": {
+    "file": "./audio-example/certified.mp3?v=a0d044105fd7",
+    "page": "https://forvo.com/word/certified/",
+    "accent": "US",
+    "artist": "JakSprats",
     "license": "",
     "licenseUrl": ""
   },
@@ -742,6 +830,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "chemicals": {
+    "file": "./audio-example/chemicals.mp3?v=c334631ff24a",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-chemicals.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "chips": {
+    "file": "./audio-example/chips.mp3?v=505109a0ecaf",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-chips.ogg",
+    "accent": "US",
+    "artist": "BirdHopper",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "chuck": {
     "file": "./audio-example/chuck.mp3?v=c3625f199dfd",
@@ -815,11 +919,91 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "completes": {
+    "file": "./audio-example/completes.mp3?v=b086c8c66b2b",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complete_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "completing": {
+    "file": "./audio-example/completing.mp3?v=53427acb449d",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complete_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "completion": {
     "file": "./audio-example/completion.mp3?v=45b27aa64d25",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/completion",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "configuration": {
+    "file": "./audio-example/configuration.mp3?v=a853b0e98038",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/configuration",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "confirmation": {
+    "file": "./audio-example/confirmation.mp3?v=cad9963e34c7",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/confirmation",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "connect": {
+    "file": "./audio-example/connect.mp3?v=3b14cc2714af",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/connect",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "contact": {
+    "file": "./audio-example/contact.mp3?v=25dc0bdfb7dd",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-contact.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "containers": {
+    "file": "./audio-example/containers.mp3?v=c8b8dcb51659",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-containers.oga",
+    "accent": "US",
+    "artist": "Paul2520",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "contains": {
+    "file": "./audio-example/contains.mp3?v=11eb5d2db594",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-contains.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "continuous": {
+    "file": "./audio-example/continuous.mp3?v=606f030ebe72",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-continuous.ogg",
+    "accent": "US",
+    "artist": "No machine-readable author provided. TheDaveRoss assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "conveys": {
+    "file": "./audio-example/conveys.mp3?v=72e685acccde",
+    "page": "https://forvo.com/word/conveys/",
+    "accent": "US",
+    "artist": "Zuella",
     "license": "",
     "licenseUrl": ""
   },
@@ -871,6 +1055,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "damaged": {
+    "file": "./audio-example/damaged.mp3?v=ef392f24d206",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-damaged.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "day": {
     "file": "./audio-example/day.mp3?v=c3688420adc5",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/day",
@@ -886,6 +1078,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "degrees": {
+    "file": "./audio-example/degrees.mp3?v=6a594abf209f",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-degrees.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "demands": {
+    "file": "./audio-example/demands.mp3?v=10eac444d104",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-demands.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "department": {
     "file": "./audio-example/department.mp3?v=e2e43ab2c8bf",
@@ -938,6 +1146,14 @@ window.EXAMPLE_RECORDINGS = {
   "detection": {
     "file": "./audio-example/detection.mp3?v=a3c9ca7b0ed1",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/detection",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "dicing": {
+    "file": "./audio-example/dicing.mp3?v=bbcab709d5d2",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/dice_2",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -1002,6 +1218,14 @@ window.EXAMPLE_RECORDINGS = {
   "distributing": {
     "file": "./audio-example/distributing.mp3?v=0830f1e2bea7",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/distribute",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "do": {
+    "file": "./audio-example/do.mp3?v=0220bb77e54a",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/do1_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -1095,6 +1319,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "edges": {
+    "file": "./audio-example/edges.mp3?v=9bbd0f9db69a",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-edges.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "elevator": {
     "file": "./audio-example/elevator.mp3?v=5e5c9f5e3746",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/elevator",
@@ -1135,6 +1367,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "engineers": {
+    "file": "./audio-example/engineers.mp3?v=46527994043c",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/engineer_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "ensure": {
     "file": "./audio-example/ensure.mp3?v=8b4c4d716ef9",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ensure",
@@ -1166,6 +1406,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "equals": {
+    "file": "./audio-example/equals.mp3?v=5c9414a16199",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-equals.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "ergonomic": {
     "file": "./audio-example/ergonomic.mp3?v=77a55661ccce",
@@ -1311,6 +1559,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "files": {
+    "file": "./audio-example/files.mp3?v=7af6e91e4c85",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-files.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "film": {
     "file": "./audio-example/film.mp3?v=fa37af2a93ff",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
@@ -1399,6 +1655,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "forty-nine": {
+    "file": "./audio-example/forty-nine.mp3?v=7b78ef6f7372",
+    "page": "https://forvo.com/word/forty-nine/",
+    "accent": "US",
+    "artist": "wkshimself",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "foup": {
+    "file": "./audio-example/foup.mp3?v=8e2f52d7e6d8",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-FOUP.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
   "freezes": {
     "file": "./audio-example/freezes.mp3?v=bbb6ee99ac11",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/freeze_1",
@@ -1431,9 +1703,33 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "garments": {
+    "file": "./audio-example/garments.mp3?v=776b03c6a63a",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-garments.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "gauges": {
+    "file": "./audio-example/gauges.mp3?v=1486d0ec6878",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/gauge_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "give": {
     "file": "./audio-example/give.mp3?v=95f5f2aa0ff7",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/give_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "glasses": {
+    "file": "./audio-example/glasses.mp3?v=21ce69018ea3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/glass_2",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -1479,6 +1775,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "guidelines": {
+    "file": "./audio-example/guidelines.mp3?v=8b0742c39300",
+    "page": "https://forvo.com/word/guidelines/",
+    "accent": "US",
+    "artist": "Slick",
+    "license": "",
+    "licenseUrl": ""
+  },
   "hallway": {
     "file": "./audio-example/hallway.mp3?v=88acf800d016",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/hallway",
@@ -1503,6 +1807,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "hands": {
+    "file": "./audio-example/hands.mp3?v=0fc970d00e75",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hands.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "has": {
     "file": "./audio-example/has.mp3?v=eb62569dd2f3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/has",
@@ -1526,6 +1838,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "highest": {
+    "file": "./audio-example/highest.mp3?v=ac2a812ca375",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-highest.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "his": {
     "file": "./audio-example/his.mp3?v=24e49b8938d0",
@@ -1591,6 +1911,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "hours": {
+    "file": "./audio-example/hours.mp3?v=da8196f64986",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hours.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "humidity": {
     "file": "./audio-example/humidity.mp3?v=22f151926702",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/humidity",
@@ -1598,6 +1926,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "hundreds": {
+    "file": "./audio-example/hundreds.mp3?v=f4a74543a736",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hundreds.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "id": {
     "file": "./audio-example/id.mp3?v=fd9bb589be92",
@@ -1703,6 +2039,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "instructions": {
+    "file": "./audio-example/instructions.mp3?v=60a3d88d0ed9",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-instructions.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "insulating": {
     "file": "./audio-example/insulating.mp3?v=3a41c9e9cd8e",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/insulating",
@@ -1783,6 +2127,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "issues": {
+    "file": "./audio-example/issues.mp3?v=b58eb6022acb",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-issues.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "it": {
     "file": "./audio-example/it.mp3?v=4c39456d62b8",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/it_1",
@@ -1847,6 +2199,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "labeling": {
+    "file": "./audio-example/labeling.mp3?v=5547f8ec046e",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/label_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "labor": {
+    "file": "./audio-example/labor.mp3?v=e6874b45a5c5",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-labor.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "lamp": {
     "file": "./audio-example/lamp.mp3?v=572896929435",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lamp",
@@ -1854,6 +2222,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "lanes": {
+    "file": "./audio-example/lanes.mp3?v=727f9bbf1643",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Flame,_not_lame-lanes.wav",
+    "accent": "US",
+    "artist": "Speaker: Flame, not lame\nRecorder: Flame, not lame",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   },
   "laser": {
     "file": "./audio-example/laser.mp3?v=4bbcf813ddca",
@@ -1870,6 +2246,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "layers": {
+    "file": "./audio-example/layers.mp3?v=2d467ea22dfe",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-layers.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "leak": {
     "file": "./audio-example/leak.mp3?v=4a56437c39ba",
@@ -1911,11 +2295,27 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "lights": {
+    "file": "./audio-example/lights.mp3?v=6d6cec7ed0a9",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-lights.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "local": {
     "file": "./audio-example/local.mp3?v=47f3531edfcb",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/local_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "lock-out": {
+    "file": "./audio-example/lock-out.mp3?v=63fb76835bac",
+    "page": "https://forvo.com/word/lock_out/#en",
+    "accent": "US",
+    "artist": "anakat",
     "license": "",
     "licenseUrl": ""
   },
@@ -1943,6 +2343,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "logs": {
+    "file": "./audio-example/logs.mp3?v=c505fdf998f1",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-logs.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "look": {
     "file": "./audio-example/look.mp3?v=f8df57c29a6f",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/look_1",
@@ -1958,6 +2366,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "lots": {
+    "file": "./audio-example/lots.mp3?v=1f112cad2255",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-lots.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "loud": {
     "file": "./audio-example/loud.mp3?v=937ef01b8de5",
@@ -2031,6 +2447,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "masks": {
+    "file": "./audio-example/masks.mp3?v=b4cdfff24439",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mask_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "master": {
     "file": "./audio-example/master.mp3?v=386ef6dcc870",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/master_1",
@@ -2038,6 +2462,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "matches": {
+    "file": "./audio-example/matches.mp3?v=bb84cfd0b687",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-matches.ogg",
+    "accent": "US",
+    "artist": "Persent101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "maximum": {
     "file": "./audio-example/maximum.mp3?v=72207c7c56ea",
@@ -2070,6 +2502,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "meetings": {
+    "file": "./audio-example/meetings.mp3?v=3f691e970758",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-meetings.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "menu": {
     "file": "./audio-example/menu.mp3?v=b7cfd121371f",
@@ -2118,6 +2558,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "minutes": {
+    "file": "./audio-example/minutes.mp3?v=2ee44db80d42",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-minutes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "mode": {
     "file": "./audio-example/mode.mp3?v=5e8116946d2e",
@@ -2236,6 +2684,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/night",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "nitrile": {
+    "file": "./audio-example/nitrile.mp3?v=686c734237f0",
+    "page": "https://www.merriam-webster.com/dictionary/nitrile",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
     "license": "",
     "licenseUrl": ""
   },
@@ -2455,6 +2911,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "others": {
+    "file": "./audio-example/others.mp3?v=735cfb65fc4a",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-others.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "our": {
     "file": "./audio-example/our.mp3?v=fcb19472617e",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/our",
@@ -2527,6 +2991,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "parameters": {
+    "file": "./audio-example/parameters.mp3?v=76b278ec5e14",
+    "page": "https://forvo.com/word/parameters/",
+    "accent": "US",
+    "artist": "katz0r",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "particles": {
+    "file": "./audio-example/particles.mp3?v=98b674357cad",
+    "page": "https://forvo.com/word/particles/",
+    "accent": "US",
+    "artist": "rdbedsole",
+    "license": "",
+    "licenseUrl": ""
+  },
   "path": {
     "file": "./audio-example/path.mp3?v=7418834ab230",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/path",
@@ -2534,6 +3014,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "patterns": {
+    "file": "./audio-example/patterns.mp3?v=29a312a55f96",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-patterns.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "perform": {
     "file": "./audio-example/perform.mp3?v=088f49759bcb",
@@ -2548,6 +3036,22 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/english/periodically",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "photomask": {
+    "file": "./audio-example/photomask.mp3?v=5169f6a55f7b",
+    "page": "https://www.merriam-webster.com/dictionary/photomask",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "photoresist": {
+    "file": "./audio-example/photoresist.mp3?v=eee2119e4c8c",
+    "page": "https://www.merriam-webster.com/dictionary/photoresist",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
     "license": "",
     "licenseUrl": ""
   },
@@ -2567,6 +3071,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "pipes": {
+    "file": "./audio-example/pipes.mp3?v=c65eadec5df4",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-pipes.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "plasma": {
     "file": "./audio-example/plasma.mp3?v=4c1c0294200b",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plasma",
@@ -2582,6 +3094,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "pods": {
+    "file": "./audio-example/pods.mp3?v=369a0685e3a1",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-pods.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "points": {
+    "file": "./audio-example/points.mp3?v=ecfdb8aa6391",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-points.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "policy": {
     "file": "./audio-example/policy.mp3?v=70cc1d49194b",
@@ -2599,6 +3127,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "posted": {
+    "file": "./audio-example/posted.mp3?v=4082fe8a9783",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-posted.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "pouring": {
     "file": "./audio-example/pouring.mp3?v=23e8e95e4551",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pour",
@@ -2612,6 +3148,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/precise",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "predefined": {
+    "file": "./audio-example/predefined.mp3?v=21711609b11a",
+    "page": "https://forvo.com/word/predefined/",
+    "accent": "US",
+    "artist": "petaluma",
     "license": "",
     "licenseUrl": ""
   },
@@ -2660,6 +3204,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/procedure",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "procedures": {
+    "file": "./audio-example/procedures.mp3?v=0e083a0f970e",
+    "page": "https://forvo.com/word/procedures/",
+    "accent": "US",
+    "artist": "evergreen",
     "license": "",
     "licenseUrl": ""
   },
@@ -2742,6 +3294,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "protocols": {
+    "file": "./audio-example/protocols.mp3?v=e03c47afb9cb",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-protocols.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   },
   "provide": {
     "file": "./audio-example/provide.mp3?v=378ceb7e764c",
@@ -2855,6 +3415,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "recipes": {
+    "file": "./audio-example/recipes.mp3?v=a93b25ade2ec",
+    "page": "https://forvo.com/word/recipes/",
+    "accent": "US",
+    "artist": "Arn_Wendt",
+    "license": "",
+    "licenseUrl": ""
+  },
   "red": {
     "file": "./audio-example/red.mp3?v=fa6931e13fc6",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/red_1",
@@ -2886,6 +3454,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "regulations": {
+    "file": "./audio-example/regulations.mp3?v=3ef37463884c",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-regulations.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "remarks": {
+    "file": "./audio-example/remarks.mp3?v=9393652b7a1c",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-remarks.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "remember": {
     "file": "./audio-example/remember.mp3?v=ad4567644dae",
@@ -2966,6 +3550,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "resulted": {
+    "file": "./audio-example/resulted.mp3?v=91e241a8ccaf",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-resulted.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "results": {
+    "file": "./audio-example/results.mp3?v=029bcbc35c1c",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-results.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "returned": {
     "file": "./audio-example/returned.mp3?v=a8a10af7b00e",
@@ -3063,6 +3663,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "rules": {
+    "file": "./audio-example/rules.mp3?v=c5ab7aa97ed8",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-rules.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "runs": {
     "file": "./audio-example/runs.mp3?v=e7cb438bf000",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/run_1",
@@ -3111,6 +3719,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "samples": {
+    "file": "./audio-example/samples.mp3?v=84cf4edda925",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sample_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "sampling": {
     "file": "./audio-example/sampling.mp3?v=e666c3a75558",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sampling",
@@ -3130,6 +3746,14 @@ window.EXAMPLE_RECORDINGS = {
   "scans": {
     "file": "./audio-example/scans.mp3?v=65ef443aba6f",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/scan_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "scheduled": {
+    "file": "./audio-example/scheduled.mp3?v=3dbac4311b9d",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/schedule_2",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -3215,6 +3839,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "settings": {
+    "file": "./audio-example/settings.mp3?v=a22f12e82857",
+    "page": "https://forvo.com/word/settings/",
+    "accent": "US",
+    "artist": "npcarey",
+    "license": "",
+    "licenseUrl": ""
+  },
   "severe": {
     "file": "./audio-example/severe.mp3?v=9c8e8ffde300",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/severe",
@@ -3271,6 +3903,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "signoff": {
+    "file": "./audio-example/signoff.mp3?v=35b022eff9cd",
+    "page": "https://www.merriam-webster.com/dictionary/signoff",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "license": "",
+    "licenseUrl": ""
+  },
   "silicon": {
     "file": "./audio-example/silicon.mp3?v=9afd5fa3ff41",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/silicon",
@@ -3292,6 +3932,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/skill",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "skills": {
+    "file": "./audio-example/skills.mp3?v=2c66cf34ad12",
+    "page": "https://forvo.com/word/skills/",
+    "accent": "US",
+    "artist": "jng52",
     "license": "",
     "licenseUrl": ""
   },
@@ -3359,6 +4007,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "sounded": {
+    "file": "./audio-example/sounded.mp3?v=a77960356529",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-sounded.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "spare": {
     "file": "./audio-example/spare.mp3?v=eb3eb9b0a25b",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/spare_1",
@@ -3390,6 +4046,14 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "specified": {
+    "file": "./audio-example/specified.mp3?v=a534b6fda536",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-specified.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
   "specifies": {
     "file": "./audio-example/specifies.mp3?v=b1247650f480",
@@ -3447,6 +4111,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "stepping": {
+    "file": "./audio-example/stepping.mp3?v=2a985fd3940b",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/step_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "steps": {
+    "file": "./audio-example/steps.mp3?v=5f5a01952910",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-steps.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "stop": {
     "file": "./audio-example/stop.mp3?v=81e7c1189145",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop",
@@ -3458,6 +4138,22 @@ window.EXAMPLE_RECORDINGS = {
   "store": {
     "file": "./audio-example/store.mp3?v=e7fc932e68e0",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/store_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "stored": {
+    "file": "./audio-example/stored.mp3?v=9c9f5e5c929f",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/store_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "stores": {
+    "file": "./audio-example/stores.mp3?v=c663bec0a201",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/store_2",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -3527,6 +4223,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "swabs": {
+    "file": "./audio-example/swabs.mp3?v=84f26a674fd1",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/swab_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "take": {
     "file": "./audio-example/take.mp3?v=4284792ad7ac",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
@@ -3551,9 +4255,25 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "tanks": {
+    "file": "./audio-example/tanks.mp3?v=2ad777625004",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tank_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "task": {
     "file": "./audio-example/task.mp3?v=1285ca93c2b9",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/task_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "tasks": {
+    "file": "./audio-example/tasks.mp3?v=fc42f4610dbf",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/task_2",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
     "license": "",
@@ -3564,6 +4284,30 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/team_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "tears": {
+    "file": "./audio-example/tears.mp3?v=2172b0aac009",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tear1_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "technicians": {
+    "file": "./audio-example/technicians.mp3?v=d0ddd275b9a4",
+    "page": "https://forvo.com/word/technicians/",
+    "accent": "US",
+    "artist": "quartsize",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "temperatures": {
+    "file": "./audio-example/temperatures.mp3?v=da95ede0904d",
+    "page": "https://forvo.com/word/temperatures/",
+    "accent": "US",
+    "artist": "soondoobuu",
     "license": "",
     "licenseUrl": ""
   },
@@ -3703,6 +4447,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "tools": {
+    "file": "./audio-example/tools.mp3?v=8c4e43e6e8b7",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tool_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "total": {
     "file": "./audio-example/total.mp3?v=62a4343c37c1",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/total_1",
@@ -3740,6 +4492,14 @@ window.EXAMPLE_RECORDINGS = {
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/trainer",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "transactions": {
+    "file": "./audio-example/transactions.mp3?v=3f6505f31540",
+    "page": "https://forvo.com/word/transactions/",
+    "accent": "US",
+    "artist": "Will_Chicago_USA",
     "license": "",
     "licenseUrl": ""
   },
@@ -3791,6 +4551,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "tripped": {
+    "file": "./audio-example/tripped.mp3?v=f77e4c1274a8",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/trip_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "tubes": {
+    "file": "./audio-example/tubes.mp3?v=d9b1efbb6738",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-tubes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "turn": {
     "file": "./audio-example/turn.mp3?v=cfd26aac814b",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
@@ -3806,6 +4582,22 @@ window.EXAMPLE_RECORDINGS = {
     "artist": "Oxford Learners Dictionaries",
     "license": "",
     "licenseUrl": ""
+  },
+  "twenty-five": {
+    "file": "./audio-example/twenty-five.mp3?v=6a7a0ae010e1",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-five.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "twenty-four": {
+    "file": "./audio-example/twenty-four.mp3?v=4f0f768f1a76",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-four.ogg",
+    "accent": "US",
+    "artist": "Steve Shives",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   },
   "two": {
     "file": "./audio-example/two.mp3?v=b2d27f58dd03",
@@ -3919,6 +4711,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "values": {
+    "file": "./audio-example/values.mp3?v=f1a239885db8",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/value_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
   "verify": {
     "file": "./audio-example/verify.mp3?v=3d9a02566a1c",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/verify",
@@ -3943,6 +4743,22 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "viewing": {
+    "file": "./audio-example/viewing.mp3?v=9b6777db2de4",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/view_2",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "visitors": {
+    "file": "./audio-example/visitors.mp3?v=ee7a5add6af3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-visitors.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
   "visual": {
     "file": "./audio-example/visual.mp3?v=18777bdc728e",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/visual_1",
@@ -3951,11 +4767,27 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "wafers": {
+    "file": "./audio-example/wafers.mp3?v=7f4381a94634",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-wafers.ogg",
+    "accent": "US",
+    "artist": "BirdHopper",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
   "wait": {
     "file": "./audio-example/wait.mp3?v=da6c824ffdef",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wait_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "wands": {
+    "file": "./audio-example/wands.mp3?v=ee55e8c0f30d",
+    "page": "https://forvo.com/word/wands/",
+    "accent": "US",
+    "artist": "avlor",
     "license": "",
     "licenseUrl": ""
   },
@@ -4143,396 +4975,12 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "boxes": {
-    "file": "./audio-example/boxes.mp3?v=974246db9b67",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-boxes.ogg",
+  "ramp-up": {
+    "file": "./audio-example/ramp-up.mp3?v=8c75c73707ba",
+    "page": "https://forvo.com/word/ramp_up/#en",
     "accent": "US",
-    "artist": "TreeMama",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "carts": {
-    "file": "./audio-example/carts.mp3?v=adec846e087c",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-carts.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "causes": {
-    "file": "./audio-example/causes.mp3?v=f9c7662578a3",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-causes.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "chemicals": {
-    "file": "./audio-example/chemicals.mp3?v=c334631ff24a",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-chemicals.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "chips": {
-    "file": "./audio-example/chips.mp3?v=505109a0ecaf",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-chips.ogg",
-    "accent": "US",
-    "artist": "BirdHopper",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-  },
-  "contact": {
-    "file": "./audio-example/contact.mp3?v=25dc0bdfb7dd",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-contact.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "containers": {
-    "file": "./audio-example/containers.mp3?v=c8b8dcb51659",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-containers.oga",
-    "accent": "US",
-    "artist": "Paul2520",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-  },
-  "contains": {
-    "file": "./audio-example/contains.mp3?v=11eb5d2db594",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-contains.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "continuous": {
-    "file": "./audio-example/continuous.mp3?v=606f030ebe72",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-continuous.ogg",
-    "accent": "US",
-    "artist": "No machine-readable author provided. TheDaveRoss assumed (based on copyright claims).",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "damaged": {
-    "file": "./audio-example/damaged.mp3?v=ef392f24d206",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-damaged.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "degrees": {
-    "file": "./audio-example/degrees.mp3?v=6a594abf209f",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-degrees.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "demands": {
-    "file": "./audio-example/demands.mp3?v=10eac444d104",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-demands.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "edges": {
-    "file": "./audio-example/edges.mp3?v=9bbd0f9db69a",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-edges.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "equals": {
-    "file": "./audio-example/equals.mp3?v=5c9414a16199",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-equals.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "files": {
-    "file": "./audio-example/files.mp3?v=7af6e91e4c85",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-files.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "foup": {
-    "file": "./audio-example/foup.mp3?v=8e2f52d7e6d8",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-FOUP.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "Public domain",
+    "artist": "elliottdaniel",
+    "license": "",
     "licenseUrl": ""
-  },
-  "garments": {
-    "file": "./audio-example/garments.mp3?v=776b03c6a63a",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-garments.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "hands": {
-    "file": "./audio-example/hands.mp3?v=0fc970d00e75",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-hands.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "highest": {
-    "file": "./audio-example/highest.mp3?v=ac2a812ca375",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-highest.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "hours": {
-    "file": "./audio-example/hours.mp3?v=da8196f64986",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-hours.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "hundreds": {
-    "file": "./audio-example/hundreds.mp3?v=f4a74543a736",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-hundreds.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "instructions": {
-    "file": "./audio-example/instructions.mp3?v=60a3d88d0ed9",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-instructions.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "issues": {
-    "file": "./audio-example/issues.mp3?v=b58eb6022acb",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-issues.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "labor": {
-    "file": "./audio-example/labor.mp3?v=e6874b45a5c5",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-labor.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "layers": {
-    "file": "./audio-example/layers.mp3?v=2d467ea22dfe",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-layers.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "lights": {
-    "file": "./audio-example/lights.mp3?v=6d6cec7ed0a9",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-lights.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "logs": {
-    "file": "./audio-example/logs.mp3?v=c505fdf998f1",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-logs.ogg",
-    "accent": "US",
-    "artist": "TreeMama",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "lots": {
-    "file": "./audio-example/lots.mp3?v=1f112cad2255",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-lots.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "matches": {
-    "file": "./audio-example/matches.mp3?v=bb84cfd0b687",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-matches.ogg",
-    "accent": "US",
-    "artist": "Persent101",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-  },
-  "meetings": {
-    "file": "./audio-example/meetings.mp3?v=3f691e970758",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-meetings.ogg",
-    "accent": "US",
-    "artist": "TreeMama",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "minutes": {
-    "file": "./audio-example/minutes.mp3?v=2ee44db80d42",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-minutes.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "others": {
-    "file": "./audio-example/others.mp3?v=735cfb65fc4a",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-others.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "patterns": {
-    "file": "./audio-example/patterns.mp3?v=29a312a55f96",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-patterns.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "pipes": {
-    "file": "./audio-example/pipes.mp3?v=c65eadec5df4",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-pipes.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "points": {
-    "file": "./audio-example/points.mp3?v=ecfdb8aa6391",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-points.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "posted": {
-    "file": "./audio-example/posted.mp3?v=4082fe8a9783",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-posted.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "regulations": {
-    "file": "./audio-example/regulations.mp3?v=3ef37463884c",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-regulations.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "remarks": {
-    "file": "./audio-example/remarks.mp3?v=9393652b7a1c",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-remarks.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "resulted": {
-    "file": "./audio-example/resulted.mp3?v=91e241a8ccaf",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-resulted.ogg",
-    "accent": "US",
-    "artist": "Neskaya",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "results": {
-    "file": "./audio-example/results.mp3?v=029bcbc35c1c",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-results.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "rules": {
-    "file": "./audio-example/rules.mp3?v=c5ab7aa97ed8",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-rules.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "sounded": {
-    "file": "./audio-example/sounded.mp3?v=a77960356529",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-sounded.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "specified": {
-    "file": "./audio-example/specified.mp3?v=a534b6fda536",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-specified.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "steps": {
-    "file": "./audio-example/steps.mp3?v=5f5a01952910",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-steps.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "tubes": {
-    "file": "./audio-example/tubes.mp3?v=d9b1efbb6738",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-tubes.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "twenty-five": {
-    "file": "./audio-example/twenty-five.mp3?v=6a7a0ae010e1",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-five.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "twenty-four": {
-    "file": "./audio-example/twenty-four.mp3?v=4f0f768f1a76",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-four.ogg",
-    "accent": "US",
-    "artist": "Steve Shives",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-  },
-  "visitors": {
-    "file": "./audio-example/visitors.mp3?v=ee7a5add6af3",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-visitors.ogg",
-    "accent": "US",
-    "artist": "Dvortygirl",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  "wafers": {
-    "file": "./audio-example/wafers.mp3?v=7f4381a94634",
-    "page": "https://commons.wikimedia.org/wiki/File:En-us-wafers.ogg",
-    "accent": "US",
-    "artist": "BirdHopper",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   }
 };

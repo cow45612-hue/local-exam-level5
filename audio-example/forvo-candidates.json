@@ -1,0 +1,30 @@
+{
+  "speakerLocation": "United States",
+  "language": "English",
+  "verification": "Exact pronunciation title and United States speaker label inspected in browser",
+  "recordings": [
+    {"word":"particles","artist":"rdbedsole","recordingId":"1105548","audioUrl":"https://audio12.forvo.com/audios/mp3/u/m/um_8986237_39_1373154_1.mp3"},
+    {"word":"parameters","artist":"katz0r","recordingId":"4813710","audioUrl":"https://audio12.forvo.com/audios/mp3/q/1/q1_9647445_39_330986.mp3"},
+    {"word":"anomalies","artist":"Siofra","recordingId":"1229984","audioUrl":"https://audio12.forvo.com/audios/mp3/m/c/mc_9144213_39_1409099_1156538.mp3"},
+    {"word":"booties","artist":"Rapunzel2011","recordingId":"1290288","audioUrl":"https://audio12.forvo.com/audios/mp3/g/v/gv_9160292_39_1571758_1290021.mp3"},
+    {"word":"cassettes","artist":"Slick","recordingId":"2276018","audioUrl":"https://audio12.forvo.com/audios/mp3/h/8/h8_9326074_39_2442808.mp3"},
+    {"word":"certified","artist":"JakSprats","recordingId":"21931","audioUrl":"https://audio12.forvo.com/audios/mp3/8/g/8g_8973812_39_33911_1.mp3"},
+    {"word":"conveys","artist":"Zuella","recordingId":"4380731","audioUrl":"https://audio12.forvo.com/audios/mp3/c/4/c4_9605925_39_4545483.mp3"},
+    {"word":"guidelines","artist":"Slick","recordingId":"2687572","audioUrl":"https://audio12.forvo.com/audios/mp3/h/4/h4_9326074_39_497588.mp3"},
+    {"word":"predefined","artist":"petaluma","recordingId":"87541","audioUrl":"https://audio12.forvo.com/audios/mp3/v/m/vm_8979661_39_330962_1.mp3"},
+    {"word":"procedures","artist":"evergreen","recordingId":"17280","audioUrl":"https://audio12.forvo.com/audios/mp3/w/9/w9_8972330_39_20083_1.mp3"},
+    {"word":"recipes","artist":"Arn_Wendt","recordingId":"609818","audioUrl":"https://audio12.forvo.com/audios/mp3/z/n/zn_9028683_39_884574_1.mp3"},
+    {"word":"settings","artist":"npcarey","recordingId":"3360897","audioUrl":"https://audio12.forvo.com/audios/mp3/s/8/s8_9400416_39_387141.mp3"},
+    {"word":"skills","artist":"jng52","recordingId":"1108302","audioUrl":"https://audio12.forvo.com/audios/mp3/u/3/u3_9125270_39_1374515_1.mp3"},
+    {"word":"technicians","artist":"quartsize","recordingId":"5811563","audioUrl":"https://audio12.forvo.com/audios/mp3/r/w/rw_9842259_39_5888655.mp3"},
+    {"word":"temperatures","artist":"soondoobuu","recordingId":"1187516","audioUrl":"https://audio12.forvo.com/audios/mp3/z/o/zo_9138903_39_1190113_1015431.mp3"},
+    {"word":"transactions","artist":"Will_Chicago_USA","recordingId":"4632546","audioUrl":"https://audio12.forvo.com/audios/mp3/9/1/91_9392067_39_20356.mp3"},
+    {"word":"wands","artist":"avlor","recordingId":"5910658","audioUrl":"https://audio12.forvo.com/audios/mp3/d/q/dq_9217346_39_5953823.mp3"},
+    {"word":"119","artist":"hillaryhaggin","recordingId":"7630715","audioUrl":"https://audio12.forvo.com/audios/mp3/u/8/u8_10070458_39_3302999.mp3"},
+    {"word":"25","artist":"elliottdaniel","recordingId":"6072011","audioUrl":"https://audio12.forvo.com/audios/mp3/s/g/sg_9345251_39_284664.mp3"},
+    {"word":"800","artist":"SeanMauch","recordingId":"3542182","audioUrl":"https://audio12.forvo.com/audios/mp3/l/e/le_9378780_39_375105.mp3"},
+    {"word":"forty-nine","artist":"wkshimself","recordingId":"3674624","audioUrl":"https://audio12.forvo.com/audios/mp3/5/j/5j_9043306_39_3938729.mp3"},
+    {"word":"lock-out","spokenText":"lock out","page":"https://forvo.com/word/lock_out/#en","artist":"anakat","recordingId":"40276","audioUrl":"https://audio12.forvo.com/audios/mp3/3/q/3q_8975595_39_74988.mp3"},
+    {"word":"ramp-up","spokenText":"ramp up","page":"https://forvo.com/word/ramp_up/#en","artist":"elliottdaniel","recordingId":"5816452","audioUrl":"https://audio12.forvo.com/mp3/9345251/39/9345251_39_5892534.mp3"}
+  ]
+}

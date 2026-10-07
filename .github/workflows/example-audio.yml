@@ -11,6 +11,8 @@ on:
         options:
           - oxford
           - wikimedia
+          - wiktionary
+          - curated
       limit:
         description: 'Maximum missing words to check (0 = all)'
         default: '0'
@@ -48,7 +50,11 @@ jobs:
           WORD_LIMIT: ${{ inputs.limit }}
           AUDIO_SOURCE: ${{ inputs.source }}
         run: |
-          if [ "$AUDIO_SOURCE" = 'wikimedia' ]; then
+          if [ "$AUDIO_SOURCE" = 'curated' ]; then
+            python -u scripts/install_example_candidates.py
+          elif [ "$AUDIO_SOURCE" = 'wiktionary' ]; then
+            python -u scripts/fetch_example_commons.py --wiktionary --limit "$WORD_LIMIT"
+          elif [ "$AUDIO_SOURCE" = 'wikimedia' ]; then
             python -u scripts/fetch_example_commons.py --limit "$WORD_LIMIT"
           else
             python -u scripts/fetch_example_audio.py --limit "$WORD_LIMIT"

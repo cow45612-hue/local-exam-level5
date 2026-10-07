@@ -23,7 +23,7 @@ def clicked_tokens(words):
             for token in re.findall(r"[a-zA-Z0-9'-]+", word.get(field, ''))}
 
 
-def exact_audio(word, sources):
+def exact_audio(word, sources, headwords=()):
     normalized = re.sub(r'[^a-z0-9]', '', word.lower())
     for source in sources:
         parsed = urllib.parse.urlparse(source)
@@ -31,7 +31,8 @@ def exact_audio(word, sources):
             continue
         name = urllib.parse.unquote(Path(parsed.path).name)
         prefix = re.split(r'_+(?:\d+_)?us_', name)[0]
-        if re.sub(r'[^a-z0-9]', '', prefix.lower()) == normalized:
+        recorded = re.sub(r'[^a-z0-9]', '', prefix.lower())
+        if recorded == normalized or (recorded == 'x' + normalized and word.lower() in headwords):
             return source
     return None
 
@@ -41,11 +42,24 @@ class AudioParser(HTMLParser):
         super().__init__()
         self.page = page
         self.sources = []
+        self.headwords = set()
+        self.headword_text = None
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'h1' and 'headword' in attrs.get('class', '').split():
+            self.headword_text = ''
         source = attrs.get('data-src-mp3', '')
         if source:
             self.sources.append(urllib.parse.urljoin(self.page, source))
+
+    def handle_data(self, data):
+        if self.headword_text is not None:
+            self.headword_text += data
+
+    def handle_endtag(self, tag):
+        if tag == 'h1' and self.headword_text is not None:
+            self.headwords.add(re.sub(r'\d+$', '', self.headword_text.strip()).lower())
+            self.headword_text = None
 
 
 def entry_candidates(word):
@@ -65,7 +79,8 @@ def entry_candidates(word):
             result.extend([stem + 'e', stem])
             if len(stem) > 2 and stem[-1] == stem[-2]:
                 result.append(stem[:-1])
-    return list(dict.fromkeys(result))
+    base = list(dict.fromkeys(result))
+    return base + [entry + suffix for entry in base for suffix in ('_1', '_2')]
 
 
 def fetch(url):
@@ -134,15 +149,15 @@ def main():
                     raw, actual_page = fetch(page)
                     parser = AudioParser(actual_page)
                     parser.feed(raw.decode('utf-8'))
-                    cache[page] = (parser.sources, actual_page)
+                    cache[page] = (parser.sources, actual_page, parser.headwords)
                 except (urllib.error.URLError, TimeoutError) as error:
-                    cache[page] = ([], page)
+                    cache[page] = ([], page, set())
                     if isinstance(error, urllib.error.HTTPError) and error.code in (403,429):
                         print('SOURCE_BLOCKED', error.code, word, flush=True)
                         save(records, tokens, primary)
                         raise SystemExit(2)
-            sources, actual_page = cache[page]
-            audio = exact_audio(word, sources)
+            sources, actual_page, headwords = cache[page]
+            audio = exact_audio(word, sources, headwords)
             if audio:
                 page = actual_page
                 break

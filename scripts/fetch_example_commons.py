@@ -11,17 +11,29 @@ import download_human_audio as commons
 import fetch_example_audio as examples
 
 
-def exact_recording(word, title, metadata):
+def exact_recording(word, title, metadata, us_label=False):
     pattern = r'^File:En-(us-)?' + re.escape(word) + r'(?:[2-9]|-[12])?\.(?:ogg|oga|wav)$'
     match = re.fullmatch(pattern, title, re.IGNORECASE)
-    if not match:
+    libre = re.fullmatch(r'File:LL-Q1860 \(eng\)-.+-' + re.escape(word) + r'\.(wav|ogg)', title, re.IGNORECASE)
+    if not match and not libre:
         return False
     details = ' '.join(commons.plain(metadata.get(key, {}).get('value', ''))
                        for key in ('Categories', 'ImageDescription')).lower()
     if any(text in details for text in ('text-to-speech', 'synthetic', 'computer-generated')):
         return False
-    return bool(match[1]) or any(text in details for text in
+    return us_label or bool(match and match[1]) or any(text in details for text in
                                 ('u.s. english pronunciation', 'united states english', 'general american'))
+
+
+def wiktionary_audio(text):
+    section = re.search(r'^==English==\s*\n(.*?)(?=^==[^=].*?==\s*$|\Z)', text, re.MULTILINE | re.DOTALL)
+    if not section:
+        return []
+    result = []
+    for filename, label in re.findall(r'\{\{audio\|en\|([^|}\n]+)([^}\n]*)\}\}', section[1]):
+        us = bool(re.search(r'general american|\bUS\b|\bUSA\b|\bGA\b|united states', label, re.IGNORECASE))
+        result.append(('File:' + filename.strip(), us))
+    return result
 
 
 def query(parameters):
@@ -33,6 +45,7 @@ def query(parameters):
 def main():
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument('--limit', type=int, default=0)
+    cli.add_argument('--wiktionary', action='store_true')
     args = cli.parse_args()
     vocabulary = json.loads((examples.ROOT / 'tsmc-vocabulary.json').read_text(encoding='utf-8'))
     tokens = examples.clicked_tokens(vocabulary)
@@ -43,19 +56,28 @@ def main():
     missing = sorted(tokens - primary - records.keys())
     if args.limit:
         missing = missing[:args.limit]
-    catalog_path = examples.OUT / 'commons-catalog.json'
+    catalog_path = examples.OUT / ('wiktionary-catalog.json' if args.wiktionary else 'commons-catalog.json')
     catalog = json.loads(catalog_path.read_text(encoding='utf-8')) if catalog_path.exists() else {}
     for index, word in enumerate(missing):
         if word not in catalog:
-            titles = ['File:En-' + prefix + word + suffix + extension
-                      for prefix in ('us-', '') for suffix in ('', '2')
-                      for extension in ('.ogg', '.wav')]
-            data = query({'titles': '|'.join(titles)})
-            pages = data.get('query', {}).get('pages', [])
-            if not any(p.get('imageinfo') for p in pages):
-                search = query({'generator': 'search', 'gsrnamespace': 6, 'gsrlimit': 10,
-                                'gsrsearch': 'intitle:"En-us-' + word + '"'})
-                pages += search.get('query', {}).get('pages', [])
+            if args.wiktionary:
+                wikitext = json.loads(commons.fetch('https://en.wiktionary.org/w/api.php?' + urlencode({
+                    'action': 'parse', 'page': word, 'prop': 'wikitext', 'format': 'json'})))
+                labels = dict(wiktionary_audio(wikitext.get('parse', {}).get('wikitext', {}).get('*', '')))
+                data = query({'titles': '|'.join(labels)}) if labels else {}
+                pages = data.get('query', {}).get('pages', [])
+                for page in pages:
+                    page['wiktionaryUS'] = labels.get(page['title'], False)
+            else:
+                titles = ['File:En-' + prefix + word + suffix + extension
+                          for prefix in ('us-', '') for suffix in ('', '2')
+                          for extension in ('.ogg', '.wav')]
+                data = query({'titles': '|'.join(titles)})
+                pages = data.get('query', {}).get('pages', [])
+                if not any(p.get('imageinfo') for p in pages):
+                    search = query({'generator': 'search', 'gsrnamespace': 6, 'gsrlimit': 10,
+                                    'gsrsearch': 'intitle:"En-us-' + word + '"'})
+                    pages += search.get('query', {}).get('pages', [])
             catalog[word] = pages
             commons.atomic_json(catalog_path, catalog)
         installed = False
@@ -65,7 +87,7 @@ def main():
                 continue
             source = info[0]
             meta = source.get('extmetadata', {})
-            if not exact_recording(word, page['title'], meta):
+            if not exact_recording(word, page['title'], meta, page.get('wiktionaryUS', False)):
                 continue
             license_name = commons.plain(meta.get('LicenseShortName', {}).get('value', ''))
             artist = commons.recording_artist(meta)
@@ -94,7 +116,8 @@ def main():
                     'originalFilename': original.name,
                     'originalSha256': hashlib.sha256(raw).hexdigest(),
                     'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'duration': duration,
-                    'verification': 'Exact US word source and metadata checked; full audio decode passed; not individually listened'}
+                    'verification': 'Exact US word source and metadata checked; full audio decode passed; not individually listened',
+                    'wiktionaryUS': page.get('wiktionaryUS', False)}
                 examples.save(records, tokens, primary)
                 installed = True
                 print('OK', word, flush=True)
