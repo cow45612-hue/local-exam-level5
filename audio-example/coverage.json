@@ -1,7 +1,7 @@
 {
   "tokenCount": 914,
-  "availableCount": 892,
-  "exampleRecordingCount": 623,
+  "availableCount": 893,
+  "exampleRecordingCount": 624,
   "missing": [
     "angstroms",
     "badges",
@@ -20,7 +20,6 @@
     "tsmc",
     "tsmc's",
     "twelve-inch",
-    "ultra-pure",
     "wip",
     "workstations",
     "world-leading",

@@ -6673,6 +6673,19 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "ultra-pure",
+    "spokenText": "ultrapure",
+    "page": "https://www.merriam-webster.com/dictionary/ultra-pure",
+    "audioUrl": "https://media.merriam-webster.com/audio/prons/en/us/mp3/u/ultrapure_1.mp3",
+    "observedLink": "https://www.merriam-webster.com/dictionary/ultra-pure?pronunciation&lang=en_us&dir=u&file=ultrapure_1",
+    "filename": "ultra-pure.mp3",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "sha256": "a583fc639581db04604715c899c6faa14fa70692c6b8fc8475da67abc03b597b",
+    "duration": 1.207438,
+    "verification": "Headword and US pronunciation link checked in browser; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "unauthorized",
     "filename": "unauthorized.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/unauthorized",

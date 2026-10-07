@@ -3359,6 +3359,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "ramp-up": {
+    "file": "./audio-example/ramp-up.mp3?v=8c75c73707ba",
+    "page": "https://forvo.com/word/ramp_up/#en",
+    "accent": "US",
+    "artist": "elliottdaniel",
+    "license": "",
+    "licenseUrl": ""
+  },
   "raw": {
     "file": "./audio-example/raw.mp3?v=248847c4fc51",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/raw_1",
@@ -4975,11 +4983,11 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "ramp-up": {
-    "file": "./audio-example/ramp-up.mp3?v=8c75c73707ba",
-    "page": "https://forvo.com/word/ramp_up/#en",
+  "ultra-pure": {
+    "file": "./audio-example/ultra-pure.mp3?v=a583fc639581",
+    "page": "https://www.merriam-webster.com/dictionary/ultra-pure",
     "accent": "US",
-    "artist": "elliottdaniel",
+    "artist": "Merriam-Webster Dictionary",
     "license": "",
     "licenseUrl": ""
   }
