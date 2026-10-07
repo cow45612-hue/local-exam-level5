@@ -799,6 +799,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "boxes",
+    "filename": "boxes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-boxes.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/En-us-boxes.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "boxes.ogg",
+    "originalSha256": "d5c0d0a51f7bfa1e4c87eb58730db916d02ff27d6b2f13d52b70d4d32351c566",
+    "sha256": "974246db9b67a2a2c4fe01e608c5228a9b19989623853e21f5f72aa931e92c6b",
+    "duration": 1.38449,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "bring",
     "filename": "bring.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bring",
@@ -942,6 +957,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "carts",
+    "filename": "carts.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-carts.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/En-us-carts.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "carts.ogg",
+    "originalSha256": "6e854d90e1c66f09263f7e53b9997bf1c64cf40d3c181658d04ae2aab69d6776",
+    "sha256": "adec846e087c5d532018387819d43b78d4f389289b0883868e548eea9a44dc50",
+    "duration": 1.48898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "case",
     "filename": "case.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/case_1",
@@ -962,6 +992,21 @@
     "sha256": "9579f434c0a4ed9e52fded1bfb294f9f7a85a30ac9758b903146762e408336e8",
     "duration": 0.82483,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "causes",
+    "filename": "causes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-causes.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/En-us-causes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "causes.ogg",
+    "originalSha256": "e68978ce27aa31077bbfc3f5274293c8e1f0f7ae6cd8fa1d8ed9f73271e66fbd",
+    "sha256": "f9c7662578a3748a3c047f6eec4d52d66b589cd70a3f000fcd39bb0a4754680b",
+    "duration": 1.097143,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "caution",
@@ -1027,6 +1072,36 @@
     "sha256": "72f01a3321f3a5c134d3070196a4982bbbf96b621e9b004e11a85683a19c5779",
     "duration": 0.8861,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "chemicals",
+    "filename": "chemicals.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-chemicals.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/En-us-chemicals.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "chemicals.ogg",
+    "originalSha256": "3cbdc9d3acc49a1941dd817629293b68cd30c9464a329257955ae6662cd8e020",
+    "sha256": "c334631ff24a2d6ec268c78a6d1ea64869b700d4f18cc6d2500c4b31fb5a10a2",
+    "duration": 1.227755,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "chips",
+    "filename": "chips.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-chips.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/En-us-chips.ogg",
+    "accent": "US",
+    "artist": "BirdHopper",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalFilename": "chips.ogg",
+    "originalSha256": "a6d853e79479bba8c07f65a3cc56d20e9b186a8edd6678857b62e6c3410bb861",
+    "sha256": "505109a0ecafcdc60574b8bded5d3e69663be6732fae4b50d1cc9166b748bd2f",
+    "duration": 0.862041,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "chuck",
@@ -1139,6 +1214,66 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "contact",
+    "filename": "contact.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-contact.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/En-us-contact.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "contact.ogg",
+    "originalSha256": "e3bf0f5523075c0fa79caed6bbe20c0f0b64dd31c657c76bd7e9483aad34d4d2",
+    "sha256": "25dc0bdfb7dd8b0d81d8668308819a50033953e612cea96fca3e1980988c2979",
+    "duration": 0.862041,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "containers",
+    "filename": "containers.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-containers.oga",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/En-us-containers.oga",
+    "accent": "US",
+    "artist": "Paul2520",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalFilename": "containers.oga",
+    "originalSha256": "6fe8783b9e246f5c19714b72fc039b168b0200938dbd030eb950520b9f20f9fd",
+    "sha256": "c8b8dcb516596f8f5ed6523c526ee32d63532767694bc596b33a3e6c6da51009",
+    "duration": 1.044898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "contains",
+    "filename": "contains.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-contains.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/En-us-contains.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "contains.ogg",
+    "originalSha256": "ee54addfc05ffa6902b976487b3c98f12de12b05f2f874aae5b7caa4e10955b4",
+    "sha256": "11eb5d2db5941d91de5fe8c691c8ef7dfc6dcd2d8ae6772310feb17d4f3fcbbd",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "continuous",
+    "filename": "continuous.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-continuous.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/En-us-continuous.ogg",
+    "accent": "US",
+    "artist": "No machine-readable author provided. TheDaveRoss assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "continuous.ogg",
+    "originalSha256": "c5e4cc38d1eda5ad7dfe5f13889fc858c5f6242e7b12159dd07561986dd4f3c8",
+    "sha256": "606f030ebe7258c094c0ee1c9114803d00087ba49cd47c64e6a4aefa6bb911ef",
+    "duration": 1.227755,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "coordinate",
     "filename": "coordinate.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/coordinate_1",
@@ -1205,6 +1340,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "damaged",
+    "filename": "damaged.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-damaged.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/En-us-damaged.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "damaged.ogg",
+    "originalSha256": "8b61badd9fab0119ef68eb2f503d09a68de7d7a9ac0762ccd5d60ea95369d4df",
+    "sha256": "ef392f24d2064f7f2b37e7ddcee21d82320b7e19cdf099ab8aaff34e767bb1e4",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "day",
     "filename": "day.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/day",
@@ -1225,6 +1375,36 @@
     "sha256": "4536a615e653bcb3246c975174ef486996258e1be31617c70176249496fb5edc",
     "duration": 1.084671,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "degrees",
+    "filename": "degrees.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-degrees.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/En-us-degrees.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "degrees.ogg",
+    "originalSha256": "793c84d4ecf1b751646a4a64ea22905c347f05a7b54272cd5005c1d3c2830021",
+    "sha256": "6a594abf209f35f03e00cc3082d26fb94d963f0f106c08aff20324a7b6bff863",
+    "duration": 1.227755,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "demands",
+    "filename": "demands.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-demands.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/En-us-demands.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "demands.ogg",
+    "originalSha256": "62265bc86819e5a5ab05355bd8014554deaf16ccd38e245dcf9addc24d6a8f9a",
+    "sha256": "10eac444d1047ef424b43b49954f5080018c078bf0833990dad73caf21722b85",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "department",
@@ -1513,6 +1693,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "edges",
+    "filename": "edges.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-edges.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/En-us-edges.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "edges.ogg",
+    "originalSha256": "f58f9effe9553540046a7a5ae3bf08e2be5512b512467285fcbc5b29dbe3d91d",
+    "sha256": "9bbd0f9db69a46b9404923db18ed3d27d2657378329388ab95a755b84bd59b39",
+    "duration": 1.48898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "elevator",
     "filename": "elevator.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/elevator",
@@ -1610,6 +1805,21 @@
     "sha256": "20f96486f53dcbb4c6a5dc727b39c80caf991e18c323c9209978ac53298d03a9",
     "duration": 0.937778,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "equals",
+    "filename": "equals.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-equals.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/En-us-equals.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "equals.ogg",
+    "originalSha256": "2098b4961897d5a6fbd081d8c3ebabfa320a9d2b088d46048c81b1987dd33b4a",
+    "sha256": "5c9414a16199e080796d578a17de90d26bd5c26e942cc306878f51ac76226c0a",
+    "duration": 1.38449,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "ergonomic",
@@ -1810,6 +2020,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "files",
+    "filename": "files.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-files.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/En-us-files.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "files.ogg",
+    "originalSha256": "c8f74b7a0da92153d583b9175a51f3eab99c5e50b83eb44c0d95d4aaaa1c4b85",
+    "sha256": "7af6e91e4c85cf89001e2ad57ae8c629f30254324498de14e5246bf8c59c5f5f",
+    "duration": 1.149388,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "film",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
     "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/f/fil/film_/film__us_1.mp3",
@@ -1930,6 +2155,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "foup",
+    "filename": "foup.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-FOUP.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/En-us-FOUP.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "originalFilename": "foup.ogg",
+    "originalSha256": "3cd2843f281a21c80bc9ff756ba70f32d7dddae84d448ad7e7a340c490d703ad",
+    "sha256": "8e2f52d7e6d8d3b7f2a1a6dc6aa646b119db5d3044f89ce338e444e5b078dcc4",
+    "duration": 0.600816,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "freezes",
     "filename": "freezes.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/freeze_1",
@@ -1972,6 +2212,21 @@
     "sha256": "256e0b239be71374423993e94f1aadf849f36de36d154b89b6d347f2db1e8c20",
     "duration": 1.018776,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "garments",
+    "filename": "garments.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-garments.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/En-us-garments.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "garments.ogg",
+    "originalSha256": "d0d8dd792e9a643f69ef504ae04b5326091b51e38bb32fd3c3625ee5d3e201bd",
+    "sha256": "776b03c6a63a00b84e1afe5e54ed454a3b812795b766be3c69d28154c70230a2",
+    "duration": 1.201633,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "give",
@@ -2073,6 +2328,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "hands",
+    "filename": "hands.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hands.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/En-us-hands.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "hands.ogg",
+    "originalSha256": "4bd24e13be6a841c38b22fc30ea0fe2e34ec431be229fdb88929bad4c5036991",
+    "sha256": "0fc970d00e753218bbb5077671ab7d538e76af9a7609dbfbbbf0a9b98d0a4196",
+    "duration": 0.705306,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "has",
     "filename": "has.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/has",
@@ -2104,6 +2374,21 @@
     "sha256": "702446355b73d4d3d4a33e1e4c5e644b6784e8190cc20ed1f584218640d3ba8c",
     "duration": 0.835918,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "highest",
+    "filename": "highest.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-highest.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/En-us-highest.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "highest.ogg",
+    "originalSha256": "63794cb4b7899af8bc35b2412f02c17c1a8e7606ae902e8c6e93f36fa8a2570c",
+    "sha256": "ac2a812ca3757effbbd0cc307ce1d9dfe4a09247d4902cba0280052a3a01f740",
+    "duration": 0.888163,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "his",
@@ -2194,6 +2479,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "hours",
+    "filename": "hours.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hours.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/En-us-hours.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "hours.ogg",
+    "originalSha256": "73a4f44c45fe9cc56805437110b980e96a90a7eb418d7b9d287f5b87546e3681",
+    "sha256": "da8196f64986b8d71c25a49a5d5654230853fe272eb41ce3616e34b1fc429e88",
+    "duration": 0.835918,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "humidity",
     "filename": "humidity.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/humidity",
@@ -2203,6 +2503,21 @@
     "sha256": "22f151926702817e85ba2111c5206bc5e4f58a473c9eb47e72ec22657f7daed0",
     "duration": 0.966531,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "hundreds",
+    "filename": "hundreds.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-hundreds.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/En-us-hundreds.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "hundreds.ogg",
+    "originalSha256": "ce23e347a763b81ff447b2aa705a892f178e1b5998b1171c919fa579eb6089d9",
+    "sha256": "f4a74543a736b641464645c04576e7aad052d561b5f3afb1664166209f403fa1",
+    "duration": 0.914286,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "id",
@@ -2348,6 +2663,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "instructions",
+    "filename": "instructions.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-instructions.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-instructions.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "instructions.ogg",
+    "originalSha256": "d74e88f384f756e074490ac41837d674767b74f62f538b84f08bd4c2bf0cb68c",
+    "sha256": "60a3d88d0ed999b23c12521c6145f87d1235d68f16d530512255c8c453eca381",
+    "duration": 1.48898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "insulating",
     "filename": "insulating.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/insulating",
@@ -2458,6 +2788,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "issues",
+    "filename": "issues.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-issues.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/En-us-issues.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "issues.ogg",
+    "originalSha256": "e8e6d2af9a34bb507511afbd254b7a30b05597d1891bc25ed7dbe52d87e78162",
+    "sha256": "b58eb6022acb0adb1b0a6d58f341cf7e8c2e4dabe023a6db50a4ac812d157752",
+    "duration": 1.38449,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "it",
     "filename": "it.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/it_1",
@@ -2546,6 +2891,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "labor",
+    "filename": "labor.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-labor.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/En-us-labor.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "labor.ogg",
+    "originalSha256": "b1eab5e4c8c246c0ba7203f275b7562d9e4cf9e96d4ac211acbc15053a544f71",
+    "sha256": "e6874b45a5c589218b507f5f324f585c9b397a2704c9a79f0f08d432b294d498",
+    "duration": 0.626939,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "lamp",
     "filename": "lamp.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lamp",
@@ -2577,6 +2937,21 @@
     "sha256": "9593bbcf6fd4468c6ffd1980894a2bd33c334875f518c7e49904fe4ded69a642",
     "duration": 0.835918,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "layers",
+    "filename": "layers.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-layers.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/En-us-layers.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "layers.ogg",
+    "originalSha256": "3f6eb5c4ded7769aca6d5da30ec79408328aa183515d9137fda51aa6acc05df3",
+    "sha256": "2d467ea22dfe30a2201ecb61787f7bbbf55ec5707e16e84ff6d26b62dd34cb27",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "leak",
@@ -2633,6 +3008,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "lights",
+    "filename": "lights.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-lights.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/En-us-lights.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "lights.ogg",
+    "originalSha256": "e89749fbd1d19615f988955ce5d628390bab9a4ad35446972f58866ab1dcb3ad",
+    "sha256": "6d6cec7ed0a954c7eb5a1e1a6fd854c2550ac7d38106e34b03522bb8bbdaf3ac",
+    "duration": 1.097143,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "local",
     "filename": "local.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/local_1",
@@ -2676,6 +3066,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "logs",
+    "filename": "logs.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-logs.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/En-us-logs.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "logs.ogg",
+    "originalSha256": "f91a37ad3d65ff49725256f9e6503b65008d8b1c5c4b4a3d758339061074f896",
+    "sha256": "c505fdf998f1369c1b3ccee93d24a723ab62aa4deff33c3e1211bb21b6732b81",
+    "duration": 2.089796,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "look",
     "filename": "look.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/look_1",
@@ -2696,6 +3101,21 @@
     "sha256": "9b860cf4cd83ad90c2e798e6893661d02b98f6c13ac624760e245c2e983ff261",
     "duration": 0.835918,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "lots",
+    "filename": "lots.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-lots.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/En-us-lots.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "lots.ogg",
+    "originalSha256": "53466dfed95500c7388776a20c57dfdf266beb384cbaca9cd95965951726a227",
+    "sha256": "1f112cad225582dca329c501d02d1747f40a2fbbb0eb81ff88ceaf9a543a2bf2",
+    "duration": 1.38449,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "loud",
@@ -2808,6 +3228,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "matches",
+    "filename": "matches.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-matches.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/En-us-matches.ogg",
+    "accent": "US",
+    "artist": "Persent101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalFilename": "matches.ogg",
+    "originalSha256": "f3470f00b18ee81638f9eee9ec8766c9445a89804dc8f1adf0a7fc170286d5ab",
+    "sha256": "bb84cfd0b6879993e397112155a2bbd10341148f62a29d84637898e7f0439831",
+    "duration": 1.123265,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "maximum",
     "filename": "maximum.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/maximum_1",
@@ -2850,6 +3285,21 @@
     "sha256": "b018ccb5df2a3774259a2f8d5df58af398a4e49d887c7e66d49d9241ac0383e8",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "meetings",
+    "filename": "meetings.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-meetings.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/En-us-meetings.ogg",
+    "accent": "US",
+    "artist": "TreeMama",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "meetings.ogg",
+    "originalSha256": "73644cbd5548044aa318df40d23d54e42e070d1db891b76ded5f5679bcdf64d7",
+    "sha256": "3f691e9707580d51ebc0209bcc811cbf030f562b7b9684fdd0086e95025e8aed",
+    "duration": 1.332245,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "menu",
@@ -2916,6 +3366,21 @@
     "sha256": "985f6ec43688cfc30b01501b2202885c0282f4ff44339aa3c1e7da1ee1f08c62",
     "duration": 1.07102,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "minutes",
+    "filename": "minutes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-minutes.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/En-us-minutes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "minutes.ogg",
+    "originalSha256": "90aef99f0452ccc1815b810db3648e399bb7358bcd2081e89e363dda253f680a",
+    "sha256": "2ee44db80d42546a8fec3aadde959d6c582ead19b2db06054a5d9992235ec728",
+    "duration": 0.731429,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "mode",
@@ -3378,6 +3843,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "others",
+    "filename": "others.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-others.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/En-us-others.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "others.ogg",
+    "originalSha256": "7e6ace7a04170f800e67ebb0fcc5083f6f983164594493bcf63a98be34b63bf2",
+    "sha256": "735cfb65fc4a809ccb1962fffb0768f08fb6b700b7fad858b4b1dae1620a391e",
+    "duration": 0.679184,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "our",
     "filename": "our.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/our",
@@ -3487,6 +3967,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "patterns",
+    "filename": "patterns.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-patterns.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/En-us-patterns.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "patterns.ogg",
+    "originalSha256": "b5243c0fef1744d7dc2fe4f0438c938420a2c03ca98c4cf4a8f4690f59f7956f",
+    "sha256": "29a312a55f9602de97af6765d387c265a7b2bc782d643c4da650373939c7f062",
+    "duration": 1.48898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "perform",
     "filename": "perform.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/perform",
@@ -3531,6 +4026,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "pipes",
+    "filename": "pipes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-pipes.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/En-us-pipes.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "pipes.ogg",
+    "originalSha256": "84ec8dca7362e2a2bf8f3b9c850c0714730f7e2f706377c7f71a95cb318e034c",
+    "sha256": "c65eadec5df4b66fd03c17a2af0e595cbc30b7340efdd13ea96a0ca3a45092ad",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "plasma",
     "filename": "plasma.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plasma",
@@ -3553,6 +4063,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "points",
+    "filename": "points.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-points.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/En-us-points.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "points.ogg",
+    "originalSha256": "af1d258b1aee31ea404705461392f53e4def2512edf22ef05d024605ef6f5aea",
+    "sha256": "ecfdb8aa6391f17440e5a104ab549f08a8238dbf024f73f53b9ac6ecef0439d5",
+    "duration": 0.783673,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "policy",
     "filename": "policy.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/policy",
@@ -3573,6 +4098,21 @@
     "sha256": "6cd27fefc967fe49f02ad416a8babad126ac628a46c02d3369ad2592421676c9",
     "duration": 0.835918,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "posted",
+    "filename": "posted.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-posted.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/En-us-posted.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "posted.ogg",
+    "originalSha256": "b723ea6d5d4dc592649202327a5d2f5129dbddbfa06051672b2f0da4bfee6ded",
+    "sha256": "4082fe8a97830b85ebf883f0f32a195bda589ed6ac206d38f7bdf0004c2d56e6",
+    "duration": 1.201633,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "pouring",
@@ -3971,6 +4511,36 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "regulations",
+    "filename": "regulations.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-regulations.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/En-us-regulations.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "regulations.ogg",
+    "originalSha256": "8eacd2aaceaac8520f273ddde1e1a6ece67090ea2bb97f1c14e789b1d20dc65c",
+    "sha256": "3ef37463884c11ba7284a6c4b7a56dbc78e5f4898ac930cb0e975dc0653c2bee",
+    "duration": 1.828571,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "remarks",
+    "filename": "remarks.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-remarks.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/En-us-remarks.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "remarks.ogg",
+    "originalSha256": "4eee88814f7e8714aba35e1b1616a78e5169a62e95495c1d3d3dda6272a1c8ce",
+    "sha256": "9393652b7a1ca8cb46a44fdea26b9a31f11cdbf18fcf9d1d55cf0226cf0fabed",
+    "duration": 1.227755,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "remember",
     "filename": "remember.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/remember",
@@ -4079,6 +4649,36 @@
     "sha256": "9b12eda05a086d0387d424a6041aeb9e4f684c7f2b78b85de5679ec130314b1f",
     "duration": 1.018776,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "resulted",
+    "filename": "resulted.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-resulted.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/En-us-resulted.ogg",
+    "accent": "US",
+    "artist": "Neskaya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "resulted.ogg",
+    "originalSha256": "e248e1b69f84f139407917314fb36cf1415bb29b494708732d9de25fab7197cb",
+    "sha256": "91e241a8ccaf7b3043bcbcae357cffb32ef85eab8e85f43707271460f0f17234",
+    "duration": 1.48898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "results",
+    "filename": "results.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-results.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/En-us-results.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "results.ogg",
+    "originalSha256": "9eb829d798e2af41680c6622e6aa6fa74aa8d7760d5bb3e04a52a4dd4bdfdca7",
+    "sha256": "029bcbc35c1c46135280c1756572092a973a35b38197b250972d1ae85a4cbcb4",
+    "duration": 1.28,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "returned",
@@ -4211,6 +4811,21 @@
     "sha256": "1e0c61e95a4085e23412d13a05de0f087f18627adc513d8e9b01f887fede3c7f",
     "duration": 1.044898,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "rules",
+    "filename": "rules.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-rules.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/En-us-rules.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "rules.ogg",
+    "originalSha256": "3591c5c3f30dfb237d7a808d97291fe2875ca753235b39e2687356c49872cb85",
+    "sha256": "c5ab7aa97ed8f8d140e4b1dcee5bbb08852e85470c5b34508ee68f75e446bbfb",
+    "duration": 1.149388,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "runs",
@@ -4618,6 +5233,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "sounded",
+    "filename": "sounded.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-sounded.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/En-us-sounded.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "sounded.ogg",
+    "originalSha256": "24cfc7d3f952de810dbf701433f6c77f0e0cc89c2f265f956828e402ee8b9c04",
+    "sha256": "a77960356529521e57823342b1f5ebc99a0936ee7a0788c1655ab63038ef1366",
+    "duration": 1.044898,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "spare",
     "filename": "spare.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/spare_1",
@@ -4660,6 +5290,21 @@
     "sha256": "59c2b08dd8cc6317a76469c7c32155115815a0f972fbf82a04d1ba11177a5256",
     "duration": 1.149388,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "specified",
+    "filename": "specified.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-specified.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/En-us-specified.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "specified.ogg",
+    "originalSha256": "6bef8968610a8bc6a944d2b336bc7ff701b7a6bd5427aebaeb70c3daed6b05ec",
+    "sha256": "a534b6fda53607b2c6371efec8c5cdcd1cdb27d830234849da47c36476a0581c",
+    "duration": 1.436735,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "specifies",
@@ -4737,6 +5382,21 @@
     "sha256": "ece11a45bd1ee19d15242f654fb1a6a55cfe5266b9eef6927e829b6b6de0e4e8",
     "duration": 0.966531,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "steps",
+    "filename": "steps.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-steps.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/En-us-steps.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "steps.ogg",
+    "originalSha256": "656caa83b7e44eb191f9a9e731340fdb381ced92aed7f81cc4018f59c87e9ede",
+    "sha256": "5f5a01952910bc7427446f6fb16b0b79ab928d185082fdb61cdd4a2ff10e2a28",
+    "duration": 0.940408,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "stop",
@@ -5209,6 +5869,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "tubes",
+    "filename": "tubes.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-tubes.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/En-us-tubes.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "tubes.ogg",
+    "originalSha256": "2c5b75a09df834a3c6b6cf699ca2e36fcfe12e348b0a00c36cbbe04022a4a787",
+    "sha256": "d9b1efbb67384006268f85c3d8c1e4427e18bccc2cbc972f5ee42eb1f03b710c",
+    "duration": 0.626939,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "turn",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
     "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/american_english/us_pron/t/tur/turn_/turn__us_1.mp3",
@@ -5228,6 +5903,36 @@
     "sha256": "226270a744c618b02c9cf4132c38438c9f3c9716101e40a8fc2d0217e056d653",
     "duration": 0.888163,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "twenty-five",
+    "filename": "twenty-five.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-five.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/En-us-twenty-five.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "twenty-five.ogg",
+    "originalSha256": "3dd2f6df2d865642ff0cc0f9ddda6ec3ef5060efcd1c94e284c310285aada25f",
+    "sha256": "6a7a0ae010e1090c7a62ce6b50534d38ead4d6e507b5a218f3a55b145c2e492e",
+    "duration": 1.332245,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
+    "word": "twenty-four",
+    "filename": "twenty-four.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-twenty-four.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/En-us-twenty-four.ogg",
+    "accent": "US",
+    "artist": "Steve Shives",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalFilename": "twenty-four.ogg",
+    "originalSha256": "6d740b1288c10ba7daca9e34272c36aaf8e2cf1fb408a2e6b456ceb62e28c26f",
+    "sha256": "4f0f768f1a7635bebf19a5787baa012b317bd9bcfd59e167c38e3ad74545e2df",
+    "duration": 0.72,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "two",
@@ -5417,6 +6122,21 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "visitors",
+    "filename": "visitors.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-visitors.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/En-us-visitors.ogg",
+    "accent": "US",
+    "artist": "Dvortygirl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalFilename": "visitors.ogg",
+    "originalSha256": "04e439736d1cc472dc2ef9443aeac2cdce1bcf4759e8021ab2ec53d72e52083c",
+    "sha256": "ee7a5add6af35916aaf7644b72103050d2aeb891cd33cc370ab90cd57839a406",
+    "duration": 1.149388,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
+  },
+  {
     "word": "visual",
     "filename": "visual.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/visual_1",
@@ -5426,6 +6146,21 @@
     "sha256": "18777bdc728e6f59f9efb54bcdfde70d1847dd8c3b592b7829a3b70590435dc2",
     "duration": 1.018776,
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
+    "word": "wafers",
+    "filename": "wafers.mp3",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-wafers.ogg",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/En-us-wafers.ogg",
+    "accent": "US",
+    "artist": "BirdHopper",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalFilename": "wafers.ogg",
+    "originalSha256": "47feeedd637314e9ec7c1aded06cd7edb1af25875a4da7e32228bb1120273e05",
+    "sha256": "7f4381a94634a0fa2c22b66838f67466cfa533ff9e9c475bae29fb17d00a380b",
+    "duration": 0.914286,
+    "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
     "word": "wait",
