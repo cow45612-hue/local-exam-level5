@@ -1,139 +1,7 @@
 window.EXAMPLE_RECORDINGS = {
-  "air": {
-    "file": "./audio-example/air.mp3?v=9081fe2d362c",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "shower": {
-    "file": "./audio-example/shower.mp3?v=018d30ee6d2a",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/shower",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "chamber": {
-    "file": "./audio-example/chamber.mp3?v=b36cdf5b2c02",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chamber",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "stop": {
-    "file": "./audio-example/stop.mp3?v=81e7c1189145",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "log": {
-    "file": "./audio-example/log.mp3?v=2f7740ebf0c2",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "operating": {
-    "file": "./audio-example/operating.mp3?v=16ff199abe79",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/operate",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "take": {
-    "file": "./audio-example/take.mp3?v=4284792ad7ac",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "leave": {
-    "file": "./audio-example/leave.mp3?v=2ae5dc3bf5f1",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/leave",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "thin": {
-    "file": "./audio-example/thin.mp3?v=34cd1d23cc37",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "film": {
-    "file": "./audio-example/film.mp3?v=fa37af2a93ff",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "turn": {
-    "file": "./audio-example/turn.mp3?v=cfd26aac814b",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "s": {
-    "file": "./audio-example/s.mp3?v=bf075e015daa",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "o": {
-    "file": "./audio-example/o.mp3?v=ad11bc8c4c92",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/o",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "p": {
-    "file": "./audio-example/p.mp3?v=c55cf423cfce",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/p",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
   "a": {
     "file": "./audio-example/a.mp3?v=1e2f71199a42",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/a_1",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "an": {
-    "file": "./audio-example/an.mp3?v=69595d6d6eb5",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/an",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "and": {
-    "file": "./audio-example/and.mp3?v=d505506420f2",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/and",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "is": {
-    "file": "./audio-example/is.mp3?v=8d90e70e7c09",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/is",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "make": {
-    "file": "./audio-example/make.mp3?v=b1f5e437edae",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/make_1",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "of": {
-    "file": "./audio-example/of.mp3?v=e7ff16a92211",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/of",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "sure": {
-    "file": "./audio-example/sure.mp3?v=75a65049a06a",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sure_1",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "the": {
-    "file": "./audio-example/the.mp3?v=7d6e3938c878",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/the",
-    "accent": "US",
-    "artist": "Oxford Learners Dictionaries"
-  },
-  "to": {
-    "file": "./audio-example/to.mp3?v=b917e180770b",
-    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/to_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
@@ -227,6 +95,12 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
+  "air": {
+    "file": "./audio-example/air.mp3?v=9081fe2d362c",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/air",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
   "alignment": {
     "file": "./audio-example/alignment.mp3?v=2eacd045388e",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/alignment",
@@ -263,6 +137,12 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
+  "an": {
+    "file": "./audio-example/an.mp3?v=69595d6d6eb5",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/an",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
   "analysis": {
     "file": "./audio-example/analysis.mp3?v=12311d9609be",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/analysis",
@@ -272,6 +152,12 @@ window.EXAMPLE_RECORDINGS = {
   "analytical": {
     "file": "./audio-example/analytical.mp3?v=c46ba0e5c574",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/analytical",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "and": {
+    "file": "./audio-example/and.mp3?v=d505506420f2",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/and",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
@@ -608,6 +494,12 @@ window.EXAMPLE_RECORDINGS = {
   "celebrated": {
     "file": "./audio-example/celebrated.mp3?v=7f0213d1fbf9",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/celebrated",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "chamber": {
+    "file": "./audio-example/chamber.mp3?v=b36cdf5b2c02",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chamber",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
@@ -1049,6 +941,12 @@ window.EXAMPLE_RECORDINGS = {
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   },
+  "film": {
+    "file": "./audio-example/film.mp3?v=fa37af2a93ff",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/film",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
   "finished": {
     "file": "./audio-example/finished.mp3?v=3b12df0dd374",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/finished",
@@ -1070,6 +968,114 @@ window.EXAMPLE_RECORDINGS = {
   "first": {
     "file": "./audio-example/first.mp3?v=5701f76fa690",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/first_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "is": {
+    "file": "./audio-example/is.mp3?v=8d90e70e7c09",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/is",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "leave": {
+    "file": "./audio-example/leave.mp3?v=2ae5dc3bf5f1",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/leave",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "log": {
+    "file": "./audio-example/log.mp3?v=2f7740ebf0c2",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/log",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "make": {
+    "file": "./audio-example/make.mp3?v=b1f5e437edae",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/make_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "o": {
+    "file": "./audio-example/o.mp3?v=ad11bc8c4c92",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/o",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "of": {
+    "file": "./audio-example/of.mp3?v=e7ff16a92211",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/of",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "operating": {
+    "file": "./audio-example/operating.mp3?v=16ff199abe79",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/operate",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "p": {
+    "file": "./audio-example/p.mp3?v=c55cf423cfce",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/p",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "s": {
+    "file": "./audio-example/s.mp3?v=bf075e015daa",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/s",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "shower": {
+    "file": "./audio-example/shower.mp3?v=018d30ee6d2a",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/shower",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "stop": {
+    "file": "./audio-example/stop.mp3?v=81e7c1189145",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stop",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "sure": {
+    "file": "./audio-example/sure.mp3?v=75a65049a06a",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sure_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "take": {
+    "file": "./audio-example/take.mp3?v=4284792ad7ac",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/take",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "the": {
+    "file": "./audio-example/the.mp3?v=7d6e3938c878",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/the",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "thin": {
+    "file": "./audio-example/thin.mp3?v=34cd1d23cc37",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/thin",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "to": {
+    "file": "./audio-example/to.mp3?v=b917e180770b",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/to_1",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "turn": {
+    "file": "./audio-example/turn.mp3?v=cfd26aac814b",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/turn",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries"
+  },
+  "in": {
+    "file": "./audio-example/in.mp3?v=8b22dcd8cc6e",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/in_1",
     "accent": "US",
     "artist": "Oxford Learners Dictionaries"
   }

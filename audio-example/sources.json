@@ -1779,6 +1779,17 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "in",
+    "filename": "in.mp3",
+    "page": "https://www.oxfordlearnersdictionaries.com/definition/english/in_1",
+    "audioUrl": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/i/in_/in__u/in__us_1.mp3",
+    "accent": "US",
+    "artist": "Oxford Learners Dictionaries",
+    "sha256": "8b22dcd8cc6ef411fc93c4d38df58c26c84297b95ed40a72f9ac6811c2e0a77f",
+    "duration": 0.783673,
+    "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
+  },
+  {
     "word": "is",
     "filename": "is.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/is",
