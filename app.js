@@ -213,6 +213,7 @@ let tsmcExtrasRevealed = false;
 
 // Shared Audio element
 let tsmcAudioElement = null;
+let tsmcSpeechRequest = 0;
 function getTsmcAudio() {
   if (!tsmcAudioElement) {
     tsmcAudioElement = new Audio();
@@ -222,14 +223,7 @@ function getTsmcAudio() {
 }
 
 function unlockTsmcAudio() {
-  const audio = getTsmcAudio();
-  if (!audio.dataset.unlocked) {
-    audio.src = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=";
-    audio.play().then(() => {
-      audio.dataset.unlocked = "true";
-      audio.pause();
-    }).catch(() => {});
-  }
+  getTsmcAudio();
 }
 document.addEventListener("click", unlockTsmcAudio, { once: true });
 document.addEventListener("touchstart", unlockTsmcAudio, { once: true });
@@ -253,23 +247,23 @@ function updateCachedVoices() {
   const voices = window.speechSynthesis.getVoices();
   if (!voices || voices.length === 0) return;
 
-  // Best English Voice (Natural US English)
+  // Keep one recognizable female US voice; never choose an arbitrary male/default voice.
   const enPreferences = [
-    (v) => v.lang === "en-US" && (v.name.includes("Natural") || v.name.includes("Online")),
-    (v) => v.lang === "en-US" && (v.name.includes("Google") || v.name.includes("Jenny") || v.name.includes("Samantha") || v.name.includes("Ava")),
-    (v) => v.lang === "en-US" && !v.localService,
-    (v) => v.lang === "en-US",
-    (v) => v.lang.startsWith("en"),
+    (v) => /jenny/i.test(v.name),
+    (v) => /samantha/i.test(v.name),
+    (v) => /ava/i.test(v.name),
+    (v) => /aria/i.test(v.name),
+    (v) => /zira/i.test(v.name),
+    (v) => /google us english/i.test(v.name),
   ];
-  for (const pref of enPreferences) {
-    const found = voices.find(pref);
-    if (found) {
-      cachedBestEnVoice = found;
-      break;
-    }
-  }
   if (!cachedBestEnVoice) {
-    cachedBestEnVoice = voices.find((v) => v.lang.startsWith("en")) || null;
+    for (const pref of enPreferences) {
+      const found = voices.find((v) => v.lang.toLowerCase().replace("_", "-") === "en-us" && pref(v));
+      if (found) {
+        cachedBestEnVoice = found;
+        break;
+      }
+    }
   }
 
   // Best Chinese Voice (Taiwan zh-TW)
@@ -298,6 +292,11 @@ if ("speechSynthesis" in window) {
 
 function speakOptimizedEnglishSpeech(text, slow = false) {
   if (!("speechSynthesis" in window)) return;
+  if (!cachedBestEnVoice) updateCachedVoices();
+  if (!cachedBestEnVoice) {
+    window.alert("目前裝置沒有可用的美式英文女聲。請在手機語音設定下載美式英文女聲後，再重新開啟網站。");
+    return;
+  }
   window.speechSynthesis.cancel();
 
   const override = TSMC_SPEECH_OVERRIDES[text] || text;
@@ -306,8 +305,7 @@ function speakOptimizedEnglishSpeech(text, slow = false) {
   utter.rate = slow ? 0.72 : 0.92;
   utter.pitch = 1.0;
 
-  if (!cachedBestEnVoice) updateCachedVoices();
-  if (cachedBestEnVoice) utter.voice = cachedBestEnVoice;
+  utter.voice = cachedBestEnVoice;
 
   window.speechSynthesis.speak(utter);
 }
@@ -336,6 +334,13 @@ function playNaturalWordAudio(target, slow = false) {
 
   const audio = getTsmcAudio();
   stopCurrentSpeech();
+  const request = tsmcSpeechRequest;
+
+  // Vocabulary always uses the same Jenny recording, including abbreviations.
+  if (!wordId) {
+    speakOptimizedEnglishSpeech(wordText, slow);
+    return;
+  }
 
   // Speed settings: slow 0.72x, normal 1.0x with pitch preserved
   audio.playbackRate = slow ? 0.72 : 1.0;
@@ -343,29 +348,11 @@ function playNaturalWordAudio(target, slow = false) {
     audio.preservesPitch = true;
   }
 
-  // Audio source candidates (Priority: Local MP3 -> Youdao Native US human voice -> Google TTS)
-  const candidates = [];
-
-  if (wordId) {
-    candidates.push(`./audio/${wordId}.mp3`);
-  }
-  candidates.push(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanWord)}&type=2`);
-  candidates.push(`https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(cleanWord)}`);
-
-  let idx = 0;
-  function tryNextCandidate() {
-    if (idx >= candidates.length) {
-      speakOptimizedEnglishSpeech(cleanWord, slow);
-      return;
-    }
-    const url = candidates[idx++];
-    audio.src = url;
-    audio.play().catch(() => {
-      tryNextCandidate();
-    });
-  }
-
-  tryNextCandidate();
+  audio.src = `./audio/${wordId}.mp3`;
+  audio.play().catch((error) => {
+    if (request !== tsmcSpeechRequest || error.name === "AbortError") return;
+    window.alert("女聲音檔暫時無法播放，請確認網路後再點一次發音。");
+  });
 }
 
 const playTsmcAudio = playNaturalWordAudio;
@@ -401,6 +388,7 @@ function speakChineseText(text) {
 }
 
 function stopCurrentSpeech() {
+  tsmcSpeechRequest += 1;
   if ("speechSynthesis" in window) {
     window.speechSynthesis.cancel();
   }
