@@ -1,0 +1,91 @@
+name: Download US Example Word Audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximum missing words to check (0 = all)'
+        default: '0'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: us-example-audio
+  cancel-in-progress: false
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Test exact word and US source validation
+        run: python -m unittest discover -s scripts -p test_example_audio.py
+      - name: Download missing example words
+        id: collect
+        continue-on-error: true
+        env:
+          WORD_LIMIT: ${{ inputs.limit }}
+        run: python -u scripts/fetch_example_audio.py --limit "$WORD_LIMIT"
+      - name: Check JavaScript and report coverage
+        run: |
+          node --check audio-example/recordings.js
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          d=json.loads(Path('audio-example/coverage.json').read_text())
+          print(f"Clickable words covered: {d['availableCount']}/{d['tokenCount']}")
+          print(f"Example recordings: {d['exampleRecordingCount']}")
+          print('Still missing: ' + ', '.join(d['missing']))
+          PY
+      - name: Save progress without changing Pages configuration
+        id: publish
+        run: |
+          python - <<'PY'
+          import hashlib,re
+          from pathlib import Path
+          p=Path('index.html')
+          digest=hashlib.sha256(Path('audio-example/recordings.js').read_bytes()).hexdigest()[:12]
+          text=p.read_text()
+          text,n=re.subn(r'(audio-example/recordings\.js\?v=)[^"\s]+',lambda m:m[1]+digest,text)
+          assert n==1
+          p.write_text(text)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- audio-example index.html
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            git commit -m 'Update verified US example word recordings'
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Request existing Pages build
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+      - name: Preserve download report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: example-audio-progress
+          path: audio-example/
+          retention-days: 14
+      - name: Report source access failure
+        if: steps.collect.outcome == 'failure'
+        run: exit 1

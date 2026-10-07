@@ -220,6 +220,7 @@ const CAMBRIDGE_RECORDINGS = {
   },
 };
 const HUMAN_RECORDINGS = window.HUMAN_RECORDINGS || {};
+const EXAMPLE_RECORDINGS = window.EXAMPLE_RECORDINGS || {};
 let tsmcAudioElement = null;
 let tsmcSpeechRequest = 0;
 function getTsmcAudio() {
@@ -345,7 +346,8 @@ function playNaturalWordAudio(target, slow = false) {
   const request = tsmcSpeechRequest;
 
   const recording = HUMAN_RECORDINGS[wordText.toLowerCase().trim()]
-    || CAMBRIDGE_RECORDINGS[wordText.toLowerCase().trim()];
+    || CAMBRIDGE_RECORDINGS[wordText.toLowerCase().trim()]
+    || EXAMPLE_RECORDINGS[wordText.toLowerCase().trim()];
   if (!recording) {
     window.alert("這個單字的真人錄音還在補齊中，暫不使用合成發音。");
     return;
