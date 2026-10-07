@@ -1,7 +1,7 @@
 {
   "tokenCount": 914,
-  "availableCount": 893,
-  "exampleRecordingCount": 624,
+  "availableCount": 894,
+  "exampleRecordingCount": 625,
   "missing": [
     "angstroms",
     "badges",
@@ -12,7 +12,6 @@
     "gowning",
     "loadlock",
     "mes",
-    "policies",
     "re-certified",
     "rf",
     "spc",

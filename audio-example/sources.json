@@ -4487,6 +4487,27 @@
     "verification": "Exact US word source and metadata checked; full audio decode passed; not individually listened"
   },
   {
+    "word": "policies",
+    "filename": "policies.mp3",
+    "originalFilename": "policies.wav",
+    "originalSha256": "32f8d9167f11fbd6846d84f09ba2d99f32b54fab5492ed4fa11070430dd01e1d",
+    "sha256": "806b22dfe5c47acac358ee89e05a224741665a56f4dd6b5d73939b989103ddea",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Arlo_Barnes-policies.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/LL-Q1860_%28eng%29-Arlo_Barnes-policies.wav",
+    "accent": "US",
+    "artist": "Speaker: Arlo Barnes\nRecorder: Arlo Barnes",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "duration": 1.314558,
+    "accentEvidence": {
+      "page": "https://commons.wikimedia.org/wiki/User:Arlo_Barnes",
+      "nativeLanguage": "en-N",
+      "location": "New Mexico, United States",
+      "basis": "Speaker self-description; US inferred from native English and US residence, not a file-level accent label"
+    },
+    "verification": "Exact English word and source license checked; native-English US speaker profile checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "policy",
     "filename": "policy.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/policy",

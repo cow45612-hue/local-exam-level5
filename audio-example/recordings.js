@@ -4639,6 +4639,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
+  "ultra-pure": {
+    "file": "./audio-example/ultra-pure.mp3?v=a583fc639581",
+    "page": "https://www.merriam-webster.com/dictionary/ultra-pure",
+    "accent": "US",
+    "artist": "Merriam-Webster Dictionary",
+    "license": "",
+    "licenseUrl": ""
+  },
   "unauthorized": {
     "file": "./audio-example/unauthorized.mp3?v=e00181153bb2",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/unauthorized",
@@ -4983,12 +4991,12 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "ultra-pure": {
-    "file": "./audio-example/ultra-pure.mp3?v=a583fc639581",
-    "page": "https://www.merriam-webster.com/dictionary/ultra-pure",
+  "policies": {
+    "file": "./audio-example/policies.mp3?v=806b22dfe5c4",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Arlo_Barnes-policies.wav",
     "accent": "US",
-    "artist": "Merriam-Webster Dictionary",
-    "license": "",
-    "licenseUrl": ""
+    "artist": "Speaker: Arlo Barnes\nRecorder: Arlo Barnes",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   }
 };
