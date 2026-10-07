@@ -1,10 +1,9 @@
 {
   "tokenCount": 914,
-  "availableCount": 894,
-  "exampleRecordingCount": 625,
+  "availableCount": 895,
+  "exampleRecordingCount": 626,
   "missing": [
     "angstroms",
-    "badges",
     "barcodes",
     "e-log",
     "euv",

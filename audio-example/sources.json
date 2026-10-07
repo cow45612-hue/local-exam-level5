@@ -683,6 +683,27 @@
     "verification": "Exact recorded word filename; official US source; full MP3 decode passed"
   },
   {
+    "word": "badges",
+    "filename": "badges.mp3",
+    "originalFilename": "badges.wav",
+    "originalSha256": "ba0d53cbf25f85418f5b090859693dbef4679832bb715eb297356b7b26fe7c41",
+    "sha256": "7b76359313985f65ad3c8f1ab9f9538afa7b6cddb12f479624b7eaaf962c5332",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-badges.wav",
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/LL-Q1860_%28eng%29-Wodencafe-badges.wav",
+    "accent": "US",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "duration": 1.066667,
+    "accentEvidence": {
+      "page": "https://archive.lingualibre.org/wiki/Special:EntityData/Q1207413.json",
+      "nativeLanguage": "English, native (P4=Q22; P16=Q15)",
+      "location": "Texas, United States (P14=Q1439)",
+      "basis": "Archived speaker self-description; US inferred from native English and US residence, not a file-level accent label"
+    },
+    "verification": "Exact English plural and source license checked; native-English Texas speaker profile checked; full MP3 decode passed; not individually listened"
+  },
+  {
     "word": "bake",
     "filename": "bake.mp3",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bake",

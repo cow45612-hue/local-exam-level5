@@ -3111,6 +3111,14 @@ window.EXAMPLE_RECORDINGS = {
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
   },
+  "policies": {
+    "file": "./audio-example/policies.mp3?v=806b22dfe5c4",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Arlo_Barnes-policies.wav",
+    "accent": "US",
+    "artist": "Speaker: Arlo Barnes\nRecorder: Arlo Barnes",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
   "policy": {
     "file": "./audio-example/policy.mp3?v=70cc1d49194b",
     "page": "https://www.oxfordlearnersdictionaries.com/definition/american_english/policy",
@@ -4991,11 +4999,11 @@ window.EXAMPLE_RECORDINGS = {
     "license": "",
     "licenseUrl": ""
   },
-  "policies": {
-    "file": "./audio-example/policies.mp3?v=806b22dfe5c4",
-    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Arlo_Barnes-policies.wav",
+  "badges": {
+    "file": "./audio-example/badges.mp3?v=7b7635931398",
+    "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Wodencafe-badges.wav",
     "accent": "US",
-    "artist": "Speaker: Arlo Barnes\nRecorder: Arlo Barnes",
+    "artist": "Speaker: Wodencafe\nRecorder: Wodencafe",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   }
