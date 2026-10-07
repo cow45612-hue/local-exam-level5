@@ -29,6 +29,10 @@ const context = vm.createContext({
   SpeechSynthesisUtterance: class { constructor(text) { this.text = text; } },
   setTimeout,
   window: {
+    HUMAN_RECORDINGS: {
+      active: { file: "./audio-human/6.mp3", artist: "Dvortygirl" },
+      ability: { file: "./audio-human/1.mp3", artist: "Dvortygirl" },
+    },
     alert: (text) => alerts.push(text),
     speechSynthesis: {
       getVoices: () => voices,
@@ -41,9 +45,12 @@ vm.runInContext(source.slice(start, end), context);
 
 (async () => {
   vm.runInContext('playNaturalWordAudio({ id: 10, word: "AI" });', context);
-  assert.equal(calls.at(-1).src, "./audio/10.mp3");
-  vm.runInContext('playNaturalWordAudio({ id: 10, word: "AI" }, true);', context);
-  assert.equal(calls.at(-1).src, "./audio/10.mp3");
+  assert.equal(calls.length, 0, "missing human audio must not play synthetic audio");
+  assert.match(alerts.pop(), /真人錄音/);
+  vm.runInContext('playNaturalWordAudio({ id: 1, word: "ability" });', context);
+  assert.equal(calls.at(-1).src, "./audio-human/1.mp3");
+  vm.runInContext('playNaturalWordAudio({ id: 1, word: "ability" }, true);', context);
+  assert.equal(calls.at(-1).src, "./audio-human/1.mp3");
   assert.equal(calls.at(-1).rate, 0.72);
   assert.equal(calls.at(-1).preservesPitch, true);
   pending[0].reject(new Error("old request failed"));
@@ -51,9 +58,9 @@ vm.runInContext(source.slice(start, end), context);
   assert.equal(alerts.length, 0, "stale failures must not interrupt the new word");
 
   vm.runInContext('playNaturalWordAudio({ id: 6, word: "active" });', context);
-  assert.equal(calls.at(-1).src, "./audio-cambridge/6.mp3?v=cambridge-us-1");
+  assert.equal(calls.at(-1).src, "./audio-human/6.mp3");
   vm.runInContext('playNaturalWordAudio({ id: 6, word: "active" }, true);', context);
-  assert.equal(calls.at(-1).src, "./audio-cambridge/6.mp3?v=cambridge-us-1");
+  assert.equal(calls.at(-1).src, "./audio-human/6.mp3");
   assert.equal(calls.at(-1).rate, 0.72);
 
   vm.runInContext('speakOptimizedEnglishSpeech("hello");', context);
@@ -71,5 +78,16 @@ vm.runInContext(source.slice(start, end), context);
     const file = path.join(__dirname, "..", "audio", `${item.id}.mp3`);
     assert.ok(fs.statSync(file).size > 1000, `Missing audio: ${item.word}`);
   }
-  console.log(`PASS: fixed female voice, shared slow audio, stale playback cancellation, ${vocabulary.length} audio files`);
+  const records = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "audio-human", "sources.json"), "utf8"));
+  const crypto = require("node:crypto");
+  for (const record of records) {
+    assert.ok(vocabulary.some((word) => word.id === record.id && word.word === record.word));
+    assert.ok(record.artist && record.license && record.page);
+    assert.match(record.page, /^https:\/\/commons\.wikimedia\.org\//);
+    for (const [ext, field] of [["mp3", "sha256"], ["ogg", "originalSha256"]]) {
+      const bytes = fs.readFileSync(path.join(__dirname, "..", "audio-human", `${record.id}.${ext}`));
+      assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"), record[field]);
+    }
+  }
+  console.log(`PASS: human routing, no synthetic fallback, slow playback, stale cancellation; ${records.length} recordings with attribution and verified hashes`);
 })().catch((error) => { console.error(error); process.exitCode = 1; });

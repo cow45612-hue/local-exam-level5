@@ -219,6 +219,7 @@ const CAMBRIDGE_RECORDINGS = {
     ipa: "ˈæk.tɪv",
   },
 };
+const HUMAN_RECORDINGS = window.HUMAN_RECORDINGS || {};
 let tsmcAudioElement = null;
 let tsmcSpeechRequest = 0;
 function getTsmcAudio() {
@@ -243,7 +244,7 @@ function getTsmcWordId(item) {
 }
 
 // ==========================================
-// 🔊 高音質真人美式發音引擎 (Natural Human Pronunciation Engine)
+// Shared pronunciation playback and device speech helpers.
 // ==========================================
 
 let cachedBestEnVoice = null;
@@ -343,19 +344,21 @@ function playNaturalWordAudio(target, slow = false) {
   stopCurrentSpeech();
   const request = tsmcSpeechRequest;
 
-  // Verified Cambridge recordings take priority over the existing study audio.
-  if (!wordId) {
-    speakOptimizedEnglishSpeech(wordText, slow);
+  const recording = HUMAN_RECORDINGS[wordText.toLowerCase().trim()]
+    || CAMBRIDGE_RECORDINGS[wordText.toLowerCase().trim()];
+  if (!recording) {
+    window.alert("這個單字的真人錄音還在補齊中，暫不使用合成發音。");
     return;
   }
 
   // Speed settings: slow 0.72x, normal 1.0x with pitch preserved
+  audio.defaultPlaybackRate = slow ? 0.72 : 1.0;
   audio.playbackRate = slow ? 0.72 : 1.0;
   if ("preservesPitch" in audio) {
     audio.preservesPitch = true;
   }
 
-  audio.src = CAMBRIDGE_RECORDINGS[wordText.toLowerCase()]?.file ?? `./audio/${wordId}.mp3`;
+  audio.src = recording.file;
   audio.play().catch((error) => {
     if (request !== tsmcSpeechRequest || error.name === "AbortError") return;
     window.alert("音檔暫時無法播放，請確認網路後再點一次發音。");
@@ -678,10 +681,26 @@ function renderStageLearnWord() {
   const wordEl = document.querySelector("#tsmc-learn-word");
   const audioSourceEl = document.querySelector("#tsmc-audio-source");
   const cambridge = CAMBRIDGE_RECORDINGS[item.word.toLowerCase()];
+  const human = HUMAN_RECORDINGS[item.word.toLowerCase()];
   if (audioSourceEl) {
-    audioSourceEl.textContent = cambridge
-      ? `劍橋字典 · 美式發音 /${cambridge.ipa}/`
-      : "美式女聲 · Jenny（尚未替換為劍橋錄音）";
+    audioSourceEl.replaceChildren();
+    if (human) {
+      const sourceLink = document.createElement("a");
+      sourceLink.href = human.page;
+      sourceLink.target = "_blank";
+      sourceLink.rel = "noopener noreferrer";
+      sourceLink.textContent = `美式真人錄音 · ${human.artist} · 來源`;
+      const licenseLink = document.createElement("a");
+      licenseLink.href = human.licenseUrl || human.page;
+      licenseLink.target = "_blank";
+      licenseLink.rel = "noopener noreferrer";
+      licenseLink.textContent = human.license;
+      audioSourceEl.append(sourceLink, document.createTextNode(" · "), licenseLink);
+    } else {
+      audioSourceEl.textContent = cambridge
+        ? `劍橋字典 · 美式真人發音 /${cambridge.ipa}/`
+        : "真人錄音待補 · 暫不使用合成發音";
+    }
   }
   const meaningEl = document.querySelector("#tsmc-learn-meaning");
   const mnemonicEl = document.querySelector("#tsmc-learn-mnemonic");
