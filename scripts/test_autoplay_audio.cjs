@@ -84,6 +84,9 @@ function setup() {
   const pending = normal.start();
   assert.ok(normal.scheduled(8000), "An English-audio safety timeout is expected");
   assert.equal(normal.scheduled(200), false, "Chinese must not start before English finishes");
+  normal.emit("pause"); // A delayed pause from a previous audio clip is not a stop.
+  await Promise.resolve();
+  assert.equal(normal.scheduled(200), false, "Old pause must not finish the current recording");
   normal.emit("ended");
   await pending;
   assert.equal(normal.scheduled(200), true, "Chinese should follow English completion");
