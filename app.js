@@ -374,6 +374,29 @@ function playNaturalWordAudio(target, slow = false) {
   });
 }
 
+// Keep autoplay's Chinese narration after the actual English MP3 ends.
+function waitForTsmcWordAudio(requestId, maxWaitMs = 8000) {
+  const audio = getTsmcAudio();
+  return new Promise((resolve) => {
+    let timer = null;
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      audio.removeEventListener("ended", finish);
+      audio.removeEventListener("error", finish);
+      audio.removeEventListener("pause", finish);
+      clearTimeout(timer);
+      resolve();
+    };
+    audio.addEventListener("ended", finish);
+    audio.addEventListener("error", finish);
+    audio.addEventListener("pause", finish);
+    timer = setTimeout(finish, maxWaitMs);
+    if (audio.ended || audio.error || requestId !== tsmcSpeechRequest) finish();
+  });
+}
+
 const playTsmcAudio = playNaturalWordAudio;
 const speakEnglishFallback = playNaturalWordAudio;
 
@@ -1099,29 +1122,32 @@ async function runAutoplayStep() {
   if (meaningEl) meaningEl.textContent = item.meaning;
   if (mnemonicEl) mnemonicEl.textContent = item.mnemonic || "";
 
-  // 1. Speak English
+  // 1. Wait for the complete English MP3 before speaking Chinese.
   playTsmcAudio(item, false);
+  const requestId = tsmcSpeechRequest;
+  await waitForTsmcWordAudio(requestId);
+  if (!tsmcAutoplayRunning || requestId !== tsmcSpeechRequest) return;
 
-  // 2. Wait 1200ms, then speak Chinese
+  // 2. Add a short pause before the Chinese meaning.
   tsmcAutoplayTimeout = setTimeout(async () => {
-    if (!tsmcAutoplayRunning) return;
+    if (!tsmcAutoplayRunning || requestId !== tsmcSpeechRequest) return;
     await speakChineseText(item.meaning);
 
     // 3. Wait 800ms, then speak mnemonic
     tsmcAutoplayTimeout = setTimeout(async () => {
-      if (!tsmcAutoplayRunning) return;
+      if (!tsmcAutoplayRunning || requestId !== tsmcSpeechRequest) return;
       if (item.mnemonic) {
         await speakChineseText(item.mnemonic);
       }
 
       // 4. Wait 1400ms, move to next
       tsmcAutoplayTimeout = setTimeout(() => {
-        if (!tsmcAutoplayRunning) return;
+        if (!tsmcAutoplayRunning || requestId !== tsmcSpeechRequest) return;
         tsmcAutoplayIndex += 1;
         runAutoplayStep();
       }, 1400);
     }, 800);
-  }, 1200);
+  }, 200);
 }
 
 // ------------------------------------------
