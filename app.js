@@ -385,13 +385,17 @@ function waitForTsmcWordAudio(requestId, maxWaitMs = 8000) {
       finished = true;
       audio.removeEventListener("ended", finish);
       audio.removeEventListener("error", finish);
-      audio.removeEventListener("pause", finish);
+      audio.removeEventListener("pause", onPause);
       clearTimeout(timer);
       resolve();
     };
+    // Ignore a delayed pause event from the *previous* recording.
+    const onPause = () => {
+      if (audio.paused || requestId !== tsmcSpeechRequest) finish();
+    };
     audio.addEventListener("ended", finish);
     audio.addEventListener("error", finish);
-    audio.addEventListener("pause", finish);
+    audio.addEventListener("pause", onPause);
     timer = setTimeout(finish, maxWaitMs);
     if (audio.ended || audio.error || requestId !== tsmcSpeechRequest) finish();
   });
