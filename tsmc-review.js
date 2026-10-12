@@ -239,7 +239,10 @@ function renderTsmcReview() {
     const next = tsmcReviewEl("tsmc-review-next");
     const submit = tsmcReviewEl("tsmc-review-submit");
     if (previous) previous.disabled = round.position === 0;
-    if (next) next.hidden = round.position === 29;
+    if (next) {
+      next.hidden = round.position === 29;
+      next.disabled = question.chosen === null;
+    }
     if (submit) {
       submit.hidden = round.position !== 29;
       submit.disabled = answered !== 30;
