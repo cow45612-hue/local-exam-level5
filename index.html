@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>公職初考刷題 App</title>
-    <link rel="stylesheet" href="./style.css?v=20261008-ai" />
+    <link rel="stylesheet" href="./style.css?v=20261012-review-v1" />
   </head>
   <body>
     <main class="app-shell">
@@ -96,6 +96,7 @@
           <div class="tsmc-feature-nav" aria-label="學習模式切換">
             <button class="tsmc-tab-btn active" data-tsmc-tab="map" type="button">🗺️ 闖關地圖</button>
             <button class="tsmc-tab-btn" data-tsmc-tab="core50" type="button">⭐ 必考50字</button>
+            <button class="tsmc-tab-btn" data-tsmc-tab="review" type="button">🧠 30題總複習</button>
             <button class="tsmc-tab-btn" data-tsmc-tab="autoplay" type="button">🎧 連續聽讀</button>
             <button class="tsmc-tab-btn" data-tsmc-tab="exam" type="button">📝 15題模擬考</button>
             <button class="tsmc-tab-btn" data-tsmc-tab="extras" type="button">🔢 數學面試</button>
@@ -217,6 +218,54 @@
               </div>
 
               <button id="tsmc-stage-quiz-next-btn" class="primary action-button" type="button" hidden>下一題 ➔</button>
+            </div>
+          </div>
+
+          <!-- Second-pass review uses the existing 288-word official TSMC vocabulary. -->
+          <div id="tsmc-subview-review" class="tsmc-subview" hidden>
+            <div class="tsmc-review-panel">
+              <h3>🧠 288 字・30 題總複習</h3>
+              <p class="tsmc-review-intro">24 關看完後，用不重複抽題檢查記憶。交卷後才公布答案，答錯單字自動記錄。</p>
+              <div class="tsmc-review-stats" aria-live="polite">
+                <div><strong id="tsmc-review-covered">0 / 288</strong><small>已測過的不同單字</small></div>
+                <div><strong id="tsmc-review-rounds">0</strong><small>完成回合</small></div>
+                <div><strong id="tsmc-review-mistakes">0</strong><small>錯題單字數</small></div>
+              </div>
+              <section id="tsmc-review-home">
+                <p id="tsmc-review-plan" class="tsmc-review-note">正在載入單字...</p>
+                <button id="tsmc-review-start" class="primary action-button" type="button" disabled>開始第一回合・30 題</button>
+              </section>
+              <section id="tsmc-review-question" hidden>
+                <div class="tsmc-review-meta">
+                  <strong id="tsmc-review-number">第 1 / 30 題</strong>
+                  <span id="tsmc-review-answered">已作答 0 / 30</span>
+                </div>
+                <div class="tsmc-review-track" aria-hidden="true"><span id="tsmc-review-bar"></span></div>
+                <div class="tsmc-review-card">
+                  <small id="tsmc-review-question-type">單字辨識</small>
+                  <h3 id="tsmc-review-word"></h3>
+                  <button id="tsmc-review-audio" type="button" class="tsmc-audio-btn">🔊 真人發音</button>
+                  <p>請選出正確的中文意思：</p>
+                  <div id="tsmc-review-choices" class="tsmc-review-choices"></div>
+                </div>
+                <div class="tsmc-review-navigation">
+                  <button id="tsmc-review-previous" class="secondary action-button" type="button">← 上一題</button>
+                  <button id="tsmc-review-next" class="primary action-button" type="button">下一題 →</button>
+                  <button id="tsmc-review-submit" class="primary action-button" type="button" hidden disabled>交卷批改</button>
+                </div>
+                <p class="tsmc-review-note">可以返回更改答案。中途離開或重新整理，進度會保留在這台裝置。</p>
+              </section>
+              <section id="tsmc-review-result" hidden aria-live="polite">
+                <h4 id="tsmc-review-score">本回合成績</h4>
+                <p id="tsmc-review-result-summary"></p>
+                <h4>本回合錯題</h4>
+                <ul id="tsmc-review-result-wrong" class="tsmc-review-list"></ul>
+              </section>
+              <section class="tsmc-review-history">
+                <h4>📘 累計錯題本</h4>
+                <p class="tsmc-review-note">只記錄台積電總複習答錯的字，不影響公職錯題或原本 24 關的星星。</p>
+                <ul id="tsmc-review-wrongbook" class="tsmc-review-list"></ul>
+              </section>
             </div>
           </div>
 
@@ -456,6 +505,7 @@
 
     <script src="./audio-human/recordings.js?v=human-be0f46db7dc9"></script>
   <script src="./audio-example/recordings.js?v=20261008-ai-18"></script>
-    <script src="./app.js?v=20261008-ai-18"></script>
+    <script src="./app.js?v=20261012-review-v1"></script>
+    <script src="./tsmc-review.js?v=20261012-v1"></script>
   </body>
 </html>

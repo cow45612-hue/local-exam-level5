@@ -420,7 +420,7 @@ function stopCurrentSpeech() {
 // Subview Switcher
 // ------------------------------------------
 function showTsmcSubview(subviewId) {
-  const subviews = ["tsmc-subview-map", "tsmc-subview-learn", "tsmc-subview-quiz", "tsmc-subview-autoplay", "tsmc-subview-exam", "tsmc-subview-extras"];
+  const subviews = ["tsmc-subview-map", "tsmc-subview-learn", "tsmc-subview-quiz", "tsmc-subview-autoplay", "tsmc-subview-exam", "tsmc-subview-extras", "tsmc-subview-review"];
   subviews.forEach((id) => {
     const el = document.getElementById(id);
     if (el) el.hidden = (id !== subviewId);
@@ -443,6 +443,9 @@ function switchTsmcTab(tabName) {
     renderStageMap();
   } else if (tabName === "core50") {
     openStageLearn("core50");
+  } else if (tabName === "review") {
+    showTsmcSubview("tsmc-subview-review");
+    renderTsmcReview();
   } else if (tabName === "autoplay") {
     showTsmcSubview("tsmc-subview-autoplay");
     initAutoplaySelect();
@@ -1507,6 +1510,7 @@ async function loadTsmcVocabulary() {
   }
   renderStageMap();
   initAutoplaySelect();
+  if (tsmcCurrentTab === "review") renderTsmcReview();
 }
 
 function initOrRefreshTsmcView() {
@@ -1515,6 +1519,9 @@ function initOrRefreshTsmcView() {
     renderStageMap();
   } else if (tsmcCurrentTab === "core50") {
     openStageLearn("core50");
+  } else if (tsmcCurrentTab === "review") {
+    showTsmcSubview("tsmc-subview-review");
+    renderTsmcReview();
   } else if (tsmcCurrentTab === "autoplay") {
     showTsmcSubview("tsmc-subview-autoplay");
   } else if (tsmcCurrentTab === "exam") {
