@@ -2088,27 +2088,27 @@ select {
 .tsmc-review-panel h3, .tsmc-review-panel h4 { margin: 0; }
 .tsmc-review-intro, .tsmc-review-note { margin: 0; color: var(--muted); line-height: 1.6; }
 .tsmc-review-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.tsmc-review-stats > div { display: grid; gap: 5px; text-align: center; border: 1px solid var(--border); background: var(--surface); border-radius: 12px; padding: 12px 6px; }
+.tsmc-review-stats > div { display: grid; gap: 5px; text-align: center; border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 12px 6px; }
 .tsmc-review-stats strong { color: var(--primary-dark); font-size: 20px; overflow-wrap: anywhere; }
 .tsmc-review-stats small { color: var(--muted); font-size: 11px; }
 #tsmc-review-home, #tsmc-review-result, .tsmc-review-history { display: grid; gap: 12px; }
 #tsmc-review-question { display: grid; gap: 12px; }
 .tsmc-review-meta, .tsmc-review-navigation { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .tsmc-review-meta { font-size: 13px; color: var(--muted); }
-.tsmc-review-track { height: 7px; border-radius: 99px; background: var(--border); overflow: hidden; }
+.tsmc-review-track { height: 7px; border-radius: 99px; background: var(--line); overflow: hidden; }
 .tsmc-review-track span { display: block; height: 100%; width: 0; background: #16865f; transition: width .15s ease; }
-.tsmc-review-card { display: grid; gap: 12px; padding: 18px 14px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
+.tsmc-review-card { display: grid; gap: 12px; padding: 18px 14px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
 .tsmc-review-card > h3 { font-size: clamp(23px, 6vw, 34px); overflow-wrap: anywhere; text-align: center; }
 .tsmc-review-card > small { color: var(--muted); text-align: center; }
 .tsmc-review-card > p { margin: 0; color: var(--muted); }
 .tsmc-review-card > .tsmc-audio-btn { justify-self: center; }
 .tsmc-review-choices { display: grid; gap: 8px; }
-.tsmc-review-choice { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 12px; color: var(--text); font: inherit; font-weight: 650; min-height: 50px; }
+.tsmc-review-choice { text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; color: var(--ink); font: inherit; font-weight: 650; min-height: 50px; }
 .tsmc-review-choice.selected { border: 2px solid #16865f; background: #e6f5ee; color: #075e45; }
 .tsmc-review-choice:focus-visible { outline: 3px solid #16865f; outline-offset: 2px; }
 .tsmc-review-navigation > button { flex: 1; min-width: 0; }
 .tsmc-review-list { display: grid; gap: 8px; padding: 0; margin: 0; list-style: none; max-height: 390px; overflow-y: auto; }
-.tsmc-review-list li { display: grid; gap: 4px; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--surface); overflow-wrap: anywhere; }
+.tsmc-review-list li { display: grid; gap: 4px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--surface); overflow-wrap: anywhere; }
 .tsmc-review-list small { color: var(--muted); line-height: 1.5; }
 #tsmc-subview-review [hidden] { display: none !important; }
 @media (max-width: 480px) {
