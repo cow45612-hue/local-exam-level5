@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>公職初考刷題 App</title>
-    <link rel="stylesheet" href="./style.css?v=20261012-review-v1" />
+    <link rel="stylesheet" href="./style.css?v=20261013-review-v2" />
   </head>
   <body>
     <main class="app-shell">
@@ -234,6 +234,17 @@
               <section id="tsmc-review-home">
                 <p id="tsmc-review-plan" class="tsmc-review-note">正在載入單字...</p>
                 <button id="tsmc-review-start" class="primary action-button" type="button" disabled>開始第一回合・30 題</button>
+                <div class="tsmc-srs-actions">
+                  <div class="tsmc-srs-header"><strong>📆 間隔複習</strong>
+                    <span>今日到期 <strong id="tsmc-srs-due-count">0</strong> 字</span>
+                  </div>
+                  <p class="tsmc-review-note">答錯隔 1 天複習；按期答對再隔 3 天、7 天複習。提前練習不算完成間隔。</p>
+                  <div class="tsmc-srs-buttons">
+                    <button id="tsmc-srs-due-start" class="primary action-button" type="button" disabled>今日到期複習（0 字）</button>
+                    <button id="tsmc-srs-all-start" class="secondary action-button" type="button" disabled>錯題專練（0 字）</button>
+                  </div>
+                  <small>每次最多 30 題；少於 30 字就考實際數量。資料只存本機瀏覽器。</small>
+                </div>
               </section>
               <section id="tsmc-review-question" hidden>
                 <div class="tsmc-review-meta">
@@ -506,6 +517,6 @@
     <script src="./audio-human/recordings.js?v=human-be0f46db7dc9"></script>
   <script src="./audio-example/recordings.js?v=20261008-ai-18"></script>
     <script src="./app.js?v=20261012-review-v1"></script>
-    <script src="./tsmc-review.js?v=20261012-v1"></script>
+    <script src="./tsmc-review.js?v=20261013-v2"></script>
   </body>
 </html>

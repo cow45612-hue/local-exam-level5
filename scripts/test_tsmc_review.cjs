@@ -49,7 +49,11 @@ for (let roundIndex = 1; roundIndex <= 10; roundIndex += 1) {
     }
   }
   if (roundIndex === 1) {
-    app.exec("tsmcReviewNavigate(5)");
+    // Navigating forwards requires answering each earlier question.
+    for (let step = 0; step < 5; step += 1) {
+      app.exec("tsmcReviewSelect(" + round.questions[step].id + ")");
+      app.exec("tsmcReviewNavigate(1)");
+    }
     app = boot();
     assert.equal(app.getState().currentRound.position, 5, "A refresh must preserve position");
     app.exec("tsmcReviewNavigate(-5)");
