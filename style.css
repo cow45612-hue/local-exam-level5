@@ -2116,3 +2116,13 @@ select {
   .tsmc-review-stats strong { font-size: 17px; }
   .tsmc-review-stats small { font-size: 10px; }
 }
+
+/* TSMC V2 wrong-word practice and scheduled 1/3/7-day review */
+.tsmc-srs-actions { display: grid; gap: 12px; margin-top: 10px; padding: 16px 12px;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.tsmc-srs-header { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.tsmc-srs-header span { color: var(--muted); font-size: 13px; }
+.tsmc-srs-buttons { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
+.tsmc-srs-buttons button { white-space: normal; padding: 10px 6px; min-height: 48px; }
+.tsmc-srs-actions small { color: var(--muted); line-height: 1.5; }
+@media (max-width: 420px) { .tsmc-srs-buttons { grid-template-columns: 1fr; } }
