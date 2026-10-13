@@ -71,6 +71,7 @@ assert.equal(store.get("initial-exam-wrong-question-ids"),"[3]");
 date="2026-10-13";
 const legacy={seenIds:[1,2],wrongCounts:{1:2},completedRounds:2,currentRound:null,lastResult:null};
 const migrated=boot(new Map([["tsmc-review-30-v1",JSON.stringify(legacy)]]));
+migrated.run("tsmcReviewState()"); // Triggers the v1-to-v2 migration before reading the persisted snapshot.
 assert.equal(migrated.state().seenIds.length,2);
 assert.equal(migrated.state().completedRounds,2);
 assert.equal(migrated.state().wrongCounts[1],2);
