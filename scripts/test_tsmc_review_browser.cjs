@@ -71,6 +71,21 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator("#tsmc-review-wrongbook li").count(),1);
   const previous=await page.evaluate(()=>tsmcReviewState());
   assert.equal(previous.completedRounds,1);
+  assert.equal(await page.locator("#tsmc-srs-all-start").isEnabled(),true);
+  await page.locator("#tsmc-srs-all-start").click();
+  assert.equal(await page.locator("#tsmc-review-number").innerText(),"第 1 / 1 題");
+  const wordChoice=await page.evaluate(()=>{
+    const q=tsmcReviewState().currentRound.questions[0];
+    return q.choices.indexOf(q.id);
+  });
+  await choices.nth(wordChoice).click();
+  await page.locator("#tsmc-review-submit").click();
+  assert.match(await page.locator("#tsmc-review-score").innerText(),/錯題專練：1 \/ 1/);
+  const afterDrill=await page.evaluate(()=>tsmcReviewState());
+  assert.equal(afterDrill.completedDrills,1);
+  assert.equal(afterDrill.completedRounds,1);
+  assert.equal(afterDrill.seenIds.length,30);
+  assert.equal(afterDrill.srs[previous.lastResult.wrong[0].id].step,0);
   await page.locator("#tsmc-review-start").click();
   const second=await page.evaluate(()=>tsmcReviewState().currentRound);
   assert.equal(second.questions.length,30);
