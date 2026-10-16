@@ -14,6 +14,18 @@ function boot(backing=new Map()){
  return {run:s=>vm.runInContext(s,c),state:()=>JSON.parse(backing.get("tsmc-review-30-v1")||"null"),backing};
 }
 function grade(a,wrong=new Set()){
+ const initial=a.state().currentRound;
+ if(initial.mode==="drill" && initial.phase==="preview"){
+   assert.equal(a.run("tsmcReviewSubmit()"),false,"cannot submit cards before test");
+   assert.equal(a.run("tsmcReviewBeginDrillQuiz()"),initial.questions.length===1,
+     "cannot jump into quiz before seeing all flashcards");
+   if(initial.questions.length>1){
+     assert.equal(a.state().currentRound.phase,"preview");
+     for(let step=1;step<initial.questions.length;step++)a.run("tsmcReviewPreviewNavigate(1)");
+     assert.equal(a.run("tsmcReviewBeginDrillQuiz()"),true);
+   }
+   assert.equal(a.state().currentRound.phase,"quiz");
+ }
  const list=a.state().currentRound.questions;
  for(let i=0;i<list.length;i++){
   if(i)a.run("tsmcReviewNavigate(1)");
@@ -37,10 +49,12 @@ for(const id of wrongIds)assert.equal(app.state().srs[id].due,"2026-10-14");
 assert.equal(app.run("tsmcReviewNewDrill('due')"),false);
 assert.equal(app.run("tsmcReviewNewDrill('all')"),true);
 assert.equal(app.state().currentRound.questions.length,2);
-const first=app.state().currentRound.questions[0].id;
-app.run("tsmcReviewSelect("+first+")");
+assert.equal(app.state().currentRound.phase,"preview");
+app.run("tsmcReviewPreviewNavigate(1)");
 app=boot(store);
-assert.equal(app.state().currentRound.questions[0].chosen,first,"draft resumes after reload");
+assert.equal(app.state().currentRound.phase,"preview");
+assert.equal(app.state().currentRound.previewIndex,1,"flashcard position resumes after reload");
+assert.equal(app.state().currentRound.questions[0].chosen,null,"preview must not count as an answer");
 grade(app);
 assert.equal(app.state().completedRounds,1,"drill must not change coverage rounds");
 assert.equal(app.state().completedDrills,1);
@@ -78,4 +92,12 @@ assert.equal(migrated.state().wrongCounts[1],2);
 assert.equal(migrated.state().srs[1].due,date);
 assert.equal(migrated.run("tsmcReviewNewDrill('due')"),true);
 assert.equal(migrated.state().currentRound.questions.length,1);
+assert.equal(migrated.state().currentRound.phase,"preview");
+const oldInProgress={...legacy,currentRound:{
+ mode:"drill",scope:"due",questions:[{id:1,choices:[1,2,3,4],chosen:2}],newIds:[],position:0
+}};
+const resuming=boot(new Map([["tsmc-review-30-v1",JSON.stringify(oldInProgress)]]));
+assert.equal(resuming.run("tsmcReviewIsPreview(tsmcReviewState().currentRound)"),false,
+ "an old in-progress quiz must not be reset into study cards");
+assert.equal(resuming.state().currentRound.questions[0].chosen,2);
 console.log("PASS: v1 migration, 1/3/7 intervals, overdue review, early practice, wrong reset, draft resume, no data loss.");

@@ -73,6 +73,27 @@ const server=http.createServer((req,res)=>{
   assert.equal(previous.completedRounds,1);
   assert.equal(await page.locator("#tsmc-srs-all-start").isEnabled(),true);
   await page.locator("#tsmc-srs-all-start").click();
+  assert.equal(await page.locator("#tsmc-preview-count").innerText(),"先複習 1 / 1 個錯題");
+  assert.equal(await page.locator("#tsmc-review-preview").isVisible(),true);
+  assert.equal(await page.locator("#tsmc-review-question").isVisible(),false);
+  const learned=await page.evaluate(()=>{
+    const q=tsmcReviewState().currentRound.questions[0];
+    return TSMC_WORDS.find(w=>w.id===q.id);
+  });
+  assert.equal(await page.locator("#tsmc-preview-word").innerText(),learned.word);
+  assert.equal(await page.locator("#tsmc-preview-meaning").innerText(),learned.meaning);
+  assert.equal(await page.locator("#tsmc-preview-mnemonic").innerText(),learned.mnemonic);
+  assert.equal(await page.locator("#tsmc-preview-sentence").innerText(),learned.exampleSentence);
+  await page.locator("#tsmc-preview-audio").click();
+  assert.match(await page.evaluate(()=>getTsmcAudio().src),/\/audio-human\/\d+\.mp3/);
+  await page.reload({waitUntil:"domcontentloaded"});
+  await page.waitForFunction(()=>typeof TSMC_WORDS!=="undefined"&&TSMC_WORDS.length===288);
+  await page.locator('[data-view="tsmc"]').click();
+  await page.locator('[data-tsmc-tab="review"]').click();
+  assert.equal(await page.locator("#tsmc-preview-word").innerText(),learned.word);
+  assert.equal(await page.locator("#tsmc-review-question").isVisible(),false);
+  await page.locator("#tsmc-preview-begin").click();
+  assert.equal(await page.locator("#tsmc-review-question").isVisible(),true);
   assert.equal(await page.locator("#tsmc-review-number").innerText(),"第 1 / 1 題");
   const wordChoice=await page.evaluate(()=>{
     const q=tsmcReviewState().currentRound.questions[0];
