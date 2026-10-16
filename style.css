@@ -2126,3 +2126,16 @@ select {
 .tsmc-srs-buttons button { white-space: normal; padding: 10px 6px; min-height: 48px; }
 .tsmc-srs-actions small { color: var(--muted); line-height: 1.5; }
 @media (max-width: 420px) { .tsmc-srs-buttons { grid-template-columns: 1fr; } }
+
+/* Wrong-word flashcards: show the answer before the drill, never during the exam. */
+.tsmc-preview { display: grid; gap: 12px; }
+.tsmc-preview-heading { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; color: #075e45; font-size: 14px; }
+.tsmc-preview-card { display: grid; gap: 12px; padding: 18px 14px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 16px; overflow-wrap: anywhere; }
+.tsmc-preview-card h3 { text-align: center; font-size: clamp(24px,6vw,34px); margin: 0; }
+.tsmc-preview-card > .tsmc-audio-btn { justify-self: center; }
+.tsmc-preview-meaning { font-weight: 850; font-size: 22px; color: #075e45; text-align: center; margin: 0; }
+.tsmc-preview-detail { padding: 12px; border: 1px solid var(--line); border-radius: 12px; }
+.tsmc-preview-detail strong { color: #075e45; }
+.tsmc-preview-detail p { margin: 8px 0 0; line-height: 1.65; white-space: pre-wrap; }
+.tsmc-preview-detail small { display: block; margin-top: 8px; line-height: 1.5; color: var(--muted); }

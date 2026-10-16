@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>公職初考刷題 App</title>
-    <link rel="stylesheet" href="./style.css?v=20261013-review-v2" />
+    <link rel="stylesheet" href="./style.css?v=20261016-review-before-quiz" />
   </head>
   <body>
     <main class="app-shell">
@@ -238,13 +238,43 @@
                   <div class="tsmc-srs-header"><strong>📆 間隔複習</strong>
                     <span>今日到期 <strong id="tsmc-srs-due-count">0</strong> 字</span>
                   </div>
-                  <p class="tsmc-review-note">答錯隔 1 天複習；按期答對再隔 3 天、7 天複習。提前練習不算完成間隔。</p>
+                  <p class="tsmc-review-note">先看單字卡複習，再進入測驗。答錯隔 1 天複習；按期答對再隔 3 天、7 天複習。提前練習不算完成間隔。</p>
                   <div class="tsmc-srs-buttons">
                     <button id="tsmc-srs-due-start" class="primary action-button" type="button" disabled>今日到期複習（0 字）</button>
                     <button id="tsmc-srs-all-start" class="secondary action-button" type="button" disabled>錯題專練（0 字）</button>
                   </div>
                   <small>每次最多 30 題；少於 30 字就考實際數量。資料只存本機瀏覽器。</small>
                 </div>
+              </section>
+              <section id="tsmc-review-preview" class="tsmc-preview" hidden>
+                <div class="tsmc-preview-heading">
+                  <span id="tsmc-preview-count">先複習 1 / 1 個錯題</span>
+                  <strong>先記住再測驗</strong>
+                </div>
+                <div class="tsmc-preview-card">
+                  <h3 id="tsmc-preview-word"></h3>
+                  <button id="tsmc-preview-audio" class="tsmc-audio-btn" type="button">🔊 真人發音</button>
+                  <p id="tsmc-preview-meaning" class="tsmc-preview-meaning"></p>
+                  <div class="tsmc-preview-detail">
+                    <strong>💡 記憶口訣</strong>
+                    <p id="tsmc-preview-mnemonic"></p>
+                  </div>
+                  <div class="tsmc-preview-detail">
+                    <strong>🏭 廠區短語</strong>
+                    <p id="tsmc-preview-phrase"></p>
+                  </div>
+                  <div class="tsmc-preview-detail">
+                    <strong>📖 例句</strong>
+                    <p id="tsmc-preview-sentence"></p>
+                    <small id="tsmc-preview-translation"></small>
+                  </div>
+                </div>
+                <div class="tsmc-review-navigation">
+                  <button id="tsmc-preview-previous" class="secondary action-button" type="button">← 上一個字</button>
+                  <button id="tsmc-preview-next" class="primary action-button" type="button">下一個字 →</button>
+                  <button id="tsmc-preview-begin" class="primary action-button" type="button" hidden>開始測驗 →</button>
+                </div>
+                <p class="tsmc-review-note">先看完本次所有錯題，再進入四選一。中途離開會保留目前看到的單字；正式測驗不顯示答案。</p>
               </section>
               <section id="tsmc-review-question" hidden>
                 <div class="tsmc-review-meta">
@@ -517,6 +547,6 @@
     <script src="./audio-human/recordings.js?v=human-be0f46db7dc9"></script>
   <script src="./audio-example/recordings.js?v=20261008-ai-18"></script>
     <script src="./app.js?v=20261012-review-v1"></script>
-    <script src="./tsmc-review.js?v=20261013-v2"></script>
+    <script src="./tsmc-review.js?v=20261016-review-before-quiz"></script>
   </body>
 </html>
