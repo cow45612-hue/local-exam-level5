@@ -17,11 +17,14 @@ function grade(a,wrong=new Set()){
  const initial=a.state().currentRound;
  if(initial.mode==="drill" && initial.phase==="preview"){
    assert.equal(a.run("tsmcReviewSubmit()"),false,"cannot submit cards before test");
-   assert.equal(a.run("tsmcReviewBeginDrillQuiz()"),initial.questions.length===1,
-     "cannot jump into quiz before seeing all flashcards");
-   if(initial.questions.length>1){
+   const atLastCard = initial.previewIndex === initial.questions.length - 1;
+   assert.equal(a.run("tsmcReviewBeginDrillQuiz()"),atLastCard,
+     "quiz can only start from the final reviewed flashcard");
+   if(!atLastCard){
      assert.equal(a.state().currentRound.phase,"preview");
-     for(let step=1;step<initial.questions.length;step++)a.run("tsmcReviewPreviewNavigate(1)");
+     for(let step=initial.previewIndex+1;step<initial.questions.length;step++){
+       a.run("tsmcReviewPreviewNavigate(1)");
+     }
      assert.equal(a.run("tsmcReviewBeginDrillQuiz()"),true);
    }
    assert.equal(a.state().currentRound.phase,"quiz");
