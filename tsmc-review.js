@@ -120,6 +120,10 @@ function tsmcReviewChoices(word) {
   return tsmcReviewShuffle([word.id, ...byMeaning.values()]);
 }
 
+function tsmcReviewIsPreview(round) {
+  return !!round && round.mode === "drill" && round.phase === "preview";
+}
+
 function tsmcReviewValidRound(round) {
   if (!round || !Array.isArray(round.questions)) return false;
   const count = round.questions.length;
@@ -135,7 +139,10 @@ function tsmcReviewValidRound(round) {
       && question.choices.every((id) => all.has(id))
       && (question.chosen === null || question.choices.includes(question.chosen)))
     && Number.isInteger(round.position) && round.position >= 0
-    && round.position < count;
+    && round.position < count
+    && (!tsmcReviewIsPreview(round) ||
+      (Number.isInteger(round.previewIndex) && round.previewIndex >= 0
+        && round.previewIndex < count));
 }
 
 function tsmcReviewNewRound() {
@@ -181,7 +188,7 @@ function tsmcReviewNewDrill(scope) {
   const selected = candidates.slice(0, TSMC_REVIEW_QUESTION_COUNT);
   if (!selected.length) return false;
   state.currentRound = {
-    mode: "drill", scope,
+    mode: "drill", scope, phase: "preview", previewIndex: 0,
     questions: selected.map((word) =>
       ({ id: word.id, choices: tsmcReviewChoices(word), chosen: null })),
     newIds: [], position: 0,
@@ -190,9 +197,29 @@ function tsmcReviewNewDrill(scope) {
   return true;
 }
 
+// Review each selected mistake with answers visible before entering the quiz.
+function tsmcReviewPreviewNavigate(delta) {
+  const round = tsmcReviewState().currentRound;
+  if (!tsmcReviewValidRound(round) || !tsmcReviewIsPreview(round)) return;
+  round.previewIndex = Math.max(0, Math.min(round.questions.length - 1, round.previewIndex + delta));
+  tsmcReviewSave();
+  renderTsmcReview();
+}
+
+function tsmcReviewBeginDrillQuiz() {
+  const round = tsmcReviewState().currentRound;
+  if (!tsmcReviewValidRound(round) || !tsmcReviewIsPreview(round)
+      || round.previewIndex !== round.questions.length - 1) return false;
+  round.phase = "quiz";
+  round.position = 0;
+  tsmcReviewSave();
+  renderTsmcReview();
+  return true;
+}
+
 function tsmcReviewSelect(choiceId) {
   const state = tsmcReviewState(), round = state.currentRound;
-  if (!tsmcReviewValidRound(round)) return;
+  if (!tsmcReviewValidRound(round) || tsmcReviewIsPreview(round)) return;
   const question = round.questions[round.position];
   if (!question.choices.includes(choiceId)) return;
   question.chosen = choiceId;
@@ -202,7 +229,7 @@ function tsmcReviewSelect(choiceId) {
 
 function tsmcReviewNavigate(delta) {
   const state = tsmcReviewState(), round = state.currentRound;
-  if (!tsmcReviewValidRound(round)) return;
+  if (!tsmcReviewValidRound(round) || tsmcReviewIsPreview(round)) return;
   if (delta > 0 && round.questions[round.position].chosen === null) return;
   round.position = Math.max(0, Math.min(round.questions.length - 1, round.position + delta));
   tsmcReviewSave();
@@ -211,7 +238,8 @@ function tsmcReviewNavigate(delta) {
 
 function tsmcReviewSubmit() {
   const state = tsmcReviewState(), round = state.currentRound;
-  if (!tsmcReviewValidRound(round) || round.questions.some((q) => q.chosen === null)) return false;
+  if (!tsmcReviewValidRound(round) || tsmcReviewIsPreview(round)
+      || round.questions.some((q) => q.chosen === null)) return false;
   const sourceIds = new Set(TSMC_WORDS.map((word) => word.id));
   const isDrill = round.mode === "drill";
   const seen = new Set(state.seenIds.filter((id) => sourceIds.has(id)));
@@ -287,9 +315,12 @@ function renderTsmcReview() {
   const home = tsmcReviewEl("tsmc-review-home");
   const questionBox = tsmcReviewEl("tsmc-review-question");
   const resultBox = tsmcReviewEl("tsmc-review-result");
+  const previewBox = tsmcReviewEl("tsmc-review-preview");
   const valid = ready && tsmcReviewValidRound(state.currentRound);
+  const showingPreview = valid && tsmcReviewIsPreview(state.currentRound);
   if (home) home.hidden = valid;
-  if (questionBox) questionBox.hidden = !valid;
+  if (previewBox) previewBox.hidden = !showingPreview;
+  if (questionBox) questionBox.hidden = !valid || showingPreview;
   if (resultBox) resultBox.hidden = valid || !state.lastResult;
 
   const start = tsmcReviewEl("tsmc-review-start");
@@ -309,7 +340,25 @@ function renderTsmcReview() {
       + " 題複習；未交卷前不計入覆蓋進度。" : "288 字已全部測過。之後每回合複習 30 題，優先抽選錯題。");
 
   const wordById = new Map(TSMC_WORDS.map((word) => [word.id, word]));
-  if (valid) {
+  if (showingPreview) {
+    const round = state.currentRound, index = round.previewIndex;
+    const word = wordById.get(round.questions[index].id);
+    tsmcReviewSetText("tsmc-preview-count",
+      "先複習 " + (index + 1) + " / " + round.questions.length + " 個錯題");
+    tsmcReviewSetText("tsmc-preview-word", word.word);
+    tsmcReviewSetText("tsmc-preview-meaning", word.meaning);
+    tsmcReviewSetText("tsmc-preview-mnemonic", word.mnemonic || "這個單字沒有記憶口訣，可先閱讀例句。");
+    tsmcReviewSetText("tsmc-preview-phrase", word.fabPhrase || "無廠區短語");
+    tsmcReviewSetText("tsmc-preview-sentence", word.exampleSentence || "無例句");
+    tsmcReviewSetText("tsmc-preview-translation", word.exampleMeaning || "");
+    const previous = tsmcReviewEl("tsmc-preview-previous");
+    const next = tsmcReviewEl("tsmc-preview-next");
+    const begin = tsmcReviewEl("tsmc-preview-begin");
+    if (previous) previous.disabled = index === 0;
+    if (next) next.hidden = index === round.questions.length - 1;
+    if (begin) begin.hidden = index !== round.questions.length - 1;
+  }
+  if (valid && !showingPreview) {
     const round = state.currentRound;
     const question = round.questions[round.position];
     const word = wordById.get(question.id);
@@ -425,4 +474,18 @@ if (tsmcSrsDueButton) tsmcSrsDueButton.addEventListener("click", () => {
 const tsmcSrsAllButton = document.getElementById("tsmc-srs-all-start");
 if (tsmcSrsAllButton) tsmcSrsAllButton.addEventListener("click", () => {
   if (tsmcReviewNewDrill("all")) renderTsmcReview();
+});
+
+const tsmcPreviewPrevious = document.getElementById("tsmc-preview-previous");
+if (tsmcPreviewPrevious) tsmcPreviewPrevious.addEventListener("click", () => tsmcReviewPreviewNavigate(-1));
+const tsmcPreviewNext = document.getElementById("tsmc-preview-next");
+if (tsmcPreviewNext) tsmcPreviewNext.addEventListener("click", () => tsmcReviewPreviewNavigate(1));
+const tsmcPreviewBegin = document.getElementById("tsmc-preview-begin");
+if (tsmcPreviewBegin) tsmcPreviewBegin.addEventListener("click", tsmcReviewBeginDrillQuiz);
+const tsmcPreviewAudio = document.getElementById("tsmc-preview-audio");
+if (tsmcPreviewAudio) tsmcPreviewAudio.addEventListener("click", () => {
+  const round = tsmcReviewState().currentRound;
+  if (!tsmcReviewValidRound(round) || !tsmcReviewIsPreview(round)) return;
+  const word = TSMC_WORDS.find((item) => item.id === round.questions[round.previewIndex].id);
+  if (word) playTsmcAudio(word, false);
 });
